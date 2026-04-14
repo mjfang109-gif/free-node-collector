@@ -22,112 +22,6 @@ dns:
 proxies:
 - name: melibazz
   type: vmess
-  server: 104.17.232.114
-  port: 443
-  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wss51068
-- name: melibazz_1
-  type: vmess
-  server: 104.17.77.94
-  port: 2053
-  uuid: 72f76c36-3e3c-45b3-a61f-d8f017345958
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-- name: melibazz_2
-  type: vmess
-  server: 104.18.14.229
-  port: 443
-  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wss51068
-- name: melibazz_3
-  type: vmess
-  server: 104.18.64.251
-  port: 8880
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /GdtYWlsLmNvbSJ9LCJjb3V
-- name: melibazz_4
-  type: vmess
-  server: 104.19.244.250
-  port: 443
-  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wss51068
-- name: 🇺🇸 US-216.24.57.250-94
-  server: 216.24.57.250
-  port: 443
-  type: trojan
-  password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
-  sni: afrcloud1.mmv.kr
-  skip-cert-verify: true
-- name: melibazz_5
-  type: vmess
-  server: 104.16.72.175
-  port: 443
-  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wss13889
-- name: melibazz_6
-  type: vmess
-  server: 104.16.8.3
-  port: 443
-  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wss51068
-- name: melibazz_7
-  type: vmess
-  server: 104.16.91.78
-  port: 443
-  uuid: F3E36B53-E75E-48C0-B9F1-F918F397E996
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /speedtest
-- name: melibazz_8
-  type: vmess
-  server: 104.17.228.155
-  port: 8880
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /GdtYWlsLmNvbSJ9LCJjb3V
-- name: melibazz_9
-  type: vmess
   server: 104.17.69.9
   port: 443
   uuid: F3E36B53-E75E-48C0-B9F1-F918F397E996
@@ -137,94 +31,6 @@ proxies:
   network: ws
   ws-opts:
     path: /speedtest
-- name: melibazz_10
-  type: vmess
-  server: 104.17.95.4
-  port: 443
-  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wss13889
-- name: melibazz_11
-  type: vmess
-  server: 104.18.28.109
-  port: 443
-  uuid: 12eed507-9a58-4ca5-f7af-2871e9aae684
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /19544
-- name: melibazz_12
-  type: vmess
-  server: 104.18.53.172
-  port: 443
-  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wss51068
-- name: melibazz_13
-  type: vmess
-  server: 104.19.223.127
-  port: 8880
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /GdtYWlsLmNvbSJ9LCJjb3V
-- name: melibazz_14
-  type: vmess
-  server: 104.21.12.87
-  port: 80
-  uuid: 0b65bb06-6b28-487a-8e3c-820dda51e977
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /dT9s3HqgZeD3eApzDAfhOHq
-- name: melibazz_15
-  type: vmess
-  server: 104.21.39.36
-  port: 443
-  uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /root/
-- name: melibazz_16
-  type: vmess
-  server: 104.21.48.84
-  port: 443
-  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wss51068
-- name: 🇺🇸 >>::US::US::US::US::US::US::US::US::US::US::US::US
-  type: vmess
-  server: 47.90.244.153
-  port: 8443
-  uuid: 65e2a985-ad20-4486-a7ec-b67b20ee56af
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws
 - name: V10-dlj.tf/ssrsub
   server: 162.159.253.28
   port: 80
@@ -238,34 +44,198 @@ proxies:
     path: /
     headers:
       Host: sls.shabijichang.com
-- name: github.com/Ruk1ng001_025759ef
+- name: melibazz_1
+  type: vmess
+  server: 104.17.228.155
+  port: 8880
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
+  alterId: 0
+  cipher: auto
+  tls: false
   network: ws
-  port: 2082
-  server: 104.17.109.71
-  type: vless
-  udp: true
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
   ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: index.arcane509.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.118 Safari/537.36
-    max-early-data: 2560
-    path: /jeyk7gbxzfe1
-- name: github.com/Ruk1ng001_2b0e31c8
+    path: /GdtYWlsLmNvbSJ9LCJjb3V
+- name: melibazz_2
+  type: vmess
+  server: 104.16.91.78
+  port: 443
+  uuid: F3E36B53-E75E-48C0-B9F1-F918F397E996
+  alterId: 0
+  cipher: auto
+  tls: true
   network: ws
+  ws-opts:
+    path: /speedtest
+- name: RELAY-170.114.45.6-20
+  server: support.zoom.us
+  port: 8080
+  type: vmess
+  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: true
+  network: ws
+  tls: false
+- name: melibazz_3
+  type: vmess
+  server: 104.16.8.3
+  port: 443
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss51068
+- name: melibazz_4
+  type: vmess
+  server: 104.19.244.250
+  port: 443
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss51068
+- name: 🇺🇸 US | VMESS
+  type: vmess
+  server: 104.21.15.212
+  port: 443
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /linkws
+- name: V11-dlj.tf/ssrsub
+  server: 172.67.87.197
   port: 80
-  server: 104.17.15.87
-  type: vless
-  udp: true
-  uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
+  type: vmess
+  uuid: a5696a03-1c9f-4018-9510-58e7bfbb5f5f
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
   ws-opts:
+    path: /
     headers:
-      Host: britain.xydcqd.workers.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/64.0.3282.186 Safari/537.36
-    path: /@WireXnet?ed=2048
+      Host: ylsl.shabijichang.com
+- name: melibazz_5
+  type: vmess
+  server: 104.16.72.175
+  port: 443
+  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss13889
+- name: melibazz_6
+  type: vmess
+  server: 104.17.47.58
+  port: 443
+  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss13889
+- name: melibazz_7
+  type: vmess
+  server: 104.17.77.94
+  port: 2053
+  uuid: 72f76c36-3e3c-45b3-a61f-d8f017345958
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+- name: melibazz_8
+  type: vmess
+  server: 104.17.95.4
+  port: 443
+  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss13889
+- name: 🇺🇸 US-156.146.38.170-0109
+  type: ss
+  server: 156.146.38.170
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 V001--US-dlj.tf/ssrsub
+  server: singapore.com
+  port: 8080
+  type: vmess
+  uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /api/v3/download.getFile
+    headers:
+      Host: ssrsub.v01.ssrsub.com
+- name: 🇺🇸 US-216.24.57.250-94
+  server: 216.24.57.250
+  port: 443
+  type: trojan
+  password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
+  sni: afrcloud1.mmv.kr
+  skip-cert-verify: true
+- name: melibazz_9
+  type: vmess
+  server: 104.17.164.68
+  port: 8880
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /GdtYWlsLmNvbSJ9LCJjb3V
+- name: melibazz_10
+  type: vmess
+  server: 104.17.232.114
+  port: 443
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss51068
+- name: melibazz_11
+  type: vmess
+  server: 104.17.4.149
+  port: 443
+  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss13889
+- name: melibazz_12
+  type: vmess
+  server: 104.18.14.229
+  port: 443
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss51068
 - name: github.com/Ruk1ng001_c2f70919
   network: ws
   port: 443
@@ -281,110 +251,46 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
         Gecko) Chrome/51.0.2704.103 Safari/537.36
     path: /?ed=2560
-- name: github.com/Ruk1ng001_22701e34
-  network: ws
-  port: 443
-  server: 162.159.44.198
-  servername: fu.baiproxy.us.ci
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
-  ws-opts:
-    headers:
-      Host: fu.baiproxy.us.ci
-      User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML,
-        like Gecko) Chrome/5.0.342.1 Safari/533.2
-    path: /?ed=2560
-- name: RELAY-170.114.45.6-20
-  server: support.zoom.us
-  port: 8080
+- name: XX | VMESS
   type: vmess
-  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
+  server: 172.66.213.38
+  port: 443
+  uuid: dfbbc8de-8a4f-407d-8069-6de38d83c4e1
   alterId: 0
   cipher: auto
-  skip-cert-verify: true
-  network: ws
-  tls: false
-- name: melibazz_17
+  tls: true
+  network: grpc
+- name: XX | VMESS_1
   type: vmess
-  server: 104.17.164.68
-  port: 8880
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
+  server: 104.16.60.8
+  port: 2086
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
   alterId: 0
   cipher: auto
   tls: false
   network: ws
   ws-opts:
-    path: /GdtYWlsLmNvbSJ9LCJjb3V
-- name: melibazz_18
-  type: vmess
-  server: 104.17.47.58
-  port: 443
-  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
-  alterId: 0
-  cipher: auto
-  tls: true
+    path: /glweidf.sbs/linkws
+- name: github.com/Ruk1ng001_2b0e31c8
   network: ws
-  ws-opts:
-    path: /wss13889
-- name: melibazz_19
-  type: vmess
-  server: 104.18.190.89
-  port: 8880
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /GdtYWlsLmNvbSJ9LCJjb3V
-- name: melibazz_20
-  type: vmess
-  server: 104.18.200.220
-  port: 443
-  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wss51068
-- name: V11-dlj.tf/ssrsub
-  server: 172.67.87.197
   port: 80
-  type: vmess
-  uuid: a5696a03-1c9f-4018-9510-58e7bfbb5f5f
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ylsl.shabijichang.com
-- name: github.com/Ruk1ng001_b2cbcc6f
-  network: ws
-  port: 2087
-  server: 162.159.44.100
-  servername: fu.baiproxy.us.ci
-  tls: true
+  server: 104.17.15.87
   type: vless
   udp: true
-  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
   ws-opts:
     headers:
-      Host: fu.baiproxy.us.ci
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.86 Safari/537.36
-    path: /?ed=2560
-- name: 🇺🇸 US-15.204.247.49-12
-  server: 15.204.247.49
-  port: 12000
+      Host: britain.xydcqd.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.186 Safari/537.36
+    path: /@WireXnet?ed=2048
+- name: 🇨🇦 CA-79.127.200.169-0108
   type: ss
-  cipher: aes-256-gcm
-  password: 8JCsPssfgS8tiRwiMlhARg==
-- name: melibazz_21
+  server: 79.127.200.169
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: melibazz_13
   type: vmess
   server: 104.17.137.141
   port: 443
@@ -395,7 +301,73 @@ proxies:
   network: ws
   ws-opts:
     path: /d84ee332-1284-11ee-a5c8-8213fd3be4b9
-- name: melibazz_22
+- name: melibazz_14
+  type: vmess
+  server: 104.18.28.109
+  port: 443
+  uuid: 12eed507-9a58-4ca5-f7af-2871e9aae684
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /19544
+- name: melibazz_15
+  type: vmess
+  server: 104.21.12.87
+  port: 80
+  uuid: 0b65bb06-6b28-487a-8e3c-820dda51e977
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /dT9s3HqgZeD3eApzDAfhOHq
+- name: melibazz_16
+  type: vmess
+  server: 104.18.190.89
+  port: 8880
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /GdtYWlsLmNvbSJ9LCJjb3V
+- name: melibazz_17
+  type: vmess
+  server: 104.18.200.220
+  port: 443
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss51068
+- name: melibazz_18
+  type: vmess
+  server: 104.18.64.251
+  port: 8880
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /GdtYWlsLmNvbSJ9LCJjb3V
+- name: melibazz_19
+  type: vmess
+  server: 104.18.71.193
+  port: 443
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss51068
+- name: melibazz_20
   type: vmess
   server: 104.19.180.169
   port: 443
@@ -406,24 +378,94 @@ proxies:
   network: ws
   ws-opts:
     path: /wss13889
+- name: melibazz_21
+  type: vmess
+  server: 104.19.223.127
+  port: 8880
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /GdtYWlsLmNvbSJ9LCJjb3V
+- name: 🇺🇸 US-156.146.38.167-0111
+  type: ss
+  server: 156.146.38.167
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: '102620170'
+  server: 104.21.50.177
+  port: 443
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: alvvin.click
+- name: 🇺🇸 >>::US::US::US::US::US::US::US::US::US::US::US::US
+  type: vmess
+  server: 47.90.244.153
+  port: 8443
+  uuid: 65e2a985-ad20-4486-a7ec-b67b20ee56af
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws
 - name: 🇺🇸 US-23.95.75.146-16
   server: 23.95.75.146
   port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
   password: NDRySIABARbErNIVsCNVkyYAHiBzhveT
-- name: melibazz_23
+- name: melibazz_22
   type: vmess
-  server: 104.17.4.149
+  server: 104.21.7.50
   port: 443
-  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /wss13889
-- name: melibazz_24
+    path: /wss51068
+- name: 🇺🇸 US | VMESS_1
+  type: vmess
+  server: 172.67.207.114
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 1
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: linkvws
+- name: 🇨🇦 CA-137.184.174.93-0113
+  type: ss
+  server: 137.184.174.93
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇺🇸 US-156.146.38.169-0110
+  type: ss
+  server: 156.146.38.169
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 US-15.204.247.49-12
+  server: 15.204.247.49
+  port: 12000
+  type: ss
+  cipher: aes-256-gcm
+  password: 8JCsPssfgS8tiRwiMlhARg==
+- name: melibazz_23
   type: vmess
   server: 104.21.79.246
   port: 443
@@ -434,17 +476,6 @@ proxies:
   network: ws
   ws-opts:
     path: /pNV7izRFLO8rGCkIH66kMFPa
-- name: melibazz_25
-  type: vmess
-  server: 104.21.81.238
-  port: 80
-  uuid: 92eb32af-ec3c-40d4-ab83-c3df80af64af
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
 - name: 🇺🇸 US-37.19.198.236-0145
   type: ss
   server: 37.19.198.236
@@ -466,143 +497,6 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
         Gecko) Chrome/41.0.2272.76 Safari/537.36
     path: /?ed=2560
-- name: '102620170'
-  server: 104.21.50.177
-  port: 443
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: alvvin.click
-- name: 🇩🇪 DEU 2
-  server: www.visa.com.sg
-  port: 2052
-  type: vless
-  uuid: 25efc727-e853-49ba-9609-3c20009d0e7a
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: winbiss-0tpka6-v1.winbiss.workers.dev
-  udp: true
-- name: 🇨🇦 >>::CA
-  type: ss
-  server: 148.113.139.160
-  port: 46534
-  cipher: chacha20-ietf-poly1305
-  password: 7a106afc33eaa261
-- name: 🇺🇸 US | VMESS
-  type: vmess
-  server: 172.67.207.114
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: linkvws
-- name: XX | VMESS
-  type: vmess
-  server: 104.16.60.8
-  port: 2086
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /glweidf.sbs/linkws
-- name: 🇺🇸 US | VMESS_1
-  type: vmess
-  server: 104.21.15.212
-  port: 443
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /linkws
-- name: melibazz_26
-  type: vmess
-  server: 104.18.71.193
-  port: 443
-  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wss51068
-- name: 🇺🇸 V001--US-dlj.tf/ssrsub
-  server: singapore.com
-  port: 8080
-  type: vmess
-  uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /api/v3/download.getFile
-    headers:
-      Host: ssrsub.v01.ssrsub.com
-- name: 🇨🇦 189
-  server: 104.17.84.82
-  port: 8880
-  type: vmess
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /XQ2WCa29jfDM25GBcbnQ
-    headers:
-      Host: poland.yj2022.gq
-- name: github.com/Ruk1ng001_06287c82
-  network: ws
-  port: 2053
-  server: 162.159.44.66
-  servername: fu.baiproxy.us.ci
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
-  ws-opts:
-    headers:
-      Host: fu.baiproxy.us.ci
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /?ed=2560
-- name: 🇺🇸 US-156.146.38.169-0110
-  type: ss
-  server: 156.146.38.169
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 US-156.146.38.167-0111
-  type: ss
-  server: 156.146.38.167
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: XX | VMESS_1
-  type: vmess
-  server: 172.66.213.38
-  port: 443
-  uuid: dfbbc8de-8a4f-407d-8069-6de38d83c4e1
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: grpc
 - name: github.com/Ruk1ng001_0e079bb7
   network: ws
   port: 2053
@@ -618,64 +512,137 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/57.0.2987.133 Safari/537.36
     path: /?ed=2560
-- name: 🇨🇦 CA-144.217.164.29-00
-  server: 144.217.164.29
-  port: 12000
+- name: 🇺🇸 US-173.244.56.6-0117
   type: ss
-  cipher: aes-256-gcm
-  password: 8JCsPssfgS8tiRwiMlhARg==
-- name: melibazz_27
+  server: 173.244.56.6
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: github.com/Ruk1ng001_22701e34
+  network: ws
+  port: 443
+  server: 162.159.44.198
+  servername: fu.baiproxy.us.ci
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: fu.baiproxy.us.ci
+      User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML,
+        like Gecko) Chrome/5.0.342.1 Safari/533.2
+    path: /?ed=2560
+- name: 🇩🇪 DE-82.198.246.250-33
+  server: 82.198.246.250
+  port: 180
   type: vmess
-  server: 104.21.75.246
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: true
+  network: tcp
+  tls: false
+- name: 🇨🇦 >>::CA
+  type: ss
+  server: 148.113.139.160
+  port: 46534
+  cipher: chacha20-ietf-poly1305
+  password: 7a106afc33eaa261
+- name: 🇺🇸 US-104.192.226.106-0148
+  type: ss
+  server: 104.192.226.106
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇩🇪 DEU 2
+  server: www.visa.com.sg
+  port: 2052
+  type: vless
+  uuid: 25efc727-e853-49ba-9609-3c20009d0e7a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: winbiss-0tpka6-v1.winbiss.workers.dev
+  udp: true
+- name: github.com/Ruk1ng001_025759ef
+  network: ws
+  port: 2082
+  server: 104.17.109.71
+  type: vless
+  udp: true
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: index.arcane509.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/41.0.2272.118 Safari/537.36
+    max-early-data: 2560
+    path: /jeyk7gbxzfe1
+- name: 'Join+:'
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 🇩🇪 DE-82.198.246.46-30
+  server: 82.198.246.46
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: true
+  network: tcp
+  tls: false
+- name: 🇺🇸 >>::US
+  type: ss
+  server: 154.53.60.212
   port: 80
-  uuid: d1fb628c-206e-42a7-837b-4147255fbaeb
+  cipher: aes-256-gcm
+  password: ZfbPFDdeBj0B1Txs
+- name: VMESS-173.249.209.146:20086-1960
+  type: vmess
+  server: 173.249.209.146
+  port: 20086
+  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
   alterId: 0
   cipher: auto
   tls: false
   network: ws
   ws-opts:
     path: /
-- name: melibazz_28
-  type: vmess
-  server: 104.21.7.50
-  port: 443
-  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
-  alterId: 0
-  cipher: auto
-  tls: true
+- name: github.com/Ruk1ng001_0cffbbf8
   network: ws
-  ws-opts:
-    path: /wss51068
-- name: RELAY-109.234.211.66-64
-  server: 109.234.211.66
-  port: 2087
-  type: trojan
-  password: trojan
-  sni: store.timimi.dpdns.org
-  skip-cert-verify: true
-- name: melibazz_29
-  type: vmess
-  server: 104.16.219.230
   port: 443
-  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
-  alterId: 0
-  cipher: auto
+  server: 162.159.45.207
+  servername: sss.yaml7.ggff.net
   tls: true
-  network: ws
+  type: vless
+  udp: true
+  uuid: 5aa7d17e-7dc2-46dd-9acf-c3c97440259b
   ws-opts:
-    path: /wss13889
-- name: 🇺🇸 US-38.135.24.131-50
-  server: tinkered-pennies-puppies.freesocks.work
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: hbGrpfvNrJsUmKmPbR3iY2
-- name: 🇨🇦 CA-45.154.204.7-03
-  server: 45.154.204.7
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+    headers:
+      Host: sss.yaml7.ggff.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.79 Safari/537.36
+    path: /?ed=2048
+- name: 🇨🇦 CA-79.127.233.170-18
+  server: 79.127.233.170
+  port: 989
+  type: ssr
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  obfs: plain
+  protocol: origin
+  group: SSRProvider
+  latency: 50
 - name: MX-147.78.1.230-0197
   type: ss
   server: 147.78.1.230
@@ -688,12 +655,90 @@ proxies:
   port: 990
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: MX-147.78.1.230-0198
+  type: ss
+  server: 147.78.1.230
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: 🇺🇸 US-107.151.182.253-10
+  server: 107.151.182.253
+  port: 8080
+  type: ssr
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  obfs: plain
+  protocol: origin
+  group: SSRProvider
+  latency: 56
+- name: 🇨🇦 CA-144.217.164.29-00
+  server: 144.217.164.29
+  port: 12000
+  type: ss
+  cipher: aes-256-gcm
+  password: 8JCsPssfgS8tiRwiMlhARg==
+- name: melibazz_24
+  type: vmess
+  server: 104.16.219.230
+  port: 443
+  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss13889
+- name: 🇨🇦 CA-79.127.233.170-14
+  server: 79.127.233.170
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+- name: melibazz_25
+  type: vmess
+  server: 104.16.180.79
+  port: 443
+  uuid: 43AE625A-F929-4B61-97AD-7CA94C1BCAC0
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /speedtest
 - name: 🇨🇦 CA-23.95.76.59-08
   server: 23.95.76.59
   port: 990
   type: ss
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: 🇨🇦 CA-45.154.204.7-03
+  server: 45.154.204.7
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: melibazz_26
+  type: vmess
+  server: 104.18.190.52
+  port: 443
+  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss13889
+- name: melibazz_27
+  type: vmess
+  server: 104.18.141.98
+  port: 443
+  uuid: F3E36B53-E75E-48C0-B9F1-F918F397E996
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /speedtest
 - name: github.com/Ruk1ng001_058b2829
   network: ws
   port: 443
@@ -709,28 +754,80 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/70.0.3538.102 Safari/537.36
     path: /proxyip=ProxyIP.DE.owg.dpdns.org
-- name: melibazz_30
+- name: RELAY-109.234.211.66-64
+  server: 109.234.211.66
+  port: 2087
+  type: trojan
+  password: trojan
+  sni: store.timimi.dpdns.org
+  skip-cert-verify: true
+- name: melibazz_28
   type: vmess
-  server: 104.17.14.48
+  server: 104.16.176.44
   port: 443
-  uuid: 8f28bbbd-7dc3-4427-a8a7-595796d9ff7d
+  uuid: 2cd39102-0799-4c61-abb6-2e7a258f0397
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
     path: /vmess
-- name: 🇩🇪 DE-82.198.246.250-33
-  server: 82.198.246.250
-  port: 180
+- name: melibazz_29
   type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 104.17.101.35
+  port: 443
+  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
   alterId: 0
   cipher: auto
-  skip-cert-verify: true
-  network: tcp
-  tls: false
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss13889
+- name: melibazz_30
+  type: vmess
+  server: 104.21.39.36
+  port: 443
+  uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /root/
 - name: melibazz_31
+  type: vmess
+  server: 104.21.75.246
+  port: 80
+  uuid: d1fb628c-206e-42a7-837b-4147255fbaeb
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+- name: melibazz_32
+  type: vmess
+  server: 104.21.48.84
+  port: 443
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss51068
+- name: melibazz_33
+  type: vmess
+  server: 104.21.81.238
+  port: 80
+  uuid: 92eb32af-ec3c-40d4-ab83-c3df80af64af
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+- name: melibazz_34
   type: vmess
   server: 104.17.45.51
   port: 443
@@ -741,44 +838,41 @@ proxies:
   network: ws
   ws-opts:
     path: /speedtest
-- alterId: 0
-  cipher: auto
-  name: github.com/Ruk1ng001_8c744d14
-  network: tcp
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: MX-147.78.1.230-0198
+- name: 🇺🇸 US-38.135.24.131-50
+  server: tinkered-pennies-puppies.freesocks.work
+  port: 443
   type: ss
-  server: 147.78.1.230
+  cipher: chacha20-ietf-poly1305
+  password: hbGrpfvNrJsUmKmPbR3iY2
+- name: 🇺🇸 US-71.19.148.143-06
+  server: 71.19.148.143
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: p78naCf2EfOlRSLTX0wFVx
+- name: melibazz_35
+  type: vmess
+  server: 104.17.14.48
+  port: 443
+  uuid: 8f28bbbd-7dc3-4427-a8a7-595796d9ff7d
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /vmess
+- name: CO-154.223.16.212-0209
+  type: ss
+  server: 154.223.16.212
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: '>>::CR'
+  type: ss
+  server: 145.14.131.37
   port: 990
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: 🇩🇪 DE-82.198.246.46-30
-  server: 82.198.246.46
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  skip-cert-verify: true
-  network: tcp
-  tls: false
-- name: 🇺🇸 US-173.249.209.146-0155
-  type: vmess
-  server: 173.249.209.146
-  port: 20086
-  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
 - name: github.com/Ruk1ng001_ceea1110
   network: ws
   port: 443
@@ -794,89 +888,149 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
         Gecko) Chrome/35.0.1916.153 Safari/537.36
     path: /proxyip=ProxyIP.DE.owg.dpdns.org
-- name: 🇺🇸 US-156.146.38.170-0109
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 >>::US
-  type: ss
-  server: 154.53.60.212
-  port: 80
-  cipher: aes-256-gcm
-  password: ZfbPFDdeBj0B1Txs
-- name: 🇨🇦 CA-137.184.174.93-0113
-  type: ss
-  server: 137.184.174.93
-  port: 8080
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 CA-79.127.233.170-18
-  server: 79.127.233.170
-  port: 989
-  type: ssr
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  obfs: plain
-  protocol: origin
-  group: SSRProvider
-  latency: 73
-- name: 🇺🇸 US-173.244.56.6-0117
-  type: ss
-  server: 173.244.56.6
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇨🇦 CA-79.127.233.170-14
-  server: 79.127.233.170
-  port: 990
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-- name: '>>::CR'
-  type: ss
-  server: 145.14.131.37
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- cipher: aes-256-cfb
-  name: github.com/Ruk1ng001_117b525a
-  password: XPtzA9sCug3SPR4c
-  port: 9025
-  server: 5.188.181.201
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: github.com/Ruk1ng001_568e7b60
-  password: JdmRK9gMEqFgs8nP
-  port: 9003
-  server: 5.188.181.201
-  type: ss
-  udp: true
-- name: melibazz_32
+- name: melibazz_36
   type: vmess
-  server: 104.18.190.52
+  server: 104.18.53.172
   port: 443
-  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /wss13889
-- name: 🇨🇦 CA-79.127.200.169-0108
+    path: /wss51068
+- name: PA-138.186.142.81-0152
   type: ss
-  server: 79.127.200.169
+  server: 138.186.142.81
   port: 990
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: CO-154.223.16.212-0209
+- name: PA-138.186.142.80-0153
   type: ss
-  server: 154.223.16.212
+  server: 138.186.142.80
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: 🇺🇸 US-71.19.148.143-13
+  server: pupas-shirting-unsung.freesocks.work
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: p78naCf2EfOlRSLTX0wFVx
+- name: Join+:_1
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: RELAY-104.18.16.77-23
+  server: hgtrojan.zabc.net
+  port: 2083
+  type: vmess
+  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: true
+  network: ws
+  tls: true
+- name: 🇺🇸 US-107.175.91.118-4741
+  type: vmess
+  server: 107.175.91.118
+  port: 443
+  uuid: 1bb1f95f-7425-4442-93f7-8fc1bd1a2001
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /v2ray-wisp
+- cipher: aes-256-cfb
+  name: github.com/Ruk1ng001_f756c796
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 5.188.181.201
+  type: ss
+  udp: true
+- name: Join+:_2
+  type: ss
+  server: 149.102.149.207
+  port: 443
+  cipher: aes-256-gcm
+  password: umWwoQJEJGf74SLe
+- name: EC-38.165.231.25-0115
+  type: ss
+  server: 38.165.231.25
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: 🇬🇧 GB-146.70.61.37-0118
+  type: ss
+  server: 146.70.61.37
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇫🇷 >>::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR
+  type: vmess
+  server: 94.232.247.165
+  port: 45653
+  uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 🇳🇱 NL-51.15.17.169-0150
+  type: ss
+  server: 51.15.17.169
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
+- name: 🇳🇱 NL-51.15.23.63-0179
+  type: ss
+  server: 51.15.23.63
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇬🇧 >>::GB
+  type: ss
+  server: admin.c1.havij.co
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 1kVr0KATIJI7mwOF
+- name: 🇬🇧 >>::GB_1
+  type: ss
+  server: 51.75.168.50
+  port: 13030
+  cipher: chacha20-ietf-poly1305
+  password: 6c815bb84c781da5
+- name: 🇳🇱 NL-193.29.139.179-0137
+  type: ss
+  server: 193.29.139.179
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+- name: 🇳🇱 2
+  type: vless
+  server: 165.232.86.81
+  port: 443
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+  servername: www.aliexpress.com
+  tls: true
+  flow: xtls-rprx-vision
+- name: 🇫🇷 >>::FR
+  type: ss
+  server: 38.242.222.183
+  port: 11201
+  cipher: chacha20-ietf-poly1305
+  password: 52671647af0cffa0
+- name: 🇬🇧 GB-141.98.101.178-0165
+  type: ss
+  server: 141.98.101.178
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
 - alterId: 0
   cipher: auto
   name: 🟡_github.com/Ruk1ng001_d50bebf1
@@ -888,98 +1042,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- name: melibazz_33
-  type: vmess
-  server: 104.16.180.79
-  port: 443
-  uuid: 43AE625A-F929-4B61-97AD-7CA94C1BCAC0
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /speedtest
-- name: 🇫🇷 >>::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR
-  type: vmess
-  server: 94.232.247.165
-  port: 45653
-  uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: RELAY-172.67.197.47-22
-  server: sy4.620720.xyz
-  port: 443
-  type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  alterId: 0
-  cipher: auto
-  skip-cert-verify: true
-  network: ws
-  tls: true
-- name: 🇬🇧 >>::GB
-  type: ss
-  server: series-a2.samanehha.co
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
-- name: melibazz_34
-  type: vmess
-  server: 104.16.176.44
-  port: 443
-  uuid: 2cd39102-0799-4c61-abb6-2e7a258f0397
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /vmess
-- name: 🇬🇧 GB-141.98.101.178-0165
-  type: ss
-  server: 141.98.101.178
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧 >>::GB_1
-  type: ss
-  server: 149.102.149.207
-  port: 443
-  cipher: aes-256-gcm
-  password: umWwoQJEJGf74SLe
-- name: LVA 2
-  server: 51.91.251.149
-  port: 443
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.v6.navy
-  network: ws
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳 @WangCai2
-    headers:
-      Host: sni.111000.v6.navy
-  udp: true
-- name: 🇳🇱 2
-  type: vless
-  server: 165.232.86.81
-  port: 443
-  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-  servername: www.aliexpress.com
-  tls: true
-  flow: xtls-rprx-vision
-- name: melibazz_35
-  type: vmess
-  server: 104.17.101.35
-  port: 443
-  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wss13889
-- name: VLESS-95.164.36.217:443-8355
+- name: VLESS-95.164.36.217:443-1160
   type: vless
   server: 95.164.36.217
   port: 443
@@ -987,15 +1050,13 @@ proxies:
   servername: www.booking.com
   tls: true
   flow: xtls-rprx-vision
-- name: 🇩🇪 8
-  type: vless
-  server: 130.162.220.137
+- name: 🇳🇱 NL-109.201.152.181-0139
+  type: ss
+  server: 109.201.152.181
   port: 443
-  uuid: fadab0a4-861d-4ebf-89ac-c9b34aef631a
-  servername: www.lamer.com
-  tls: true
-  flow: xtls-rprx-vision
-- name: 🇳🇱 VLESS-5.255.107.115:443-8825
+  cipher: aes-128-cfb
+  password: shadowsocks
+- name: 🇳🇱 VLESS-5.255.107.115:443-6102
   type: vless
   server: 5.255.107.115
   port: 443
@@ -1003,59 +1064,257 @@ proxies:
   servername: nll.scroogethebest.com
   tls: true
   flow: xtls-rprx-vision
-- name: BE-192.71.249.78-0218
-  type: ss
-  server: 192.71.249.78
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇷🇺 6
-  type: vless
-  server: 138.124.186.80
-  port: 443
-  uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
-  servername: www.fh-aachen.de
-  tls: true
-  flow: xtls-rprx-vision
-- name: 🇩🇪 DE | VMESS
-  type: vmess
-  server: 142.132.163.200
-  port: 80
-  uuid: 7f965e3e-b03f-455e-a96e-01b61f72537a
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /graphql
 - name: 🇩🇪 >>::DE
   type: ss
   server: 95.85.239.225
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: X6btbRvJCo3uTQ--yaaT8Mvh0CgqhYTL
-- name: 🇳🇱 NL-51.15.23.63-0179
+- name: 🇳🇱 >>::NL
   type: ss
-  server: 51.15.23.63
+  server: 82.38.31.210
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: BE-192.71.249.78-0218
+  type: ss
+  server: 192.71.249.78
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: RELAY-104.21.76.158-02
-  server: t1.620720.xyz
-  port: 8443
-  type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  alterId: 0
-  cipher: auto
-  skip-cert-verify: true
-  network: ws
+- name: SS-82.38.31.184:8080-7294
+  type: ss
+  server: 82.38.31.184
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 NL | SS
+  type: ss
+  server: 193.29.139.235
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇫🇷 FR | SS
+  type: ss
+  server: 57.130.28.148
+  port: 11201
+  cipher: chacha20-ietf-poly1305
+  password: 74918bc801d53a4b
+- name: 82.38.31.176
+  type: ss
+  server: 82.38.31.176
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 82.38.31.194
+  type: ss
+  server: 82.38.31.194
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 82.38.31.202
+  type: ss
+  server: 82.38.31.202
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 NL-193.29.139.202-0124
+  type: ss
+  server: 193.29.139.202
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 NL-193.29.139.141-0147
+  type: ss
+  server: 193.29.139.141
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 NL-193.29.139.189-0116
+  type: ss
+  server: 193.29.139.189
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+- name: 🇳🇱 NL-193.29.139.206-0133
+  type: ss
+  server: 193.29.139.206
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+- name: 🇬🇧 GB-82.38.31.35-0126
+  type: ss
+  server: 82.38.31.35
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇬🇧 GB-82.38.31.124-0144
+  type: ss
+  server: 82.38.31.124
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: github.com/Ruk1ng001_4872772b
+  network: tcp
+  port: 10086
+  server: 204.216.216.23
+  type: vless
+  udp: true
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+- name: 🇬🇧 GB | SS
+  type: ss
+  server: 141.98.101.182
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇳🇱 NL-193.29.139.251-0146
+  type: ss
+  server: 193.29.139.251
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: VLESS-159.195.77.197:7443-7274
+  type: vless
+  server: 159.195.77.197
+  port: 7443
+  uuid: 8f8380ae-9f5d-4cb5-8f5f-0f70fbe054a9
+  servername: chat.deepseek.com
   tls: true
+  flow: xtls-rprx-vision
 - name: 🇩🇪 >>::DE_1
   type: ss
   server: 57.129.95.38
   port: 11201
   cipher: chacha20-ietf-poly1305
   password: f54cdee10f8b25ce
+- name: 🇳🇱 >>::NL_1
+  type: ss
+  server: 82.38.31.61
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 82.38.31.187
+  type: ss
+  server: 82.38.31.187
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇬🇧 GB_961ca_0002
+  server: 138.124.186.202
+  port: 443
+  type: vless
+  uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.fh-aachen.de
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+  udp: true
+- name: 🇳🇱 >>::NL_2
+  type: ss
+  server: 193.29.139.217
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+- name: 82.38.31.179
+  type: ss
+  server: 82.38.31.179
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 82.38.31.191
+  type: ss
+  server: 82.38.31.191
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇩🇪 9
+  type: vless
+  server: 45.77.66.142
+  port: 443
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+  servername: www.zalando.de
+  tls: true
+  flow: xtls-rprx-vision
+- name: 🇳🇱 >>::NL_3
+  type: ss
+  server: 193.29.139.199
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+- name: 🇳🇱 >>::NL_4
+  type: ss
+  server: 82.38.31.205
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 >>::NL_5
+  type: ss
+  server: 82.38.31.199
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 82.38.31.217
+  type: ss
+  server: 82.38.31.217
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 NL-193.29.139.157-0138
+  type: ss
+  server: 193.29.139.157
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+- name: 🇬🇧 GB-82.38.31.99-0121
+  type: ss
+  server: 82.38.31.99
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇳🇱 NL-213.109.147.242-0186
+  type: ss
+  server: 213.109.147.242
+  port: 62685
+  cipher: chacha20-ietf-poly1305
+  password: VpKABcOpNNA0l5G2AVOmw8
+- name: 🇳🇱 NL-193.29.139.227-0132
+  type: ss
+  server: 193.29.139.227
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+- cipher: aes-256-cfb
+  name: github.com/Ruk1ng001_d268fb39
+  password: BNmAXXxAHYpTRdzu
+  port: 9020
+  server: 217.30.10.70
+  type: ss
+- name: 🇩🇪 >>::DE_2
+  type: ss
+  server: 57.129.95.45
+  port: 11201
+  cipher: chacha20-ietf-poly1305
+  password: 6675cbf62d6a3a4f
+- name: 82.38.31.218
+  type: ss
+  server: 82.38.31.218
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇬🇧 GB-82.38.31.189-0140
+  type: ss
+  server: 82.38.31.189
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: DK-192.36.27.94-0188
+  type: ss
+  server: 192.36.27.94
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
 - name: 🇸🇬 SGP
   server: t.cnmjcn.cyou
   port: 16618
@@ -1071,228 +1330,48 @@ proxies:
     headers:
       Host: 7a297964a2b31dafd3529ef4d14574b9.mobgslb.tbcache.com
   udp: true
-- name: melibazz_36
-  type: vmess
-  server: 104.19.208.207
-  port: 443
-  uuid: 64480f4c-61c2-4d88-89c3-fc0045229bfc
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /kplxvws
-- name: 🇩🇪 >>::DE_2
+- name: 🇬🇧 GB-82.38.31.101-0131
   type: ss
-  server: 135.125.245.131
-  port: 20939
-  cipher: chacha20-ietf-poly1305
-  password: 85d3d8ccba287d3e
-- name: 🇩🇪 >>::DE_3
-  type: ss
-  server: 141.95.106.127
-  port: 11201
-  cipher: chacha20-ietf-poly1305
-  password: 94aae0510188e8c5
-- name: 🇬🇧 >>::GB_2
-  type: ss
-  server: admin.c1.havij.co
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 1kVr0KATIJI7mwOF
-- name: 🇬🇧 GB_961ca_0002
-  server: 138.124.186.202
-  port: 443
-  type: vless
-  uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  servername: www.fh-aachen.de
-  reality-opts:
-    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
-  udp: true
-- name: 🇩🇪 >>::DE_4
-  type: ss
-  server: 57.129.94.79
-  port: 11206
-  cipher: chacha20-ietf-poly1305
-  password: 70c455c9f19aa3a5
-- name: EC-38.165.231.25-0115
-  type: ss
-  server: 38.165.231.25
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- alterId: 0
-  cipher: auto
-  name: github.com/Ruk1ng001_41698204
-  network: ws
-  port: 16632
-  server: planb.mojcn.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c6e0db22-c963-4c99-9f7d-ee8a39f64a07
-  ws-opts:
-    headers:
-      Host: fc05e62e9e82b8264faaba517868b9e8.mobgslb.tbcache.com
-    path: /
-- name: 🇫🇷 FR | SS
-  type: ss
-  server: 57.130.28.148
-  port: 11201
-  cipher: chacha20-ietf-poly1305
-  password: 74918bc801d53a4b
-- name: 🇳🇱 >>::NL
-  type: ss
-  server: 82.38.31.205
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 NL-193.29.139.189-0116
-  type: ss
-  server: 193.29.139.189
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: cvII85TrW6n0OGyfpHVS1u
-- name: 🇳🇱 NL-193.29.139.206-0133
-  type: ss
-  server: 193.29.139.206
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-- name: 🇳🇱 NL-193.29.139.251-0146
-  type: ss
-  server: 193.29.139.251
+  server: 82.38.31.101
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: DK-192.36.27.94-0188
-  type: ss
-  server: 192.36.27.94
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 'Join+:'
-  type: ss
-  server: 38.180.161.123
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: melibazz_37
+- name: 🇩🇪 DE | VMESS
   type: vmess
-  server: 104.18.141.98
-  port: 443
-  uuid: F3E36B53-E75E-48C0-B9F1-F918F397E996
+  server: 142.132.163.200
+  port: 80
+  uuid: 7f965e3e-b03f-455e-a96e-01b61f72537a
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
   network: ws
   ws-opts:
-    path: /speedtest
-- name: 🇳🇱 >>::NL_1
+    path: /graphql
+- name: 🇩🇪 >>::DE_3
+  type: ss
+  server: 141.95.109.94
+  port: 11201
+  cipher: chacha20-ietf-poly1305
+  password: 10f90af92b6c1a74
+- name: 🇳🇱 >>::NL_6
   type: ss
   server: 193.29.139.143
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: 1RWwXhwfAB5gAEozU4G2Pg
-- name: 🇳🇱 >>::NL_2
-  type: ss
-  server: 82.38.31.184
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 >>::NL_3
-  type: ss
-  server: 82.38.31.61
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 >>::NL_4
-  type: ss
-  server: 82.38.31.82
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 NL-193.29.139.202-0124
-  type: ss
-  server: 193.29.139.202
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 NL-193.29.139.141-0147
-  type: ss
-  server: 193.29.139.141
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇬🇧 GB-82.38.31.35-0126
-  type: ss
-  server: 82.38.31.35
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 🇳🇱 NL-193.29.139.227-0132
-  type: ss
-  server: 193.29.139.227
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-- name: github.com/Ruk1ng001_4872772b
-  network: tcp
-  port: 10086
-  server: 204.216.216.23
+- name: LVA 2
+  server: 51.91.251.149
+  port: 443
   type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.v6.navy
+  network: ws
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳 @WangCai2
+    headers:
+      Host: sni.111000.v6.navy
   udp: true
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-- name: 🇩🇪 >>::DE_5
-  type: ss
-  server: 57.129.95.45
-  port: 11201
-  cipher: chacha20-ietf-poly1305
-  password: 6675cbf62d6a3a4f
-- name: 🇳🇱 >>::NL_5
-  type: ss
-  server: 193.29.139.199
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: QCXDxuDlTTMD7jtgHUjIoj
-- name: 🇳🇱 >>::NL_6
-  type: ss
-  server: 82.38.31.210
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 >>::NL_7
-  type: ss
-  server: 82.38.31.199
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 NL-193.29.139.179-0137
-  type: ss
-  server: 193.29.139.179
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: cvII85TrW6n0OGyfpHVS1u
-- name: 🇷🇺 5
-  type: vless
-  server: 193.233.127.219
-  port: 443
-  uuid: 6fd9f786-d974-49d0-b5c4-397678de69a2
-  servername: www.cybo.com
-  tls: true
-  flow: xtls-rprx-vision
-- name: 🇩🇪 9
-  type: vless
-  server: 45.77.66.142
-  port: 443
-  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-  servername: www.zalando.de
-  tls: true
-  flow: xtls-rprx-vision
 - name: RELAY-167.68.4.199-54
   server: 167.68.4.199
   port: 2053
@@ -1300,98 +1379,15 @@ proxies:
   password: Aimer
   sni: epge.muarua.filegear-sg.me
   skip-cert-verify: true
-- name: 82.38.31.187
+- name: 🇩🇪 >>::DE_4
   type: ss
-  server: 82.38.31.187
-  port: 8080
+  server: 135.125.245.131
+  port: 20939
   cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 NL-213.109.147.242-0186
+  password: 85d3d8ccba287d3e
+- name: 82.38.31.214
   type: ss
-  server: 213.109.147.242
-  port: 62685
-  cipher: chacha20-ietf-poly1305
-  password: VpKABcOpNNA0l5G2AVOmw8
-- name: 🇳🇱 NL-51.15.17.169-0150
-  type: ss
-  server: 51.15.17.169
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇳🇱 >>::NL_8
-  type: ss
-  server: 193.29.139.217
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-- name: 🇩🇪 >>::DE_6
-  type: ss
-  server: 141.95.109.94
-  port: 11201
-  cipher: chacha20-ietf-poly1305
-  password: 10f90af92b6c1a74
-- name: 🇳🇱 NL-193.29.139.157-0138
-  type: ss
-  server: 193.29.139.157
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-- name: PA-138.186.142.80-0153
-  type: ss
-  server: 138.186.142.80
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: Join+:_1
-  type: vmess
-  server: fsdns1.ectunnelvpn.me
-  port: 80
-  uuid: 6b2d86e5-df05-4511-a79f-82d53ce99b36
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /vmess
-- name: 🇬🇧 >>::GB_3
-  type: ss
-  server: 51.75.168.50
-  port: 13030
-  cipher: chacha20-ietf-poly1305
-  password: 6c815bb84c781da5
-- name: 82.38.31.179
-  type: ss
-  server: 82.38.31.179
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 82.38.31.190
-  type: ss
-  server: 82.38.31.190
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇺🇸 US-71.19.148.143-13
-  server: pupas-shirting-unsung.freesocks.work
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: p78naCf2EfOlRSLTX0wFVx
-- name: 🇳🇱 >>::NL_9
-  type: ss
-  server: 193.29.139.204
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: 82.38.31.194
-  type: ss
-  server: 82.38.31.194
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 82.38.31.191
-  type: ss
-  server: 82.38.31.191
+  server: 82.38.31.214
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -1401,6 +1397,22 @@ proxies:
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
+- name: RELAY-172.67.197.47-22
+  server: sy4.620720.xyz
+  port: 443
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: true
+  network: ws
+  tls: true
+- name: 🇩🇪 DE-38.60.250.107-0221
+  type: ss
+  server: 38.60.250.107
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - cipher: aes-256-cfb
   name: github.com/Ruk1ng001_0e9faa4d
   password: UkXRsXvR6buDMG2Y
@@ -1408,87 +1420,26 @@ proxies:
   server: 217.30.10.70
   type: ss
   udp: true
-- name: '>>::FI'
-  type: ss
-  server: 193.47.60.186
-  port: 28687
-  cipher: chacha20-ietf-poly1305
-  password: yKVMoB3AwiTEznpnoq2FYR
-- name: 🇩🇪 >>::DE_7
-  type: ss
-  server: 57.128.214.100
-  port: 12000
-  cipher: aes-256-gcm
-  password: 8JCsPssfgS8tiRwiMlhARg==
-- alterId: 0
-  cipher: auto
-  name: github.com/Ruk1ng001_4ad032a1
-  network: ws
-  port: 16626
-  server: planb.mojcn.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: dd5d705b-2343-4afd-b4a2-d7722f0b71a9
-  ws-opts:
-    headers:
-      Host: f8175b07847544d116c785ef5149ef79.mobgslb.tbcache.com
-    path: /
-- name: VLESS-45.83.21.39:443-7616
+- name: '2'
   type: vless
-  server: 45.83.21.39
-  port: 443
-  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-  servername: www.grab.com
+  server: 45.12.146.179
+  port: 8443
+  uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
+  servername: tradingview.com
   tls: true
   flow: xtls-rprx-vision
-- name: '>>::LV'
+- name: 🇩🇪 >>::DE_5
   type: ss
-  server: 185.176.221.72
-  port: 24637
+  server: 57.129.94.79
+  port: 11206
   cipher: chacha20-ietf-poly1305
-  password: MholStyHL7DhrewKbpQa20
-- name: 82.38.31.176
+  password: 70c455c9f19aa3a5
+- name: 82.38.31.190
   type: ss
-  server: 82.38.31.176
+  server: 82.38.31.190
   port: 8080
   cipher: chacha20-ietf-poly1305
   password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇩🇪 4
-  type: vless
-  server: de.base.nodes.wagvpn.club
-  port: 443
-  uuid: 2e5ba364-e75f-4a71-a752-820b6abdbe97
-  servername: bunny.net
-  tls: true
-  flow: xtls-rprx-vision
-- name: LV-46.183.217.204-0157
-  type: ss
-  server: 46.183.217.204
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: VLESS-77.81.98.70:443-6895
-  type: vless
-  server: 77.81.98.70
-  port: 443
-  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-  servername: www.aliexpress.com
-  tls: true
-  flow: xtls-rprx-vision
-- name: MT-171.22.254.17-0154
-  type: ss
-  server: 171.22.254.17
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: SI-192.71.244.150-0208
-  type: ss
-  server: 192.71.244.150
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -1497,173 +1448,172 @@ proxy-groups:
   - 🔮 故障转移
   - DIRECT
   - melibazz
+  - V10-dlj.tf/ssrsub
   - melibazz_1
   - melibazz_2
+  - RELAY-170.114.45.6-20
   - melibazz_3
   - melibazz_4
-  - 🇺🇸 US-216.24.57.250-94
+  - 🇺🇸 US | VMESS
+  - V11-dlj.tf/ssrsub
   - melibazz_5
   - melibazz_6
   - melibazz_7
   - melibazz_8
+  - 🇺🇸 US-156.146.38.170-0109
+  - 🇺🇸 V001--US-dlj.tf/ssrsub
+  - 🇺🇸 US-216.24.57.250-94
   - melibazz_9
   - melibazz_10
   - melibazz_11
   - melibazz_12
+  - github.com/Ruk1ng001_c2f70919
+  - XX | VMESS
+  - XX | VMESS_1
+  - github.com/Ruk1ng001_2b0e31c8
+  - 🇨🇦 CA-79.127.200.169-0108
   - melibazz_13
   - melibazz_14
   - melibazz_15
   - melibazz_16
-  - 🇺🇸 >>::US::US::US::US::US::US::US::US::US::US::US::US
-  - V10-dlj.tf/ssrsub
-  - github.com/Ruk1ng001_025759ef
-  - github.com/Ruk1ng001_2b0e31c8
-  - github.com/Ruk1ng001_c2f70919
-  - github.com/Ruk1ng001_22701e34
-  - RELAY-170.114.45.6-20
   - melibazz_17
   - melibazz_18
   - melibazz_19
   - melibazz_20
-  - V11-dlj.tf/ssrsub
-  - github.com/Ruk1ng001_b2cbcc6f
-  - 🇺🇸 US-15.204.247.49-12
   - melibazz_21
-  - melibazz_22
+  - 🇺🇸 US-156.146.38.167-0111
+  - '102620170'
+  - 🇺🇸 >>::US::US::US::US::US::US::US::US::US::US::US::US
   - 🇺🇸 US-23.95.75.146-16
+  - melibazz_22
+  - 🇺🇸 US | VMESS_1
+  - 🇨🇦 CA-137.184.174.93-0113
+  - 🇺🇸 US-156.146.38.169-0110
+  - 🇺🇸 US-15.204.247.49-12
   - melibazz_23
-  - melibazz_24
-  - melibazz_25
   - 🇺🇸 US-37.19.198.236-0145
   - github.com/Ruk1ng001_743fcc29
-  - '102620170'
-  - 🇩🇪 DEU 2
-  - 🇨🇦 >>::CA
-  - 🇺🇸 US | VMESS
-  - XX | VMESS
-  - 🇺🇸 US | VMESS_1
-  - melibazz_26
-  - 🇺🇸 V001--US-dlj.tf/ssrsub
-  - 🇨🇦 189
-  - github.com/Ruk1ng001_06287c82
-  - 🇺🇸 US-156.146.38.169-0110
-  - 🇺🇸 US-156.146.38.167-0111
-  - XX | VMESS_1
   - github.com/Ruk1ng001_0e079bb7
-  - 🇨🇦 CA-144.217.164.29-00
-  - melibazz_27
-  - melibazz_28
-  - RELAY-109.234.211.66-64
-  - melibazz_29
-  - 🇺🇸 US-38.135.24.131-50
-  - 🇨🇦 CA-45.154.204.7-03
+  - 🇺🇸 US-173.244.56.6-0117
+  - github.com/Ruk1ng001_22701e34
+  - 🇩🇪 DE-82.198.246.250-33
+  - 🇨🇦 >>::CA
+  - 🇺🇸 US-104.192.226.106-0148
+  - 🇩🇪 DEU 2
+  - github.com/Ruk1ng001_025759ef
+  - 'Join+:'
+  - 🇩🇪 DE-82.198.246.46-30
+  - 🇺🇸 >>::US
+  - VMESS-173.249.209.146:20086-1960
+  - github.com/Ruk1ng001_0cffbbf8
+  - 🇨🇦 CA-79.127.233.170-18
   - MX-147.78.1.230-0197
   - 🇺🇸 US-173.234.29.2-0114
-  - 🇨🇦 CA-23.95.76.59-08
-  - github.com/Ruk1ng001_058b2829
-  - melibazz_30
-  - 🇩🇪 DE-82.198.246.250-33
-  - melibazz_31
-  - github.com/Ruk1ng001_8c744d14
   - MX-147.78.1.230-0198
-  - 🇩🇪 DE-82.198.246.46-30
-  - 🇺🇸 US-173.249.209.146-0155
-  - github.com/Ruk1ng001_ceea1110
-  - 🇺🇸 US-156.146.38.170-0109
-  - 🇺🇸 >>::US
-  - 🇨🇦 CA-137.184.174.93-0113
-  - 🇨🇦 CA-79.127.233.170-18
-  - 🇺🇸 US-173.244.56.6-0117
+  - 🇺🇸 US-107.151.182.253-10
+  - 🇨🇦 CA-144.217.164.29-00
+  - melibazz_24
   - 🇨🇦 CA-79.127.233.170-14
-  - '>>::CR'
-  - github.com/Ruk1ng001_117b525a
-  - github.com/Ruk1ng001_568e7b60
+  - melibazz_25
+  - 🇨🇦 CA-23.95.76.59-08
+  - 🇨🇦 CA-45.154.204.7-03
+  - melibazz_26
+  - melibazz_27
+  - github.com/Ruk1ng001_058b2829
+  - RELAY-109.234.211.66-64
+  - melibazz_28
+  - melibazz_29
+  - melibazz_30
+  - melibazz_31
   - melibazz_32
-  - 🇨🇦 CA-79.127.200.169-0108
-  - CO-154.223.16.212-0209
-  - 🟡_github.com/Ruk1ng001_d50bebf1
   - melibazz_33
-  - 🇫🇷 >>::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR
-  - RELAY-172.67.197.47-22
-  - 🇬🇧 >>::GB
   - melibazz_34
-  - 🇬🇧 GB-141.98.101.178-0165
-  - 🇬🇧 >>::GB_1
-  - LVA 2
-  - 🇳🇱 2
+  - 🇺🇸 US-38.135.24.131-50
+  - 🇺🇸 US-71.19.148.143-06
   - melibazz_35
-  - VLESS-95.164.36.217:443-8355
-  - 🇩🇪 8
-  - 🇳🇱 VLESS-5.255.107.115:443-8825
-  - BE-192.71.249.78-0218
-  - 🇷🇺 6
-  - 🇩🇪 DE | VMESS
-  - 🇩🇪 >>::DE
-  - 🇳🇱 NL-51.15.23.63-0179
-  - RELAY-104.21.76.158-02
-  - 🇩🇪 >>::DE_1
-  - 🇸🇬 SGP
+  - CO-154.223.16.212-0209
+  - '>>::CR'
+  - github.com/Ruk1ng001_ceea1110
   - melibazz_36
-  - 🇩🇪 >>::DE_2
-  - 🇩🇪 >>::DE_3
-  - 🇬🇧 >>::GB_2
-  - 🇬🇧 GB_961ca_0002
-  - 🇩🇪 >>::DE_4
+  - PA-138.186.142.81-0152
+  - PA-138.186.142.80-0153
+  - 🇺🇸 US-71.19.148.143-13
+  - Join+:_1
+  - RELAY-104.18.16.77-23
+  - 🇺🇸 US-107.175.91.118-4741
+  - github.com/Ruk1ng001_f756c796
+  - Join+:_2
   - EC-38.165.231.25-0115
-  - github.com/Ruk1ng001_41698204
-  - 🇫🇷 FR | SS
+  - 🇬🇧 GB-146.70.61.37-0118
+  - 🇫🇷 >>::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR
+  - 🇳🇱 NL-51.15.17.169-0150
+  - 🇳🇱 NL-51.15.23.63-0179
+  - 🇬🇧 >>::GB
+  - 🇬🇧 >>::GB_1
+  - 🇳🇱 NL-193.29.139.179-0137
+  - 🇳🇱 2
+  - 🇫🇷 >>::FR
+  - 🇬🇧 GB-141.98.101.178-0165
+  - 🟡_github.com/Ruk1ng001_d50bebf1
+  - VLESS-95.164.36.217:443-1160
+  - 🇳🇱 NL-109.201.152.181-0139
+  - 🇳🇱 VLESS-5.255.107.115:443-6102
+  - 🇩🇪 >>::DE
   - 🇳🇱 >>::NL
-  - 🇳🇱 NL-193.29.139.189-0116
-  - 🇳🇱 NL-193.29.139.206-0133
-  - 🇳🇱 NL-193.29.139.251-0146
-  - DK-192.36.27.94-0188
-  - 'Join+:'
-  - melibazz_37
-  - 🇳🇱 >>::NL_1
-  - 🇳🇱 >>::NL_2
-  - 🇳🇱 >>::NL_3
-  - 🇳🇱 >>::NL_4
+  - BE-192.71.249.78-0218
+  - SS-82.38.31.184:8080-7294
+  - 🇳🇱 NL | SS
+  - 🇫🇷 FR | SS
+  - 82.38.31.176
+  - 82.38.31.194
+  - 82.38.31.202
   - 🇳🇱 NL-193.29.139.202-0124
   - 🇳🇱 NL-193.29.139.141-0147
+  - 🇳🇱 NL-193.29.139.189-0116
+  - 🇳🇱 NL-193.29.139.206-0133
   - 🇬🇧 GB-82.38.31.35-0126
-  - 🇳🇱 NL-193.29.139.227-0132
+  - 🇬🇧 GB-82.38.31.124-0144
   - github.com/Ruk1ng001_4872772b
-  - 🇩🇪 >>::DE_5
-  - 🇳🇱 >>::NL_5
-  - 🇳🇱 >>::NL_6
-  - 🇳🇱 >>::NL_7
-  - 🇳🇱 NL-193.29.139.179-0137
-  - 🇷🇺 5
-  - 🇩🇪 9
-  - RELAY-167.68.4.199-54
+  - 🇬🇧 GB | SS
+  - 🇳🇱 NL-193.29.139.251-0146
+  - VLESS-159.195.77.197:7443-7274
+  - 🇩🇪 >>::DE_1
+  - 🇳🇱 >>::NL_1
   - 82.38.31.187
-  - 🇳🇱 NL-213.109.147.242-0186
-  - 🇳🇱 NL-51.15.17.169-0150
-  - 🇳🇱 >>::NL_8
-  - 🇩🇪 >>::DE_6
-  - 🇳🇱 NL-193.29.139.157-0138
-  - PA-138.186.142.80-0153
-  - Join+:_1
-  - 🇬🇧 >>::GB_3
+  - 🇬🇧 GB_961ca_0002
+  - 🇳🇱 >>::NL_2
   - 82.38.31.179
-  - 82.38.31.190
-  - 🇺🇸 US-71.19.148.143-13
-  - 🇳🇱 >>::NL_9
-  - 82.38.31.194
   - 82.38.31.191
+  - 🇩🇪 9
+  - 🇳🇱 >>::NL_3
+  - 🇳🇱 >>::NL_4
+  - 🇳🇱 >>::NL_5
+  - 82.38.31.217
+  - 🇳🇱 NL-193.29.139.157-0138
+  - 🇬🇧 GB-82.38.31.99-0121
+  - 🇳🇱 NL-213.109.147.242-0186
+  - 🇳🇱 NL-193.29.139.227-0132
+  - github.com/Ruk1ng001_d268fb39
+  - 🇩🇪 >>::DE_2
+  - 82.38.31.218
+  - 🇬🇧 GB-82.38.31.189-0140
+  - DK-192.36.27.94-0188
+  - 🇸🇬 SGP
+  - 🇬🇧 GB-82.38.31.101-0131
+  - 🇩🇪 DE | VMESS
+  - 🇩🇪 >>::DE_3
+  - 🇳🇱 >>::NL_6
+  - LVA 2
+  - RELAY-167.68.4.199-54
+  - 🇩🇪 >>::DE_4
+  - 82.38.31.214
   - HR-46.183.184.60-0192
+  - RELAY-172.67.197.47-22
+  - 🇩🇪 DE-38.60.250.107-0221
   - github.com/Ruk1ng001_0e9faa4d
-  - '>>::FI'
-  - 🇩🇪 >>::DE_7
-  - github.com/Ruk1ng001_4ad032a1
-  - VLESS-45.83.21.39:443-7616
-  - '>>::LV'
-  - 82.38.31.176
-  - 🇩🇪 4
-  - LV-46.183.217.204-0157
-  - VLESS-77.81.98.70:443-6895
-  - MT-171.22.254.17-0154
-  - SI-192.71.244.150-0208
+  - '2'
+  - 🇩🇪 >>::DE_5
+  - 82.38.31.190
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1671,173 +1621,172 @@ proxy-groups:
   tolerance: 50
   proxies: &id001
   - melibazz
+  - V10-dlj.tf/ssrsub
   - melibazz_1
   - melibazz_2
+  - RELAY-170.114.45.6-20
   - melibazz_3
   - melibazz_4
-  - 🇺🇸 US-216.24.57.250-94
+  - 🇺🇸 US | VMESS
+  - V11-dlj.tf/ssrsub
   - melibazz_5
   - melibazz_6
   - melibazz_7
   - melibazz_8
+  - 🇺🇸 US-156.146.38.170-0109
+  - 🇺🇸 V001--US-dlj.tf/ssrsub
+  - 🇺🇸 US-216.24.57.250-94
   - melibazz_9
   - melibazz_10
   - melibazz_11
   - melibazz_12
+  - github.com/Ruk1ng001_c2f70919
+  - XX | VMESS
+  - XX | VMESS_1
+  - github.com/Ruk1ng001_2b0e31c8
+  - 🇨🇦 CA-79.127.200.169-0108
   - melibazz_13
   - melibazz_14
   - melibazz_15
   - melibazz_16
-  - 🇺🇸 >>::US::US::US::US::US::US::US::US::US::US::US::US
-  - V10-dlj.tf/ssrsub
-  - github.com/Ruk1ng001_025759ef
-  - github.com/Ruk1ng001_2b0e31c8
-  - github.com/Ruk1ng001_c2f70919
-  - github.com/Ruk1ng001_22701e34
-  - RELAY-170.114.45.6-20
   - melibazz_17
   - melibazz_18
   - melibazz_19
   - melibazz_20
-  - V11-dlj.tf/ssrsub
-  - github.com/Ruk1ng001_b2cbcc6f
-  - 🇺🇸 US-15.204.247.49-12
   - melibazz_21
-  - melibazz_22
+  - 🇺🇸 US-156.146.38.167-0111
+  - '102620170'
+  - 🇺🇸 >>::US::US::US::US::US::US::US::US::US::US::US::US
   - 🇺🇸 US-23.95.75.146-16
+  - melibazz_22
+  - 🇺🇸 US | VMESS_1
+  - 🇨🇦 CA-137.184.174.93-0113
+  - 🇺🇸 US-156.146.38.169-0110
+  - 🇺🇸 US-15.204.247.49-12
   - melibazz_23
-  - melibazz_24
-  - melibazz_25
   - 🇺🇸 US-37.19.198.236-0145
   - github.com/Ruk1ng001_743fcc29
-  - '102620170'
-  - 🇩🇪 DEU 2
-  - 🇨🇦 >>::CA
-  - 🇺🇸 US | VMESS
-  - XX | VMESS
-  - 🇺🇸 US | VMESS_1
-  - melibazz_26
-  - 🇺🇸 V001--US-dlj.tf/ssrsub
-  - 🇨🇦 189
-  - github.com/Ruk1ng001_06287c82
-  - 🇺🇸 US-156.146.38.169-0110
-  - 🇺🇸 US-156.146.38.167-0111
-  - XX | VMESS_1
   - github.com/Ruk1ng001_0e079bb7
-  - 🇨🇦 CA-144.217.164.29-00
-  - melibazz_27
-  - melibazz_28
-  - RELAY-109.234.211.66-64
-  - melibazz_29
-  - 🇺🇸 US-38.135.24.131-50
-  - 🇨🇦 CA-45.154.204.7-03
+  - 🇺🇸 US-173.244.56.6-0117
+  - github.com/Ruk1ng001_22701e34
+  - 🇩🇪 DE-82.198.246.250-33
+  - 🇨🇦 >>::CA
+  - 🇺🇸 US-104.192.226.106-0148
+  - 🇩🇪 DEU 2
+  - github.com/Ruk1ng001_025759ef
+  - 'Join+:'
+  - 🇩🇪 DE-82.198.246.46-30
+  - 🇺🇸 >>::US
+  - VMESS-173.249.209.146:20086-1960
+  - github.com/Ruk1ng001_0cffbbf8
+  - 🇨🇦 CA-79.127.233.170-18
   - MX-147.78.1.230-0197
   - 🇺🇸 US-173.234.29.2-0114
-  - 🇨🇦 CA-23.95.76.59-08
-  - github.com/Ruk1ng001_058b2829
-  - melibazz_30
-  - 🇩🇪 DE-82.198.246.250-33
-  - melibazz_31
-  - github.com/Ruk1ng001_8c744d14
   - MX-147.78.1.230-0198
-  - 🇩🇪 DE-82.198.246.46-30
-  - 🇺🇸 US-173.249.209.146-0155
-  - github.com/Ruk1ng001_ceea1110
-  - 🇺🇸 US-156.146.38.170-0109
-  - 🇺🇸 >>::US
-  - 🇨🇦 CA-137.184.174.93-0113
-  - 🇨🇦 CA-79.127.233.170-18
-  - 🇺🇸 US-173.244.56.6-0117
+  - 🇺🇸 US-107.151.182.253-10
+  - 🇨🇦 CA-144.217.164.29-00
+  - melibazz_24
   - 🇨🇦 CA-79.127.233.170-14
-  - '>>::CR'
-  - github.com/Ruk1ng001_117b525a
-  - github.com/Ruk1ng001_568e7b60
+  - melibazz_25
+  - 🇨🇦 CA-23.95.76.59-08
+  - 🇨🇦 CA-45.154.204.7-03
+  - melibazz_26
+  - melibazz_27
+  - github.com/Ruk1ng001_058b2829
+  - RELAY-109.234.211.66-64
+  - melibazz_28
+  - melibazz_29
+  - melibazz_30
+  - melibazz_31
   - melibazz_32
-  - 🇨🇦 CA-79.127.200.169-0108
-  - CO-154.223.16.212-0209
-  - 🟡_github.com/Ruk1ng001_d50bebf1
   - melibazz_33
-  - 🇫🇷 >>::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR
-  - RELAY-172.67.197.47-22
-  - 🇬🇧 >>::GB
   - melibazz_34
-  - 🇬🇧 GB-141.98.101.178-0165
-  - 🇬🇧 >>::GB_1
-  - LVA 2
-  - 🇳🇱 2
+  - 🇺🇸 US-38.135.24.131-50
+  - 🇺🇸 US-71.19.148.143-06
   - melibazz_35
-  - VLESS-95.164.36.217:443-8355
-  - 🇩🇪 8
-  - 🇳🇱 VLESS-5.255.107.115:443-8825
-  - BE-192.71.249.78-0218
-  - 🇷🇺 6
-  - 🇩🇪 DE | VMESS
-  - 🇩🇪 >>::DE
-  - 🇳🇱 NL-51.15.23.63-0179
-  - RELAY-104.21.76.158-02
-  - 🇩🇪 >>::DE_1
-  - 🇸🇬 SGP
+  - CO-154.223.16.212-0209
+  - '>>::CR'
+  - github.com/Ruk1ng001_ceea1110
   - melibazz_36
-  - 🇩🇪 >>::DE_2
-  - 🇩🇪 >>::DE_3
-  - 🇬🇧 >>::GB_2
-  - 🇬🇧 GB_961ca_0002
-  - 🇩🇪 >>::DE_4
+  - PA-138.186.142.81-0152
+  - PA-138.186.142.80-0153
+  - 🇺🇸 US-71.19.148.143-13
+  - Join+:_1
+  - RELAY-104.18.16.77-23
+  - 🇺🇸 US-107.175.91.118-4741
+  - github.com/Ruk1ng001_f756c796
+  - Join+:_2
   - EC-38.165.231.25-0115
-  - github.com/Ruk1ng001_41698204
-  - 🇫🇷 FR | SS
+  - 🇬🇧 GB-146.70.61.37-0118
+  - 🇫🇷 >>::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR
+  - 🇳🇱 NL-51.15.17.169-0150
+  - 🇳🇱 NL-51.15.23.63-0179
+  - 🇬🇧 >>::GB
+  - 🇬🇧 >>::GB_1
+  - 🇳🇱 NL-193.29.139.179-0137
+  - 🇳🇱 2
+  - 🇫🇷 >>::FR
+  - 🇬🇧 GB-141.98.101.178-0165
+  - 🟡_github.com/Ruk1ng001_d50bebf1
+  - VLESS-95.164.36.217:443-1160
+  - 🇳🇱 NL-109.201.152.181-0139
+  - 🇳🇱 VLESS-5.255.107.115:443-6102
+  - 🇩🇪 >>::DE
   - 🇳🇱 >>::NL
-  - 🇳🇱 NL-193.29.139.189-0116
-  - 🇳🇱 NL-193.29.139.206-0133
-  - 🇳🇱 NL-193.29.139.251-0146
-  - DK-192.36.27.94-0188
-  - 'Join+:'
-  - melibazz_37
-  - 🇳🇱 >>::NL_1
-  - 🇳🇱 >>::NL_2
-  - 🇳🇱 >>::NL_3
-  - 🇳🇱 >>::NL_4
+  - BE-192.71.249.78-0218
+  - SS-82.38.31.184:8080-7294
+  - 🇳🇱 NL | SS
+  - 🇫🇷 FR | SS
+  - 82.38.31.176
+  - 82.38.31.194
+  - 82.38.31.202
   - 🇳🇱 NL-193.29.139.202-0124
   - 🇳🇱 NL-193.29.139.141-0147
+  - 🇳🇱 NL-193.29.139.189-0116
+  - 🇳🇱 NL-193.29.139.206-0133
   - 🇬🇧 GB-82.38.31.35-0126
-  - 🇳🇱 NL-193.29.139.227-0132
+  - 🇬🇧 GB-82.38.31.124-0144
   - github.com/Ruk1ng001_4872772b
-  - 🇩🇪 >>::DE_5
-  - 🇳🇱 >>::NL_5
-  - 🇳🇱 >>::NL_6
-  - 🇳🇱 >>::NL_7
-  - 🇳🇱 NL-193.29.139.179-0137
-  - 🇷🇺 5
-  - 🇩🇪 9
-  - RELAY-167.68.4.199-54
+  - 🇬🇧 GB | SS
+  - 🇳🇱 NL-193.29.139.251-0146
+  - VLESS-159.195.77.197:7443-7274
+  - 🇩🇪 >>::DE_1
+  - 🇳🇱 >>::NL_1
   - 82.38.31.187
-  - 🇳🇱 NL-213.109.147.242-0186
-  - 🇳🇱 NL-51.15.17.169-0150
-  - 🇳🇱 >>::NL_8
-  - 🇩🇪 >>::DE_6
-  - 🇳🇱 NL-193.29.139.157-0138
-  - PA-138.186.142.80-0153
-  - Join+:_1
-  - 🇬🇧 >>::GB_3
+  - 🇬🇧 GB_961ca_0002
+  - 🇳🇱 >>::NL_2
   - 82.38.31.179
-  - 82.38.31.190
-  - 🇺🇸 US-71.19.148.143-13
-  - 🇳🇱 >>::NL_9
-  - 82.38.31.194
   - 82.38.31.191
+  - 🇩🇪 9
+  - 🇳🇱 >>::NL_3
+  - 🇳🇱 >>::NL_4
+  - 🇳🇱 >>::NL_5
+  - 82.38.31.217
+  - 🇳🇱 NL-193.29.139.157-0138
+  - 🇬🇧 GB-82.38.31.99-0121
+  - 🇳🇱 NL-213.109.147.242-0186
+  - 🇳🇱 NL-193.29.139.227-0132
+  - github.com/Ruk1ng001_d268fb39
+  - 🇩🇪 >>::DE_2
+  - 82.38.31.218
+  - 🇬🇧 GB-82.38.31.189-0140
+  - DK-192.36.27.94-0188
+  - 🇸🇬 SGP
+  - 🇬🇧 GB-82.38.31.101-0131
+  - 🇩🇪 DE | VMESS
+  - 🇩🇪 >>::DE_3
+  - 🇳🇱 >>::NL_6
+  - LVA 2
+  - RELAY-167.68.4.199-54
+  - 🇩🇪 >>::DE_4
+  - 82.38.31.214
   - HR-46.183.184.60-0192
+  - RELAY-172.67.197.47-22
+  - 🇩🇪 DE-38.60.250.107-0221
   - github.com/Ruk1ng001_0e9faa4d
-  - '>>::FI'
-  - 🇩🇪 >>::DE_7
-  - github.com/Ruk1ng001_4ad032a1
-  - VLESS-45.83.21.39:443-7616
-  - '>>::LV'
-  - 82.38.31.176
-  - 🇩🇪 4
-  - LV-46.183.217.204-0157
-  - VLESS-77.81.98.70:443-6895
-  - MT-171.22.254.17-0154
-  - SI-192.71.244.150-0208
+  - '2'
+  - 🇩🇪 >>::DE_5
+  - 82.38.31.190
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -1847,53 +1796,63 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇨🇦 >>::CA
-  - 🇨🇦 CA-144.217.164.29-00
-  - 🇨🇦 CA-45.154.204.7-03
-  - 🇨🇦 CA-23.95.76.59-08
-  - 🇨🇦 CA-137.184.174.93-0113
-  - 🇨🇦 CA-79.127.233.170-18
-  - 🇨🇦 CA-79.127.233.170-14
   - 🇨🇦 CA-79.127.200.169-0108
+  - 🇨🇦 CA-137.184.174.93-0113
+  - 🇨🇦 >>::CA
+  - 🇨🇦 CA-79.127.233.170-18
+  - 🇨🇦 CA-144.217.164.29-00
+  - 🇨🇦 CA-79.127.233.170-14
+  - 🇨🇦 CA-23.95.76.59-08
+  - 🇨🇦 CA-45.154.204.7-03
 - name: 🌍 DE
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇩🇪 DEU 2
   - 🇩🇪 DE-82.198.246.250-33
+  - 🇩🇪 DEU 2
   - 🇩🇪 DE-82.198.246.46-30
-  - 🇩🇪 DE | VMESS
   - 🇩🇪 >>::DE
   - 🇩🇪 >>::DE_1
   - 🇩🇪 >>::DE_2
+  - 🇩🇪 DE | VMESS
   - 🇩🇪 >>::DE_3
   - 🇩🇪 >>::DE_4
+  - 🇩🇪 DE-38.60.250.107-0221
   - 🇩🇪 >>::DE_5
-  - 🇩🇪 >>::DE_6
-  - 🇩🇪 >>::DE_7
 - name: 🌍 FR
   type: select
   proxies:
   - 🚀 节点选择
   - 🇫🇷 >>::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR
+  - 🇫🇷 >>::FR
   - 🇫🇷 FR | SS
 - name: 🌍 GB
   type: select
   proxies:
   - 🚀 节点选择
+  - 🇬🇧 GB-146.70.61.37-0118
   - 🇬🇧 >>::GB
-  - 🇬🇧 GB-141.98.101.178-0165
   - 🇬🇧 >>::GB_1
-  - 🇬🇧 >>::GB_2
-  - 🇬🇧 GB_961ca_0002
+  - 🇬🇧 GB-141.98.101.178-0165
   - 🇬🇧 GB-82.38.31.35-0126
-  - 🇬🇧 >>::GB_3
+  - 🇬🇧 GB-82.38.31.124-0144
+  - 🇬🇧 GB | SS
+  - 🇬🇧 GB_961ca_0002
+  - 🇬🇧 GB-82.38.31.99-0121
+  - 🇬🇧 GB-82.38.31.189-0140
+  - 🇬🇧 GB-82.38.31.101-0131
 - name: 🌍 NL
   type: select
   proxies:
   - 🚀 节点选择
+  - 🇳🇱 NL-51.15.17.169-0150
   - 🇳🇱 NL-51.15.23.63-0179
+  - 🇳🇱 NL-193.29.139.179-0137
+  - 🇳🇱 NL-109.201.152.181-0139
   - 🇳🇱 >>::NL
+  - 🇳🇱 NL | SS
+  - 🇳🇱 NL-193.29.139.202-0124
+  - 🇳🇱 NL-193.29.139.141-0147
   - 🇳🇱 NL-193.29.139.189-0116
   - 🇳🇱 NL-193.29.139.206-0133
   - 🇳🇱 NL-193.29.139.251-0146
@@ -1901,18 +1860,11 @@ proxy-groups:
   - 🇳🇱 >>::NL_2
   - 🇳🇱 >>::NL_3
   - 🇳🇱 >>::NL_4
-  - 🇳🇱 NL-193.29.139.202-0124
-  - 🇳🇱 NL-193.29.139.141-0147
-  - 🇳🇱 NL-193.29.139.227-0132
   - 🇳🇱 >>::NL_5
-  - 🇳🇱 >>::NL_6
-  - 🇳🇱 >>::NL_7
-  - 🇳🇱 NL-193.29.139.179-0137
-  - 🇳🇱 NL-213.109.147.242-0186
-  - 🇳🇱 NL-51.15.17.169-0150
-  - 🇳🇱 >>::NL_8
   - 🇳🇱 NL-193.29.139.157-0138
-  - 🇳🇱 >>::NL_9
+  - 🇳🇱 NL-213.109.147.242-0186
+  - 🇳🇱 NL-193.29.139.227-0132
+  - 🇳🇱 >>::NL_6
 - name: 🌍 SG
   type: select
   proxies:
@@ -1922,23 +1874,26 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇺🇸 US-216.24.57.250-94
-  - 🇺🇸 >>::US::US::US::US::US::US::US::US::US::US::US::US
-  - 🇺🇸 US-15.204.247.49-12
-  - 🇺🇸 US-23.95.75.146-16
-  - 🇺🇸 US-37.19.198.236-0145
   - 🇺🇸 US | VMESS
-  - 🇺🇸 US | VMESS_1
-  - 🇺🇸 V001--US-dlj.tf/ssrsub
-  - 🇺🇸 US-156.146.38.169-0110
-  - 🇺🇸 US-156.146.38.167-0111
-  - 🇺🇸 US-38.135.24.131-50
-  - 🇺🇸 US-173.234.29.2-0114
-  - 🇺🇸 US-173.249.209.146-0155
   - 🇺🇸 US-156.146.38.170-0109
-  - 🇺🇸 >>::US
+  - 🇺🇸 V001--US-dlj.tf/ssrsub
+  - 🇺🇸 US-216.24.57.250-94
+  - 🇺🇸 US-156.146.38.167-0111
+  - 🇺🇸 >>::US::US::US::US::US::US::US::US::US::US::US::US
+  - 🇺🇸 US-23.95.75.146-16
+  - 🇺🇸 US | VMESS_1
+  - 🇺🇸 US-156.146.38.169-0110
+  - 🇺🇸 US-15.204.247.49-12
+  - 🇺🇸 US-37.19.198.236-0145
   - 🇺🇸 US-173.244.56.6-0117
+  - 🇺🇸 US-104.192.226.106-0148
+  - 🇺🇸 >>::US
+  - 🇺🇸 US-173.234.29.2-0114
+  - 🇺🇸 US-107.151.182.253-10
+  - 🇺🇸 US-38.135.24.131-50
+  - 🇺🇸 US-71.19.148.143-06
   - 🇺🇸 US-71.19.148.143-13
+  - 🇺🇸 US-107.175.91.118-4741
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
