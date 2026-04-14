@@ -1,0 +1,26 @@
+# Python相关文件
+  *.pyc
+  __pycache__/
+  *.egg-info/
+  dist/
+  build/
+
+  # 虚拟环境目录
+  venv/
+  .venv/
+
+  # macOS系统文件
+  .DS_Store
+
+  # IDE相关文件 (如VS Code, PyCharm)
+  .vscode/
+  .idea/
+
+  # 其他常见文件和目录
+  .coverage
+  .pytest_cache/
+  htmlcov/
+  pip-log.txt
+  *.log
+  *.sqlite3
+  code2prompt

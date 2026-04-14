@@ -1,0 +1,8 @@
+# HTTP 请求库
+requests==2.33.1
+
+# YAML 解析器
+PyYAML==6.0.3
+
+# 异步 HTTP 框架
+aiohttp==3.13.5
