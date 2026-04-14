@@ -42,7 +42,7 @@ jobs:
           
           # 5. 验证内核是否可用
           echo "Verifying mihomo kernel..."
-          mihomo --version
+          mihomo -v
 
       - name: Install dependencies
         run: |
