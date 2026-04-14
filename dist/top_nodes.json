@@ -2,57 +2,17 @@
   {
     "protocol": "vmess",
     "location": "未知",
-    "ip": "104.17.69.9",
-    "port": 443,
-    "latency_ms": 9,
-    "name": "melibazz"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "162.159.253.28",
-    "port": 80,
-    "latency_ms": 10,
-    "name": "V10-dlj.tf/ssrsub"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "104.17.228.155",
+    "ip": "104.16.108.100",
     "port": 8880,
-    "latency_ms": 11,
+    "latency_ms": 1,
     "name": "melibazz"
   },
   {
     "protocol": "vmess",
     "location": "未知",
-    "ip": "104.16.91.78",
+    "ip": "104.16.72.175",
     "port": 443,
-    "latency_ms": 12,
-    "name": "melibazz"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "support.zoom.us",
-    "port": 8080,
-    "latency_ms": 13,
-    "name": "RELAY-170.114.45.6-20"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "104.16.8.3",
-    "port": 443,
-    "latency_ms": 13,
-    "name": "melibazz"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "104.19.244.250",
-    "port": 443,
-    "latency_ms": 13,
+    "latency_ms": 1,
     "name": "melibazz"
   },
   {
@@ -60,103 +20,143 @@
     "location": "US",
     "ip": "104.21.15.212",
     "port": 443,
-    "latency_ms": 13,
+    "latency_ms": 1,
     "name": "🇺🇸 US | VMESS"
   },
   {
     "protocol": "vmess",
     "location": "未知",
-    "ip": "172.67.87.197",
+    "ip": "104.21.50.177",
+    "port": 443,
+    "latency_ms": 1,
+    "name": "102620170"
+  },
+  {
+    "protocol": "vmess",
+    "location": "未知",
+    "ip": "162.159.253.28",
     "port": 80,
-    "latency_ms": 13,
-    "name": "V11-dlj.tf/ssrsub"
+    "latency_ms": 1,
+    "name": "V10-dlj.tf/ssrsub"
   },
   {
-    "protocol": "vmess",
+    "protocol": "vless",
     "location": "未知",
-    "ip": "104.16.72.175",
+    "ip": "198.41.209.193",
+    "port": 8443,
+    "latency_ms": 1,
+    "name": "github.com/Ruk1ng001_7c65b764"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "135.84.74.20",
     "port": 443,
-    "latency_ms": 14,
-    "name": "melibazz"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "104.17.47.58",
-    "port": 443,
-    "latency_ms": 14,
-    "name": "melibazz"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "104.17.77.94",
-    "port": 2053,
-    "latency_ms": 14,
-    "name": "melibazz"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "104.17.95.4",
-    "port": 443,
-    "latency_ms": 14,
-    "name": "melibazz"
+    "latency_ms": 1,
+    "name": "github.com/Ruk1ng001_91db8af1"
   },
   {
     "protocol": "ss",
-    "location": "US",
-    "ip": "156.146.38.170",
+    "location": "HK",
+    "ip": "50.62.195.16",
     "port": 443,
-    "latency_ms": 14,
-    "name": "🇺🇸 US-156.146.38.170-0109"
-  },
-  {
-    "protocol": "vmess",
-    "location": "US",
-    "ip": "singapore.com",
-    "port": 8080,
-    "latency_ms": 14,
-    "name": "🇺🇸 V001--US-dlj.tf/ssrsub"
+    "latency_ms": 2,
+    "name": "🇭🇰 HKG 3"
   },
   {
     "protocol": "ss",
     "location": "JP",
-    "ip": "104.19.40.252",
+    "ip": "172.67.75.207",
     "port": 443,
-    "latency_ms": 15,
-    "name": "🇯🇵 JPN 16"
+    "latency_ms": 2,
+    "name": "🇯🇵 JPN 6"
   },
   {
     "protocol": "ss",
     "location": "JP",
-    "ip": "162.159.33.14",
+    "ip": "104.17.127.54",
     "port": 443,
-    "latency_ms": 15,
+    "latency_ms": 2,
     "name": "🇯🇵 JPN 23"
   },
   {
     "protocol": "ss",
     "location": "JP",
-    "ip": "104.17.153.223",
+    "ip": "198.41.223.36",
     "port": 443,
-    "latency_ms": 15,
-    "name": "🇯🇵 JPN 24"
+    "latency_ms": 2,
+    "name": "🇯🇵 JPN 29"
   },
   {
     "protocol": "ss",
     "location": "JP",
-    "ip": "8.35.211.221",
+    "ip": "104.19.55.1",
     "port": 443,
-    "latency_ms": 15,
+    "latency_ms": 2,
+    "name": "🇯🇵 JPN 30"
+  },
+  {
+    "protocol": "ss",
+    "location": "JP",
+    "ip": "162.159.18.179",
+    "port": 443,
+    "latency_ms": 2,
+    "name": "🇯🇵 JPN 31"
+  },
+  {
+    "protocol": "ss",
+    "location": "JP",
+    "ip": "162.159.152.96",
+    "port": 443,
+    "latency_ms": 2,
     "name": "🇯🇵 JPN 35"
   },
   {
     "protocol": "ss",
-    "location": "JP",
-    "ip": "104.18.46.154",
+    "location": "未知",
+    "ip": "198.41.223.119",
     "port": 443,
-    "latency_ms": 15,
-    "name": "🇯🇵 JPN 36"
+    "latency_ms": 2,
+    "name": "MDA 2"
+  },
+  {
+    "protocol": "vmess",
+    "location": "未知",
+    "ip": "support.zoom.us",
+    "port": 8080,
+    "latency_ms": 2,
+    "name": "RELAY-170.114.45.6-20"
+  },
+  {
+    "protocol": "trojan",
+    "location": "US",
+    "ip": "216.24.57.250",
+    "port": 443,
+    "latency_ms": 2,
+    "name": "🇺🇸 US-216.24.57.250-94"
+  },
+  {
+    "protocol": "vmess",
+    "location": "未知",
+    "ip": "104.16.8.3",
+    "port": 443,
+    "latency_ms": 2,
+    "name": "melibazz"
+  },
+  {
+    "protocol": "vmess",
+    "location": "未知",
+    "ip": "104.16.91.78",
+    "port": 443,
+    "latency_ms": 2,
+    "name": "melibazz"
+  },
+  {
+    "protocol": "vmess",
+    "location": "未知",
+    "ip": "173.249.209.146",
+    "port": 20086,
+    "latency_ms": 2,
+    "name": "VMESS-173.249.209.146:20086-3570"
   }
 ]
