@@ -1,0 +1,17 @@
+# 专用于临时 Clash 内核实例的最小化配置
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: error
+
+# 外部控制器，用于 API 通信
+external-controller: '127.0.0.1:9090'
+
+# 占位符，这些内容将由 Python 脚本通过 API 动态更新
+proxies: []
+proxy-groups:
+  - name: "PROXY"
+    type: select
+    proxies: []
+rules:
+  - "MATCH,PROXY"

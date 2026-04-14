@@ -12,10 +12,10 @@ from playwright.sync_api import sync_playwright
 # 全局配置区（优先读取环境变量，无环境变量则使用默认值）
 # ==========================================
 
-SUBSCRIPTION_URL="https://raw.githubusercontent.com/mjfang109-gif/free-node-collector/main/dist/top20_clash.yaml"
+SUBSCRIPTION_URL="https://raw.githubusercontent.com/mjfang109-gif/free-node-collector/refs/heads/main/dist/top20_clash.yaml"
 
 # 2. 配置节点数据源地址 (填入 json 文件的 Raw 链接)
-REMOTE_NODES_URL="https://raw.githubusercontent.com/mjfang109-gif/free-node-collector/main/dist/top_nodes.json"
+REMOTE_NODES_URL="https://raw.githubusercontent.com/mjfang109-gif/free-node-collector/refs/heads/main/dist/top_nodes.json"
 
 # ==========================================
 # 路径管理：适配 Docker 容器挂载目录 (/app)

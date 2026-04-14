@@ -39,20 +39,16 @@ def get_country_info_from_name(name: str):
                 return code, info['flag']
     return "未知", ""
 
-def clean_node_name(name: str):
+def clean_node_name(proxy: dict):
     """
-    智能净化节点名称：
-    1. 移除除国家旗帜外的所有 Emoji。
-    2. 移除常见广告标签。
-    3. 统一格式为 "[旗帜] [净化后的名称]"。
+    智能净化节点名称，并确保名称的唯一性。
     """
-    if not name:
-        return "未命名节点"
-
-    country_code, country_flag = get_country_info_from_name(name)
+    original_name = proxy.get("name", "")
+    
+    country_code, country_flag = get_country_info_from_name(original_name)
     
     # 1. 移除所有 Emoji
-    cleaned_name = EMOJI_PATTERN.sub('', name)
+    cleaned_name = EMOJI_PATTERN.sub('', original_name)
     
     # 2. 移除常见的广告标签和多余字符
     patterns_to_remove = [
@@ -70,9 +66,14 @@ def clean_node_name(name: str):
     # 3. 清理多余的空格和特殊字符
     cleaned_name = ' '.join(cleaned_name.split()).strip(' -_|=')
     
-    # 4. 如果净化后名字为空，则使用国家代码作为备用名
+    # 4. 修正：如果净化后名字为空，则生成一个唯一的备用名
     if not cleaned_name:
-        cleaned_name = country_code if country_code != "未知" else "未知节点"
+        proxy_type = proxy.get("type", "Proxy")
+        server = proxy.get("server", "unknown.server")
+        port = proxy.get("port", "0")
+        # 使用 hash 值确保在 server:port 相同但其他信息不同时也能有区分
+        unique_suffix = hash(f"{proxy_type}-{server}-{port}") % 10000 # 取模确保后缀短
+        cleaned_name = f"{proxy_type.upper()}-{server}:{port}-{unique_suffix}"
         
     # 5. 最终组合: [旗帜] [净化后的名称]
     if country_flag:

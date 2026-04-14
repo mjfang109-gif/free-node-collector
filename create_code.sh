@@ -9,4 +9,4 @@ if [ -f "${FILE}" ]; then
   rm -rf "${FILE}"
 fi
 
-$COMMAND -i "*.py,*.yaml,*.yml,*.txt" -e ".venv/*" -O "${FILE}"
+$COMMAND -i "*.py,*.yaml,*.yml,*.txt" -e ".venv/*,dist/*" -O "${FILE}"

@@ -5,9 +5,8 @@ on:
     branches:
       - main
   schedule:
-    # 修正：每小时的 0 分运行一次
     - cron: '0 * * * *'
-  workflow_dispatch: # 允许手动触发
+  workflow_dispatch:
 
 jobs:
   collect-nodes:
@@ -23,6 +22,28 @@ jobs:
           python-version: '3.10'
           cache: 'pip'
 
+      # --- 新增：下载并配置 Clash 内核 ---
+      - name: Download and Setup Clash Kernel (mihomo)
+        run: |
+          # 1. 定义内核版本和下载 URL
+          MIHOMO_VERSION="v1.19.20"
+          MIHOMO_URL="https://github.com/MetaCubeX/mihomo/releases/download/${MIHOMO_VERSION}/mihomo-linux-amd64-${MIHOMO_VERSION}.gz"
+          
+          # 2. 下载内核
+          echo "Downloading mihomo kernel from ${MIHOMO_URL}..."
+          curl -sL -o mihomo.gz "${MIHOMO_URL}"
+          
+          # 3. 解压
+          gunzip mihomo.gz
+          
+          # 4. 移动到 /usr/local/bin 并重命名为 mihomo，使其在 PATH 中可被找到
+          chmod +x mihomo
+          sudo mv mihomo /usr/local/bin/mihomo
+          
+          # 5. 验证内核是否可用
+          echo "Verifying mihomo kernel..."
+          mihomo --version
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -36,9 +57,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          # 修正：使用 -f (force) 参数强制添加被 .gitignore 忽略的 dist 目录
           git add -f dist/
-          # 检查是否有变更
           if ! git diff --staged --quiet; then
             git commit -m "📊 [Automated] Update subscription files"
             git push
