@@ -1,0 +1,76 @@
+sources:
+  # ==========================================
+  # Hysteria 2 (Hy2) - 高性能协议，抗封锁强
+  # ==========================================
+  - name: MatinGhanbari_Hy2
+    url: https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/hysteria2.txt
+    type: v2ray_base64
+  - name: Danialsamadi_Hy2
+    url: https://raw.githubusercontent.com/Danialsamadi/v2go/main/Splitted-By-Protocol/hy2.txt
+    type: v2ray_base64
+  - name: AzadNet_hy
+    url: https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet_hy.txt
+    type: v2ray_base64
+
+
+  # ==========================================
+  # VLESS (含 Reality/XTLS) - 目前最主流、隐蔽性最高
+  # ==========================================
+  - name: MatinGhanbari_VLess
+    url: https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/vless.txt
+    type: v2ray_base64
+  - name: ebrasha_VLess
+    url: https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/vless_configs.txt
+    type: v2ray_base64
+  - name: Epodonios_VLess
+    url: https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/vless.txt
+    type: v2ray_base64
+
+  # ==========================================
+  # VMess - 数量巨大，适合大流量抓取
+  # ==========================================
+  - name: MatinGhanbari_VMess
+    url: https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/vmess.txt
+    type: v2ray_base64
+  - name: Danialsamadi_VMess
+    url: https://raw.githubusercontent.com/Danialsamadi/v2go/main/Splitted-By-Protocol/vmess.txt
+    type: v2ray_base64
+  - name: ebrasha_VMess
+    url: https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/vmess_configs.txt
+    type: v2ray_base64
+
+  # ==========================================
+  # Trojan - 伪装性好，协议头较轻
+  # ==========================================
+  - name: MatinGhanbari_Trojan
+    url: https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/trojan.txt
+    type: v2ray_base64
+  - name: Danialsamadi_Trojan
+    url: https://raw.githubusercontent.com/Danialsamadi/v2go/main/Splitted-By-Protocol/trojan.txt
+    type: v2ray_base64
+  - name: ebrasha_Trojan
+    url: https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/trojan_configs.txt
+    type: v2ray_base64
+
+  # ==========================================
+  # Shadowsocks (SS) - 经典协议，兼容性极佳
+  # ==========================================
+  - name: MatinGhanbari_SS
+    url: https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/ss.txt
+    type: v2ray_base64
+  - name: Epodonios_SS
+    url: https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/ss.txt
+    type: v2ray_base64
+  - name: ebrasha_SS
+    url: https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/ss_configs.txt
+    type: v2ray_base64
+
+  # ==========================================
+  # 综合聚合类
+  # ==========================================
+  - name: Epodonios_All_Base64
+    url: https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_base64_Sub.txt
+    type: v2ray_base64
+  - name: MustafaBaqer_Full_Mix
+    url: https://raw.githubusercontent.com/MustafaBaqer/VestraNet-Nodes/main/subscriptions/mix-base64.txt
+    type: v2ray_base64

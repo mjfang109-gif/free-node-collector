@@ -30,23 +30,10 @@ sources:
     url: https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt
     type: v2ray_base64
 
-  # === 新增：Telegram 网页抓取（最重要）===
-  - name: tg_mfjdpd
-    url: https://t.me/s/mfjdpd
-    type: telegram_web
-  - name: tg_sfzy999
-    url: https://t.me/s/sfzy999
-    type: telegram_web
-  - name: tg_v2list
-    url: https://t.me/s/v2list
-    type: telegram_web
-  - name: tg_v2raydailyupdate
-    url: https://t.me/s/v2raydailyupdate
-    type: telegram_web
-  - name: tg_V2rayNG3
-    url: https://t.me/s/V2rayNG3
-    type: telegram_web
-  - name: caijh_eternity_clash          # 测速筛选后高质量节点池
+  # Telegram 网页抓取===
+
+  #更多优质代理池（Clash 类型）===
+  - name: caijh_eternity_clash
     url: https://raw.githubusercontent.com/caijh/FreeProxiesScraper/master/Eternity.yaml
     type: clash
   - name: Ruk1ng_freeSub_clash
@@ -55,23 +42,7 @@ sources:
   - name: free18_v2ray_clash
     url: https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml
     type: clash
-  - name: free_clash_v2ray_clash
-    url: https://raw.githubusercontent.com/free-clash-v2ray/free-clash-v2ray.github.io/main/client.htm   # 需解析，但 Actions 可抓
-    type: clash   # 若解析失败可改为 telegram_web 或删除
-  # === 新增：更多优质代理池（Clash 类型）===
-  - name: caijh_eternity_clash          # 测速筛选后高质量节点池
-    url: https://raw.githubusercontent.com/caijh/FreeProxiesScraper/master/Eternity.yaml
-    type: clash
-  - name: Ruk1ng_freeSub_clash
-    url: https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml
-    type: clash
-  - name: free18_v2ray_clash
-    url: https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml
-    type: clash
-  - name: free_clash_v2ray_clash
-    url: https://raw.githubusercontent.com/free-clash-v2ray/free-clash-v2ray.github.io/main/client.htm   # 需解析，但 Actions 可抓
-    type: clash   # 若解析失败可改为 telegram_web 或删除
-  # === 新增：V2Ray Base64 高质量代理池===
+  # V2Ray Base64
   - name: barry_far_all_configs
     url: https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt
     type: v2ray_base64
@@ -83,12 +54,6 @@ sources:
     type: v2ray_base64
   - name: Delta_Kronecker_sub
     url: https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/sub.txt
-    type: v2ray_base64
-  - name: mehdirzfx_v2ray_sub
-    url: https://raw.githubusercontent.com/mehdirzfx/v2ray-sub/main/sub.txt   # 聚合多仓库
-    type: v2ray_base64
-  - name: freefq_v2ray
-    url: https://raw.fastgit.org/freefq/free/master/v2
     type: v2ray_base64
   - name: Pawdroid_free_servers   # 经典老牌
     url: https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub

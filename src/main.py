@@ -1,57 +1,105 @@
 import asyncio
-from config import load_sources
-from collectors import UnifiedCollector, TelegramCollector
-from parsers import parse_clash, parse_v2ray_base64
+import json
+import re
+from logger import setup_logger
+from config import load_all_sources, get_dist_dir
+from collectors import UnifiedCollector, TelegramWebCollector
+from parsers import universal_parser
 from testers.speed_tester import speed_test_all
-from generators import generate_clash, generate_v2ray
-from collectors import TelegramWebCollector
-import hashlib
+from generators import generate_all_subscriptions
+from utils import get_country_code_from_name # 导入新的工具函数
+
+logger = setup_logger()
+
+def _extract_node_info(proxy: dict):
+    """从代理字典中提取关键信息用于生成 JSON。"""
+    return {
+        "protocol": proxy.get("type", "N/A"),
+        # 修正：使用更可靠的函数来获取位置
+        "location": get_country_code_from_name(proxy.get("name")),
+        "ip": proxy.get("server", "N/A"),
+        "port": proxy.get("port", 0),
+        "latency_ms": proxy.get("latency", 9999),
+        "name": proxy.get("name", "N/A"),
+    }
+
+def generate_top_nodes_json(proxies: list, top_n: int = 20):
+    """生成包含速度最快的前 N 个节点信息的 JSON 文件。"""
+    if not proxies:
+        logger.info("JSON 生成器：没有可用的节点。")
+        return
+
+    top_proxies = proxies[:top_n]
+    nodes_info = [_extract_node_info(p) for p in top_proxies]
+    
+    dist_dir = get_dist_dir()
+    dist_dir.mkdir(exist_ok=True)
+    file_path = dist_dir / "top_nodes.json"
+
+    try:
+        with open(file_path, 'w', encoding='utf-8') as f:
+            json.dump(nodes_info, f, ensure_ascii=False, indent=2)
+        logger.info(f"✅ Top {top_n} 节点信息 JSON 生成完成 → {file_path}")
+    except Exception as e:
+        logger.error(f"❌ 生成 Top {top_n} JSON 文件失败: {e}", exc_info=True)
 
 
 async def main():
-    sources = load_sources()
-    all_proxies = []
-    all_v2ray_configs = []
+    """主入口函数。"""
+    logger.info("🚀 Free-Node-Collector 开始运行...")
+
+    sources = load_all_sources()
+    if not sources: return
 
     collector = UnifiedCollector()
-    tg_collector = TelegramCollector()
     tg_web_collector = TelegramWebCollector()
+
+    all_proxies = []
+    seen_proxies = set()
+
     for source in sources:
-        print(f"正在抓取: {source['name']}")
-        data = None
-        if source.get("type") == "telegram_web":
-            data = tg_web_collector.fetch(source)
+        logger.info(f"🔍 正在抓取: {source.get('name', '未知信源')}")
+        
+        content_data = None
+        source_type = source.get("type")
+
+        if source_type == "telegram_web":
+            content_data = tg_web_collector.fetch(source)
         else:
-            data = collector.fetch(source) or tg_collector.fetch(source)
+            content_data = collector.fetch(source)
 
-        if not data:
+        if not content_data or not content_data.get("content"): continue
+
+        proxies = universal_parser(content_data["content"], source_type)
+        if not proxies:
+            logger.info(f"ℹ️ 在 {source.get('name')} 中未解析到任何有效节点。")
             continue
+            
+        logger.info(f"💡 从 {source.get('name')} 解析到 {len(proxies)} 个节点。")
 
-        if data["type"] == "clash":
-            proxies = parse_clash(data["content"])
-            all_proxies.extend(proxies)
-        elif data["type"] == "v2ray_base64":
-            configs = parse_v2ray_base64(data["content"])
-            all_v2ray_configs.extend(configs)
+        for p in proxies:
+            identifier = f'{p.get("server")}:{p.get("port")}'
+            if identifier not in seen_proxies:
+                seen_proxies.add(identifier)
+                all_proxies.append(p)
 
-    # 去重（简单 hash）
-    seen = set()
-    unique_proxies = []
-    for p in all_proxies:
-        h = hashlib.md5(str(p).encode()).hexdigest()
-        if h not in seen:
-            seen.add(h)
-            unique_proxies.append(p)
+    logger.info(f"\n✅ 所有信源抓取和解析完成，共获得 {len(all_proxies)} 个不重复的节点。")
 
-    # 测速排序
-    sorted_proxies = await speed_test_all(unique_proxies)
+    sorted_proxies = await speed_test_all(all_proxies, max_workers=250, top_n=200)
 
-    # 生成订阅
-    generate_clash(sorted_proxies)
-    generate_v2ray(all_v2ray_configs + [str(p) for p in sorted_proxies])  # 合并
+    if sorted_proxies:
+        generate_top_nodes_json(sorted_proxies, top_n=20)
+        generate_all_subscriptions(sorted_proxies)
+    else:
+        logger.warning("🤷‍♂️ 没有任何节点通过测速，无法生成任何文件。")
 
-    print("🎉 全部完成！节点已更新到 dist/ 目录")
+    logger.info("\n🎉 全部任务完成！祝您上网愉快！")
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        logger.info("🛑 程序被用户手动中断。")
+    except Exception as e:
+        logger.critical(f"💥 程序因意外错误而终止: {e}", exc_info=True)

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>节点监控直播静态模板 [完整防溢出版]</title>
+    <style>
+        /* 核心锁死视口 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 1920px;
+            height: 1080px;
+            overflow: hidden;
+            background-color: #050914;
+            font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+            color: #fff;
+        }
+
+        /* 基础排版 */
+        body {
+            background-image: linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            display: flex;
+            flex-direction: column;
+            padding: 60px;
+        }
+
+        /* 头部 */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 120px;
+            border-bottom: 2px solid rgba(0, 240, 255, 0.3);
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            flex-shrink: 0;
+        }
+
+        .title-group h1 {
+            font-size: 56px;
+            letter-spacing: 4px;
+            text-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+            font-weight: bold;
+        }
+
+        .title-group .sub {
+            color: #00f0ff;
+            font-size: 22px;
+            margin-top: 10px;
+            letter-spacing: 2px;
+        }
+
+        /* 留给 FFmpeg 画时钟的画布 */
+        .clock-container {
+            width: 380px;
+            height: 90px;
+            background: rgba(0, 240, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(0, 240, 255, 0.2);
+        }
+
+        /* 主体 */
+        .main-content {
+            flex: 1;
+            display: flex;
+            gap: 50px;
+            min-height: 0;
+        }
+
+        /* 左侧数据面板 */
+        .data-panel {
+            width: 1200px;
+            background: rgba(10, 16, 30, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: inset 0 0 50px rgba(0, 240, 255, 0.02);
+            overflow: hidden;
+        }
+
+        .table-header {
+            display: grid;
+            grid-template-columns: 180px 1fr 180px 180px;
+            gap: 15px;
+            color: #00f0ff;
+            font-size: 26px;
+            font-weight: bold;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed rgba(0, 240, 255, 0.3);
+            margin-bottom: 10px;
+        }
+
+        .node-row {
+            display: grid;
+            grid-template-columns: 180px 1fr 180px 180px;
+            gap: 15px;
+            align-items: center;
+            padding: 25px 0;
+            font-size: 26px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* 防溢出截断 */
+        .node-row > div {
+            min-width: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* 协议颜色 */
+        .badge {
+            padding: 6px 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 22px;
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .bg-hy2 {
+            background: rgba(189, 52, 254, 0.15);
+            color: #e092ff;
+            border: 1px solid #bd34fe;
+        }
+
+        .bg-vless {
+            background: rgba(0, 240, 255, 0.15);
+            color: #00f0ff;
+            border: 1px solid #00f0ff;
+        }
+
+        .bg-vmess {
+            background: rgba(255, 165, 0, 0.15);
+            color: #ffb732;
+            border: 1px solid #ffb732;
+        }
+
+        .bg-trojan {
+            background: rgba(255, 68, 68, 0.15);
+            color: #ff6b6b;
+            border: 1px solid #ff6b6b;
+        }
+
+        .bg-ss {
+            background: rgba(56, 175, 243, 0.15);
+            color: #38aff3;
+            border: 1px solid #38aff3;
+        }
+
+        .bg-default {
+            background: rgba(0, 255, 136, 0.15);
+            color: #00ff88;
+            border: 1px solid #00ff88;
+        }
+
+        .ping-good {
+            color: #00ff88;
+            font-weight: bold;
+        }
+
+        /* 右侧二维码面板 */
+        .qr-panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            min-width: 0;
+        }
+
+        .qr-card {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(180deg, rgba(10, 16, 30, 0.9), rgba(5, 9, 20, 0.9));
+            border: 2px solid rgba(0, 240, 255, 0.5);
+            border-radius: 16px;
+            padding: 40px;
+            overflow: hidden;
+        }
+
+        .qr-card h2 {
+            font-size: 34px;
+            margin-bottom: 10px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .qr-card p {
+            font-size: 22px;
+            color: #8fa3b0;
+            margin-bottom: 40px;
+        }
+
+        /* 二维码图片锁死 */
+        .qr-img {
+            width: 300px;
+            height: 300px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 16px;
+            box-shadow: 0 0 40px rgba(0, 240, 255, 0.4);
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        .footer-info {
+            background: rgba(0, 240, 255, 0.05);
+            border: 1px solid rgba(0, 240, 255, 0.2);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            font-size: 24px;
+            color: #00ff88;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="title-group">
+        <h1>全网免费节点池</h1>
+        <div class="sub">全球高速代理订阅 // 自动化监控面板</div>
+    </div>
+    <div class="clock-container"></div>
+</div>
+<div class="main-content">
+    <div class="data-panel">
+        <div class="table-header">
+            <div>协议类型</div>
+            <div>节点位置 (节点名称)</div>
+            <div>延迟测速</div>
+            <div>当前状态</div>
+        </div>
+        {{nodes_html}}
+    </div>
+    <div class="qr-panel">
+        <div class="qr-card">
+            <h2>📥 获取完整订阅</h2>
+            <p>扫码获取最新高速节点链接</p>
+            <img class="qr-img" src="data:image/png;base64,{{qr_base64}}" alt="QR Code">
+        </div>
+        <div class="footer-info">数据同步时间：{{update_time}} | 可用节点数：{{valid_count}}</div>
+    </div>
+</div>
+</body>
+</html>

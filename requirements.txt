@@ -6,3 +6,6 @@ PyYAML==6.0.3
 
 # 异步 HTTP 框架
 aiohttp==3.13.5
+
+# aiohttp SOCKS 代理支持
+aiohttp-socks==0.8.4
