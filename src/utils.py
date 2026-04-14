@@ -1,6 +1,5 @@
 import re
 
-# 优化 COUNTRY_MAP 结构，将 Emoji 和关键词分开，便于使用
 COUNTRY_INFO = {
     'US': {'flag': '🇺🇸', 'keywords': ['美国', 'US', 'United States', 'USA']},
     'HK': {'flag': '🇭🇰', 'keywords': ['香港', 'HK', 'Hong Kong']},
@@ -18,8 +17,6 @@ COUNTRY_INFO = {
     'IE': {'flag': '🇮🇪', 'keywords': ['爱尔兰', 'IE', 'Ireland']},
 }
 
-# 编译一个正则表达式来匹配大多数 Emoji
-# 这是一个简化的范围，但能覆盖绝大部分常见 Emoji
 EMOJI_PATTERN = re.compile(
     "["
     "\U0001F600-\U0001F64F"  # emoticons
@@ -44,35 +41,41 @@ def get_country_info_from_name(name: str):
 
 def clean_node_name(name: str):
     """
-    净化节点名称：移除广告、多余 Emoji，并统一格式。
+    智能净化节点名称：
+    1. 移除除国家旗帜外的所有 Emoji。
+    2. 移除常见广告标签。
+    3. 统一格式为 "[旗帜] [净化后的名称]"。
     """
     if not name:
         return "未命名节点"
 
     country_code, country_flag = get_country_info_from_name(name)
     
-    # 移除所有 Emoji
+    # 1. 移除所有 Emoji
     cleaned_name = EMOJI_PATTERN.sub('', name)
     
-    # 移除常见的广告标签和多余字符
-    # 包括 [...]、{...}、(...)、@...、以及常见的域名/频道名
+    # 2. 移除常见的广告标签和多余字符
     patterns_to_remove = [
         r'\[.*?\]', r'\{.*?\}', r'\(.*?\)',
         r'@[a-zA-Z0-9_]+',
         r'(?i)telegram', r'(?i)youtube',
         r'(?i)www\.[a-zA-Z0-9-]+\.[a-z]+',
-        r'[a-zA-Z0-9-]+\.tech',
-        r'by .*',
+        r'[a-zA-Z0-9-]+\.(tech|xyz|top|shop)',
+        r'by\s.*', r'Powered by',
+        r'#\S+', # 移除 # 开头的话题标签
     ]
     for pattern in patterns_to_remove:
         cleaned_name = re.sub(pattern, '', cleaned_name)
         
-    # 移除前后多余的空格和特殊字符
-    cleaned_name = cleaned_name.strip(' -_|=')
+    # 3. 清理多余的空格和特殊字符
+    cleaned_name = ' '.join(cleaned_name.split()).strip(' -_|=')
     
-    # 如果净化后名字为空，则使用国家代码作为备用名
+    # 4. 如果净化后名字为空，则使用国家代码作为备用名
     if not cleaned_name:
         cleaned_name = country_code if country_code != "未知" else "未知节点"
         
-    # 最终组合: [旗帜] [净化后的名称]
-    return f"{country_flag} {cleaned_name}".strip()
+    # 5. 最终组合: [旗帜] [净化后的名称]
+    if country_flag:
+        return f"{country_flag} {cleaned_name}"
+    
+    return cleaned_name
