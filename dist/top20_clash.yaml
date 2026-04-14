@@ -1,114 +1,70 @@
-port: 7890
-socks-port: 7891
+mixed-port: 7890
 allow-lan: true
+bind-address: '*'
 mode: rule
 log-level: info
+ipv6: false
 external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - 114.114.114.114
+  - 8.8.8.8
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+  fallback:
+  - https://1.1.1.1/dns-query
+  - https://8.8.8.8/dns-query
 proxies:
-- name: 🇺🇸 US | VMESS
-  type: vmess
-  server: 104.21.15.212
-  port: 443
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /linkws
-  latency: 1
-- name: RELAY-104.18.6.138-0864
-  type: vmess
-  server: 104.18.6.138
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-  latency: 1
-- name: RELAY-23.227.38.20-0609
-  type: vmess
-  server: 23.227.38.20
-  port: 443
-  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /AUIKN8AU
-  latency: 1
-- name: RELAY-172.67.218.162-0488
-  type: vmess
-  server: 172.67.218.162
-  port: 443
-  uuid: 70d9bf20-3e6b-4cd3-ff28-b62567ff5a23
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-  latency: 1
-- name: RELAY-162.159.152.4-4616
-  type: vmess
-  server: 162.159.152.4
-  port: 8443
-  uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /gbt
-  latency: 1
-- name: 未知节点
-  type: ss
-  server: 167.82.85.155
-  port: 80
-  cipher: "۝�{׹��7߫^{\x1Du{^5"
-  password: "۝�{׹��7߫^{\x1Du{^5"
-  latency: 1
 - name: melibazz
   type: vmess
-  server: 104.16.72.175
+  server: 104.17.232.114
   port: 443
-  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /wss13889
-  latency: 2
-- name: melibazz
+    path: /wss51068
+- name: melibazz_1
   type: vmess
-  server: 104.17.95.4
-  port: 443
-  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
+  server: 104.17.77.94
+  port: 2053
+  uuid: 72f76c36-3e3c-45b3-a61f-d8f017345958
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /wss13889
-  latency: 2
-- name: melibazz
+    path: /?ed=2048
+- name: melibazz_2
   type: vmess
-  server: 104.19.208.207
+  server: 104.18.14.229
   port: 443
-  uuid: 64480f4c-61c2-4d88-89c3-fc0045229bfc
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /kplxvws
-  latency: 2
-- name: melibazz
+    path: /wss51068
+- name: melibazz_3
+  type: vmess
+  server: 104.18.64.251
+  port: 8880
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /GdtYWlsLmNvbSJ9LCJjb3V
+- name: melibazz_4
   type: vmess
   server: 104.19.244.250
   port: 443
@@ -119,185 +75,129 @@ proxies:
   network: ws
   ws-opts:
     path: /wss51068
-  latency: 2
-- name: melibazz
-  type: vmess
-  server: 104.21.75.246
-  port: 80
-  uuid: d1fb628c-206e-42a7-837b-4147255fbaeb
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-  latency: 2
-- name: melibazz
-  type: vmess
-  server: 104.21.81.238
-  port: 80
-  uuid: 92eb32af-ec3c-40d4-ab83-c3df80af64af
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-  latency: 2
-- name: 🇺🇸 US | VMESS
-  type: vmess
-  server: 172.67.207.114
+- name: 🇺🇸 US-216.24.57.250-94
+  server: 216.24.57.250
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 1
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: linkvws
-  latency: 2
-- name: XX | VMESS
+  type: trojan
+  password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
+  sni: afrcloud1.mmv.kr
+  skip-cert-verify: true
+- name: melibazz_5
   type: vmess
-  server: 104.16.60.8
-  port: 2086
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /glweidf.sbs/linkws
-  latency: 2
-- name: 🇺🇸 US-173.234.29.2-0114
-  type: ss
-  server: 173.234.29.2
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  latency: 2
-- client-fingerprint: chrome
-  name: github.com/Ruk1ng001_91db8af1
-  network: ws
+  server: 104.16.72.175
   port: 443
-  server: 135.84.74.20
-  servername: sni.111000.dynv6.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/48.0.2564.116 Safari/537.36
-    path: /?ed=2560&Telegram🇨🇳+@WangCai2
-  xudp: true
-  latency: 2
-- client-fingerprint: chrome
-  name: github.com/Ruk1ng001_f7ef9f2d
-  network: ws
-  port: 443
-  server: 135.84.73.139
-  servername: sni.111000.dynv6.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/32.0.1700.107 Safari/537.36
-    path: /?ed=2560&Telegram🇨🇳+@WangCai2
-  xudp: true
-  latency: 2
-- name: RELAY-172.66.44.197-0690
-  type: vmess
-  server: 172.66.44.197
-  port: 443
-  uuid: fa4cb529-3ac9-4268-bb04-ed4253813508
+  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /mR17oBKzZ7
-  latency: 2
-- name: RELAY-104.21.82.183-0918
+    path: /wss13889
+- name: melibazz_6
   type: vmess
-  server: 104.21.82.183
+  server: 104.16.8.3
+  port: 443
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss51068
+- name: melibazz_7
+  type: vmess
+  server: 104.16.91.78
+  port: 443
+  uuid: F3E36B53-E75E-48C0-B9F1-F918F397E996
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /speedtest
+- name: melibazz_8
+  type: vmess
+  server: 104.17.228.155
   port: 8880
-  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
   alterId: 0
   cipher: auto
   tls: false
   network: ws
   ws-opts:
-    path: /
-  latency: 2
-- name: 未知节点
+    path: /GdtYWlsLmNvbSJ9LCJjb3V
+- name: melibazz_9
   type: vmess
-  server: 172.67.197.47
-  port: 8443
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  server: 104.17.69.9
+  port: 443
+  uuid: F3E36B53-E75E-48C0-B9F1-F918F397E996
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /
-  latency: 2
+    path: /speedtest
+- name: melibazz_10
+  type: vmess
+  server: 104.17.95.4
+  port: 443
+  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss13889
+- name: melibazz_11
+  type: vmess
+  server: 104.18.28.109
+  port: 443
+  uuid: 12eed507-9a58-4ca5-f7af-2871e9aae684
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /19544
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - 🔮 故障转移
-  - 🇺🇸 US | VMESS
-  - RELAY-104.18.6.138-0864
-  - RELAY-23.227.38.20-0609
-  - RELAY-172.67.218.162-0488
-  - RELAY-162.159.152.4-4616
-  - 未知节点
+  - DIRECT
   - melibazz
-  - melibazz
-  - melibazz
-  - melibazz
-  - melibazz
-  - melibazz
-  - 🇺🇸 US | VMESS
-  - XX | VMESS
-  - 🇺🇸 US-173.234.29.2-0114
-  - github.com/Ruk1ng001_91db8af1
-  - github.com/Ruk1ng001_f7ef9f2d
-  - RELAY-172.66.44.197-0690
-  - RELAY-104.21.82.183-0918
-  - 未知节点
+  - melibazz_1
+  - melibazz_2
+  - melibazz_3
+  - melibazz_4
+  - 🇺🇸 US-216.24.57.250-94
+  - melibazz_5
+  - melibazz_6
+  - melibazz_7
+  - melibazz_8
+  - melibazz_9
+  - melibazz_10
+  - melibazz_11
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
+  tolerance: 50
   proxies: &id001
-  - 🇺🇸 US | VMESS
-  - RELAY-104.18.6.138-0864
-  - RELAY-23.227.38.20-0609
-  - RELAY-172.67.218.162-0488
-  - RELAY-162.159.152.4-4616
-  - 未知节点
   - melibazz
-  - melibazz
-  - melibazz
-  - melibazz
-  - melibazz
-  - melibazz
-  - 🇺🇸 US | VMESS
-  - XX | VMESS
-  - 🇺🇸 US-173.234.29.2-0114
-  - github.com/Ruk1ng001_91db8af1
-  - github.com/Ruk1ng001_f7ef9f2d
-  - RELAY-172.66.44.197-0690
-  - RELAY-104.21.82.183-0918
-  - 未知节点
+  - melibazz_1
+  - melibazz_2
+  - melibazz_3
+  - melibazz_4
+  - 🇺🇸 US-216.24.57.250-94
+  - melibazz_5
+  - melibazz_6
+  - melibazz_7
+  - melibazz_8
+  - melibazz_9
+  - melibazz_10
+  - melibazz_11
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -307,13 +207,14 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇺🇸 US | VMESS
-  - 🇺🇸 US | VMESS
-  - 🇺🇸 US-173.234.29.2-0114
+  - 🇺🇸 US-216.24.57.250-94
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
+- DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
 - DOMAIN-SUFFIX,github.com,🚀 节点选择
 - DOMAIN-SUFFIX,youtube.com,🚀 节点选择
 - DOMAIN-KEYWORD,telegram,🚀 节点选择
+- DOMAIN-KEYWORD,openai,🚀 节点选择
+- GEOIP,LAN,DIRECT
 - GEOIP,CN,DIRECT
 - MATCH,🚀 节点选择
