@@ -1,16 +1,18 @@
 import base64
 import logging
 from pathlib import Path
-from parsers.v2ray_parser import proxy_to_v2ray_link
+# 修正：导入所有需要的、具体的转换器函数
+from parsers.v2ray_parser import proxy_to_vmess_link, proxy_to_vless_link, proxy_to_trojan_link
 from parsers.ss_parser import proxy_to_ss_link
 from parsers.hy2_parser import proxy_to_hy2_link
 
 logger = logging.getLogger(__name__)
 
+# 定义一个包含所有转换器的映射
 PROXY_CONVERTERS = {
-    "vmess": proxy_to_v2ray_link,
-    "vless": proxy_to_v2ray_link,
-    "trojan": proxy_to_v2ray_link,
+    "vmess": proxy_to_vmess_link,
+    "vless": proxy_to_vless_link,
+    "trojan": proxy_to_trojan_link,
     "ss": proxy_to_ss_link,
     "hy2": proxy_to_hy2_link,
 }
@@ -34,6 +36,7 @@ def generate_per_type_subscriptions(proxies: list, dist_dir: Path):
         return
 
     for proxy_type, proxy_list in grouped_proxies.items():
+        # 根据节点类型查找对应的转换器
         converter = PROXY_CONVERTERS[proxy_type]
         links = [converter(p) for p in proxy_list if converter(p) is not None]
         

@@ -1,14 +1,21 @@
 import yaml
 import logging
 from pathlib import Path
-from utils import get_country_code_from_name # 导入新的工具函数
+from utils import get_country_info_from_name # 导入新的工具函数
 
 logger = logging.getLogger(__name__)
 
-def generate_clash_subscription(proxies: list, dist_dir: Path, max_proxies: int = 300):
-    """生成 Clash 配置文件 (YAML 格式)。"""
+def generate_clash_subscription(
+    proxies: list, 
+    dist_dir: Path, 
+    filename: str = "clash.yaml", 
+    max_proxies: int = 300
+):
+    """
+    生成 Clash 配置文件 (YAML 格式)。
+    """
     if not proxies:
-        logger.warning("Clash 生成器：没有可用的节点。")
+        logger.warning(f"Clash 生成器：没有可用的节点来生成 {filename}。")
         return
 
     proxies_to_use = proxies[:max_proxies]
@@ -22,8 +29,8 @@ def generate_clash_subscription(proxies: list, dist_dir: Path, max_proxies: int 
     
     country_groups = {}
     for proxy in proxies_to_use:
-        # 修正：使用新的工具函数
-        code = get_country_code_from_name(proxy['name'])
+        # 修正：使用新的工具函数，并获取国家代码
+        code, _ = get_country_info_from_name(proxy['name'])
         if code != "未知":
             if code not in country_groups: country_groups[code] = []
             country_groups[code].append(proxy['name'])
@@ -42,10 +49,10 @@ def generate_clash_subscription(proxies: list, dist_dir: Path, max_proxies: int 
         ]
     }
 
-    file_path = dist_dir / "clash.yaml"
+    file_path = dist_dir / filename
     try:
         with open(file_path, "w", encoding="utf-8") as f:
             yaml.dump(template, f, allow_unicode=True, sort_keys=False, default_flow_style=False, indent=2)
-        logger.info(f"✅ Clash 订阅生成完成 → {file_path}")
+        logger.info(f"✅ Clash 订阅生成完成 → {file_path.name}")
     except Exception as e:
-        logger.error(f"❌ 生成 Clash 配置文件失败: {e}", exc_info=True)
+        logger.error(f"❌ 生成 Clash 配置文件 {filename} 失败: {e}", exc_info=True)

@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  node-streamer:
+    # 告诉 Compose 根据当前目录的 Dockerfile 构建基础环境镜像
+    build: .
+    # 构建出来的镜像名称
+    image: node-streamer-env:noble
+    # 运行时的容器名称
+    container_name: youtube
+    # 遇到意外崩溃或宿主机重启时，自动拉起容器
+    restart: unless-stopped
+
+    # 【核心架构】将宿主机的当前目录挂载到容器的 /app 目录
+    volumes:
+      - ./:/app
+    working_dir: /app
+
+    # 自动读取并注入同目录下的 .env 文件中的所有环境变量
+    env_file:
+      - .env
+
+    # 容器启动后执行的调度脚本（确保你之前保存的文件名叫 entrypoint.sh 且有执行权限）
+    command: bash entrypoint.sh
+
+    # 日志轮转限制：防止 7x24 小时运行导致日志文件把服务器硬盘撑爆
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "3"

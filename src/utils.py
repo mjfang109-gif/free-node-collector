@@ -1,38 +1,78 @@
 import re
 
-# 增强版国家/地区代码和名称的映射，增加了 Emoji 旗帜
-COUNTRY_MAP = {
-    'US': ['美国', 'US', 'United States', 'USA', '🇺🇸'],
-    'HK': ['香港', 'HK', 'Hong Kong', '🇭🇰'],
-    'JP': ['日本', 'JP', 'Japan', '🇯🇵'],
-    'SG': ['新加坡', 'SG', 'Singapore', '🇸🇬'],
-    'TW': ['台湾', 'TW', 'Taiwan', 'ROC', '🇹🇼'],
-    'GB': ['英国', 'GB', 'United Kingdom', 'UK', '🇬🇧'],
-    'CA': ['加拿大', 'CA', 'Canada', '🇨🇦'],
-    'DE': ['德国', 'DE', 'Germany', '🇩🇪'],
-    'FR': ['法国', 'FR', 'France', '🇫🇷'],
-    'AU': ['澳大利亚', 'AU', 'Australia', '🇦🇺'],
-    'KR': ['韩国', 'KR', 'Korea', '🇰🇷'],
-    'RU': ['俄罗斯', 'RU', 'Russia', '🇷🇺'],
-    'NL': ['荷兰', 'NL', 'Netherlands', '🇳🇱'],
-    'IE': ['爱尔兰', 'IE', 'Ireland', '🇮🇪'],
-    # ...可以继续添加更多...
+# 优化 COUNTRY_MAP 结构，将 Emoji 和关键词分开，便于使用
+COUNTRY_INFO = {
+    'US': {'flag': '🇺🇸', 'keywords': ['美国', 'US', 'United States', 'USA']},
+    'HK': {'flag': '🇭🇰', 'keywords': ['香港', 'HK', 'Hong Kong']},
+    'JP': {'flag': '🇯🇵', 'keywords': ['日本', 'JP', 'Japan']},
+    'SG': {'flag': '🇸🇬', 'keywords': ['新加坡', 'SG', 'Singapore']},
+    'TW': {'flag': '🇹🇼', 'keywords': ['台湾', 'TW', 'Taiwan', 'ROC']},
+    'GB': {'flag': '🇬🇧', 'keywords': ['英国', 'GB', 'United Kingdom', 'UK']},
+    'CA': {'flag': '🇨🇦', 'keywords': ['加拿大', 'CA', 'Canada']},
+    'DE': {'flag': '🇩🇪', 'keywords': ['德国', 'DE', 'Germany']},
+    'FR': {'flag': '🇫🇷', 'keywords': ['法国', 'FR', 'France']},
+    'AU': {'flag': '🇦🇺', 'keywords': ['澳大利亚', 'AU', 'Australia']},
+    'KR': {'flag': '🇰🇷', 'keywords': ['韩国', 'KR', 'Korea']},
+    'RU': {'flag': '🇷🇺', 'keywords': ['俄罗斯', 'RU', 'Russia']},
+    'NL': {'flag': '🇳🇱', 'keywords': ['荷兰', 'NL', 'Netherlands']},
+    'IE': {'flag': '🇮🇪', 'keywords': ['爱尔兰', 'IE', 'Ireland']},
 }
 
-def get_country_code_from_name(name: str):
-    """
-    从节点名称中提取国家/地区代码。
-    通过关键字和 Emoji 旗帜进行匹配。
+# 编译一个正则表达式来匹配大多数 Emoji
+# 这是一个简化的范围，但能覆盖绝大部分常见 Emoji
+EMOJI_PATTERN = re.compile(
+    "["
+    "\U0001F600-\U0001F64F"  # emoticons
+    "\U0001F300-\U0001F5FF"  # symbols & pictographs
+    "\U0001F680-\U0001F6FF"  # transport & map symbols
+    "\U0001F1E0-\U0001F1FF"  # flags (iOS)
+    "\U00002702-\U000027B0"
+    "\U000024C2-\U0001F251"
+    "]+",
+    flags=re.UNICODE,
+)
 
-    :param name: 节点名称字符串。
-    :return: 国家/地区代码字符串 (如 "US", "HK") 或 "未知"。
+def get_country_info_from_name(name: str):
+    """从节点名称中提取国家信息（代码和旗帜）。"""
+    if not name:
+        return "未知", ""
+    for code, info in COUNTRY_INFO.items():
+        for keyword in info['keywords']:
+            if re.search(r'\b' + re.escape(keyword) + r'\b', name, re.IGNORECASE) or keyword in name:
+                return code, info['flag']
+    return "未知", ""
+
+def clean_node_name(name: str):
+    """
+    净化节点名称：移除广告、多余 Emoji，并统一格式。
     """
     if not name:
-        return "未知"
+        return "未命名节点"
+
+    country_code, country_flag = get_country_info_from_name(name)
+    
+    # 移除所有 Emoji
+    cleaned_name = EMOJI_PATTERN.sub('', name)
+    
+    # 移除常见的广告标签和多余字符
+    # 包括 [...]、{...}、(...)、@...、以及常见的域名/频道名
+    patterns_to_remove = [
+        r'\[.*?\]', r'\{.*?\}', r'\(.*?\)',
+        r'@[a-zA-Z0-9_]+',
+        r'(?i)telegram', r'(?i)youtube',
+        r'(?i)www\.[a-zA-Z0-9-]+\.[a-z]+',
+        r'[a-zA-Z0-9-]+\.tech',
+        r'by .*',
+    ]
+    for pattern in patterns_to_remove:
+        cleaned_name = re.sub(pattern, '', cleaned_name)
         
-    for code, keywords in COUNTRY_MAP.items():
-        for keyword in keywords:
-            # 使用正则表达式确保匹配的是完整的单词或标志
-            if re.search(r'\b' + re.escape(keyword) + r'\b', name, re.IGNORECASE) or keyword in name:
-                return code
-    return "未知"
+    # 移除前后多余的空格和特殊字符
+    cleaned_name = cleaned_name.strip(' -_|=')
+    
+    # 如果净化后名字为空，则使用国家代码作为备用名
+    if not cleaned_name:
+        cleaned_name = country_code if country_code != "未知" else "未知节点"
+        
+    # 最终组合: [旗帜] [净化后的名称]
+    return f"{country_flag} {cleaned_name}".strip()

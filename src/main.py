@@ -1,27 +1,14 @@
 import asyncio
 import json
-import re
 from logger import setup_logger
 from config import load_all_sources, get_dist_dir
 from collectors import UnifiedCollector, TelegramWebCollector
 from parsers import universal_parser
 from testers.speed_tester import speed_test_all
 from generators import generate_all_subscriptions
-from utils import get_country_code_from_name # 导入新的工具函数
+from utils import get_country_info_from_name, clean_node_name # 导入新函数
 
 logger = setup_logger()
-
-def _extract_node_info(proxy: dict):
-    """从代理字典中提取关键信息用于生成 JSON。"""
-    return {
-        "protocol": proxy.get("type", "N/A"),
-        # 修正：使用更可靠的函数来获取位置
-        "location": get_country_code_from_name(proxy.get("name")),
-        "ip": proxy.get("server", "N/A"),
-        "port": proxy.get("port", 0),
-        "latency_ms": proxy.get("latency", 9999),
-        "name": proxy.get("name", "N/A"),
-    }
 
 def generate_top_nodes_json(proxies: list, top_n: int = 20):
     """生成包含速度最快的前 N 个节点信息的 JSON 文件。"""
@@ -30,7 +17,15 @@ def generate_top_nodes_json(proxies: list, top_n: int = 20):
         return
 
     top_proxies = proxies[:top_n]
-    nodes_info = [_extract_node_info(p) for p in top_proxies]
+    nodes_info = [{
+        "protocol": p.get("type", "N/A"),
+        # 修正：如果 location 未知，则使用国家代码
+        "location": get_country_info_from_name(p.get("name"))[0],
+        "ip": p.get("server", "N/A"),
+        "port": p.get("port", 0),
+        "latency_ms": p.get("latency", 9999),
+        "name": p.get("name", "N/A"), # name 字段现在是净化后的
+    } for p in top_proxies]
     
     dist_dir = get_dist_dir()
     dist_dir.mkdir(exist_ok=True)
@@ -85,11 +80,19 @@ async def main():
 
     logger.info(f"\n✅ 所有信源抓取和解析完成，共获得 {len(all_proxies)} 个不重复的节点。")
 
-    sorted_proxies = await speed_test_all(all_proxies, max_workers=250, top_n=200)
+    # 净化所有节点的名称
+    logger.info("🧼 开始净化所有节点名称...")
+    for proxy in all_proxies:
+        proxy["name"] = clean_node_name(proxy.get("name", ""))
+
+    TOTAL_NODES_TO_KEEP = 200
+    TOP_N_NODES = 20
+
+    sorted_proxies = await speed_test_all(all_proxies, max_workers=100, top_n=TOTAL_NODES_TO_KEEP)
 
     if sorted_proxies:
-        generate_top_nodes_json(sorted_proxies, top_n=20)
-        generate_all_subscriptions(sorted_proxies)
+        generate_top_nodes_json(sorted_proxies, top_n=TOP_N_NODES)
+        generate_all_subscriptions(sorted_proxies, top_n=TOP_N_NODES)
     else:
         logger.warning("🤷‍♂️ 没有任何节点通过测速，无法生成任何文件。")
 

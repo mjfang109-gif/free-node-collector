@@ -16,12 +16,12 @@ PROXY_CONVERTERS = {
     "hy2": proxy_to_hy2_link,
 }
 
-def generate_v2ray_subscription(proxies: list, dist_dir: Path, filename: str = "v2ray.txt"):
+def generate_top_nodes_subscription(proxies: list, dist_dir: Path, filename: str = "top20_v2ray.txt"):
     """
-    生成统一的 V2Ray 订阅文件 (Base64 编码)。
+    为给定的节点列表生成一个统一的 Base64 编码的 V2Ray 格式订阅链接。
     """
     if not proxies:
-        logger.warning(f"V2Ray 生成器：没有可用的节点来生成 {filename}。")
+        logger.warning(f"Top V2Ray 生成器：没有可用的节点来生成 {filename}。")
         return
 
     links = []
@@ -34,7 +34,7 @@ def generate_v2ray_subscription(proxies: list, dist_dir: Path, filename: str = "
                 links.append(link)
     
     if not links:
-        logger.warning(f"V2Ray 生成器：没有可转换的节点来生成 {filename}。")
+        logger.warning(f"Top V2Ray 生成器：没有可转换的节点来生成 {filename}。")
         return
 
     content = "\n".join(links)
@@ -44,6 +44,6 @@ def generate_v2ray_subscription(proxies: list, dist_dir: Path, filename: str = "
     try:
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(encoded_content)
-        logger.info(f"✅ V2Ray 订阅生成完成 → {file_path.name}")
+        logger.info(f"✅ Top V2Ray 订阅生成完成 → {file_path.name}")
     except Exception as e:
-        logger.error(f"❌ 生成 V2Ray 订阅文件 {filename} 失败: {e}", exc_info=True)
+        logger.error(f"❌ 生成 Top V2Ray 订阅文件 {filename} 失败: {e}", exc_info=True)
