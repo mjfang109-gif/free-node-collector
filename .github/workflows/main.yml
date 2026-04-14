@@ -26,11 +26,11 @@ jobs:
       - name: Download and Setup Clash Kernel (mihomo)
         run: |
           # 1. 定义内核版本和下载 URL
-          MIHOMO_VERSION="v1.19.20"
+          MIHOMO_VERSION="v1.18.0"
           MIHOMO_URL="https://github.com/MetaCubeX/mihomo/releases/download/${MIHOMO_VERSION}/mihomo-linux-amd64-${MIHOMO_VERSION}.gz"
           
           # 2. 下载内核
-          echo "Downloading mihomo kernel from ${MIHOMO_URL}..."
+          echo "Downloading mihomo kernel from ${MIHOMO_URL}"
           curl -sL -o mihomo.gz "${MIHOMO_URL}"
           
           # 3. 解压
