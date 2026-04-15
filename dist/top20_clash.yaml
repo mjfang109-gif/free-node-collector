@@ -20,145 +20,135 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: melibazz
-  type: vmess
-  server: 104.16.108.100
-  port: 8880
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /RpT6kZjkw45EenmTcDYWs
-- name: melibazz_1
-  type: vmess
-  server: 104.16.72.175
+- name: '[By EbraSha]'
+  type: ss
+  server: 173.244.56.9
   port: 443
-  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wss13889
-- name: 🇺🇸 US | VMESS
-  type: vmess
-  server: 104.21.15.212
-  port: 443
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /linkws
-- name: '102620170'
-  server: 104.21.50.177
-  port: 443
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: alvvin.click
-- name: V10-dlj.tf/ssrsub
-  server: 162.159.253.28
-  port: 80
-  type: vmess
-  uuid: 073360d9-72cb-4ba5-9a40-8ac6cd918356
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sls.shabijichang.com
-- name: github.com/Ruk1ng001_7c65b764
-  network: ws
-  port: 8443
-  server: 198.41.209.193
-  servername: wr.ssdxz.cn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 29ff2954-dfea-4d20-8089-059cfa861453
-  ws-opts:
-    headers:
-      Host: wr.ssdxz.cn
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /proxyip=ProxyIP.SG.CMLiussss.net/proxyip=tw.william.us.ci,ProxyIP.SG.CMLiussss.net
-- name: github.com/Ruk1ng001_91db8af1
-  network: ws
-  port: 443
-  server: 135.84.74.20
-  servername: sni.111000.dynv6.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.dynv6.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/48.0.2564.116 Safari/537.36
-    path: /?ed=2560&Telegram🇨🇳+@WangCai2
-- name: RELAY-170.114.45.6-20
-  server: support.zoom.us
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: '[By EbraSha]_1'
+  type: ss
+  server: 82.38.31.62
   port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: '[By EbraSha]_2'
+  type: ss
+  server: 203.23.128.92
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: VMESS-209
   type: vmess
-  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
-  alterId: 0
-  cipher: auto
-  skip-cert-verify: true
-  network: ws
-  tls: false
-- name: 🇺🇸 US-216.24.57.250-94
-  server: 216.24.57.250
+  server: 209.126.84.189
   port: 443
-  type: trojan
-  password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
-  sni: afrcloud1.mmv.kr
-  skip-cert-verify: true
-- name: melibazz_2
-  type: vmess
-  server: 104.16.8.3
-  port: 443
-  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wss51068
-- name: melibazz_3
-  type: vmess
-  server: 104.16.91.78
-  port: 443
-  uuid: F3E36B53-E75E-48C0-B9F1-F918F397E996
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /speedtest
-- name: VMESS-173.249.209.146:20086-3570
-  type: vmess
-  server: 173.249.209.146
-  port: 20086
-  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
   alterId: 0
   cipher: auto
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /vmessws
+- name: b2n.ir/v2ray-configs | 996
+  type: ss
+  server: 103.186.154.53
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: '>>::BH'
+  type: ss
+  server: 38.54.2.182
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: b2n.ir/v2ray-configs | 666
+  type: ss
+  server: 103.186.155.240
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: b2n.ir/v2ray-configs | 906
+  type: ss
+  server: 103.186.154.198
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: '[By EbraSha]_3'
+  type: ss
+  server: 188.214.157.30
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: b2n.ir/v2ray-configs | 189
+  type: ss
+  server: 103.186.154.36
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: b2n.ir/v2ray-configs | 761
+  type: ss
+  server: 103.186.155.80
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: b2n.ir/v2ray-configs | 40
+  type: ss
+  server: 103.186.154.15
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: b2n.ir/v2ray-configs | 927
+  type: ss
+  server: 103.186.155.109
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: b2n.ir/v2ray-configs | 127
+  type: ss
+  server: 82.180.146.173
+  port: 35652
+  cipher: aes-128-gcm
+  password: 93498539-7838-4836-b9b3-8311ffc79bcf
+- name: MY-47.250.45.234-4675
+  type: vmess
+  server: 47.250.45.234
+  port: 8613
+  uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+- name: b2n.ir/v2ray-configs | 858
+  type: ss
+  server: 213.109.147.242
+  port: 62685
+  cipher: chacha20-ietf-poly1305
+  password: VpKABcOpNNA0l5G2AVOmw8
+- name: b2n.ir/v2ray-configs | 604
+  type: ss
+  server: 103.186.154.19
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+- name: 🇺🇸 US-149.30.232.103-4711
+  type: vmess
+  server: 149.30.232.103
+  port: 15097
+  uuid: 460908b8-de16-42e9-bd0d-191522ab92a5
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+- name: b2n.ir/v2ray-configs | 803
+  type: ss
+  server: 103.186.155.225
+  port: 38388
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -166,36 +156,50 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
-  - melibazz
-  - melibazz_1
-  - 🇺🇸 US | VMESS
-  - '102620170'
-  - V10-dlj.tf/ssrsub
-  - github.com/Ruk1ng001_7c65b764
-  - github.com/Ruk1ng001_91db8af1
-  - RELAY-170.114.45.6-20
-  - 🇺🇸 US-216.24.57.250-94
-  - melibazz_2
-  - melibazz_3
-  - VMESS-173.249.209.146:20086-3570
+  - '[By EbraSha]'
+  - '[By EbraSha]_1'
+  - '[By EbraSha]_2'
+  - VMESS-209
+  - b2n.ir/v2ray-configs | 996
+  - '>>::BH'
+  - b2n.ir/v2ray-configs | 666
+  - b2n.ir/v2ray-configs | 906
+  - '[By EbraSha]_3'
+  - b2n.ir/v2ray-configs | 189
+  - b2n.ir/v2ray-configs | 761
+  - b2n.ir/v2ray-configs | 40
+  - b2n.ir/v2ray-configs | 927
+  - b2n.ir/v2ray-configs | 127
+  - MY-47.250.45.234-4675
+  - b2n.ir/v2ray-configs | 858
+  - b2n.ir/v2ray-configs | 604
+  - 🇺🇸 US-149.30.232.103-4711
+  - b2n.ir/v2ray-configs | 803
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - melibazz
-  - melibazz_1
-  - 🇺🇸 US | VMESS
-  - '102620170'
-  - V10-dlj.tf/ssrsub
-  - github.com/Ruk1ng001_7c65b764
-  - github.com/Ruk1ng001_91db8af1
-  - RELAY-170.114.45.6-20
-  - 🇺🇸 US-216.24.57.250-94
-  - melibazz_2
-  - melibazz_3
-  - VMESS-173.249.209.146:20086-3570
+  - '[By EbraSha]'
+  - '[By EbraSha]_1'
+  - '[By EbraSha]_2'
+  - VMESS-209
+  - b2n.ir/v2ray-configs | 996
+  - '>>::BH'
+  - b2n.ir/v2ray-configs | 666
+  - b2n.ir/v2ray-configs | 906
+  - '[By EbraSha]_3'
+  - b2n.ir/v2ray-configs | 189
+  - b2n.ir/v2ray-configs | 761
+  - b2n.ir/v2ray-configs | 40
+  - b2n.ir/v2ray-configs | 927
+  - b2n.ir/v2ray-configs | 127
+  - MY-47.250.45.234-4675
+  - b2n.ir/v2ray-configs | 858
+  - b2n.ir/v2ray-configs | 604
+  - 🇺🇸 US-149.30.232.103-4711
+  - b2n.ir/v2ray-configs | 803
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -205,8 +209,7 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇺🇸 US | VMESS
-  - 🇺🇸 US-216.24.57.250-94
+  - 🇺🇸 US-149.30.232.103-4711
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
