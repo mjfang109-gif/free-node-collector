@@ -1,4 +1,5 @@
 import re
+import ipaddress
 
 COUNTRY_INFO = {
     'US': {'flag': '🇺🇸', 'keywords': ['美国', 'US', 'United States', 'USA']},
@@ -29,6 +30,73 @@ EMOJI_PATTERN = re.compile(
     flags=re.UNICODE,
 )
 
+
+def _is_garbage_name(name: str) -> bool:
+    """判断名称是否是无意义的垃圾值（纯数字、IP地址、过短）。"""
+    if not name or len(name.strip()) < 2:
+        return True
+    stripped = name.strip()
+    # 纯数字（序号）
+    if stripped.isdigit():
+        return True
+    # IP 地址
+    try:
+        ipaddress.ip_address(stripped)
+        return True
+    except ValueError:
+        pass
+    return False
+
+
+def clean_node_name(proxy: dict) -> str:
+    """
+    智能净化节点名称。
+    修复：当名称是纯数字/IP/垃圾时，生成可读的 [旗帜][协议]-[地区] 格式。
+    """
+    original_name = proxy.get("name", "")
+    country_code, country_flag = get_country_info_from_name(original_name)
+
+    # 1. 移除所有 Emoji
+    cleaned_name = EMOJI_PATTERN.sub('', original_name)
+
+    # 2. 移除广告标签（注意：不要删括号内有意义的地区信息！）
+    patterns_to_remove = [
+        r'@[a-zA-Z0-9_]+',
+        r'(?i)telegram',
+        r'(?i)youtube',
+        r'(?i)www\.[a-zA-Z0-9-]+\.[a-z]+',
+        r'[a-zA-Z0-9-]+\.(tech|xyz|top|shop)',
+        r'(?i)powered by\s.*',
+        r'#\S+',
+    ]
+    for pattern in patterns_to_remove:
+        cleaned_name = re.sub(pattern, '', cleaned_name)
+
+    # 3. 清理多余空格和边界符号
+    cleaned_name = ' '.join(cleaned_name.split()).strip(' -_|=')
+
+    # 4. 如果是垃圾名称，尝试从 server 域名推断地区，生成可读名称
+    if _is_garbage_name(cleaned_name):
+        proxy_type = proxy.get("type", "proxy").upper()
+        server = proxy.get("server", "")
+
+        # 尝试从 server 域名再提取一次国家信息
+        if not country_flag:
+            country_code, country_flag = get_country_info_from_name(server)
+
+        # 生成可读名称：[协议]-[国家代码 或 服务器前缀]
+        if country_code and country_code != "未知":
+            cleaned_name = f"{proxy_type}-{country_code}"
+        else:
+            # 取域名的第一段作为标识，比纯数字好看得多
+            server_label = server.split('.')[0][:12] if server else "unknown"
+            cleaned_name = f"{proxy_type}-{server_label}"
+
+    # 5. 组合旗帜
+    if country_flag:
+        return f"{country_flag} {cleaned_name}"
+    return cleaned_name
+
 def get_country_info_from_name(name: str):
     """从节点名称中提取国家信息（代码和旗帜）。"""
     if not name:
@@ -38,45 +106,3 @@ def get_country_info_from_name(name: str):
             if re.search(r'\b' + re.escape(keyword) + r'\b', name, re.IGNORECASE) or keyword in name:
                 return code, info['flag']
     return "未知", ""
-
-def clean_node_name(proxy: dict):
-    """
-    智能净化节点名称，并确保名称的唯一性。
-    """
-    original_name = proxy.get("name", "")
-    
-    country_code, country_flag = get_country_info_from_name(original_name)
-    
-    # 1. 移除所有 Emoji
-    cleaned_name = EMOJI_PATTERN.sub('', original_name)
-    
-    # 2. 移除常见的广告标签和多余字符
-    patterns_to_remove = [
-        r'\[.*?\]', r'\{.*?\}', r'\(.*?\)',
-        r'@[a-zA-Z0-9_]+',
-        r'(?i)telegram', r'(?i)youtube',
-        r'(?i)www\.[a-zA-Z0-9-]+\.[a-z]+',
-        r'[a-zA-Z0-9-]+\.(tech|xyz|top|shop)',
-        r'by\s.*', r'Powered by',
-        r'#\S+', # 移除 # 开头的话题标签
-    ]
-    for pattern in patterns_to_remove:
-        cleaned_name = re.sub(pattern, '', cleaned_name)
-        
-    # 3. 清理多余的空格和特殊字符
-    cleaned_name = ' '.join(cleaned_name.split()).strip(' -_|=')
-    
-    # 4. 修正：如果净化后名字为空，则生成一个唯一的备用名
-    if not cleaned_name:
-        proxy_type = proxy.get("type", "Proxy")
-        server = proxy.get("server", "unknown.server")
-        port = proxy.get("port", "0")
-        # 使用 hash 值确保在 server:port 相同但其他信息不同时也能有区分
-        unique_suffix = hash(f"{proxy_type}-{server}-{port}") % 10000 # 取模确保后缀短
-        cleaned_name = f"{proxy_type.upper()}-{server}:{port}-{unique_suffix}"
-        
-    # 5. 最终组合: [旗帜] [净化后的名称]
-    if country_flag:
-        return f"{country_flag} {cleaned_name}"
-    
-    return cleaned_name

@@ -6,7 +6,8 @@ FILE="${SCRIPT_DIR}"/free-node-collector.md
 COMMAND="${SCRIPT_DIR}"/code2prompt
 echo "脚本目录: ${SCRIPT_DIR}"
 if [ -f "${FILE}" ]; then
+  echo "删除原文件：${FILE}"
   rm -rf "${FILE}"
 fi
-
+sleep 3
 $COMMAND -i "*.py,*.yaml,*.yml,*.txt" -e ".venv/*,dist/*" -O "${FILE}"
