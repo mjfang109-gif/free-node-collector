@@ -20,1504 +20,20 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: RELAY-172.67.183.35-0593
-  type: vmess
-  server: 172.67.183.35
-  port: 443
-  uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇨🇦 CA-158.51.121.63-6774
-  type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: linkvws
-- name: RELAY-203.23.104.190-8184
-  type: vmess
-  server: 203.23.104.190
-  port: 443
-  uuid: 1af4ba3d-e60f-4f83-b38b-23fc181f676d
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /11201
-- name: RELAY-185.18.250.70-8238
-  type: vmess
-  server: 185.18.250.70
-  port: 443
-  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wss51068
-- name: RELAY-104.18.28.109-8764
-  type: vmess
-  server: 104.18.28.109
-  port: 443
-  uuid: be74ca03-6a7c-4c88-edc2-c6434ead0cfa
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /16575
-- name: EE-176.112.146.190-0513
-  type: vmess
-  server: 176.112.146.190
-  port: 80
-  uuid: f9247df4-02d5-4b31-acc5-4022652c5953
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: b2n.ir/v2ray-configs | 293
-  type: ss
-  server: 103.186.154.52
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: b2n.ir/v2ray-configs | 959
-  type: ss
-  server: 51.77.53.200
-  port: 2375
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-- name: b2n.ir/v2ray-configs | 4
-  type: ss
-  server: 103.186.154.22
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: b2n.ir/v2ray-configs | 533
-  type: ss
-  server: 14.29.124.168
-  port: 25220
-  cipher: aes-128-cfb
-  password: QazEdcTgb159@$*
-- name: b2n.ir/v2ray-configs | 701
-  type: ss
-  server: 149.202.82.172
-  port: 8091
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-- name: b2n.ir/v2ray-configs | 31
-  type: ss
-  server: 172.99.188.71
-  port: 2375
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-- name: b2n.ir/v2ray-configs | 220
-  type: ss
-  server: 167.88.61.14
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: b2n.ir/v2ray-configs | 231
-  type: ss
-  server: 167.88.63.99
-  port: 4444
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-- name: '[By EbraSha]'
-  type: ss
-  server: 195.35.113.79
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 1112935345BtgV5PDHVww
-- name: '[By EbraSha]_1'
-  type: ss
-  server: 45.158.171.136
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-- name: '[By EbraSha]_2'
-  type: ss
-  server: 13.87.96.194
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 1xO2cqPazqjGfCfd
-- name: '[By EbraSha]_3'
-  type: ss
-  server: 74.177.162.130
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 1xO2cqPazqjGfCfd
-- name: '[By EbraSha]_4'
-  type: ss
-  server: 164.92.156.41
-  port: 24206
-  cipher: chacha20-ietf-poly1305
-  password: zI7kiNZ0UfV9cXB73a4nRD
-- name: '[By EbraSha]_5'
-  type: ss
-  server: 5.183.176.93
-  port: 800
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: '[By EbraSha]_6'
-  type: ss
-  server: 5.183.176.93
-  port: 802
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: '[By EbraSha]_7'
-  type: ss
-  server: 94.131.123.147
-  port: 7383
-  cipher: chacha20-ietf-poly1305
-  password: eSHEdJz96rqNkOCAzd5Csv
-- name: '[By EbraSha]_8'
-  type: ss
-  server: 94.131.21.174
-  port: 54075
-  cipher: chacha20-ietf-poly1305
-  password: o38yuvzSe3m5aDNpHtUPH1zGwbGEXXMDsGwVaub2SYEmHUa2WGZUjiezX3Vvva9CCzpjxYtuJLgKsSnsyKBf9ciPVba3y4o3
-- name: '[By EbraSha]_9'
-  type: ss
-  server: 141.98.101.181
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: '[By EbraSha]_10'
-  type: ss
-  server: 5.188.181.201
-  port: 9014
-  cipher: aes-256-cfb
-  password: KnJGad3FqTvjqbaX
-- name: '[By EbraSha]_11'
-  type: ss
-  server: 217.30.10.18
-  port: 9014
-  cipher: aes-256-cfb
-  password: KnJGad3FqTvjqbaX
-- name: '[By EbraSha]_12'
-  type: ss
-  server: 103.186.154.140
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: '[By EbraSha]_13'
-  type: ss
-  server: 103.186.154.153
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: '[By EbraSha]_14'
-  type: ss
-  server: 13.229.201.5
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: '[By EbraSha]_15'
-  type: ss
-  server: 141.95.125.11
-  port: 443
-  cipher: aes-256-cfb
-  password: asdKkaskJKfnsa
-- name: '[By EbraSha]_16'
-  type: ss
-  server: 217.30.10.18
-  port: 9038
-  cipher: aes-256-cfb
-  password: gYCYXfkUQEs2TaJQ
-- name: b2n.ir/v2ray-configs | 539
-  type: ss
-  server: 172.99.188.99
-  port: 6379
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-- name: '[By EbraSha]_17'
-  type: ss
-  server: 5.183.176.92
-  port: 812
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: '[By EbraSha]_18'
-  type: ss
-  server: 2.56.207.150
-  port: 8443
-  cipher: chacha20-ietf-poly1305
-  password: UKK5XUvjIlOkeTbBA0nfYh
-- name: '[By EbraSha]_19'
-  type: ss
-  server: 208.67.105.87
-  port: 42501
-  cipher: chacha20-ietf-poly1305
-  password: nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf
-- name: '[By EbraSha]_20'
-  type: ss
-  server: 64.176.184.129
-  port: 1866
-  cipher: chacha20-ietf-poly1305
-  password: oXGp1+ihlfKg826H
-- name: '[By EbraSha]_21'
-  type: ss
-  server: 103.36.91.32
-  port: 8388
-  cipher: chacha20-ietf
-  password: asd123456
-- name: '[By EbraSha]_22'
-  type: ss
-  server: 137.175.97.159
-  port: 8388
-  cipher: chacha20-ietf
-  password: asd123456
-- name: '[By EbraSha]_23'
-  type: ss
-  server: 45.89.52.66
-  port: 9000
-  cipher: aes-256-cfb
-  password: a3GFYt36Sm82Vys9
-- name: '[By EbraSha]_24'
-  type: ss
-  server: 5.188.181.201
-  port: 9000
-  cipher: aes-256-cfb
-  password: a3GFYt36Sm82Vys9
-- name: '[By EbraSha]_25'
-  type: ss
-  server: 213.183.59.206
-  port: 9084
-  cipher: aes-256-cfb
-  password: c3NtHJ5ujV2tGDfj
-- name: '[By EbraSha]_26'
-  type: ss
-  server: 217.30.10.18
-  port: 9084
-  cipher: aes-256-cfb
-  password: c3NtHJ5ujV2tGDfj
-- name: MY-47.250.95.53-7083
-  type: vmess
-  server: 47.250.95.53
-  port: 49096
-  uuid: 2709990b-6eaf-4a81-a130-ae30bc579dc4
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 US-206.168.190.218-8158
-  type: vmess
-  server: 206.168.190.218
-  port: 2083
-  uuid: dadc15c0-3169-11ee-b437-205c6d5f5d78
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /V2RayyNGvpn
-- name: '[By EbraSha]_27'
-  type: ss
-  server: 77.110.110.117
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 9JeYy8SkViXuSHVs9GFeSe
-- name: '[By EbraSha]_28'
-  type: ss
-  server: 37.120.219.218
-  port: 804
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: '[By EbraSha]_29'
-  type: ss
-  server: 38.91.107.225
-  port: 805
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: '[By EbraSha]_30'
-  type: ss
-  server: 38.91.107.225
-  port: 812
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: '[By EbraSha]_31'
-  type: ss
-  server: 78.129.253.9
-  port: 805
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: '[By EbraSha]_32'
-  type: ss
-  server: 212.113.106.243
-  port: 12949
-  cipher: chacha20-ietf-poly1305
-  password: P2zxXPewlV3BlfqqYiSthvtLc
-- name: '[By EbraSha]_33'
-  type: ss
-  server: 83.172.138.137
-  port: 8443
-  cipher: chacha20-ietf-poly1305
-  password: nQSAROThObMW1nK22thj6J
-- name: '[By EbraSha]_34'
-  type: ss
-  server: 45.145.42.70
-  port: 25366
-  cipher: aes-128-gcm
-  password: join--ZEDMODEON
-- name: '[By EbraSha]_35'
-  type: ss
-  server: 213.183.41.38
-  port: 9027
-  cipher: aes-256-cfb
-  password: EXN3S3eQpjE7EJu8
-- name: '[By EbraSha]_36'
-  type: ss
-  server: 80.92.204.106
-  port: 9064
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
-- name: '[By EbraSha]_37'
-  type: ss
-  server: 217.30.10.18
-  port: 9040
-  cipher: aes-256-cfb
-  password: p9z5BVADH2YFs3MN
-- name: '[By EbraSha]_38'
-  type: ss
-  server: 38.114.114.69
-  port: 6697
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: '[By EbraSha]_39'
-  type: ss
-  server: 38.68.134.85
-  port: 5001
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇺🇸 US-198.200.48.230-7390
-  type: vmess
-  server: 198.200.48.230
-  port: 37006
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇭🇰 HK-47.76.136.178-6997
-  type: vmess
-  server: 47.76.136.178
-  port: 28653
-  uuid: 836bf0ea-d6db-4d2e-c4b1-4ab28b6fdee6
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇭🇰 HK-47.86.43.91-7147
-  type: vmess
-  server: 47.86.43.91
-  port: 20521
-  uuid: e03d1609-cd88-443d-917b-8344c1529a85
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: RELAY-172.67.191.240-8325
-  type: vmess
-  server: 172.67.191.240
-  port: 80
-  uuid: 92eb32af-ec3c-40d4-ab83-c3df80af64af
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: RELAY-104.27.115.85-8699
-  type: vmess
-  server: 104.27.115.85
-  port: 443
-  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /wss51068
-- name: 🇺🇸 US-199.180.100.97-7428
-  type: vmess
-  server: 199.180.100.97
-  port: 31003
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-- name: RELAY-185.162.228.110-1113
-  type: vmess
-  server: 185.162.228.110
-  port: 443
-  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /AUIKN8AU
-- name: 🇹🇼 TW-103.61.139.137-7052
-  type: vmess
-  server: 103.61.139.137
-  port: 20521
-  uuid: f8d93cfb-3d5d-447c-a697-16496dd74697
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: SC-156.245.8.144-8436
-  type: vmess
-  server: 156.245.8.144
-  port: 443
-  uuid: 63b4b829-7f01-4e26-b037-f04b1f098765
-  alterId: 64
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /path/1690973478986
-- name: RELAY-104.31.16.30-8663
-  type: vmess
-  server: 104.31.16.30
-  port: 80
-  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /i99LgvSaslbsPLLQQ7j6Z
-- name: RELAY-172.67.169.131-0638
-  type: vmess
-  server: 172.67.169.131
-  port: 443
-  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /AUIKN8AU
-- name: RELAY-198.41.212.100-0612
-  type: vmess
-  server: 198.41.212.100
-  port: 443
-  uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ray
-- name: RELAY-154.92.9.70-8454
-  type: vmess
-  server: 154.92.9.70
-  port: 443
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /blue
-- name: RELAY-172.64.150.57-3442
-  type: vmess
-  server: 172.64.150.57
-  port: 8080
-  uuid: e3fa5050-67f5-4625-a778-5d9283f4334f
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /m1
-- name: VN-103.98.151.144-3693
-  type: vmess
-  server: 103.98.151.144
-  port: 80
-  uuid: 7fd77cee-282f-4f59-8e78-27146725ba89
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: WS-None | | src
-  type: vmess
-  server: 104.26.14.85
-  port: 8080
-  uuid: nasnet
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /nasnet/cdn
-- name: RELAY-104.21.83.115-7520
-  type: vmess
-  server: 104.21.83.115
-  port: 443
-  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /link
-- name: CN-106.55.187.139-1509
-  type: vmess
-  server: 106.55.187.139
-  port: 8448
-  uuid: 5a464707-3162-4a09-e9e2-d70a6b892267
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: RELAY-173.245.49.238-0662
-  type: vmess
-  server: 173.245.49.238
-  port: 8443
-  uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /8cda48b3
-- name: RELAY-141.101.115.136-0609
-  type: vmess
-  server: 141.101.115.136
-  port: 443
-  uuid: fcfaec91-6096-44d8-956c-7868d9e874b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ray
-- name: 🇺🇸 US-148.135.31.61-7472
-  type: vmess
-  server: 148.135.31.61
-  port: 31005
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 DE-57.129.64.238-6791
-  type: vmess
-  server: 57.129.64.238
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /linkvws
-- name: 🇺🇸 US-38.14.107.225-7336
-  type: vmess
-  server: 38.14.107.225
-  port: 38003
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /path/181721272114
-- name: PL-146.59.118.249-6815
-  type: vmess
-  server: 146.59.118.249
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: linkvws
-- name: 🇳🇱 NL-46.182.107.46-0879
-  type: vmess
-  server: 46.182.107.46
-  port: 443
-  uuid: fe5f69e7-e183-439b-950b-8221ef0651f2
-  alterId: 64
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /footers
-- name: 🇺🇸 US-149.30.232.103-0278
-  type: vmess
-  server: 149.30.232.103
-  port: 18393
-  uuid: 2c1807ce-6a63-4451-9add-a778d2507160
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: b2n.ir/v2ray-configs | 835
-  type: ss
-  server: 172.99.190.87
-  port: 6679
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: '[By EbraSha]_40'
-  type: ss
-  server: 54.248.54.190
-  port: 1234
-  cipher: chacha20-ietf-poly1305
-  password: '1234'
-- name: '[By EbraSha]_41'
-  type: ss
-  server: 5.183.176.93
-  port: 803
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: '[By EbraSha]_42'
-  type: ss
-  server: 64.74.163.218
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-- name: '[By EbraSha]_43'
-  type: ss
-  server: 14.29.124.168
-  port: 24007
-  cipher: aes-128-cfb
-  password: QazEdcTgb159@$*
-- name: '[By EbraSha]_44'
-  type: ss
-  server: 103.186.154.166
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: '[By EbraSha]_45'
-  type: ss
-  server: 103.186.154.241
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: '[By EbraSha]_46'
-  type: ss
-  server: 43.202.49.222
-  port: 2333
-  cipher: aes-256-cfb
-  password: doub.io
-- name: '[By EbraSha]_47'
-  type: ss
-  server: 38.107.226.132
-  port: 7306
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-- name: '[By EbraSha]_48'
-  type: ss
-  server: 38.68.135.19
-  port: 7306
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-- name: '[By EbraSha]_49'
-  type: ss
-  server: 38.110.1.107
-  port: 3306
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: '[By EbraSha]_50'
-  type: ss
-  server: 38.75.136.33
-  port: 5600
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇫🇷 FR-163.5.159.231-7235
-  type: vmess
-  server: 163.5.159.231
-  port: 443
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-- name: VMESS-104
-  type: vmess
-  server: 104.21.69.44
-  port: 8080
-  uuid: nasnet
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /nasnet/cdn
-- name: RELAY-198.41.221.143-8190
-  type: vmess
-  server: 198.41.221.143
-  port: 2095
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /hgcefomn
-- name: VMESS-209
-  type: vmess
-  server: 209.126.84.189
-  port: 443
-  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /vmessws
-- name: 🇺🇸 US-23.224.110.184-8092
-  type: vmess
-  server: 23.224.110.184
-  port: 443
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /path/080712342310
-- name: RELAY-104.31.16.196-8689
-  type: vmess
-  server: 104.31.16.196
-  port: 443
-  uuid: F591CE71-33F8-4B12-824A-0167FA839ED9
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /speedtest
-- name: RELAY-203.30.189.190-1014
-  type: vmess
-  server: 203.30.189.190
-  port: 443
-  uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /5QNROSRV
-- name: 🇭🇰 HK-47.239.204.193-7058
-  type: vmess
-  server: 47.239.204.193
-  port: 33611
-  uuid: 56608d2c-b7b4-4cde-a63b-33d6e0b6fd62
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: RELAY-154.92.9.132-8484
-  type: vmess
-  server: 154.92.9.132
-  port: 443
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /blue
-- name: RELAY-147.78.140.30-7512
-  type: vmess
-  server: 147.78.140.30
-  port: 443
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-- name: RELAY-203.30.191.4-0664
-  type: vmess
-  server: 203.30.191.4
-  port: 443
-  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /AUIKN8AU
-- name: 🇺🇸 US-149.30.232.103-4711
-  type: vmess
-  server: 149.30.232.103
-  port: 15097
-  uuid: 460908b8-de16-42e9-bd0d-191522ab92a5
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /arki?ed=2048
-- name: PL-51.68.139.22-0439
-  type: vmess
-  server: 51.68.139.22
-  port: 80
-  uuid: c6744c44-4eb7-48d5-a879-a10474e2ba34
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /vmess
-- name: 🇫🇷 FR-141.95.55.70-8541
-  type: vmess
-  server: 141.95.55.70
-  port: 80
-  uuid: 18ca5b23-ead3-4adb-a153-d7ae32c10f54
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /vmess
-- name: 🇺🇸 US-199.180.103.21-7507
-  type: vmess
-  server: 199.180.103.21
-  port: 37007
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-- name: VN-103.161.112.225-0590
-  type: vmess
-  server: 103.161.112.225
-  port: 80
-  uuid: fc49716a-3594-47b2-8667-0bfba2a88e60
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /vpndata.shop
-- name: 🇳🇱 NL-172.99.188.21-7588
-  type: vmess
-  server: 172.99.188.21
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /linkvws
-- name: 🇺🇸 US-47.88.89.106-7956
-  type: vmess
-  server: 47.88.89.106
-  port: 80
-  uuid: 86f8f25d-9d26-41a6-a75b-e0ef992cc74a
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /rxrsOUmNbuTJCk4izFEHWrb9qm
-- name: 🇺🇸 US-146.190.114.190-1511
-  type: vmess
-  server: 146.190.114.190
-  port: 80
-  uuid: db8f8bbe-c589-4316-8063-49baaf0fd858
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: b2n.ir/v2ray-configs | 953
-  type: ss
-  server: 38.107.226.48
-  port: 3306
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇳🇱 NL | SS
-  type: ss
-  server: 193.29.139.151
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-- name: RELAY-104.18.6.82-0456
-  type: vmess
-  server: 104.18.6.82
-  port: 443
-  uuid: 5ce9cb0d-6b12-4dbd-9114-74fd11dc6f35
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇷 FR-51.159.2.152-2271
-  type: vmess
-  server: 51.159.2.152
-  port: 8880
-  uuid: a2ecce43-c6fb-4978-8b1d-8018ddd9faf4
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: RELAY-104.31.16.65-8627
-  type: vmess
-  server: 104.31.16.65
-  port: 443
-  uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /root/
-- name: RELAY-104.21.48.161-0842
-  type: vmess
-  server: 104.21.48.161
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-- name: RELAY-173.245.49.141-1550
-  type: vmess
-  server: 173.245.49.141
-  port: 8443
-  uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /8cda48b3
-- name: 🇯🇵 JP-161.129.34.102-2307
-  type: vmess
-  server: 161.129.34.102
-  port: 443
-  uuid: ec736482-173e-3eff-9114-b49df8056e7d
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-- name: LU-107.189.31.41-4135
-  type: vmess
-  server: 107.189.31.41
-  port: 12378
-  uuid: 9e312ef5-6d40-4fcb-ceb3-4c7a69bbe0b3
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /@Backdor_Filter
-- name: 🇺🇸 US-147.135.112.248-4324
-  type: vmess
-  server: 147.135.112.248
-  port: 80
-  uuid: 973c2639-c9c2-484d-ae9b-3d68b2f30d9e
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: RELAY-172.67.61.240-8295
-  type: vmess
-  server: 172.67.61.240
-  port: 2095
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /hgcefomn
-- name: RELAY-172.64.154.155-1189
-  type: vmess
-  server: 172.64.154.155
-  port: 443
-  uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /dongtaiwang.com
-- name: RELAY-172.67.3.69-8299
-  type: vmess
-  server: 172.67.3.69
-  port: 2095
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /hgcefomn
-- name: 🇺🇸 US-104.233.240.59-0511
-  type: vmess
-  server: 104.233.240.59
-  port: 443
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇺🇸 US-66.228.55.178-7902
-  type: vmess
-  server: 66.228.55.178
-  port: 8080
-  uuid: 46c5985b-6268-4620-9cf6-2da8e83c0f5b
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: RELAY-162.159.242.155-8419
-  type: vmess
-  server: 162.159.242.155
-  port: 2095
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /hgcefomn
-- name: IR--35
-  type: vmess
-  server: 146.59.55.50
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /linkvws
-- name: 🇸🇬 SG-146.190.82.241-1127
-  type: vmess
-  server: 146.190.82.241
-  port: 80
-  uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇸🇬 SG-139.99.61.53-0401
-  type: vmess
-  server: 139.99.61.53
-  port: 80
-  uuid: 60f30e26-0af7-4b64-ba94-71450ed77e23
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /vmess
-- name: RELAY-203.24.108.10-0694
-  type: vmess
-  server: 203.24.108.10
-  port: 443
-  uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /A2DJOPFT
-- name: 🇺🇸 US-5.78.63.45-1858
-  type: vmess
-  server: 5.78.63.45
-  port: 47783
-  uuid: 5b4203d5-422f-4ce4-ca25-ecdbfee45a46
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: http
-- name: b2n.ir/v2ray-configs | 569
-  type: ss
-  server: 172.99.190.39
-  port: 5004
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-- name: b2n.ir/v2ray-configs | 820
-  type: ss
-  server: 213.183.63.221
-  port: 9041
-  cipher: aes-256-cfb
-  password: U6qnYRhfyDmn8sgn
-- name: b2n.ir/v2ray-configs | 702
-  type: ss
-  server: 38.91.102.30
-  port: 9102
-  cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
-- name: b2n.ir/v2ray-configs | 681
-  type: ss
-  server: 103.186.154.236
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: b2n.ir/v2ray-configs | 801
-  type: ss
-  server: 38.114.114.67
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: b2n.ir/v2ray-configs | 406
-  type: ss
-  server: 167.88.63.59
-  port: 443
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-- name: b2n.ir/v2ray-configs | 402
-  type: ss
-  server: 162.19.59.162
-  port: 443
-  cipher: aes-256-cfb
-  password: asdKkaskJKfnsa
-- name: b2n.ir/v2ray-configs | 623
-  type: ss
-  server: 37.120.192.158
-  port: 801
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: b2n.ir/v2ray-configs | 612
-  type: ss
-  server: 38.114.114.67
-  port: 2376
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-- name: b2n.ir/v2ray-configs | 968
-  type: ss
-  server: 193.29.139.157
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 4a2rfixophdjffa8KVA4Aa
-- name: b2n.ir/v2ray-configs | 218
-  type: ss
-  server: 167.88.63.82
-  port: 7002
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: b2n.ir/v2ray-configs | 946
-  type: ss
-  server: 167.88.61.175
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: b2n.ir/v2ray-configs | 688
-  type: ss
-  server: 38.68.135.18
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: b2n.ir/v2ray-configs | 645
-  type: ss
-  server: 85.208.108.93
-  port: 7306
-  cipher: aes-256-gcm
-  password: FoOiGlkAA9yPEGP
-- name: b2n.ir/v2ray-configs | 537
-  type: ss
-  server: 167.88.63.79
-  port: 9102
-  cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
-- name: b2n.ir/v2ray-configs | 548
-  type: ss
-  server: 185.164.35.9
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: b2n.ir/v2ray-configs | 740
-  type: ss
-  server: 217.30.10.70
-  port: 9046
-  cipher: aes-256-cfb
-  password: NvS8N4Vf8qAGPSCL
-- name: b2n.ir/v2ray-configs | 893
-  type: ss
-  server: 172.99.190.39
-  port: 9101
-  cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
-- name: b2n.ir/v2ray-configs | 332
-  type: ss
-  server: 38.114.114.67
-  port: 6697
-  cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
-- name: b2n.ir/v2ray-configs | 406_1
-  type: ss
-  server: 38.91.102.30
-  port: 5004
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-- name: SS-82.38.31.89:8080
-  type: ss
-  server: 82.38.31.89
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
 - name: melibazz
-  type: ss
-  server: 121.127.46.147
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: '[By EbraSha]_51'
-  type: ss
-  server: 51.89.119.213
-  port: 11201
-  cipher: chacha20-ietf-poly1305
-  password: 15b0573830081d01
-- name: '[By EbraSha]_52'
-  type: ss
-  server: 46.32.186.234
-  port: 1080
-  cipher: chacha20-ietf-poly1305
-  password: 171pEaFf5HJtdAAI3L7r6A
-- name: '[By EbraSha]_53'
-  type: ss
-  server: 185.42.163.45
-  port: 25108
-  cipher: chacha20-ietf-poly1305
-  password: 1AU6NgupolqNdSJ0Dx1nk7
-- name: '[By EbraSha]_54'
-  type: ss
-  server: 51.143.178.209
-  port: 8657
-  cipher: chacha20-ietf-poly1305
-  password: 1GvHt1qmWlEyH70qoDVbLT
-- name: '[By EbraSha]_55'
-  type: ss
-  server: 188.166.220.70
-  port: 37708
-  cipher: chacha20-ietf-poly1305
-  password: 24Wk2NSszrfHn22zem1lYV
-- name: '[By EbraSha]_56'
-  type: ss
-  server: 20.120.24.20
-  port: 2818
-  cipher: chacha20-ietf-poly1305
-  password: '2818'
-- name: '[By EbraSha]_57'
-  type: ss
-  server: 78.129.253.9
-  port: 810
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: '[By EbraSha]_58'
-  type: ss
-  server: 134.195.196.178
-  port: 809
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: '[By EbraSha]_59'
-  type: ss
-  server: 51.81.33.5
-  port: 48231
-  cipher: chacha20-ietf-poly1305
-  password: bebcb2d8bb1d7db7
-- name: '[By EbraSha]_60'
-  type: ss
-  server: 46.183.217.232
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: f8f7aCzcPKbsF8p3
-- name: '[By EbraSha]_61'
-  type: ss
-  server: 80.92.204.106
-  port: 9006
-  cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
-- name: '[By EbraSha]_62'
-  type: ss
-  server: 5.183.179.146
-  port: 9025
-  cipher: aes-256-cfb
-  password: XPtzA9sCug3SPR4c
-- name: '[By EbraSha]_63'
-  type: ss
-  server: 103.186.154.11
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: '[By EbraSha]_64'
-  type: ss
-  server: 103.186.154.159
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: '[By EbraSha]_65'
-  type: ss
-  server: 5.188.181.201
-  port: 9005
-  cipher: aes-256-cfb
-  password: ZET59LF6DvCC8KVt
-- name: '[By EbraSha]_66'
-  type: ss
-  server: 23.166.88.5
-  port: 3389
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: RELAY-172.64.90.210-8359
   type: vmess
-  server: 172.64.90.210
-  port: 2095
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
+  server: 104.16.108.100
+  port: 8880
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
   alterId: 0
   cipher: auto
   tls: false
   network: ws
   ws-opts:
-    path: /hgcefomn
-- name: 🇫🇷 FR-195.154.77.190-2466
+    path: /RpT6kZjkw45EenmTcDYWs
+- name: melibazz_1
   type: vmess
-  server: 195.154.77.190
-  port: 2082
-  uuid: 36fa45db-2d4a-4295-a1fe-223836989878
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pineapple
-- name: RELAY-172.64.154.102-0587
-  type: vmess
-  server: 172.64.154.102
-  port: 443
-  uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /dongtaiwang.com
-- name: RELAY-172.67.212.68-8312
-  type: vmess
-  server: 172.67.212.68
-  port: 2095
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /hgcefomn
-- name: RELAY-154.92.9.212-8468
-  type: vmess
-  server: 154.92.9.212
-  port: 80
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /blue
-- name: 🇫🇷 FR-91.134.8.88-6816
-  type: vmess
-  server: 91.134.8.88
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: linkvws
-- name: RELAY-104.31.16.52-8640
-  type: vmess
-  server: 104.31.16.52
-  port: 80
-  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /i99LgvSaslbsPLLQQ7j6Z
-- name: 🇺🇸 US-31.58.87.99-7098
-  type: vmess
-  server: 31.58.87.99
-  port: 36989
-  uuid: d90bef15-1403-4e79-92cc-90f6cc697603
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇷🇺 RU-185.143.220.25-0455
-  type: vmess
-  server: 185.143.220.25
-  port: 443
-  uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /6e9EtZ2dL
-- name: RELAY-147.185.161.169-8525
-  type: vmess
-  server: 147.185.161.169
+  server: 104.16.72.175
   port: 443
   uuid: 824c58b1-65ba-4680-a609-663a000dbb92
   alterId: 0
@@ -1526,123 +42,1455 @@ proxies:
   network: ws
   ws-opts:
     path: /wss13889
-- name: 🇯🇵 JP-116.206.93.165-7113
+- name: 🇺🇸 US | VMESS
   type: vmess
-  server: 116.206.93.165
-  port: 39975
-  uuid: bb892078-98ef-4321-edf4-4c408edd5ae2
+  server: 104.21.15.212
+  port: 443
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /linkws
+- name: '102620170'
+  server: 104.21.50.177
+  port: 443
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: alvvin.click
+- name: V10-dlj.tf/ssrsub
+  server: 162.159.253.28
+  port: 80
+  type: vmess
+  uuid: 073360d9-72cb-4ba5-9a40-8ac6cd918356
   alterId: 0
   cipher: auto
   tls: false
   network: ws
   ws-opts:
     path: /
-- name: RELAY-104.19.45.117-0930
-  type: vmess
-  server: 104.19.45.117
-  port: 443
-  uuid: 3b5e258e-8c5e-45d3-b7d2-02c8f5fc0bb2
-  alterId: 64
-  cipher: auto
-  tls: true
+    headers:
+      Host: sls.shabijichang.com
+- name: github.com/Ruk1ng001_7c65b764
   network: ws
+  port: 8443
+  server: 198.41.209.193
+  servername: wr.ssdxz.cn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 29ff2954-dfea-4d20-8089-059cfa861453
   ws-opts:
-    path: /
-- name: RELAY-23.227.38.22-0653
-  type: vmess
-  server: 23.227.38.22
+    headers:
+      Host: wr.ssdxz.cn
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /proxyip=ProxyIP.SG.CMLiussss.net/proxyip=tw.william.us.ci,ProxyIP.SG.CMLiussss.net
+- name: github.com/Ruk1ng001_91db8af1
+  network: ws
   port: 443
-  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
+  server: 135.84.74.20
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.116 Safari/537.36
+    path: /?ed=2560&Telegram🇨🇳+@WangCai2
+- name: RELAY-170.114.45.6-20
+  server: support.zoom.us
+  port: 8080
+  type: vmess
+  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: true
+  network: ws
+  tls: false
+- name: 🇺🇸 US-216.24.57.250-94
+  server: 216.24.57.250
+  port: 443
+  type: trojan
+  password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
+  sni: afrcloud1.mmv.kr
+  skip-cert-verify: true
+- name: melibazz_2
+  type: vmess
+  server: 104.16.8.3
+  port: 443
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /AUIKN8AU
-- name: b2n.ir/v2ray-configs | 791
-  type: ss
-  server: 103.186.155.183
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: b2n.ir/v2ray-configs | 565
-  type: ss
-  server: 3.112.193.151
+    path: /wss51068
+- name: melibazz_3
+  type: vmess
+  server: 104.16.91.78
   port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: b2n.ir/v2ray-configs | 691
-  type: ss
-  server: 169.197.142.187
-  port: 5004
-  cipher: aes-256-gcm
-  password: g5MeD6Ft3CWlJId
-- name: b2n.ir/v2ray-configs | 212
-  type: ss
-  server: 51.161.118.38
-  port: 810
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: b2n.ir/v2ray-configs | 542
-  type: ss
-  server: 167.88.62.68
-  port: 8091
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-- name: b2n.ir/v2ray-configs | 517
-  type: ss
-  server: 85.208.108.60
+  uuid: F3E36B53-E75E-48C0-B9F1-F918F397E996
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /speedtest
+- name: VMESS-173.249.209.146:20086-3570
+  type: vmess
+  server: 173.249.209.146
+  port: 20086
+  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇺🇸 US | VMESS_1
+  type: vmess
+  server: 172.67.207.114
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 1
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: linkvws
+- name: XX | VMESS
+  type: vmess
+  server: 172.66.213.38
+  port: 443
+  uuid: dfbbc8de-8a4f-407d-8069-6de38d83c4e1
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: grpc
+- name: 🇺🇸 120
+  server: 104.17.77.94
+  port: 2053
+  type: vmess
+  uuid: 72f76c36-3e3c-45b3-a61f-d8f017345958
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: b5.iraniancp.click
+- name: 🇺🇸 V001--US-dlj.tf/ssrsub
+  server: singapore.com
   port: 8080
-  cipher: aes-256-gcm
-  password: KixLvKzwjekG00rm
-- name: b2n.ir/v2ray-configs | 847
+  type: vmess
+  uuid: d3f830a2-205a-4bba-a7ca-5e87899ac04d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /api/v3/download.getFile
+    headers:
+      Host: ssrsub.v01.ssrsub.com
+- name: V11-dlj.tf/ssrsub
+  server: 172.67.87.197
+  port: 80
+  type: vmess
+  uuid: a5696a03-1c9f-4018-9510-58e7bfbb5f5f
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ylsl.shabijichang.com
+- name: github.com/Ruk1ng001_2b0e31c8
+  network: ws
+  port: 80
+  server: 104.17.15.87
+  type: vless
+  udp: true
+  uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
+  ws-opts:
+    headers:
+      Host: britain.xydcqd.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.186 Safari/537.36
+    path: /@WireXnet?ed=2048
+- name: github.com/Ruk1ng001_c2f70919
+  network: ws
+  port: 443
+  server: 192.200.160.19
+  servername: sni.111000.v6.navy
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.v6.navy
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.103 Safari/537.36
+    path: /?ed=2560
+- name: XX | VMESS_1
+  type: vmess
+  server: 104.16.60.8
+  port: 2086
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /glweidf.sbs/linkws
+- name: 🇨🇦 189
+  server: 104.17.84.82
+  port: 8880
+  type: vmess
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /XQ2WCa29jfDM25GBcbnQ
+    headers:
+      Host: poland.yj2022.gq
+- name: 🇸🇬 SGP 3
+  server: cloudflare-dns.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing-g.workers.dev
+  udp: true
+- name: github.com/Ruk1ng001_0e079bb7
+  network: ws
+  port: 2053
+  server: 162.159.45.175
+  servername: fu.baiproxy.us.ci
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: fu.baiproxy.us.ci
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /?ed=2560
+- name: github.com/Ruk1ng001_06287c82
+  network: ws
+  port: 2053
+  server: 162.159.44.66
+  servername: fu.baiproxy.us.ci
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: fu.baiproxy.us.ci
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /?ed=2560
+- name: github.com/Ruk1ng001_22701e34
+  network: ws
+  port: 443
+  server: 162.159.44.198
+  servername: fu.baiproxy.us.ci
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: fu.baiproxy.us.ci
+      User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML,
+        like Gecko) Chrome/5.0.342.1 Safari/533.2
+    path: /?ed=2560
+- name: github.com/Ruk1ng001_b2cbcc6f
+  network: ws
+  port: 2087
+  server: 162.159.44.100
+  servername: fu.baiproxy.us.ci
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: fu.baiproxy.us.ci
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.86 Safari/537.36
+    path: /?ed=2560
+- name: 🇩🇪 DE-82.198.246.46-28
+  server: 82.198.246.46
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: true
+  network: tcp
+  tls: false
+- name: melibazz_4
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 🇺🇸 US-104.192.226.106-0165
   type: ss
-  server: 217.197.161.166
-  port: 800
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
-- name: b2n.ir/v2ray-configs | 14
-  type: ss
-  server: 103.186.155.104
-  port: 38388
+  server: 104.192.226.106
+  port: 989
   cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: b2n.ir/v2ray-configs | 186
+  password: f8f7aCzcPKbsF8p3
+- alterId: 0
+  cipher: auto
+  name: github.com/Ruk1ng001_e3268b89
+  network: tcp
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: melibazz_5
+  type: vmess
+  server: 104.31.16.34
+  port: 80
+  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /i99LgvSaslbsPLLQQ7j6Z
+- name: melibazz_6
+  type: vmess
+  server: 104.31.16.31
+  port: 80
+  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /i99LgvSaslbsPLLQQ7j6Z
+- name: github.com/Ruk1ng001_743fcc29
+  network: ws
+  port: 2087
+  server: 162.159.39.157
+  servername: 1.proxy2.us.ci
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4859c235-2530-4062-9a0b-ea859cbbf861
+  ws-opts:
+    headers:
+      Host: 1.proxy2.us.ci
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/41.0.2272.76 Safari/537.36
+    path: /?ed=2560
+- name: 🇺🇸 US-107.151.182.253-10
+  server: 107.151.182.253
+  port: 8080
+  type: ssr
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  obfs: plain
+  protocol: origin
+  group: SSRProvider
+  latency: 15
+- name: melibazz_7
+  type: vmess
+  server: 104.31.16.32
+  port: 80
+  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /i99LgvSaslbsPLLQQ7j6Z
+- name: melibazz_8
+  type: vmess
+  server: 104.31.16.35
+  port: 80
+  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /i99LgvSaslbsPLLQQ7j6Z
+- name: melibazz_9
+  type: vmess
+  server: 104.31.16.37
+  port: 80
+  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /i99LgvSaslbsPLLQQ7j6Z
+- name: github.com/Ruk1ng001_c4b2a374
+  network: ws
+  port: 2052
+  server: www.visa.com.sg
+  type: vless
+  udp: true
+  uuid: 12d75b7d-8fdf-4785-8d62-d836854e7e63
+  ws-opts:
+    headers:
+      Host: parking-nfchbwa1-v2.parking-1ab.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/31.0.1650.57 Safari/537.36
+    path: /?ed=2560
+- name: 🇺🇸 US-173.244.56.6-0158
   type: ss
-  server: 167.88.61.175
-  port: 5600
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: b2n.ir/v2ray-configs | 661
+  server: 173.244.56.6
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: melibazz_10
+  type: vmess
+  server: 104.31.16.33
+  port: 80
+  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /i99LgvSaslbsPLLQQ7j6Z
+- name: melibazz_11
+  type: vmess
+  server: 104.31.16.38
+  port: 80
+  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /i99LgvSaslbsPLLQQ7j6Z
+- name: melibazz_12
+  type: vmess
+  server: 104.31.16.41
+  port: 80
+  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /i99LgvSaslbsPLLQQ7j6Z
+- name: melibazz_13
+  type: vmess
+  server: 104.31.16.35
+  port: 443
+  uuid: 1af4ba3d-e60f-4f83-b38b-23fc181f676d
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /11201
+- name: 🇳🇱 007
+  server: 188.114.99.29
+  port: 2053
+  type: vmess
+  uuid: 72f76c36-3e3c-45b3-a61f-d8f017345958
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: b5.iraniancp.click
+- alpn:
+  - h3
+  congestion-controller: bbr
+  name: github.com/Ruk1ng001_a8f4fc53
+  password: c30cd67b-2d31-48a6-a1fa-1ca41814fd0f
+  port: 51364
+  server: 209.141.58.4
+  skip-cert-verify: true
+  sni: www.python.org
+  type: tuic
+  udp: true
+  udp-relay-mode: native
+  uuid: c30cd67b-2d31-48a6-a1fa-1ca41814fd0f
+  latency: 24
+- name: RELAY-167.68.4.199-54
+  server: 167.68.4.199
+  port: 2053
+  type: trojan
+  password: Aimer
+  sni: epge.muarua.filegear-sg.me
+  skip-cert-verify: true
+- name: RELAY-109.234.211.66-64
+  server: 109.234.211.66
+  port: 2087
+  type: trojan
+  password: trojan
+  sni: store.timimi.dpdns.org
+  skip-cert-verify: true
+- name: melibazz_14
+  type: vmess
+  server: 104.16.219.230
+  port: 443
+  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wss13889
+- name: github.com/Ruk1ng001_ba719796
+  network: ws
+  password: '123456'
+  port: 2053
+  server: 104.18.93.164
+  skip-cert-verify: true
+  sni: bPBg.aNguSWEN.toP
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.116 Safari/537.36
+    path: /eyJqdW5rIjoidWxzMDR3dnh3a04iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyJicGIueW91c2VmLmlzZWdhcm8uY29tIl19?ed=2560
+- name: melibazz_15
+  type: vmess
+  server: 104.31.16.39
+  port: 80
+  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /i99LgvSaslbsPLLQQ7j6Z
+- name: melibazz_16
+  type: vmess
+  server: 104.31.16.40
+  port: 80
+  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /i99LgvSaslbsPLLQQ7j6Z
+- flow: xtls-rprx-vision
+  name: github.com/Ruk1ng001_617db3c7
+  network: tcp
+  port: 10032
+  reality-opts:
+    public-key: x_LVMfX59REuwFcigCqBDxgkUf5nKsGaUIPnGbsOIGA
+    short-id: 12403ace
+  server: 209.38.135.147
+  servername: cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8b7e81da-5121-4242-af0a-f06264d588f8
+- name: melibazz_17
+  type: vmess
+  server: 104.16.176.44
+  port: 443
+  uuid: 2cd39102-0799-4c61-abb6-2e7a258f0397
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /vmess
+- name: RELAY-172.67.197.47-22
+  server: sy4.620720.xyz
+  port: 443
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: true
+  network: ws
+  tls: true
+- name: melibazz_18
+  type: vmess
+  server: 104.16.180.79
+  port: 443
+  uuid: 43AE625A-F929-4B61-97AD-7CA94C1BCAC0
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /speedtest
+- name: 🇺🇸 US-71.19.148.143-13
+  server: pupas-shirting-unsung.freesocks.work
+  port: 443
   type: ss
-  server: 172.99.188.71
-  port: 7001
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: b2n.ir/v2ray-configs | 263
-  type: ss
-  server: 38.114.114.69
-  port: 8009
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: '[By EbraSha]_67'
-  type: ss
-  server: 45.76.180.205
-  port: 31368
   cipher: chacha20-ietf-poly1305
-  password: 2981511c-becb-4b53-8a89-57cd3c97b328
-- name: '[By EbraSha]_68'
+  password: p78naCf2EfOlRSLTX0wFVx
+- name: 🇺🇸 US-156.146.38.167-0160
   type: ss
-  server: 40.172.139.40
+  server: 156.146.38.167
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 >>::US
+  type: ss
+  server: 154.53.60.212
+  port: 80
+  cipher: aes-256-gcm
+  password: ZfbPFDdeBj0B1Txs
+- name: 🇺🇸 US-156.146.38.169-0163
+  type: ss
+  server: 156.146.38.169
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 US-156.146.38.170-0161
+  type: ss
+  server: 156.146.38.170
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: MX-147.78.1.230-0244
+  type: ss
+  server: 147.78.1.230
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: 🇺🇸 US-173.234.29.2-0164
+  type: ss
+  server: 173.234.29.2
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: MX-147.78.1.230-0245
+  type: ss
+  server: 147.78.1.230
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇨🇦 CA-137.184.174.93-0176
+  type: ss
+  server: 137.184.174.93
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: github.com/Ruk1ng001_jDN1rvrq
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  servername: 011.electrOCELlCO-CF-011.WorKERS.dEV
+  tls: true
+  type: vless
+  udp: true
+  uuid: 73a4456a-0442-4550-8b4f-c719871a4eeb
+  ws-opts:
+    headers:
+      Host: 011.electrocellco-cf-011.workers.dev
+      User-Agent: Mozilla/5.0 (X11; U; Linux i586; en-US) AppleWebKit/533.2 (KHTML,
+        like Gecko) Chrome/5.0.342.1 Safari/533.2
+    path: /eyJqdW5rIjoibWRiMjNWaUwxNHVWIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMjE3LjE0Mi4yMzYuOTMiXX0=
+- name: 🇺🇸 US-71.19.148.143-06
+  server: 71.19.148.143
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: p78naCf2EfOlRSLTX0wFVx
+- name: 🇺🇸 >>::US::US::US::US::US::US::US::US::US::US::US::US
+  type: vmess
+  server: 47.90.244.153
+  port: 8443
+  uuid: 65e2a985-ad20-4486-a7ec-b67b20ee56af
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws
+- client-fingerprint: chrome
+  name: github.com/Ruk1ng001_17493cac
+  password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
+  port: 8300
+  server: 268ebe2b-t9wqo0-ta37qp-b4pt.losjan20.west.wctype.com
+  skip-cert-verify: true
+  sni: 268ebe2b-t9wqo0-ta37qp-b4pt.losjan20.west.wctype.com
+  type: anytls
+  udp: true
+  latency: 62
+- name: 🇺🇸 US | SS
+  type: ss
+  server: ak1857.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou
   port: 443
   cipher: chacha20-ietf-poly1305
   password: u17T3BvpYaaiuW2c
-- name: '[By EbraSha]_69'
+- name: 🇺🇸 US | VMESS_2
+  type: vmess
+  server: cold-dawn-9246.fly.dev
+  port: 443
+  uuid: ea4909ef-7ca6-4b46-bf2e-6c07896ef338
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
+- name: 🇺🇸 US-67.21.83.58-25
+  server: cg1c01.waimaojd.com
+  port: 443
+  type: vmess
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: true
+  network: ws
+  tls: true
+- name: 🇺🇸 US-67.21.85.228-26
+  server: cg1c04.waimaojd.com
+  port: 443
+  type: vmess
+  uuid: be8e3136-b874-4085-bd23-ec3699300490
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: true
+  network: ws
+  tls: true
+- name: 🇨🇦 CA-79.127.200.169-0159
   type: ss
-  server: 40.172.145.143
+  server: 79.127.200.169
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- alpn:
+  - h3
+  congestion-controller: bbr
+  name: github.com/Ruk1ng001_6363e3e5
+  password: c30cd67b-2d31-48a6-a1fa-1ca41814fd0f
+  port: 35000
+  server: 107.150.1.135
+  skip-cert-verify: true
+  sni: www.python.org
+  type: tuic
+  udp: true
+  udp-relay-mode: native
+  uuid: c30cd67b-2d31-48a6-a1fa-1ca41814fd0f
+  latency: 68
+- name: 🇨🇦 CA-79.127.233.170-18
+  server: 79.127.233.170
+  port: 989
+  type: ssr
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  obfs: plain
+  protocol: origin
+  group: SSRProvider
+  latency: 71
+- name: 🇺🇸 US-37.19.198.236-0196
+  type: ss
+  server: 37.19.198.236
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 US_16
+  server: 51.81.223.31
+  port: 443
+  type: vmess
+  uuid: c0156451-4efb-45e2-84fc-8d315c4650db
+  alterId: 32
+  cipher: auto
+  tls: false
+- name: 🇨🇦 CA-79.127.233.170-14
+  server: 79.127.233.170
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+- name: 🇨🇦 >>::CA
+  type: ss
+  server: 148.113.139.160
+  port: 46534
+  cipher: chacha20-ietf-poly1305
+  password: 7a106afc33eaa261
+- name: github.com/Ruk1ng001_0cffbbf8
+  network: ws
+  port: 443
+  server: 162.159.45.207
+  servername: sss.yaml7.ggff.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5aa7d17e-7dc2-46dd-9acf-c3c97440259b
+  ws-opts:
+    headers:
+      Host: sss.yaml7.ggff.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.79 Safari/537.36
+    path: /?ed=2048
+- name: RELAY-104.18.16.77-23
+  server: hgtrojan.zabc.net
+  port: 2083
+  type: vmess
+  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: true
+  network: ws
+  tls: true
+- name: 🇺🇸 US-15.204.247.49-12
+  server: 15.204.247.49
+  port: 12000
+  type: ss
+  cipher: aes-256-gcm
+  password: 8JCsPssfgS8tiRwiMlhARg==
+- name: 🇨🇦 CA-144.217.164.29-00
+  server: 144.217.164.29
+  port: 12000
+  type: ss
+  cipher: aes-256-gcm
+  password: 8JCsPssfgS8tiRwiMlhARg==
+- name: XX | VMESS_2
+  type: vmess
+  server: mute-math-d64e.0e503992ad7026.WOrKERs.deV
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /aveiror.com:443/linkvws
+- name: RELAY-104.21.76.158-02
+  server: t1.620720.xyz
+  port: 8443
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: true
+  network: ws
+  tls: true
+- name: 🇺🇸 US-38.135.24.131-50
+  server: tinkered-pennies-puppies.freesocks.work
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: hbGrpfvNrJsUmKmPbR3iY2
+- name: 🇺🇸 US-23.95.75.146-16
+  server: 23.95.75.146
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: NDRySIABARbErNIVsCNVkyYAHiBzhveT
+- name: 🇨🇦 CA-23.95.76.59-08
+  server: 23.95.76.59
+  port: 990
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: 🇯🇵 JP-149.22.87.204-0202
+  type: ss
+  server: 149.22.87.204
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- flow: xtls-rprx-vision
+  name: github.com/Ruk1ng001_c6654493
+  network: tcp
+  port: 39975
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+    short-id: ''
+  server: 116.80.58.239
+  servername: cloudcircus.jp
+  tls: true
+  type: vless
+  udp: true
+  uuid: 15b84012-d261-4b4c-807a-061bb4a901fd
+- alpn:
+  - h3
+  congestion-controller: bbr
+  name: github.com/Ruk1ng001_177dd738
+  password: c30cd67b-2d31-48a6-a1fa-1ca41814fd0f
+  port: 61000
+  server: 209.141.58.4
+  skip-cert-verify: true
+  sni: www.python.org
+  type: tuic
+  udp: true
+  udp-relay-mode: native
+  uuid: c30cd67b-2d31-48a6-a1fa-1ca41814fd0f
+  latency: 110
+- name: CO-154.223.16.212-0264
+  type: ss
+  server: 154.223.16.212
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: '>>::CR'
+  type: ss
+  server: 145.14.131.37
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: 🇦🇺 AU | VMESS
+  type: vmess
+  server: us-2.0rd.net
+  port: 443
+  uuid: 597888c0-a318-11ed-b536-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /tq98e0yk
+- name: PA-138.186.142.81-0199
+  type: ss
+  server: 138.186.142.81
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: EC-38.165.231.25-0162
+  type: ss
+  server: 38.165.231.25
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: PA-138.186.142.80-0198
+  type: ss
+  server: 138.186.142.80
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: 🇸🇬 SGP 6
+  server: newsroom.paypal-corp.com
+  port: 443
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  tls: true
+  servername: jkl3gix3qz.danfeng.qzz.io
+  network: ws
+  ws-opts:
+    path: /danfeng?ed=2560
+    headers:
+      Host: jkl3gix3qz.danfeng.qzz.io
+  udp: true
+- name: SC-154.90.63.177-0251
+  type: ss
+  server: 154.90.63.177
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: github.com/Ruk1ng001_569711ac
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+    short-id: ''
+  server: 47.80.11.87
+  servername: api.company-target.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+- name: 🇺🇸 1
+  type: vless
+  server: 47.80.13.250
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: api.company-target.com
+  tls: true
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+- name: 🇰🇷 1
+  type: vless
+  server: 146.56.158.145
+  port: 443
+  uuid: fadab0a4-861d-4ebf-89ac-c9b34aef631a
+  servername: www.lamer.com
+  tls: true
+  flow: xtls-rprx-vision
+- name: 🇸🇬 SGP 2
+  server: testingcf.jsdelivr.net
+  port: 443
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  tls: true
+  servername: jkl3gix3qz.danfeng.qzz.io
+  network: ws
+  ws-opts:
+    path: /danfeng?ed=2560
+    headers:
+      Host: jkl3gix3qz.danfeng.qzz.io
+  udp: true
+- cipher: aes-256-cfb
+  name: github.com/Ruk1ng001_568e7b60
+  password: JdmRK9gMEqFgs8nP
+  port: 9003
+  server: 5.188.181.201
+  type: ss
+  udp: true
+- name: 🇰🇷 KR | SS
+  type: ss
+  server: 218.237.185.230
+  port: 4652
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 'Join+:'
+  type: ss
+  server: 36.224.142.222
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: SC-154.90.62.168-0249
+  type: ss
+  server: 154.90.62.168
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇬🇧 >>::GB
+  type: ss
+  server: 149.102.149.207
+  port: 443
+  cipher: aes-256-gcm
+  password: umWwoQJEJGf74SLe
+- name: 🇹🇼 TW-111.248.66.243-0330
+  type: ss
+  server: r3mrcg007147vhp.cybervena.com
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇹🇼 VLESS-twz.cloud-services.top:443-5851
+  type: vless
+  server: twz.cloud-services.top
+  port: 443
+  uuid: c964f4a4-9dfa-4be3-a400-5544e8ed396c
+  servername: www.airbnb.com.tw
+  tls: true
+  flow: xtls-rprx-vision
+- name: 🇷🇺 5
+  type: vless
+  server: 193.233.127.219
+  port: 443
+  uuid: 6fd9f786-d974-49d0-b5c4-397678de69a2
+  servername: www.cybo.com
+  tls: true
+  flow: xtls-rprx-vision
+- name: 🇳🇱 NL-51.15.23.63-4679
+  type: ss
+  server: 51.15.23.63
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇬🇧 GB-146.70.61.37-0166
+  type: ss
+  server: 146.70.61.37
+  port: 8080
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇭🇰 HKG 2
+  server: 66yun-link1.66jc.xyz
+  port: 20001
+  type: hy2
+  password: de8e0342-ea12-4f9d-bc2a-e62409e1913f
+  sni: hkzz.66jc.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: sbE3r6694Lbhi2Jt
+  udp: true
+- name: 🇭🇰 32
+  type: vless
+  server: 8.218.199.24
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: cdn-dynmedia-1.microsoft.com
+  tls: true
+- name: SS-series-a2.samanehha.co:443-5189
+  type: ss
+  server: series-a2.samanehha.co
   port: 443
   cipher: chacha20-ietf-poly1305
-  password: u17T3BvpYaaiuW2c
+  password: W74XFALLLuw6m5IA
+- name: 🇬🇧 >>::GB_1
+  type: ss
+  server: admin.c1.webramz.co
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: W74XFALLLuw6m5IA
+- name: PE-138.186.143.32-0265
+  type: ss
+  server: 138.186.143.32
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: VLESS-95.164.36.217:443-4611
+  type: vless
+  server: 95.164.36.217
+  port: 443
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+  servername: www.booking.com
+  tls: true
+  flow: xtls-rprx-vision
+- name: 🇭🇰 19
+  type: vless
+  server: 8.218.123.111
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: j.6sc.co
+  tls: true
+- name: 🇭🇰 23
+  type: vless
+  server: 8.218.112.41
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: api.company-target.com
+  tls: true
+- name: 🇫🇷 >>::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR
+  type: vmess
+  server: 94.232.247.165
+  port: 45653
+  uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 🇭🇰 29
+  type: vless
+  server: 8.218.208.211
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: api.company-target.com
+  tls: true
+- name: 🇳🇱 VLESS-5.255.107.115:443-501
+  type: vless
+  server: 5.255.107.115
+  port: 443
+  uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
+  servername: nll.scroogethebest.com
+  tls: true
+  flow: xtls-rprx-vision
+- name: 🇭🇰 HK-47.244.120.197-4651
+  type: vmess
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+- name: 🇭🇰 17
+  type: vless
+  server: 8.218.126.21
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: app.usercentrics.eu
+  tls: true
+- name: Join+:_1
+  type: ss
+  server: 141.98.101.182
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 >>::GB_2
+  type: ss
+  server: admin.c1.havij.co
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 1kVr0KATIJI7mwOF
+- name: 🇭🇰 >>::HK::HK::HK::HK::HK::HK::HK::HK
+  type: vmess
+  server: 47.244.120.197
+  port: 44867
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+- name: 🇭🇰 8
+  type: vless
+  server: 47.243.145.58
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: api.company-target.com
+  tls: true
+- name: 🇭🇰 18
+  type: vless
+  server: 8.210.87.48
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: api.digital-help-prd.autodesk.com
+  tls: true
+- name: 🇭🇰 21
+  type: vless
+  server: 8.218.117.76
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: prod.adobeccstatic.com
+  tls: true
+- name: 🇭🇰 35
+  type: vless
+  server: 8.218.111.123
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: j.6sc.co
+  tls: true
+- name: 🇭🇰 46
+  type: vless
+  server: 47.243.28.228
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: evt.ilovepdf.com
+  tls: true
+- name: 🇳🇱 2
+  type: vless
+  server: 165.232.86.81
+  port: 443
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+  servername: www.aliexpress.com
+  tls: true
+  flow: xtls-rprx-vision
+- name: 🇬🇧 GB_22fd8_0002
+  server: 138.124.186.202
+  port: 443
+  type: vless
+  uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.fh-aachen.de
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+  udp: true
+- name: 🇸🇬 SGP
+  server: legion.lenovo.com
+  port: 2053
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  tls: true
+  servername: jkl3gix3qz.danfeng.qzz.io
+  network: ws
+  ws-opts:
+    path: /danfeng?ed=2560
+    headers:
+      Host: jkl3gix3qz.danfeng.qzz.io
+  udp: true
+- cipher: chacha20-ietf
+  name: github.com/Ruk1ng001_AJrBnYnC
+  password: asd123456
+  port: 8388
+  server: 103.149.182.105
+  type: ss
+  udp: true
+- name: 🇭🇰 36
+  type: vless
+  server: 8.218.96.230
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: j.6sc.co
+  tls: true
+- name: 🇭🇰 39
+  type: vless
+  server: 8.218.98.149
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: j.6sc.co
+  tls: true
+- name: VLESS-aws-link4.liangxin1.xyz:443-6689
+  type: vless
+  server: aws-link4.liangxin1.xyz
+  port: 443
+  uuid: 0d5d83c8-5504-44a4-959b-bdbdbaa211cb
+  servername: www.lamer.com.hk
+  tls: true
+  flow: xtls-rprx-vision
+- name: DK-192.36.27.94-0233
+  type: ss
+  server: 192.36.27.94
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: BE-192.71.249.78-0250
+  type: ss
+  server: 192.71.249.78
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇭🇰 10
+  type: vless
+  server: 8.218.98.33
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: get.adobe.com
+  tls: true
+- name: 🇭🇰 26
+  type: vless
+  server: 8.218.122.143
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: cdn-dynmedia-1.microsoft.com
+  tls: true
+- name: PE | SS
+  type: ss
+  server: 185.47.252.251
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: f8f7aCzcPKbsF8p3
+- name: 🇩🇪 >>::DE
+  type: ss
+  server: 141.95.109.94
+  port: 11201
+  cipher: chacha20-ietf-poly1305
+  password: 10f90af92b6c1a74
+- name: 🇩🇪 >>::DE_1
+  type: ss
+  server: 95.85.239.225
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: X6btbRvJCo3uTQ--yaaT8Mvh0CgqhYTL
+- cipher: chacha20-ietf
+  name: github.com/Ruk1ng001_TAy4COsc
+  password: asd123456
+  port: 8388
+  server: 103.149.182.79
+  type: ss
+- name: 🇩🇪 9
+  type: vless
+  server: 45.77.66.142
+  port: 443
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+  servername: www.zalando.de
+  tls: true
+  flow: xtls-rprx-vision
+- name: 🇭🇰 37
+  type: vless
+  server: 8.218.127.248
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: j.6sc.co
+  tls: true
+- name: 🇳🇱 NL-193.29.139.179-0197
+  type: ss
+  server: 193.29.139.179
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: cvII85TrW6n0OGyfpHVS1u
+- name: 🇭🇰 30
+  type: vless
+  server: 47.242.163.71
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: get.adobe.com
+  tls: true
+- name: '1'
+  type: vless
+  server: aws-link2.liangxin1.xyz
+  port: 38725
+  uuid: 0d5d83c8-5504-44a4-959b-bdbdbaa211cb
+  servername: www.lamer.com.hk
+  tls: true
+  flow: xtls-rprx-vision
+- name: Join+:_2
+  type: vmess
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 🇳🇱 >>::NL
+  type: ss
+  server: 82.38.31.205
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: github.com/Ruk1ng001_9110cda4
+  network: ws
+  port: 443
+  server: 185.250.180.145
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1.1; CPH1723 Build/N6F26Q) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/61.0.3163.98 Mobile Safari/537.36
+    path: /?ed=2560&Telegram🇨🇳+@WangCai2
+- name: 🇭🇰 24
+  type: vless
+  server: 8.218.99.8
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  servername: j.6sc.co
+  tls: true
+- name: 🇳🇱 >>::NL_1
+  type: ss
+  server: 193.29.139.217
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: 4a2rfixophdjffa8KVA4Aa
+- name: 🇭🇰 2
+  type: vless
+  server: aws-link1.liangxin1.xyz
+  port: 35248
+  uuid: 0d5d83c8-5504-44a4-959b-bdbdbaa211cb
+  servername: www.lamer.com.hk
+  tls: true
+  flow: xtls-rprx-vision
+- name: 🇭🇰 3
+  type: vless
+  server: aws-link3.liangxin1.xyz
+  port: 27758
+  uuid: 0d5d83c8-5504-44a4-959b-bdbdbaa211cb
+  servername: www.lamer.com.hk
+  tls: true
+  flow: xtls-rprx-vision
+- name: 🇯🇵 13
+  type: vless
+  server: 1-jp.ap.ku-ke.cc
+  port: 443
+  uuid: 4c190647-dba0-4a51-935d-3b084fdaaef3
+  servername: cdn.jsdelivr.net
+  tls: true
+  flow: xtls-rprx-vision
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -1650,492 +1498,444 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
-  - RELAY-172.67.183.35-0593
-  - 🇨🇦 CA-158.51.121.63-6774
-  - RELAY-203.23.104.190-8184
-  - RELAY-185.18.250.70-8238
-  - RELAY-104.18.28.109-8764
-  - EE-176.112.146.190-0513
-  - b2n.ir/v2ray-configs | 293
-  - b2n.ir/v2ray-configs | 959
-  - b2n.ir/v2ray-configs | 4
-  - b2n.ir/v2ray-configs | 533
-  - b2n.ir/v2ray-configs | 701
-  - b2n.ir/v2ray-configs | 31
-  - b2n.ir/v2ray-configs | 220
-  - b2n.ir/v2ray-configs | 231
-  - '[By EbraSha]'
-  - '[By EbraSha]_1'
-  - '[By EbraSha]_2'
-  - '[By EbraSha]_3'
-  - '[By EbraSha]_4'
-  - '[By EbraSha]_5'
-  - '[By EbraSha]_6'
-  - '[By EbraSha]_7'
-  - '[By EbraSha]_8'
-  - '[By EbraSha]_9'
-  - '[By EbraSha]_10'
-  - '[By EbraSha]_11'
-  - '[By EbraSha]_12'
-  - '[By EbraSha]_13'
-  - '[By EbraSha]_14'
-  - '[By EbraSha]_15'
-  - '[By EbraSha]_16'
-  - b2n.ir/v2ray-configs | 539
-  - '[By EbraSha]_17'
-  - '[By EbraSha]_18'
-  - '[By EbraSha]_19'
-  - '[By EbraSha]_20'
-  - '[By EbraSha]_21'
-  - '[By EbraSha]_22'
-  - '[By EbraSha]_23'
-  - '[By EbraSha]_24'
-  - '[By EbraSha]_25'
-  - '[By EbraSha]_26'
-  - MY-47.250.95.53-7083
-  - 🇺🇸 US-206.168.190.218-8158
-  - '[By EbraSha]_27'
-  - '[By EbraSha]_28'
-  - '[By EbraSha]_29'
-  - '[By EbraSha]_30'
-  - '[By EbraSha]_31'
-  - '[By EbraSha]_32'
-  - '[By EbraSha]_33'
-  - '[By EbraSha]_34'
-  - '[By EbraSha]_35'
-  - '[By EbraSha]_36'
-  - '[By EbraSha]_37'
-  - '[By EbraSha]_38'
-  - '[By EbraSha]_39'
-  - 🇺🇸 US-198.200.48.230-7390
-  - 🇭🇰 HK-47.76.136.178-6997
-  - 🇭🇰 HK-47.86.43.91-7147
-  - RELAY-172.67.191.240-8325
-  - RELAY-104.27.115.85-8699
-  - 🇺🇸 US-199.180.100.97-7428
-  - RELAY-185.162.228.110-1113
-  - 🇹🇼 TW-103.61.139.137-7052
-  - SC-156.245.8.144-8436
-  - RELAY-104.31.16.30-8663
-  - RELAY-172.67.169.131-0638
-  - RELAY-198.41.212.100-0612
-  - RELAY-154.92.9.70-8454
-  - RELAY-172.64.150.57-3442
-  - VN-103.98.151.144-3693
-  - WS-None | | src
-  - RELAY-104.21.83.115-7520
-  - CN-106.55.187.139-1509
-  - RELAY-173.245.49.238-0662
-  - RELAY-141.101.115.136-0609
-  - 🇺🇸 US-148.135.31.61-7472
-  - 🇩🇪 DE-57.129.64.238-6791
-  - 🇺🇸 US-38.14.107.225-7336
-  - PL-146.59.118.249-6815
-  - 🇳🇱 NL-46.182.107.46-0879
-  - 🇺🇸 US-149.30.232.103-0278
-  - b2n.ir/v2ray-configs | 835
-  - '[By EbraSha]_40'
-  - '[By EbraSha]_41'
-  - '[By EbraSha]_42'
-  - '[By EbraSha]_43'
-  - '[By EbraSha]_44'
-  - '[By EbraSha]_45'
-  - '[By EbraSha]_46'
-  - '[By EbraSha]_47'
-  - '[By EbraSha]_48'
-  - '[By EbraSha]_49'
-  - '[By EbraSha]_50'
-  - 🇫🇷 FR-163.5.159.231-7235
-  - VMESS-104
-  - RELAY-198.41.221.143-8190
-  - VMESS-209
-  - 🇺🇸 US-23.224.110.184-8092
-  - RELAY-104.31.16.196-8689
-  - RELAY-203.30.189.190-1014
-  - 🇭🇰 HK-47.239.204.193-7058
-  - RELAY-154.92.9.132-8484
-  - RELAY-147.78.140.30-7512
-  - RELAY-203.30.191.4-0664
-  - 🇺🇸 US-149.30.232.103-4711
-  - PL-51.68.139.22-0439
-  - 🇫🇷 FR-141.95.55.70-8541
-  - 🇺🇸 US-199.180.103.21-7507
-  - VN-103.161.112.225-0590
-  - 🇳🇱 NL-172.99.188.21-7588
-  - 🇺🇸 US-47.88.89.106-7956
-  - 🇺🇸 US-146.190.114.190-1511
-  - b2n.ir/v2ray-configs | 953
-  - 🇳🇱 NL | SS
-  - RELAY-104.18.6.82-0456
-  - 🇫🇷 FR-51.159.2.152-2271
-  - RELAY-104.31.16.65-8627
-  - RELAY-104.21.48.161-0842
-  - RELAY-173.245.49.141-1550
-  - 🇯🇵 JP-161.129.34.102-2307
-  - LU-107.189.31.41-4135
-  - 🇺🇸 US-147.135.112.248-4324
-  - RELAY-172.67.61.240-8295
-  - RELAY-172.64.154.155-1189
-  - RELAY-172.67.3.69-8299
-  - 🇺🇸 US-104.233.240.59-0511
-  - 🇺🇸 US-66.228.55.178-7902
-  - RELAY-162.159.242.155-8419
-  - IR--35
-  - 🇸🇬 SG-146.190.82.241-1127
-  - 🇸🇬 SG-139.99.61.53-0401
-  - RELAY-203.24.108.10-0694
-  - 🇺🇸 US-5.78.63.45-1858
-  - b2n.ir/v2ray-configs | 569
-  - b2n.ir/v2ray-configs | 820
-  - b2n.ir/v2ray-configs | 702
-  - b2n.ir/v2ray-configs | 681
-  - b2n.ir/v2ray-configs | 801
-  - b2n.ir/v2ray-configs | 406
-  - b2n.ir/v2ray-configs | 402
-  - b2n.ir/v2ray-configs | 623
-  - b2n.ir/v2ray-configs | 612
-  - b2n.ir/v2ray-configs | 968
-  - b2n.ir/v2ray-configs | 218
-  - b2n.ir/v2ray-configs | 946
-  - b2n.ir/v2ray-configs | 688
-  - b2n.ir/v2ray-configs | 645
-  - b2n.ir/v2ray-configs | 537
-  - b2n.ir/v2ray-configs | 548
-  - b2n.ir/v2ray-configs | 740
-  - b2n.ir/v2ray-configs | 893
-  - b2n.ir/v2ray-configs | 332
-  - b2n.ir/v2ray-configs | 406_1
-  - SS-82.38.31.89:8080
   - melibazz
-  - '[By EbraSha]_51'
-  - '[By EbraSha]_52'
-  - '[By EbraSha]_53'
-  - '[By EbraSha]_54'
-  - '[By EbraSha]_55'
-  - '[By EbraSha]_56'
-  - '[By EbraSha]_57'
-  - '[By EbraSha]_58'
-  - '[By EbraSha]_59'
-  - '[By EbraSha]_60'
-  - '[By EbraSha]_61'
-  - '[By EbraSha]_62'
-  - '[By EbraSha]_63'
-  - '[By EbraSha]_64'
-  - '[By EbraSha]_65'
-  - '[By EbraSha]_66'
-  - RELAY-172.64.90.210-8359
-  - 🇫🇷 FR-195.154.77.190-2466
-  - RELAY-172.64.154.102-0587
-  - RELAY-172.67.212.68-8312
-  - RELAY-154.92.9.212-8468
-  - 🇫🇷 FR-91.134.8.88-6816
-  - RELAY-104.31.16.52-8640
-  - 🇺🇸 US-31.58.87.99-7098
-  - 🇷🇺 RU-185.143.220.25-0455
-  - RELAY-147.185.161.169-8525
-  - 🇯🇵 JP-116.206.93.165-7113
-  - RELAY-104.19.45.117-0930
-  - RELAY-23.227.38.22-0653
-  - b2n.ir/v2ray-configs | 791
-  - b2n.ir/v2ray-configs | 565
-  - b2n.ir/v2ray-configs | 691
-  - b2n.ir/v2ray-configs | 212
-  - b2n.ir/v2ray-configs | 542
-  - b2n.ir/v2ray-configs | 517
-  - b2n.ir/v2ray-configs | 847
-  - b2n.ir/v2ray-configs | 14
-  - b2n.ir/v2ray-configs | 186
-  - b2n.ir/v2ray-configs | 661
-  - b2n.ir/v2ray-configs | 263
-  - '[By EbraSha]_67'
-  - '[By EbraSha]_68'
-  - '[By EbraSha]_69'
+  - melibazz_1
+  - 🇺🇸 US | VMESS
+  - '102620170'
+  - V10-dlj.tf/ssrsub
+  - github.com/Ruk1ng001_7c65b764
+  - github.com/Ruk1ng001_91db8af1
+  - RELAY-170.114.45.6-20
+  - 🇺🇸 US-216.24.57.250-94
+  - melibazz_2
+  - melibazz_3
+  - VMESS-173.249.209.146:20086-3570
+  - 🇺🇸 US | VMESS_1
+  - XX | VMESS
+  - 🇺🇸 120
+  - 🇺🇸 V001--US-dlj.tf/ssrsub
+  - V11-dlj.tf/ssrsub
+  - github.com/Ruk1ng001_2b0e31c8
+  - github.com/Ruk1ng001_c2f70919
+  - XX | VMESS_1
+  - 🇨🇦 189
+  - 🇸🇬 SGP 3
+  - github.com/Ruk1ng001_0e079bb7
+  - github.com/Ruk1ng001_06287c82
+  - github.com/Ruk1ng001_22701e34
+  - github.com/Ruk1ng001_b2cbcc6f
+  - 🇩🇪 DE-82.198.246.46-28
+  - melibazz_4
+  - 🇺🇸 US-104.192.226.106-0165
+  - github.com/Ruk1ng001_e3268b89
+  - melibazz_5
+  - melibazz_6
+  - github.com/Ruk1ng001_743fcc29
+  - 🇺🇸 US-107.151.182.253-10
+  - melibazz_7
+  - melibazz_8
+  - melibazz_9
+  - github.com/Ruk1ng001_c4b2a374
+  - 🇺🇸 US-173.244.56.6-0158
+  - melibazz_10
+  - melibazz_11
+  - melibazz_12
+  - melibazz_13
+  - 🇳🇱 007
+  - github.com/Ruk1ng001_a8f4fc53
+  - RELAY-167.68.4.199-54
+  - RELAY-109.234.211.66-64
+  - melibazz_14
+  - github.com/Ruk1ng001_ba719796
+  - melibazz_15
+  - melibazz_16
+  - github.com/Ruk1ng001_617db3c7
+  - melibazz_17
+  - RELAY-172.67.197.47-22
+  - melibazz_18
+  - 🇺🇸 US-71.19.148.143-13
+  - 🇺🇸 US-156.146.38.167-0160
+  - 🇺🇸 >>::US
+  - 🇺🇸 US-156.146.38.169-0163
+  - 🇺🇸 US-156.146.38.170-0161
+  - MX-147.78.1.230-0244
+  - 🇺🇸 US-173.234.29.2-0164
+  - MX-147.78.1.230-0245
+  - 🇨🇦 CA-137.184.174.93-0176
+  - github.com/Ruk1ng001_jDN1rvrq
+  - 🇺🇸 US-71.19.148.143-06
+  - 🇺🇸 >>::US::US::US::US::US::US::US::US::US::US::US::US
+  - github.com/Ruk1ng001_17493cac
+  - 🇺🇸 US | SS
+  - 🇺🇸 US | VMESS_2
+  - 🇺🇸 US-67.21.83.58-25
+  - 🇺🇸 US-67.21.85.228-26
+  - 🇨🇦 CA-79.127.200.169-0159
+  - github.com/Ruk1ng001_6363e3e5
+  - 🇨🇦 CA-79.127.233.170-18
+  - 🇺🇸 US-37.19.198.236-0196
+  - 🇺🇸 US_16
+  - 🇨🇦 CA-79.127.233.170-14
+  - 🇨🇦 >>::CA
+  - github.com/Ruk1ng001_0cffbbf8
+  - RELAY-104.18.16.77-23
+  - 🇺🇸 US-15.204.247.49-12
+  - 🇨🇦 CA-144.217.164.29-00
+  - XX | VMESS_2
+  - RELAY-104.21.76.158-02
+  - 🇺🇸 US-38.135.24.131-50
+  - 🇺🇸 US-23.95.75.146-16
+  - 🇨🇦 CA-23.95.76.59-08
+  - 🇯🇵 JP-149.22.87.204-0202
+  - github.com/Ruk1ng001_c6654493
+  - github.com/Ruk1ng001_177dd738
+  - CO-154.223.16.212-0264
+  - '>>::CR'
+  - 🇦🇺 AU | VMESS
+  - PA-138.186.142.81-0199
+  - EC-38.165.231.25-0162
+  - PA-138.186.142.80-0198
+  - 🇸🇬 SGP 6
+  - SC-154.90.63.177-0251
+  - github.com/Ruk1ng001_569711ac
+  - 🇺🇸 1
+  - 🇰🇷 1
+  - 🇸🇬 SGP 2
+  - github.com/Ruk1ng001_568e7b60
+  - 🇰🇷 KR | SS
+  - 'Join+:'
+  - SC-154.90.62.168-0249
+  - 🇬🇧 >>::GB
+  - 🇹🇼 TW-111.248.66.243-0330
+  - 🇹🇼 VLESS-twz.cloud-services.top:443-5851
+  - 🇷🇺 5
+  - 🇳🇱 NL-51.15.23.63-4679
+  - 🇬🇧 GB-146.70.61.37-0166
+  - 🇭🇰 HKG 2
+  - 🇭🇰 32
+  - SS-series-a2.samanehha.co:443-5189
+  - 🇬🇧 >>::GB_1
+  - PE-138.186.143.32-0265
+  - VLESS-95.164.36.217:443-4611
+  - 🇭🇰 19
+  - 🇭🇰 23
+  - 🇫🇷 >>::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR
+  - 🇭🇰 29
+  - 🇳🇱 VLESS-5.255.107.115:443-501
+  - 🇭🇰 HK-47.244.120.197-4651
+  - 🇭🇰 17
+  - Join+:_1
+  - 🇬🇧 >>::GB_2
+  - 🇭🇰 >>::HK::HK::HK::HK::HK::HK::HK::HK
+  - 🇭🇰 8
+  - 🇭🇰 18
+  - 🇭🇰 21
+  - 🇭🇰 35
+  - 🇭🇰 46
+  - 🇳🇱 2
+  - 🇬🇧 GB_22fd8_0002
+  - 🇸🇬 SGP
+  - github.com/Ruk1ng001_AJrBnYnC
+  - 🇭🇰 36
+  - 🇭🇰 39
+  - VLESS-aws-link4.liangxin1.xyz:443-6689
+  - DK-192.36.27.94-0233
+  - BE-192.71.249.78-0250
+  - 🇭🇰 10
+  - 🇭🇰 26
+  - PE | SS
+  - 🇩🇪 >>::DE
+  - 🇩🇪 >>::DE_1
+  - github.com/Ruk1ng001_TAy4COsc
+  - 🇩🇪 9
+  - 🇭🇰 37
+  - 🇳🇱 NL-193.29.139.179-0197
+  - 🇭🇰 30
+  - '1'
+  - Join+:_2
+  - 🇳🇱 >>::NL
+  - github.com/Ruk1ng001_9110cda4
+  - 🇭🇰 24
+  - 🇳🇱 >>::NL_1
+  - 🇭🇰 2
+  - 🇭🇰 3
+  - 🇯🇵 13
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - RELAY-172.67.183.35-0593
-  - 🇨🇦 CA-158.51.121.63-6774
-  - RELAY-203.23.104.190-8184
-  - RELAY-185.18.250.70-8238
-  - RELAY-104.18.28.109-8764
-  - EE-176.112.146.190-0513
-  - b2n.ir/v2ray-configs | 293
-  - b2n.ir/v2ray-configs | 959
-  - b2n.ir/v2ray-configs | 4
-  - b2n.ir/v2ray-configs | 533
-  - b2n.ir/v2ray-configs | 701
-  - b2n.ir/v2ray-configs | 31
-  - b2n.ir/v2ray-configs | 220
-  - b2n.ir/v2ray-configs | 231
-  - '[By EbraSha]'
-  - '[By EbraSha]_1'
-  - '[By EbraSha]_2'
-  - '[By EbraSha]_3'
-  - '[By EbraSha]_4'
-  - '[By EbraSha]_5'
-  - '[By EbraSha]_6'
-  - '[By EbraSha]_7'
-  - '[By EbraSha]_8'
-  - '[By EbraSha]_9'
-  - '[By EbraSha]_10'
-  - '[By EbraSha]_11'
-  - '[By EbraSha]_12'
-  - '[By EbraSha]_13'
-  - '[By EbraSha]_14'
-  - '[By EbraSha]_15'
-  - '[By EbraSha]_16'
-  - b2n.ir/v2ray-configs | 539
-  - '[By EbraSha]_17'
-  - '[By EbraSha]_18'
-  - '[By EbraSha]_19'
-  - '[By EbraSha]_20'
-  - '[By EbraSha]_21'
-  - '[By EbraSha]_22'
-  - '[By EbraSha]_23'
-  - '[By EbraSha]_24'
-  - '[By EbraSha]_25'
-  - '[By EbraSha]_26'
-  - MY-47.250.95.53-7083
-  - 🇺🇸 US-206.168.190.218-8158
-  - '[By EbraSha]_27'
-  - '[By EbraSha]_28'
-  - '[By EbraSha]_29'
-  - '[By EbraSha]_30'
-  - '[By EbraSha]_31'
-  - '[By EbraSha]_32'
-  - '[By EbraSha]_33'
-  - '[By EbraSha]_34'
-  - '[By EbraSha]_35'
-  - '[By EbraSha]_36'
-  - '[By EbraSha]_37'
-  - '[By EbraSha]_38'
-  - '[By EbraSha]_39'
-  - 🇺🇸 US-198.200.48.230-7390
-  - 🇭🇰 HK-47.76.136.178-6997
-  - 🇭🇰 HK-47.86.43.91-7147
-  - RELAY-172.67.191.240-8325
-  - RELAY-104.27.115.85-8699
-  - 🇺🇸 US-199.180.100.97-7428
-  - RELAY-185.162.228.110-1113
-  - 🇹🇼 TW-103.61.139.137-7052
-  - SC-156.245.8.144-8436
-  - RELAY-104.31.16.30-8663
-  - RELAY-172.67.169.131-0638
-  - RELAY-198.41.212.100-0612
-  - RELAY-154.92.9.70-8454
-  - RELAY-172.64.150.57-3442
-  - VN-103.98.151.144-3693
-  - WS-None | | src
-  - RELAY-104.21.83.115-7520
-  - CN-106.55.187.139-1509
-  - RELAY-173.245.49.238-0662
-  - RELAY-141.101.115.136-0609
-  - 🇺🇸 US-148.135.31.61-7472
-  - 🇩🇪 DE-57.129.64.238-6791
-  - 🇺🇸 US-38.14.107.225-7336
-  - PL-146.59.118.249-6815
-  - 🇳🇱 NL-46.182.107.46-0879
-  - 🇺🇸 US-149.30.232.103-0278
-  - b2n.ir/v2ray-configs | 835
-  - '[By EbraSha]_40'
-  - '[By EbraSha]_41'
-  - '[By EbraSha]_42'
-  - '[By EbraSha]_43'
-  - '[By EbraSha]_44'
-  - '[By EbraSha]_45'
-  - '[By EbraSha]_46'
-  - '[By EbraSha]_47'
-  - '[By EbraSha]_48'
-  - '[By EbraSha]_49'
-  - '[By EbraSha]_50'
-  - 🇫🇷 FR-163.5.159.231-7235
-  - VMESS-104
-  - RELAY-198.41.221.143-8190
-  - VMESS-209
-  - 🇺🇸 US-23.224.110.184-8092
-  - RELAY-104.31.16.196-8689
-  - RELAY-203.30.189.190-1014
-  - 🇭🇰 HK-47.239.204.193-7058
-  - RELAY-154.92.9.132-8484
-  - RELAY-147.78.140.30-7512
-  - RELAY-203.30.191.4-0664
-  - 🇺🇸 US-149.30.232.103-4711
-  - PL-51.68.139.22-0439
-  - 🇫🇷 FR-141.95.55.70-8541
-  - 🇺🇸 US-199.180.103.21-7507
-  - VN-103.161.112.225-0590
-  - 🇳🇱 NL-172.99.188.21-7588
-  - 🇺🇸 US-47.88.89.106-7956
-  - 🇺🇸 US-146.190.114.190-1511
-  - b2n.ir/v2ray-configs | 953
-  - 🇳🇱 NL | SS
-  - RELAY-104.18.6.82-0456
-  - 🇫🇷 FR-51.159.2.152-2271
-  - RELAY-104.31.16.65-8627
-  - RELAY-104.21.48.161-0842
-  - RELAY-173.245.49.141-1550
-  - 🇯🇵 JP-161.129.34.102-2307
-  - LU-107.189.31.41-4135
-  - 🇺🇸 US-147.135.112.248-4324
-  - RELAY-172.67.61.240-8295
-  - RELAY-172.64.154.155-1189
-  - RELAY-172.67.3.69-8299
-  - 🇺🇸 US-104.233.240.59-0511
-  - 🇺🇸 US-66.228.55.178-7902
-  - RELAY-162.159.242.155-8419
-  - IR--35
-  - 🇸🇬 SG-146.190.82.241-1127
-  - 🇸🇬 SG-139.99.61.53-0401
-  - RELAY-203.24.108.10-0694
-  - 🇺🇸 US-5.78.63.45-1858
-  - b2n.ir/v2ray-configs | 569
-  - b2n.ir/v2ray-configs | 820
-  - b2n.ir/v2ray-configs | 702
-  - b2n.ir/v2ray-configs | 681
-  - b2n.ir/v2ray-configs | 801
-  - b2n.ir/v2ray-configs | 406
-  - b2n.ir/v2ray-configs | 402
-  - b2n.ir/v2ray-configs | 623
-  - b2n.ir/v2ray-configs | 612
-  - b2n.ir/v2ray-configs | 968
-  - b2n.ir/v2ray-configs | 218
-  - b2n.ir/v2ray-configs | 946
-  - b2n.ir/v2ray-configs | 688
-  - b2n.ir/v2ray-configs | 645
-  - b2n.ir/v2ray-configs | 537
-  - b2n.ir/v2ray-configs | 548
-  - b2n.ir/v2ray-configs | 740
-  - b2n.ir/v2ray-configs | 893
-  - b2n.ir/v2ray-configs | 332
-  - b2n.ir/v2ray-configs | 406_1
-  - SS-82.38.31.89:8080
   - melibazz
-  - '[By EbraSha]_51'
-  - '[By EbraSha]_52'
-  - '[By EbraSha]_53'
-  - '[By EbraSha]_54'
-  - '[By EbraSha]_55'
-  - '[By EbraSha]_56'
-  - '[By EbraSha]_57'
-  - '[By EbraSha]_58'
-  - '[By EbraSha]_59'
-  - '[By EbraSha]_60'
-  - '[By EbraSha]_61'
-  - '[By EbraSha]_62'
-  - '[By EbraSha]_63'
-  - '[By EbraSha]_64'
-  - '[By EbraSha]_65'
-  - '[By EbraSha]_66'
-  - RELAY-172.64.90.210-8359
-  - 🇫🇷 FR-195.154.77.190-2466
-  - RELAY-172.64.154.102-0587
-  - RELAY-172.67.212.68-8312
-  - RELAY-154.92.9.212-8468
-  - 🇫🇷 FR-91.134.8.88-6816
-  - RELAY-104.31.16.52-8640
-  - 🇺🇸 US-31.58.87.99-7098
-  - 🇷🇺 RU-185.143.220.25-0455
-  - RELAY-147.185.161.169-8525
-  - 🇯🇵 JP-116.206.93.165-7113
-  - RELAY-104.19.45.117-0930
-  - RELAY-23.227.38.22-0653
-  - b2n.ir/v2ray-configs | 791
-  - b2n.ir/v2ray-configs | 565
-  - b2n.ir/v2ray-configs | 691
-  - b2n.ir/v2ray-configs | 212
-  - b2n.ir/v2ray-configs | 542
-  - b2n.ir/v2ray-configs | 517
-  - b2n.ir/v2ray-configs | 847
-  - b2n.ir/v2ray-configs | 14
-  - b2n.ir/v2ray-configs | 186
-  - b2n.ir/v2ray-configs | 661
-  - b2n.ir/v2ray-configs | 263
-  - '[By EbraSha]_67'
-  - '[By EbraSha]_68'
-  - '[By EbraSha]_69'
+  - melibazz_1
+  - 🇺🇸 US | VMESS
+  - '102620170'
+  - V10-dlj.tf/ssrsub
+  - github.com/Ruk1ng001_7c65b764
+  - github.com/Ruk1ng001_91db8af1
+  - RELAY-170.114.45.6-20
+  - 🇺🇸 US-216.24.57.250-94
+  - melibazz_2
+  - melibazz_3
+  - VMESS-173.249.209.146:20086-3570
+  - 🇺🇸 US | VMESS_1
+  - XX | VMESS
+  - 🇺🇸 120
+  - 🇺🇸 V001--US-dlj.tf/ssrsub
+  - V11-dlj.tf/ssrsub
+  - github.com/Ruk1ng001_2b0e31c8
+  - github.com/Ruk1ng001_c2f70919
+  - XX | VMESS_1
+  - 🇨🇦 189
+  - 🇸🇬 SGP 3
+  - github.com/Ruk1ng001_0e079bb7
+  - github.com/Ruk1ng001_06287c82
+  - github.com/Ruk1ng001_22701e34
+  - github.com/Ruk1ng001_b2cbcc6f
+  - 🇩🇪 DE-82.198.246.46-28
+  - melibazz_4
+  - 🇺🇸 US-104.192.226.106-0165
+  - github.com/Ruk1ng001_e3268b89
+  - melibazz_5
+  - melibazz_6
+  - github.com/Ruk1ng001_743fcc29
+  - 🇺🇸 US-107.151.182.253-10
+  - melibazz_7
+  - melibazz_8
+  - melibazz_9
+  - github.com/Ruk1ng001_c4b2a374
+  - 🇺🇸 US-173.244.56.6-0158
+  - melibazz_10
+  - melibazz_11
+  - melibazz_12
+  - melibazz_13
+  - 🇳🇱 007
+  - github.com/Ruk1ng001_a8f4fc53
+  - RELAY-167.68.4.199-54
+  - RELAY-109.234.211.66-64
+  - melibazz_14
+  - github.com/Ruk1ng001_ba719796
+  - melibazz_15
+  - melibazz_16
+  - github.com/Ruk1ng001_617db3c7
+  - melibazz_17
+  - RELAY-172.67.197.47-22
+  - melibazz_18
+  - 🇺🇸 US-71.19.148.143-13
+  - 🇺🇸 US-156.146.38.167-0160
+  - 🇺🇸 >>::US
+  - 🇺🇸 US-156.146.38.169-0163
+  - 🇺🇸 US-156.146.38.170-0161
+  - MX-147.78.1.230-0244
+  - 🇺🇸 US-173.234.29.2-0164
+  - MX-147.78.1.230-0245
+  - 🇨🇦 CA-137.184.174.93-0176
+  - github.com/Ruk1ng001_jDN1rvrq
+  - 🇺🇸 US-71.19.148.143-06
+  - 🇺🇸 >>::US::US::US::US::US::US::US::US::US::US::US::US
+  - github.com/Ruk1ng001_17493cac
+  - 🇺🇸 US | SS
+  - 🇺🇸 US | VMESS_2
+  - 🇺🇸 US-67.21.83.58-25
+  - 🇺🇸 US-67.21.85.228-26
+  - 🇨🇦 CA-79.127.200.169-0159
+  - github.com/Ruk1ng001_6363e3e5
+  - 🇨🇦 CA-79.127.233.170-18
+  - 🇺🇸 US-37.19.198.236-0196
+  - 🇺🇸 US_16
+  - 🇨🇦 CA-79.127.233.170-14
+  - 🇨🇦 >>::CA
+  - github.com/Ruk1ng001_0cffbbf8
+  - RELAY-104.18.16.77-23
+  - 🇺🇸 US-15.204.247.49-12
+  - 🇨🇦 CA-144.217.164.29-00
+  - XX | VMESS_2
+  - RELAY-104.21.76.158-02
+  - 🇺🇸 US-38.135.24.131-50
+  - 🇺🇸 US-23.95.75.146-16
+  - 🇨🇦 CA-23.95.76.59-08
+  - 🇯🇵 JP-149.22.87.204-0202
+  - github.com/Ruk1ng001_c6654493
+  - github.com/Ruk1ng001_177dd738
+  - CO-154.223.16.212-0264
+  - '>>::CR'
+  - 🇦🇺 AU | VMESS
+  - PA-138.186.142.81-0199
+  - EC-38.165.231.25-0162
+  - PA-138.186.142.80-0198
+  - 🇸🇬 SGP 6
+  - SC-154.90.63.177-0251
+  - github.com/Ruk1ng001_569711ac
+  - 🇺🇸 1
+  - 🇰🇷 1
+  - 🇸🇬 SGP 2
+  - github.com/Ruk1ng001_568e7b60
+  - 🇰🇷 KR | SS
+  - 'Join+:'
+  - SC-154.90.62.168-0249
+  - 🇬🇧 >>::GB
+  - 🇹🇼 TW-111.248.66.243-0330
+  - 🇹🇼 VLESS-twz.cloud-services.top:443-5851
+  - 🇷🇺 5
+  - 🇳🇱 NL-51.15.23.63-4679
+  - 🇬🇧 GB-146.70.61.37-0166
+  - 🇭🇰 HKG 2
+  - 🇭🇰 32
+  - SS-series-a2.samanehha.co:443-5189
+  - 🇬🇧 >>::GB_1
+  - PE-138.186.143.32-0265
+  - VLESS-95.164.36.217:443-4611
+  - 🇭🇰 19
+  - 🇭🇰 23
+  - 🇫🇷 >>::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR
+  - 🇭🇰 29
+  - 🇳🇱 VLESS-5.255.107.115:443-501
+  - 🇭🇰 HK-47.244.120.197-4651
+  - 🇭🇰 17
+  - Join+:_1
+  - 🇬🇧 >>::GB_2
+  - 🇭🇰 >>::HK::HK::HK::HK::HK::HK::HK::HK
+  - 🇭🇰 8
+  - 🇭🇰 18
+  - 🇭🇰 21
+  - 🇭🇰 35
+  - 🇭🇰 46
+  - 🇳🇱 2
+  - 🇬🇧 GB_22fd8_0002
+  - 🇸🇬 SGP
+  - github.com/Ruk1ng001_AJrBnYnC
+  - 🇭🇰 36
+  - 🇭🇰 39
+  - VLESS-aws-link4.liangxin1.xyz:443-6689
+  - DK-192.36.27.94-0233
+  - BE-192.71.249.78-0250
+  - 🇭🇰 10
+  - 🇭🇰 26
+  - PE | SS
+  - 🇩🇪 >>::DE
+  - 🇩🇪 >>::DE_1
+  - github.com/Ruk1ng001_TAy4COsc
+  - 🇩🇪 9
+  - 🇭🇰 37
+  - 🇳🇱 NL-193.29.139.179-0197
+  - 🇭🇰 30
+  - '1'
+  - Join+:_2
+  - 🇳🇱 >>::NL
+  - github.com/Ruk1ng001_9110cda4
+  - 🇭🇰 24
+  - 🇳🇱 >>::NL_1
+  - 🇭🇰 2
+  - 🇭🇰 3
+  - 🇯🇵 13
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
+- name: 🌍 AU
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🇦🇺 AU | VMESS
 - name: 🌍 CA
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇨🇦 CA-158.51.121.63-6774
+  - 🇨🇦 CA-137.184.174.93-0176
+  - 🇨🇦 CA-79.127.200.169-0159
+  - 🇨🇦 CA-79.127.233.170-18
+  - 🇨🇦 CA-79.127.233.170-14
+  - 🇨🇦 >>::CA
+  - 🇨🇦 CA-144.217.164.29-00
+  - 🇨🇦 CA-23.95.76.59-08
 - name: 🌍 DE
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇩🇪 DE-57.129.64.238-6791
+  - 🇩🇪 DE-82.198.246.46-28
+  - 🇩🇪 >>::DE
+  - 🇩🇪 >>::DE_1
 - name: 🌍 FR
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇫🇷 FR-163.5.159.231-7235
-  - 🇫🇷 FR-141.95.55.70-8541
-  - 🇫🇷 FR-51.159.2.152-2271
-  - 🇫🇷 FR-195.154.77.190-2466
-  - 🇫🇷 FR-91.134.8.88-6816
+  - 🇫🇷 >>::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR::FR
+- name: 🌍 GB
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🇬🇧 >>::GB
+  - 🇬🇧 GB-146.70.61.37-0166
+  - 🇬🇧 >>::GB_1
+  - 🇬🇧 >>::GB_2
+  - 🇬🇧 GB_22fd8_0002
 - name: 🌍 HK
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇭🇰 HK-47.76.136.178-6997
-  - 🇭🇰 HK-47.86.43.91-7147
-  - 🇭🇰 HK-47.239.204.193-7058
+  - 🇭🇰 HKG 2
+  - 🇭🇰 HK-47.244.120.197-4651
+  - 🇭🇰 >>::HK::HK::HK::HK::HK::HK::HK::HK
 - name: 🌍 JP
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇯🇵 JP-161.129.34.102-2307
-  - 🇯🇵 JP-116.206.93.165-7113
+  - 🇯🇵 JP-149.22.87.204-0202
+- name: 🌍 KR
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🇰🇷 KR | SS
 - name: 🌍 NL
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇳🇱 NL-46.182.107.46-0879
-  - 🇳🇱 NL-172.99.188.21-7588
-  - 🇳🇱 NL | SS
-- name: 🌍 RU
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🇷🇺 RU-185.143.220.25-0455
+  - 🇳🇱 NL-51.15.23.63-4679
+  - 🇳🇱 NL-193.29.139.179-0197
+  - 🇳🇱 >>::NL
+  - 🇳🇱 >>::NL_1
 - name: 🌍 SG
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇸🇬 SG-146.190.82.241-1127
-  - 🇸🇬 SG-139.99.61.53-0401
+  - 🇸🇬 SGP 3
+  - 🇸🇬 SGP 6
+  - 🇸🇬 SGP 2
+  - 🇸🇬 SGP
 - name: 🌍 TW
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇹🇼 TW-103.61.139.137-7052
+  - 🇹🇼 TW-111.248.66.243-0330
 - name: 🌍 US
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇺🇸 US-206.168.190.218-8158
-  - 🇺🇸 US-198.200.48.230-7390
-  - 🇺🇸 US-199.180.100.97-7428
-  - 🇺🇸 US-148.135.31.61-7472
-  - 🇺🇸 US-38.14.107.225-7336
-  - 🇺🇸 US-149.30.232.103-0278
-  - 🇺🇸 US-23.224.110.184-8092
-  - 🇺🇸 US-149.30.232.103-4711
-  - 🇺🇸 US-199.180.103.21-7507
-  - 🇺🇸 US-47.88.89.106-7956
-  - 🇺🇸 US-146.190.114.190-1511
-  - 🇺🇸 US-147.135.112.248-4324
-  - 🇺🇸 US-104.233.240.59-0511
-  - 🇺🇸 US-66.228.55.178-7902
-  - 🇺🇸 US-5.78.63.45-1858
-  - 🇺🇸 US-31.58.87.99-7098
+  - 🇺🇸 US | VMESS
+  - 🇺🇸 US-216.24.57.250-94
+  - 🇺🇸 US | VMESS_1
+  - 🇺🇸 V001--US-dlj.tf/ssrsub
+  - 🇺🇸 US-104.192.226.106-0165
+  - 🇺🇸 US-107.151.182.253-10
+  - 🇺🇸 US-173.244.56.6-0158
+  - 🇺🇸 US-71.19.148.143-13
+  - 🇺🇸 US-156.146.38.167-0160
+  - 🇺🇸 >>::US
+  - 🇺🇸 US-156.146.38.169-0163
+  - 🇺🇸 US-156.146.38.170-0161
+  - 🇺🇸 US-173.234.29.2-0164
+  - 🇺🇸 US-71.19.148.143-06
+  - 🇺🇸 >>::US::US::US::US::US::US::US::US::US::US::US::US
+  - 🇺🇸 US | SS
+  - 🇺🇸 US | VMESS_2
+  - 🇺🇸 US-67.21.83.58-25
+  - 🇺🇸 US-67.21.85.228-26
+  - 🇺🇸 US-37.19.198.236-0196
+  - 🇺🇸 US_16
+  - 🇺🇸 US-15.204.247.49-12
+  - 🇺🇸 US-38.135.24.131-50
+  - 🇺🇸 US-23.95.75.146-16
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择

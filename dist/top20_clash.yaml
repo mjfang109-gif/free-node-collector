@@ -20,21 +20,43 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: RELAY-172.67.183.35-0593
+- name: melibazz
   type: vmess
-  server: 172.67.183.35
+  server: 104.16.108.100
+  port: 8880
+  uuid: 4b5e4565-322f-4223-a891-78a84f189726
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /RpT6kZjkw45EenmTcDYWs
+- name: melibazz_1
+  type: vmess
+  server: 104.16.72.175
   port: 443
-  uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e
+  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /
-- name: 🇨🇦 CA-158.51.121.63-6774
+    path: /wss13889
+- name: 🇺🇸 US | VMESS
   type: vmess
-  server: 158.51.121.63
+  server: 104.21.15.212
   port: 443
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /linkws
+- name: '102620170'
+  server: 104.21.50.177
+  port: 443
+  type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
@@ -42,20 +64,71 @@ proxies:
   network: ws
   ws-opts:
     path: linkvws
-- name: RELAY-203.23.104.190-8184
+    headers:
+      Host: alvvin.click
+- name: V10-dlj.tf/ssrsub
+  server: 162.159.253.28
+  port: 80
   type: vmess
-  server: 203.23.104.190
-  port: 443
-  uuid: 1af4ba3d-e60f-4f83-b38b-23fc181f676d
+  uuid: 073360d9-72cb-4ba5-9a40-8ac6cd918356
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
   network: ws
   ws-opts:
-    path: /11201
-- name: RELAY-185.18.250.70-8238
+    path: /
+    headers:
+      Host: sls.shabijichang.com
+- name: github.com/Ruk1ng001_7c65b764
+  network: ws
+  port: 8443
+  server: 198.41.209.193
+  servername: wr.ssdxz.cn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 29ff2954-dfea-4d20-8089-059cfa861453
+  ws-opts:
+    headers:
+      Host: wr.ssdxz.cn
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /proxyip=ProxyIP.SG.CMLiussss.net/proxyip=tw.william.us.ci,ProxyIP.SG.CMLiussss.net
+- name: github.com/Ruk1ng001_91db8af1
+  network: ws
+  port: 443
+  server: 135.84.74.20
+  servername: sni.111000.dynv6.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.116 Safari/537.36
+    path: /?ed=2560&Telegram🇨🇳+@WangCai2
+- name: RELAY-170.114.45.6-20
+  server: support.zoom.us
+  port: 8080
   type: vmess
-  server: 185.18.250.70
+  uuid: 44e57485-eccc-46ef-808f-cd17ac810018
+  alterId: 0
+  cipher: auto
+  skip-cert-verify: true
+  network: ws
+  tls: false
+- name: 🇺🇸 US-216.24.57.250-94
+  server: 216.24.57.250
+  port: 443
+  type: trojan
+  password: 5027e2a4-c4d2-463a-9508-83a2c7d1ad83
+  sni: afrcloud1.mmv.kr
+  skip-cert-verify: true
+- name: melibazz_2
+  type: vmess
+  server: 104.16.8.3
   port: 443
   uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
   alterId: 0
@@ -64,112 +137,28 @@ proxies:
   network: ws
   ws-opts:
     path: /wss51068
-- name: RELAY-104.18.28.109-8764
+- name: melibazz_3
   type: vmess
-  server: 104.18.28.109
+  server: 104.16.91.78
   port: 443
-  uuid: be74ca03-6a7c-4c88-edc2-c6434ead0cfa
+  uuid: F3E36B53-E75E-48C0-B9F1-F918F397E996
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /16575
-- name: EE-176.112.146.190-0513
+    path: /speedtest
+- name: VMESS-173.249.209.146:20086-3570
   type: vmess
-  server: 176.112.146.190
-  port: 80
-  uuid: f9247df4-02d5-4b31-acc5-4022652c5953
+  server: 173.249.209.146
+  port: 20086
+  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
   alterId: 0
   cipher: auto
   tls: false
   network: ws
   ws-opts:
     path: /
-- name: b2n.ir/v2ray-configs | 293
-  type: ss
-  server: 103.186.154.52
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: b2n.ir/v2ray-configs | 959
-  type: ss
-  server: 51.77.53.200
-  port: 2375
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-- name: b2n.ir/v2ray-configs | 4
-  type: ss
-  server: 103.186.154.22
-  port: 38388
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-- name: b2n.ir/v2ray-configs | 533
-  type: ss
-  server: 14.29.124.168
-  port: 25220
-  cipher: aes-128-cfb
-  password: QazEdcTgb159@$*
-- name: b2n.ir/v2ray-configs | 701
-  type: ss
-  server: 149.202.82.172
-  port: 8091
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-- name: b2n.ir/v2ray-configs | 31
-  type: ss
-  server: 172.99.188.71
-  port: 2375
-  cipher: aes-256-gcm
-  password: faBAoD54k87UJG7
-- name: b2n.ir/v2ray-configs | 220
-  type: ss
-  server: 167.88.61.14
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: b2n.ir/v2ray-configs | 231
-  type: ss
-  server: 167.88.63.99
-  port: 4444
-  cipher: aes-256-gcm
-  password: pKEW8JPByTVTLtM
-- name: '[By EbraSha]'
-  type: ss
-  server: 195.35.113.79
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 1112935345BtgV5PDHVww
-- name: '[By EbraSha]_1'
-  type: ss
-  server: 45.158.171.136
-  port: 8080
-  cipher: chacha20-ietf-poly1305
-  password: 1RWwXhwfAB5gAEozU4G2Pg
-- name: '[By EbraSha]_2'
-  type: ss
-  server: 13.87.96.194
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 1xO2cqPazqjGfCfd
-- name: '[By EbraSha]_3'
-  type: ss
-  server: 74.177.162.130
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 1xO2cqPazqjGfCfd
-- name: '[By EbraSha]_4'
-  type: ss
-  server: 164.92.156.41
-  port: 24206
-  cipher: chacha20-ietf-poly1305
-  password: zI7kiNZ0UfV9cXB73a4nRD
-- name: '[By EbraSha]_5'
-  type: ss
-  server: 5.183.176.93
-  port: 800
-  cipher: chacha20-ietf-poly1305
-  password: G!yBwPWH3Vao
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -177,62 +166,47 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
-  - RELAY-172.67.183.35-0593
-  - 🇨🇦 CA-158.51.121.63-6774
-  - RELAY-203.23.104.190-8184
-  - RELAY-185.18.250.70-8238
-  - RELAY-104.18.28.109-8764
-  - EE-176.112.146.190-0513
-  - b2n.ir/v2ray-configs | 293
-  - b2n.ir/v2ray-configs | 959
-  - b2n.ir/v2ray-configs | 4
-  - b2n.ir/v2ray-configs | 533
-  - b2n.ir/v2ray-configs | 701
-  - b2n.ir/v2ray-configs | 31
-  - b2n.ir/v2ray-configs | 220
-  - b2n.ir/v2ray-configs | 231
-  - '[By EbraSha]'
-  - '[By EbraSha]_1'
-  - '[By EbraSha]_2'
-  - '[By EbraSha]_3'
-  - '[By EbraSha]_4'
-  - '[By EbraSha]_5'
+  - melibazz
+  - melibazz_1
+  - 🇺🇸 US | VMESS
+  - '102620170'
+  - V10-dlj.tf/ssrsub
+  - github.com/Ruk1ng001_7c65b764
+  - github.com/Ruk1ng001_91db8af1
+  - RELAY-170.114.45.6-20
+  - 🇺🇸 US-216.24.57.250-94
+  - melibazz_2
+  - melibazz_3
+  - VMESS-173.249.209.146:20086-3570
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - RELAY-172.67.183.35-0593
-  - 🇨🇦 CA-158.51.121.63-6774
-  - RELAY-203.23.104.190-8184
-  - RELAY-185.18.250.70-8238
-  - RELAY-104.18.28.109-8764
-  - EE-176.112.146.190-0513
-  - b2n.ir/v2ray-configs | 293
-  - b2n.ir/v2ray-configs | 959
-  - b2n.ir/v2ray-configs | 4
-  - b2n.ir/v2ray-configs | 533
-  - b2n.ir/v2ray-configs | 701
-  - b2n.ir/v2ray-configs | 31
-  - b2n.ir/v2ray-configs | 220
-  - b2n.ir/v2ray-configs | 231
-  - '[By EbraSha]'
-  - '[By EbraSha]_1'
-  - '[By EbraSha]_2'
-  - '[By EbraSha]_3'
-  - '[By EbraSha]_4'
-  - '[By EbraSha]_5'
+  - melibazz
+  - melibazz_1
+  - 🇺🇸 US | VMESS
+  - '102620170'
+  - V10-dlj.tf/ssrsub
+  - github.com/Ruk1ng001_7c65b764
+  - github.com/Ruk1ng001_91db8af1
+  - RELAY-170.114.45.6-20
+  - 🇺🇸 US-216.24.57.250-94
+  - melibazz_2
+  - melibazz_3
+  - VMESS-173.249.209.146:20086-3570
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: 🌍 CA
+- name: 🌍 US
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇨🇦 CA-158.51.121.63-6774
+  - 🇺🇸 US | VMESS
+  - 🇺🇸 US-216.24.57.250-94
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择

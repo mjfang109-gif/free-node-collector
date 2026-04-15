@@ -2,161 +2,161 @@
   {
     "protocol": "vmess",
     "location": "未知",
-    "ip": "172.67.183.35",
-    "port": 443,
-    "latency_ms": 0,
-    "name": "RELAY-172.67.183.35-0593"
-  },
-  {
-    "protocol": "vmess",
-    "location": "CA",
-    "ip": "158.51.121.63",
-    "port": 443,
-    "latency_ms": 0,
-    "name": "🇨🇦 CA-158.51.121.63-6774"
+    "ip": "104.16.108.100",
+    "port": 8880,
+    "latency_ms": 1,
+    "name": "melibazz"
   },
   {
     "protocol": "vmess",
     "location": "未知",
-    "ip": "203.23.104.190",
+    "ip": "104.16.72.175",
     "port": 443,
-    "latency_ms": 0,
-    "name": "RELAY-203.23.104.190-8184"
+    "latency_ms": 1,
+    "name": "melibazz"
+  },
+  {
+    "protocol": "vmess",
+    "location": "US",
+    "ip": "104.21.15.212",
+    "port": 443,
+    "latency_ms": 1,
+    "name": "🇺🇸 US | VMESS"
   },
   {
     "protocol": "vmess",
     "location": "未知",
-    "ip": "185.18.250.70",
+    "ip": "104.21.50.177",
     "port": 443,
-    "latency_ms": 0,
-    "name": "RELAY-185.18.250.70-8238"
+    "latency_ms": 1,
+    "name": "102620170"
   },
   {
     "protocol": "vmess",
     "location": "未知",
-    "ip": "104.18.28.109",
-    "port": 443,
-    "latency_ms": 0,
-    "name": "RELAY-104.18.28.109-8764"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "176.112.146.190",
+    "ip": "162.159.253.28",
     "port": 80,
-    "latency_ms": 0,
-    "name": "EE-176.112.146.190-0513"
+    "latency_ms": 1,
+    "name": "V10-dlj.tf/ssrsub"
   },
   {
-    "protocol": "ss",
+    "protocol": "vless",
     "location": "未知",
-    "ip": "103.186.154.52",
-    "port": 38388,
-    "latency_ms": 0,
-    "name": "b2n.ir/v2ray-configs | 293"
+    "ip": "198.41.209.193",
+    "port": 8443,
+    "latency_ms": 1,
+    "name": "github.com/Ruk1ng001_7c65b764"
   },
   {
-    "protocol": "ss",
+    "protocol": "vless",
     "location": "未知",
-    "ip": "51.77.53.200",
-    "port": 2375,
-    "latency_ms": 0,
-    "name": "b2n.ir/v2ray-configs | 959"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "103.186.154.22",
-    "port": 38388,
-    "latency_ms": 0,
-    "name": "b2n.ir/v2ray-configs | 4"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "14.29.124.168",
-    "port": 25220,
-    "latency_ms": 0,
-    "name": "b2n.ir/v2ray-configs | 533"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "149.202.82.172",
-    "port": 8091,
-    "latency_ms": 0,
-    "name": "b2n.ir/v2ray-configs | 701"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "172.99.188.71",
-    "port": 2375,
-    "latency_ms": 0,
-    "name": "b2n.ir/v2ray-configs | 31"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "167.88.61.14",
-    "port": 8119,
-    "latency_ms": 0,
-    "name": "b2n.ir/v2ray-configs | 220"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "167.88.63.99",
-    "port": 4444,
-    "latency_ms": 0,
-    "name": "b2n.ir/v2ray-configs | 231"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "195.35.113.79",
+    "ip": "135.84.74.20",
     "port": 443,
-    "latency_ms": 0,
-    "name": "[By EbraSha]"
+    "latency_ms": 1,
+    "name": "github.com/Ruk1ng001_91db8af1"
+  },
+  {
+    "protocol": "ss",
+    "location": "HK",
+    "ip": "50.62.195.16",
+    "port": 443,
+    "latency_ms": 2,
+    "name": "🇭🇰 HKG 3"
+  },
+  {
+    "protocol": "ss",
+    "location": "JP",
+    "ip": "172.67.75.207",
+    "port": 443,
+    "latency_ms": 2,
+    "name": "🇯🇵 JPN 6"
+  },
+  {
+    "protocol": "ss",
+    "location": "JP",
+    "ip": "104.17.127.54",
+    "port": 443,
+    "latency_ms": 2,
+    "name": "🇯🇵 JPN 23"
+  },
+  {
+    "protocol": "ss",
+    "location": "JP",
+    "ip": "198.41.223.36",
+    "port": 443,
+    "latency_ms": 2,
+    "name": "🇯🇵 JPN 29"
+  },
+  {
+    "protocol": "ss",
+    "location": "JP",
+    "ip": "104.19.55.1",
+    "port": 443,
+    "latency_ms": 2,
+    "name": "🇯🇵 JPN 30"
+  },
+  {
+    "protocol": "ss",
+    "location": "JP",
+    "ip": "162.159.18.179",
+    "port": 443,
+    "latency_ms": 2,
+    "name": "🇯🇵 JPN 31"
+  },
+  {
+    "protocol": "ss",
+    "location": "JP",
+    "ip": "162.159.152.96",
+    "port": 443,
+    "latency_ms": 2,
+    "name": "🇯🇵 JPN 35"
   },
   {
     "protocol": "ss",
     "location": "未知",
-    "ip": "45.158.171.136",
+    "ip": "198.41.223.119",
+    "port": 443,
+    "latency_ms": 2,
+    "name": "MDA 2"
+  },
+  {
+    "protocol": "vmess",
+    "location": "未知",
+    "ip": "support.zoom.us",
     "port": 8080,
-    "latency_ms": 0,
-    "name": "[By EbraSha]"
+    "latency_ms": 2,
+    "name": "RELAY-170.114.45.6-20"
   },
   {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "13.87.96.194",
+    "protocol": "trojan",
+    "location": "US",
+    "ip": "216.24.57.250",
     "port": 443,
-    "latency_ms": 0,
-    "name": "[By EbraSha]"
+    "latency_ms": 2,
+    "name": "🇺🇸 US-216.24.57.250-94"
   },
   {
-    "protocol": "ss",
+    "protocol": "vmess",
     "location": "未知",
-    "ip": "74.177.162.130",
+    "ip": "104.16.8.3",
     "port": 443,
-    "latency_ms": 0,
-    "name": "[By EbraSha]"
+    "latency_ms": 2,
+    "name": "melibazz"
   },
   {
-    "protocol": "ss",
+    "protocol": "vmess",
     "location": "未知",
-    "ip": "164.92.156.41",
-    "port": 24206,
-    "latency_ms": 0,
-    "name": "[By EbraSha]"
+    "ip": "104.16.91.78",
+    "port": 443,
+    "latency_ms": 2,
+    "name": "melibazz"
   },
   {
-    "protocol": "ss",
+    "protocol": "vmess",
     "location": "未知",
-    "ip": "5.183.176.93",
-    "port": 800,
-    "latency_ms": 0,
-    "name": "[By EbraSha]"
+    "ip": "173.249.209.146",
+    "port": 20086,
+    "latency_ms": 2,
+    "name": "VMESS-173.249.209.146:20086-3570"
   }
 ]
