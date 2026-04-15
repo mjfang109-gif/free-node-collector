@@ -31,7 +31,7 @@ DIST_DIR.mkdir(parents=True, exist_ok=True)  # 防御性创建
 TEMPLATE_PATH = ROOT_DIR / 'live.html'  # 模板在项目根目录
 JSON_INPUT_PATH = DIST_DIR / 'top_nodes.json'  # 数据文件在 dist 目录下
 TEMP_HTML_PATH = DIST_DIR / 'temp_render.html'  # 临时组装的 HTML 放到 dist 下
-OUTPUT_IMAGE_PATH = DIST_DIR / 'bg.jpg'  # 最终截取的推流背景图放到 dist 下
+OUTPUT_IMAGE_PATH = ROOT_DIR / 'bg.jpg'  # 最终截取的推流背景图放到 dist 下
 
 
 # ==========================================
@@ -161,4 +161,5 @@ def update_stream_image():
 
 
 if __name__ == "__main__":
+    download_remote_nodes()
     update_stream_image()

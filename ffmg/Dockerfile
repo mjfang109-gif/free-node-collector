@@ -1,5 +1,5 @@
 # 微软官方 Playwright 镜像 (Ubuntu 24.04 Noble)
-FROM mcr.microsoft.com/playwright/python:v1.45.0-noble
+FROM mcr.microsoft.com/playwright/python:v1.45.0-jammy
 
 WORKDIR /app
 
