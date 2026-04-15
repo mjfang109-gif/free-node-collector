@@ -20,23 +20,29 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: 🇺🇸 US-173.249.209.146-0170
+- name: 🇺🇸 v2go | US | VMESS | 545
   type: vmess
-  server: 173.249.209.146
-  port: 20086
-  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  server: 47.90.244.153
+  port: 8443
+  uuid: 65e2a985-ad20-4486-a7ec-b67b20ee56af
   alterId: 0
   cipher: auto
   tls: false
   network: ws
   ws-opts:
-    path: /
-- name: 10 7.5MB/s
-  type: vmess
-  server: 165.140.216.141
+    path: /ws
+- name: b2n.ir/v2ray-configs | 131
+  type: ss
+  server: 37.19.198.236
   port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 38 - US - VMess - 22324
+  type: vmess
+  server: 45.82.161.225
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
   cipher: auto
   tls: false
   network: tcp
@@ -47,16 +53,18 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
-  - 🇺🇸 US-173.249.209.146-0170
-  - 10 7.5MB/s
+  - 🇺🇸 v2go | US | VMESS | 545
+  - b2n.ir/v2ray-configs | 131
+  - 🇺🇸 38 - US - VMess - 22324
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - 🇺🇸 US-173.249.209.146-0170
-  - 10 7.5MB/s
+  - 🇺🇸 v2go | US | VMESS | 545
+  - b2n.ir/v2ray-configs | 131
+  - 🇺🇸 38 - US - VMess - 22324
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -66,7 +74,8 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇺🇸 US-173.249.209.146-0170
+  - 🇺🇸 v2go | US | VMESS | 545
+  - 🇺🇸 38 - US - VMess - 22324
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择

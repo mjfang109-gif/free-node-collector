@@ -2,17 +2,25 @@
   {
     "protocol": "vmess",
     "location": "US",
-    "ip": "173.249.209.146",
-    "port": 20086,
+    "ip": "47.90.244.153",
+    "port": 8443,
     "latency_ms": 27,
-    "name": "🇺🇸 US-173.249.209.146-0170"
+    "name": "🇺🇸 v2go | US | VMESS | 545"
+  },
+  {
+    "protocol": "ss",
+    "location": "未知",
+    "ip": "37.19.198.236",
+    "port": 443,
+    "latency_ms": 28,
+    "name": "b2n.ir/v2ray-configs | 131"
   },
   {
     "protocol": "vmess",
-    "location": "未知",
-    "ip": "165.140.216.141",
-    "port": 443,
-    "latency_ms": 31,
-    "name": "10 7.5MB/s"
+    "location": "US",
+    "ip": "45.82.161.225",
+    "port": 22324,
+    "latency_ms": 39,
+    "name": "🇺🇸 38 - US - VMess - 22324"
   }
 ]
