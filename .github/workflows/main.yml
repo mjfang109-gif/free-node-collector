@@ -54,10 +54,6 @@ jobs:
 
       - name: 运行采集 + 测速 + 生成订阅
         run: python -m src.main
-        env:
-          # 可选：设置代理加速 GitHub 访问（如有需要）
-          # HTTPS_PROXY: ""
-
       - name: 提交更新到仓库
         run: |
           git config user.name "GitHub Actions Bot"
