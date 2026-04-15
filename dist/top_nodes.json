@@ -1,42 +1,26 @@
 [
   {
     "protocol": "ss",
-    "location": "US",
-    "ip": "156.146.38.170",
-    "port": 443,
-    "latency_ms": 32,
-    "name": "🇺🇸 US-156.146.38.170-0182"
+    "location": "未知",
+    "ip": "173.234.29.2",
+    "port": 990,
+    "latency_ms": 9,
+    "name": "b2n.ir/v2ray-configs | 39"
   },
   {
     "protocol": "ss",
     "location": "未知",
-    "ip": "156.146.38.168",
-    "port": 443,
-    "latency_ms": 32,
-    "name": "[By EbraSha]"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "156.146.38.167",
-    "port": 443,
-    "latency_ms": 33,
-    "name": "b2n.ir/v2ray-configs | 499"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "156.146.38.169",
-    "port": 443,
-    "latency_ms": 50,
-    "name": "b2n.ir/v2ray-configs | 300"
+    "ip": "79.127.200.169",
+    "port": 990,
+    "latency_ms": 26,
+    "name": "b2n.ir/v2ray-configs | 336"
   },
   {
     "protocol": "vmess",
     "location": "未知",
     "ip": "209.126.84.189",
     "port": 443,
-    "latency_ms": 86,
+    "latency_ms": 171,
     "name": "VMESS-209"
   }
 ]

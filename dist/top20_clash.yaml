@@ -20,30 +20,18 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: 🇺🇸 US-156.146.38.170-0182
+- name: b2n.ir/v2ray-configs | 39
   type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: '[By EbraSha]'
+  server: 173.234.29.2
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: b2n.ir/v2ray-configs | 336
   type: ss
-  server: 156.146.38.168
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: b2n.ir/v2ray-configs | 499
-  type: ss
-  server: 156.146.38.167
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: b2n.ir/v2ray-configs | 300
-  type: ss
-  server: 156.146.38.169
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+  server: 79.127.200.169
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: VMESS-209
   type: vmess
   server: 209.126.84.189
@@ -62,10 +50,8 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
-  - 🇺🇸 US-156.146.38.170-0182
-  - '[By EbraSha]'
-  - b2n.ir/v2ray-configs | 499
-  - b2n.ir/v2ray-configs | 300
+  - b2n.ir/v2ray-configs | 39
+  - b2n.ir/v2ray-configs | 336
   - VMESS-209
 - name: ♻️ 自动选择
   type: url-test
@@ -73,21 +59,14 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies: &id001
-  - 🇺🇸 US-156.146.38.170-0182
-  - '[By EbraSha]'
-  - b2n.ir/v2ray-configs | 499
-  - b2n.ir/v2ray-configs | 300
+  - b2n.ir/v2ray-configs | 39
+  - b2n.ir/v2ray-configs | 336
   - VMESS-209
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: 🌍 US
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🇺🇸 US-156.146.38.170-0182
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
