@@ -20,59 +20,38 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: b2n.ir/v2ray-configs | 452
-  type: ss
-  server: 104.192.226.106
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇺🇸 v2go | US | VMESS | 48
+- name: 🇺🇸 v2go | US | VMESS | 1002
   type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 🇺🇸 v2go | US | VMESS | 2268
-  type: vmess
-  server: 216.167.43.29
-  port: 3438
-  uuid: 01d3482e-27f5-4eac-ab5e-906787bb32ef
+  server: 47.90.244.153
+  port: 8443
+  uuid: 65e2a985-ad20-4486-a7ec-b67b20ee56af
   alterId: 0
   cipher: auto
   tls: false
   network: ws
   ws-opts:
-    path: /
-- name: 🇩🇪 v2go | DE | VMESS | 2383
+    path: /ws
+- name: 🇺🇸 38 - US - VMess - 22324
   type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
+  server: 45.82.161.225
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
   cipher: auto
   tls: false
   network: tcp
-- name: 🇬🇧 V2CROSS.COM
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 🇩🇪 v2go | DE | VMESS | 2384
-  type: vmess
-  server: 82.198.246.46
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
+- name: '[By EbraSha]'
+  type: ss
+  server: 37.19.198.243
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: '[openproxylist.com]'
+  type: ss
+  server: 38.135.24.131
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: hbGrpfvNrJsUmKmPbR3iY2
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -80,41 +59,31 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
-  - b2n.ir/v2ray-configs | 452
-  - 🇺🇸 v2go | US | VMESS | 48
-  - 🇺🇸 v2go | US | VMESS | 2268
-  - 🇩🇪 v2go | DE | VMESS | 2383
-  - 🇬🇧 V2CROSS.COM
-  - 🇩🇪 v2go | DE | VMESS | 2384
+  - 🇺🇸 v2go | US | VMESS | 1002
+  - 🇺🇸 38 - US - VMess - 22324
+  - '[By EbraSha]'
+  - '[openproxylist.com]'
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - b2n.ir/v2ray-configs | 452
-  - 🇺🇸 v2go | US | VMESS | 48
-  - 🇺🇸 v2go | US | VMESS | 2268
-  - 🇩🇪 v2go | DE | VMESS | 2383
-  - 🇬🇧 V2CROSS.COM
-  - 🇩🇪 v2go | DE | VMESS | 2384
+  - 🇺🇸 v2go | US | VMESS | 1002
+  - 🇺🇸 38 - US - VMess - 22324
+  - '[By EbraSha]'
+  - '[openproxylist.com]'
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: 🌍 DE
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🇩🇪 v2go | DE | VMESS | 2383
-  - 🇩🇪 v2go | DE | VMESS | 2384
 - name: 🌍 US
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇺🇸 v2go | US | VMESS | 48
-  - 🇺🇸 v2go | US | VMESS | 2268
+  - 🇺🇸 v2go | US | VMESS | 1002
+  - 🇺🇸 38 - US - VMess - 22324
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
