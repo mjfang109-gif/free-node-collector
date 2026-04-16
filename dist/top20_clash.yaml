@@ -20,63 +20,30 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: '[By EbraSha]'
+- name: 🇺🇸 US-156.146.38.170-0179
   type: ss
-  server: 66.94.125.178
-  port: 80
-  cipher: aes-256-gcm
-  password: 14CLBaFBqwqxBJy6
-- name: 🇺🇸 >>::US
-  type: ss
-  server: 154.53.60.212
-  port: 80
-  cipher: aes-256-gcm
-  password: ZfbPFDdeBj0B1Txs
-- name: '[By EbraSha]_1'
-  type: ss
-  server: 154.53.63.32
-  port: 80
-  cipher: aes-256-gcm
-  password: k6ruJuwgAUxIrkHb
-- name: '[By EbraSha]_2'
-  type: ss
-  server: 149.22.95.183
+  server: 156.146.38.170
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-- name: b2n.ir/v2ray-configs | 329
+- name: '[By EbraSha]'
   type: ss
-  server: 79.127.233.170
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: '[By EbraSha]_3'
-  type: ss
-  server: 154.53.57.143
-  port: 80
-  cipher: aes-256-gcm
-  password: uwmRUOVM5ljNAtPj
-- name: '[By EbraSha]_4'
-  type: ss
-  server: 154.12.242.150
-  port: 80
-  cipher: aes-256-gcm
-  password: 7vZO55fXgXAJXa2F
-- name: 13 116.7MB/s
-  type: vmess
-  server: 165.140.216.141
+  server: 156.146.38.168
   port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: b2n.ir/v2ray-configs | 536
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: b2n.ir/v2ray-configs | 2
   type: ss
-  server: 104.192.226.106
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
+  server: 156.146.38.167
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: b2n.ir/v2ray-configs | 900
+  type: ss
+  server: 156.146.38.169
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -84,30 +51,20 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
+  - 🇺🇸 US-156.146.38.170-0179
   - '[By EbraSha]'
-  - 🇺🇸 >>::US
-  - '[By EbraSha]_1'
-  - '[By EbraSha]_2'
-  - b2n.ir/v2ray-configs | 329
-  - '[By EbraSha]_3'
-  - '[By EbraSha]_4'
-  - 13 116.7MB/s
-  - b2n.ir/v2ray-configs | 536
+  - b2n.ir/v2ray-configs | 2
+  - b2n.ir/v2ray-configs | 900
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
+  - 🇺🇸 US-156.146.38.170-0179
   - '[By EbraSha]'
-  - 🇺🇸 >>::US
-  - '[By EbraSha]_1'
-  - '[By EbraSha]_2'
-  - b2n.ir/v2ray-configs | 329
-  - '[By EbraSha]_3'
-  - '[By EbraSha]_4'
-  - 13 116.7MB/s
-  - b2n.ir/v2ray-configs | 536
+  - b2n.ir/v2ray-configs | 2
+  - b2n.ir/v2ray-configs | 900
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -117,7 +74,7 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇺🇸 >>::US
+  - 🇺🇸 US-156.146.38.170-0179
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
