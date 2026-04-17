@@ -1,34 +1,50 @@
 [
   {
-    "protocol": "ss",
+    "protocol": "vmess",
     "location": "US",
-    "ip": "156.146.38.170",
-    "port": 443,
-    "latency_ms": 40,
-    "name": "🇺🇸 US-156.146.38.170-0179"
+    "ip": "47.90.244.153",
+    "port": 8443,
+    "latency_ms": 14,
+    "name": "🇺🇸 v2go | US | VMESS | 552"
   },
   {
     "protocol": "ss",
     "location": "未知",
-    "ip": "156.146.38.168",
+    "ip": "37.19.198.236",
     "port": 443,
-    "latency_ms": 40,
+    "latency_ms": 19,
+    "name": "b2n.ir/v2ray-configs | 931"
+  },
+  {
+    "protocol": "ss",
+    "location": "未知",
+    "ip": "37.19.198.243",
+    "port": 443,
+    "latency_ms": 20,
     "name": "[By EbraSha]"
   },
   {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "156.146.38.167",
-    "port": 443,
-    "latency_ms": 47,
-    "name": "b2n.ir/v2ray-configs | 2"
+    "protocol": "vmess",
+    "location": "US",
+    "ip": "45.82.161.225",
+    "port": 22324,
+    "latency_ms": 21,
+    "name": "🇺🇸 38 - US - VMess - 22324"
   },
   {
     "protocol": "ss",
     "location": "未知",
-    "ip": "156.146.38.169",
+    "ip": "38.135.24.131",
     "port": 443,
-    "latency_ms": 49,
-    "name": "b2n.ir/v2ray-configs | 900"
+    "latency_ms": 21,
+    "name": "[openproxylist.com]"
+  },
+  {
+    "protocol": "ss",
+    "location": "未知",
+    "ip": "37.19.198.160",
+    "port": 443,
+    "latency_ms": 22,
+    "name": "[By EbraSha]"
   }
 ]
