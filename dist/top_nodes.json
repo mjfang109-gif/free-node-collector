@@ -1,10 +1,18 @@
 [
   {
-    "protocol": "ss",
+    "protocol": "vmess",
     "location": "US",
-    "ip": "173.234.29.2",
-    "port": 990,
-    "latency_ms": 7,
-    "name": "🇺🇸 US-173.234.29.2-0188"
+    "ip": "47.90.244.153",
+    "port": 8443,
+    "latency_ms": 64,
+    "name": "🇺🇸 v2go | US | VMESS | 1242"
+  },
+  {
+    "protocol": "vmess",
+    "location": "US",
+    "ip": "45.82.161.225",
+    "port": 22324,
+    "latency_ms": 2143,
+    "name": "🇺🇸 38 - US - VMess - 22324"
   }
 ]

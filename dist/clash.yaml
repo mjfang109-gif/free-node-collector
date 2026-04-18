@@ -20,12 +20,26 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: 🇺🇸 US-173.234.29.2-0188
-  type: ss
-  server: 173.234.29.2
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: 🇺🇸 v2go | US | VMESS | 1242
+  type: vmess
+  server: 47.90.244.153
+  port: 8443
+  uuid: 65e2a985-ad20-4486-a7ec-b67b20ee56af
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws
+- name: 🇺🇸 38 - US - VMess - 22324
+  type: vmess
+  server: 45.82.161.225
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
+  cipher: auto
+  tls: false
+  network: tcp
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -33,14 +47,16 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
-  - 🇺🇸 US-173.234.29.2-0188
+  - 🇺🇸 v2go | US | VMESS | 1242
+  - 🇺🇸 38 - US - VMess - 22324
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - 🇺🇸 US-173.234.29.2-0188
+  - 🇺🇸 v2go | US | VMESS | 1242
+  - 🇺🇸 38 - US - VMess - 22324
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -50,7 +66,8 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇺🇸 US-173.234.29.2-0188
+  - 🇺🇸 v2go | US | VMESS | 1242
+  - 🇺🇸 38 - US - VMess - 22324
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
