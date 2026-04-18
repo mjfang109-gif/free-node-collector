@@ -20,26 +20,23 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: 🇺🇸 v2go | US | VMESS | 1242
+- name: b2n.ir/v2ray-configs | 423
+  type: ss
+  server: 156.146.38.170
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 US-209.126.84.189-0782
   type: vmess
-  server: 47.90.244.153
-  port: 8443
-  uuid: 65e2a985-ad20-4486-a7ec-b67b20ee56af
+  server: 209.126.84.189
+  port: 443
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
   alterId: 0
   cipher: auto
   tls: false
   network: ws
   ws-opts:
-    path: /ws
-- name: 🇺🇸 38 - US - VMess - 22324
-  type: vmess
-  server: 45.82.161.225
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
-  cipher: auto
-  tls: false
-  network: tcp
+    path: /vmessws
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -47,16 +44,16 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
-  - 🇺🇸 v2go | US | VMESS | 1242
-  - 🇺🇸 38 - US - VMess - 22324
+  - b2n.ir/v2ray-configs | 423
+  - 🇺🇸 US-209.126.84.189-0782
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - 🇺🇸 v2go | US | VMESS | 1242
-  - 🇺🇸 38 - US - VMess - 22324
+  - b2n.ir/v2ray-configs | 423
+  - 🇺🇸 US-209.126.84.189-0782
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -66,8 +63,7 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇺🇸 v2go | US | VMESS | 1242
-  - 🇺🇸 38 - US - VMess - 22324
+  - 🇺🇸 US-209.126.84.189-0782
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
