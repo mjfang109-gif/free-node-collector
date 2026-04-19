@@ -1,34 +1,50 @@
 [
   {
-    "protocol": "vmess",
+    "protocol": "ss",
     "location": "US",
-    "ip": "47.90.244.153",
-    "port": 8443,
-    "latency_ms": 15,
-    "name": "🇺🇸 v2go | US | VMESS | 1833"
+    "ip": "104.192.226.106",
+    "port": 989,
+    "latency_ms": 27,
+    "name": "🇺🇸 US-104.192.226.106-0190"
   },
   {
     "protocol": "ss",
-    "location": "未知",
-    "ip": "37.19.198.236",
-    "port": 443,
-    "latency_ms": 21,
-    "name": "b2n.ir/v2ray-configs | 812"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "38.135.24.131",
-    "port": 443,
-    "latency_ms": 21,
-    "name": "[openproxylist.com]"
+    "location": "US",
+    "ip": "107.172.219.230",
+    "port": 2096,
+    "latency_ms": 28,
+    "name": "🇺🇸 >>::US"
   },
   {
     "protocol": "vmess",
     "location": "US",
-    "ip": "45.82.161.225",
-    "port": 22324,
-    "latency_ms": 54,
-    "name": "🇺🇸 38 - US - VMess - 22324"
+    "ip": "82.198.246.97",
+    "port": 180,
+    "latency_ms": 35,
+    "name": "🇺🇸 US(mibei77.com )"
+  },
+  {
+    "protocol": "vmess",
+    "location": "未知",
+    "ip": "82.198.246.46",
+    "port": 180,
+    "latency_ms": 37,
+    "name": "[openproxylist.com] vmess"
+  },
+  {
+    "protocol": "vmess",
+    "location": "未知",
+    "ip": "82.198.246.250",
+    "port": 180,
+    "latency_ms": 41,
+    "name": "31 - CZ - VMess - 180"
+  },
+  {
+    "protocol": "vmess",
+    "location": "未知",
+    "ip": "165.140.216.141",
+    "port": 443,
+    "latency_ms": 49,
+    "name": "VMESS-165"
   }
 ]
