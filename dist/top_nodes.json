@@ -1,18 +1,34 @@
 [
   {
+    "protocol": "vmess",
+    "location": "US",
+    "ip": "47.90.244.153",
+    "port": 8443,
+    "latency_ms": 15,
+    "name": "🇺🇸 v2go | US | VMESS | 1833"
+  },
+  {
     "protocol": "ss",
     "location": "未知",
-    "ip": "156.146.38.170",
+    "ip": "37.19.198.236",
     "port": 443,
-    "latency_ms": 32,
-    "name": "b2n.ir/v2ray-configs | 423"
+    "latency_ms": 21,
+    "name": "b2n.ir/v2ray-configs | 812"
+  },
+  {
+    "protocol": "ss",
+    "location": "未知",
+    "ip": "38.135.24.131",
+    "port": 443,
+    "latency_ms": 21,
+    "name": "[openproxylist.com]"
   },
   {
     "protocol": "vmess",
     "location": "US",
-    "ip": "209.126.84.189",
-    "port": 443,
-    "latency_ms": 380,
-    "name": "🇺🇸 US-209.126.84.189-0782"
+    "ip": "45.82.161.225",
+    "port": 22324,
+    "latency_ms": 54,
+    "name": "🇺🇸 38 - US - VMess - 22324"
   }
 ]
