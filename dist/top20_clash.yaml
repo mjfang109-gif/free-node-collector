@@ -20,62 +20,24 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: 🇺🇸 v2go | US | VMESS | 1021
-  type: vmess
-  server: 47.90.244.153
-  port: 8443
-  uuid: 65e2a985-ad20-4486-a7ec-b67b20ee56af
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws
-- name: '[By EbraSha]'
+- name: 🇺🇸 US-156.146.38.169-0208
   type: ss
-  server: 37.19.198.243
+  server: 156.146.38.169
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇺🇸 US-45.55.40.127-4534
+- name: b2n.ir/v2ray-configs | 942
   type: ss
-  server: 45.55.40.127
-  port: 49726
-  cipher: chacha20-ietf-poly1305
-  password: elTuo73FsQwO90EbLo96Ve
-- name: b2n.ir/v2ray-configs | 16
-  type: ss
-  server: 37.19.198.236
+  server: 156.146.38.167
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-- name: b2n.ir/v2ray-configs | 129
+- name: 🇺🇸 US-66.154.114.231-4527
   type: ss
-  server: 167.172.249.115
-  port: 41195
+  server: 66.154.114.231
+  port: 19353
   cipher: chacha20-ietf-poly1305
-  password: SUSbr2eLCXmbc64xOHhgEt
-- name: '[By EbraSha]_1'
-  type: ss
-  server: 37.19.198.160
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 38 - US - VMess - 22324
-  type: vmess
-  server: 45.82.161.225
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
-  cipher: auto
-  tls: false
-  network: tcp
-- name: '[openproxylist.com]'
-  type: ss
-  server: 38.135.24.131
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: hbGrpfvNrJsUmKmPbR3iY2
+  password: ExUzHZ3AqMIVRmz9r6mcgy
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -83,28 +45,18 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
-  - 🇺🇸 v2go | US | VMESS | 1021
-  - '[By EbraSha]'
-  - 🇺🇸 US-45.55.40.127-4534
-  - b2n.ir/v2ray-configs | 16
-  - b2n.ir/v2ray-configs | 129
-  - '[By EbraSha]_1'
-  - 🇺🇸 38 - US - VMess - 22324
-  - '[openproxylist.com]'
+  - 🇺🇸 US-156.146.38.169-0208
+  - b2n.ir/v2ray-configs | 942
+  - 🇺🇸 US-66.154.114.231-4527
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - 🇺🇸 v2go | US | VMESS | 1021
-  - '[By EbraSha]'
-  - 🇺🇸 US-45.55.40.127-4534
-  - b2n.ir/v2ray-configs | 16
-  - b2n.ir/v2ray-configs | 129
-  - '[By EbraSha]_1'
-  - 🇺🇸 38 - US - VMess - 22324
-  - '[openproxylist.com]'
+  - 🇺🇸 US-156.146.38.169-0208
+  - b2n.ir/v2ray-configs | 942
+  - 🇺🇸 US-66.154.114.231-4527
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -114,9 +66,8 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇺🇸 v2go | US | VMESS | 1021
-  - 🇺🇸 US-45.55.40.127-4534
-  - 🇺🇸 38 - US - VMess - 22324
+  - 🇺🇸 US-156.146.38.169-0208
+  - 🇺🇸 US-66.154.114.231-4527
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
