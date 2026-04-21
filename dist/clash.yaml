@@ -20,66 +20,18 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: b2n.ir/v2ray-configs | 765
+- name: b2n.ir/v2ray-configs | 428
   type: ss
-  server: 104.192.226.106
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 37 32.0MB/s
-  type: vmess
-  server: 165.140.216.141
+  server: 156.146.38.170
   port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 🇩🇪 DE(mibei77.com )
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 🇺🇸 US(mibei77.com )
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 🇺🇸 US(mibei77.com )_1
-  type: vmess
-  server: 82.198.246.46
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 🇺🇸 US(mibei77.com )_2
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 🇺🇸 v2go | US | VMESS | 3135
-  type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
-  cipher: auto
-  tls: false
-  network: tcp
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: b2n.ir/v2ray-configs | 210
+  type: ss
+  server: 66.154.114.231
+  port: 19353
+  cipher: chacha20-ietf-poly1305
+  password: ExUzHZ3AqMIVRmz9r6mcgy
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -87,44 +39,21 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
-  - b2n.ir/v2ray-configs | 765
-  - 37 32.0MB/s
-  - 🇩🇪 DE(mibei77.com )
-  - 🇺🇸 US(mibei77.com )
-  - 🇺🇸 US(mibei77.com )_1
-  - 🇺🇸 US(mibei77.com )_2
-  - 🇺🇸 v2go | US | VMESS | 3135
+  - b2n.ir/v2ray-configs | 428
+  - b2n.ir/v2ray-configs | 210
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - b2n.ir/v2ray-configs | 765
-  - 37 32.0MB/s
-  - 🇩🇪 DE(mibei77.com )
-  - 🇺🇸 US(mibei77.com )
-  - 🇺🇸 US(mibei77.com )_1
-  - 🇺🇸 US(mibei77.com )_2
-  - 🇺🇸 v2go | US | VMESS | 3135
+  - b2n.ir/v2ray-configs | 428
+  - b2n.ir/v2ray-configs | 210
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: 🌍 DE
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🇩🇪 DE(mibei77.com )
-- name: 🌍 US
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🇺🇸 US(mibei77.com )
-  - 🇺🇸 US(mibei77.com )_1
-  - 🇺🇸 US(mibei77.com )_2
-  - 🇺🇸 v2go | US | VMESS | 3135
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
