@@ -1,66 +1,66 @@
 [
   {
     "protocol": "ss",
+    "location": "未知",
+    "ip": "108.181.57.93",
+    "port": 8388,
+    "latency_ms": 12,
+    "name": "v2ray_dalghak"
+  },
+  {
+    "protocol": "vmess",
     "location": "US",
-    "ip": "104.192.226.106",
-    "port": 989,
-    "latency_ms": 22,
-    "name": "🇺🇸 US-104.192.226.106-0219"
+    "ip": "47.90.244.153",
+    "port": 8443,
+    "latency_ms": 15,
+    "name": "🇺🇸 v2go | US | VMESS | 432"
+  },
+  {
+    "protocol": "ss",
+    "location": "未知",
+    "ip": "37.19.198.243",
+    "port": 443,
+    "latency_ms": 19,
+    "name": "[By EbraSha]"
+  },
+  {
+    "protocol": "ss",
+    "location": "未知",
+    "ip": "37.19.198.160",
+    "port": 443,
+    "latency_ms": 21,
+    "name": "[By EbraSha]"
+  },
+  {
+    "protocol": "ss",
+    "location": "未知",
+    "ip": "38.135.24.131",
+    "port": 443,
+    "latency_ms": 23,
+    "name": "[openproxylist.com]"
+  },
+  {
+    "protocol": "vmess",
+    "location": "US",
+    "ip": "45.82.161.225",
+    "port": 22324,
+    "latency_ms": 25,
+    "name": "🇺🇸 38 - US - VMess - 22324"
   },
   {
     "protocol": "ss",
     "location": "US",
-    "ip": "107.172.219.230",
-    "port": 2096,
-    "latency_ms": 24,
-    "name": "🇺🇸 >>::US"
-  },
-  {
-    "protocol": "vmess",
-    "location": "US",
-    "ip": "67.220.72.237",
-    "port": 22324,
-    "latency_ms": 24,
-    "name": "🇺🇸 v2go | US | VMESS | 2819"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "82.198.246.214",
-    "port": 180,
-    "latency_ms": 36,
-    "name": "41 - CZ - VMess - 180"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "82.198.246.37",
-    "port": 180,
-    "latency_ms": 38,
-    "name": "🇬🇧 V2CROSS.COM"
-  },
-  {
-    "protocol": "vmess",
-    "location": "US",
-    "ip": "82.198.246.233",
-    "port": 180,
-    "latency_ms": 39,
-    "name": "🇺🇸 [openproxylist.com] vmess-US"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "82.198.246.9",
-    "port": 180,
-    "latency_ms": 40,
-    "name": "🇬🇧 CCZZUU.TOP 4"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "165.140.216.141",
+    "ip": "37.19.198.236",
     "port": 443,
-    "latency_ms": 133,
-    "name": "17 161.3MB/s"
+    "latency_ms": 48,
+    "name": "🇺🇸 US-37.19.198.236-0223"
+  },
+  {
+    "protocol": "ss",
+    "location": "未知",
+    "ip": "167.172.249.115",
+    "port": 41195,
+    "latency_ms": 1087,
+    "name": "b2n.ir/v2ray-configs | 228"
   }
 ]
