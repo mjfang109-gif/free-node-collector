@@ -26,7 +26,13 @@ proxies:
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: RSo52SbxW40r
-- name: 🇺🇸 v2go | US | VMESS | 432
+- name: b2n.ir/v2ray-configs | 621
+  type: ss
+  server: 37.19.198.236
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 v2go | US | VMESS | 2186
   type: vmess
   server: 47.90.244.153
   port: 8443
@@ -39,13 +45,13 @@ proxies:
     path: /ws
 - name: '[By EbraSha]'
   type: ss
-  server: 37.19.198.243
+  server: 37.19.198.160
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
 - name: '[By EbraSha]_1'
   type: ss
-  server: 37.19.198.160
+  server: 37.19.198.243
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
@@ -64,13 +70,19 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 🇺🇸 US-37.19.198.236-0223
+- name: b2n.ir/v2ray-configs | 649
   type: ss
-  server: 37.19.198.236
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: b2n.ir/v2ray-configs | 228
+  server: 45.154.204.7
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: b2n.ir/v2ray-configs | 28
+  type: ss
+  server: 23.95.76.59
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: 🇺🇸 >>::US
   type: ss
   server: 167.172.249.115
   port: 41195
@@ -84,13 +96,15 @@ proxy-groups:
   - 🔮 故障转移
   - DIRECT
   - v2ray_dalghak
-  - 🇺🇸 v2go | US | VMESS | 432
+  - b2n.ir/v2ray-configs | 621
+  - 🇺🇸 v2go | US | VMESS | 2186
   - '[By EbraSha]'
   - '[By EbraSha]_1'
   - '[openproxylist.com]'
   - 🇺🇸 38 - US - VMess - 22324
-  - 🇺🇸 US-37.19.198.236-0223
-  - b2n.ir/v2ray-configs | 228
+  - b2n.ir/v2ray-configs | 649
+  - b2n.ir/v2ray-configs | 28
+  - 🇺🇸 >>::US
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -98,13 +112,15 @@ proxy-groups:
   tolerance: 50
   proxies: &id001
   - v2ray_dalghak
-  - 🇺🇸 v2go | US | VMESS | 432
+  - b2n.ir/v2ray-configs | 621
+  - 🇺🇸 v2go | US | VMESS | 2186
   - '[By EbraSha]'
   - '[By EbraSha]_1'
   - '[openproxylist.com]'
   - 🇺🇸 38 - US - VMess - 22324
-  - 🇺🇸 US-37.19.198.236-0223
-  - b2n.ir/v2ray-configs | 228
+  - b2n.ir/v2ray-configs | 649
+  - b2n.ir/v2ray-configs | 28
+  - 🇺🇸 >>::US
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -114,9 +130,9 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇺🇸 v2go | US | VMESS | 432
+  - 🇺🇸 v2go | US | VMESS | 2186
   - 🇺🇸 38 - US - VMess - 22324
-  - 🇺🇸 US-37.19.198.236-0223
+  - 🇺🇸 >>::US
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择

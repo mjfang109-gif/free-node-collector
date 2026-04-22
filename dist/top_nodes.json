@@ -4,31 +4,39 @@
     "location": "未知",
     "ip": "108.181.57.93",
     "port": 8388,
-    "latency_ms": 12,
+    "latency_ms": 24,
     "name": "v2ray_dalghak"
+  },
+  {
+    "protocol": "ss",
+    "location": "未知",
+    "ip": "37.19.198.236",
+    "port": 443,
+    "latency_ms": 26,
+    "name": "b2n.ir/v2ray-configs | 621"
   },
   {
     "protocol": "vmess",
     "location": "US",
     "ip": "47.90.244.153",
     "port": 8443,
-    "latency_ms": 15,
-    "name": "🇺🇸 v2go | US | VMESS | 432"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "37.19.198.243",
-    "port": 443,
-    "latency_ms": 19,
-    "name": "[By EbraSha]"
+    "latency_ms": 27,
+    "name": "🇺🇸 v2go | US | VMESS | 2186"
   },
   {
     "protocol": "ss",
     "location": "未知",
     "ip": "37.19.198.160",
     "port": 443,
-    "latency_ms": 21,
+    "latency_ms": 27,
+    "name": "[By EbraSha]"
+  },
+  {
+    "protocol": "ss",
+    "location": "未知",
+    "ip": "37.19.198.243",
+    "port": 443,
+    "latency_ms": 30,
     "name": "[By EbraSha]"
   },
   {
@@ -36,7 +44,7 @@
     "location": "未知",
     "ip": "38.135.24.131",
     "port": 443,
-    "latency_ms": 23,
+    "latency_ms": 33,
     "name": "[openproxylist.com]"
   },
   {
@@ -44,23 +52,31 @@
     "location": "US",
     "ip": "45.82.161.225",
     "port": 22324,
-    "latency_ms": 25,
+    "latency_ms": 38,
     "name": "🇺🇸 38 - US - VMess - 22324"
   },
   {
     "protocol": "ss",
-    "location": "US",
-    "ip": "37.19.198.236",
-    "port": 443,
-    "latency_ms": 48,
-    "name": "🇺🇸 US-37.19.198.236-0223"
+    "location": "未知",
+    "ip": "45.154.204.7",
+    "port": 990,
+    "latency_ms": 646,
+    "name": "b2n.ir/v2ray-configs | 649"
   },
   {
     "protocol": "ss",
     "location": "未知",
+    "ip": "23.95.76.59",
+    "port": 990,
+    "latency_ms": 996,
+    "name": "b2n.ir/v2ray-configs | 28"
+  },
+  {
+    "protocol": "ss",
+    "location": "US",
     "ip": "167.172.249.115",
     "port": 41195,
-    "latency_ms": 1087,
-    "name": "b2n.ir/v2ray-configs | 228"
+    "latency_ms": 1091,
+    "name": "🇺🇸 >>::US"
   }
 ]
