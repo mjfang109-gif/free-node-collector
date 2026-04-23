@@ -20,74 +20,99 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: v2ray_dalghak
-  type: ss
-  server: 108.181.57.93
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: RSo52SbxW40r
-- name: b2n.ir/v2ray-configs | 621
-  type: ss
-  server: 37.19.198.236
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 v2go | US | VMESS | 2186
+- name: 🇺🇸 v2go | US | VMESS | 1285
   type: vmess
-  server: 47.90.244.153
-  port: 8443
-  uuid: 65e2a985-ad20-4486-a7ec-b67b20ee56af
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws
-- name: '[By EbraSha]'
-  type: ss
-  server: 37.19.198.160
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: '[By EbraSha]_1'
-  type: ss
-  server: 37.19.198.243
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: '[openproxylist.com]'
-  type: ss
-  server: 38.135.24.131
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: hbGrpfvNrJsUmKmPbR3iY2
-- name: 🇺🇸 38 - US - VMess - 22324
-  type: vmess
-  server: 45.82.161.225
+  server: 67.220.72.237
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 1
   cipher: auto
   tls: false
   network: tcp
-- name: b2n.ir/v2ray-configs | 649
-  type: ss
-  server: 45.154.204.7
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: b2n.ir/v2ray-configs | 28
-  type: ss
-  server: 23.95.76.59
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: 🇺🇸 >>::US
   type: ss
-  server: 167.172.249.115
-  port: 41195
+  server: 107.172.219.230
+  port: 2096
   cipher: chacha20-ietf-poly1305
-  password: SUSbr2eLCXmbc64xOHhgEt
+  password: 4dc8eeda-fdfb-4660-8ceb-3e872956cb94
+- name: 🇺🇸 US-104.192.226.106-0201
+  type: ss
+  server: 104.192.226.106
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: '[openproxylist.com] vmess'
+  type: vmess
+  server: 82.198.246.46
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 🇺🇸 [openproxylist.com] vmess-US
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 🇬🇧 V2CROSS.COM
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 🇬🇧 CCZZUU.TOP 7
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 🇬🇧 V2CROSS.COM_1
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 🇺🇸 [openproxylist.com] vmess-US_1
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 'Channel :'
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 🇺🇸 US(mibei77.com )
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -95,32 +120,34 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
-  - v2ray_dalghak
-  - b2n.ir/v2ray-configs | 621
-  - 🇺🇸 v2go | US | VMESS | 2186
-  - '[By EbraSha]'
-  - '[By EbraSha]_1'
-  - '[openproxylist.com]'
-  - 🇺🇸 38 - US - VMess - 22324
-  - b2n.ir/v2ray-configs | 649
-  - b2n.ir/v2ray-configs | 28
+  - 🇺🇸 v2go | US | VMESS | 1285
   - 🇺🇸 >>::US
+  - 🇺🇸 US-104.192.226.106-0201
+  - '[openproxylist.com] vmess'
+  - 🇺🇸 [openproxylist.com] vmess-US
+  - 🇬🇧 V2CROSS.COM
+  - 🇬🇧 CCZZUU.TOP 7
+  - 🇬🇧 V2CROSS.COM_1
+  - 🇺🇸 [openproxylist.com] vmess-US_1
+  - 'Channel :'
+  - 🇺🇸 US(mibei77.com )
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - v2ray_dalghak
-  - b2n.ir/v2ray-configs | 621
-  - 🇺🇸 v2go | US | VMESS | 2186
-  - '[By EbraSha]'
-  - '[By EbraSha]_1'
-  - '[openproxylist.com]'
-  - 🇺🇸 38 - US - VMess - 22324
-  - b2n.ir/v2ray-configs | 649
-  - b2n.ir/v2ray-configs | 28
+  - 🇺🇸 v2go | US | VMESS | 1285
   - 🇺🇸 >>::US
+  - 🇺🇸 US-104.192.226.106-0201
+  - '[openproxylist.com] vmess'
+  - 🇺🇸 [openproxylist.com] vmess-US
+  - 🇬🇧 V2CROSS.COM
+  - 🇬🇧 CCZZUU.TOP 7
+  - 🇬🇧 V2CROSS.COM_1
+  - 🇺🇸 [openproxylist.com] vmess-US_1
+  - 'Channel :'
+  - 🇺🇸 US(mibei77.com )
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -130,9 +157,12 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇺🇸 v2go | US | VMESS | 2186
-  - 🇺🇸 38 - US - VMess - 22324
+  - 🇺🇸 v2go | US | VMESS | 1285
   - 🇺🇸 >>::US
+  - 🇺🇸 US-104.192.226.106-0201
+  - 🇺🇸 [openproxylist.com] vmess-US
+  - 🇺🇸 [openproxylist.com] vmess-US_1
+  - 🇺🇸 US(mibei77.com )
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
