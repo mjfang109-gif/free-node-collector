@@ -20,13 +20,7 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: 🇺🇸 US-104.192.226.106-0187
-  type: ss
-  server: 104.192.226.106
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇺🇸 v2go | US | VMESS | 1897
+- name: 🇺🇸 v2go | US | VMESS | 1773
   type: vmess
   server: 67.220.72.237
   port: 22324
@@ -35,31 +29,28 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
+- name: 'Join+:'
+  type: ss
+  server: 108.181.0.177
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: G5p6ww4o67HB
 - name: 🇺🇸 >>::US
   type: ss
   server: 107.172.219.230
   port: 2096
   cipher: chacha20-ietf-poly1305
   password: 4dc8eeda-fdfb-4660-8ceb-3e872956cb94
-- name: 🇬🇧 V2CROSS.COM
+- name: 🇩🇪 v2go | DE | VMESS | 35
   type: vmess
-  server: 82.198.246.9
+  server: 82.198.246.46
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
   network: tcp
-- name: 🇩🇪 v2go | DE | VMESS | 1460
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 🇬🇧 V2CROSS.COM_1
+- name: 🇬🇧 CCZZUU.TOP 4
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -68,20 +59,53 @@ proxies:
   cipher: auto
   tls: false
   network: tcp
-- name: 🇬🇧 CCZZUU.TOP
+- name: 🇩🇪 v2go | DE | VMESS | 31
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
   network: tcp
+- name: 🇬🇧 GB
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 🇬🇧 CCZZUU.TOP 3
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: b2n.ir/v2ray-configs | 667
+  type: ss
+  server: 104.192.226.106
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
 - name: VMESS-165
   type: vmess
   server: 165.140.216.141
   port: 443
   uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 🇩🇪 v2go | DE | VMESS | 2
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
@@ -93,28 +117,34 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
-  - 🇺🇸 US-104.192.226.106-0187
-  - 🇺🇸 v2go | US | VMESS | 1897
+  - 🇺🇸 v2go | US | VMESS | 1773
+  - 'Join+:'
   - 🇺🇸 >>::US
-  - 🇬🇧 V2CROSS.COM
-  - 🇩🇪 v2go | DE | VMESS | 1460
-  - 🇬🇧 V2CROSS.COM_1
-  - 🇬🇧 CCZZUU.TOP
+  - 🇩🇪 v2go | DE | VMESS | 35
+  - 🇬🇧 CCZZUU.TOP 4
+  - 🇩🇪 v2go | DE | VMESS | 31
+  - 🇬🇧 GB
+  - 🇬🇧 CCZZUU.TOP 3
+  - b2n.ir/v2ray-configs | 667
   - VMESS-165
+  - 🇩🇪 v2go | DE | VMESS | 2
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - 🇺🇸 US-104.192.226.106-0187
-  - 🇺🇸 v2go | US | VMESS | 1897
+  - 🇺🇸 v2go | US | VMESS | 1773
+  - 'Join+:'
   - 🇺🇸 >>::US
-  - 🇬🇧 V2CROSS.COM
-  - 🇩🇪 v2go | DE | VMESS | 1460
-  - 🇬🇧 V2CROSS.COM_1
-  - 🇬🇧 CCZZUU.TOP
+  - 🇩🇪 v2go | DE | VMESS | 35
+  - 🇬🇧 CCZZUU.TOP 4
+  - 🇩🇪 v2go | DE | VMESS | 31
+  - 🇬🇧 GB
+  - 🇬🇧 CCZZUU.TOP 3
+  - b2n.ir/v2ray-configs | 667
   - VMESS-165
+  - 🇩🇪 v2go | DE | VMESS | 2
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -124,13 +154,19 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇩🇪 v2go | DE | VMESS | 1460
+  - 🇩🇪 v2go | DE | VMESS | 35
+  - 🇩🇪 v2go | DE | VMESS | 31
+  - 🇩🇪 v2go | DE | VMESS | 2
+- name: 🌍 GB
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🇬🇧 GB
 - name: 🌍 US
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇺🇸 US-104.192.226.106-0187
-  - 🇺🇸 v2go | US | VMESS | 1897
+  - 🇺🇸 v2go | US | VMESS | 1773
   - 🇺🇸 >>::US
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
