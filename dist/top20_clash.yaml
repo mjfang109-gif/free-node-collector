@@ -20,92 +20,49 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: 🇺🇸 v2go | US | VMESS | 1773
-  type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 'Join+:'
+- name: b2n.ir/v2ray-configs | 94
   type: ss
-  server: 108.181.0.177
-  port: 8388
+  server: 173.234.29.2
+  port: 990
   cipher: chacha20-ietf-poly1305
-  password: G5p6ww4o67HB
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: b2n.ir/v2ray-configs | 496
+  type: ss
+  server: 79.127.200.169
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: 🇺🇸 >>::US
   type: ss
-  server: 107.172.219.230
-  port: 2096
+  server: 108.181.57.93
+  port: 8388
   cipher: chacha20-ietf-poly1305
-  password: 4dc8eeda-fdfb-4660-8ceb-3e872956cb94
-- name: 🇩🇪 v2go | DE | VMESS | 35
+  password: RSo52SbxW40r
+- name: 🇨🇦 36 - CA - VMess - 18000
   type: vmess
-  server: 82.198.246.46
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   tls: false
   network: tcp
-- name: 🇬🇧 CCZZUU.TOP 4
+- name: 🇺🇸 v2go | US | VMESS | 1063
   type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 47.90.244.153
+  port: 8443
+  uuid: 65e2a985-ad20-4486-a7ec-b67b20ee56af
   alterId: 0
   cipher: auto
   tls: false
-  network: tcp
-- name: 🇩🇪 v2go | DE | VMESS | 31
+  network: ws
+  ws-opts:
+    path: /ws
+- name: 🇨🇦 37 - CA - VMess - 18000
   type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 🇬🇧 GB
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 🇬🇧 CCZZUU.TOP 3
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: b2n.ir/v2ray-configs | 667
-  type: ss
-  server: 104.192.226.106
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: VMESS-165
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 🇩🇪 v2go | DE | VMESS | 2
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   tls: false
@@ -117,57 +74,41 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
-  - 🇺🇸 v2go | US | VMESS | 1773
-  - 'Join+:'
+  - b2n.ir/v2ray-configs | 94
+  - b2n.ir/v2ray-configs | 496
   - 🇺🇸 >>::US
-  - 🇩🇪 v2go | DE | VMESS | 35
-  - 🇬🇧 CCZZUU.TOP 4
-  - 🇩🇪 v2go | DE | VMESS | 31
-  - 🇬🇧 GB
-  - 🇬🇧 CCZZUU.TOP 3
-  - b2n.ir/v2ray-configs | 667
-  - VMESS-165
-  - 🇩🇪 v2go | DE | VMESS | 2
+  - 🇨🇦 36 - CA - VMess - 18000
+  - 🇺🇸 v2go | US | VMESS | 1063
+  - 🇨🇦 37 - CA - VMess - 18000
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - 🇺🇸 v2go | US | VMESS | 1773
-  - 'Join+:'
+  - b2n.ir/v2ray-configs | 94
+  - b2n.ir/v2ray-configs | 496
   - 🇺🇸 >>::US
-  - 🇩🇪 v2go | DE | VMESS | 35
-  - 🇬🇧 CCZZUU.TOP 4
-  - 🇩🇪 v2go | DE | VMESS | 31
-  - 🇬🇧 GB
-  - 🇬🇧 CCZZUU.TOP 3
-  - b2n.ir/v2ray-configs | 667
-  - VMESS-165
-  - 🇩🇪 v2go | DE | VMESS | 2
+  - 🇨🇦 36 - CA - VMess - 18000
+  - 🇺🇸 v2go | US | VMESS | 1063
+  - 🇨🇦 37 - CA - VMess - 18000
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: 🌍 DE
+- name: 🌍 CA
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇩🇪 v2go | DE | VMESS | 35
-  - 🇩🇪 v2go | DE | VMESS | 31
-  - 🇩🇪 v2go | DE | VMESS | 2
-- name: 🌍 GB
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🇬🇧 GB
+  - 🇨🇦 36 - CA - VMess - 18000
+  - 🇨🇦 37 - CA - VMess - 18000
 - name: 🌍 US
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇺🇸 v2go | US | VMESS | 1773
   - 🇺🇸 >>::US
+  - 🇺🇸 v2go | US | VMESS | 1063
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
