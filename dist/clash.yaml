@@ -20,53 +20,72 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: 🇺🇸 v2go | US | VMESS | 1350
+- name: 🇺🇸 US-104.192.226.106-0187
+  type: ss
+  server: 104.192.226.106
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇺🇸 v2go | US | VMESS | 1897
   type: vmess
-  server: 47.90.244.153
-  port: 8443
-  uuid: 65e2a985-ad20-4486-a7ec-b67b20ee56af
+  server: 67.220.72.237
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 🇺🇸 >>::US
+  type: ss
+  server: 107.172.219.230
+  port: 2096
+  cipher: chacha20-ietf-poly1305
+  password: 4dc8eeda-fdfb-4660-8ceb-3e872956cb94
+- name: 🇬🇧 V2CROSS.COM
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
-  network: ws
-  ws-opts:
-    path: /ws
-- name: '[By EbraSha]'
-  type: ss
-  server: 37.19.198.243
+  network: tcp
+- name: 🇩🇪 v2go | DE | VMESS | 1460
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 🇬🇧 V2CROSS.COM_1
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: 🇬🇧 CCZZUU.TOP
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: VMESS-165
+  type: vmess
+  server: 165.140.216.141
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: '[openproxylist.com]'
-  type: ss
-  server: 38.135.24.131
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: hbGrpfvNrJsUmKmPbR3iY2
-- name: '[By EbraSha]_1'
-  type: ss
-  server: 37.19.198.160
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 US-37.19.198.236-0315
-  type: ss
-  server: 37.19.198.236
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 US-45.55.40.127-0198
-  type: ss
-  server: 45.55.40.127
-  port: 49726
-  cipher: chacha20-ietf-poly1305
-  password: elTuo73FsQwO90EbLo96Ve
-- name: v2ray_dalghak
-  type: ss
-  server: 108.181.57.93
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: RSo52SbxW40r
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -74,38 +93,45 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
-  - 🇺🇸 v2go | US | VMESS | 1350
-  - '[By EbraSha]'
-  - '[openproxylist.com]'
-  - '[By EbraSha]_1'
-  - 🇺🇸 US-37.19.198.236-0315
-  - 🇺🇸 US-45.55.40.127-0198
-  - v2ray_dalghak
+  - 🇺🇸 US-104.192.226.106-0187
+  - 🇺🇸 v2go | US | VMESS | 1897
+  - 🇺🇸 >>::US
+  - 🇬🇧 V2CROSS.COM
+  - 🇩🇪 v2go | DE | VMESS | 1460
+  - 🇬🇧 V2CROSS.COM_1
+  - 🇬🇧 CCZZUU.TOP
+  - VMESS-165
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - 🇺🇸 v2go | US | VMESS | 1350
-  - '[By EbraSha]'
-  - '[openproxylist.com]'
-  - '[By EbraSha]_1'
-  - 🇺🇸 US-37.19.198.236-0315
-  - 🇺🇸 US-45.55.40.127-0198
-  - v2ray_dalghak
+  - 🇺🇸 US-104.192.226.106-0187
+  - 🇺🇸 v2go | US | VMESS | 1897
+  - 🇺🇸 >>::US
+  - 🇬🇧 V2CROSS.COM
+  - 🇩🇪 v2go | DE | VMESS | 1460
+  - 🇬🇧 V2CROSS.COM_1
+  - 🇬🇧 CCZZUU.TOP
+  - VMESS-165
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
+- name: 🌍 DE
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🇩🇪 v2go | DE | VMESS | 1460
 - name: 🌍 US
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇺🇸 v2go | US | VMESS | 1350
-  - 🇺🇸 US-37.19.198.236-0315
-  - 🇺🇸 US-45.55.40.127-0198
+  - 🇺🇸 US-104.192.226.106-0187
+  - 🇺🇸 v2go | US | VMESS | 1897
+  - 🇺🇸 >>::US
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
