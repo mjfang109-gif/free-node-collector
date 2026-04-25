@@ -1,90 +1,50 @@
 [
   {
     "protocol": "ss",
+    "location": "未知",
+    "ip": "156.146.38.168",
+    "port": 443,
+    "latency_ms": 39,
+    "name": "[By EbraSha]"
+  },
+  {
+    "protocol": "ss",
     "location": "US",
-    "ip": "107.172.219.230",
-    "port": 2096,
-    "latency_ms": 23,
+    "ip": "156.146.38.169",
+    "port": 443,
+    "latency_ms": 40,
+    "name": "🇺🇸 US-156.146.38.169-0199"
+  },
+  {
+    "protocol": "ss",
+    "location": "US",
+    "ip": "156.146.38.170",
+    "port": 443,
+    "latency_ms": 40,
+    "name": "🇺🇸 US-156.146.38.170-0198"
+  },
+  {
+    "protocol": "ss",
+    "location": "US",
+    "ip": "156.146.38.167",
+    "port": 443,
+    "latency_ms": 41,
+    "name": "🇺🇸 US-156.146.38.167-0200"
+  },
+  {
+    "protocol": "ss",
+    "location": "US",
+    "ip": "62.146.171.57",
+    "port": 443,
+    "latency_ms": 62,
     "name": "🇺🇸 >>::US"
   },
   {
-    "protocol": "vmess",
-    "location": "US",
-    "ip": "67.220.72.237",
-    "port": 22324,
-    "latency_ms": 23,
-    "name": "🇺🇸 v2go | US | VMESS | 2071"
-  },
-  {
     "protocol": "ss",
     "location": "US",
-    "ip": "104.192.226.106",
-    "port": 989,
-    "latency_ms": 24,
-    "name": "🇺🇸 US-104.192.226.106-0233"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "82.198.246.250",
-    "port": 180,
-    "latency_ms": 37,
-    "name": "VMESS-82"
-  },
-  {
-    "protocol": "vmess",
-    "location": "US",
-    "ip": "82.198.246.233",
-    "port": 180,
-    "latency_ms": 39,
-    "name": "🇺🇸 [openproxylist.com] vmess-US"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "82.198.246.37",
-    "port": 180,
-    "latency_ms": 39,
-    "name": "🇬🇧 V2CROSS.COM"
-  },
-  {
-    "protocol": "vmess",
-    "location": "DE",
-    "ip": "82.198.246.9",
-    "port": 180,
-    "latency_ms": 40,
-    "name": "🇩🇪 v2go | DE | VMESS | 72"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "82.198.246.46",
-    "port": 180,
-    "latency_ms": 46,
-    "name": "[openproxylist.com] vmess"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "165.140.216.141",
-    "port": 443,
-    "latency_ms": 138,
-    "name": "4 5.4MB/s"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "216.105.168.18",
-    "port": 443,
-    "latency_ms": 655,
-    "name": "[35386] - :"
-  },
-  {
-    "protocol": "vmess",
-    "location": "未知",
-    "ip": "82.198.246.97",
-    "port": 180,
-    "latency_ms": 1362,
-    "name": "VMESS-82"
+    "ip": "154.53.60.212",
+    "port": 80,
+    "latency_ms": 66,
+    "name": "🇺🇸 >>::US"
   }
 ]
