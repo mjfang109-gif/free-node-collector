@@ -20,67 +20,34 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: b2n.ir/v2ray-configs | 789
+- name: 🇺🇸 >>::US
   type: ss
   server: 173.234.29.2
   port: 990
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: 🇨🇦 >>::CA
+- name: b2n.ir/v2ray-configs | 22
   type: ss
   server: 79.127.200.169
   port: 990
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: SS-37
+- name: '[By EbraSha]'
   type: ss
   server: 37.19.198.243
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇺🇸 >>::US
-  type: ss
-  server: 108.181.57.93
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: RSo52SbxW40r
-- name: 🇨🇦 36 - CA - VMess - 18000
+- name: 🇨🇦 37 - CA - VMess - 18000
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   tls: false
   network: tcp
-- name: 🇺🇸 v2go | US | VMESS | 1307
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: '[By EbraSha]'
-  type: ss
-  server: 37.19.198.160
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: b2n.ir/v2ray-configs | 260
-  type: ss
-  server: 156.146.38.167
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: b2n.ir/v2ray-configs | 297
-  type: ss
-  server: 37.19.198.236
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 v2go | US | VMESS | 1306
+- name: 🇺🇸 v2go | US | VMESS | 1447
   type: vmess
   server: 47.90.244.153
   port: 8443
@@ -91,24 +58,27 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-- name: 🇨🇦 37 - CA - VMess - 18000
+- name: 🇺🇸 v2go | US | VMESS | 1445
   type: vmess
-  server: 23.162.200.198
+  server: 67.220.95.3
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   tls: false
   network: tcp
-- name: b2n.ir/v2ray-configs | 209
+- name: 🇨🇦 36 - CA - VMess - 18000
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: b2n.ir/v2ray-configs | 581
   type: ss
   server: 45.154.204.7
-  port: 990
-  cipher: chacha20-ietf-poly1305
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: b2n.ir/v2ray-configs | 53
-  type: ss
-  server: 23.95.76.59
   port: 990
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
@@ -119,38 +89,28 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
-  - b2n.ir/v2ray-configs | 789
-  - 🇨🇦 >>::CA
-  - SS-37
   - 🇺🇸 >>::US
-  - 🇨🇦 36 - CA - VMess - 18000
-  - 🇺🇸 v2go | US | VMESS | 1307
+  - b2n.ir/v2ray-configs | 22
   - '[By EbraSha]'
-  - b2n.ir/v2ray-configs | 260
-  - b2n.ir/v2ray-configs | 297
-  - 🇺🇸 v2go | US | VMESS | 1306
   - 🇨🇦 37 - CA - VMess - 18000
-  - b2n.ir/v2ray-configs | 209
-  - b2n.ir/v2ray-configs | 53
+  - 🇺🇸 v2go | US | VMESS | 1447
+  - 🇺🇸 v2go | US | VMESS | 1445
+  - 🇨🇦 36 - CA - VMess - 18000
+  - b2n.ir/v2ray-configs | 581
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - b2n.ir/v2ray-configs | 789
-  - 🇨🇦 >>::CA
-  - SS-37
   - 🇺🇸 >>::US
-  - 🇨🇦 36 - CA - VMess - 18000
-  - 🇺🇸 v2go | US | VMESS | 1307
+  - b2n.ir/v2ray-configs | 22
   - '[By EbraSha]'
-  - b2n.ir/v2ray-configs | 260
-  - b2n.ir/v2ray-configs | 297
-  - 🇺🇸 v2go | US | VMESS | 1306
   - 🇨🇦 37 - CA - VMess - 18000
-  - b2n.ir/v2ray-configs | 209
-  - b2n.ir/v2ray-configs | 53
+  - 🇺🇸 v2go | US | VMESS | 1447
+  - 🇺🇸 v2go | US | VMESS | 1445
+  - 🇨🇦 36 - CA - VMess - 18000
+  - b2n.ir/v2ray-configs | 581
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -160,16 +120,15 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇨🇦 >>::CA
-  - 🇨🇦 36 - CA - VMess - 18000
   - 🇨🇦 37 - CA - VMess - 18000
+  - 🇨🇦 36 - CA - VMess - 18000
 - name: 🌍 US
   type: select
   proxies:
   - 🚀 节点选择
   - 🇺🇸 >>::US
-  - 🇺🇸 v2go | US | VMESS | 1307
-  - 🇺🇸 v2go | US | VMESS | 1306
+  - 🇺🇸 v2go | US | VMESS | 1447
+  - 🇺🇸 v2go | US | VMESS | 1445
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
