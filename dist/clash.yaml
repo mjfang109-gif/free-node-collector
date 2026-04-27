@@ -20,186 +20,74 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: 🇺🇸 >>::US
-  type: ss
-  server: 62.146.171.57
-  port: 443
-  cipher: aes-256-gcm
-  password: jd9FR12wprKPNJHg
-- name: SS-154
-  type: ss
-  server: 154.12.242.150
-  port: 443
-  cipher: aes-256-gcm
-  password: 7vZO55fXgXAJXa2F
 - name: '[By EbraSha]'
-  type: ss
-  server: 154.12.242.150
-  port: 80
-  cipher: aes-256-gcm
-  password: 7vZO55fXgXAJXa2F
-- name: '[By EbraSha]_1'
-  type: ss
-  server: 154.53.57.143
-  port: 80
-  cipher: aes-256-gcm
-  password: uwmRUOVM5ljNAtPj
-- name: 🇨🇦 CA-79.127.233.170-0179
-  type: ss
-  server: 79.127.233.170
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: '[By EbraSha]_2'
-  type: ss
-  server: 149.22.95.183
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: '[By EbraSha]_3'
-  type: ss
-  server: 66.94.125.178
-  port: 80
-  cipher: aes-256-gcm
-  password: 14CLBaFBqwqxBJy6
-- name: 🇺🇸 >>::US_1
-  type: ss
-  server: 154.53.60.212
-  port: 80
-  cipher: aes-256-gcm
-  password: ZfbPFDdeBj0B1Txs
-- name: 12 30.4MB/s
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 🇺🇸 v2go | US | VMESS | 1359
-  type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
-  cipher: auto
-  tls: false
-  network: tcp
-- name: '[By EbraSha]_4'
-  type: ss
-  server: 173.244.56.9
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: b2n.ir/v2ray-configs | 607
-  type: ss
-  server: 104.192.226.106
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: Join+:🟣
-  type: vmess
-  server: 82.198.246.46
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 🇬🇧 CCZZUU.TOP 4
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: b2n.ir/v2ray-configs | 904
-  type: ss
-  server: 173.244.56.6
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: b2n.ir/v2ray-configs | 44
-  type: ss
-  server: 149.28.255.6
-  port: 816
-  cipher: chacha20-ietf-poly1305
-  password: GyZ5Xo0ht41vYmW3H4
-- name: 🇬🇧 CCZZUU.TOP 2
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: 🇬🇧 V2CROSS.COM
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: '[By EbraSha]_5'
   type: ss
   server: 156.146.38.168
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-- name: b2n.ir/v2ray-configs | 390
+- name: b2n.ir/v2ray-configs | 662
   type: ss
-  server: 156.146.38.167
+  server: 156.146.38.170
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
-- name: b2n.ir/v2ray-configs | 162
+- name: 🇺🇸 US-149.28.255.6-0815
   type: ss
-  server: 156.146.38.169
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇺🇸 >>::US_2
-  type: ss
-  server: 107.172.219.230
-  port: 2096
+  server: 149.28.255.6
+  port: 816
   cipher: chacha20-ietf-poly1305
-  password: 4dc8eeda-fdfb-4660-8ceb-3e872956cb94
-- name: '[By EbraSha]_6'
-  type: ss
-  server: 154.53.63.32
-  port: 80
-  cipher: aes-256-gcm
-  password: k6ruJuwgAUxIrkHb
-- name: 🇬🇧 CCZZUU.TOP 3
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: b2n.ir/v2ray-configs | 131
+  password: GyZ5Xo0ht41vYmW3H4
+- name: b2n.ir/v2ray-configs | 509
   type: ss
   server: 173.234.29.2
   port: 990
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-- name: 🇬🇧 CCZZUU.TOP 5
+- name: b2n.ir/v2ray-configs | 296
+  type: ss
+  server: 156.146.38.169
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: b2n.ir/v2ray-configs | 463
+  type: ss
+  server: 156.146.38.167
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: b2n.ir/v2ray-configs | 261
+  type: ss
+  server: 79.127.200.169
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+- name: 🇺🇸 v2go | US | VMESS | 1061
   type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 47.90.244.153
+  port: 8443
+  uuid: 65e2a985-ad20-4486-a7ec-b67b20ee56af
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws
+- name: 🇨🇦 36 - CA - VMess - 18000
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   tls: false
   network: tcp
+- name: b2n.ir/v2ray-configs | 437
+  type: ss
+  server: 23.95.76.59
+  port: 990
+  cipher: chacha20-ietf-poly1305
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -207,64 +95,32 @@ proxy-groups:
   - ♻️ 自动选择
   - 🔮 故障转移
   - DIRECT
-  - 🇺🇸 >>::US
-  - SS-154
   - '[By EbraSha]'
-  - '[By EbraSha]_1'
-  - 🇨🇦 CA-79.127.233.170-0179
-  - '[By EbraSha]_2'
-  - '[By EbraSha]_3'
-  - 🇺🇸 >>::US_1
-  - 12 30.4MB/s
-  - 🇺🇸 v2go | US | VMESS | 1359
-  - '[By EbraSha]_4'
-  - b2n.ir/v2ray-configs | 607
-  - Join+:🟣
-  - 🇬🇧 CCZZUU.TOP 4
-  - b2n.ir/v2ray-configs | 904
-  - b2n.ir/v2ray-configs | 44
-  - 🇬🇧 CCZZUU.TOP 2
-  - 🇬🇧 V2CROSS.COM
-  - '[By EbraSha]_5'
-  - b2n.ir/v2ray-configs | 390
-  - b2n.ir/v2ray-configs | 162
-  - 🇺🇸 >>::US_2
-  - '[By EbraSha]_6'
-  - 🇬🇧 CCZZUU.TOP 3
-  - b2n.ir/v2ray-configs | 131
-  - 🇬🇧 CCZZUU.TOP 5
+  - b2n.ir/v2ray-configs | 662
+  - 🇺🇸 US-149.28.255.6-0815
+  - b2n.ir/v2ray-configs | 509
+  - b2n.ir/v2ray-configs | 296
+  - b2n.ir/v2ray-configs | 463
+  - b2n.ir/v2ray-configs | 261
+  - 🇺🇸 v2go | US | VMESS | 1061
+  - 🇨🇦 36 - CA - VMess - 18000
+  - b2n.ir/v2ray-configs | 437
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - 🇺🇸 >>::US
-  - SS-154
   - '[By EbraSha]'
-  - '[By EbraSha]_1'
-  - 🇨🇦 CA-79.127.233.170-0179
-  - '[By EbraSha]_2'
-  - '[By EbraSha]_3'
-  - 🇺🇸 >>::US_1
-  - 12 30.4MB/s
-  - 🇺🇸 v2go | US | VMESS | 1359
-  - '[By EbraSha]_4'
-  - b2n.ir/v2ray-configs | 607
-  - Join+:🟣
-  - 🇬🇧 CCZZUU.TOP 4
-  - b2n.ir/v2ray-configs | 904
-  - b2n.ir/v2ray-configs | 44
-  - 🇬🇧 CCZZUU.TOP 2
-  - 🇬🇧 V2CROSS.COM
-  - '[By EbraSha]_5'
-  - b2n.ir/v2ray-configs | 390
-  - b2n.ir/v2ray-configs | 162
-  - 🇺🇸 >>::US_2
-  - '[By EbraSha]_6'
-  - 🇬🇧 CCZZUU.TOP 3
-  - b2n.ir/v2ray-configs | 131
-  - 🇬🇧 CCZZUU.TOP 5
+  - b2n.ir/v2ray-configs | 662
+  - 🇺🇸 US-149.28.255.6-0815
+  - b2n.ir/v2ray-configs | 509
+  - b2n.ir/v2ray-configs | 296
+  - b2n.ir/v2ray-configs | 463
+  - b2n.ir/v2ray-configs | 261
+  - 🇺🇸 v2go | US | VMESS | 1061
+  - 🇨🇦 36 - CA - VMess - 18000
+  - b2n.ir/v2ray-configs | 437
 - name: 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -274,15 +130,13 @@ proxy-groups:
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇨🇦 CA-79.127.233.170-0179
+  - 🇨🇦 36 - CA - VMess - 18000
 - name: 🌍 US
   type: select
   proxies:
   - 🚀 节点选择
-  - 🇺🇸 >>::US
-  - 🇺🇸 >>::US_1
-  - 🇺🇸 v2go | US | VMESS | 1359
-  - 🇺🇸 >>::US_2
+  - 🇺🇸 US-149.28.255.6-0815
+  - 🇺🇸 v2go | US | VMESS | 1061
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
