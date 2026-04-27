@@ -1,82 +1,90 @@
 [
   {
     "protocol": "ss",
-    "location": "未知",
-    "ip": "156.146.38.168",
-    "port": 443,
-    "latency_ms": 31,
-    "name": "[By EbraSha]"
+    "location": "US",
+    "ip": "107.172.219.230",
+    "port": 2096,
+    "latency_ms": 22,
+    "name": "🇺🇸 >>::US"
   },
   {
-    "protocol": "ss",
+    "protocol": "vmess",
     "location": "未知",
-    "ip": "156.146.38.170",
+    "ip": "165.140.216.141",
     "port": 443,
-    "latency_ms": 32,
-    "name": "b2n.ir/v2ray-configs | 662"
+    "latency_ms": 23,
+    "name": "Channel :"
+  },
+  {
+    "protocol": "vmess",
+    "location": "DE",
+    "ip": "82.198.246.46",
+    "port": 180,
+    "latency_ms": 36,
+    "name": "🇩🇪 v2go | DE | VMESS | 2351"
+  },
+  {
+    "protocol": "vmess",
+    "location": "DE",
+    "ip": "82.198.246.37",
+    "port": 180,
+    "latency_ms": 36,
+    "name": "🇩🇪 v2go | DE | VMESS | 1627"
+  },
+  {
+    "protocol": "vmess",
+    "location": "未知",
+    "ip": "82.198.246.250",
+    "port": 180,
+    "latency_ms": 37,
+    "name": "🇬🇧 V2CROSS.COM"
+  },
+  {
+    "protocol": "vmess",
+    "location": "未知",
+    "ip": "82.198.246.97",
+    "port": 180,
+    "latency_ms": 38,
+    "name": "🇬🇧 CCZZUU.TOP 6"
+  },
+  {
+    "protocol": "vmess",
+    "location": "DE",
+    "ip": "82.198.246.9",
+    "port": 180,
+    "latency_ms": 38,
+    "name": "🇩🇪 v2go | DE | VMESS | 1628"
+  },
+  {
+    "protocol": "vmess",
+    "location": "未知",
+    "ip": "82.198.246.233",
+    "port": 180,
+    "latency_ms": 38,
+    "name": "🇬🇧 V2CROSS.COM"
   },
   {
     "protocol": "ss",
     "location": "US",
-    "ip": "149.28.255.6",
-    "port": 816,
-    "latency_ms": 34,
-    "name": "🇺🇸 US-149.28.255.6-0815"
+    "ip": "104.192.226.106",
+    "port": 989,
+    "latency_ms": 40,
+    "name": "🇺🇸 US-104.192.226.106-0223"
   },
   {
-    "protocol": "ss",
+    "protocol": "vmess",
     "location": "未知",
-    "ip": "173.234.29.2",
-    "port": 990,
-    "latency_ms": 51,
-    "name": "b2n.ir/v2ray-configs | 509"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "156.146.38.169",
-    "port": 443,
-    "latency_ms": 54,
-    "name": "b2n.ir/v2ray-configs | 296"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "156.146.38.167",
-    "port": 443,
-    "latency_ms": 55,
-    "name": "b2n.ir/v2ray-configs | 463"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "79.127.200.169",
-    "port": 990,
-    "latency_ms": 58,
-    "name": "b2n.ir/v2ray-configs | 261"
+    "ip": "82.198.246.214",
+    "port": 180,
+    "latency_ms": 46,
+    "name": "🇬🇧 V2CROSS.COM"
   },
   {
     "protocol": "vmess",
     "location": "US",
-    "ip": "47.90.244.153",
-    "port": 8443,
-    "latency_ms": 90,
-    "name": "🇺🇸 v2go | US | VMESS | 1061"
-  },
-  {
-    "protocol": "vmess",
-    "location": "CA",
-    "ip": "134.195.196.211",
-    "port": 18000,
-    "latency_ms": 371,
-    "name": "🇨🇦 36 - CA - VMess - 18000"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "23.95.76.59",
-    "port": 990,
-    "latency_ms": 589,
-    "name": "b2n.ir/v2ray-configs | 437"
+    "ip": "67.220.72.237",
+    "port": 22324,
+    "latency_ms": 81,
+    "name": "🇺🇸 v2go | US | VMESS | 2318"
   }
 ]
