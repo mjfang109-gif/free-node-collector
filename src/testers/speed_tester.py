@@ -251,9 +251,15 @@ def _build_clash_yaml_for_speedtest(proxies: list) -> tuple[str, dict]:
     return yaml.dump(config, allow_unicode=True, sort_keys=False), index_map
 
 
-def _parse_speedtest_output(output_yaml_path: Path, index_map: dict) -> list:
+def _parse_speedtest_output(
+        output_yaml_path: Path,
+        index_map: dict,
+        max_latency_ms: int = 9999,
+        min_speed_mbps: float = 0.0,
+) -> list:
     """
     解析 clash-speedtest 输出的 YAML，映射回原始节点并附加延迟/速度字段。
+    在 Python 侧执行延迟 / 速度过滤（clash-speedtest 本身无此参数）。
     """
     try:
         with open(output_yaml_path, encoding="utf-8") as f:
@@ -279,6 +285,13 @@ def _parse_speedtest_output(output_yaml_path: Path, index_map: dict) -> list:
             m = re.search(r'(\d+)\s*ms', idx_name)
             if m:
                 latency = int(m.group(1))
+
+        # Python 侧过滤：延迟超限直接丢弃
+        if latency > max_latency_ms:
+            continue
+        # Python 侧过滤：速度有值但低于下限时丢弃（speed==0 表示未测速，不过滤）
+        if speed > 0 and speed < min_speed_mbps:
+            continue
 
         node = dict(original) if original else dict(fp)
         node["latency"] = latency
@@ -352,15 +365,16 @@ def run_clash_speedtest(
 
         input_yaml.write_text(yaml_content, encoding="utf-8")
 
-        # 注意：clash-speedtest 没有 -speed-mode 参数，已移除
+        # clash-speedtest 实际支持的参数：
+        #   -c / -output / -timeout / -concurrent
+        # 注意：-max-latency / -min-speed 均不存在，会导致退出码2！
+        # 延迟和速度过滤在 Python 侧的 _parse_speedtest_output 中完成。
         cmd = [
             bin_path,
-            "-c",            str(input_yaml),
-            "-output",       str(output_yaml),
-            "-max-latency",  f"{max_latency_ms}ms",
-            "-min-speed",    str(min_speed_mbps),
-            "-timeout",      f"{timeout_s}s",
-            "-concurrent",   str(concurrent),
+            "-c",          str(input_yaml),
+            "-output",     str(output_yaml),
+            "-timeout",    f"{timeout_s}s",
+            "-concurrent", str(concurrent),
         ]
 
         logger.info(f"   CMD: {' '.join(cmd)}")
@@ -392,7 +406,7 @@ def run_clash_speedtest(
             logger.warning("⚠️ clash-speedtest 未生成输出（可能节点全部不可用）")
             return []
 
-        result = _parse_speedtest_output(output_yaml, index_map)
+        result = _parse_speedtest_output(output_yaml, index_map, max_latency_ms, min_speed_mbps)
 
     if result:
         logger.info(
