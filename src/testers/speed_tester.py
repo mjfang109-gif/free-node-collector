@@ -1,16 +1,18 @@
 """
 speed_tester.py - 基于 clash-speedtest 的节点测速模块
 
-【架构】
-  阶段一  高并发 TCP 存活探测 → 剔除完全不通的死节点
-  阶段二  clash-speedtest 真实下载测速 → 验证代理功能 + 过滤延迟/速度
-          （无 clash-speedtest 时降级为 TLS/TCP 连通性检测）
+【clash-speedtest 实际 Flag（来自 -h 确认）】
+  -max-latency duration     延迟过滤，如 "3000ms"
+  -min-download-speed float 速度过滤 MB/s（不是 -min-speed！）
+  -speed-mode string        fast / download / full
+  -rename bool              默认 true，必须传 -rename=false！
+                            否则节点名被改成 "🇺🇸 US | 44ms ↑ 129.88MB/s"，
+                            index_map 用 node_XXXXX 查不到，全部结果丢失。
 
-【已修复问题】
-  - 移除了不存在的 -speed-mode 参数（会导致 clash-speedtest 报错退出）
-  - subprocess.run 增加 capture_output，错误日志可见
-  - 喂给 clash-speedtest 的 proxy dict 预先清洗，移除 mihomo 无法识别的字段
-  - 安装：go install github.com/faceair/clash-speedtest@latest
+【解析策略】
+  直接解析 stdout 的制表符表格，比 output YAML 更可靠：
+    序号  节点名称    类型    延迟   抖动   丢包率   下载速度
+    2.    node_00244  Vless   63ms   47ms   0.0%    85.93MB/s
 """
 
 import asyncio
@@ -28,25 +30,17 @@ import yaml
 
 logger = logging.getLogger(__name__)
 
-_PROJECT_ROOT = Path(__file__).parent.parent.resolve()
-
-
-# ══════════════════════════════════════════════════════════════
-#  clash-speedtest 二进制查找
-# ══════════════════════════════════════════════════════════════
 
 def _find_clash_speedtest() -> Optional[str]:
-    """按优先级查找 clash-speedtest 二进制。"""
     p = shutil.which("clash-speedtest")
     if p:
         return p
-    candidates = [
+    for c in [
         Path.home() / "go" / "bin" / "clash-speedtest",
         Path("/root/go/bin/clash-speedtest"),
         Path("/usr/local/go/bin/clash-speedtest"),
         Path("/home/runner/go/bin/clash-speedtest"),
-    ]
-    for c in candidates:
+    ]:
         if c.exists():
             return str(c)
     return None
@@ -57,23 +51,18 @@ CLASH_SPEEDTEST_BIN = _find_clash_speedtest()
 if CLASH_SPEEDTEST_BIN:
     logger.info(f"✅ clash-speedtest 就绪: {CLASH_SPEEDTEST_BIN}")
 else:
-    logger.warning(
-        "⚠️ 未找到 clash-speedtest，将降级为 TCP/TLS 测试模式。\n"
-        "   安装: go install github.com/faceair/clash-speedtest@latest"
-    )
+    logger.warning("⚠️ 未找到 clash-speedtest，将降级为 TCP/TLS 测试模式。")
 
 
 # ══════════════════════════════════════════════════════════════
-#  工具函数
+#  TCP / TLS 探测工具
 # ══════════════════════════════════════════════════════════════
 
 async def _tcp_connect(host: str, port: int, timeout: float) -> int:
-    """TCP 连通性探测，返回延迟 ms，失败返回 9999。"""
     start = time.time()
     try:
         _, writer = await asyncio.wait_for(
-            asyncio.open_connection(host, port), timeout=timeout
-        )
+            asyncio.open_connection(host, port), timeout=timeout)
         writer.close()
         await asyncio.shield(writer.wait_closed())
         return int((time.time() - start) * 1000)
@@ -82,7 +71,6 @@ async def _tcp_connect(host: str, port: int, timeout: float) -> int:
 
 
 async def _tls_connect(host: str, port: int, sni: str, timeout: float) -> int:
-    """TLS 握手探测，返回延迟 ms，失败返回 9999。"""
     start = time.time()
     try:
         ctx = ssl.create_default_context()
@@ -90,8 +78,7 @@ async def _tls_connect(host: str, port: int, sni: str, timeout: float) -> int:
         ctx.verify_mode = ssl.CERT_NONE
         _, writer = await asyncio.wait_for(
             asyncio.open_connection(host, port, ssl=ctx, server_hostname=sni or host),
-            timeout=timeout,
-        )
+            timeout=timeout)
         writer.close()
         await asyncio.shield(writer.wait_closed())
         return int((time.time() - start) * 1000)
@@ -100,23 +87,22 @@ async def _tls_connect(host: str, port: int, sni: str, timeout: float) -> int:
 
 
 # ══════════════════════════════════════════════════════════════
-#  代理字段清洗（喂给 clash-speedtest 前调用）
+#  代理字段清洗
 # ══════════════════════════════════════════════════════════════
 
-# 各协议 mihomo 认识的字段白名单
 _ALLOWED_FOR_TEST = {
-    "ss":       {"name", "type", "server", "port", "cipher", "password", "udp", "plugin", "plugin-opts"},
-    "vmess":    {"name", "type", "server", "port", "uuid", "alterId", "cipher",
-                 "tls", "skip-cert-verify", "network", "ws-opts", "h2-opts",
-                 "http-opts", "grpc-opts", "servername", "udp"},
-    "vless":    {"name", "type", "server", "port", "uuid", "flow",
-                 "tls", "skip-cert-verify", "network", "ws-opts", "h2-opts",
-                 "reality-opts", "servername", "sni", "udp"},
-    "trojan":   {"name", "type", "server", "port", "password",
-                 "tls", "skip-cert-verify", "sni", "network", "ws-opts", "grpc-opts", "udp"},
-    "hy2":      {"name", "type", "server", "port", "password",
-                 "sni", "skip-cert-verify", "obfs", "obfs-password",
-                 "fingerprint", "alpn", "cwnd", "udp"},
+    "ss": {"name", "type", "server", "port", "cipher", "password", "udp", "plugin", "plugin-opts"},
+    "vmess": {"name", "type", "server", "port", "uuid", "alterId", "cipher",
+              "tls", "skip-cert-verify", "network", "ws-opts", "h2-opts",
+              "http-opts", "grpc-opts", "servername", "udp"},
+    "vless": {"name", "type", "server", "port", "uuid", "flow",
+              "tls", "skip-cert-verify", "network", "ws-opts", "h2-opts",
+              "reality-opts", "servername", "sni", "udp"},
+    "trojan": {"name", "type", "server", "port", "password",
+               "tls", "skip-cert-verify", "sni", "network", "ws-opts", "grpc-opts", "udp"},
+    "hy2": {"name", "type", "server", "port", "password",
+            "sni", "skip-cert-verify", "obfs", "obfs-password",
+            "fingerprint", "alpn", "cwnd", "udp"},
     "hysteria2": {"name", "type", "server", "port", "password",
                   "sni", "skip-cert-verify", "obfs", "obfs-password",
                   "fingerprint", "alpn", "cwnd", "udp"},
@@ -133,36 +119,26 @@ _SS_VALID_CIPHERS = {
 
 
 def _sanitize_for_speedtest(proxy: dict) -> Optional[dict]:
-    """
-    清洗 proxy dict，确保能被 mihomo/clash-speedtest 正确解析。
-    返回 None 表示该节点应被跳过。
-    """
     p = dict(proxy)
     ptype = str(p.get("type", "")).lower()
 
-    # 统一 hysteria2 → hy2
     if ptype == "hysteria2":
         p["type"] = "hy2"
         ptype = "hy2"
 
-    # SS：非法 cipher 直接跳过
     if ptype == "ss":
-        cipher = str(p.get("cipher", "")).lower().strip()
-        if cipher not in _SS_VALID_CIPHERS:
+        if str(p.get("cipher", "")).lower().strip() not in _SS_VALID_CIPHERS:
             return None
 
-    # VMess：修正 alterId 类型
     if ptype == "vmess":
         p["alterId"] = int(p.get("alterId") or 0)
 
-    # 字段白名单过滤
     allowed = _ALLOWED_FOR_TEST.get(ptype)
     if allowed:
         p = {k: v for k, v in p.items() if k in allowed and v is not None}
     else:
         p = {k: v for k, v in p.items() if v is not None}
 
-    # 清理 ws-opts 中的空字段
     if "ws-opts" in p and isinstance(p["ws-opts"], dict):
         p["ws-opts"] = {k: v for k, v in p["ws-opts"].items() if v}
         if not p["ws-opts"]:
@@ -181,148 +157,112 @@ async def phase1_tcp_prefilter(
         timeout: float = 2.5,
         keep_top_n: int = 600,
 ) -> list:
-    """高并发 TCP 存活探测，剔除完全不通的死节点。"""
-    logger.info(
-        f"⚡ [阶段一] TCP 存活探测 {len(proxies)} 个节点"
-        f"（并发: {max_workers}，超时: {timeout}s）"
-    )
+    logger.info(f"⚡ [阶段一] TCP 存活探测 {len(proxies)} 个节点（并发:{max_workers} 超时:{timeout}s）")
     sem = asyncio.Semaphore(max_workers)
 
     async def _check(p):
         async with sem:
-            server = p.get("server", "")
-            port   = p.get("port")
-            if not server or not isinstance(port, int) or not (1 <= port <= 65535):
+            s, port = p.get("server", ""), p.get("port")
+            if not s or not isinstance(port, int) or not (1 <= port <= 65535):
                 return p, 9999
-            return p, await _tcp_connect(server, port, timeout)
+            return p, await _tcp_connect(s, port, timeout)
 
     raw = await asyncio.gather(*[_check(p) for p in proxies], return_exceptions=True)
-
-    results = [
-        (p, lat) for res in raw
-        if isinstance(res, tuple)
-        for p, lat in [res]
-        if lat != 9999
-    ]
+    results = [(p, lat) for res in raw if isinstance(res, tuple) for p, lat in [res] if lat != 9999]
     results.sort(key=lambda x: x[1])
     survivors = [p for p, _ in results[:keep_top_n]]
-
-    logger.info(
-        f"[阶段一] TCP 可达 {len(results)}/{len(proxies)} 个，"
-        f"保留最优 {len(survivors)} 个进入精确测速"
-    )
+    logger.info(f"[阶段一] TCP 可达 {len(results)}/{len(proxies)} 个，保留最优 {len(survivors)} 个")
     return survivors
 
 
 # ══════════════════════════════════════════════════════════════
-#  阶段二A：clash-speedtest 真实下载测速
+#  阶段二A：clash-speedtest
 # ══════════════════════════════════════════════════════════════
 
 def _build_clash_yaml_for_speedtest(proxies: list) -> tuple[str, dict]:
-    """
-    生成供 clash-speedtest 读取的最小化 Clash YAML。
-    节点名用索引编码，彻底避免 emoji / 特殊字符 / 重名问题。
-    返回 (yaml_string, {index_name: original_proxy})
-    """
-    clean_proxies = []
-    index_map: dict[str, dict] = {}
-
+    """生成最小化 Clash YAML，节点名用 node_XXXXX 索引编码。"""
+    clean_proxies, index_map = [], {}
     for i, proxy in enumerate(proxies):
-        sanitized = _sanitize_for_speedtest(proxy)
-        if sanitized is None:
+        s = _sanitize_for_speedtest(proxy)
+        if s is None:
             continue
-        idx_name = f"node_{i:05d}"
-        sanitized["name"] = idx_name
-        index_map[idx_name] = proxy   # 保留原始 proxy，含 name 等信息
-        clean_proxies.append(sanitized)
+        idx = f"node_{i:05d}"
+        s["name"] = idx
+        index_map[idx] = proxy
+        clean_proxies.append(s)
 
     config = {
-        "mixed-port": 17890,  # 使用高位端口，避免与系统服务冲突
-        "allow-lan":  False,
-        "mode":       "global",
-        "log-level":  "silent",
-        "proxies":    clean_proxies,
-        "proxy-groups": [
-            {"name": "PROXY", "type": "select",
-             "proxies": [p["name"] for p in clean_proxies]}
-        ],
+        "mixed-port": 17890,
+        "allow-lan": False,
+        "mode": "global",
+        "log-level": "silent",
+        "proxies": clean_proxies,
+        "proxy-groups": [{"name": "PROXY", "type": "select",
+                          "proxies": [p["name"] for p in clean_proxies]}],
         "rules": ["MATCH,PROXY"],
     }
     return yaml.dump(config, allow_unicode=True, sort_keys=False), index_map
 
 
-def _parse_speedtest_output(
-        output_yaml_path: Path,
-        index_map: dict,
-        max_latency_ms: int = 9999,
-        min_speed_mbps: float = 0.0,
-) -> list:
+def _parse_speedtest_stdout(stdout: str, index_map: dict,
+                            max_latency_ms: int, min_speed_mbps: float) -> list:
     """
-    解析 clash-speedtest 输出的 YAML，映射回原始节点并附加延迟/速度字段。
-    在 Python 侧执行延迟 / 速度过滤（clash-speedtest 本身无此参数）。
+    解析 clash-speedtest stdout 制表符表格，返回通过筛选的原始节点列表。
+
+    表格格式（制表符分隔）：
+        序号\t节点名称\t类型\t延迟\t抖动\t丢包率\t下载速度
+        2.\tnode_00244\tVless\t63ms\t47ms\t0.0%\t85.93MB/s
+
+    筛选条件：
+        丢包率 == 0%  AND  延迟 <= max_latency_ms  AND  速度 >= min_speed_mbps
     """
-    try:
-        with open(output_yaml_path, encoding="utf-8") as f:
-            data = yaml.safe_load(f)
-    except Exception as e:
-        logger.error(f"读取 clash-speedtest 输出失败: {e}")
-        return []
-
-    raw_proxies = data.get("proxies", []) if isinstance(data, dict) else []
-    if not raw_proxies:
-        return []
-
     result = []
-    for fp in raw_proxies:
-        idx_name = fp.get("name", "")
-        original = index_map.get(idx_name)
+    for line in stdout.splitlines():
+        parts = line.strip().split('\t')
+        if len(parts) < 6:
+            continue
 
-        latency = _try_extract_int(fp, ["latency", "delay", "rtt"])
-        speed   = _try_extract_speed(fp, idx_name)
+        idx_name = parts[1].strip()
+        if not idx_name.startswith("node_"):
+            continue  # 跳过表头
 
-        # 部分版本把结果写进名字字符串，例如 "node_00001 ↑ 2.50MB/s 123ms"
-        if latency == 9999:
-            m = re.search(r'(\d+)\s*ms', idx_name)
-            if m:
-                latency = int(m.group(1))
+        # 丢包率
+        m = re.match(r'^([\d.]+)%$', parts[5].strip())
+        if not m or float(m.group(1)) > 0:
+            continue  # N/A 或丢包 > 0，跳过
 
-        # Python 侧过滤：延迟超限直接丢弃
+        # 延迟
+        m = re.match(r'^(\d+)ms$', parts[3].strip())
+        if not m:
+            continue
+        latency = int(m.group(1))
         if latency > max_latency_ms:
             continue
-        # Python 侧过滤：速度有值但低于下限时丢弃（speed==0 表示未测速，不过滤）
+
+        # 下载速度
+        speed = 0.0
+        if len(parts) >= 7:
+            s = parts[6].strip()
+            mm = re.match(r'^([\d.]+)MB/s$', s) or re.match(r'^([\d.]+)KB/s$', s)
+            if mm:
+                speed = float(mm.group(1))
+                if 'KB' in s:
+                    speed = round(speed / 1024, 2)
         if speed > 0 and speed < min_speed_mbps:
             continue
 
-        node = dict(original) if original else dict(fp)
+        original = index_map.get(idx_name)
+        if original is None:
+            continue
+
+        node = dict(original)
         node["latency"] = latency
         if speed > 0:
             node["speed_mbps"] = speed
         result.append(node)
 
-    result.sort(key=lambda p: p.get("latency", 9999))
+    result.sort(key=lambda x: x.get("latency", 9999))
     return result
-
-
-def _try_extract_int(d: dict, keys: list, default: int = 9999) -> int:
-    for k in keys:
-        v = d.get(k)
-        if isinstance(v, (int, float)) and v > 0:
-            return int(v)
-    return default
-
-
-def _try_extract_speed(d: dict, name: str = "") -> float:
-    for k in ("speed", "download_speed", "bandwidth"):
-        v = d.get(k)
-        if isinstance(v, (int, float)) and v > 0:
-            return round(v / 1_048_576 if v > 10_000 else v, 2)
-    m = re.search(r'([\d.]+)\s*MB/s', name, re.I)
-    if m:
-        return float(m.group(1))
-    m = re.search(r'([\d.]+)\s*KB/s', name, re.I)
-    if m:
-        return round(float(m.group(1)) / 1024, 2)
-    return 0.0
 
 
 def run_clash_speedtest(
@@ -333,15 +273,6 @@ def run_clash_speedtest(
         concurrent: int = 4,
         bin_path: Optional[str] = None,
 ) -> list:
-    """
-    调用 clash-speedtest 对节点列表做真实下载测速。
-
-    参数：
-        max_latency_ms  延迟上限（ms），超过则丢弃
-        min_speed_mbps  速度下限（MB/s），低于则丢弃
-        timeout_s       单节点测速超时秒数
-        concurrent      并发连接数
-    """
     bin_path = bin_path or CLASH_SPEEDTEST_BIN
     if not bin_path:
         raise RuntimeError("clash-speedtest 未找到，请先安装。")
@@ -354,9 +285,9 @@ def run_clash_speedtest(
     )
 
     with tempfile.TemporaryDirectory() as tmpdir:
-        tmp         = Path(tmpdir)
-        input_yaml  = tmp / "input.yaml"
-        output_yaml = tmp / "filtered.yaml"
+        tmp = Path(tmpdir)
+        input_yaml = tmp / "input.yaml"
+        output_yaml = tmp / "result.yaml"
 
         yaml_content, index_map = _build_clash_yaml_for_speedtest(proxies)
         if not index_map:
@@ -364,44 +295,28 @@ def run_clash_speedtest(
             return []
 
         input_yaml.write_text(yaml_content, encoding="utf-8")
-        logger.info(
-            f"📄 输入配置：{len(index_map)} 个节点 | "
-            f"文件大小: {input_yaml.stat().st_size // 1024} KB"
-        )
-        # clash-speedtest 实际支持的参数：
-        #   -c / -output / -timeout / -concurrent
-        # 注意：-max-latency / -min-speed 均不存在，会导致退出码2！
-        # 延迟和速度过滤在 Python 侧的 _parse_speedtest_output 中完成。
+        logger.info(f"📄 输入：{len(index_map)} 个节点，{input_yaml.stat().st_size // 1024} KB")
+
         cmd = [
             bin_path,
-            "-c",          str(input_yaml),
-            "-output",     str(output_yaml),
-            "-timeout",    f"{timeout_s}s",
+            "-c", str(input_yaml),
+            "-output", str(output_yaml),
+            "-max-latency", f"{max_latency_ms}ms",
+            "-min-download-speed", str(min_speed_mbps),
+            "-speed-mode", "download",
+            "-timeout", f"{timeout_s}s",
             "-concurrent", str(concurrent),
+            "-rename=false",  # 保留 node_XXXXX 名称，否则 index_map 查不到
         ]
-
         logger.info(f"   CMD: {' '.join(cmd)}")
 
-        # 动态超时：每节点最多 timeout_s 秒 × 数量 + 2 分钟缓冲
         total_timeout = len(index_map) * timeout_s + 120
-
         try:
-            proc = subprocess.run(
-                cmd,
-                timeout=total_timeout,
-                capture_output=True,   # 捕获 stdout/stderr 供日志使用
-                text=True,
-            )
-            if proc.returncode != 0:
-                logger.warning(f"⚠️ clash-speedtest 退出码 {proc.returncode}")
-            # 无论成功失败都打印输出，便于诊断
-            if proc.stdout:
-                level = logger.info if proc.returncode == 0 else logger.warning
-                level(f"clash-speedtest stdout:\n{proc.stdout[:2000]}")
-            if proc.stderr:
-                logger.warning(f"clash-speedtest stderr:\n{proc.stderr[:2000]}")
+            proc = subprocess.run(cmd, timeout=total_timeout,
+                                  capture_output=True, text=True)
         except subprocess.TimeoutExpired:
-            logger.error("❌ clash-speedtest 超时，尝试使用已完成的部分结果")
+            logger.error("❌ clash-speedtest 超时")
+            return []
         except FileNotFoundError:
             logger.error(f"❌ 找不到二进制: {bin_path}")
             return []
@@ -409,24 +324,31 @@ def run_clash_speedtest(
             logger.error(f"❌ clash-speedtest 异常: {e}")
             return []
 
-        if not output_yaml.exists():
-            logger.warning("⚠️ clash-speedtest 未生成输出（可能节点全部不可用）")
+        if proc.returncode != 0:
+            logger.warning(f"⚠️ clash-speedtest 退出码 {proc.returncode}")
+        if proc.stderr:
+            logger.warning(f"stderr: {proc.stderr[:500]}")
+        if not proc.stdout:
+            logger.warning("⚠️ clash-speedtest 无任何输出")
             return []
 
-        result = _parse_speedtest_output(output_yaml, index_map, max_latency_ms, min_speed_mbps)
+        result = _parse_speedtest_stdout(
+            proc.stdout, index_map, max_latency_ms, min_speed_mbps)
 
     if result:
         logger.info(
-            f"✅ [clash-speedtest] 通过: {len(result)}/{len(proxies)} 个 | "
-            f"最快: {result[0].get('latency', '?')}ms"
-            + (f" @ {result[0].get('speed_mbps', '?')}MB/s" if result[0].get("speed_mbps") else "")
-            + f"  最慢: {result[-1].get('latency', '?')}ms"
+            f"✅ 通过: {len(result)}/{len(proxies)} 个 | "
+            f"最快: {result[0].get('latency')}ms"
+            + (f" @ {result[0].get('speed_mbps')}MB/s" if result[0].get("speed_mbps") else "")
+            + f"  最慢: {result[-1].get('latency')}ms"
         )
+    else:
+        logger.warning("⚠️ 无节点通过筛选")
     return result
 
 
 # ══════════════════════════════════════════════════════════════
-#  阶段二B：TCP/TLS 降级测速（无 clash-speedtest 时的兜底）
+#  阶段二B：TCP/TLS 降级
 # ══════════════════════════════════════════════════════════════
 
 async def phase2_fallback_test(
@@ -435,33 +357,23 @@ async def phase2_fallback_test(
         timeout: float = 5.0,
         latency_threshold: int = 3000,
 ) -> list:
-    """
-    降级方案：TLS/TCP 连通性测试。
-    只验证端口是否能连通，不能保证代理功能正常。
-    仅在无法安装 clash-speedtest 的环境下使用。
-    """
-    logger.warning(
-        f"⚠️ [降级] TLS/TCP 测试 {len(proxies)} 个节点\n"
-        "   此模式只验证连通性，无法保证代理真实可用！"
-    )
+    logger.warning(f"⚠️ [降级] TLS/TCP 测试 {len(proxies)} 个节点（只验证连通性）")
     sem = asyncio.Semaphore(max_workers)
 
     async def _check(p):
         async with sem:
-            server = p.get("server", "")
-            port   = p.get("port")
-            ptype  = str(p.get("type", "")).lower()
-            if not server or not isinstance(port, int):
+            s, port = p.get("server", ""), p.get("port")
+            ptype = str(p.get("type", "")).lower()
+            if not s or not isinstance(port, int):
                 return p, 9999
             if ptype in ("vless", "trojan", "hy2", "hysteria2") or p.get("tls"):
-                sni = p.get("sni") or p.get("servername") or server
-                lat = await _tls_connect(server, port, sni, timeout)
+                sni = p.get("sni") or p.get("servername") or s
+                lat = await _tls_connect(s, port, sni, timeout)
             else:
-                lat = await _tcp_connect(server, port, timeout)
+                lat = await _tcp_connect(s, port, timeout)
             return p, lat
 
     raw = await asyncio.gather(*[_check(p) for p in proxies], return_exceptions=True)
-
     valid = []
     for res in raw:
         if isinstance(res, tuple):
@@ -470,7 +382,6 @@ async def phase2_fallback_test(
                 node = dict(p)
                 node["latency"] = lat
                 valid.append(node)
-
     valid.sort(key=lambda x: x.get("latency", 9999))
     logger.info(f"[降级] 可达: {len(valid)}/{len(proxies)} 个")
     return valid
@@ -483,42 +394,32 @@ async def phase2_fallback_test(
 async def speed_test_all(
         proxies: list,
         top_n: int = 200,
-        # 阶段一
         phase1_workers: int = 200,
         phase1_timeout: float = 2.5,
         phase1_keep: int = 600,
-        # 阶段二（clash-speedtest）
         max_latency_ms: int = 3000,
         min_speed_mbps: float = 0.3,
         test_timeout_s: int = 10,
         concurrent: int = 4,
-        # 降级参数
         fallback_workers: int = 100,
         fallback_latency_threshold: int = 3000,
-        # 兼容旧参数（忽略）
         **kwargs,
 ) -> list:
-    """完整两阶段测速流程。"""
     if not proxies:
         return []
 
     mode = "clash-speedtest ✅" if CLASH_SPEEDTEST_BIN else "TCP/TLS 降级 ⚠️"
     logger.info(f"🔬 测速模式: {mode}  总节点: {len(proxies)}")
 
-    # ── 阶段一 ────────────────────────────────────────────────
     survivors = await phase1_tcp_prefilter(
-        proxies,
-        max_workers=phase1_workers,
-        timeout=phase1_timeout,
-        keep_top_n=phase1_keep,
-    )
+        proxies, max_workers=phase1_workers,
+        timeout=phase1_timeout, keep_top_n=phase1_keep)
     if not survivors:
         logger.warning("❌ 阶段一后无存活节点。")
         return []
 
-    # ── 阶段二 ────────────────────────────────────────────────
     if CLASH_SPEEDTEST_BIN:
-        loop  = asyncio.get_event_loop()
+        loop = asyncio.get_event_loop()
         valid = await loop.run_in_executor(
             None,
             lambda: run_clash_speedtest(
@@ -531,11 +432,9 @@ async def speed_test_all(
         )
     else:
         valid = await phase2_fallback_test(
-            survivors,
-            max_workers=fallback_workers,
+            survivors, max_workers=fallback_workers,
             timeout=float(test_timeout_s),
-            latency_threshold=fallback_latency_threshold,
-        )
+            latency_threshold=fallback_latency_threshold)
 
     result = valid[:top_n]
     if result:
