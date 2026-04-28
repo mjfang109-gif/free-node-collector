@@ -3,53 +3,49 @@ name: 自动采集免费节点
 on:
   schedule:
     - cron: '0 */6 * * *'   # 每 6 小时运行一次
-  workflow_dispatch:         # 支持手动触发
+  workflow_dispatch:          # 支持手动触发
+
+# 必须声明 write 权限，否则 git push 会 403
+permissions:
+  contents: write
 
 jobs:
   collect:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: 检出代码
+        uses: actions/checkout@v4
 
       - name: 设置 Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: 设置 Go（用于安装 clash-speedtest）
+      - name: 设置 Go（用于编译安装 clash-speedtest）
         uses: actions/setup-go@v5
         with:
-          go-version: '1.22'
-          # 缓存 Go 模块，加速后续安装
-          cache: false
+          go-version: 'stable'
+          cache: false   # 不缓存 Go module，避免偶发缓存损坏
 
-      # ── 关键步骤：安装 clash-speedtest ───────────────────────
       - name: 安装 clash-speedtest
         run: |
-          echo "📦 安装 clash-speedtest..."
           go install github.com/faceair/clash-speedtest@latest
-
-          # 将 Go bin 目录加入 PATH（后续步骤生效）
-          echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
-
-          # 验证安装
-          clash-speedtest -v || $(go env GOPATH)/bin/clash-speedtest -v
-          echo "✅ clash-speedtest 安装成功"
+          # 验证安装成功
+          ~/go/bin/clash-speedtest -h 2>&1 | head -5 || true
 
       - name: 安装 Python 依赖
         run: pip install -r requirements.txt
 
       - name: 运行采集 + 测速 + 生成订阅
         run: python -m src.main
-        env:
-          # Go bin 目录，让 speed_tester.py 能找到 clash-speedtest
-          PATH: "${{ env.PATH }}:/root/go/bin:/home/runner/go/bin"
 
       - name: 提交更新到仓库
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
           git add dist/
-          git commit -m "🚀 自动更新节点 $(date +'%Y-%m-%d %H:%M:%S UTC')" || echo "没有变更，跳过提交"
-          git push
+          # 只有真正有变更时才提交，避免空提交报错
+          git diff --staged --quiet \
+            && echo "✅ 无节点变化，跳过提交" \
+            || (git commit -m "🚀 自动更新节点 $(date -u +'%Y-%m-%d %H:%M:%S UTC')" && git push)

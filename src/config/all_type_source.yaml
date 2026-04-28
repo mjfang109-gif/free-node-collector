@@ -8,66 +8,62 @@ sources:
   - name: Danialsamadi_Hy2
     url: https://raw.githubusercontent.com/Danialsamadi/v2go/main/Splitted-By-Protocol/hy2.txt
     type: v2ray_base64
-  - name: AzadNet_hy
-    url: https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet_hy.txt
-    type: v2ray_base64
-
 
   # ==========================================
-  # VLESS (含 Reality/XTLS) - 目前最主流、隐蔽性最高
+  # Clash YAML 类型（结构化，解析最可靠）
   # ==========================================
-  - name: MatinGhanbari_VLess
-    url: https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/vless.txt
-    type: v2ray_base64
-  - name: ebrasha_VLess
-    url: https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/vless_configs.txt
-    type: v2ray_base64
-  - name: Epodonios_VLess
-    url: https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/vless.txt
-    type: v2ray_base64
+  - name: snakem982_clash_meta
+    url: https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml
+    type: clash
+  - name: snakem982_clash_meta_2
+    url: https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta-2.yaml
+    type: clash
+  - name: mfuu_clash
+    url: https://raw.githubusercontent.com/mfuu/v2ray/master/clash.yaml
+    type: clash
+  - name: anaer_clash
+    url: https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml
+    type: clash
+  - name: ermaozi_clash
+    url: https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/clash.yml
+    type: clash
+  - name: SnapdragonLee_clash
+    url: https://raw.githubusercontent.com/SnapdragonLee/SystemProxy/master/dist/clash_config.yaml
+    type: clash
+  - name: caijh_eternity_clash
+    url: https://raw.githubusercontent.com/caijh/FreeProxiesScraper/master/Eternity.yaml
+    type: clash
+  - name: Ruk1ng_freeSub_clash
+    url: https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml
+    type: clash
+  - name: free18_v2ray_clash
+    url: https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml
+    type: clash
 
   # ==========================================
-  # VMess - 数量巨大，适合大流量抓取
+  # V2Ray Base64 类型
   # ==========================================
-  - name: MatinGhanbari_VMess
-    url: https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/vmess.txt
+  - name: mfuu_v2ray
+    url: https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray
     type: v2ray_base64
-  - name: Danialsamadi_VMess
-    url: https://raw.githubusercontent.com/Danialsamadi/v2go/main/Splitted-By-Protocol/vmess.txt
+  - name: ermaozi_v2ray
+    url: https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt
     type: v2ray_base64
-  - name: ebrasha_VMess
-    url: https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/vmess_configs.txt
+  - name: barry_far_v2ray
+    url: https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt
     type: v2ray_base64
-
-  # ==========================================
-  # Trojan - 伪装性好，协议头较轻
-  # ==========================================
-  - name: MatinGhanbari_Trojan
-    url: https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/trojan.txt
+  - name: MatinGhanbari_all_sub
+    url: https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt
     type: v2ray_base64
-  - name: Danialsamadi_Trojan
-    url: https://raw.githubusercontent.com/Danialsamadi/v2go/main/Splitted-By-Protocol/trojan.txt
+  - name: ebrasha_all_configs
+    url: https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/refs/heads/main/all_extracted_configs.txt
     type: v2ray_base64
-  - name: ebrasha_Trojan
-    url: https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/trojan_configs.txt
+  - name: Delta_Kronecker_sub
+    url: https://raw.githubusercontent.com/Delta-Kronecker/V2ray-Config/main/sub.txt
     type: v2ray_base64
-
-  # ==========================================
-  # Shadowsocks (SS) - 经典协议，兼容性极佳
-  # ==========================================
-  - name: MatinGhanbari_SS
-    url: https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/filtered/subs/ss.txt
+  - name: Pawdroid_free_servers
+    url: https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
     type: v2ray_base64
-  - name: Epodonios_SS
-    url: https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Splitted-By-Protocol/ss.txt
-    type: v2ray_base64
-  - name: ebrasha_SS
-    url: https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/ss_configs.txt
-    type: v2ray_base64
-
-  # ==========================================
-  # 综合聚合类
-  # ==========================================
   - name: Epodonios_All_Base64
     url: https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_base64_Sub.txt
     type: v2ray_base64

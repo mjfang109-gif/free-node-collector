@@ -1,10 +1,5 @@
 """
-main.py - Free-Node-Collector 主入口（clash-speedtest 集成版）
-
-【变更】
-- 测速完全委托给 clash-speedtest，Python 只做采集 / 解析 / 去重 / 生成
-- 去重从 server:port 升级为 type:server:port:credential，避免误删同 IP 不同协议节点
-- 静态预过滤增加私有地址过滤
+main.py - Free-Node-Collector 主入口
 """
 
 import asyncio
@@ -35,31 +30,27 @@ _SS_VALID_CIPHERS = {
 
 
 def _proxy_fingerprint(p: dict) -> str:
-    """
-    节点唯一指纹：type + server + port + 凭证前16字符。
-    比只用 server:port 更精确，不会误删同 IP 不同协议的节点。
-    """
-    ptype = str(p.get("type", "")).lower()
+    """节点唯一指纹：type + server + port + 凭证前16字符。"""
+    ptype  = str(p.get("type", "")).lower()
     server = str(p.get("server", "")).lower()
-    port = str(p.get("port", ""))
-    cred = str(p.get("uuid") or p.get("password") or "")[:16]
+    port   = str(p.get("port", ""))
+    cred   = str(p.get("uuid") or p.get("password") or "")[:16]
     return f"{ptype}:{server}:{port}:{cred}"
 
 
 def _is_valid_for_testing(p: dict) -> bool:
-    """静态预过滤：只丢弃 100% 无效的节点"""
+    """静态预过滤：丢弃 100% 无效的节点。"""
     server = p.get("server", "")
-    port = p.get("port")
-    ptype = str(p.get("type", "")).lower()
+    port   = p.get("port")
+    ptype  = str(p.get("type", "")).lower()
 
     if not server or not isinstance(port, int) or not (1 <= port <= 65535):
         return False
     # 过滤内网/保留地址
     if any(server.startswith(pfx) for pfx in (
             "127.", "0.0.0.0", "localhost", "::1",
-            "10.", "192.168.", "172.16.", "172.17.", "172.18.", "172.19.",
-            "172.20.", "172.21.", "172.22.", "172.23.", "172.24.", "172.25.",
-            "172.26.", "172.27.", "172.28.", "172.29.", "172.30.", "172.31.",
+            "10.", "192.168.",
+            *(f"172.{i}." for i in range(16, 32)),
     )):
         return False
     if ptype in ("vmess", "vless") and not p.get("uuid"):
@@ -75,18 +66,18 @@ def _is_valid_for_testing(p: dict) -> bool:
 
 
 def generate_top_nodes_json(proxies: list, top_n: int = 20):
-    """写入 top_nodes.json 供 ffmg/render.py 使用"""
+    """写入 top_nodes.json 供外部工具消费（如推流背景图渲染）。"""
     if not proxies:
         return
     nodes = [
         {
-            "protocol": p.get("type", "N/A"),
-            "location": get_country_info_from_name(p.get("name", ""))[0],
-            "ip": p.get("server", "N/A"),
-            "port": p.get("port", 0),
+            "protocol":   p.get("type", "N/A"),
+            "location":   get_country_info_from_name(p.get("name", ""))[0],
+            "ip":         p.get("server", "N/A"),
+            "port":       p.get("port", 0),
             "latency_ms": p.get("latency", 9999),
             "speed_mbps": p.get("speed_mbps", 0),
-            "name": p.get("name", "N/A"),
+            "name":       p.get("name", "N/A"),
         }
         for p in proxies[:top_n]
     ]
@@ -100,24 +91,20 @@ def generate_top_nodes_json(proxies: list, top_n: int = 20):
 async def main():
     logger.info("🚀 Free-Node-Collector 启动")
 
-    # ── 1. 内核状态提示 ───────────────────────────────────────
     if CLASH_SPEEDTEST_BIN:
         logger.info(f"✅ clash-speedtest: {CLASH_SPEEDTEST_BIN}")
     else:
-        logger.warning(
-            "⚠️ clash-speedtest 未就绪，将使用 TCP/TLS 降级模式。\n"
-            "   请在 collect-nodes.yml 中添加安装步骤，详见配套说明。"
-        )
+        logger.warning("⚠️ clash-speedtest 未就绪，将使用 TCP/TLS 降级模式。")
 
-    # ── 2. 加载信源 ───────────────────────────────────────────
+    # ── 1. 加载信源 ───────────────────────────────────────────
     sources = load_all_sources()
     if not sources:
         logger.critical("❌ 未加载任何信源，退出。")
         return
     logger.info(f"📋 已加载 {len(sources)} 个信源")
 
-    # ── 3. 采集 + 解析 + 去重 ─────────────────────────────────
-    collector = UnifiedCollector()
+    # ── 2. 采集 + 解析 + 去重 ─────────────────────────────────
+    collector    = UnifiedCollector()
     tg_collector = TelegramWebCollector()
     all_proxies: list[dict] = []
     seen: set[str] = set()
@@ -127,7 +114,7 @@ async def main():
         logger.info(f"🔍 [{i}/{len(sources)}] {name}")
 
         fetcher = tg_collector if source.get("type") == "telegram_web" else collector
-        data = fetcher.fetch(source)
+        data    = fetcher.fetch(source)
         if not data or not data.get("content"):
             logger.info("  ↳ 内容为空，跳过")
             continue
@@ -149,7 +136,7 @@ async def main():
 
     logger.info(f"✅ 采集完毕，共 {len(all_proxies)} 个不重复节点")
 
-    # ── 4. 静态预过滤 ─────────────────────────────────────────
+    # ── 3. 静态预过滤 ─────────────────────────────────────────
     filtered = [p for p in all_proxies if _is_valid_for_testing(p)]
     logger.info(
         f"🧹 预过滤：保留 {len(filtered)} 个"
@@ -159,47 +146,40 @@ async def main():
         logger.critical("❌ 预过滤后无节点，退出。")
         return
 
-    # ── 5. 净化节点名称 ───────────────────────────────────────
+    # ── 4. 净化节点名称 ───────────────────────────────────────
     for p in filtered:
         p["name"] = clean_node_name(p)
 
-    # ── 6. 两阶段测速 ─────────────────────────────────────────
+    # ── 5. 两阶段测速 ─────────────────────────────────────────
     sorted_proxies = await speed_test_all(
         filtered,
         top_n=200,
-        # 阶段一：TCP 快速预过滤
         phase1_workers=200,
         phase1_timeout=2.5,
         phase1_keep=600,
-        # 阶段二：clash-speedtest 参数
-        # speed_mode="fast" 只测延迟，速度最快
-        # speed_mode="download" 测下载速度，更准确（推荐）
-        speed_mode="download",
-        max_latency_ms=3000,  # 免费节点延迟普遍偏高，3000ms 是合理阈值
-        min_speed_mbps=0.3,  # 免费节点速度下限，0.3MB/s = 约 2.4Mbps
+        max_latency_ms=3000,
+        min_speed_mbps=0.3,
         test_timeout_s=10,
         concurrent=4,
-        # 降级参数（无 clash-speedtest 时）
         fallback_workers=100,
         fallback_latency_threshold=3000,
     )
 
-    # ── 7. 生成订阅文件 ───────────────────────────────────────
+    # ── 6. 生成订阅文件 ───────────────────────────────────────
     if sorted_proxies:
         logger.info(
-            f"🎉 {len(sorted_proxies)} 个节点通过验证\n"
-            f"   最快: {sorted_proxies[0].get('latency')}ms  "
+            f"🎉 {len(sorted_proxies)} 个节点通过验证 | "
+            f"最快: {sorted_proxies[0].get('latency')}ms  "
             f"最慢: {sorted_proxies[-1].get('latency')}ms"
         )
         generate_top_nodes_json(sorted_proxies, top_n=20)
         generate_all_subscriptions(sorted_proxies, top_n=20)
     else:
         logger.warning(
-            "🤷 无节点通过测速。\n"
-            "   排查方向：\n"
+            "🤷 无节点通过测速。排查方向：\n"
             "   1. 检查 clash-speedtest 是否正确安装\n"
-            "   2. 检查 Actions 网络是否能访问外网（generate_204 / Chrome CDN）\n"
-            "   3. 调高 max_latency_ms 或调低 min_speed_mbps 后重试"
+            "   2. 检查 Actions 网络能否访问外网\n"
+            "   3. 适当调高 max_latency_ms 或调低 min_speed_mbps"
         )
 
     logger.info("🎊 完成！")
