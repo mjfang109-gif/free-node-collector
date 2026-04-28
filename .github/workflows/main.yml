@@ -3,11 +3,12 @@ name: 自动采集免费节点
 on:
   schedule:
     - cron: '0 */6 * * *'   # 每 6 小时运行一次
-  workflow_dispatch:        # 支持手动触发
+  workflow_dispatch:         # 支持手动触发
 
 jobs:
   collect:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -16,48 +17,39 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 安装依赖
-        run: pip install -r requirements.txt
+      - name: 设置 Go（用于安装 clash-speedtest）
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+          # 缓存 Go 模块，加速后续安装
+          cache: false
 
-      # ────────────────────────────────────────────────────────────
-      # 关键步骤：安装 mihomo（Clash Meta）内核
-      # 没有这个内核，测速只能做 TCP 握手，无法验证代理协议真正可用，
-      # 导致生成的订阅节点在 Clash Verge 中全部显示 timeout！
-      # ────────────────────────────────────────────────────────────
-      - name: 安装 mihomo 内核
+      # ── 关键步骤：安装 clash-speedtest ───────────────────────
+      - name: 安装 clash-speedtest
         run: |
-          MIHOMO_VERSION="v1.19.10"
-          ARCH=$(uname -m)
-          if [ "$ARCH" = "x86_64" ]; then
-            ARCH_NAME="amd64"
-          elif [ "$ARCH" = "aarch64" ]; then
-            ARCH_NAME="arm64"
-          else
-            ARCH_NAME="amd64"
-          fi
-          
-          echo "正在下载 mihomo ${MIHOMO_VERSION} (${ARCH_NAME})..."
-          wget -q "https://github.com/MetaCubeX/mihomo/releases/download/${MIHOMO_VERSION}/mihomo-linux-${ARCH_NAME}-${MIHOMO_VERSION}.gz" \
-               -O mihomo.gz
-          
-          # 解压并赋予执行权限
-          gzip -d mihomo.gz
-          chmod +x mihomo
-          
-          # 移动到系统 PATH（确保 Python 能找到）
-          sudo mv mihomo /usr/local/bin/mihomo
-          
+          echo "📦 安装 clash-speedtest..."
+          go install github.com/faceair/clash-speedtest@latest
+
+          # 将 Go bin 目录加入 PATH（后续步骤生效）
+          echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
+
           # 验证安装
-          echo "mihomo 版本："
-          mihomo -v || echo "版本检测失败，但文件已安装"
-          echo "✅ mihomo 安装完成"
+          clash-speedtest -v || $(go env GOPATH)/bin/clash-speedtest -v
+          echo "✅ clash-speedtest 安装成功"
+
+      - name: 安装 Python 依赖
+        run: pip install -r requirements.txt
 
       - name: 运行采集 + 测速 + 生成订阅
         run: python -m src.main
+        env:
+          # Go bin 目录，让 speed_tester.py 能找到 clash-speedtest
+          PATH: "${{ env.PATH }}:/root/go/bin:/home/runner/go/bin"
+
       - name: 提交更新到仓库
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
           git add dist/
-          git commit -m "🚀 自动更新节点 $(date +'%Y-%m-%d %H:%M:%S UTC')" || echo "没有新节点跳过提交"
+          git commit -m "🚀 自动更新节点 $(date +'%Y-%m-%d %H:%M:%S UTC')" || echo "没有变更，跳过提交"
           git push

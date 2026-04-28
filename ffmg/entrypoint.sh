@@ -4,10 +4,9 @@
 sleep 2
 
 echo "🚀 容器初始化：进行首次画面渲染..."
-# 此时生成的路径是 /app/bg.jpg
 python3 render.py
 
-# 开启后台循环：每隔 15 分钟重新渲染一次
+# 后台定时刷新渲染
 (
   while true; do
     sleep 900
@@ -18,13 +17,14 @@ python3 render.py
 
 echo "🎥 启动 FFmpeg 推送至 YouTube..."
 
-# 【核心修正】:
-# 1. -f image2 必须紧跟 -update 1，中间不能插入 -stream_loop
-# 2. 对于单张图片更新流，-update 1 已经包含了循环读取逻辑，第一个输入不需要 -stream_loop
+# 【终极解决方案】：
+# 1. 使用单引号包裹 -vf 后的整个内容，防止 Bash 干扰
+# 2. 针对 FFmpeg 4.4.2，localtime 后的冒号需要一层转义，时间内部的冒号需要两层转
 ffmpeg -re \
     -loop 1 -i /app/bg.jpg \
     -stream_loop -1 -i /app/bgm.mp3 \
-    -vf "drawtext=fontfile=/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc:text='%{localtime\:%H\\:%M\\:%S}':x=1560:y=65:fontsize=56:fontcolor=white:shadowcolor=black:shadowx=2:shadowy=2" \
-    -c:v libx264 -preset veryfast -r 15 -g 30 -b:v 800k -maxrate 800k -bufsize 1600k \
+    -vf "drawtext=fontfile=/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc:text='%{localtime\:%T}':x=1550:y=90:fontsize=45:fontcolor=white:shadowcolor=black:shadowx=2:shadowy=2" \
+    -c:v libx264 -preset veryfast -r 15 -g 30 \
+    -b:v 2500k -maxrate 2500k -bufsize 5000k \
     -c:a aac -b:a 128k -ar 44100 \
-    -shortest -f flv "rtmp://a.rtmp.youtube.com/live2/${YOUTUBE_STREAM_KEY}"
+    -f flv "rtmp://a.rtmp.youtube.com/live2/${YOUTUBE_STREAM_KEY}"

@@ -1,11 +1,10 @@
 """
-main.py - Free-Node-Collector 主入口
+main.py - Free-Node-Collector 主入口（clash-speedtest 集成版）
 
-【本次优化说明】
-1. 调整测速并发参数，适配 GitHub Actions 资源限制
-2. 内核测试模式下，适当降低并发（每个节点启动子进程，并发过高会 OOM）
-3. 增加更详细的进度日志，方便排查问题
-4. 在本地开发环境自动尝试下载 mihomo，不依赖手动安装
+【变更】
+- 测速完全委托给 clash-speedtest，Python 只做采集 / 解析 / 去重 / 生成
+- 去重从 server:port 升级为 type:server:port:credential，避免误删同 IP 不同协议节点
+- 静态预过滤增加私有地址过滤
 """
 
 import asyncio
@@ -13,7 +12,6 @@ import json
 import sys
 from pathlib import Path
 
-# 确保 src 目录在 sys.path 中（支持 python -m src.main 和直接运行两种方式）
 _src_dir = Path(__file__).parent.resolve()
 if str(_src_dir) not in sys.path:
     sys.path.insert(0, str(_src_dir))
@@ -22,27 +20,48 @@ from logger import setup_logger
 from config import load_all_sources, get_dist_dir
 from collectors import UnifiedCollector, TelegramWebCollector
 from parsers import universal_parser
-from testers.speed_tester import speed_test_all, CLASH_BINARY, _download_mihomo
+from testers.speed_tester import speed_test_all, CLASH_SPEEDTEST_BIN
 from generators import generate_all_subscriptions
 from utils import get_country_info_from_name, clean_node_name
 
 logger = setup_logger()
 
+_SS_VALID_CIPHERS = {
+    "aes-128-gcm", "aes-256-gcm", "chacha20-ietf-poly1305",
+    "aes-128-cfb", "aes-256-cfb", "chacha20-ietf",
+    "xchacha20-ietf-poly1305", "2022-blake3-aes-128-gcm",
+    "2022-blake3-aes-256-gcm", "2022-blake3-chacha20-poly1305",
+}
+
+
+def _proxy_fingerprint(p: dict) -> str:
+    """
+    节点唯一指纹：type + server + port + 凭证前16字符。
+    比只用 server:port 更精确，不会误删同 IP 不同协议的节点。
+    """
+    ptype = str(p.get("type", "")).lower()
+    server = str(p.get("server", "")).lower()
+    port = str(p.get("port", ""))
+    cred = str(p.get("uuid") or p.get("password") or "")[:16]
+    return f"{ptype}:{server}:{port}:{cred}"
+
 
 def _is_valid_for_testing(p: dict) -> bool:
-    """
-    静态预过滤：淘汰明显不可用的节点，避免浪费测速资源。
-    只过滤「100% 无效」的节点，不要过度过滤（内核测试会精确验证）。
-    """
+    """静态预过滤：只丢弃 100% 无效的节点"""
     server = p.get("server", "")
     port = p.get("port")
     ptype = str(p.get("type", "")).lower()
 
-    # 基础：server/port 必须有效
     if not server or not isinstance(port, int) or not (1 <= port <= 65535):
         return False
-
-    # 协议专项：缺少必要凭证直接丢弃
+    # 过滤内网/保留地址
+    if any(server.startswith(pfx) for pfx in (
+            "127.", "0.0.0.0", "localhost", "::1",
+            "10.", "192.168.", "172.16.", "172.17.", "172.18.", "172.19.",
+            "172.20.", "172.21.", "172.22.", "172.23.", "172.24.", "172.25.",
+            "172.26.", "172.27.", "172.28.", "172.29.", "172.30.", "172.31.",
+    )):
+        return False
     if ptype in ("vmess", "vless") and not p.get("uuid"):
         return False
     if ptype in ("trojan", "hy2", "hysteria2") and not p.get("password"):
@@ -50,186 +69,146 @@ def _is_valid_for_testing(p: dict) -> bool:
     if ptype == "ss":
         if not p.get("password"):
             return False
-        # cipher 为 auto 会让 Clash 内核崩溃，提前拦截
-        cipher = str(p.get("cipher", "")).lower()
-        valid_ciphers = {
-            "aes-128-gcm", "aes-256-gcm", "chacha20-ietf-poly1305",
-            "aes-128-cfb", "aes-256-cfb", "chacha20-ietf",
-            "xchacha20-ietf-poly1305", "2022-blake3-aes-128-gcm",
-            "2022-blake3-aes-256-gcm", "2022-blake3-chacha20-poly1305",
-        }
-        if cipher not in valid_ciphers:
+        if str(p.get("cipher", "")).lower() not in _SS_VALID_CIPHERS:
             return False
-
     return True
 
 
 def generate_top_nodes_json(proxies: list, top_n: int = 20):
-    """将 top N 节点信息写入 JSON 文件，供 ffmg/render.py 使用。"""
+    """写入 top_nodes.json 供 ffmg/render.py 使用"""
     if not proxies:
-        logger.info("JSON 生成器：没有可用的节点。")
         return
-
-    top_proxies = proxies[:top_n]
-    nodes_info = [
+    nodes = [
         {
             "protocol": p.get("type", "N/A"),
             "location": get_country_info_from_name(p.get("name", ""))[0],
             "ip": p.get("server", "N/A"),
             "port": p.get("port", 0),
             "latency_ms": p.get("latency", 9999),
+            "speed_mbps": p.get("speed_mbps", 0),
             "name": p.get("name", "N/A"),
         }
-        for p in top_proxies
+        for p in proxies[:top_n]
     ]
-
-    dist_dir = get_dist_dir()
-    dist_dir.mkdir(exist_ok=True)
-    file_path = dist_dir / "top_nodes.json"
-
-    try:
-        with open(file_path, "w", encoding="utf-8") as f:
-            json.dump(nodes_info, f, ensure_ascii=False, indent=2)
-        logger.info(f"✅ Top {top_n} 节点 JSON 生成完成 → {file_path}")
-    except Exception as e:
-        logger.error(f"❌ 生成 JSON 文件失败: {e}", exc_info=True)
+    out = get_dist_dir() / "top_nodes.json"
+    out.parent.mkdir(exist_ok=True)
+    with open(out, "w", encoding="utf-8") as f:
+        json.dump(nodes, f, ensure_ascii=False, indent=2)
+    logger.info(f"✅ top_nodes.json → {out}")
 
 
 async def main():
-    """主入口函数。"""
-    logger.info("🚀 Free-Node-Collector 开始运行...")
+    logger.info("🚀 Free-Node-Collector 启动")
 
-    # ── 1. 预检：确认内核状态 ─────────────────────────────────────
-    if CLASH_BINARY:
-        logger.info(f"✅ 内核就绪: {CLASH_BINARY}")
-    else:
-        logger.info("🔄 尝试下载 mihomo 内核...")
-        binary = _download_mihomo()
-        if binary:
-            logger.info(f"✅ 内核下载成功: {binary}")
-        else:
-            logger.warning(
-                "⚠️ 无法获取 mihomo 内核！\n"
-                "   将降级使用 TCP 测试，生成的订阅可能包含不可用节点。\n"
-                "   在 GitHub Actions 中请确认 collect-nodes.yml 已添加安装步骤。"
-            )
-
-    # ── 2. 加载信源 ───────────────────────────────────────────────
-    sources = load_all_sources()
-    if not sources:
-        logger.critical("❌ 未加载到任何信源，程序退出。")
-        return
-
-    logger.info(f"📋 共加载 {len(sources)} 个信源")
-
-    collector = UnifiedCollector()
-    tg_web_collector = TelegramWebCollector()
-
-    # ── 3. 抓取并解析节点 ─────────────────────────────────────────
-    all_proxies: list[dict] = []
-    seen_proxies: set[str] = set()
-
-    for i, source in enumerate(sources, 1):
-        source_name = source.get("name", "未知信源")
-        logger.info(f"🔍 [{i}/{len(sources)}] 正在抓取: {source_name}")
-
-        if source.get("type") == "telegram_web":
-            content_data = tg_web_collector.fetch(source)
-        else:
-            content_data = collector.fetch(source)
-
-        if not content_data or not content_data.get("content"):
-            logger.info(f"  ↳ 抓取失败或内容为空，跳过")
-            continue
-
-        proxies = universal_parser(content_data["content"], source_type=source.get("type"))
-        if not proxies:
-            logger.info(f"  ↳ 未解析到任何节点")
-            continue
-
-        # 去重（以 server:port 为 key）
-        new_count = 0
-        for p in proxies:
-            identifier = f'{p.get("server")}:{p.get("port")}'
-            if identifier not in seen_proxies:
-                seen_proxies.add(identifier)
-                all_proxies.append(p)
-                new_count += 1
-
-        logger.info(f"  ↳ 解析到 {len(proxies)} 个节点，新增 {new_count} 个（去重后共 {len(all_proxies)} 个）")
-
-    logger.info(f"✅ 全部信源处理完毕，共获得 {len(all_proxies)} 个不重复节点")
-
-    # ── 4. 测速前基础过滤 ─────────────────────────────────────────
-    logger.info("🧹 开始测速前预过滤...")
-    filtered_proxies = [p for p in all_proxies if _is_valid_for_testing(p)]
-    logger.info(
-        f"预过滤结果：保留 {len(filtered_proxies)} 个"
-        f"（丢弃 {len(all_proxies) - len(filtered_proxies)} 个明显无效节点）"
-    )
-
-    if not filtered_proxies:
-        logger.critical("❌ 预过滤后无可用节点，程序退出。")
-        return
-
-    # ── 5. 净化节点名称 ───────────────────────────────────────────
-    logger.info("🧼 开始净化节点名称...")
-    for proxy in filtered_proxies:
-        proxy["name"] = clean_node_name(proxy)
-
-    # ── 6. 两阶段测速 ─────────────────────────────────────────────
-    TOTAL_NODES_TO_KEEP = 200  # 最终保留的节点总数
-    TOP_N_NODES = 20  # JSON 和 top 订阅的节点数
-
-    # 内核测试并发数：每个节点启动一个 mihomo 子进程
-    # GitHub Actions (2核4G) 建议 10-15，本地开发可调高
-    KERNEL_WORKERS = 12
-    TOTAL_TEST_TIMEOUT = 1200  # 20分钟总超时
-
-    logger.info(
-        f"⚡ 开始两阶段测速\n"
-        f"   目标: 保留最优 {TOTAL_NODES_TO_KEEP} 个节点\n"
-        f"   内核并发: {KERNEL_WORKERS}\n"
-        f"   总超时: {TOTAL_TEST_TIMEOUT}s"
-    )
-
-    sorted_proxies = await speed_test_all(
-        filtered_proxies,
-        max_workers=KERNEL_WORKERS,
-        top_n=TOTAL_NODES_TO_KEEP,
-        total_timeout=TOTAL_TEST_TIMEOUT,
-        latency_threshold=5000,  # 5秒内响应均视为可用
-        phase1_workers=200,
-        phase1_timeout=3,
-        phase1_keep=500,  # 阶段一最多保留500个进入精确测试
-    )
-
-    # ── 7. 生成订阅文件 ───────────────────────────────────────────
-    if sorted_proxies:
-        logger.info(
-            f"🎉 测速完成！{len(sorted_proxies)} 个节点通过验证\n"
-            f"   最快: {sorted_proxies[0].get('latency')}ms ({sorted_proxies[0].get('name', '')})\n"
-            f"   最慢: {sorted_proxies[-1].get('latency')}ms ({sorted_proxies[-1].get('name', '')})"
-        )
-        generate_top_nodes_json(sorted_proxies, top_n=TOP_N_NODES)
-        generate_all_subscriptions(sorted_proxies, top_n=TOP_N_NODES)
+    # ── 1. 内核状态提示 ───────────────────────────────────────
+    if CLASH_SPEEDTEST_BIN:
+        logger.info(f"✅ clash-speedtest: {CLASH_SPEEDTEST_BIN}")
     else:
         logger.warning(
-            "🤷 没有任何节点通过测速，无法生成任何文件。\n"
-            "   可能原因：\n"
-            "   1. GitHub Actions 网络环境被限制（无法访问外网做 HTTP 测试）\n"
-            "   2. 信源节点质量太差（大量节点失效）\n"
-            "   3. mihomo 内核未正确安装\n"
-            "   排查建议：检查 Actions 日志中的 [阶段二] 输出"
+            "⚠️ clash-speedtest 未就绪，将使用 TCP/TLS 降级模式。\n"
+            "   请在 collect-nodes.yml 中添加安装步骤，详见配套说明。"
         )
 
-    logger.info("🎊 全部任务完成！")
+    # ── 2. 加载信源 ───────────────────────────────────────────
+    sources = load_all_sources()
+    if not sources:
+        logger.critical("❌ 未加载任何信源，退出。")
+        return
+    logger.info(f"📋 已加载 {len(sources)} 个信源")
+
+    # ── 3. 采集 + 解析 + 去重 ─────────────────────────────────
+    collector = UnifiedCollector()
+    tg_collector = TelegramWebCollector()
+    all_proxies: list[dict] = []
+    seen: set[str] = set()
+
+    for i, source in enumerate(sources, 1):
+        name = source.get("name", "未知")
+        logger.info(f"🔍 [{i}/{len(sources)}] {name}")
+
+        fetcher = tg_collector if source.get("type") == "telegram_web" else collector
+        data = fetcher.fetch(source)
+        if not data or not data.get("content"):
+            logger.info("  ↳ 内容为空，跳过")
+            continue
+
+        proxies = universal_parser(data["content"], source_type=source.get("type"))
+        if not proxies:
+            logger.info("  ↳ 未解析到节点")
+            continue
+
+        added = 0
+        for p in proxies:
+            fp = _proxy_fingerprint(p)
+            if fp not in seen:
+                seen.add(fp)
+                all_proxies.append(p)
+                added += 1
+
+        logger.info(f"  ↳ 解析 {len(proxies)} 个，新增 {added} 个（共 {len(all_proxies)} 个）")
+
+    logger.info(f"✅ 采集完毕，共 {len(all_proxies)} 个不重复节点")
+
+    # ── 4. 静态预过滤 ─────────────────────────────────────────
+    filtered = [p for p in all_proxies if _is_valid_for_testing(p)]
+    logger.info(
+        f"🧹 预过滤：保留 {len(filtered)} 个"
+        f"（丢弃 {len(all_proxies) - len(filtered)} 个无效节点）"
+    )
+    if not filtered:
+        logger.critical("❌ 预过滤后无节点，退出。")
+        return
+
+    # ── 5. 净化节点名称 ───────────────────────────────────────
+    for p in filtered:
+        p["name"] = clean_node_name(p)
+
+    # ── 6. 两阶段测速 ─────────────────────────────────────────
+    sorted_proxies = await speed_test_all(
+        filtered,
+        top_n=200,
+        # 阶段一：TCP 快速预过滤
+        phase1_workers=200,
+        phase1_timeout=2.5,
+        phase1_keep=600,
+        # 阶段二：clash-speedtest 参数
+        # speed_mode="fast" 只测延迟，速度最快
+        # speed_mode="download" 测下载速度，更准确（推荐）
+        speed_mode="download",
+        max_latency_ms=3000,  # 免费节点延迟普遍偏高，3000ms 是合理阈值
+        min_speed_mbps=0.3,  # 免费节点速度下限，0.3MB/s = 约 2.4Mbps
+        test_timeout_s=10,
+        concurrent=4,
+        # 降级参数（无 clash-speedtest 时）
+        fallback_workers=100,
+        fallback_latency_threshold=3000,
+    )
+
+    # ── 7. 生成订阅文件 ───────────────────────────────────────
+    if sorted_proxies:
+        logger.info(
+            f"🎉 {len(sorted_proxies)} 个节点通过验证\n"
+            f"   最快: {sorted_proxies[0].get('latency')}ms  "
+            f"最慢: {sorted_proxies[-1].get('latency')}ms"
+        )
+        generate_top_nodes_json(sorted_proxies, top_n=20)
+        generate_all_subscriptions(sorted_proxies, top_n=20)
+    else:
+        logger.warning(
+            "🤷 无节点通过测速。\n"
+            "   排查方向：\n"
+            "   1. 检查 clash-speedtest 是否正确安装\n"
+            "   2. 检查 Actions 网络是否能访问外网（generate_204 / Chrome CDN）\n"
+            "   3. 调高 max_latency_ms 或调低 min_speed_mbps 后重试"
+        )
+
+    logger.info("🎊 完成！")
 
 
 if __name__ == "__main__":
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
-        logger.info("🛑 程序被用户手动中断。")
+        logger.info("🛑 用户中断。")
     except Exception as e:
-        logger.critical(f"💥 程序因意外错误而终止: {e}", exc_info=True)
+        logger.critical(f"💥 异常退出: {e}", exc_info=True)
