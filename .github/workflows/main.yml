@@ -1,14 +1,12 @@
-name: 自动采集免费节点
+name: Free-Node-Collector
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   schedule:
     - cron: '0 */6 * * *'   # 每 6 小时运行一次
-  workflow_dispatch:          # 支持手动触发
+  workflow_dispatch:         # 支持手动触发
 
-# 必须声明 write 权限，否则 git push 会 403
 permissions:
   contents: write
 
@@ -20,37 +18,37 @@ jobs:
       - name: 检出代码
         uses: actions/checkout@v4
 
-      - name: 设置 Python 3.11
+      - name: 设置 Python 3.12
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
 
-      - name: 设置 Go（用于编译安装 clash-speedtest）
+      - name: 设置 Go（用于 clash-speedtest）
         uses: actions/setup-go@v5
         with:
           go-version: 'stable'
-          cache: false   # 不缓存 Go module，避免偶发缓存损坏
 
       - name: 安装 clash-speedtest
         run: |
           go install github.com/faceair/clash-speedtest@latest
-          # 打印完整帮助，便于确认实际支持的参数名
-          echo "=== clash-speedtest flags ==="
-          ~/go/bin/clash-speedtest -h 2>&1 || true
-          echo "=============================="
+          echo "$(~/go/bin)" >> $GITHUB_PATH
+          clash-speedtest -h 2>&1 || true
 
       - name: 安装 Python 依赖
-        run: pip install -r requirements.txt
+        run: pip install -r requirements.txt -q
 
       - name: 运行采集 + 测速 + 生成订阅
         run: python -m src.main
 
-      - name: 提交更新到仓库
+      - name: 显示生成的文件
+        run: |
+          echo "=== dist 目录内容 ==="
+          ls -lh dist/ || echo "dist 目录为空或不存在"
+
+      - name: 提交更新
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
           git add dist/
-          # 只有真正有变更时才提交，避免空提交报错
-          git diff --staged --quiet \
-            && echo "✅ 无节点变化，跳过提交" \
-            || (git commit -m "🚀 自动更新节点 $(date -u +'%Y-%m-%d %H:%M:%S UTC')" && git push)
+          git diff --staged --quiet && echo "✅ 无变更，跳过提交" || \
+            (git commit -m "🚀 自动更新节点 $(date -u +'%Y-%m-%d %H:%M:%S UTC')" && git push)
