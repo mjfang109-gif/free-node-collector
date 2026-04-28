@@ -1,0 +1,33 @@
+services:
+  node-collector:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: node-collector:latest
+    container_name: node-collector
+
+    # 挂载源码目录（宿主机当前目录 → 容器 /app）
+    # 代码修改后直接生效，无需重新 build
+    volumes:
+      - .:/app
+      # dist 目录单独命名卷，保证输出文件持久化
+      # 即使容器重建，上次生成的订阅文件也不会丢失
+      - dist_output:/app/dist
+
+    working_dir: /app
+
+    # 容器退出后自动删除，避免残留
+    restart: "no"
+
+    # -u 禁用输出缓冲，日志实时可见
+    command: [ "python", "-u", "-m", "src.main" ]
+
+    # 资源限制（防止测速时把宿主机跑满）
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 1G
+
+volumes:
+  dist_output:

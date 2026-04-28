@@ -237,7 +237,7 @@ def _build_clash_yaml_for_speedtest(proxies: list) -> tuple[str, dict]:
         clean_proxies.append(sanitized)
 
     config = {
-        "mixed-port": 7890,
+        "mixed-port": 17890,  # 使用高位端口，避免与系统服务冲突
         "allow-lan":  False,
         "mode":       "global",
         "log-level":  "silent",
@@ -364,7 +364,10 @@ def run_clash_speedtest(
             return []
 
         input_yaml.write_text(yaml_content, encoding="utf-8")
-
+        logger.info(
+            f"📄 输入配置：{len(index_map)} 个节点 | "
+            f"文件大小: {input_yaml.stat().st_size // 1024} KB"
+        )
         # clash-speedtest 实际支持的参数：
         #   -c / -output / -timeout / -concurrent
         # 注意：-max-latency / -min-speed 均不存在，会导致退出码2！
@@ -391,8 +394,12 @@ def run_clash_speedtest(
             )
             if proc.returncode != 0:
                 logger.warning(f"⚠️ clash-speedtest 退出码 {proc.returncode}")
+            # 无论成功失败都打印输出，便于诊断
+            if proc.stdout:
+                level = logger.info if proc.returncode == 0 else logger.warning
+                level(f"clash-speedtest stdout:\n{proc.stdout[:2000]}")
             if proc.stderr:
-                logger.debug(f"clash-speedtest stderr: {proc.stderr[:500]}")
+                logger.warning(f"clash-speedtest stderr:\n{proc.stderr[:2000]}")
         except subprocess.TimeoutExpired:
             logger.error("❌ clash-speedtest 超时，尝试使用已完成的部分结果")
         except FileNotFoundError:

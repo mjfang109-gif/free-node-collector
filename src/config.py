@@ -14,7 +14,7 @@ DIST_DIR = PROJECT_ROOT / "dist"
 
 def load_all_sources():
     """加载所有信源配置文件并合并。"""
-    source_files = ["sources.yaml"]
+    source_files = ["all_type_source.yaml"]
     all_sources = []
 
     logger.info("🔄 开始加载信源配置文件...")

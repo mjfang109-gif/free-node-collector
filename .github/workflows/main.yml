@@ -34,8 +34,10 @@ jobs:
       - name: 安装 clash-speedtest
         run: |
           go install github.com/faceair/clash-speedtest@latest
-          # 验证安装成功
-          ~/go/bin/clash-speedtest -h 2>&1 | head -5 || true
+          # 打印完整帮助，便于确认实际支持的参数名
+          echo "=== clash-speedtest flags ==="
+          ~/go/bin/clash-speedtest -h 2>&1 || true
+          echo "=============================="
 
       - name: 安装 Python 依赖
         run: pip install -r requirements.txt
