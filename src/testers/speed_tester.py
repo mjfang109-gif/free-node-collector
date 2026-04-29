@@ -240,24 +240,41 @@ def _parse_speedtest_output(stdout: str, index_map: dict,
     skipped_no_latency = 0
     skipped_no_speed_data = 0
     skipped_low_speed = 0
+    skip_header_count = 0
+    short_line_count = 0
+    no_node_prefix_count = 0
 
-    logger.debug(f"📊 开始解析测速输出，index_map 大小：{len(index_map)}")
-    logger.debug(f"📊 筛选条件：延迟≤{max_latency_ms}ms, 速度≥{min_speed_mbps}MB/s")
+    logger.info(f"📊 开始解析测速输出，index_map 大小：{len(index_map)}")
+    logger.info(f"📊 筛选条件：延迟≤{max_latency_ms}ms, 速度≥{min_speed_mbps}MB/s")
+    logger.info(f"📊 stdout 原始内容长度：{len(stdout)} 字符")
+
+    # 打印完整 stdout 用于调试（前 500 字符 + 后 500 字符）
+    if len(stdout) <= 1000:
+        logger.info(f"📄 完整 stdout:\n{stdout}")
+    else:
+        logger.info(f"📄 stdout 头部 (500 字符):\n{stdout[:500]}")
+        logger.info(f"📄 stdout 尾部 (500 字符):\n{stdout[-500:]}")
 
     for line in stdout.splitlines():
         # 跳过表头
         if line.strip().startswith('序号') or not line.strip():
+            skip_header_count += 1
             continue
 
         # 使用空白字符分割（空格和 tab 都支持）
         parts = re.split(r'\s{2,}', line.strip())
         if len(parts) < 6:
+            short_line_count += 1
+            if short_line_count <= 3:
+                logger.warning(f"⚠️ parts 不足 ({len(parts)}): {line[:100]}")
             continue
 
         # 节点名格式：node_XXXXX
         idx_name = parts[1].strip() if len(parts) > 1 else ""
         if not idx_name.startswith("node_"):
-            logger.debug(f"⚠️ 非 node_前缀行：{line[:80]}")
+            no_node_prefix_count += 1
+            if no_node_prefix_count <= 3:
+                logger.warning(f"⚠️ 非 node_前缀：idx_name={idx_name}, parts[0:3]={parts[0:3]}")
             continue
 
         # 解析丢包率 (第 6 列，索引 5)
@@ -314,7 +331,11 @@ def _parse_speedtest_output(stdout: str, index_map: dict,
                 node["speed_mbps"] = speed
             result.append(node)
 
-    logger.info(f"📈 解析统计：通过={len(result)}, 无延迟/超时={skipped_no_latency}, 低速={skipped_low_speed}, 无速度数据={skipped_no_speed_data}")
+    logger.info(
+        f"📈 解析统计：通过={len(result)}, 跳过头部/空行={skip_header_count}, "
+        f"parts 不足={short_line_count}, 非 node_前缀={no_node_prefix_count}, "
+        f"无延迟/超时={skipped_no_latency}, 低速={skipped_low_speed}, 无速度数据={skipped_no_speed_data}"
+    )
 
     result.sort(key=lambda x: x.get("latency", 9999))
     return result
