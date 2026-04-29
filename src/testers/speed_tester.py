@@ -261,45 +261,54 @@ def _parse_speedtest_output(stdout: str, index_map: dict,
             skip_header_count += 1
             continue
 
-        # 使用空白字符分割（支持 tab 分隔和空格分隔）
-        parts = line.strip().split('\t')
-        if len(parts) < 6:
-            parts = re.split(r'\s{2,}', line.strip())
+        # 使用 split() 按任意空白分割（兼容 tab、单空格、多空格、混合分隔符）
+        parts = line.strip().split()
         if len(parts) < 6:
             short_line_count += 1
             if short_line_count <= 3:
                 logger.warning(f"⚠️ parts 不足 ({len(parts)}): {line[:100]}")
             continue
 
-        # 节点名格式：node_XXXXX
-        idx_name = parts[1].strip() if len(parts) > 1 else ""
-        if not idx_name.startswith("node_"):
+        # 定位 node_ 开头的列：可能是 parts[0]（无前缀序号）或 parts[1]（有序号如 "1."）
+        node_idx = None
+        for ci in range(min(3, len(parts))):
+            if parts[ci].startswith("node_"):
+                node_idx = ci
+                break
+        if node_idx is None:
             no_node_prefix_count += 1
             if no_node_prefix_count <= 3:
-                logger.warning(f"⚠️ 非 node_前缀：idx_name={idx_name}, parts[0:3]={parts[0:3]}")
+                logger.warning(f"⚠️ 非 node_前缀：parts={parts[:4]}")
             continue
 
-        # 解析丢包率 (第 6 列，索引 5)
-        packet_loss = None
-        if len(parts) >= 6:
-            m = re.match(r'^([\d.]+)%$', parts[5].strip())
-            if m:
-                packet_loss = float(m.group(1))
+        # 相对于 node_ 列的偏移定位各字段
+        # 典型格式：[序号.] node_xxx 类型 延迟 抖动 丢包率 [速度...]
+        off_latency = node_idx + 2
+        off_loss = node_idx + 4
+        off_speed = node_idx + 5
 
-        # 解析延迟 (第 4 列，索引 3)
+        # 解析延迟
         latency = None
-        if len(parts) >= 4:
-            val = parts[3].strip()
+        if len(parts) > off_latency:
+            val = parts[off_latency].strip()
             if val != 'N/A':
                 m = re.match(r'^(\d+)ms$', val)
                 if m:
                     latency = int(m.group(1))
 
-        # 解析速度 (第 7 列，索引 6)
+        # 解析丢包率
+        packet_loss = None
+        if len(parts) > off_loss:
+            m = re.match(r'^([\d.]+)%$', parts[off_loss].strip())
+            if m:
+                packet_loss = float(m.group(1))
+
+        # 解析速度
         speed = 0.0
-        has_speed_column = len(parts) >= 7
-        if has_speed_column:
-            s = parts[6].strip()
+        has_speed_column = False
+        if len(parts) > off_speed:
+            has_speed_column = True
+            s = parts[off_speed].strip()
             if s != 'N/A':
                 m = re.match(r'^([\d.]+)(MB/s|KB/s)$', s)
                 if m:
@@ -309,7 +318,7 @@ def _parse_speedtest_output(stdout: str, index_map: dict,
 
         # 调试：打印部分解析结果
         if len(result) < 5:
-            logger.debug(f"🔍 {idx_name}: parts={len(parts)}, latency={latency}, speed={speed}, has_col7={has_speed_column}")
+            logger.debug(f"🔍 {parts[node_idx]}: latency={latency}, speed={speed}, has_col={has_speed_column}, parts={len(parts)}")
 
         # 筛选条件：延迟达标且速度达标（不强求丢包率为 0）
         if latency is None or latency > max_latency_ms:
@@ -324,7 +333,8 @@ def _parse_speedtest_output(stdout: str, index_map: dict,
         if speed == 0 and has_speed_column:
             skipped_no_speed_data += 1
 
-        # 恢复原始代理信息
+        # 恢复原始代理信息（node_ 名作为键）
+        idx_name = parts[node_idx]
         original = index_map.get(idx_name)
         if original:
             node = dict(original)
