@@ -1,6 +1,9 @@
 import re
 import ipaddress
 
+# 品牌名称配置 - 可修改，用于订阅标识和节点命名
+BRAND_NAME = "NodeHub"
+
 COUNTRY_INFO = {
     'US': {'flag': '🇺🇸', 'keywords': ['美国', 'US', 'United States', 'USA']},
     'HK': {'flag': '🇭🇰', 'keywords': ['香港', 'HK', 'Hong Kong']},
@@ -83,7 +86,12 @@ def clean_node_name(proxy: dict) -> str:
             cleaned_name = f"{proxy_type}-{server_label}"
 
     if country_flag:
-        return f"{country_flag} {cleaned_name}"
+        cleaned_name = f"{country_flag} {cleaned_name}"
+
+    # 添加品牌前缀
+    if not cleaned_name.startswith(f"{BRAND_NAME} "):
+        cleaned_name = f"{BRAND_NAME} {cleaned_name}"
+
     return cleaned_name
 
 

@@ -5,6 +5,7 @@ clash_generator.py - 生成合法的 Clash/Mihomo 配置文件
 import yaml
 import logging
 from pathlib import Path
+from utils import BRAND_NAME
 
 logger = logging.getLogger(__name__)
 
@@ -129,14 +130,15 @@ def generate_clash_subscription(
 
     proxy_names = [p["name"] for p in clean_proxies]
 
+    # 构建代理组时加上品牌标识
     proxy_groups = [
         {
-            "name": "🚀 节点选择",
+            "name": f"{BRAND_NAME} - 🚀 节点选择",
             "type": "select",
-            "proxies": ["♻️ 自动选择", "🔮 故障转移", "DIRECT"] + proxy_names,
+            "proxies": [f"{BRAND_NAME} - ♻️ 自动选择", f"{BRAND_NAME} - 🔮 故障转移", "DIRECT"] + proxy_names,
         },
         {
-            "name": "♻️ 自动选择",
+            "name": f"{BRAND_NAME} - ♻️ 自动选择",
             "type": "url-test",
             "url": "http://www.gstatic.com/generate_204",
             "interval": 300,
@@ -144,7 +146,7 @@ def generate_clash_subscription(
             "proxies": proxy_names,
         },
         {
-            "name": "🔮 故障转移",
+            "name": f"{BRAND_NAME} - 🔮 故障转移",
             "type": "fallback",
             "url": "http://www.gstatic.com/generate_204",
             "interval": 300,
@@ -159,9 +161,41 @@ def generate_clash_subscription(
         code, _ = get_country_info_from_name(proxy["name"])
         if code != "未知":
             country_groups.setdefault(code, []).append(proxy["name"])
-    for code, names in sorted(country_groups.items()):
-        proxy_groups.append({"name": f"🌍 {code}", "type": "select",
-                             "proxies": ["🚀 节点选择"] + names})
+
+    # 确保不只有单一国家的节点
+    # 如果只有一个国家，则不按国家分组，而是按延迟分组
+    if len(country_groups) <= 1:
+        # 按延迟分组：高速、中等、低速
+        fast_proxies = [p["name"] for p in clean_proxies if p.get("latency", 9999) < 200]
+        medium_proxies = [p["name"] for p in clean_proxies if 200 <= p.get("latency", 9999) < 500]
+        slow_proxies = [p["name"] for p in clean_proxies if p.get("latency", 9999) >= 500]
+
+        if fast_proxies:
+            proxy_groups.append({
+                "name": f"{BRAND_NAME} - ⚡ 高速节点",
+                "type": "select",
+                "proxies": [f"{BRAND_NAME} - 🚀 节点选择"] + fast_proxies
+            })
+        if medium_proxies:
+            proxy_groups.append({
+                "name": f"{BRAND_NAME} - 🐢 中等节点",
+                "type": "select",
+                "proxies": [f"{BRAND_NAME} - 🚀 节点选择"] + medium_proxies
+            })
+        if slow_proxies:
+            proxy_groups.append({
+                "name": f"{BRAND_NAME} - 🐌 低速节点",
+                "type": "select",
+                "proxies": [f"{BRAND_NAME} - 🚀 节点选择"] + slow_proxies
+            })
+    else:
+        # 多个国家，按国家分组
+        for code, names in sorted(country_groups.items()):
+            proxy_groups.append({
+                "name": f"{BRAND_NAME} - 🌍 {code}",
+                "type": "select",
+                "proxies": [f"{BRAND_NAME} - 🚀 节点选择"] + names
+            })
 
     config = {
         "mixed-port": 7890,
@@ -191,7 +225,7 @@ def generate_clash_subscription(
             "DOMAIN-KEYWORD,openai,🚀 节点选择",
             "GEOIP,LAN,DIRECT",
             "GEOIP,CN,DIRECT",
-            "MATCH,🚀 节点选择",
+            f"MATCH,{BRAND_NAME} - 🚀 节点选择",
         ],
     }
 
