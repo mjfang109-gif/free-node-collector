@@ -261,8 +261,10 @@ def _parse_speedtest_output(stdout: str, index_map: dict,
             skip_header_count += 1
             continue
 
-        # 使用空白字符分割（空格和 tab 都支持）
-        parts = re.split(r'\s{2,}', line.strip())
+        # 使用空白字符分割（支持 tab 分隔和空格分隔）
+        parts = line.strip().split('\t')
+        if len(parts) < 6:
+            parts = re.split(r'\s{2,}', line.strip())
         if len(parts) < 6:
             short_line_count += 1
             if short_line_count <= 3:
