@@ -237,6 +237,12 @@ def _parse_speedtest_output(stdout: str, index_map: dict,
                             max_latency_ms: int, min_speed_mbps: float) -> list:
     """解析 clash-speedtest 标准输出。"""
     result = []
+    skipped_no_latency = 0
+    skipped_no_speed_data = 0
+    skipped_low_speed = 0
+
+    logger.debug(f"📊 开始解析测速输出，index_map 大小：{len(index_map)}")
+    logger.debug(f"📊 筛选条件：延迟≤{max_latency_ms}ms, 速度≥{min_speed_mbps}MB/s")
 
     for line in stdout.splitlines():
         # 跳过表头
@@ -251,6 +257,7 @@ def _parse_speedtest_output(stdout: str, index_map: dict,
         # 节点名格式：node_XXXXX
         idx_name = parts[1].strip() if len(parts) > 1 else ""
         if not idx_name.startswith("node_"):
+            logger.debug(f"⚠️ 非 node_前缀行：{line[:80]}")
             continue
 
         # 解析丢包率 (第 6 列，索引 5)
@@ -271,7 +278,8 @@ def _parse_speedtest_output(stdout: str, index_map: dict,
 
         # 解析速度 (第 7 列，索引 6)
         speed = 0.0
-        if len(parts) >= 7:
+        has_speed_column = len(parts) >= 7
+        if has_speed_column:
             s = parts[6].strip()
             if s != 'N/A':
                 m = re.match(r'^([\d.]+)(MB/s|KB/s)$', s)
@@ -280,14 +288,22 @@ def _parse_speedtest_output(stdout: str, index_map: dict,
                     unit = m.group(2)
                     speed = val if unit == "MB/s" else val / 1024
 
-        # 筛选条件：丢包率 0% 且延迟达标
-        if packet_loss is None or packet_loss > 0:
-            continue
+        # 调试：打印部分解析结果
+        if len(result) < 5:
+            logger.debug(f"🔍 {idx_name}: parts={len(parts)}, latency={latency}, speed={speed}, has_col7={has_speed_column}")
+
+        # 筛选条件：延迟达标且速度达标（不强求丢包率为 0）
         if latency is None or latency > max_latency_ms:
+            skipped_no_latency += 1
             continue
-        # 速度筛选（如果有速度数据）
+        # 速度筛选：有速度数据时才检查，无速度数据也通过（网络限制可能无法测速）
         if speed > 0 and speed < min_speed_mbps:
+            skipped_low_speed += 1
             continue
+
+        # 调试信息：记录被跳过的情况
+        if speed == 0 and has_speed_column:
+            skipped_no_speed_data += 1
 
         # 恢复原始代理信息
         original = index_map.get(idx_name)
@@ -297,6 +313,8 @@ def _parse_speedtest_output(stdout: str, index_map: dict,
             if speed > 0:
                 node["speed_mbps"] = speed
             result.append(node)
+
+    logger.info(f"📈 解析统计：通过={len(result)}, 无延迟/超时={skipped_no_latency}, 低速={skipped_low_speed}, 无速度数据={skipped_no_speed_data}")
 
     result.sort(key=lambda x: x.get("latency", 9999))
     return result
