@@ -22,45 +22,43 @@ dns:
 proxies:
 - name: NodeHub 🇺🇸 >>::US
   type: vless
-  server: 188.114.98.112
+  server: 104.17.152.254
   port: 80
-  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
   tls: false
   network: ws
   ws-opts:
-    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY
+    path: /
     headers:
-      Host: elenaaaaaaaaaa.cloudns.pro.
+      Host: vip.yaml7.ggff.net
 - name: NodeHub 🇺🇸 >>::US_1
   type: vless
-  server: 205.233.181.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
+  server: 104.17.138.160
+  port: 80
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  tls: false
   network: ws
-  sni: sni.111000.indevs.in
-  servername: sni.111000.indevs.in
-  ws-opts:
-    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=
-    headers:
-      Host: sni.111000.indevs.in
-- name: NodeHub 🇺🇸 >>::US_2
-  type: vless
-  server: 154.206.12.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.indevs.in
-  servername: sni.111000.indevs.in
   ws-opts:
     path: /
     headers:
-      Host: sni.111000.indevs.in
+      Host: vip.yaml7.ggff.net
+- name: NodeHub 🇺🇸 >>::US_2
+  type: vless
+  server: 104.18.43.25
+  port: 8443
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  tls: true
+  network: ws
+  sni: kalami-eew.pages.dev
+  servername: kalami-eew.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: kalami-eew.pages.dev
 - name: NodeHub 🇺🇸 >>::US_3
   type: vless
-  server: 198.12.145.138
-  port: 2096
+  server: 160.153.1.222
+  port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   network: ws
@@ -72,8 +70,8 @@ proxies:
       Host: sni.111000.indevs.in
 - name: NodeHub 🇺🇸 >>::US_4
   type: vless
-  server: 104.18.4.130
-  port: 8443
+  server: 135.84.74.47
+  port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   network: ws
@@ -85,20 +83,33 @@ proxies:
       Host: sni.111000.v6.navy
 - name: NodeHub 🇺🇸 >>::US_5
   type: vless
-  server: 135.84.73.129
+  server: 135.84.74.43
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   network: ws
-  sni: sni.111000.dynv6.net
-  servername: sni.111000.dynv6.net
+  sni: sni.111000.v6.navy
+  servername: sni.111000.v6.navy
   ws-opts:
-    path: /?Telegram🇨🇳@WangCai2=
+    path: /
     headers:
-      Host: sni.111000.dynv6.net
+      Host: sni.111000.v6.navy
+- name: NodeHub VLESS-104
+  type: vless
+  server: 104.129.164.138
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.111000.indevs.in
+  servername: sni.111000.indevs.in
+  ws-opts:
+    path: /?telegram🇨🇳 @wangcai2=
+    headers:
+      Host: sni.111000.indevs.in
 - name: NodeHub 🇺🇸 >>::US_6
   type: vless
-  server: 154.211.8.138
+  server: 104.18.185.26
   port: 2096
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
@@ -111,7 +122,7 @@ proxies:
       Host: sni.111000.indevs.in
 - name: NodeHub 🇺🇸 >>::US_7
   type: vless
-  server: 154.194.12.238
+  server: 156.243.246.238
   port: 2096
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
@@ -124,85 +135,59 @@ proxies:
       Host: sni.jpmj.dev
 - name: NodeHub 🇺🇸 >>::US_8
   type: vless
-  server: 156.243.246.238
-  port: 2096
+  server: 192.169.223.149
+  port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   network: ws
-  sni: sni.jpmj.dev
-  servername: sni.jpmj.dev
+  sni: sni.111000.dynv6.net
+  servername: sni.111000.dynv6.net
   ws-opts:
     path: /
     headers:
-      Host: sni.jpmj.dev
+      Host: sni.111000.dynv6.net
 - name: NodeHub 🇺🇸 >>::US_9
   type: vless
-  server: 135.84.74.203
-  port: 443
+  server: 104.18.32.47
+  port: 2053
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   network: ws
-  sni: sni.111000.dynv6.net
-  servername: sni.111000.dynv6.net
-  ws-opts:
-    path: /?Telegram🇨🇳@WangCai2=
-    headers:
-      Host: sni.111000.dynv6.net
-- name: NodeHub 🇺🇸 >>::US_10
-  type: vless
-  server: 135.84.67.42
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.dynv6.net
-  servername: sni.111000.dynv6.net
+  sni: sni.111000.indevs.in
+  servername: sni.111000.indevs.in
   ws-opts:
     path: /
     headers:
-      Host: sni.111000.dynv6.net
+      Host: sni.111000.indevs.in
+- name: NodeHub 🇺🇸 >>::US_10
+  type: vless
+  server: 141.193.213.10
+  port: 2053
+  uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+  tls: true
+  network: ws
+  sni: qyi.fqjd663.ggff.net
+  servername: qyi.fqjd663.ggff.net
+  ws-opts:
+    path: /
+    headers:
+      Host: qyi.fqjd663.ggff.net
 - name: NodeHub 🇺🇸 >>::US_11
   type: vless
-  server: 192.0.54.238
-  port: 2096
+  server: 104.18.12.149
+  port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   network: ws
   sni: sni.jpmj.dev
   servername: sni.jpmj.dev
   ws-opts:
-    path: /?telegram%F0%9F%87%A8%F0%9F%87%B3+%40wangcai2=
+    path: /
     headers:
       Host: sni.jpmj.dev
 - name: NodeHub 🇺🇸 >>::US_12
   type: vless
-  server: 135.84.64.226
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.dynv6.net
-  servername: sni.111000.dynv6.net
-  ws-opts:
-    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
-    headers:
-      Host: sni.111000.dynv6.net
-- name: NodeHub 🇺🇸 >>::US_13
-  type: vless
-  server: 135.84.74.190
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.dynv6.net
-  servername: sni.111000.dynv6.net
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.dynv6.net
-- name: NodeHub 🇺🇸 >>::US_14
-  type: vless
-  server: 159.246.55.238
+  server: 185.162.229.238
   port: 2096
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
@@ -213,9 +198,48 @@ proxies:
     path: /
     headers:
       Host: sni.jpmj.dev
+- name: NodeHub 🥏40
+  type: vless
+  server: 8.39.125.146
+  port: 2083
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  tls: true
+  network: ws
+  sni: kalami-eew.pages.dev
+  servername: kalami-eew.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: kalami-eew.pages.dev
+- name: NodeHub 🇺🇸 >>::US_13
+  type: vless
+  server: 160.153.1.51
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.111000.v6.navy
+  servername: sni.111000.v6.navy
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.navy
+- name: NodeHub 🇺🇸 >>::US_14
+  type: vless
+  server: 155.46.167.231
+  port: 443
+  uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+  tls: true
+  network: ws
+  sni: babayaga-6i7.pages.dev
+  servername: babayaga-6i7.pages.dev
+  ws-opts:
+    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
+    headers:
+      Host: babayaga-6i7.pages.dev
 - name: NodeHub 🇺🇸 >>::US_15
   type: vless
-  server: 135.84.75.14
+  server: 199.34.230.158
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
@@ -223,25 +247,12 @@ proxies:
   sni: sni.111000.dynv6.net
   servername: sni.111000.dynv6.net
   ws-opts:
-    path: /?Telegram🇨🇳@WangCai2=
+    path: /
     headers:
       Host: sni.111000.dynv6.net
 - name: NodeHub 🇺🇸 >>::US_16
   type: vless
-  server: 130.250.137.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.jpmj.dev
-  servername: sni.jpmj.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.jpmj.dev
-- name: NodeHub 🥏73
-  type: vless
-  server: 104.16.250.22
+  server: 188.244.122.138
   port: 2096
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
@@ -254,46 +265,33 @@ proxies:
       Host: sni.111000.indevs.in
 - name: NodeHub 🇺🇸 >>::US_17
   type: vless
-  server: 156.225.72.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 104.18.40.152
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
   tls: true
   network: ws
-  sni: sni.jpmj.dev
-  servername: sni.jpmj.dev
+  sni: 3-2h8.pages.dev
+  servername: 3-2h8.pages.dev
   ws-opts:
     path: /
     headers:
-      Host: sni.jpmj.dev
-- name: NodeHub 🥏53
+      Host: 3-2h8.pages.dev
+- name: NodeHub VLESS-91
   type: vless
-  server: 104.18.16.56
-  port: 2096
+  server: 91.193.58.140
+  port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   network: ws
-  sni: sni.111000.indevs.in
-  servername: sni.111000.indevs.in
+  sni: sni.111000.v6.rocks
+  servername: sni.111000.v6.rocks
   ws-opts:
-    path: /
+    path: /?https://t.me/WangCai2🇨🇳=
     headers:
-      Host: sni.111000.indevs.in
+      Host: sni.111000.v6.rocks
 - name: NodeHub 🇺🇸 >>::US_18
   type: vless
-  server: 172.67.187.117
-  port: 443
-  uuid: 40afa553-1745-4f62-a380-4163c7bb4870
-  tls: true
-  network: ws
-  sni: restless-dew-894b.amirhost4.workers.dev
-  servername: restless-dew-894b.amirhost4.workers.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: restless-dew-894b.amirhost4.workers.dev
-- name: NodeHub 🇺🇸 >>::US_19
-  type: vless
-  server: 172.66.47.45
+  server: 172.64.80.1
   port: 80
   uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
   tls: false
@@ -302,22 +300,22 @@ proxies:
     path: /
     headers:
       Host: vip.yaml7.ggff.net
-- name: NodeHub 🇺🇸 >>::US_20
+- name: NodeHub 🇺🇸 >>::US_19
   type: vless
-  server: 135.84.67.74
-  port: 443
+  server: 205.233.181.138
+  port: 2096
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   network: ws
   sni: sni.111000.indevs.in
   servername: sni.111000.indevs.in
   ws-opts:
-    path: /
+    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=
     headers:
       Host: sni.111000.indevs.in
-- name: NodeHub 🇺🇸 >>::US_21
+- name: NodeHub 🇺🇸 >>::US_20
   type: vless
-  server: 141.11.203.238
+  server: 154.194.12.238
   port: 2096
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
@@ -328,22 +326,9 @@ proxies:
     path: /
     headers:
       Host: sni.jpmj.dev
-- name: NodeHub 🇺🇸 >>::US_22
+- name: NodeHub 🇺🇸 >>::US_21
   type: vless
-  server: 104.18.13.149
-  port: 2087
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.v6.navy
-  servername: sni.111000.v6.navy
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.navy
-- name: NodeHub 🥏47
-  type: vless
-  server: 162.159.36.5
+  server: 160.153.1.127
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
@@ -351,38 +336,36 @@ proxies:
   sni: sni.111000.dynv6.net
   servername: sni.111000.dynv6.net
   ws-opts:
-    path: /?proxyip=ip.111000.de5.net:443
+    path: /
+    headers:
+      Host: sni.111000.dynv6.net
+- name: NodeHub 🇺🇸 >>::US_22
+  type: vless
+  server: 135.84.74.203
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.111000.dynv6.net
+  servername: sni.111000.dynv6.net
+  ws-opts:
+    path: /?Telegram🇨🇳@WangCai2=
     headers:
       Host: sni.111000.dynv6.net
 - name: NodeHub 🇺🇸 >>::US_23
   type: vless
-  server: 135.84.73.222
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
+  server: 104.17.156.229
+  port: 80
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  tls: false
   network: ws
-  sni: sni.111000.dynv6.net
-  servername: sni.111000.dynv6.net
   ws-opts:
     path: /
     headers:
-      Host: sni.111000.dynv6.net
+      Host: vip.yaml7.ggff.net
 - name: NodeHub 🇺🇸 >>::US_24
   type: vless
-  server: 135.84.74.65
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.indevs.in
-  servername: sni.111000.indevs.in
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.indevs.in
-- name: NodeHub 🥏87
-  type: vless
-  server: 188.114.99.243
+  server: 190.93.244.138
   port: 2096
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
@@ -390,251 +373,34 @@ proxies:
   sni: sni.111000.indevs.in
   servername: sni.111000.indevs.in
   ws-opts:
-    path: /?Telegram🇨🇳 @WangCai2=
+    path: /
     headers:
       Host: sni.111000.indevs.in
 - name: NodeHub 🇺🇸 >>::US_25
   type: vless
-  server: 104.129.164.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
+  server: 104.18.185.26
+  port: 80
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  tls: false
   network: ws
-  sni: sni.jpmj.dev
-  servername: sni.jpmj.dev
   ws-opts:
     path: /
     headers:
-      Host: sni.jpmj.dev
+      Host: vip.yaml7.ggff.net
 - name: NodeHub 🇺🇸 >>::US_26
   type: vless
-  server: 104.17.185.207
-  port: 443
+  server: 181.214.1.238
+  port: 2096
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   network: ws
-  sni: sni.111000.dynv6.net
-  servername: sni.111000.dynv6.net
+  sni: sni.jpmj.dev
+  servername: sni.jpmj.dev
   ws-opts:
-    path: /?proxyip=ip.111000.de5.net%3A443
+    path: /
     headers:
-      Host: sni.111000.dynv6.net
+      Host: sni.jpmj.dev
 - name: NodeHub 🇺🇸 >>::US_27
-  type: vless
-  server: 135.84.73.96
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.dynv6.net
-  servername: sni.111000.dynv6.net
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.dynv6.net
-- name: NodeHub 🇺🇸 >>::US_28
-  type: vless
-  server: 104.16.80.73
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.jpmj.dev
-  servername: sni.jpmj.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.jpmj.dev
-- name: NodeHub 🇺🇸 >>::US_29
-  type: vless
-  server: 135.84.74.166
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.dynv6.net
-  servername: sni.111000.dynv6.net
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.dynv6.net
-- name: NodeHub 🇺🇸 >>::US_30
-  type: vless
-  server: 147.78.140.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.jpmj.dev
-  servername: sni.jpmj.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.jpmj.dev
-- name: NodeHub VLESS-104
-  type: vless
-  server: 104.17.152.254
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub 🇺🇸 >>::US_31
-  type: vless
-  server: 135.84.64.66
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.dynv6.net
-  servername: sni.111000.dynv6.net
-  ws-opts:
-    path: /?Telegram🇨🇳@WangCai2=
-    headers:
-      Host: sni.111000.dynv6.net
-- name: NodeHub 🇺🇸 >>::US_32
-  type: vless
-  server: 77.74.228.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.indevs.in
-  servername: sni.111000.indevs.in
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.indevs.in
-- name: NodeHub 🇺🇸 >>::US_33
-  type: vless
-  server: 162.159.36.5
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub 🇺🇸 >>::US_34
-  type: vless
-  server: 135.84.64.79
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.dynv6.net
-  servername: sni.111000.dynv6.net
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.dynv6.net
-- name: NodeHub 🇺🇸 >>::US_35
-  type: vless
-  server: 172.64.155.209
-  port: 2052
-  uuid: 12d75b7d-8fdf-4785-8d62-d836854e7e63
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: parking-nfchbwa1-v2.parking-1ab.workers.dev
-- name: NodeHub 🇺🇸 >>::US_36
-  type: vless
-  server: 14.102.229.191
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.my111000.tech
-  servername: sni.my111000.tech
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.my111000.tech
-- name: NodeHub 🇺🇸 >>::US_37
-  type: vless
-  server: 188.164.248.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.indevs.in
-  servername: sni.111000.indevs.in
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.indevs.in
-- name: NodeHub 🇺🇸 >>::US_38
-  type: vless
-  server: 135.84.73.184
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.dynv6.net
-  servername: sni.111000.dynv6.net
-  ws-opts:
-    path: /?Telegram🇨🇳@WangCai2=
-    headers:
-      Host: sni.111000.dynv6.net
-- name: NodeHub 🇺🇸 >>::US_39
-  type: vless
-  server: 154.81.141.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.indevs.in
-  servername: sni.111000.indevs.in
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.indevs.in
-- name: NodeHub 🇺🇸 >>::US_40
-  type: vless
-  server: 104.18.13.149
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.v6.navy
-  servername: sni.111000.v6.navy
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.navy
-- name: NodeHub 🇺🇸 >>::US_41
-  type: vless
-  server: 104.26.7.205
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.indevs.in
-  servername: sni.111000.indevs.in
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: sni.111000.indevs.in
-- name: NodeHub 🇺🇸 >>::US_42
-  type: vless
-  server: 135.84.64.74
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  network: ws
-  sni: sni.111000.dynv6.net
-  servername: sni.111000.dynv6.net
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.dynv6.net
-- name: NodeHub 🇺🇸 >>::US_43
   type: vless
   server: 135.84.72.25
   port: 443
@@ -647,17 +413,251 @@ proxies:
     path: /
     headers:
       Host: sni.111000.indevs.in
-- name: NodeHub 🇺🇸 >>::US_44
+- name: NodeHub 🇺🇸 >>::US_28
   type: vless
-  server: 104.20.63.52
+  server: 104.18.47.35
+  port: 8443
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  tls: true
+  network: ws
+  sni: kalami-eew.pages.dev
+  servername: kalami-eew.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: kalami-eew.pages.dev
+- name: NodeHub 🇺🇸 >>::US_29
+  type: vless
+  server: 185.207.196.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.jpmj.dev
+  servername: sni.jpmj.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.jpmj.dev
+- name: NodeHub 🇺🇸 >>::US_30
+  type: vless
+  server: 63.141.128.3
+  port: 2053
+  uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+  tls: true
+  network: ws
+  sni: qyi.fqjd663.ggff.net
+  servername: qyi.fqjd663.ggff.net
+  ws-opts:
+    path: /
+    headers:
+      Host: qyi.fqjd663.ggff.net
+- name: NodeHub 🇺🇸 >>::US_31
+  type: vless
+  server: 160.153.1.198
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.111000.v6.navy
+  servername: sni.111000.v6.navy
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.navy
+- name: NodeHub 🇺🇸 >>::US_32
+  type: vless
+  server: 135.84.67.21
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.111000.dynv6.net
+  servername: sni.111000.dynv6.net
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.dynv6.net
+- name: NodeHub 🇺🇸 >>::US_33
+  type: vless
+  server: 104.26.7.205
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.111000.indevs.in
+  servername: sni.111000.indevs.in
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: sni.111000.indevs.in
+- name: NodeHub 🇺🇸 >>::US_34
+  type: vless
+  server: 104.18.12.149
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.111000.v6.navy
+  servername: sni.111000.v6.navy
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.navy
+- name: NodeHub 🇺🇸 >>::US_35
+  type: vless
+  server: 92.53.190.231
+  port: 443
+  uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+  tls: true
+  network: ws
+  sni: babayaga-6i7.pages.dev
+  servername: babayaga-6i7.pages.dev
+  ws-opts:
+    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
+    headers:
+      Host: babayaga-6i7.pages.dev
+- name: NodeHub 🇺🇸 >>::US_36
+  type: vless
+  server: 164.38.155.138
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.111000.indevs.in
+  servername: sni.111000.indevs.in
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.indevs.in
+- name: NodeHub 🇺🇸 >>::US_37
+  type: vless
+  server: 172.64.146.163
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.111000.indevs.in
+  servername: sni.111000.indevs.in
+  ws-opts:
+    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
+    headers:
+      Host: sni.111000.indevs.in
+- name: NodeHub 🇺🇸 >>::US_38
+  type: vless
+  server: 135.84.64.111
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.111000.v6.navy
+  servername: sni.111000.v6.navy
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.navy
+- name: NodeHub 🇺🇸 >>::US_39
+  type: vless
+  server: 172.64.149.54
   port: 80
   uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: / @ProxyVPN11
     headers:
       Host: vip.yaml7.ggff.net
+- name: NodeHub 🇺🇸 >>::US_40
+  type: vless
+  server: 135.84.73.138
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.111000.indevs.in
+  servername: sni.111000.indevs.in
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.indevs.in
+- name: NodeHub 🇺🇸 >>::US_41
+  type: vless
+  server: 188.114.98.0
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.111000.dynv6.net
+  servername: sni.111000.dynv6.net
+  ws-opts:
+    path: /?Telegram🇨🇳 @WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+- name: NodeHub 🇺🇸 >>::US_42
+  type: vless
+  server: 14.102.229.43
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.111000.cc.cd
+  servername: sni.111000.cc.cd
+  ws-opts:
+    path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
+    headers:
+      Host: sni.111000.cc.cd
+- name: NodeHub 🇺🇸 >>::US_43
+  type: vless
+  server: 147.185.161.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.jpmj.dev
+  servername: sni.jpmj.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.jpmj.dev
+- name: NodeHub 🇺🇸 >>::US_44
+  type: vless
+  server: 162.159.36.20
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.jpmj.dev
+  servername: sni.jpmj.dev
+  ws-opts:
+    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
+    headers:
+      Host: sni.jpmj.dev
+- name: NodeHub 🇺🇸 >>::US_45
+  type: vless
+  server: 135.84.67.42
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.111000.dynv6.net
+  servername: sni.111000.dynv6.net
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.dynv6.net
+- name: NodeHub 🇺🇸 >>::US_46
+  type: vless
+  server: 104.238.69.138
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  network: ws
+  sni: sni.111000.indevs.in
+  servername: sni.111000.indevs.in
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.indevs.in
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -671,6 +671,7 @@ proxy-groups:
   - NodeHub 🇺🇸 >>::US_3
   - NodeHub 🇺🇸 >>::US_4
   - NodeHub 🇺🇸 >>::US_5
+  - NodeHub VLESS-104
   - NodeHub 🇺🇸 >>::US_6
   - NodeHub 🇺🇸 >>::US_7
   - NodeHub 🇺🇸 >>::US_8
@@ -678,29 +679,26 @@ proxy-groups:
   - NodeHub 🇺🇸 >>::US_10
   - NodeHub 🇺🇸 >>::US_11
   - NodeHub 🇺🇸 >>::US_12
+  - NodeHub 🥏40
   - NodeHub 🇺🇸 >>::US_13
   - NodeHub 🇺🇸 >>::US_14
   - NodeHub 🇺🇸 >>::US_15
   - NodeHub 🇺🇸 >>::US_16
-  - NodeHub 🥏73
   - NodeHub 🇺🇸 >>::US_17
-  - NodeHub 🥏53
+  - NodeHub VLESS-91
   - NodeHub 🇺🇸 >>::US_18
   - NodeHub 🇺🇸 >>::US_19
   - NodeHub 🇺🇸 >>::US_20
   - NodeHub 🇺🇸 >>::US_21
   - NodeHub 🇺🇸 >>::US_22
-  - NodeHub 🥏47
   - NodeHub 🇺🇸 >>::US_23
   - NodeHub 🇺🇸 >>::US_24
-  - NodeHub 🥏87
   - NodeHub 🇺🇸 >>::US_25
   - NodeHub 🇺🇸 >>::US_26
   - NodeHub 🇺🇸 >>::US_27
   - NodeHub 🇺🇸 >>::US_28
   - NodeHub 🇺🇸 >>::US_29
   - NodeHub 🇺🇸 >>::US_30
-  - NodeHub VLESS-104
   - NodeHub 🇺🇸 >>::US_31
   - NodeHub 🇺🇸 >>::US_32
   - NodeHub 🇺🇸 >>::US_33
@@ -715,6 +713,8 @@ proxy-groups:
   - NodeHub 🇺🇸 >>::US_42
   - NodeHub 🇺🇸 >>::US_43
   - NodeHub 🇺🇸 >>::US_44
+  - NodeHub 🇺🇸 >>::US_45
+  - NodeHub 🇺🇸 >>::US_46
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -727,6 +727,7 @@ proxy-groups:
   - NodeHub 🇺🇸 >>::US_3
   - NodeHub 🇺🇸 >>::US_4
   - NodeHub 🇺🇸 >>::US_5
+  - NodeHub VLESS-104
   - NodeHub 🇺🇸 >>::US_6
   - NodeHub 🇺🇸 >>::US_7
   - NodeHub 🇺🇸 >>::US_8
@@ -734,29 +735,26 @@ proxy-groups:
   - NodeHub 🇺🇸 >>::US_10
   - NodeHub 🇺🇸 >>::US_11
   - NodeHub 🇺🇸 >>::US_12
+  - NodeHub 🥏40
   - NodeHub 🇺🇸 >>::US_13
   - NodeHub 🇺🇸 >>::US_14
   - NodeHub 🇺🇸 >>::US_15
   - NodeHub 🇺🇸 >>::US_16
-  - NodeHub 🥏73
   - NodeHub 🇺🇸 >>::US_17
-  - NodeHub 🥏53
+  - NodeHub VLESS-91
   - NodeHub 🇺🇸 >>::US_18
   - NodeHub 🇺🇸 >>::US_19
   - NodeHub 🇺🇸 >>::US_20
   - NodeHub 🇺🇸 >>::US_21
   - NodeHub 🇺🇸 >>::US_22
-  - NodeHub 🥏47
   - NodeHub 🇺🇸 >>::US_23
   - NodeHub 🇺🇸 >>::US_24
-  - NodeHub 🥏87
   - NodeHub 🇺🇸 >>::US_25
   - NodeHub 🇺🇸 >>::US_26
   - NodeHub 🇺🇸 >>::US_27
   - NodeHub 🇺🇸 >>::US_28
   - NodeHub 🇺🇸 >>::US_29
   - NodeHub 🇺🇸 >>::US_30
-  - NodeHub VLESS-104
   - NodeHub 🇺🇸 >>::US_31
   - NodeHub 🇺🇸 >>::US_32
   - NodeHub 🇺🇸 >>::US_33
@@ -771,6 +769,8 @@ proxy-groups:
   - NodeHub 🇺🇸 >>::US_42
   - NodeHub 🇺🇸 >>::US_43
   - NodeHub 🇺🇸 >>::US_44
+  - NodeHub 🇺🇸 >>::US_45
+  - NodeHub 🇺🇸 >>::US_46
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -786,6 +786,7 @@ proxy-groups:
   - NodeHub 🇺🇸 >>::US_3
   - NodeHub 🇺🇸 >>::US_4
   - NodeHub 🇺🇸 >>::US_5
+  - NodeHub VLESS-104
   - NodeHub 🇺🇸 >>::US_6
   - NodeHub 🇺🇸 >>::US_7
   - NodeHub 🇺🇸 >>::US_8
@@ -793,29 +794,26 @@ proxy-groups:
   - NodeHub 🇺🇸 >>::US_10
   - NodeHub 🇺🇸 >>::US_11
   - NodeHub 🇺🇸 >>::US_12
+  - NodeHub 🥏40
   - NodeHub 🇺🇸 >>::US_13
   - NodeHub 🇺🇸 >>::US_14
   - NodeHub 🇺🇸 >>::US_15
   - NodeHub 🇺🇸 >>::US_16
-  - NodeHub 🥏73
   - NodeHub 🇺🇸 >>::US_17
-  - NodeHub 🥏53
+  - NodeHub VLESS-91
   - NodeHub 🇺🇸 >>::US_18
   - NodeHub 🇺🇸 >>::US_19
   - NodeHub 🇺🇸 >>::US_20
   - NodeHub 🇺🇸 >>::US_21
   - NodeHub 🇺🇸 >>::US_22
-  - NodeHub 🥏47
   - NodeHub 🇺🇸 >>::US_23
   - NodeHub 🇺🇸 >>::US_24
-  - NodeHub 🥏87
   - NodeHub 🇺🇸 >>::US_25
   - NodeHub 🇺🇸 >>::US_26
   - NodeHub 🇺🇸 >>::US_27
   - NodeHub 🇺🇸 >>::US_28
   - NodeHub 🇺🇸 >>::US_29
   - NodeHub 🇺🇸 >>::US_30
-  - NodeHub VLESS-104
   - NodeHub 🇺🇸 >>::US_31
   - NodeHub 🇺🇸 >>::US_32
   - NodeHub 🇺🇸 >>::US_33
@@ -830,6 +828,8 @@ proxy-groups:
   - NodeHub 🇺🇸 >>::US_42
   - NodeHub 🇺🇸 >>::US_43
   - NodeHub 🇺🇸 >>::US_44
+  - NodeHub 🇺🇸 >>::US_45
+  - NodeHub 🇺🇸 >>::US_46
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
