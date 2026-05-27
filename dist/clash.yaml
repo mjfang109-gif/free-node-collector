@@ -22,44 +22,59 @@ dns:
 proxies:
 - name: NodeHub 🇺🇸 >>::US
   type: vless
-  server: 162.159.36.20
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
+  server: 172.66.3.201
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  tls: true
   network: ws
+  sni: juzi.qea.ccwu.cc
+  servername: juzi.qea.ccwu.cc
   ws-opts:
     path: /
     headers:
-      Host: vip.yaml7.ggff.net
+      Host: juzi.qea.ccwu.cc
 - name: NodeHub VLESS-104
   type: vless
-  server: 104.17.150.224
+  server: 104.19.49.198
   port: 443
   uuid: ae0dd58e-e222-40bf-84ae-365a97532737
   tls: true
   network: ws
-  sni: pagescm.freen15.cc.cd
-  servername: pagescm.freen15.cc.cd
+  sni: pagescm.freen14.cc.cd
+  servername: pagescm.freen14.cc.cd
   ws-opts:
-    path: /album/bt
+    path: /shop
     headers:
-      Host: pagescm.freen15.cc.cd
-- name: NodeHub VLESS-172
+      Host: pagescm.freen14.cc.cd
+- name: NodeHub VLESS-104_1
   type: vless
-  server: 172.64.47.168
-  port: 2096
-  uuid: e258977b-e413-4718-a3af-02d75492c349
+  server: 104.16.254.231
+  port: 443
+  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
   tls: true
   network: ws
-  sni: jp.aniua.qzz.io
-  servername: jp.aniua.qzz.io
+  sni: sni.skylee4.cloudns.ch
+  servername: sni.skylee4.cloudns.ch
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
-      Host: jp.aniua.qzz.io
-- name: NodeHub VLESS-8
+      Host: sni.skylee4.cloudns.ch
+- name: NodeHub VLESS-162
   type: vless
-  server: 8.39.125.254
+  server: 162.159.32.185
+  port: 2096
+  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
+  tls: true
+  network: ws
+  sni: pagescm.freen28.cc.cd
+  servername: pagescm.freen28.cc.cd
+  ws-opts:
+    path: /contact/lib/acg
+    headers:
+      Host: pagescm.freen28.cc.cd
+- name: NodeHub filembad-249
+  type: vless
+  server: 104.17.145.145
   port: 443
   uuid: ae0dd58e-e222-40bf-84ae-365a97532737
   tls: true
@@ -67,294 +82,25 @@ proxies:
   sni: pagescm.freen23.cc.cd
   servername: pagescm.freen23.cc.cd
   ws-opts:
-    path: /friend/community/apps
+    path: /file
     headers:
       Host: pagescm.freen23.cc.cd
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.18.3.26
-  port: 2083
-  uuid: fc625795-792d-4d9d-9d38-bffe59467d2d
-  tls: true
-  network: ws
-  sni: daluan.eu.org
-  servername: daluan.eu.org
-  ws-opts:
-    path: /
-    headers:
-      Host: daluan.eu.org
 - name: NodeHub 🇺🇸 >>::US_1
   type: vless
-  server: 104.17.72.206
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: /+@ProxyVPN11
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub VLESS-104_2
-  type: vless
-  server: 104.16.79.73
+  server: 162.159.13.20
   port: 443
-  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
   tls: true
   network: ws
-  sni: pagescm.freen32.cc.cd
-  servername: pagescm.freen32.cc.cd
-  ws-opts:
-    path: /play/settings
-    headers:
-      Host: pagescm.freen32.cc.cd
-- name: NodeHub VLESS-208
-  type: vless
-  server: 208.103.161.12
-  port: 443
-  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
-  tls: true
-  network: ws
-  sni: afrcloud2.c01.kr
-  servername: afrcloud2.c01.kr
-  ws-opts:
-    path: /2.56.206.114:8443
-    headers:
-      Host: afrcloud2.c01.kr
-- name: NodeHub 🇺🇸 >>::US_2
-  type: vless
-  server: 104.17.138.160
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
+  sni: juzi.qea.ccwu.cc
+  servername: juzi.qea.ccwu.cc
   ws-opts:
     path: /
     headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub 🇺🇸 >>::US_3
+      Host: juzi.qea.ccwu.cc
+- name: NodeHub VLESS-172
   type: vless
-  server: 104.21.227.134
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub 🇺🇸 >>::US_4
-  type: vless
-  server: 104.17.152.254
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub VLESS-8_1
-  type: vless
-  server: 8.35.211.241
-  port: 443
-  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
-  tls: true
-  network: ws
-  sni: pagescm.freen11.cc.cd
-  servername: pagescm.freen11.cc.cd
-  ws-opts:
-    path: /friend
-    headers:
-      Host: pagescm.freen11.cc.cd
-- name: NodeHub 🇺🇸 >>::US_5
-  type: vless
-  server: 172.66.47.45
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub VLESS-104_3
-  type: vless
-  server: 104.18.12.149
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: / @ProxyVPN11
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub 🇺🇸 >>::US_6
-  type: vless
-  server: 104.17.25.173
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub 🇺🇸 >>::US_7
-  type: vless
-  server: 172.64.147.223
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub 🇺🇸 >>::US_8
-  type: vless
-  server: 104.20.63.52
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub VLESS-8_2
-  type: vless
-  server: 8.6.112.0
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: / @ProxyVPN11
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub 🇺🇸 >>::US_9
-  type: vless
-  server: 104.18.185.26
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub VLESS-208_1
-  type: vless
-  server: 208.103.161.11
-  port: 443
-  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
-  tls: true
-  network: ws
-  sni: afrcloud2.c01.kr
-  servername: afrcloud2.c01.kr
-  ws-opts:
-    path: /139.45.214.126:443
-    headers:
-      Host: afrcloud2.c01.kr
-- name: NodeHub VLESS-69
-  type: vless
-  server: 69.84.182.62
-  port: 443
-  uuid: aaaaaabb-4ddd-4eee-9fff-ffffffffffff
-  tls: true
-  network: ws
-  sni: afrcloud2.c01.kr
-  servername: afrcloud2.c01.kr
-  ws-opts:
-    path: /2.56.204.183:443
-    headers:
-      Host: afrcloud2.c01.kr
-- name: NodeHub 🇺🇸 >>::US_10
-  type: vless
-  server: 104.17.156.229
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub VLESS-104_4
-  type: vless
-  server: 104.20.6.134
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: / @ProxyVPN11
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub 🇺🇸 >>::US_11
-  type: vless
-  server: 172.64.149.54
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: / @ProxyVPN11
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub 🇺🇸 >>::US_12
-  type: vless
-  server: 172.64.152.23
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: / @ProxyVPN11
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: NodeHub VLESS-104_5
-  type: vless
-  server: 104.17.121.71
-  port: 443
-  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
-  tls: true
-  network: ws
-  sni: pagescm.freen34.cc.cd
-  servername: pagescm.freen34.cc.cd
-  ws-opts:
-    path: /question/avatar/hot
-    headers:
-      Host: pagescm.freen34.cc.cd
-- name: NodeHub 🇺🇸 >>::US_13
-  type: vless
-  server: 172.66.44.161
-  port: 443
-  uuid: 8b5acf77-2c2e-4eed-9ad1-be81851b99ea
-  tls: true
-  network: ws
-  sni: e1-f55.pages.dev
-  servername: e1-f55.pages.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: e1-f55.pages.dev
-- name: NodeHub VLESS-104_6
-  type: vless
-  server: 104.16.7.70
-  port: 8443
-  uuid: 58fbbc47-237d-4bc2-a8c3-6db623585a1b
-  tls: true
-  network: ws
-  sni: Kingdom.turbooo-server.com
-  servername: Kingdom.turbooo-server.com
-  ws-opts:
-    path: /
-    headers:
-      Host: Kingdom.turbooo-server.com
-- name: NodeHub VLESS-172_1
-  type: vless
-  server: 172.64.146.143
+  server: 172.64.146.43
   port: 80
   uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
   tls: false
@@ -363,44 +109,9 @@ proxies:
     path: /
     headers:
       Host: tt.andishehparenting.com
-- name: NodeHub VLESS-104_7
+- name: NodeHub Tel---6
   type: vless
-  server: 104.18.139.67
-  port: 443
-  uuid: '@deamnet-@deamnet-@deamnet'
-  tls: true
-  network: ws
-  sni: actually-road.bn-chanll.cf
-  servername: actually-road.bn-chanll.cf
-  ws-opts:
-    path: /deamnet
-    headers:
-      Host: actually-road.bn-chanll.cf
-- name: NodeHub 🇩🇪 >>::DE
-  type: vless
-  server: 162.159.36.5
-  port: 80
-  uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tt.andishehparenting.com
-- name: NodeHub VLESS-172_2
-  type: vless
-  server: 172.64.147.255
-  port: 80
-  uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tt.andishehparenting.com
-- name: NodeHub 🇩🇪 >>::DE_1
-  type: vless
-  server: 172.64.146.102
+  server: 104.21.224.5
   port: 80
   uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
   tls: false
@@ -418,37 +129,12 @@ proxy-groups:
   - DIRECT
   - NodeHub 🇺🇸 >>::US
   - NodeHub VLESS-104
-  - NodeHub VLESS-172
-  - NodeHub VLESS-8
   - NodeHub VLESS-104_1
+  - NodeHub VLESS-162
+  - NodeHub filembad-249
   - NodeHub 🇺🇸 >>::US_1
-  - NodeHub VLESS-104_2
-  - NodeHub VLESS-208
-  - NodeHub 🇺🇸 >>::US_2
-  - NodeHub 🇺🇸 >>::US_3
-  - NodeHub 🇺🇸 >>::US_4
-  - NodeHub VLESS-8_1
-  - NodeHub 🇺🇸 >>::US_5
-  - NodeHub VLESS-104_3
-  - NodeHub 🇺🇸 >>::US_6
-  - NodeHub 🇺🇸 >>::US_7
-  - NodeHub 🇺🇸 >>::US_8
-  - NodeHub VLESS-8_2
-  - NodeHub 🇺🇸 >>::US_9
-  - NodeHub VLESS-208_1
-  - NodeHub VLESS-69
-  - NodeHub 🇺🇸 >>::US_10
-  - NodeHub VLESS-104_4
-  - NodeHub 🇺🇸 >>::US_11
-  - NodeHub 🇺🇸 >>::US_12
-  - NodeHub VLESS-104_5
-  - NodeHub 🇺🇸 >>::US_13
-  - NodeHub VLESS-104_6
-  - NodeHub VLESS-172_1
-  - NodeHub VLESS-104_7
-  - NodeHub 🇩🇪 >>::DE
-  - NodeHub VLESS-172_2
-  - NodeHub 🇩🇪 >>::DE_1
+  - NodeHub VLESS-172
+  - NodeHub Tel---6
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -457,66 +143,29 @@ proxy-groups:
   proxies: &id001
   - NodeHub 🇺🇸 >>::US
   - NodeHub VLESS-104
-  - NodeHub VLESS-172
-  - NodeHub VLESS-8
   - NodeHub VLESS-104_1
+  - NodeHub VLESS-162
+  - NodeHub filembad-249
   - NodeHub 🇺🇸 >>::US_1
-  - NodeHub VLESS-104_2
-  - NodeHub VLESS-208
-  - NodeHub 🇺🇸 >>::US_2
-  - NodeHub 🇺🇸 >>::US_3
-  - NodeHub 🇺🇸 >>::US_4
-  - NodeHub VLESS-8_1
-  - NodeHub 🇺🇸 >>::US_5
-  - NodeHub VLESS-104_3
-  - NodeHub 🇺🇸 >>::US_6
-  - NodeHub 🇺🇸 >>::US_7
-  - NodeHub 🇺🇸 >>::US_8
-  - NodeHub VLESS-8_2
-  - NodeHub 🇺🇸 >>::US_9
-  - NodeHub VLESS-208_1
-  - NodeHub VLESS-69
-  - NodeHub 🇺🇸 >>::US_10
-  - NodeHub VLESS-104_4
-  - NodeHub 🇺🇸 >>::US_11
-  - NodeHub 🇺🇸 >>::US_12
-  - NodeHub VLESS-104_5
-  - NodeHub 🇺🇸 >>::US_13
-  - NodeHub VLESS-104_6
-  - NodeHub VLESS-172_1
-  - NodeHub VLESS-104_7
-  - NodeHub 🇩🇪 >>::DE
-  - NodeHub VLESS-172_2
-  - NodeHub 🇩🇪 >>::DE_1
+  - NodeHub VLESS-172
+  - NodeHub Tel---6
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: NodeHub - 🌍 DE
-  type: select
-  proxies:
-  - NodeHub - 🚀 节点选择
-  - NodeHub 🇩🇪 >>::DE
-  - NodeHub 🇩🇪 >>::DE_1
-- name: NodeHub - 🌍 US
+- name: NodeHub - 🐌 低速节点
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
   - NodeHub 🇺🇸 >>::US
+  - NodeHub VLESS-104
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-162
+  - NodeHub filembad-249
   - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 🇺🇸 >>::US_2
-  - NodeHub 🇺🇸 >>::US_3
-  - NodeHub 🇺🇸 >>::US_4
-  - NodeHub 🇺🇸 >>::US_5
-  - NodeHub 🇺🇸 >>::US_6
-  - NodeHub 🇺🇸 >>::US_7
-  - NodeHub 🇺🇸 >>::US_8
-  - NodeHub 🇺🇸 >>::US_9
-  - NodeHub 🇺🇸 >>::US_10
-  - NodeHub 🇺🇸 >>::US_11
-  - NodeHub 🇺🇸 >>::US_12
-  - NodeHub 🇺🇸 >>::US_13
+  - NodeHub VLESS-172
+  - NodeHub Tel---6
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
