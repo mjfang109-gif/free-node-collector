@@ -22,7 +22,7 @@ dns:
 proxies:
 - name: NodeHub 🇺🇸 >>::US
   type: vless
-  server: 172.66.3.201
+  server: 104.17.156.197
   port: 443
   uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
   tls: true
@@ -35,20 +35,7 @@ proxies:
       Host: juzi.qea.ccwu.cc
 - name: NodeHub VLESS-104
   type: vless
-  server: 104.19.49.198
-  port: 443
-  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
-  tls: true
-  network: ws
-  sni: pagescm.freen14.cc.cd
-  servername: pagescm.freen14.cc.cd
-  ws-opts:
-    path: /shop
-    headers:
-      Host: pagescm.freen14.cc.cd
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.16.254.231
+  server: 104.19.58.194
   port: 443
   uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
   tls: true
@@ -59,35 +46,9 @@ proxies:
     path: /fp=chrome
     headers:
       Host: sni.skylee4.cloudns.ch
-- name: NodeHub VLESS-162
-  type: vless
-  server: 162.159.32.185
-  port: 2096
-  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
-  tls: true
-  network: ws
-  sni: pagescm.freen28.cc.cd
-  servername: pagescm.freen28.cc.cd
-  ws-opts:
-    path: /contact/lib/acg
-    headers:
-      Host: pagescm.freen28.cc.cd
-- name: NodeHub filembad-249
-  type: vless
-  server: 104.17.145.145
-  port: 443
-  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
-  tls: true
-  network: ws
-  sni: pagescm.freen23.cc.cd
-  servername: pagescm.freen23.cc.cd
-  ws-opts:
-    path: /file
-    headers:
-      Host: pagescm.freen23.cc.cd
 - name: NodeHub 🇺🇸 >>::US_1
   type: vless
-  server: 162.159.13.20
+  server: 162.159.13.206
   port: 443
   uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
   tls: true
@@ -98,20 +59,22 @@ proxies:
     path: /
     headers:
       Host: juzi.qea.ccwu.cc
-- name: NodeHub VLESS-172
+- name: NodeHub VLESS-104_1
   type: vless
-  server: 172.64.146.43
-  port: 80
-  uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
-  tls: false
+  server: 104.18.139.67
+  port: 443
+  uuid: c2f0a8f0-36fe-4a94-824b-bca271ca642b
+  tls: true
   network: ws
+  sni: alphacdn.alphashops.shop
+  servername: alphacdn.alphashops.shop
   ws-opts:
-    path: /
+    path: /ws
     headers:
-      Host: tt.andishehparenting.com
-- name: NodeHub Tel---6
+      Host: alphacdn.alphashops.shop
+- name: NodeHub Tel---3
   type: vless
-  server: 104.21.224.5
+  server: 172.64.147.255
   port: 80
   uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
   tls: false
@@ -129,12 +92,9 @@ proxy-groups:
   - DIRECT
   - NodeHub 🇺🇸 >>::US
   - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
-  - NodeHub VLESS-162
-  - NodeHub filembad-249
   - NodeHub 🇺🇸 >>::US_1
-  - NodeHub VLESS-172
-  - NodeHub Tel---6
+  - NodeHub VLESS-104_1
+  - NodeHub Tel---3
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -143,12 +103,9 @@ proxy-groups:
   proxies: &id001
   - NodeHub 🇺🇸 >>::US
   - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
-  - NodeHub VLESS-162
-  - NodeHub filembad-249
   - NodeHub 🇺🇸 >>::US_1
-  - NodeHub VLESS-172
-  - NodeHub Tel---6
+  - NodeHub VLESS-104_1
+  - NodeHub Tel---3
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -160,12 +117,9 @@ proxy-groups:
   - NodeHub - 🚀 节点选择
   - NodeHub 🇺🇸 >>::US
   - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
-  - NodeHub VLESS-162
-  - NodeHub filembad-249
   - NodeHub 🇺🇸 >>::US_1
-  - NodeHub VLESS-172
-  - NodeHub Tel---6
+  - NodeHub VLESS-104_1
+  - NodeHub Tel---3
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
