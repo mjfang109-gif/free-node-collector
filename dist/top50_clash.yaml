@@ -22,7 +22,129 @@ dns:
 proxies:
 - name: NodeHub 🇺🇸 >>::US
   type: vless
-  server: 104.17.156.197
+  server: 104.18.2.150
+  port: 443
+  uuid: a114d067-b900-4f60-87a5-50d4d63972b8
+  tls: true
+  network: ws
+  sni: PaRiSA-CC5Zk0.paRISa-44c.woRKeRs.dev
+  servername: PaRiSA-CC5Zk0.paRISa-44c.woRKeRs.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: PaRiSA-CC5Zk0.paRISa-44c.woRKeRs.dev
+- name: NodeHub VLESS-172
+  type: vless
+  server: 172.64.47.168
+  port: 2096
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  tls: true
+  network: ws
+  sni: jp.aniua.qzz.io
+  servername: jp.aniua.qzz.io
+  ws-opts:
+    path: /
+    headers:
+      Host: jp.aniua.qzz.io
+- name: NodeHub 🇺🇸 >>::US_1
+  type: vless
+  server: 172.64.155.209
+  port: 80
+  uuid: 787b3724-16c8-4e58-a038-2b8013cdc6d9
+  tls: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiTG1jRlUwNjNwVUxvYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: c3linogp4x20x5acoguup217nstesdu1.nobodyface4b13.workers.dev
+- name: NodeHub 🇺🇸 >>::US_2
+  type: vless
+  server: 162.159.38.129
+  port: 80
+  uuid: e388fffb-03b0-4227-ac2c-2b5cec1f5c34
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed%3D2048
+    headers:
+      Host: leecher56.matinheydri.workers.dev
+- name: NodeHub 🇺🇸 >>::US_3
+  type: vless
+  server: ::ffff:172.67.163.213
+  port: 2096
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  tls: true
+  network: ws
+  sni: EMS.Arc-Time.Workers.DEV
+  servername: EMS.Arc-Time.Workers.DEV
+  ws-opts:
+    path: /88ailh3l64gh
+    headers:
+      Host: ems.arc-time.workers.dev
+- name: NodeHub 🇺🇸 >>::US_4
+  type: vless
+  server: 102.177.189.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime29.workers.dev
+- name: NodeHub 🇺🇸 >>::US_5
+  type: vless
+  server: 172.64.53.126
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  tls: true
+  network: ws
+  sni: powered-by-surena.user68f797c2f3e1b.workers.dev
+  servername: powered-by-surena.user68f797c2f3e1b.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: powered-by-surena.user68f797c2f3e1b.workers.dev
+- name: NodeHub 🇺🇸 >>::US_6
+  type: vless
+  server: 172.67.134.82
+  port: 443
+  uuid: a73b8135-ec7a-4f70-bac6-81fbccad4515
+  tls: true
+  network: ws
+  sni: labeller.neonime83.workers.dev
+  servername: labeller.neonime83.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: labeller.neonime83.workers.dev
+- name: NodeHub 🇺🇸 >>::US_7
+  type: vless
+  server: ::ffff:104.21.69.164
+  port: 2087
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  tls: true
+  network: ws
+  sni: EMS.Arc-Time.Workers.DEV
+  servername: EMS.Arc-Time.Workers.DEV
+  ws-opts:
+    path: /yyru4ludskje
+    headers:
+      Host: ems.arc-time.workers.dev
+- name: NodeHub 🇺🇸 >>::US_8
+  type: vless
+  server: 195.85.59.69
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.cnm-fangbinxing--nmsl.workers.dev
+- name: NodeHub 🇺🇸 >>::US_9
+  type: vless
+  server: 162.159.13.20
   port: 443
   uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
   tls: true
@@ -35,20 +157,7 @@ proxies:
       Host: juzi.qea.ccwu.cc
 - name: NodeHub VLESS-104
   type: vless
-  server: 104.19.58.194
-  port: 443
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  tls: true
-  network: ws
-  sni: sni.skylee4.cloudns.ch
-  servername: sni.skylee4.cloudns.ch
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: sni.skylee4.cloudns.ch
-- name: NodeHub 🇺🇸 >>::US_1
-  type: vless
-  server: 162.159.13.206
+  server: 104.25.242.55
   port: 443
   uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
   tls: true
@@ -59,22 +168,177 @@ proxies:
     path: /
     headers:
       Host: juzi.qea.ccwu.cc
-- name: NodeHub VLESS-104_1
+- name: NodeHub 🇺🇸 >>::US_10
   type: vless
-  server: 104.18.139.67
+  server: 104.24.45.247
+  port: 80
+  uuid: 2e71d8fc-d2e8-44fc-89bd-c8a449a193aa
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: odd-bread-435d.ahmadrezasteamacc.workers.dev
+- name: NodeHub 🇺🇸 >>::US_11
+  type: vless
+  server: 172.64.53.83
   port: 443
-  uuid: c2f0a8f0-36fe-4a94-824b-bca271ca642b
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   tls: true
   network: ws
-  sni: alphacdn.alphashops.shop
-  servername: alphacdn.alphashops.shop
+  sni: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
+  servername: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
   ws-opts:
-    path: /ws
+    path: /
     headers:
-      Host: alphacdn.alphashops.shop
-- name: NodeHub Tel---3
+      Host: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
+- name: NodeHub VLESS-77
   type: vless
-  server: 172.64.147.255
+  server: 77.37.33.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime57.workers.dev
+- name: NodeHub 🇺🇸 >>::US_12
+  type: vless
+  server: 162.159.36.20
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  network: ws
+  sni: newwk1.f1w.de5.net
+  servername: newwk1.f1w.de5.net
+  ws-opts:
+    path: /
+    headers:
+      Host: newwk1.f1w.de5.net
+- name: NodeHub 🇺🇸 >>::US_13
+  type: vless
+  server: 172.67.164.152
+  port: 443
+  uuid: 36a857e4-f3d4-43aa-8b90-d7da849da989
+  tls: true
+  network: ws
+  sni: 002.Inc-ElectROcElL-001-002.WoRKERS.DEV
+  servername: 002.Inc-ElectROcElL-001-002.WoRKERS.DEV
+  ws-opts:
+    path: /eyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 002.inc-electrocell-001-002.workers.dev
+- name: NodeHub VLESS-104_1
+  type: vless
+  server: 104.18.173.174
+  port: 80
+  uuid: 53342b53-157e-4475-9f3a-40439434e689
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: c.iamdt.dpdns.org
+- name: NodeHub 🇺🇸 >>::US_14
+  type: vless
+  server: 104.18.40.152
+  port: 8880
+  uuid: 2f0f84ed-9e4c-40ef-8a6c-286839e11a63
+  tls: false
+  network: ws
+  ws-opts:
+    path: /512
+    headers:
+      Host: hmedrza.ghwhdr51.workers.dev
+- name: NodeHub 🇺🇸 >>::US_15
+  type: vless
+  server: 104.17.15.87
+  port: 80
+  uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
+  tls: false
+  network: ws
+  ws-opts:
+    path: /@WireXnet
+    headers:
+      Host: germany.xydcqd.workers.dev
+- name: NodeHub 🇺🇸 >>::US_16
+  type: vless
+  server: 104.17.74.206
+  port: 2096
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  tls: true
+  network: ws
+  sni: INdex.HArmony702.WoRkeRS.Dev
+  servername: INdex.HArmony702.WoRkeRS.Dev
+  ws-opts:
+    path: /axcp1cm75o7digvt
+    headers:
+      Host: index.harmony702.workers.dev
+- name: NodeHub VLESS-173
+  type: vless
+  server: 173.245.59.215
+  port: 80
+  uuid: d8bc8425-5e80-4c26-bd93-af634c033e2d
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: purnet.gmijcp.workers.dev
+- name: NodeHub 🇺🇸 >>::US_17
+  type: vless
+  server: 162.159.18.105
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  tls: true
+  network: ws
+  sni: juzi.qea.ccwu.cc
+  servername: juzi.qea.ccwu.cc
+  ws-opts:
+    path: /
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: NodeHub 🇺🇸 >>::US_18
+  type: vless
+  server: 162.159.14.88
+  port: 80
+  uuid: 55cb8179-ce11-4ec8-a03c-333f797265f9
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: long-forest-ac72.salari1382m.workers.dev
+- name: NodeHub 🇺🇸 >>::US_19
+  type: vless
+  server: 108.162.192.236
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  tls: true
+  network: ws
+  sni: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
+  servername: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
+- name: NodeHub VLESS-162
+  type: vless
+  server: 162.159.6.247
+  port: 443
+  uuid: 9ec31222-b60a-43d3-ab28-ca88f2a76883
+  tls: true
+  network: ws
+  sni: jolly-mouse-23a6.diracdeltain0.workers.dev
+  servername: jolly-mouse-23a6.diracdeltain0.workers.dev
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: jolly-mouse-23a6.diracdeltain0.workers.dev
+- name: NodeHub 🇩🇪 >>::DE
+  type: vless
+  server: 162.159.36.5
   port: 80
   uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
   tls: false
@@ -83,6 +347,43 @@ proxies:
     path: /
     headers:
       Host: tt.andishehparenting.com
+- name: NodeHub 🇩🇪 >>::DE_1
+  type: vless
+  server: 172.64.147.165
+  port: 80
+  uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tt.andishehparenting.com
+- name: NodeHub VLESS-192
+  type: vless
+  server: 192.200.160.252
+  port: 443
+  uuid: 5b6be23b-dff4-428f-8a60-4f11568abe12
+  tls: true
+  network: ws
+  sni: sync.amordad.xyz
+  servername: sync.amordad.xyz
+  ws-opts:
+    path: /api/v1/stream
+    headers:
+      Host: sync.amordad.xyz
+- name: NodeHub 🇮🇳 ADSL`
+  type: vless
+  server: 104.21.18.41
+  port: 443
+  uuid: a0ae4e44-480c-4282-b526-f1bdf749e0d1
+  tls: true
+  network: ws
+  sni: c.downloadphysics.ir
+  servername: c.downloadphysics.ir
+  ws-opts:
+    path: /
+    headers:
+      Host: c.downloadphysics.ir
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -91,10 +392,35 @@ proxy-groups:
   - NodeHub - 🔮 故障转移
   - DIRECT
   - NodeHub 🇺🇸 >>::US
-  - NodeHub VLESS-104
+  - NodeHub VLESS-172
   - NodeHub 🇺🇸 >>::US_1
+  - NodeHub 🇺🇸 >>::US_2
+  - NodeHub 🇺🇸 >>::US_3
+  - NodeHub 🇺🇸 >>::US_4
+  - NodeHub 🇺🇸 >>::US_5
+  - NodeHub 🇺🇸 >>::US_6
+  - NodeHub 🇺🇸 >>::US_7
+  - NodeHub 🇺🇸 >>::US_8
+  - NodeHub 🇺🇸 >>::US_9
+  - NodeHub VLESS-104
+  - NodeHub 🇺🇸 >>::US_10
+  - NodeHub 🇺🇸 >>::US_11
+  - NodeHub VLESS-77
+  - NodeHub 🇺🇸 >>::US_12
+  - NodeHub 🇺🇸 >>::US_13
   - NodeHub VLESS-104_1
-  - NodeHub Tel---3
+  - NodeHub 🇺🇸 >>::US_14
+  - NodeHub 🇺🇸 >>::US_15
+  - NodeHub 🇺🇸 >>::US_16
+  - NodeHub VLESS-173
+  - NodeHub 🇺🇸 >>::US_17
+  - NodeHub 🇺🇸 >>::US_18
+  - NodeHub 🇺🇸 >>::US_19
+  - NodeHub VLESS-162
+  - NodeHub 🇩🇪 >>::DE
+  - NodeHub 🇩🇪 >>::DE_1
+  - NodeHub VLESS-192
+  - NodeHub 🇮🇳 ADSL`
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -102,24 +428,70 @@ proxy-groups:
   tolerance: 50
   proxies: &id001
   - NodeHub 🇺🇸 >>::US
-  - NodeHub VLESS-104
+  - NodeHub VLESS-172
   - NodeHub 🇺🇸 >>::US_1
+  - NodeHub 🇺🇸 >>::US_2
+  - NodeHub 🇺🇸 >>::US_3
+  - NodeHub 🇺🇸 >>::US_4
+  - NodeHub 🇺🇸 >>::US_5
+  - NodeHub 🇺🇸 >>::US_6
+  - NodeHub 🇺🇸 >>::US_7
+  - NodeHub 🇺🇸 >>::US_8
+  - NodeHub 🇺🇸 >>::US_9
+  - NodeHub VLESS-104
+  - NodeHub 🇺🇸 >>::US_10
+  - NodeHub 🇺🇸 >>::US_11
+  - NodeHub VLESS-77
+  - NodeHub 🇺🇸 >>::US_12
+  - NodeHub 🇺🇸 >>::US_13
   - NodeHub VLESS-104_1
-  - NodeHub Tel---3
+  - NodeHub 🇺🇸 >>::US_14
+  - NodeHub 🇺🇸 >>::US_15
+  - NodeHub 🇺🇸 >>::US_16
+  - NodeHub VLESS-173
+  - NodeHub 🇺🇸 >>::US_17
+  - NodeHub 🇺🇸 >>::US_18
+  - NodeHub 🇺🇸 >>::US_19
+  - NodeHub VLESS-162
+  - NodeHub 🇩🇪 >>::DE
+  - NodeHub 🇩🇪 >>::DE_1
+  - NodeHub VLESS-192
+  - NodeHub 🇮🇳 ADSL`
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: NodeHub - 🐌 低速节点
+- name: NodeHub - 🌍 DE
+  type: select
+  proxies:
+  - NodeHub - 🚀 节点选择
+  - NodeHub 🇩🇪 >>::DE
+  - NodeHub 🇩🇪 >>::DE_1
+- name: NodeHub - 🌍 US
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
   - NodeHub 🇺🇸 >>::US
-  - NodeHub VLESS-104
   - NodeHub 🇺🇸 >>::US_1
-  - NodeHub VLESS-104_1
-  - NodeHub Tel---3
+  - NodeHub 🇺🇸 >>::US_2
+  - NodeHub 🇺🇸 >>::US_3
+  - NodeHub 🇺🇸 >>::US_4
+  - NodeHub 🇺🇸 >>::US_5
+  - NodeHub 🇺🇸 >>::US_6
+  - NodeHub 🇺🇸 >>::US_7
+  - NodeHub 🇺🇸 >>::US_8
+  - NodeHub 🇺🇸 >>::US_9
+  - NodeHub 🇺🇸 >>::US_10
+  - NodeHub 🇺🇸 >>::US_11
+  - NodeHub 🇺🇸 >>::US_12
+  - NodeHub 🇺🇸 >>::US_13
+  - NodeHub 🇺🇸 >>::US_14
+  - NodeHub 🇺🇸 >>::US_15
+  - NodeHub 🇺🇸 >>::US_16
+  - NodeHub 🇺🇸 >>::US_17
+  - NodeHub 🇺🇸 >>::US_18
+  - NodeHub 🇺🇸 >>::US_19
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
