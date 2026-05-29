@@ -20,7 +20,7 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub 🇺🇸 >>::US
+- name: NodeHub VLESS-162
   type: vless
   server: 162.159.13.206
   port: 443
@@ -33,9 +33,48 @@ proxies:
     path: /
     headers:
       Host: juzi.qea.ccwu.cc
+- name: NodeHub RzChanel1
+  type: vless
+  server: 162.159.13.20
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  tls: true
+  network: ws
+  sni: juzi.qea.ccwu.cc
+  servername: juzi.qea.ccwu.cc
+  ws-opts:
+    path: /
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: NodeHub 🇺🇸 >>::US
+  type: vless
+  server: 172.66.3.201
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  tls: true
+  network: ws
+  sni: juzi.qea.ccwu.cc
+  servername: juzi.qea.ccwu.cc
+  ws-opts:
+    path: /
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: NodeHub VLESS-104
+  type: vless
+  server: 104.17.156.197
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  tls: true
+  network: ws
+  sni: juzi.qea.ccwu.cc
+  servername: juzi.qea.ccwu.cc
+  ws-opts:
+    path: /
+    headers:
+      Host: juzi.qea.ccwu.cc
 - name: NodeHub 🇺🇸 >>::US_1
   type: vless
-  server: 104.17.150.241
+  server: 104.25.242.55
   port: 443
   uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
   tls: true
@@ -46,9 +85,9 @@ proxies:
     path: /
     headers:
       Host: juzi.qea.ccwu.cc
-- name: NodeHub 🇺🇸 >>::US_2
+- name: NodeHub VLESS-162_1
   type: vless
-  server: 162.159.18.105
+  server: 162.159.17.189
   port: 443
   uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
   tls: true
@@ -59,7 +98,7 @@ proxies:
     path: /
     headers:
       Host: juzi.qea.ccwu.cc
-- name: NodeHub 🇺🇸 >>::US_3
+- name: NodeHub >>::XX
   type: vless
   server: 104.25.242.61
   port: 443
@@ -72,31 +111,7 @@ proxies:
     path: /
     headers:
       Host: juzi.qea.ccwu.cc
-- name: NodeHub Vaslbashi
-  type: vless
-  server: 66.81.247.63
-  port: 443
-  uuid: '@Vaslbashi'
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: enquiries-commands-div-medal.trycloudflare.com
-- name: NodeHub VLESS-63
-  type: vless
-  server: 63.141.128.3
-  port: 2083
-  uuid: ae065531-7a26-4c3f-82cf-7c2ee9effcde
-  tls: true
-  network: ws
-  sni: chan1.newappdominfastlogin4.com
-  servername: chan1.newappdominfastlogin4.com
-  ws-opts:
-    path: /
-    headers:
-      Host: chan1.newappdominfastlogin4.com
-- name: NodeHub VLESS-185
+- name: NodeHub Erfwp
   type: vless
   server: 185.18.250.127
   port: 2096
@@ -109,15 +124,9 @@ proxies:
     path: /graphql
     headers:
       Host: 69565ce3109804e7813f98ee.mmdbay.blog
-- name: NodeHub SS-100
-  type: ss
-  server: 100.27.193.207
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: NodeHub 🇩🇪 >>::DE
+- name: NodeHub 10https://t.me/ConfigX2ray
   type: vless
-  server: 172.64.146.37
+  server: 172.64.146.143
   port: 80
   uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
   tls: false
@@ -126,9 +135,9 @@ proxies:
     path: /
     headers:
       Host: tt.andishehparenting.com
-- name: NodeHub VLESS-172
+- name: NodeHub 🫜8
   type: vless
-  server: 172.64.147.227
+  server: 172.66.44.211
   port: 80
   uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
   tls: false
@@ -137,9 +146,9 @@ proxies:
     path: /
     headers:
       Host: tt.andishehparenting.com
-- name: NodeHub 🇩🇪 >>::DE_1
+- name: NodeHub T.me/erfwp
   type: vless
-  server: 172.64.146.27
+  server: 172.64.146.102
   port: 80
   uuid: 478cc26d-16b3-4fdd-be64-60d5a58c1622
   tls: false
@@ -155,53 +164,54 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
+  - NodeHub VLESS-162
+  - NodeHub RzChanel1
   - NodeHub 🇺🇸 >>::US
+  - NodeHub VLESS-104
   - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 🇺🇸 >>::US_2
-  - NodeHub 🇺🇸 >>::US_3
-  - NodeHub Vaslbashi
-  - NodeHub VLESS-63
-  - NodeHub VLESS-185
-  - NodeHub SS-100
-  - NodeHub 🇩🇪 >>::DE
-  - NodeHub VLESS-172
-  - NodeHub 🇩🇪 >>::DE_1
+  - NodeHub VLESS-162_1
+  - NodeHub >>::XX
+  - NodeHub Erfwp
+  - NodeHub 10https://t.me/ConfigX2ray
+  - NodeHub 🫜8
+  - NodeHub T.me/erfwp
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
+  - NodeHub VLESS-162
+  - NodeHub RzChanel1
   - NodeHub 🇺🇸 >>::US
+  - NodeHub VLESS-104
   - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 🇺🇸 >>::US_2
-  - NodeHub 🇺🇸 >>::US_3
-  - NodeHub Vaslbashi
-  - NodeHub VLESS-63
-  - NodeHub VLESS-185
-  - NodeHub SS-100
-  - NodeHub 🇩🇪 >>::DE
-  - NodeHub VLESS-172
-  - NodeHub 🇩🇪 >>::DE_1
+  - NodeHub VLESS-162_1
+  - NodeHub >>::XX
+  - NodeHub Erfwp
+  - NodeHub 10https://t.me/ConfigX2ray
+  - NodeHub 🫜8
+  - NodeHub T.me/erfwp
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: NodeHub - 🌍 DE
+- name: NodeHub - 🐌 低速节点
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇩🇪 >>::DE
-  - NodeHub 🇩🇪 >>::DE_1
-- name: NodeHub - 🌍 US
-  type: select
-  proxies:
-  - NodeHub - 🚀 节点选择
+  - NodeHub VLESS-162
+  - NodeHub RzChanel1
   - NodeHub 🇺🇸 >>::US
+  - NodeHub VLESS-104
   - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 🇺🇸 >>::US_2
-  - NodeHub 🇺🇸 >>::US_3
+  - NodeHub VLESS-162_1
+  - NodeHub >>::XX
+  - NodeHub Erfwp
+  - NodeHub 10https://t.me/ConfigX2ray
+  - NodeHub 🫜8
+  - NodeHub T.me/erfwp
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
