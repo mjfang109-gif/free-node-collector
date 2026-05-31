@@ -20,46 +20,13 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub 🇺🇸 >>::US
-  type: vless
-  server: 104.17.156.197
+- name: NodeHub SS-13
+  type: ss
+  server: 13.218.172.80
   port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  tls: true
-  network: ws
-  sni: juzi.qea.ccwu.cc
-  servername: juzi.qea.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: juzi.qea.ccwu.cc
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: NodeHub >>::XX
-  type: vless
-  server: 104.17.150.241
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  tls: true
-  network: ws
-  sni: juzi.qea.ccwu.cc
-  servername: juzi.qea.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: NodeHub 🦄44
-  type: vless
-  server: 202.37.33.80
-  port: 443
-  uuid: cc752a3e-1537-4e86-bb50-1b897bf7b33c
-  tls: true
-  network: ws
-  sni: cyylr.eu.cc
-  servername: cyylr.eu.cc
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: cyylr.eu.cc
-- name: NodeHub >>::XX_1
   type: vless
   server: 104.25.252.37
   port: 443
@@ -72,59 +39,7 @@ proxies:
     path: /
     headers:
       Host: juzi.qea.ccwu.cc
-- name: NodeHub VLESS-104
-  type: vless
-  server: 104.17.148.22
-  port: 443
-  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
-  tls: true
-  network: ws
-  sni: d2127A49-flAT-wooD-C4B5.mILia-AkbARpOor.WorkERs.dEV
-  servername: d2127A49-flAT-wooD-C4B5.mILia-AkbARpOor.WorkERs.dEV
-  ws-opts:
-    path: /8eaZJhRwB5zzDy81?ed=2560
-    headers:
-      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
-- name: NodeHub 🇺🇸 >>::US_1
-  type: vless
-  server: 162.159.13.206
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  tls: true
-  network: ws
-  sni: juzi.qea.ccwu.cc
-  servername: juzi.qea.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.17.147.22
-  port: 443
-  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
-  tls: true
-  network: ws
-  sni: d2127A49-flAT-wooD-C4B5.mILia-AkbARpOor.WorkERs.dEV
-  servername: d2127A49-flAT-wooD-C4B5.mILia-AkbARpOor.WorkERs.dEV
-  ws-opts:
-    path: /8eaZJhRwB5zzDy81?ed=2560
-    headers:
-      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
-- name: NodeHub VLESS-104_2
-  type: vless
-  server: 104.19.229.21
-  port: 443
-  uuid: cc752a3e-1537-4e86-bb50-1b897bf7b33c
-  tls: true
-  network: ws
-  sni: cyylr.eu.cc
-  servername: cyylr.eu.cc
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: cyylr.eu.cc
-- name: NodeHub >>::XX_2
+- name: NodeHub >>::XX_1
   type: vless
   server: 162.159.13.20
   port: 443
@@ -137,32 +52,17 @@ proxies:
     path: /
     headers:
       Host: juzi.qea.ccwu.cc
-- name: NodeHub 🦄37
+- name: NodeHub VLESS-140
   type: vless
-  server: 172.66.3.201
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  tls: true
+  server: 140.248.187.74
+  port: 80
+  uuid: 7f979bbf-9357-44e8-a6ae-80927fbd851d
+  tls: false
   network: ws
-  sni: juzi.qea.ccwu.cc
-  servername: juzi.qea.ccwu.cc
   ws-opts:
-    path: /
+    path: ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
     headers:
-      Host: juzi.qea.ccwu.cc
-- name: NodeHub proxydotnet
-  type: vless
-  server: 185.18.250.127
-  port: 2096
-  uuid: 2ee26119-94e5-40b4-ba3a-16354021b600
-  tls: true
-  network: ws
-  sni: 69565ce3109804e7813f98ee.mmdbay.blog
-  servername: 69565ce3109804e7813f98ee.mmdbay.blog
-  ws-opts:
-    path: /graphql
-    headers:
-      Host: 69565ce3109804e7813f98ee.mmdbay.blog
+      Host: rb24.ir
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -170,34 +70,20 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub 🇺🇸 >>::US
+  - NodeHub SS-13
   - NodeHub >>::XX
-  - NodeHub 🦄44
   - NodeHub >>::XX_1
-  - NodeHub VLESS-104
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub VLESS-104_1
-  - NodeHub VLESS-104_2
-  - NodeHub >>::XX_2
-  - NodeHub 🦄37
-  - NodeHub proxydotnet
+  - NodeHub VLESS-140
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub 🇺🇸 >>::US
+  - NodeHub SS-13
   - NodeHub >>::XX
-  - NodeHub 🦄44
   - NodeHub >>::XX_1
-  - NodeHub VLESS-104
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub VLESS-104_1
-  - NodeHub VLESS-104_2
-  - NodeHub >>::XX_2
-  - NodeHub 🦄37
-  - NodeHub proxydotnet
+  - NodeHub VLESS-140
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -207,17 +93,10 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇺🇸 >>::US
+  - NodeHub SS-13
   - NodeHub >>::XX
-  - NodeHub 🦄44
   - NodeHub >>::XX_1
-  - NodeHub VLESS-104
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub VLESS-104_1
-  - NodeHub VLESS-104_2
-  - NodeHub >>::XX_2
-  - NodeHub 🦄37
-  - NodeHub proxydotnet
+  - NodeHub VLESS-140
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
