@@ -20,35 +20,68 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
+- name: NodeHub 🇺🇸 US-13.218.172.80-0170
+  type: ss
+  server: 13.218.172.80
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: NodeHub VLESS-198
+  type: vless
+  server: 198.41.211.114
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
 - name: NodeHub VLESS-104
   type: vless
-  server: 104.17.38.42
-  port: 443
-  uuid: 0905460d-6edc-4a82-8ec8-6b76090b41c8
-  tls: true
+  server: 104.19.163.160
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
   network: ws
-  sni: nginx-f.pages.dev
-  servername: nginx-f.pages.dev
   ws-opts:
-    path: /?ed=2560fp=randomized
+    path: /?ed=2048
     headers:
-      Host: nginx-f.pages.dev
+      Host: amirvpn.amirhm00100.workers.dev
 - name: NodeHub VLESS-104_1
   type: vless
-  server: 104.25.252.37
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  tls: true
+  server: 104.17.220.114
+  port: 80
+  uuid: 98f7d01d-e770-471f-80ff-8f480ad84f7c
+  tls: false
   network: ws
-  sni: juzi.qea.ccwu.cc
-  servername: juzi.qea.ccwu.cc
   ws-opts:
     path: /
     headers:
-      Host: juzi.qea.ccwu.cc
+      Host: divine-mode-ac41.amirss.workers.dev
+- name: NodeHub By EbraSha
+  type: vmess
+  server: 57.151.100.27
+  port: 10086
+  uuid: 550e8400-e29b-41d4-a716-446655440000
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: NodeHub VLESS-162
+  type: vless
+  server: 162.159.34.121
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
 - name: NodeHub >>::XX
   type: vless
-  server: 162.159.18.105
+  server: 162.159.17.189
   port: 443
   uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
   tls: true
@@ -59,9 +92,31 @@ proxies:
     path: /
     headers:
       Host: juzi.qea.ccwu.cc
-- name: NodeHub >>::XX_1
+- name: NodeHub VLESS-104_2
   type: vless
-  server: 104.25.242.61
+  server: 104.17.143.243
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
+- name: NodeHub VLESS-104_3
+  type: vless
+  server: 104.16.164.44
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
+- name: NodeHub 🇺🇸 >>::US
+  type: vless
+  server: 104.25.242.55
   port: 443
   uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
   tls: true
@@ -72,6 +127,187 @@ proxies:
     path: /
     headers:
       Host: juzi.qea.ccwu.cc
+- name: NodeHub 🦄26
+  type: vless
+  server: 104.19.35.49
+  port: 443
+  uuid: 7506fe3e-7e78-497c-bd01-db9d0be4d7e3
+  tls: true
+  network: ws
+  sni: filter.elitesilver002.workers.dev
+  servername: filter.elitesilver002.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: filter.elitesilver002.workers.dev
+- name: NodeHub 🦄38
+  type: vless
+  server: 162.159.19.202
+  port: 80
+  uuid: e284098e-7ffd-4fce-a9d3-ea6bc98ce629
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: empty-sea-3392.amir-1385-poo.workers.dev
+- name: NodeHub 🇺🇸 >>::US_1
+  type: vless
+  server: 23.227.60.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime18.workers.dev
+- name: NodeHub 🦄37
+  type: vless
+  server: 172.66.3.201
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  tls: true
+  network: ws
+  sni: juzi.qea.ccwu.cc
+  servername: juzi.qea.ccwu.cc
+  ws-opts:
+    path: /
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: NodeHub 🦄35
+  type: vless
+  server: 104.17.138.107
+  port: 443
+  uuid: fe273991-0514-4a16-8ec4-b15ae861c000
+  tls: true
+  network: ws
+  sni: zyzzzoao.xn--fiqv8j.eu.org
+  servername: zyzzzoao.xn--fiqv8j.eu.org
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: zyzzzoao.xn--fiqv8j.eu.org
+- name: NodeHub VLESS-188
+  type: vless
+  server: 188.114.98.112
+  port: 80
+  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY
+    headers:
+      Host: elenaaaaaaaaaa.cloudns.pro.
+- name: NodeHub 🦄76
+  type: vless
+  server: 202.37.33.81
+  port: 443
+  uuid: 3b01a777-55e7-49f6-8637-d94ee69607c6
+  tls: true
+  network: ws
+  sni: m.udemy.com.cyylr.eu.cc
+  servername: m.udemy.com.cyylr.eu.cc
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: m.udemy.com.cyylr.eu.cc
+- name: NodeHub VLESS-162_1
+  type: vless
+  server: 162.159.34.60
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
+- name: NodeHub VLESS-104_4
+  type: vless
+  server: 104.18.41.75
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
+- name: NodeHub VLESS-104_5
+  type: vless
+  server: 104.17.147.22
+  port: 443
+  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
+  tls: true
+  network: ws
+  sni: d2127A49-flAT-wooD-C4B5.mILia-AkbARpOor.WorkERs.dEV
+  servername: d2127A49-flAT-wooD-C4B5.mILia-AkbARpOor.WorkERs.dEV
+  ws-opts:
+    path: /8eaZJhRwB5zzDy81?ed=2560
+    headers:
+      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+- name: NodeHub VLESS-104_6
+  type: vless
+  server: 104.17.148.22
+  port: 443
+  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
+  tls: true
+  network: ws
+  sni: d2127A49-flAT-wooD-C4B5.mILia-AkbARpOor.WorkERs.dEV
+  servername: d2127A49-flAT-wooD-C4B5.mILia-AkbARpOor.WorkERs.dEV
+  ws-opts:
+    path: /8eaZJhRwB5zzDy81?ed=2560
+    headers:
+      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+- name: NodeHub VLESS-45
+  type: vless
+  server: 45.130.125.206
+  port: 443
+  uuid: f9fa9ed3-1381-441c-8672-588cbedd012d
+  tls: true
+  network: ws
+  sni: r.bibak.bz
+  servername: r.bibak.bz
+  ws-opts:
+    path: /
+    headers:
+      Host: r.bibak.bz
+- name: NodeHub Kariz
+  type: vless
+  server: 170.114.46.28
+  port: 443
+  uuid: c8e2ba30-a6de-4660-8c62-5bf5cc9318f3
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: enquiries-commands-div-medal.trycloudflare.com
+- name: NodeHub 🇹🇷 Vaslbashi-TR2
+  type: vless
+  server: 147.185.161.100
+  port: 443
+  uuid: '@Vaslbashi'
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: itself-neil-triangle-beauty.trycloudflare.com
+- name: NodeHub VLESS-104_7
+  type: vless
+  server: 104.21.70.145
+  port: 443
+  uuid: c3d4e5f6-7890-1234-5678-90abcdef1234
+  tls: true
+  network: ws
+  sni: vpn3.rnmcnm.com
+  servername: vpn3.rnmcnm.com
+  ws-opts:
+    path: /ray
+    headers:
+      Host: vpn3.rnmcnm.com
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -79,33 +315,79 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
+  - NodeHub 🇺🇸 US-13.218.172.80-0170
+  - NodeHub VLESS-198
   - NodeHub VLESS-104
   - NodeHub VLESS-104_1
+  - NodeHub By EbraSha
+  - NodeHub VLESS-162
   - NodeHub >>::XX
-  - NodeHub >>::XX_1
+  - NodeHub VLESS-104_2
+  - NodeHub VLESS-104_3
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub 🦄26
+  - NodeHub 🦄38
+  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub 🦄37
+  - NodeHub 🦄35
+  - NodeHub VLESS-188
+  - NodeHub 🦄76
+  - NodeHub VLESS-162_1
+  - NodeHub VLESS-104_4
+  - NodeHub VLESS-104_5
+  - NodeHub VLESS-104_6
+  - NodeHub VLESS-45
+  - NodeHub Kariz
+  - NodeHub 🇹🇷 Vaslbashi-TR2
+  - NodeHub VLESS-104_7
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
+  - NodeHub 🇺🇸 US-13.218.172.80-0170
+  - NodeHub VLESS-198
   - NodeHub VLESS-104
   - NodeHub VLESS-104_1
+  - NodeHub By EbraSha
+  - NodeHub VLESS-162
   - NodeHub >>::XX
-  - NodeHub >>::XX_1
+  - NodeHub VLESS-104_2
+  - NodeHub VLESS-104_3
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub 🦄26
+  - NodeHub 🦄38
+  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub 🦄37
+  - NodeHub 🦄35
+  - NodeHub VLESS-188
+  - NodeHub 🦄76
+  - NodeHub VLESS-162_1
+  - NodeHub VLESS-104_4
+  - NodeHub VLESS-104_5
+  - NodeHub VLESS-104_6
+  - NodeHub VLESS-45
+  - NodeHub Kariz
+  - NodeHub 🇹🇷 Vaslbashi-TR2
+  - NodeHub VLESS-104_7
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: NodeHub - 🐌 低速节点
+- name: NodeHub - 🌍 TR
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
-  - NodeHub >>::XX
-  - NodeHub >>::XX_1
+  - NodeHub 🇹🇷 Vaslbashi-TR2
+- name: NodeHub - 🌍 US
+  type: select
+  proxies:
+  - NodeHub - 🚀 节点选择
+  - NodeHub 🇺🇸 US-13.218.172.80-0170
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub 🇺🇸 >>::US_1
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
