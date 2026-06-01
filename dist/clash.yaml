@@ -20,61 +20,22 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub 🇺🇸 >>::US
+- name: NodeHub VLESS-216
   type: vless
-  server: 129.6.29.255
+  server: 216.24.57.1
   port: 443
-  uuid: 19804f6b-3661-4eca-b294-ba37196dab5b
+  uuid: 1a5b24bc-6180-4fa7-922d-ba7ee8a7a2b7
   tls: true
   network: ws
-  sni: graph.instagram.com.cyylr.eu.cc
-  servername: graph.instagram.com.cyylr.eu.cc
+  sni: support.zoom.us.cyylr.eu.cc
+  servername: support.zoom.us.cyylr.eu.cc
   ws-opts:
-    path: /id-tksi
+    path: /id-pusat
     headers:
-      Host: graph.instagram.com.cyylr.eu.cc
-- name: NodeHub [68766]
-  type: vless
-  server: 104.17.156.197
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  tls: true
-  network: ws
-  sni: juzi.qea.ccwu.cc
-  servername: juzi.qea.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: juzi.qea.ccwu.cc
+      Host: support.zoom.us.cyylr.eu.cc
 - name: NodeHub VLESS-104
   type: vless
-  server: 104.25.252.37
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  tls: true
-  network: ws
-  sni: juzi.qea.ccwu.cc
-  servername: juzi.qea.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: NodeHub [68764]
-  type: vless
-  server: 162.159.13.20
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  tls: true
-  network: ws
-  sni: juzi.qea.ccwu.cc
-  servername: juzi.qea.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: juzi.qea.ccwu.cc
-- name: NodeHub VLESS-172
-  type: vless
-  server: 172.64.53.241
+  server: 104.16.254.231
   port: 443
   uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
   tls: true
@@ -85,45 +46,19 @@ proxies:
     path: /fp=chrome
     headers:
       Host: sni.skylee4.cloudns.ch
-- name: NodeHub 🇺🇸 >>::US_1
+- name: NodeHub VLESS-188
   type: vless
-  server: 104.17.150.241
+  server: 188.114.97.6
   port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  uuid: 15a8fadd-3a43-422f-8e63-a87ea7c13221
   tls: true
   network: ws
-  sni: juzi.qea.ccwu.cc
-  servername: juzi.qea.ccwu.cc
+  sni: blog.webex.com.cyylr.eu.cc
+  servername: blog.webex.com.cyylr.eu.cc
   ws-opts:
-    path: /
+    path: /id-tksi
     headers:
-      Host: juzi.qea.ccwu.cc
-- name: NodeHub VLESS-162
-  type: vless
-  server: 162.159.81.132
-  port: 443
-  uuid: 7b110fd1-2c7f-4df3-8a2f-10085c500f4c
-  tls: true
-  network: ws
-  sni: orange-math-8a2e.parsa-esfandpoor89.workers.dev
-  servername: orange-math-8a2e.parsa-esfandpoor89.workers.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: orange-math-8a2e.parsa-esfandpoor89.workers.dev
-- name: NodeHub kurdconfig
-  type: vless
-  server: 162.159.18.105
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  tls: true
-  network: ws
-  sni: juzi.qea.ccwu.cc
-  servername: juzi.qea.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: juzi.qea.ccwu.cc
+      Host: blog.webex.com.cyylr.eu.cc
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -131,28 +66,18 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub [68766]
+  - NodeHub VLESS-216
   - NodeHub VLESS-104
-  - NodeHub [68764]
-  - NodeHub VLESS-172
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub VLESS-162
-  - NodeHub kurdconfig
+  - NodeHub VLESS-188
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub [68766]
+  - NodeHub VLESS-216
   - NodeHub VLESS-104
-  - NodeHub [68764]
-  - NodeHub VLESS-172
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub VLESS-162
-  - NodeHub kurdconfig
+  - NodeHub VLESS-188
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -162,14 +87,9 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub [68766]
+  - NodeHub VLESS-216
   - NodeHub VLESS-104
-  - NodeHub [68764]
-  - NodeHub VLESS-172
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub VLESS-162
-  - NodeHub kurdconfig
+  - NodeHub VLESS-188
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
