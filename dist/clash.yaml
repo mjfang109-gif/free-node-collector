@@ -20,32 +20,36 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub 🦄37
+- name: NodeHub By EbraSha
+  type: vmess
+  server: 57.151.100.27
+  port: 10086
+  uuid: 550e8400-e29b-41d4-a716-446655440000
+  alterId: 0
+  cipher: auto
+  tls: false
+- name: NodeHub VLESS-188
   type: vless
-  server: 172.66.3.201
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  tls: true
+  server: 188.114.98.112
+  port: 80
+  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
+  tls: false
   network: ws
-  sni: juzi.qea.ccwu.cc
-  servername: juzi.qea.ccwu.cc
   ws-opts:
-    path: /
+    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY
     headers:
-      Host: juzi.qea.ccwu.cc
-- name: NodeHub VLESS-162
+      Host: elenaaaaaaaaaa.cloudns.pro.
+- name: NodeHub 🇺🇸 >>::US
   type: vless
-  server: 162.159.13.206
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  tls: true
+  server: 104.18.109.147
+  port: 80
+  uuid: c29d39bd-92a4-45db-bb61-56013998617c
+  tls: false
   network: ws
-  sni: juzi.qea.ccwu.cc
-  servername: juzi.qea.ccwu.cc
   ws-opts:
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
+    path: /telegram-xv2ry2
     headers:
-      Host: juzi.qea.ccwu.cc
+      Host: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
 - name: NodeHub >>::XX
   type: vless
   server: 162.159.17.189
@@ -59,9 +63,22 @@ proxies:
     path: /
     headers:
       Host: juzi.qea.ccwu.cc
-- name: NodeHub >>::XX_1
+- name: NodeHub VLESS-162
   type: vless
-  server: 104.17.150.241
+  server: 162.159.81.132
+  port: 443
+  uuid: 7b110fd1-2c7f-4df3-8a2f-10085c500f4c
+  tls: true
+  network: ws
+  sni: orange-math-8a2e.parsa-esfandpoor89.workers.dev
+  servername: orange-math-8a2e.parsa-esfandpoor89.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: orange-math-8a2e.parsa-esfandpoor89.workers.dev
+- name: NodeHub VLESS-104
+  type: vless
+  server: 104.17.156.197
   port: 443
   uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
   tls: true
@@ -72,20 +89,7 @@ proxies:
     path: /
     headers:
       Host: juzi.qea.ccwu.cc
-- name: NodeHub 🦄76
-  type: vless
-  server: 202.37.33.81
-  port: 443
-  uuid: 3b01a777-55e7-49f6-8637-d94ee69607c6
-  tls: true
-  network: ws
-  sni: m.udemy.com.cyylr.eu.cc
-  servername: m.udemy.com.cyylr.eu.cc
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: m.udemy.com.cyylr.eu.cc
-- name: NodeHub >>::XX_2
+- name: NodeHub kurdconfig
   type: vless
   server: 162.159.18.105
   port: 443
@@ -98,6 +102,119 @@ proxies:
     path: /
     headers:
       Host: juzi.qea.ccwu.cc
+- name: NodeHub 🇺🇸 >>::US_1
+  type: vless
+  server: 104.17.138.107
+  port: 443
+  uuid: fe273991-0514-4a16-8ec4-b15ae861c000
+  tls: true
+  network: ws
+  sni: zyzzzoao.xn--fiqv8j.eu.org
+  servername: zyzzzoao.xn--fiqv8j.eu.org
+  ws-opts:
+    path: /fp=randomized
+    headers:
+      Host: zyzzzoao.xn--fiqv8j.eu.org
+- name: NodeHub >>::XX_1
+  type: vless
+  server: 104.25.242.55
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  tls: true
+  network: ws
+  sni: juzi.qea.ccwu.cc
+  servername: juzi.qea.ccwu.cc
+  ws-opts:
+    path: /
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: NodeHub VLESS-162_1
+  type: vless
+  server: 162.159.13.20
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  tls: true
+  network: ws
+  sni: juzi.qea.ccwu.cc
+  servername: juzi.qea.ccwu.cc
+  ws-opts:
+    path: /
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: NodeHub VLESS-104_1
+  type: vless
+  server: 104.16.164.44
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
+- name: NodeHub VLESS-104_2
+  type: vless
+  server: 104.21.80.1
+  port: 443
+  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
+  tls: true
+  network: ws
+  sni: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+  servername: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+  ws-opts:
+    path: /sd5fvgnaejylipcc?ed=2560
+    headers:
+      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+- name: NodeHub VLESS-43
+  type: vless
+  server: 43.169.18.179
+  port: 80
+  uuid: 5b6e7300-8fc8-404e-8dc9-40a5393dd881
+  tls: false
+  network: ws
+  ws-opts:
+    path: /XnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXnXn?ed=2560
+    headers:
+      Host: line.smartphone1.azazilvpn.sbs
+- name: NodeHub VLESS-162_2
+  type: vless
+  server: 162.159.36.5
+  port: 443
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  tls: true
+  network: ws
+  sni: octopusss4.com
+  servername: octopusss4.com
+  ws-opts:
+    path: /tsghdws
+    headers:
+      Host: octopusss4.com
+- name: NodeHub VLESS-162_3
+  type: vless
+  server: 162.159.36.20
+  port: 443
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  tls: true
+  network: ws
+  sni: octopusss4.com
+  servername: octopusss4.com
+  ws-opts:
+    path: /tsghdws
+    headers:
+      Host: octopusss4.com
+- name: NodeHub VLESS-45
+  type: vless
+  server: 45.80.111.1
+  port: 443
+  uuid: 88e4d1a6-39cd-413a-bc1f-b9b76a758536
+  tls: true
+  network: ws
+  sni: cdn-pro2.postshup.ir.
+  servername: cdn-pro2.postshup.ir.
+  ws-opts:
+    path: /news
+    headers:
+      Host: cdn-pro2.postshup.ir.
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -105,24 +222,44 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub 🦄37
-  - NodeHub VLESS-162
+  - NodeHub By EbraSha
+  - NodeHub VLESS-188
+  - NodeHub 🇺🇸 >>::US
   - NodeHub >>::XX
+  - NodeHub VLESS-162
+  - NodeHub VLESS-104
+  - NodeHub kurdconfig
+  - NodeHub 🇺🇸 >>::US_1
   - NodeHub >>::XX_1
-  - NodeHub 🦄76
-  - NodeHub >>::XX_2
+  - NodeHub VLESS-162_1
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-104_2
+  - NodeHub VLESS-43
+  - NodeHub VLESS-162_2
+  - NodeHub VLESS-162_3
+  - NodeHub VLESS-45
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub 🦄37
-  - NodeHub VLESS-162
+  - NodeHub By EbraSha
+  - NodeHub VLESS-188
+  - NodeHub 🇺🇸 >>::US
   - NodeHub >>::XX
+  - NodeHub VLESS-162
+  - NodeHub VLESS-104
+  - NodeHub kurdconfig
+  - NodeHub 🇺🇸 >>::US_1
   - NodeHub >>::XX_1
-  - NodeHub 🦄76
-  - NodeHub >>::XX_2
+  - NodeHub VLESS-162_1
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-104_2
+  - NodeHub VLESS-43
+  - NodeHub VLESS-162_2
+  - NodeHub VLESS-162_3
+  - NodeHub VLESS-45
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -132,12 +269,22 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🦄37
-  - NodeHub VLESS-162
+  - NodeHub By EbraSha
+  - NodeHub VLESS-188
+  - NodeHub 🇺🇸 >>::US
   - NodeHub >>::XX
+  - NodeHub VLESS-162
+  - NodeHub VLESS-104
+  - NodeHub kurdconfig
+  - NodeHub 🇺🇸 >>::US_1
   - NodeHub >>::XX_1
-  - NodeHub 🦄76
-  - NodeHub >>::XX_2
+  - NodeHub VLESS-162_1
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-104_2
+  - NodeHub VLESS-43
+  - NodeHub VLESS-162_2
+  - NodeHub VLESS-162_3
+  - NodeHub VLESS-45
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
