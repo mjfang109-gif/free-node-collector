@@ -20,110 +20,84 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
+- name: NodeHub 🇺🇸 >>::US
+  type: vless
+  server: 208.103.161.170
+  port: 443
+  uuid: 2dc797c8-9588-48a6-bc4a-265c23d87cd6
+  tls: true
+  network: ws
+  sni: ava.game.naver.com.cyylr.eu.cc
+  servername: ava.game.naver.com.cyylr.eu.cc
+  ws-opts:
+    path: /id-pusat
+    headers:
+      Host: ava.game.naver.com.cyylr.eu.cc
 - name: NodeHub VLESS-188
   type: vless
   server: 188.114.97.6
   port: 443
-  uuid: 86d10ffb-da7b-4d1e-9e7d-013d9e89d932
+  uuid: 58341346-98dd-4094-a26c-c378e86261e1
   tls: true
   network: ws
-  sni: m.udemy.com.cyylr.eu.cc
-  servername: m.udemy.com.cyylr.eu.cc
+  sni: support.zoom.us.cyylr.eu.cc
+  servername: support.zoom.us.cyylr.eu.cc
+  ws-opts:
+    path: /in-pdr
+    headers:
+      Host: support.zoom.us.cyylr.eu.cc
+- name: NodeHub VLESS-27
+  type: vless
+  server: 27.50.48.49
+  port: 443
+  uuid: 197f5e5c-fc15-4db6-8444-50248c2c394d
+  tls: true
+  network: ws
+  sni: somersby.pt.cyylr.eu.cc
+  servername: somersby.pt.cyylr.eu.cc
   ws-opts:
     path: /sg-amz
     headers:
-      Host: m.udemy.com.cyylr.eu.cc
-- name: NodeHub VLESS-172
-  type: vless
-  server: 172.66.157.39
-  port: 443
-  uuid: 15a8fadd-3a43-422f-8e63-a87ea7c13221
-  tls: true
-  network: ws
-  sni: blog.webex.com.cyylr.eu.cc
-  servername: blog.webex.com.cyylr.eu.cc
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: blog.webex.com.cyylr.eu.cc
-- name: NodeHub 🇺🇸 >>::US
-  type: vless
-  server: 104.17.150.241
-  port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-  tls: true
-  network: ws
-  sni: juzi.qea.ccwu.cc
-  servername: juzi.qea.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: juzi.qea.ccwu.cc
+      Host: somersby.pt.cyylr.eu.cc
 - name: NodeHub VLESS-104
   type: vless
-  server: 104.17.115.113
+  server: 104.17.121.71
   port: 443
-  uuid: 2244d9e4-dc80-4c61-9362-dde0afd034dd
+  uuid: cab13ce2-3808-45ce-aa93-4da670fa88e3
   tls: true
   network: ws
-  sni: hs.qoogl.workers.dev
-  servername: hs.qoogl.workers.dev
+  sni: space.byu.id.cyylr.eu.cc
+  servername: space.byu.id.cyylr.eu.cc
   ws-opts:
-    path: /
+    path: /my-wbv
     headers:
-      Host: hs.qoogl.workers.dev
-- name: NodeHub VLESS-172_1
+      Host: space.byu.id.cyylr.eu.cc
+- name: NodeHub VLESS-172
   type: vless
-  server: 172.64.145.166
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  network: ws
-  sni: fgnix832fx.fx6hsv0.ccwu.cc
-  servername: fgnix832fx.fx6hsv0.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: fgnix832fx.fx6hsv0.ccwu.cc
-- name: NodeHub VLESS-162
-  type: vless
-  server: 162.159.23.62
+  server: 172.64.146.138
   port: 443
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
   tls: true
   network: ws
-  sni: sni.skylee4.cloudns.ch
-  servername: sni.skylee4.cloudns.ch
+  sni: octopusss4.com
+  servername: octopusss4.com
   ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.net
+    path: /tsghdws
     headers:
-      Host: sni.skylee4.cloudns.ch
-- name: NodeHub VLESS-185
-  type: vless
-  server: 185.18.250.127
-  port: 2096
-  uuid: 2ee26119-94e5-40b4-ba3a-16354021b600
-  tls: true
-  network: ws
-  sni: 69565ce3109804e7813f98ee.mmdbay.blog
-  servername: 69565ce3109804e7813f98ee.mmdbay.blog
-  ws-opts:
-    path: /graphql
-    headers:
-      Host: 69565ce3109804e7813f98ee.mmdbay.blog
+      Host: octopusss4.com
 - name: NodeHub By EbraSha
   type: vmess
-  server: 172.64.145.202
+  server: 172.67.176.245
   port: 443
-  uuid: 7fd8d1db-96ec-4e46-80a8-74ad9472384e
+  uuid: 0632bfa9-b15c-4257-8c75-32f7c0c53b27
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /7fd8d1db-96ec-4e46-80a8-74ad9472384e-vm
+    path: /api/v1/graphql
     headers:
-      Host: graph-keep-beds-catalog.trycloudflare.com
+      Host: cg1c12.waimaojd.com
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -131,13 +105,11 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-188
-  - NodeHub VLESS-172
   - NodeHub 🇺🇸 >>::US
+  - NodeHub VLESS-188
+  - NodeHub VLESS-27
   - NodeHub VLESS-104
-  - NodeHub VLESS-172_1
-  - NodeHub VLESS-162
-  - NodeHub VLESS-185
+  - NodeHub VLESS-172
   - NodeHub By EbraSha
 - name: NodeHub - ♻️ 自动选择
   type: url-test
@@ -145,13 +117,11 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-188
-  - NodeHub VLESS-172
   - NodeHub 🇺🇸 >>::US
+  - NodeHub VLESS-188
+  - NodeHub VLESS-27
   - NodeHub VLESS-104
-  - NodeHub VLESS-172_1
-  - NodeHub VLESS-162
-  - NodeHub VLESS-185
+  - NodeHub VLESS-172
   - NodeHub By EbraSha
 - name: NodeHub - 🔮 故障转移
   type: fallback
@@ -162,13 +132,11 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub VLESS-188
-  - NodeHub VLESS-172
   - NodeHub 🇺🇸 >>::US
+  - NodeHub VLESS-188
+  - NodeHub VLESS-27
   - NodeHub VLESS-104
-  - NodeHub VLESS-172_1
-  - NodeHub VLESS-162
-  - NodeHub VLESS-185
+  - NodeHub VLESS-172
   - NodeHub By EbraSha
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择

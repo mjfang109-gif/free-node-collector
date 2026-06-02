@@ -1,74 +1,56 @@
 [
   {
     "protocol": "vless",
-    "location": "未知",
-    "ip": "188.114.97.6",
-    "port": 443,
-    "latency_ms": 47,
-    "speed_mbps": 70.81,
-    "name": "NodeHub VLESS-188"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "172.66.157.39",
-    "port": 443,
-    "latency_ms": 70,
-    "speed_mbps": 95.93,
-    "name": "NodeHub VLESS-172"
-  },
-  {
-    "protocol": "vless",
     "location": "US",
-    "ip": "104.17.150.241",
+    "ip": "208.103.161.170",
     "port": 443,
-    "latency_ms": 76,
-    "speed_mbps": 74.09,
+    "latency_ms": 42,
+    "speed_mbps": 73.39,
     "name": "NodeHub 🇺🇸 >>::US"
   },
   {
     "protocol": "vless",
     "location": "未知",
-    "ip": "104.17.115.113",
+    "ip": "188.114.97.6",
     "port": 443,
-    "latency_ms": 78,
-    "speed_mbps": 48.69,
+    "latency_ms": 51,
+    "speed_mbps": 119.54,
+    "name": "NodeHub VLESS-188"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "27.50.48.49",
+    "port": 443,
+    "latency_ms": 72,
+    "speed_mbps": 71.85,
+    "name": "NodeHub VLESS-27"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "104.17.121.71",
+    "port": 443,
+    "latency_ms": 158,
+    "speed_mbps": 86.02,
     "name": "NodeHub VLESS-104"
   },
   {
     "protocol": "vless",
     "location": "未知",
-    "ip": "172.64.145.166",
-    "port": 2087,
-    "latency_ms": 79,
-    "speed_mbps": 81.36,
-    "name": "NodeHub VLESS-172"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "162.159.23.62",
+    "ip": "172.64.146.138",
     "port": 443,
-    "latency_ms": 86,
-    "speed_mbps": 86.86,
-    "name": "NodeHub VLESS-162"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "185.18.250.127",
-    "port": 2096,
-    "latency_ms": 270,
-    "speed_mbps": 0.419287109375,
-    "name": "NodeHub VLESS-185"
+    "latency_ms": 227,
+    "speed_mbps": 24.87,
+    "name": "NodeHub VLESS-172"
   },
   {
     "protocol": "vmess",
     "location": "未知",
-    "ip": "172.64.145.202",
+    "ip": "172.67.176.245",
     "port": 443,
-    "latency_ms": 892,
-    "speed_mbps": 0,
+    "latency_ms": 265,
+    "speed_mbps": 0.82337890625,
     "name": "NodeHub By EbraSha"
   }
 ]
