@@ -20,71 +20,33 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub 🇺🇸 US-156.146.38.168-0091
-  type: ss
-  server: 156.146.38.168
+- name: NodeHub 🇺🇸 >>::US
+  type: vless
+  server: 104.25.252.37
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: NodeHub kurdconfig
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  tls: true
+  network: ws
+  sni: juzi.qea.ccwu.cc
+  servername: juzi.qea.ccwu.cc
+  ws-opts:
+    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: NodeHub VLESS-188
   type: vless
   server: 188.114.97.6
-  port: 443
-  uuid: 9bab5218-ce9f-4991-9887-8b3605a27d5e
-  tls: true
-  network: ws
-  sni: graph.instagram.com.cyylr.eu.cc
-  servername: graph.instagram.com.cyylr.eu.cc
-  ws-opts:
-    path: /sg-amz
-    headers:
-      Host: graph.instagram.com.cyylr.eu.cc
-- name: NodeHub kurdconfig_1
-  type: vless
-  server: 45.130.125.69
-  port: 443
-  uuid: c75c49cd-4930-47c9-8247-29889a13f23c
-  tls: true
-  network: ws
-  sni: zaintest.vuclip.com.cyylr.eu.cc
-  servername: zaintest.vuclip.com.cyylr.eu.cc
-  ws-opts:
-    path: /my-wbv
-    headers:
-      Host: zaintest.vuclip.com.cyylr.eu.cc
-- name: NodeHub VLESS-129
-  type: vless
-  server: 129.6.29.255
-  port: 443
-  uuid: 19804f6b-3661-4eca-b294-ba37196dab5b
-  tls: true
-  network: ws
-  sni: graph.instagram.com.cyylr.eu.cc
-  servername: graph.instagram.com.cyylr.eu.cc
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: graph.instagram.com.cyylr.eu.cc
-- name: NodeHub 🇺🇸 US-156.146.38.170-0088
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: NodeHub VLESS-193
-  type: vless
-  server: 193.22.229.138
   port: 80
-  uuid: e30ba9e9-afc6-4236-803f-7b4ca30ce44b
+  uuid: 343f843d-b99b-443c-bd6e-c23fae0c145c
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /in-do
     headers:
-      Host: pimxpass.alex96336997.workers.dev
-- name: NodeHub 🇺🇸 >>::US
+      Host: zaintest.vuclip.com.cyylr.eu.cc
+- name: NodeHub 🇺🇸 >>::US_1
   type: vless
-  server: 162.159.18.105
+  server: 172.66.3.201
   port: 443
   uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
   tls: true
@@ -95,95 +57,19 @@ proxies:
     path: /
     headers:
       Host: juzi.qea.ccwu.cc
-- name: NodeHub چنل
-  type: vless
-  server: 202.37.33.80
-  port: 443
-  uuid: cc752a3e-1537-4e86-bb50-1b897bf7b33c
-  tls: true
-  network: ws
-  sni: cyylr.eu.cc
-  servername: cyylr.eu.cc
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: cyylr.eu.cc
-- name: NodeHub 🇺🇸 >>::US_1
-  type: vless
-  server: 103.18.49.100
-  port: 443
-  uuid: 6e593426-1a8e-4226-984f-0ea174e218c7
-  tls: true
-  network: ws
-  sni: dl.cvs.freefiremobile.com.cyylr.eu.cc
-  servername: dl.cvs.freefiremobile.com.cyylr.eu.cc
-  ws-opts:
-    path: /id-pusat
-    headers:
-      Host: dl.cvs.freefiremobile.com.cyylr.eu.cc
-- name: NodeHub TEL:Father_vpn
-  type: vless
-  server: 45.130.125.0
-  port: 443
-  uuid: d08d180d-cb07-4d82-b1bd-1e42fa523cd7
-  tls: true
-  network: ws
-  sni: ads.ruangguru.com.cyylr.eu.cc
-  servername: ads.ruangguru.com.cyylr.eu.cc
-  ws-opts:
-    path: /sg-orcl
-    headers:
-      Host: ads.ruangguru.com.cyylr.eu.cc
-- name: NodeHub 🇺🇸 >>::US_2
-  type: vless
-  server: 162.159.43.233
-  port: 443
-  uuid: 6bc1bd81-b763-4213-80ad-4586224e3079
-  tls: true
-  network: ws
-  sni: tohidza.et6m22266a.workers.dev
-  servername: tohidza.et6m22266a.workers.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: tohidza.et6m22266a.workers.dev
 - name: NodeHub VLESS-172
   type: vless
-  server: 172.64.32.75
+  server: 172.64.53.74
   port: 443
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   tls: true
   network: ws
-  sni: octopusss4.com
-  servername: octopusss4.com
-  ws-opts:
-    path: /tsghdws
-    headers:
-      Host: octopusss4.com
-- name: NodeHub By EbraSha
-  type: vmess
-  server: 104.21.3.52
-  port: 80
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-    headers:
-      Host: de2.ping-game.ir
-- name: NodeHub VLESS-172_1
-  type: vless
-  server: 172.67.211.74
-  port: 80
-  uuid: e84064cc-617f-4ba8-aa6f-13e920fd2610
-  tls: false
-  network: ws
+  sni: fgnix832fx.fx6hsv0.ccwu.cc
+  servername: fgnix832fx.fx6hsv0.ccwu.cc
   ws-opts:
     path: /
     headers:
-      Host: main.boobie.eu.cc
+      Host: fgnix832fx.fx6hsv0.ccwu.cc
 - name: NodeHub 🇫🇮 >>::FI
   type: vless
   server: 173.245.58.75
@@ -197,9 +83,9 @@ proxies:
     path: /tsghdws
     headers:
       Host: octopusss4.com
-- name: NodeHub 13https://t.me/ConfigX2ray
+- name: NodeHub VLESS-172_1
   type: vless
-  server: 141.193.213.10
+  server: 172.66.47.45
   port: 443
   uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
   tls: true
@@ -210,9 +96,9 @@ proxies:
     path: /tsghdws
     headers:
       Host: octopusss4.com
-- name: NodeHub VLESS-172_2
+- name: NodeHub 10https://t.me/ConfigX2ray
   type: vless
-  server: 172.64.146.138
+  server: 104.17.121.71
   port: 443
   uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
   tls: true
@@ -223,32 +109,19 @@ proxies:
     path: /tsghdws
     headers:
       Host: octopusss4.com
-- name: NodeHub By EbraSha_1
-  type: vmess
-  server: 104.21.43.81
+- name: NodeHub Echo_Center
+  type: vless
+  server: 188.114.97.6
   port: 443
-  uuid: 0632bfa9-b15c-4257-8c75-32f7c0c53b27
-  alterId: 0
-  cipher: auto
+  uuid: e77b4920-6d01-4a4e-b45b-62ca479f2acc
   tls: true
   network: ws
+  sni: Irancellx2.nscl.ir
+  servername: Irancellx2.nscl.ir
   ws-opts:
-    path: /api/v1/graphql
+    path: /dash
     headers:
-      Host: cg1c12.waimaojd.com
-- name: NodeHub By EbraSha 🧩
-  type: vmess
-  server: 104.21.89.181
-  port: 80
-  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
-    headers:
-      Host: accklsj.bufu.us.ci
+      Host: Irancellx2.nscl.ir
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -256,50 +129,28 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub 🇺🇸 US-156.146.38.168-0091
-  - NodeHub kurdconfig
-  - NodeHub kurdconfig_1
-  - NodeHub VLESS-129
-  - NodeHub 🇺🇸 US-156.146.38.170-0088
-  - NodeHub VLESS-193
   - NodeHub 🇺🇸 >>::US
-  - NodeHub چنل
+  - NodeHub VLESS-188
   - NodeHub 🇺🇸 >>::US_1
-  - NodeHub TEL:Father_vpn
-  - NodeHub 🇺🇸 >>::US_2
   - NodeHub VLESS-172
-  - NodeHub By EbraSha
-  - NodeHub VLESS-172_1
   - NodeHub 🇫🇮 >>::FI
-  - NodeHub 13https://t.me/ConfigX2ray
-  - NodeHub VLESS-172_2
-  - NodeHub By EbraSha_1
-  - NodeHub By EbraSha 🧩
+  - NodeHub VLESS-172_1
+  - NodeHub 10https://t.me/ConfigX2ray
+  - NodeHub Echo_Center
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub 🇺🇸 US-156.146.38.168-0091
-  - NodeHub kurdconfig
-  - NodeHub kurdconfig_1
-  - NodeHub VLESS-129
-  - NodeHub 🇺🇸 US-156.146.38.170-0088
-  - NodeHub VLESS-193
   - NodeHub 🇺🇸 >>::US
-  - NodeHub چنل
+  - NodeHub VLESS-188
   - NodeHub 🇺🇸 >>::US_1
-  - NodeHub TEL:Father_vpn
-  - NodeHub 🇺🇸 >>::US_2
   - NodeHub VLESS-172
-  - NodeHub By EbraSha
-  - NodeHub VLESS-172_1
   - NodeHub 🇫🇮 >>::FI
-  - NodeHub 13https://t.me/ConfigX2ray
-  - NodeHub VLESS-172_2
-  - NodeHub By EbraSha_1
-  - NodeHub By EbraSha 🧩
+  - NodeHub VLESS-172_1
+  - NodeHub 10https://t.me/ConfigX2ray
+  - NodeHub Echo_Center
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -314,11 +165,8 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇺🇸 US-156.146.38.168-0091
-  - NodeHub 🇺🇸 US-156.146.38.170-0088
   - NodeHub 🇺🇸 >>::US
   - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 🇺🇸 >>::US_2
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
