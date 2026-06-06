@@ -20,48 +20,22 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub VLESS-104
+- name: 'NodeHub more : | Warp 1'
   type: vless
-  server: 104.18.42.54
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  network: ws
-  sni: fgnix832fx.fx6hsv0.ccwu.cc
-  servername: fgnix832fx.fx6hsv0.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: fgnix832fx.fx6hsv0.ccwu.cc
-- name: NodeHub VLESS-172
-  type: vless
-  server: 172.64.189.5
-  port: 2083
-  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
-  tls: true
-  network: ws
-  sni: calm-smoke-1a21.alvlirm6262.workers.dev
-  servername: calm-smoke-1a21.alvlirm6262.workers.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: calm-smoke-1a21.alvlirm6262.workers.dev
-- name: NodeHub VLESS-162
-  type: vless
-  server: 162.159.13.20
+  server: 188.114.97.6
   port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  uuid: 1043634e-8d9d-4736-83fa-f14ddc9d464c
   tls: true
   network: ws
-  sni: juzi.qea.ccwu.cc
-  servername: juzi.qea.ccwu.cc
+  sni: dfsuporte.garena.com.ex33r.eu.cc
+  servername: dfsuporte.garena.com.ex33r.eu.cc
   ws-opts:
-    path: /
+    path: /id-amz
     headers:
-      Host: juzi.qea.ccwu.cc
-- name: NodeHub 🇫🇮 >>::FI
+      Host: dfsuporte.garena.com.ex33r.eu.cc
+- name: NodeHub VLESS-188
   type: vless
-  server: 172.64.147.137
+  server: 188.114.97.3
   port: 443
   uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
   tls: true
@@ -72,32 +46,6 @@ proxies:
     path: /tsghdws
     headers:
       Host: octopusss4.com
-- name: NodeHub چنل‌تلگراممون
-  type: vless
-  server: 151.101.108.223
-  port: 443
-  uuid: 98c9f668-1f2f-4a6d-bd7a-606fab0ac035
-  tls: true
-  network: ws
-  sni: default.ssl.fastly.net
-  servername: default.ssl.fastly.net
-  ws-opts:
-    path: /
-    headers:
-      Host: jookeji.global.ssl.fastly.net
-- name: NodeHub VLESS-199
-  type: vless
-  server: 199.232.78.160
-  port: 443
-  uuid: 3f88bde3-effd-4a49-bfa2-19fa4d0e1cc5
-  tls: true
-  network: ws
-  sni: default.ssl.fastly.net
-  servername: default.ssl.fastly.net
-  ws-opts:
-    path: /
-    headers:
-      Host: fancii.global.ssl.fastly.net
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -105,24 +53,16 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-104
-  - NodeHub VLESS-172
-  - NodeHub VLESS-162
-  - NodeHub 🇫🇮 >>::FI
-  - NodeHub چنل‌تلگراممون
-  - NodeHub VLESS-199
+  - 'NodeHub more : | Warp 1'
+  - NodeHub VLESS-188
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-104
-  - NodeHub VLESS-172
-  - NodeHub VLESS-162
-  - NodeHub 🇫🇮 >>::FI
-  - NodeHub چنل‌تلگراممون
-  - NodeHub VLESS-199
+  - 'NodeHub more : | Warp 1'
+  - NodeHub VLESS-188
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -132,12 +72,8 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub VLESS-104
-  - NodeHub VLESS-172
-  - NodeHub VLESS-162
-  - NodeHub 🇫🇮 >>::FI
-  - NodeHub چنل‌تلگراممون
-  - NodeHub VLESS-199
+  - 'NodeHub more : | Warp 1'
+  - NodeHub VLESS-188
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择

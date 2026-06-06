@@ -2,55 +2,19 @@
   {
     "protocol": "vless",
     "location": "未知",
-    "ip": "104.18.42.54",
-    "port": 2087,
-    "latency_ms": 80,
-    "speed_mbps": 113.75,
-    "name": "NodeHub VLESS-104"
+    "ip": "188.114.97.6",
+    "port": 443,
+    "latency_ms": 64,
+    "speed_mbps": 125.46,
+    "name": "NodeHub more : | Warp 1"
   },
   {
     "protocol": "vless",
     "location": "未知",
-    "ip": "172.64.189.5",
-    "port": 2083,
-    "latency_ms": 147,
-    "speed_mbps": 73.65,
-    "name": "NodeHub VLESS-172"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "162.159.13.20",
+    "ip": "188.114.97.3",
     "port": 443,
-    "latency_ms": 168,
-    "speed_mbps": 59.35,
-    "name": "NodeHub VLESS-162"
-  },
-  {
-    "protocol": "vless",
-    "location": "FI",
-    "ip": "172.64.147.137",
-    "port": 443,
-    "latency_ms": 373,
-    "speed_mbps": 11.65,
-    "name": "NodeHub 🇫🇮 >>::FI"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "151.101.108.223",
-    "port": 443,
-    "latency_ms": 827,
-    "speed_mbps": 0,
-    "name": "NodeHub چنل‌تلگراممون"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "199.232.78.160",
-    "port": 443,
-    "latency_ms": 1123,
-    "speed_mbps": 0.6312109375,
-    "name": "NodeHub VLESS-199"
+    "latency_ms": 324,
+    "speed_mbps": 25.79,
+    "name": "NodeHub VLESS-188"
   }
 ]
