@@ -22,17 +22,17 @@ dns:
 proxies:
 - name: NodeHub VLESS-104
   type: vless
-  server: 104.16.75.127
+  server: 104.18.155.229
   port: 443
-  uuid: 933e8995-3b6d-4d42-8b23-e649f0e7205f
+  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
   tls: true
   network: ws
-  sni: resources.office.com.r3xxe.eu.cc
-  servername: resources.office.com.r3xxe.eu.cc
+  sni: www.genflix.co.id.r3xxe.eu.cc
+  servername: www.genflix.co.id.r3xxe.eu.cc
   ws-opts:
-    path: /us-gllc
+    path: /au-do
     headers:
-      Host: resources.office.com.r3xxe.eu.cc
+      Host: www.genflix.co.id.r3xxe.eu.cc
 - name: NodeHub 🇫🇮 >>::FI
   type: vless
   server: 172.67.211.74
@@ -44,37 +44,57 @@ proxies:
     path: /
     headers:
       Host: main.boobie.eu.cc
-- name: NodeHub VLESS-45
+- name: NodeHub VLESS-172
   type: vless
-  server: 45.130.125.0
+  server: 172.67.135.254
+  port: 80
+  uuid: 22c15b3f-e205-48e2-9b30-1a2c3480e7b2
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sRv10.hAMiIbaR.CoM
+- name: NodeHub By EbraSha
+  type: vmess
+  server: 104.18.0.100
   port: 443
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  uuid: e9947b42-27ed-401e-b75e-c9ebd357c0f3
+  alterId: 0
+  cipher: auto
   tls: true
   network: ws
-  sni: octopusss4.com
-  servername: octopusss4.com
   ws-opts:
-    path: /tsghdws
+    path: /
     headers:
-      Host: octopusss4.com
+      Host: omkuzygiv.com
 - name: NodeHub 🇫🇮 >>::FI_1
   type: vless
-  server: 108.162.192.75
-  port: 443
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-  tls: true
+  server: 104.21.23.131
+  port: 80
+  uuid: e84064cc-617f-4ba8-aa6f-13e920fd2610
+  tls: false
   network: ws
-  sni: octopusss4.com
-  servername: octopusss4.com
   ws-opts:
-    path: /tsghdws
+    path: /
     headers:
-      Host: octopusss4.com
-- name: NodeHub http://t.me/v2ray_configs_pools
+      Host: main.boobie.eu.cc
+- name: NodeHub VLESS-172_1
+  type: vless
+  server: 172.64.34.119
+  port: 80
+  uuid: 22c15b3f-e205-48e2-9b30-1a2c3480e7b2
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sRv16.hAMiIbaR.CoM
+- name: NodeHub VLESS-151
   type: vless
   server: 151.101.108.223
   port: 443
-  uuid: 8bcdc02a-6197-4e5b-bbbf-4e7790d2796a
+  uuid: a73ab8fb-5838-410f-ad52-c98a69f1b3ca
   tls: true
   network: ws
   sni: default.ssl.fastly.net
@@ -82,7 +102,20 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: nesfeshzksab.global.ssl.fastly.net
+      Host: pan1.global.ssl.fastly.net
+- name: NodeHub 🇫🇮 >>::FI_2
+  type: vless
+  server: 45.130.125.96
+  port: 443
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  tls: true
+  network: ws
+  sni: octopusss4.com
+  servername: octopusss4.com
+  ws-opts:
+    path: /tsghdws
+    headers:
+      Host: octopusss4.com
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -92,9 +125,12 @@ proxy-groups:
   - DIRECT
   - NodeHub VLESS-104
   - NodeHub 🇫🇮 >>::FI
-  - NodeHub VLESS-45
+  - NodeHub VLESS-172
+  - NodeHub By EbraSha
   - NodeHub 🇫🇮 >>::FI_1
-  - NodeHub http://t.me/v2ray_configs_pools
+  - NodeHub VLESS-172_1
+  - NodeHub VLESS-151
+  - NodeHub 🇫🇮 >>::FI_2
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -103,9 +139,12 @@ proxy-groups:
   proxies: &id001
   - NodeHub VLESS-104
   - NodeHub 🇫🇮 >>::FI
-  - NodeHub VLESS-45
+  - NodeHub VLESS-172
+  - NodeHub By EbraSha
   - NodeHub 🇫🇮 >>::FI_1
-  - NodeHub http://t.me/v2ray_configs_pools
+  - NodeHub VLESS-172_1
+  - NodeHub VLESS-151
+  - NodeHub 🇫🇮 >>::FI_2
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -117,9 +156,12 @@ proxy-groups:
   - NodeHub - 🚀 节点选择
   - NodeHub VLESS-104
   - NodeHub 🇫🇮 >>::FI
-  - NodeHub VLESS-45
+  - NodeHub VLESS-172
+  - NodeHub By EbraSha
   - NodeHub 🇫🇮 >>::FI_1
-  - NodeHub http://t.me/v2ray_configs_pools
+  - NodeHub VLESS-172_1
+  - NodeHub VLESS-151
+  - NodeHub 🇫🇮 >>::FI_2
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
