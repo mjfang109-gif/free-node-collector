@@ -22,73 +22,31 @@ dns:
 proxies:
 - name: NodeHub VLESS-104
   type: vless
-  server: 104.25.54.120
-  port: 80
-  uuid: 0c41db85-4625-4cd6-9151-cf476f1928ed
-  tls: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoidFRYZlBENnZTIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOlsiMTYzLjUuMTg3LjExOCJdfQ==?ed=2560
-    headers:
-      Host: reza.rezarezarezaaaaaaaa.workers.dev
-- name: NodeHub By EbraSha
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: NodeHub VLESS-188
-  type: vless
-  server: 188.114.98.112
-  port: 80
-  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY
-    headers:
-      Host: elenaaaaaaaaaa.cloudns.pro.
-- name: NodeHub 🇺🇸 >>::US
-  type: vless
-  server: 193.22.229.138
-  port: 80
-  uuid: e30ba9e9-afc6-4236-803f-7b4ca30ce44b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pimxpass.alex96336997.workers.dev
-- name: NodeHub VLESS-151
-  type: vless
-  server: 151.101.108.223
+  server: 104.16.75.127
   port: 443
-  uuid: e7c13fda-6089-41a7-8367-dcbba30ce844
+  uuid: 933e8995-3b6d-4d42-8b23-e649f0e7205f
   tls: true
   network: ws
-  sni: default.ssl.fastly.net
-  servername: default.ssl.fastly.net
+  sni: resources.office.com.r3xxe.eu.cc
+  servername: resources.office.com.r3xxe.eu.cc
   ws-opts:
-    path: /
+    path: /us-gllc
     headers:
-      Host: pan1.global.ssl.fastly.net
-- name: NodeHub VLESS-172
+      Host: resources.office.com.r3xxe.eu.cc
+- name: NodeHub 🇫🇮 >>::FI
   type: vless
-  server: 172.67.135.254
+  server: 172.67.211.74
   port: 80
-  uuid: 22c15b3f-e205-48e2-9b30-1a2c3480e7b2
+  uuid: e84064cc-617f-4ba8-aa6f-13e920fd2610
   tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: sRv63.hAMiIbaR.CoM
-- name: NodeHub VLESS-66
+      Host: main.boobie.eu.cc
+- name: NodeHub VLESS-45
   type: vless
-  server: 66.81.247.155
+  server: 45.130.125.0
   port: 443
   uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
   tls: true
@@ -99,19 +57,32 @@ proxies:
     path: /tsghdws
     headers:
       Host: octopusss4.com
-- name: NodeHub VLESS-104_1
+- name: NodeHub 🇫🇮 >>::FI_1
   type: vless
-  server: 104.18.32.47
-  port: 2096
-  uuid: 39642841-0882-4894-b77e-73f760cc4c72
+  server: 108.162.192.75
+  port: 443
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
   tls: true
   network: ws
-  sni: de.guv.lol
-  servername: de.guv.lol
+  sni: octopusss4.com
+  servername: octopusss4.com
   ws-opts:
-    path: /pathway
+    path: /tsghdws
     headers:
-      Host: de.guv.lol
+      Host: octopusss4.com
+- name: NodeHub http://t.me/v2ray_configs_pools
+  type: vless
+  server: 151.101.108.223
+  port: 443
+  uuid: 8bcdc02a-6197-4e5b-bbbf-4e7790d2796a
+  tls: true
+  network: ws
+  sni: default.ssl.fastly.net
+  servername: default.ssl.fastly.net
+  ws-opts:
+    path: /
+    headers:
+      Host: nesfeshzksab.global.ssl.fastly.net
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -120,13 +91,10 @@ proxy-groups:
   - NodeHub - 🔮 故障转移
   - DIRECT
   - NodeHub VLESS-104
-  - NodeHub By EbraSha
-  - NodeHub VLESS-188
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub VLESS-151
-  - NodeHub VLESS-172
-  - NodeHub VLESS-66
-  - NodeHub VLESS-104_1
+  - NodeHub 🇫🇮 >>::FI
+  - NodeHub VLESS-45
+  - NodeHub 🇫🇮 >>::FI_1
+  - NodeHub http://t.me/v2ray_configs_pools
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -134,13 +102,10 @@ proxy-groups:
   tolerance: 50
   proxies: &id001
   - NodeHub VLESS-104
-  - NodeHub By EbraSha
-  - NodeHub VLESS-188
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub VLESS-151
-  - NodeHub VLESS-172
-  - NodeHub VLESS-66
-  - NodeHub VLESS-104_1
+  - NodeHub 🇫🇮 >>::FI
+  - NodeHub VLESS-45
+  - NodeHub 🇫🇮 >>::FI_1
+  - NodeHub http://t.me/v2ray_configs_pools
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -151,13 +116,10 @@ proxy-groups:
   proxies:
   - NodeHub - 🚀 节点选择
   - NodeHub VLESS-104
-  - NodeHub By EbraSha
-  - NodeHub VLESS-188
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub VLESS-151
-  - NodeHub VLESS-172
-  - NodeHub VLESS-66
-  - NodeHub VLESS-104_1
+  - NodeHub 🇫🇮 >>::FI
+  - NodeHub VLESS-45
+  - NodeHub 🇫🇮 >>::FI_1
+  - NodeHub http://t.me/v2ray_configs_pools
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
