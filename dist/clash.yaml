@@ -20,58 +20,6 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub VLESS-104
-  type: vless
-  server: 104.17.148.22
-  port: 443
-  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
-  tls: true
-  network: ws
-  sni: d2127A49-flAT-wooD-C4B5.mILia-AkbARpOor.WorkERs.dEV
-  servername: d2127A49-flAT-wooD-C4B5.mILia-AkbARpOor.WorkERs.dEV
-  ws-opts:
-    path: /8eaZJhRwB5zzDy81?ed=2560
-    headers:
-      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.21.80.1
-  port: 443
-  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
-  tls: true
-  network: ws
-  sni: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
-  servername: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
-  ws-opts:
-    path: /sd5fvgnaejylipcc?ed=2560
-    headers:
-      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
-- name: NodeHub By EbraSha
-  type: vmess
-  server: 172.66.132.196
-  port: 80
-  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
-    headers:
-      Host: accklsj.bufu.us.ci
-- name: NodeHub kurdconfig
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: ce6d845b-285b-432d-eb42-fb737c8796d4
-  tls: true
-  network: ws
-  sni: global.fastly.com
-  servername: global.fastly.com
-  ws-opts:
-    path: /
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
 - name: NodeHub 🇫🇮 >>::FI
   type: vless
   server: 104.21.23.131
@@ -83,9 +31,9 @@ proxies:
     path: /
     headers:
       Host: main.boobie.eu.cc
-- name: NodeHub VLESS-173
+- name: NodeHub VLESS-188
   type: vless
-  server: 173.245.58.75
+  server: 188.114.97.3
   port: 443
   uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
   tls: true
@@ -96,20 +44,7 @@ proxies:
     path: /tsghdws
     headers:
       Host: octopusss4.com
-- name: NodeHub 🇫🇮 >>::FI_1
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-  tls: true
-  network: ws
-  sni: octopusss4.com
-  servername: octopusss4.com
-  ws-opts:
-    path: /tsghdws
-    headers:
-      Host: octopusss4.com
-- name: NodeHub 🇺🇸 US
+- name: NodeHub VLESS-151
   type: vless
   server: 151.101.0.1
   port: 80
@@ -120,35 +55,24 @@ proxies:
     path: /
     headers:
       Host: max-gb1.global.ssl.fastly.net
-- name: NodeHub By EbraSha_1
-  type: vmess
-  server: 104.21.55.229
-  port: 80
-  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
-    headers:
-      Host: accklsj.bufu.us.ci
-- name: NodeHub VLESS-151
+- name: NodeHub VLESS-172
   type: vless
-  server: 151.101.194.219
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  tls: false
+  server: 172.67.70.149
+  port: 443
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  tls: true
   network: ws
+  sni: octopusss4.com
+  servername: octopusss4.com
   ws-opts:
-    path: /
+    path: /tsghdws
     headers:
-      Host: max-gb1.global.ssl.fastly.net
-- name: NodeHub VLESS-104_2
+      Host: octopusss4.com
+- name: NodeHub VLESS-104
   type: vless
   server: 104.16.0.0
   port: 443
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   tls: true
   network: ws
   sni: tr-cd.sublink-vip2.com
@@ -157,28 +81,19 @@ proxies:
     path: /
     headers:
       Host: tr-cd.sublink-vip2.com
-- name: NodeHub VLESS-151_1
+- name: NodeHub VLESS-188_1
   type: vless
-  server: 151.101.66.219
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  tls: false
+  server: 188.114.97.6
+  port: 2087
+  uuid: 4311bd3f-4f66-4538-a624-221b87690b2c
+  tls: true
   network: ws
+  sni: mjtbknetmkhremge.ordak.qzz.io
+  servername: mjtbknetmkhremge.ordak.qzz.io
   ws-opts:
-    path: /
+    path: /fl?ed
     headers:
-      Host: max-gb1.global.ssl.fastly.net
-- name: NodeHub VLESS-199
-  type: vless
-  server: 199.232.197.131
-  port: 80
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
+      Host: mjtbknetmkhremge.ordak.qzz.io
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -186,54 +101,39 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
-  - NodeHub By EbraSha
-  - NodeHub kurdconfig
   - NodeHub 🇫🇮 >>::FI
-  - NodeHub VLESS-173
-  - NodeHub 🇫🇮 >>::FI_1
-  - NodeHub 🇺🇸 US
-  - NodeHub By EbraSha_1
+  - NodeHub VLESS-188
   - NodeHub VLESS-151
-  - NodeHub VLESS-104_2
-  - NodeHub VLESS-151_1
-  - NodeHub VLESS-199
+  - NodeHub VLESS-172
+  - NodeHub VLESS-104
+  - NodeHub VLESS-188_1
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
-  - NodeHub By EbraSha
-  - NodeHub kurdconfig
   - NodeHub 🇫🇮 >>::FI
-  - NodeHub VLESS-173
-  - NodeHub 🇫🇮 >>::FI_1
-  - NodeHub 🇺🇸 US
-  - NodeHub By EbraSha_1
+  - NodeHub VLESS-188
   - NodeHub VLESS-151
-  - NodeHub VLESS-104_2
-  - NodeHub VLESS-151_1
-  - NodeHub VLESS-199
+  - NodeHub VLESS-172
+  - NodeHub VLESS-104
+  - NodeHub VLESS-188_1
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: NodeHub - 🌍 FI
+- name: NodeHub - 🐌 低速节点
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
   - NodeHub 🇫🇮 >>::FI
-  - NodeHub 🇫🇮 >>::FI_1
-- name: NodeHub - 🌍 US
-  type: select
-  proxies:
-  - NodeHub - 🚀 节点选择
-  - NodeHub 🇺🇸 US
+  - NodeHub VLESS-188
+  - NodeHub VLESS-151
+  - NodeHub VLESS-172
+  - NodeHub VLESS-104
+  - NodeHub VLESS-188_1
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
