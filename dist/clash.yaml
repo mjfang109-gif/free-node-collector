@@ -20,9 +20,9 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub 🇺🇸 >>::US
+- name: NodeHub VLESS-162
   type: vless
-  server: 104.18.34.124
+  server: 162.159.44.195
   port: 443
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   tls: true
@@ -30,10 +30,10 @@ proxies:
   sni: hhlfy.twiladaphne.ndjp.net
   servername: hhlfy.twiladaphne.ndjp.net
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: NodeHub 🇺🇸 >>::US_1
+- name: NodeHub 🇺🇸 >>::US
   type: vless
   server: 104.16.150.246
   port: 2087
@@ -46,59 +46,79 @@ proxies:
     path: /
     headers:
       Host: fgnix832fx.fx6hsv0.ccwu.cc
-- name: NodeHub 6https://t.me/ConfigX2ray
+- name: NodeHub By EbraSha 🧲
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: NodeHub VLESS-172
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 1043634e-8d9d-4736-83fa-f14ddc9d464c
+  server: 172.64.147.104
+  port: 8443
+  uuid: 2f0f84ed-9e4c-40ef-8a6c-286839e11a63
   tls: true
   network: ws
-  sni: dfsuporte.garena.com.ex33r.eu.cc
-  servername: dfsuporte.garena.com.ex33r.eu.cc
+  sni: hmedrza.ghwhdr51.workers.dev
+  servername: hmedrza.ghwhdr51.workers.dev
   ws-opts:
-    path: /id-amz
+    path: /
     headers:
-      Host: dfsuporte.garena.com.ex33r.eu.cc
-- name: NodeHub 🫒82
+      Host: hmedrza.ghwhdr51.workers.dev
+- name: NodeHub VLESS-188
   type: vless
-  server: 173.245.58.75
+  server: 188.114.96.3
   port: 443
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  uuid: 1f034338-33a3-40f7-8e82-e4042e8410af
   tls: true
   network: ws
-  sni: octopusss4.com
-  servername: octopusss4.com
+  sni: gardconfig12.bnam38637.workers.dev
+  servername: gardconfig12.bnam38637.workers.dev
   ws-opts:
-    path: /tsghdws
+    path: ws
     headers:
-      Host: octopusss4.com
-- name: NodeHub 🇫🇮 >>::FI
+      Host: gardconfig12.bnam38637.workers.dev
+- name: NodeHub VLESS-104
   type: vless
-  server: 89.116.46.210
-  port: 443
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  server: 104.21.88.19
+  port: 2087
+  uuid: 0c54bdcb-945b-423c-9d86-c6df16ef40ad
   tls: true
   network: ws
-  sni: octopusss4.com
-  servername: octopusss4.com
+  sni: v2configlab.v2configlab15.workers.dev
+  servername: v2configlab.v2configlab15.workers.dev
   ws-opts:
-    path: /tsghdws
+    path: /?ed=2048
     headers:
-      Host: octopusss4.com
-- name: NodeHub 🇫🇮 >>::FI_1
+      Host: v2configlab.v2configlab15.workers.dev
+- name: NodeHub VLESS-104_1
   type: vless
-  server: 185.18.250.245
+  server: 104.21.0.190
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
+- name: NodeHub VLESS-162_1
+  type: vless
+  server: 162.159.36.20
   port: 443
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  uuid: 17ebee4e-97ea-4cad-8737-cc228478ca9d
   tls: true
   network: ws
-  sni: octopusss4.com
-  servername: octopusss4.com
+  sni: lively-brook-c471.nedena3319.workers.dev
+  servername: lively-brook-c471.nedena3319.workers.dev
   ws-opts:
-    path: /tsghdws
+    path: /?ed
     headers:
-      Host: octopusss4.com
-- name: NodeHub VLESS-199
+      Host: lively-brook-c471.nedena3319.workers.dev
+- name: NodeHub MoOon_proxy-VIP-3
   type: vless
   server: 199.232.78.159
   port: 443
@@ -113,17 +133,65 @@ proxies:
       Host: pan1.global.ssl.fastly.net
 - name: NodeHub By EbraSha
   type: vmess
-  server: 172.67.130.66
+  server: 172.66.140.62
   port: 80
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
   alterId: 0
   cipher: auto
   tls: false
   network: ws
   ws-opts:
-    path: /IOebhLMhl1CTbFHbL95myfRX2
+    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
     headers:
-      Host: de2.ping-game.ir
+      Host: accklsj.bufu.us.ci
+- name: NodeHub 🇺🇸 US
+  type: vless
+  server: 151.101.0.1
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-199
+  type: vless
+  server: 199.232.197.131
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-89
+  type: vless
+  server: 89.116.46.68
+  port: 443
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  tls: true
+  network: ws
+  sni: octopusss4.com
+  servername: octopusss4.com
+  ws-opts:
+    path: /tsghdws
+    headers:
+      Host: octopusss4.com
+- name: NodeHub VLESS-45
+  type: vless
+  server: 45.130.125.160
+  port: 443
+  uuid: 5960576d-829e-4d09-8232-0e80121a6fe4
+  tls: true
+  network: ws
+  sni: ssj.new-persian-song.ir
+  servername: ssj.new-persian-song.ir
+  ws-opts:
+    path: /?ed=80
+    headers:
+      Host: ssj.new-persian-song.ir
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -131,45 +199,63 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
+  - NodeHub VLESS-162
   - NodeHub 🇺🇸 >>::US
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 6https://t.me/ConfigX2ray
-  - NodeHub 🫒82
-  - NodeHub 🇫🇮 >>::FI
-  - NodeHub 🇫🇮 >>::FI_1
-  - NodeHub VLESS-199
+  - NodeHub By EbraSha 🧲
+  - NodeHub VLESS-172
+  - NodeHub VLESS-188
+  - NodeHub VLESS-104
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-162_1
+  - NodeHub MoOon_proxy-VIP-3
   - NodeHub By EbraSha
+  - NodeHub 🇺🇸 US
+  - NodeHub VLESS-199
+  - NodeHub VLESS-89
+  - NodeHub VLESS-45
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
+  - NodeHub VLESS-162
   - NodeHub 🇺🇸 >>::US
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 6https://t.me/ConfigX2ray
-  - NodeHub 🫒82
-  - NodeHub 🇫🇮 >>::FI
-  - NodeHub 🇫🇮 >>::FI_1
-  - NodeHub VLESS-199
+  - NodeHub By EbraSha 🧲
+  - NodeHub VLESS-172
+  - NodeHub VLESS-188
+  - NodeHub VLESS-104
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-162_1
+  - NodeHub MoOon_proxy-VIP-3
   - NodeHub By EbraSha
+  - NodeHub 🇺🇸 US
+  - NodeHub VLESS-199
+  - NodeHub VLESS-89
+  - NodeHub VLESS-45
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: NodeHub - 🌍 FI
+- name: NodeHub - 🐌 低速节点
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇫🇮 >>::FI
-  - NodeHub 🇫🇮 >>::FI_1
-- name: NodeHub - 🌍 US
-  type: select
-  proxies:
-  - NodeHub - 🚀 节点选择
+  - NodeHub VLESS-162
   - NodeHub 🇺🇸 >>::US
-  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub By EbraSha 🧲
+  - NodeHub VLESS-172
+  - NodeHub VLESS-188
+  - NodeHub VLESS-104
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-162_1
+  - NodeHub MoOon_proxy-VIP-3
+  - NodeHub By EbraSha
+  - NodeHub 🇺🇸 US
+  - NodeHub VLESS-199
+  - NodeHub VLESS-89
+  - NodeHub VLESS-45
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
