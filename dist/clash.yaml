@@ -20,22 +20,35 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub VLESS-104
+- name: NodeHub VLESS-172
   type: vless
-  server: 104.27.30.20
-  port: 443
-  uuid: 69d38faa-21a1-4d18-82cb-796a942c181b
+  server: 172.64.53.215
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   tls: true
   network: ws
-  sni: sfsl.ardomains1.dpdns.org
-  servername: sfsl.ardomains1.dpdns.org
+  sni: fgnix832fx.fx6hsv0.ccwu.cc
+  servername: fgnix832fx.fx6hsv0.ccwu.cc
   ws-opts:
-    path: /?ed=2048security=tls
+    path: /
     headers:
-      Host: sfsl.ardomains1.dpdns.org
-- name: NodeHub VLESS-89
+      Host: fgnix832fx.fx6hsv0.ccwu.cc
+- name: NodeHub VLESS-172_1
   type: vless
-  server: 89.116.46.68
+  server: 172.64.52.182
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  sni: fgnix832fx.fx6hsv0.ccwu.cc
+  servername: fgnix832fx.fx6hsv0.ccwu.cc
+  ws-opts:
+    path: /
+    headers:
+      Host: fgnix832fx.fx6hsv0.ccwu.cc
+- name: NodeHub VLESS-172_2
+  type: vless
+  server: 172.67.70.149
   port: 443
   uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
   tls: true
@@ -46,19 +59,19 @@ proxies:
     path: /tsghdws
     headers:
       Host: octopusss4.com
-- name: NodeHub By EbraSha ⌨
-  type: vmess
-  server: 104.21.55.229
-  port: 80
-  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
-  alterId: 0
-  cipher: auto
-  tls: false
+- name: NodeHub VLESS-216
+  type: vless
+  server: 216.24.57.1
+  port: 443
+  uuid: 7270612b-49f6-4b04-999c-34d8263da767
+  tls: true
   network: ws
+  sni: picassooo.info
+  servername: picassooo.info
   ws-opts:
-    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
+    path: /aymdlws
     headers:
-      Host: accklsj.bufu.us.ci
+      Host: picassooo.info
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -66,18 +79,20 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-104
-  - NodeHub VLESS-89
-  - NodeHub By EbraSha ⌨
+  - NodeHub VLESS-172
+  - NodeHub VLESS-172_1
+  - NodeHub VLESS-172_2
+  - NodeHub VLESS-216
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-104
-  - NodeHub VLESS-89
-  - NodeHub By EbraSha ⌨
+  - NodeHub VLESS-172
+  - NodeHub VLESS-172_1
+  - NodeHub VLESS-172_2
+  - NodeHub VLESS-216
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -87,9 +102,10 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub VLESS-104
-  - NodeHub VLESS-89
-  - NodeHub By EbraSha ⌨
+  - NodeHub VLESS-172
+  - NodeHub VLESS-172_1
+  - NodeHub VLESS-172_2
+  - NodeHub VLESS-216
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
