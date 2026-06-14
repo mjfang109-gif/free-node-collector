@@ -20,104 +20,256 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub 🇺🇸 US-156.146.38.167-0090
-  type: ss
-  server: 156.146.38.167
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: NodeHub VLESS-104
+- name: NodeHub VLESS-198
   type: vless
-  server: 104.16.150.246
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
+  server: 198.41.211.114
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
   network: ws
-  sni: fgnix832fx.fx6hsv0.ccwu.cc
-  servername: fgnix832fx.fx6hsv0.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: fgnix832fx.fx6hsv0.ccwu.cc
-- name: NodeHub VLESS-172
-  type: vless
-  server: 172.67.185.178
-  port: 443
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: true
-  network: ws
-  sni: hhlfy.twiladaphne.ndjp.net
-  servername: hhlfy.twiladaphne.ndjp.net
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: NodeHub VLESS-172_1
-  type: vless
-  server: 172.64.149.209
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  network: ws
-  sni: fgnix832fx.fx6hsv0.ccwu.cc
-  servername: fgnix832fx.fx6hsv0.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: fgnix832fx.fx6hsv0.ccwu.cc
-- name: NodeHub 🇺🇸 US-156.146.38.169-0089
-  type: ss
-  server: 156.146.38.169
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: NodeHub 🇺🇸 >>::US
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: NodeHub 🇺🇸 US-156.146.38.168-0091
-  type: ss
-  server: 156.146.38.168
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: NodeHub 🇺🇸 >>::US_1
-  type: ss
-  server: 149.28.255.6
-  port: 816
-  cipher: chacha20-ietf-poly1305
-  password: GyZ5Xo0ht41vYmW3H4
-- name: NodeHub VLESS-188
-  type: vless
-  server: 188.114.97.1
-  port: 2053
-  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
-  tls: true
-  network: ws
-  sni: bold-term-4edd.mbigspot.workers.dev
-  servername: bold-term-4edd.mbigspot.workers.dev
   ws-opts:
     path: /?ed=2048
     headers:
-      Host: bold-term-4edd.mbigspot.workers.dev
-- name: NodeHub 🇺🇸 >>::US_2
+      Host: amirvpn.amirhm00100.workers.dev
+- name: NodeHub VLESS-104
   type: vless
-  server: 104.18.34.124
-  port: 443
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 104.21.68.9
+  port: 2096
+  uuid: a06c22c0-527c-4cb1-9051-b64971c4a06a
   tls: true
   network: ws
-  sni: hhlfy.twiladaphne.ndjp.net
-  servername: hhlfy.twiladaphne.ndjp.net
+  sni: DIVINE-LeAF-28E3.AMYdrdAm453.woRKERS.deV
+  servername: DIVINE-LeAF-28E3.AMYdrdAm453.woRKERS.deV
+  ws-opts:
+    path: /eyJqdW5rIjoicXQxME5lZHVzIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19?ed=2560
+    headers:
+      Host: divine-leaf-28e3.amydrdam453.workers.dev
+- name: NodeHub VLESS-188
+  type: vless
+  server: 188.114.97.3
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
+- name: NodeHub VLESS-104_1
+  type: vless
+  server: 104.18.12.229
+  port: 2052
+  uuid: 12d75b7d-8fdf-4785-8d62-d836854e7e63
+  tls: false
+  network: ws
   ws-opts:
     path: /
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: NodeHub 🇺🇸 >>::US_3
+      Host: parking-nfchbwa1-v2.parking-1ab.workers.dev
+- name: NodeHub VLESS-172
   type: vless
-  server: 172.64.145.166
+  server: 172.64.155.209
+  port: 2052
+  uuid: 12d75b7d-8fdf-4785-8d62-d836854e7e63
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: parking-nfchbwa1-v2.parking-1ab.workers.dev
+- name: NodeHub VLESS-104_2
+  type: vless
+  server: 104.17.169.216
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
+- name: NodeHub VLESS-104_3
+  type: vless
+  server: 104.19.32.169
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
+- name: NodeHub VLESS-104_4
+  type: vless
+  server: 104.19.32.128
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
+- name: NodeHub VLESS-188_1
+  type: vless
+  server: 188.114.97.6
+  port: 2053
+  uuid: 8cf1e524-ce8c-4c63-8440-3ecd687f5e8d
+  tls: true
+  network: ws
+  sni: still-lake-3cf7.dls2026.workers.dev
+  servername: still-lake-3cf7.dls2026.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: still-lake-3cf7.dls2026.workers.dev
+- name: NodeHub VLESS-104_5
+  type: vless
+  server: 104.18.41.75
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  sni: amirvpn.amirhm00100.workers.dev
+  servername: amirvpn.amirhm00100.workers.dev
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
+- name: NodeHub 🇺🇸 >>::US
+  type: vless
+  server: 198.41.223.121
+  port: 443
+  uuid: d555dac9-27cb-4ddb-89f5-6a1d8d1e4798
+  tls: true
+  network: ws
+  sni: momi.timoreyhaneh.workers.dev
+  servername: momi.timoreyhaneh.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: momi.timoreyhaneh.workers.dev
+- name: NodeHub VLESS-162
+  type: vless
+  server: 162.159.34.121
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
+- name: NodeHub VLESS-172_1
+  type: vless
+  server: 172.67.219.176
+  port: 2087
+  uuid: f2f4e2dc-3e7b-402f-a461-b48acc6aa310
+  tls: true
+  network: ws
+  sni: sTeEp-BoNUs-8E6A.AmIrhon1376.woRKeRS.dEv
+  servername: sTeEp-BoNUs-8E6A.AmIrhon1376.woRKeRS.dEv
+  ws-opts:
+    path: /eyJqdW5rIjoid2JBOTRVclNMOVdBSVQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
+    headers:
+      Host: steep-bonus-8e6a.amirhon1376.workers.dev
+- name: NodeHub best_internet_iran
+  type: vless
+  server: 172.67.212.210
+  port: 80
+  uuid: 752a3a41-8430-4dd3-99cc-36b14d3800d6
+  tls: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiYm0zWkp6N1UiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0
+    headers:
+      Host: empty-water-4dd1.qara-atayi-3.workers.dev
+- name: NodeHub VLESS-193
+  type: vless
+  server: 193.22.229.138
+  port: 80
+  uuid: e30ba9e9-afc6-4236-803f-7b4ca30ce44b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pimxpass.alex96336997.workers.dev
+- name: NodeHub VLESS-104_6
+  type: vless
+  server: 104.21.75.235
+  port: 443
+  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
+  tls: true
+  network: ws
+  sni: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
+  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
+  ws-opts:
+    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560
+    headers:
+      Host: ancient-heart-60c5.dpccgizieb.workers.dev
+- name: NodeHub VLESS-104_7
+  type: vless
+  server: 104.21.80.1
+  port: 443
+  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
+  tls: true
+  network: ws
+  sni: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+  servername: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+  ws-opts:
+    path: /sd5fvgnaejylipcc?ed=2560
+    headers:
+      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
+- name: NodeHub VLESS-104_8
+  type: vless
+  server: 104.18.81.143
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
+- name: NodeHub VLESS-162_1
+  type: vless
+  server: 162.159.34.235
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
+- name: NodeHub 🇺🇸 >>::US_1
+  type: vless
+  server: 104.19.35.49
+  port: 443
+  uuid: 7506fe3e-7e78-497c-bd01-db9d0be4d7e3
+  tls: true
+  network: ws
+  sni: filter.elitesilver002.workers.dev
+  servername: filter.elitesilver002.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: filter.elitesilver002.workers.dev
+- name: NodeHub VLESS-104_9
+  type: vless
+  server: 104.16.30.239
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: amirvpn.amirhm00100.workers.dev
+- name: NodeHub VLESS-172_2
+  type: vless
+  server: 172.64.53.227
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   tls: true
@@ -128,120 +280,29 @@ proxies:
     path: /
     headers:
       Host: fgnix832fx.fx6hsv0.ccwu.cc
-- name: NodeHub By EbraSha
-  type: vmess
-  server: 172.67.174.37
+- name: NodeHub VLESS-172_3
+  type: vless
+  server: 172.67.171.247
   port: 80
-  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
-  alterId: 0
-  cipher: auto
+  uuid: 0c54bdcb-945b-423c-9d86-c6df16ef40ad
   tls: false
   network: ws
   ws-opts:
-    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
+    path: /?ed
     headers:
-      Host: accklsj.bufu.us.ci
-- name: NodeHub 🇫🇮 >>::FI
+      Host: v2configlab.v2configlab15.workers.dev
+- name: NodeHub VLESS-104_10
   type: vless
-  server: 173.245.58.75
-  port: 443
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-  tls: true
-  network: ws
-  sni: octopusss4.com
-  servername: octopusss4.com
-  ws-opts:
-    path: /tsghdws
-    headers:
-      Host: octopusss4.com
-- name: NodeHub VLESS-45
-  type: vless
-  server: 45.130.125.96
-  port: 443
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-  tls: true
-  network: ws
-  sni: octopusss4.com
-  servername: octopusss4.com
-  ws-opts:
-    path: /tsghdws
-    headers:
-      Host: octopusss4.com
-- name: NodeHub 🇫🇮 >>::FI_1
-  type: vless
-  server: 162.159.36.20
-  port: 443
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-  tls: true
-  network: ws
-  sni: octopusss4.com
-  servername: octopusss4.com
-  ws-opts:
-    path: /tsghdws
-    headers:
-      Host: octopusss4.com
-- name: NodeHub VLESS-141
-  type: vless
-  server: 141.193.213.21
-  port: 443
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-  tls: true
-  network: ws
-  sni: octopusss4.com
-  servername: octopusss4.com
-  ws-opts:
-    path: /tsghdws
-    headers:
-      Host: octopusss4.com
-- name: NodeHub VLESS-89
-  type: vless
-  server: 89.116.46.68
-  port: 443
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-  tls: true
-  network: ws
-  sni: octopusss4.com
-  servername: octopusss4.com
-  ws-opts:
-    path: /tsghdws
-    headers:
-      Host: octopusss4.com
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.26.14.16
-  port: 8080
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  server: 104.21.88.19
+  port: 80
+  uuid: 0c54bdcb-945b-423c-9d86-c6df16ef40ad
   tls: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: tr-cd.sublink-vip2.com
-- name: NodeHub 🇫🇮 >>::FI_2
-  type: vless
-  server: 185.18.250.252
-  port: 443
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-  tls: true
-  network: ws
-  sni: octopusss4.com
-  servername: octopusss4.com
-  ws-opts:
-    path: /tsghdws
-    headers:
-      Host: octopusss4.com
-- name: NodeHub 🇩🇪 >>::DE
-  type: vless
-  server: 104.26.15.16
-  port: 8080
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tr-cd.sublink-vip2.com
-- name: NodeHub 🇩🇪 >>::DE_1
+      Host: v2configlab.v2configlab15.workers.dev
+- name: NodeHub VLESS-104_11
   type: vless
   server: 104.26.15.137
   port: 8080
@@ -252,20 +313,53 @@ proxies:
     path: /
     headers:
       Host: tr-cd.sublink-vip2.com
-- name: NodeHub >>::CL
+- name: NodeHub VLESS-104_12
   type: vless
-  server: 172.64.35.45
+  server: 104.26.14.137
+  port: 8080
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tr-cd.sublink-vip2.com
+- name: NodeHub VLESS-172_4
+  type: vless
+  server: 172.67.74.2
+  port: 8080
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tr-cd.sublink-vip2.com
+- name: NodeHub VLESS-172_5
+  type: vless
+  server: 172.66.47.45
   port: 443
-  uuid: 7270612b-49f6-4b04-999c-34d8263da767
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
   tls: true
   network: ws
-  sni: picassooo.info
-  servername: picassooo.info
+  sni: octopusss4.com
+  servername: octopusss4.com
   ws-opts:
-    path: /aymdlws
+    path: /tsghdws
     headers:
-      Host: picassooo.info
-- name: NodeHub 🇫🇮 >>::FI_3
+      Host: octopusss4.com
+- name: NodeHub VLESS-172_6
+  type: vless
+  server: 172.67.164.242
+  port: 8080
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tr-cd.sublink-vip2.com
+- name: NodeHub 🇫🇮 >>::FI
   type: vless
   server: 108.162.192.75
   port: 443
@@ -278,9 +372,74 @@ proxies:
     path: /tsghdws
     headers:
       Host: octopusss4.com
-- name: NodeHub 🇫🇮 >>::FI_4
+- name: NodeHub VLESS-104_13
   type: vless
-  server: 162.159.193.138
+  server: 104.25.19.183
+  port: 2096
+  uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
+  tls: true
+  network: ws
+  sni: 4dcb0d80784f3081.hozheen.ir
+  servername: 4dcb0d80784f3081.hozheen.ir
+  ws-opts:
+    path: /ws?ed=2560
+    headers:
+      Host: newgen14.hozheen.ir
+- name: NodeHub >>::CL
+  type: vless
+  server: 108.162.195.45
+  port: 443
+  uuid: 7270612b-49f6-4b04-999c-34d8263da767
+  tls: true
+  network: ws
+  sni: picassooo.info
+  servername: picassooo.info
+  ws-opts:
+    path: /aymdlws
+    headers:
+      Host: picassooo.info
+- name: NodeHub VLESS-104_14
+  type: vless
+  server: 104.25.118.255
+  port: 2096
+  uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
+  tls: true
+  network: ws
+  sni: f53d749fda28cb85.hozheen.ir
+  servername: f53d749fda28cb85.hozheen.ir
+  ws-opts:
+    path: /ws?ed
+    headers:
+      Host: greattehran.hozheen.ir
+- name: NodeHub VLESS-45
+  type: vless
+  server: 45.85.119.122
+  port: 2096
+  uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
+  tls: true
+  network: ws
+  sni: 9b94d317f693703f.hozheen.ir
+  servername: 9b94d317f693703f.hozheen.ir
+  ws-opts:
+    path: /ws?ed
+    headers:
+      Host: com.hozheen.ir
+- name: NodeHub VLESS-162_2
+  type: vless
+  server: 162.159.152.9
+  port: 2096
+  uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
+  tls: true
+  network: ws
+  sni: f53d749fda28cb85.hozheen.ir
+  servername: f53d749fda28cb85.hozheen.ir
+  ws-opts:
+    path: /ws?ed=2560
+    headers:
+      Host: greattehran.hozheen.ir
+- name: NodeHub 🇫🇮 >>::FI_1
+  type: vless
+  server: 188.114.98.0
   port: 443
   uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
   tls: true
@@ -291,22 +450,37 @@ proxies:
     path: /tsghdws
     headers:
       Host: octopusss4.com
-- name: NodeHub VLESS-172_2
+- name: NodeHub 🇫🇮 >>::FI_2
   type: vless
-  server: 172.67.164.242
-  port: 8080
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  tls: false
+  server: 45.130.125.0
+  port: 443
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  tls: true
   network: ws
+  sni: octopusss4.com
+  servername: octopusss4.com
   ws-opts:
-    path: /
+    path: /tsghdws
     headers:
-      Host: tr-cd.sublink-vip2.com
-- name: NodeHub 🇩🇪 >>::DE_2
+      Host: octopusss4.com
+- name: NodeHub VLESS-216
+  type: vless
+  server: 216.24.57.1
+  port: 443
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  tls: true
+  network: ws
+  sni: octopusss4.com
+  servername: octopusss4.com
+  ws-opts:
+    path: /tsghdws
+    headers:
+      Host: octopusss4.com
+- name: NodeHub VLESS-104_15
   type: vless
   server: 104.16.0.0
   port: 443
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   tls: true
   network: ws
   sni: tr-cd.sublink-vip2.com
@@ -315,6 +489,50 @@ proxies:
     path: /
     headers:
       Host: tr-cd.sublink-vip2.com
+- name: NodeHub 🇩🇪 >>::DE
+  type: vless
+  server: 151.101.130.219
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151
+  type: vless
+  server: 151.101.2.219
+  port: 80
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub 10https://t.me/ConfigX2ray
+  type: vless
+  server: 151.101.0.1
+  port: 80
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_1
+  type: vless
+  server: 151.101.109.223
+  port: 80
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
 - name: NodeHub https://t.me/v2rayNplus
   type: vless
   server: 199.232.197.131
@@ -326,32 +544,6 @@ proxies:
     path: /
     headers:
       Host: max-gb1.global.ssl.fastly.net
-- name: NodeHub VLESS-172_3
-  type: vless
-  server: 172.64.152.33
-  port: 2096
-  uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
-  tls: true
-  network: ws
-  sni: 872ede3847653442.hozheen.ir
-  servername: 872ede3847653442.hozheen.ir
-  ws-opts:
-    path: /ws?ed=2560
-    headers:
-      Host: com.hozheen.ir
-- name: NodeHub VLESS-172_4
-  type: vless
-  server: 172.64.146.68
-  port: 443
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-  tls: true
-  network: ws
-  sni: octopusss4.com
-  servername: octopusss4.com
-  ws-opts:
-    path: /tsghdws
-    headers:
-      Host: octopusss4.com
 - name: NodeHub VLESS-167
   type: vless
   server: 167.82.0.1
@@ -363,19 +555,6 @@ proxies:
     path: /
     headers:
       Host: max-gb1.global.ssl.fastly.net
-- name: NodeHub VLESS-104_2
-  type: vless
-  server: 104.20.6.134
-  port: 2096
-  uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
-  tls: true
-  network: ws
-  sni: 4dcb0d80784f3081.hozheen.ir
-  servername: 4dcb0d80784f3081.hozheen.ir
-  ws-opts:
-    path: /ws
-    headers:
-      Host: newgen14.hozheen.ir
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -383,74 +562,102 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub 🇺🇸 US-156.146.38.167-0090
+  - NodeHub VLESS-198
   - NodeHub VLESS-104
-  - NodeHub VLESS-172
-  - NodeHub VLESS-172_1
-  - NodeHub 🇺🇸 US-156.146.38.169-0089
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub 🇺🇸 US-156.146.38.168-0091
-  - NodeHub 🇺🇸 >>::US_1
   - NodeHub VLESS-188
-  - NodeHub 🇺🇸 >>::US_2
-  - NodeHub 🇺🇸 >>::US_3
-  - NodeHub By EbraSha
-  - NodeHub 🇫🇮 >>::FI
-  - NodeHub VLESS-45
-  - NodeHub 🇫🇮 >>::FI_1
-  - NodeHub VLESS-141
-  - NodeHub VLESS-89
   - NodeHub VLESS-104_1
-  - NodeHub 🇫🇮 >>::FI_2
-  - NodeHub 🇩🇪 >>::DE
-  - NodeHub 🇩🇪 >>::DE_1
-  - NodeHub >>::CL
-  - NodeHub 🇫🇮 >>::FI_3
-  - NodeHub 🇫🇮 >>::FI_4
-  - NodeHub VLESS-172_2
-  - NodeHub 🇩🇪 >>::DE_2
-  - NodeHub https://t.me/v2rayNplus
-  - NodeHub VLESS-172_3
-  - NodeHub VLESS-172_4
-  - NodeHub VLESS-167
+  - NodeHub VLESS-172
   - NodeHub VLESS-104_2
+  - NodeHub VLESS-104_3
+  - NodeHub VLESS-104_4
+  - NodeHub VLESS-188_1
+  - NodeHub VLESS-104_5
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub VLESS-162
+  - NodeHub VLESS-172_1
+  - NodeHub best_internet_iran
+  - NodeHub VLESS-193
+  - NodeHub VLESS-104_6
+  - NodeHub VLESS-104_7
+  - NodeHub VLESS-104_8
+  - NodeHub VLESS-162_1
+  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub VLESS-104_9
+  - NodeHub VLESS-172_2
+  - NodeHub VLESS-172_3
+  - NodeHub VLESS-104_10
+  - NodeHub VLESS-104_11
+  - NodeHub VLESS-104_12
+  - NodeHub VLESS-172_4
+  - NodeHub VLESS-172_5
+  - NodeHub VLESS-172_6
+  - NodeHub 🇫🇮 >>::FI
+  - NodeHub VLESS-104_13
+  - NodeHub >>::CL
+  - NodeHub VLESS-104_14
+  - NodeHub VLESS-45
+  - NodeHub VLESS-162_2
+  - NodeHub 🇫🇮 >>::FI_1
+  - NodeHub 🇫🇮 >>::FI_2
+  - NodeHub VLESS-216
+  - NodeHub VLESS-104_15
+  - NodeHub 🇩🇪 >>::DE
+  - NodeHub VLESS-151
+  - NodeHub 10https://t.me/ConfigX2ray
+  - NodeHub VLESS-151_1
+  - NodeHub https://t.me/v2rayNplus
+  - NodeHub VLESS-167
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub 🇺🇸 US-156.146.38.167-0090
+  - NodeHub VLESS-198
   - NodeHub VLESS-104
-  - NodeHub VLESS-172
-  - NodeHub VLESS-172_1
-  - NodeHub 🇺🇸 US-156.146.38.169-0089
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub 🇺🇸 US-156.146.38.168-0091
-  - NodeHub 🇺🇸 >>::US_1
   - NodeHub VLESS-188
-  - NodeHub 🇺🇸 >>::US_2
-  - NodeHub 🇺🇸 >>::US_3
-  - NodeHub By EbraSha
-  - NodeHub 🇫🇮 >>::FI
-  - NodeHub VLESS-45
-  - NodeHub 🇫🇮 >>::FI_1
-  - NodeHub VLESS-141
-  - NodeHub VLESS-89
   - NodeHub VLESS-104_1
-  - NodeHub 🇫🇮 >>::FI_2
-  - NodeHub 🇩🇪 >>::DE
-  - NodeHub 🇩🇪 >>::DE_1
-  - NodeHub >>::CL
-  - NodeHub 🇫🇮 >>::FI_3
-  - NodeHub 🇫🇮 >>::FI_4
-  - NodeHub VLESS-172_2
-  - NodeHub 🇩🇪 >>::DE_2
-  - NodeHub https://t.me/v2rayNplus
-  - NodeHub VLESS-172_3
-  - NodeHub VLESS-172_4
-  - NodeHub VLESS-167
+  - NodeHub VLESS-172
   - NodeHub VLESS-104_2
+  - NodeHub VLESS-104_3
+  - NodeHub VLESS-104_4
+  - NodeHub VLESS-188_1
+  - NodeHub VLESS-104_5
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub VLESS-162
+  - NodeHub VLESS-172_1
+  - NodeHub best_internet_iran
+  - NodeHub VLESS-193
+  - NodeHub VLESS-104_6
+  - NodeHub VLESS-104_7
+  - NodeHub VLESS-104_8
+  - NodeHub VLESS-162_1
+  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub VLESS-104_9
+  - NodeHub VLESS-172_2
+  - NodeHub VLESS-172_3
+  - NodeHub VLESS-104_10
+  - NodeHub VLESS-104_11
+  - NodeHub VLESS-104_12
+  - NodeHub VLESS-172_4
+  - NodeHub VLESS-172_5
+  - NodeHub VLESS-172_6
+  - NodeHub 🇫🇮 >>::FI
+  - NodeHub VLESS-104_13
+  - NodeHub >>::CL
+  - NodeHub VLESS-104_14
+  - NodeHub VLESS-45
+  - NodeHub VLESS-162_2
+  - NodeHub 🇫🇮 >>::FI_1
+  - NodeHub 🇫🇮 >>::FI_2
+  - NodeHub VLESS-216
+  - NodeHub VLESS-104_15
+  - NodeHub 🇩🇪 >>::DE
+  - NodeHub VLESS-151
+  - NodeHub 10https://t.me/ConfigX2ray
+  - NodeHub VLESS-151_1
+  - NodeHub https://t.me/v2rayNplus
+  - NodeHub VLESS-167
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -461,8 +668,6 @@ proxy-groups:
   proxies:
   - NodeHub - 🚀 节点选择
   - NodeHub 🇩🇪 >>::DE
-  - NodeHub 🇩🇪 >>::DE_1
-  - NodeHub 🇩🇪 >>::DE_2
 - name: NodeHub - 🌍 FI
   type: select
   proxies:
@@ -470,19 +675,12 @@ proxy-groups:
   - NodeHub 🇫🇮 >>::FI
   - NodeHub 🇫🇮 >>::FI_1
   - NodeHub 🇫🇮 >>::FI_2
-  - NodeHub 🇫🇮 >>::FI_3
-  - NodeHub 🇫🇮 >>::FI_4
 - name: NodeHub - 🌍 US
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇺🇸 US-156.146.38.167-0090
-  - NodeHub 🇺🇸 US-156.146.38.169-0089
   - NodeHub 🇺🇸 >>::US
-  - NodeHub 🇺🇸 US-156.146.38.168-0091
   - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 🇺🇸 >>::US_2
-  - NodeHub 🇺🇸 >>::US_3
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
