@@ -20,48 +20,9 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub VLESS-104
+- name: NodeHub 🇺🇸 US_3207
   type: vless
-  server: 104.16.139.58
-  port: 2053
-  uuid: 3193066d-6f38-4466-80b6-40ce3bcd4b54
-  tls: true
-  network: ws
-  sni: late-leaf-f4d0.java00code.workers.dev
-  servername: late-leaf-f4d0.java00code.workers.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: late-leaf-f4d0.java00code.workers.dev
-- name: NodeHub VLESS-198
-  type: vless
-  server: 198.41.223.143
-  port: 2087
-  uuid: 3193066d-6f38-4466-80b6-40ce3bcd4b54
-  tls: true
-  network: ws
-  sni: late-leaf-f4d0.java00code.workers.dev
-  servername: late-leaf-f4d0.java00code.workers.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: late-leaf-f4d0.java00code.workers.dev
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.17.148.22
-  port: 443
-  uuid: 0836463b-214f-4af6-aa85-85a56a62388e
-  tls: true
-  network: ws
-  sni: d2127A49-flAT-wooD-C4B5.mILia-AkbARpOor.WorkERs.dEV
-  servername: d2127A49-flAT-wooD-C4B5.mILia-AkbARpOor.WorkERs.dEV
-  ws-opts:
-    path: /8eaZJhRwB5zzDy81?ed=2560
-    headers:
-      Host: d2127a49-flat-wood-c4b5.milia-akbarpoor.workers.dev
-- name: NodeHub kurdconfig
-  type: vless
-  server: 172.64.147.137
+  server: 141.193.213.11
   port: 443
   uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
   tls: true
@@ -72,9 +33,31 @@ proxies:
     path: /tsghdws
     headers:
       Host: octopusss4.com
-- name: NodeHub https://t.me/v2rayNplus
+- name: NodeHub >>::CL
   type: vless
-  server: 199.232.197.131
+  server: 162.159.44.45
+  port: 443
+  uuid: 7270612b-49f6-4b04-999c-34d8263da767
+  tls: true
+  network: ws
+  sni: picassooo.info
+  servername: picassooo.info
+  ws-opts:
+    path: /aymdlws
+    headers:
+      Host: picassooo.info
+- name: NodeHub By EbraSha
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: raw
+- name: NodeHub VLESS-167
+  type: vless
+  server: 167.82.0.1
   port: 80
   uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
   tls: false
@@ -83,41 +66,30 @@ proxies:
     path: /
     headers:
       Host: max-gb1.global.ssl.fastly.net
-- name: NodeHub >>::XX
+- name: NodeHub VLESS-172
   type: vless
-  server: 151.101.2.219
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-- name: NodeHub VLESS-151
-  type: vless
-  server: 151.101.0.1
-  port: 80
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-- name: NodeHub VLESS-104_2
-  type: vless
-  server: 104.25.19.183
+  server: 172.67.212.210
   port: 2096
   uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
   tls: true
   network: ws
-  sni: 4dcb0d80784f3081.hozheen.ir
-  servername: 4dcb0d80784f3081.hozheen.ir
+  sni: 872ede3847653442.hozheen.ir
+  servername: 872ede3847653442.hozheen.ir
   ws-opts:
-    path: /ws?ed=2560
+    path: /ws?ed
     headers:
-      Host: newgen14.hozheen.ir
+      Host: com.hozheen.ir
+- name: NodeHub VLESS-151
+  type: vless
+  server: 151.101.109.223
+  port: 80
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -125,28 +97,24 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-104
-  - NodeHub VLESS-198
-  - NodeHub VLESS-104_1
-  - NodeHub kurdconfig
-  - NodeHub https://t.me/v2rayNplus
-  - NodeHub >>::XX
+  - NodeHub 🇺🇸 US_3207
+  - NodeHub >>::CL
+  - NodeHub By EbraSha
+  - NodeHub VLESS-167
+  - NodeHub VLESS-172
   - NodeHub VLESS-151
-  - NodeHub VLESS-104_2
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-104
-  - NodeHub VLESS-198
-  - NodeHub VLESS-104_1
-  - NodeHub kurdconfig
-  - NodeHub https://t.me/v2rayNplus
-  - NodeHub >>::XX
+  - NodeHub 🇺🇸 US_3207
+  - NodeHub >>::CL
+  - NodeHub By EbraSha
+  - NodeHub VLESS-167
+  - NodeHub VLESS-172
   - NodeHub VLESS-151
-  - NodeHub VLESS-104_2
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -156,14 +124,12 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub VLESS-104
-  - NodeHub VLESS-198
-  - NodeHub VLESS-104_1
-  - NodeHub kurdconfig
-  - NodeHub https://t.me/v2rayNplus
-  - NodeHub >>::XX
+  - NodeHub 🇺🇸 US_3207
+  - NodeHub >>::CL
+  - NodeHub By EbraSha
+  - NodeHub VLESS-167
+  - NodeHub VLESS-172
   - NodeHub VLESS-151
-  - NodeHub VLESS-104_2
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
