@@ -20,94 +20,22 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub 🇺🇸 >>::US
+- name: NodeHub VLESS-104
   type: vless
-  server: 172.64.52.175
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: 104.19.41.46
+  port: 2083
+  uuid: 0137ab09-0728-4c44-8dc4-f2ac1847bffd
   tls: true
   network: ws
-  sni: fgnix832fx.fx6hsv0.ccwu.cc
-  servername: fgnix832fx.fx6hsv0.ccwu.cc
+  sni: cfoo-n0d.pages.dev
+  servername: cfoo-n0d.pages.dev
   ws-opts:
     path: /
     headers:
-      Host: fgnix832fx.fx6hsv0.ccwu.cc
-- name: NodeHub 🦕22
+      Host: cfoo-n0d.pages.dev
+- name: NodeHub 🦕68
   type: vless
-  server: 172.64.35.7
-  port: 2053
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  tls: true
-  network: ws
-  sni: josni.hoyes.cloudns.ch
-  servername: josni.hoyes.cloudns.ch
-  ws-opts:
-    path: /
-    headers:
-      Host: josni.hoyes.cloudns.ch
-- name: NodeHub 🇺🇸 >>::US_1
-  type: vless
-  server: 104.16.150.7
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  network: ws
-  sni: fgnix832fx.fx6hsv0.ccwu.cc
-  servername: fgnix832fx.fx6hsv0.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: fgnix832fx.fx6hsv0.ccwu.cc
-- name: NodeHub 🦕54
-  type: vless
-  server: 162.159.44.195
-  port: 443
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: true
-  network: ws
-  sni: hhlfy.twiladaphne.ndjp.net
-  servername: hhlfy.twiladaphne.ndjp.net
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: NodeHub By EbraSha 🦾
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: raw
-- name: NodeHub VLESS-188
-  type: vless
-  server: 188.114.97.6
-  port: 80
-  uuid: 14fcbcd4-2c96-4c30-b3ca-2e87ea8918d7
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws-vlees
-    headers:
-      Host: app3.app-all-ccoo.com
-- name: NodeHub By EbraSha
-  type: vmess
-  server: 172.66.140.62
-  port: 80
-  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
-    headers:
-      Host: accklsj.bufu.us.ci
-- name: NodeHub 🦕76
-  type: vless
-  server: 89.116.46.68
+  server: 104.17.108.189
   port: 443
   uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
   tls: true
@@ -118,22 +46,9 @@ proxies:
     path: /tsghdws
     headers:
       Host: octopusss4.com
-- name: NodeHub 🦕75
+- name: NodeHub 🇫🇮 >>::FI
   type: vless
-  server: 162.159.36.5
-  port: 443
-  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
-  tls: true
-  network: ws
-  sni: octopusss4.com
-  servername: octopusss4.com
-  ws-opts:
-    path: /tsghdws
-    headers:
-      Host: octopusss4.com
-- name: NodeHub VLESS-172
-  type: vless
-  server: 172.64.147.137
+  server: 173.245.58.75
   port: 443
   uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
   tls: true
@@ -151,32 +66,18 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub 🦕22
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 🦕54
-  - NodeHub By EbraSha 🦾
-  - NodeHub VLESS-188
-  - NodeHub By EbraSha
-  - NodeHub 🦕76
-  - NodeHub 🦕75
-  - NodeHub VLESS-172
+  - NodeHub VLESS-104
+  - NodeHub 🦕68
+  - NodeHub 🇫🇮 >>::FI
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub 🦕22
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 🦕54
-  - NodeHub By EbraSha 🦾
-  - NodeHub VLESS-188
-  - NodeHub By EbraSha
-  - NodeHub 🦕76
-  - NodeHub 🦕75
-  - NodeHub VLESS-172
+  - NodeHub VLESS-104
+  - NodeHub 🦕68
+  - NodeHub 🇫🇮 >>::FI
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -186,16 +87,9 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub 🦕22
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 🦕54
-  - NodeHub By EbraSha 🦾
-  - NodeHub VLESS-188
-  - NodeHub By EbraSha
-  - NodeHub 🦕76
-  - NodeHub 🦕75
-  - NodeHub VLESS-172
+  - NodeHub VLESS-104
+  - NodeHub 🦕68
+  - NodeHub 🇫🇮 >>::FI
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
