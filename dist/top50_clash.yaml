@@ -20,9 +20,87 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub VLESS-172
+- name: NodeHub 🇺🇸 >>::US
   type: vless
-  server: 172.64.33.162
+  server: 162.159.60.231
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: true
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub VLESS-216
+  type: vless
+  server: 216.24.57.6
+  port: 8443
+  uuid: 12cb0a24-0438-4980-8617-9c93205895fa
+  tls: true
+  network: ws
+  sni: kakoolnews.kakoolnewsbest.workers.dev
+  servername: kakoolnews.kakoolnewsbest.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: kakoolnews.kakoolnewsbest.workers.dev
+- name: NodeHub 🇺🇸 >>::US_1
+  type: vless
+  server: 104.18.34.124
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: true
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub 🇺🇸 >>::US_2
+  type: vless
+  server: 162.159.12.41
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: true
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub VLESS-45
+  type: vless
+  server: 45.130.125.158
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  network: ws
+  sni: t1s1.rittbo.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: NodeHub 🇺🇸 >>::US_3
+  type: vless
+  server: 104.26.5.60
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  network: ws
+  sni: t1s1.rittbo.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: NodeHub 🇩🇪 >>::DE
+  type: vless
+  server: 108.162.193.162
   port: 443
   uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
   tls: true
@@ -33,7 +111,33 @@ proxies:
     path: /udfyfws
     headers:
       Host: octopusss5.info
-- name: NodeHub VLESS-108
+- name: NodeHub >>::CL
+  type: vless
+  server: 172.64.35.45
+  port: 443
+  uuid: 7270612b-49f6-4b04-999c-34d8263da767
+  tls: true
+  network: ws
+  sni: picassooo.info
+  servername: picassooo.info
+  ws-opts:
+    path: /aymdlws
+    headers:
+      Host: picassooo.info
+- name: NodeHub >>::CL_1
+  type: vless
+  server: 162.159.44.45
+  port: 443
+  uuid: 7270612b-49f6-4b04-999c-34d8263da767
+  tls: true
+  network: ws
+  sni: picassooo.info
+  servername: picassooo.info
+  ws-opts:
+    path: /aymdlws
+    headers:
+      Host: picassooo.info
+- name: NodeHub >>::CL_2
   type: vless
   server: 108.162.195.45
   port: 443
@@ -46,30 +150,6 @@ proxies:
     path: /aymdlws
     headers:
       Host: picassooo.info
-- name: NodeHub VLESS-45
-  type: vless
-  server: 45.130.125.229
-  port: 443
-  uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
-  tls: true
-  network: ws
-  sni: octopusss5.info
-  servername: octopusss5.info
-  ws-opts:
-    path: /udfyfws
-    headers:
-      Host: octopusss5.info
-- name: NodeHub VLESS-188
-  type: vless
-  server: 188.114.97.6
-  port: 80
-  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
-  tls: false
-  network: ws
-  ws-opts:
-    path: /http
-    headers:
-      Host: de.vpnbase.net
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -77,33 +157,50 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-172
-  - NodeHub VLESS-108
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub VLESS-216
+  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub 🇺🇸 >>::US_2
   - NodeHub VLESS-45
-  - NodeHub VLESS-188
+  - NodeHub 🇺🇸 >>::US_3
+  - NodeHub 🇩🇪 >>::DE
+  - NodeHub >>::CL
+  - NodeHub >>::CL_1
+  - NodeHub >>::CL_2
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-172
-  - NodeHub VLESS-108
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub VLESS-216
+  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub 🇺🇸 >>::US_2
   - NodeHub VLESS-45
-  - NodeHub VLESS-188
+  - NodeHub 🇺🇸 >>::US_3
+  - NodeHub 🇩🇪 >>::DE
+  - NodeHub >>::CL
+  - NodeHub >>::CL_1
+  - NodeHub >>::CL_2
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: NodeHub - 🐌 低速节点
+- name: NodeHub - 🌍 DE
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub VLESS-172
-  - NodeHub VLESS-108
-  - NodeHub VLESS-45
-  - NodeHub VLESS-188
+  - NodeHub 🇩🇪 >>::DE
+- name: NodeHub - 🌍 US
+  type: select
+  proxies:
+  - NodeHub - 🚀 节点选择
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub 🇺🇸 >>::US_2
+  - NodeHub 🇺🇸 >>::US_3
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
