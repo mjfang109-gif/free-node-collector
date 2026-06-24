@@ -20,9 +20,61 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
+- name: NodeHub VLESS-104
+  type: vless
+  server: 104.18.38.47
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  network: ws
+  sni: t1s1.rittbo.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: NodeHub 🇺🇸 >>::US
+  type: vless
+  server: 172.64.149.209
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  network: ws
+  sni: t1s1.rittbo.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: NodeHub VLESS-104_1
+  type: vless
+  server: 104.26.5.60
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  network: ws
+  sni: t1s1.rittbo.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: NodeHub VLESS-108
+  type: vless
+  server: 108.162.194.135
+  port: 443
+  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
+  tls: true
+  network: ws
+  sni: nbhhh.mrcool.kdns.fr
+  servername: nbhhh.mrcool.kdns.fr
+  ws-opts:
+    path: /proxyip=dc844a1f.tp15333.ip.090227.xyz
+    headers:
+      Host: nbhhh.mrcool.kdns.fr
 - name: NodeHub VLESS-162
   type: vless
-  server: 162.159.13.71
+  server: 162.159.19.67
   port: 443
   uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
   tls: true
@@ -33,80 +85,155 @@ proxies:
     path: /
     headers:
       Host: nbhhh.mrcool.kdns.fr
-- name: NodeHub VLESS-188
+- name: NodeHub VLESS-172
   type: vless
-  server: 188.114.97.1
-  port: 2053
-  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
-  tls: true
-  network: ws
-  sni: bold-term-4edd.mbigspot.workers.dev
-  servername: bold-term-4edd.mbigspot.workers.dev
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: bold-term-4edd.mbigspot.workers.dev
-- name: NodeHub VLESS-188_1
-  type: vless
-  server: 188.164.248.13
-  port: 2083
-  uuid: 1ba9daa4-fdbd-407f-88f7-765d30561223
-  tls: true
-  network: ws
-  sni: small-cloud-53e9.mohammad100.workers.dev
-  servername: small-cloud-53e9.mohammad100.workers.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: small-cloud-53e9.mohammad100.workers.dev
-- name: NodeHub VLESS-104
-  type: vless
-  server: 104.17.102.95
-  port: 8443
+  server: 172.64.151.254
+  port: 2096
   uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
   tls: true
   network: ws
   sni: sp.linuxdododo.ccwu.cc
   servername: sp.linuxdododo.ccwu.cc
   ws-opts:
-    path: /proxyip=ProxyIP.JP.cmliussss.net
+    path: /
     headers:
       Host: sp.linuxdododo.ccwu.cc
-- name: NodeHub VLESS-72
+- name: NodeHub By EbraSha 🧪
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: raw
+- name: NodeHub VLESS-151
   type: vless
-  server: 72.167.230.140
+  server: 151.101.64.151
   port: 80
-  uuid: f9255507-1b65-433f-bfd8-193b35e068e2
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  sni: max-gb1.global.ssl.fastly.net
+  servername: max-gb1.global.ssl.fastly.net
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_1
+  type: vless
+  server: 151.101.99.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   tls: false
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳 @WangCai2
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
-      Host: s5.868001.xyz
-- name: NodeHub VLESS-173
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_2
   type: vless
-  server: 173.245.58.75
+  server: 151.101.169.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_3
+  type: vless
+  server: 151.101.2.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-104_2
+  type: vless
+  server: 104.26.14.137
   port: 443
-  uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
+  uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
   tls: true
   network: ws
-  sni: amooaliii.net
-  servername: amooaliii.net
+  sni: shegeftihaaa.net
+  servername: shegeftihaaa.net
   ws-opts:
-    path: /jdhfyws
+    path: /rsedgws
     headers:
-      Host: amooaliii.net
-- name: NodeHub VLESS-170
+      Host: shegeftihaaa.net
+- name: NodeHub VLESS-151_4
   type: vless
-  server: 170.114.45.140
+  server: 151.101.111.151
   port: 80
-  uuid: f9255507-1b65-433f-bfd8-193b35e068e2
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   tls: false
   network: ws
   ws-opts:
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=2048
+    path: /
     headers:
-      Host: s5.868001.xyz
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_5
+  type: vless
+  server: 151.101.101.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_6
+  type: vless
+  server: 151.101.117.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  sni: max-gb1.global.ssl.fastly.net
+  servername: max-gb1.global.ssl.fastly.net
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_7
+  type: vless
+  server: 151.101.103.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_8
+  type: vless
+  server: 151.101.26.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_9
+  type: vless
+  server: 151.101.193.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
 - name: NodeHub 🇩🇪 >>::DE
   type: vless
   server: 151.101.109.223
@@ -118,7 +245,110 @@ proxies:
     path: /
     headers:
       Host: max-gb1.global.ssl.fastly.net
-- name: NodeHub VLESS-151
+- name: NodeHub VLESS-151_10
+  type: vless
+  server: 151.101.192.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_11
+  type: vless
+  server: 151.101.110.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_12
+  type: vless
+  server: 151.101.170.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_13
+  type: vless
+  server: 151.101.58.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-104_3
+  type: vless
+  server: 104.16.92.229
+  port: 8443
+  uuid: f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93
+  tls: true
+  network: ws
+  sni: srv55.hamiibar.com
+  servername: srv55.hamiibar.com
+  ws-opts:
+    path: /
+    headers:
+      Host: srv55.hamiibar.com
+- name: NodeHub VLESS-151_14
+  type: vless
+  server: 151.101.67.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  sni: max-gb1.global.ssl.fastly.net
+  servername: max-gb1.global.ssl.fastly.net
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_15
+  type: vless
+  server: 151.101.66.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_16
+  type: vless
+  server: 151.101.0.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_17
+  type: vless
+  server: 151.101.3.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_18
   type: vless
   server: 151.101.100.151
   port: 80
@@ -129,29 +359,7 @@ proxies:
     path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
       Host: max-gb1.global.ssl.fastly.net
-- name: NodeHub VLESS-5
-  type: vless
-  server: 5.10.244.140
-  port: 80
-  uuid: f9255507-1b65-433f-bfd8-193b35e068e2
-  tls: false
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳 @WangCai2
-    headers:
-      Host: s5.868001.xyz
-- name: NodeHub VLESS-151_1
-  type: vless
-  server: 151.101.67.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-- name: NodeHub VLESS-151_2
+- name: NodeHub VLESS-151_19
   type: vless
   server: 151.101.212.151
   port: 80
@@ -162,57 +370,9 @@ proxies:
     path: /?https://t.me/WangCai2🇨🇳
     headers:
       Host: max-gb1.global.ssl.fastly.net
-- name: NodeHub VLESS-151_3
+- name: NodeHub 🇩🇪 >>::DE_1
   type: vless
-  server: 151.101.131.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-- name: NodeHub >>::XX
-  type: vless
-  server: 104.17.108.69
-  port: 8443
-  uuid: f3b8c2a1-9d4e-4b7f-a6c5-2e8d1f0b4a93
-  tls: true
-  network: ws
-  sni: srv14.hamiibar.com
-  servername: srv14.hamiibar.com
-  ws-opts:
-    path: /
-    headers:
-      Host: srv14.hamiibar.com
-- name: NodeHub VLESS-151_4
-  type: vless
-  server: 151.101.34.151
-  port: 80
-  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.16.72.70
-  port: 8443
-  uuid: 539dccf8-7ad6-4787-bb6c-c416b896ecaf
-  tls: true
-  network: ws
-  sni: ssl.myblog.org.tr
-  servername: ssl.myblog.org.tr
-  ws-opts:
-    path: /
-    headers:
-      Host: ssl.myblog.org.tr
-- name: NodeHub VLESS-151_5
-  type: vless
-  server: 151.101.128.151
+  server: 199.232.197.131
   port: 80
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   tls: false
@@ -221,6 +381,30 @@ proxies:
     path: /
     headers:
       Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-151_20
+  type: vless
+  server: 151.101.194.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  tls: false
+  network: ws
+  sni: max-gb1.global.ssl.fastly.net
+  servername: max-gb1.global.ssl.fastly.net
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: NodeHub VLESS-94
+  type: vless
+  server: 94.140.0.100
+  port: 80
+  uuid: c84c80cc-d88b-4ca4-9fe9-0c26c05a781e
+  tls: false
+  network: ws
+  ws-opts:
+    path: /nexus
+    headers:
+      Host: your.nexuschat.fun
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -228,72 +412,94 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-162
-  - NodeHub VLESS-188
-  - NodeHub VLESS-188_1
   - NodeHub VLESS-104
-  - NodeHub VLESS-72
-  - NodeHub VLESS-173
-  - NodeHub VLESS-170
-  - NodeHub 🇩🇪 >>::DE
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-108
+  - NodeHub VLESS-162
+  - NodeHub VLESS-172
+  - NodeHub By EbraSha 🧪
   - NodeHub VLESS-151
-  - NodeHub VLESS-5
   - NodeHub VLESS-151_1
   - NodeHub VLESS-151_2
   - NodeHub VLESS-151_3
-  - NodeHub >>::XX
+  - NodeHub VLESS-104_2
   - NodeHub VLESS-151_4
-  - NodeHub VLESS-104_1
   - NodeHub VLESS-151_5
+  - NodeHub VLESS-151_6
+  - NodeHub VLESS-151_7
+  - NodeHub VLESS-151_8
+  - NodeHub VLESS-151_9
+  - NodeHub 🇩🇪 >>::DE
+  - NodeHub VLESS-151_10
+  - NodeHub VLESS-151_11
+  - NodeHub VLESS-151_12
+  - NodeHub VLESS-151_13
+  - NodeHub VLESS-104_3
+  - NodeHub VLESS-151_14
+  - NodeHub VLESS-151_15
+  - NodeHub VLESS-151_16
+  - NodeHub VLESS-151_17
+  - NodeHub VLESS-151_18
+  - NodeHub VLESS-151_19
+  - NodeHub 🇩🇪 >>::DE_1
+  - NodeHub VLESS-151_20
+  - NodeHub VLESS-94
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-162
-  - NodeHub VLESS-188
-  - NodeHub VLESS-188_1
   - NodeHub VLESS-104
-  - NodeHub VLESS-72
-  - NodeHub VLESS-173
-  - NodeHub VLESS-170
-  - NodeHub 🇩🇪 >>::DE
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-108
+  - NodeHub VLESS-162
+  - NodeHub VLESS-172
+  - NodeHub By EbraSha 🧪
   - NodeHub VLESS-151
-  - NodeHub VLESS-5
   - NodeHub VLESS-151_1
   - NodeHub VLESS-151_2
   - NodeHub VLESS-151_3
-  - NodeHub >>::XX
+  - NodeHub VLESS-104_2
   - NodeHub VLESS-151_4
-  - NodeHub VLESS-104_1
   - NodeHub VLESS-151_5
+  - NodeHub VLESS-151_6
+  - NodeHub VLESS-151_7
+  - NodeHub VLESS-151_8
+  - NodeHub VLESS-151_9
+  - NodeHub 🇩🇪 >>::DE
+  - NodeHub VLESS-151_10
+  - NodeHub VLESS-151_11
+  - NodeHub VLESS-151_12
+  - NodeHub VLESS-151_13
+  - NodeHub VLESS-104_3
+  - NodeHub VLESS-151_14
+  - NodeHub VLESS-151_15
+  - NodeHub VLESS-151_16
+  - NodeHub VLESS-151_17
+  - NodeHub VLESS-151_18
+  - NodeHub VLESS-151_19
+  - NodeHub 🇩🇪 >>::DE_1
+  - NodeHub VLESS-151_20
+  - NodeHub VLESS-94
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: NodeHub - 🐌 低速节点
+- name: NodeHub - 🌍 DE
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub VLESS-162
-  - NodeHub VLESS-188
-  - NodeHub VLESS-188_1
-  - NodeHub VLESS-104
-  - NodeHub VLESS-72
-  - NodeHub VLESS-173
-  - NodeHub VLESS-170
   - NodeHub 🇩🇪 >>::DE
-  - NodeHub VLESS-151
-  - NodeHub VLESS-5
-  - NodeHub VLESS-151_1
-  - NodeHub VLESS-151_2
-  - NodeHub VLESS-151_3
-  - NodeHub >>::XX
-  - NodeHub VLESS-151_4
-  - NodeHub VLESS-104_1
-  - NodeHub VLESS-151_5
+  - NodeHub 🇩🇪 >>::DE_1
+- name: NodeHub - 🌍 US
+  type: select
+  proxies:
+  - NodeHub - 🚀 节点选择
+  - NodeHub 🇺🇸 >>::US
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
