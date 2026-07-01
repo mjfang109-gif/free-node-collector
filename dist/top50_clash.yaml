@@ -20,84 +20,45 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub 🦖85
-  type: vless
-  server: 162.159.36.166
-  port: 8443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  network: ws
-  sni: t1s1.rittbo.kdns.fr
-  servername: t1s1.rittbo.kdns.fr
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
 - name: NodeHub VLESS-104
   type: vless
-  server: 104.18.155.206
+  server: 104.21.52.77
   port: 443
-  uuid: 0ac0a6f0-d3f0-47f1-8de4-ce785e515a5c
+  uuid: 59dd07bb-04ea-442b-8d9e-ac52b63e9010
   tls: true
   network: ws
-  sni: unnes.ac.id.yxls.eu.cc
-  servername: unnes.ac.id.yxls.eu.cc
+  sni: deliCaTe-graSS-7a09.hSueGdbxJDiRfh.WORKeRS.DEV
+  servername: deliCaTe-graSS-7a09.hSueGdbxJDiRfh.WORKeRS.DEV
   ws-opts:
-    path: /ca-cl
+    path: /eyJqdW5rIjoiUkI0M1BUNkdOckQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
     headers:
-      Host: unnes.ac.id.yxls.eu.cc
-- name: NodeHub VLESS-45
-  type: vless
-  server: 45.130.125.126
-  port: 443
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-  tls: true
-  network: ws
-  sni: vangoghhh.info
-  servername: vangoghhh.info
-  ws-opts:
-    path: /rdfgtws
-    headers:
-      Host: vangoghhh.info
-- name: NodeHub VLESS-108
-  type: vless
-  server: 108.162.192.75
-  port: 443
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
-  tls: true
-  network: ws
-  sni: vangoghhh.info
-  servername: vangoghhh.info
-  ws-opts:
-    path: /rdfgtws
-    headers:
-      Host: vangoghhh.info
+      Host: delicate-grass-7a09.hsuegdbxjdirfh.workers.dev
 - name: NodeHub VLESS-104_1
   type: vless
-  server: 104.16.72.101
-  port: 443
-  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+  server: 104.21.82.201
+  port: 2087
+  uuid: 4454f3d1-6359-401b-b10c-81d0b3f0b7c2
   tls: true
   network: ws
-  sni: vangoghhh.info
-  servername: vangoghhh.info
+  sni: V2NgFaST-MNBjhv.AkbarbikAr.WorKErs.DEV
+  servername: V2NgFaST-MNBjhv.AkbarbikAr.WorKErs.DEV
   ws-opts:
-    path: /rdfgtws
+    path: /eyJqdW5rIjoiY0lZS1FrazRnIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
     headers:
-      Host: vangoghhh.info
-- name: NodeHub United
+      Host: v2ngfast-mnbjhv.akbarbikar.workers.dev
+- name: NodeHub VLESS-104_2
   type: vless
-  server: 141.193.213.20
-  port: 443
-  uuid: 4f013568-a58b-4b04-b5dd-4d52bf1c33a4
+  server: 104.18.42.68
+  port: 8443
+  uuid: 4c1b83e4-5ade-46a8-966d-1eeb7a8dcc65
   tls: true
   network: ws
-  sni: amoosamiii.net
-  servername: amoosamiii.net
+  sni: wz1.fum.ccwu.cc
+  servername: wz1.fum.ccwu.cc
   ws-opts:
-    path: /poiuyws
+    path: /proxyip=sjc.o00o.ooo
     headers:
-      Host: amoosamiii.net
+      Host: wz1.fum.ccwu.cc
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -105,24 +66,18 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub 🦖85
   - NodeHub VLESS-104
-  - NodeHub VLESS-45
-  - NodeHub VLESS-108
   - NodeHub VLESS-104_1
-  - NodeHub United
+  - NodeHub VLESS-104_2
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub 🦖85
   - NodeHub VLESS-104
-  - NodeHub VLESS-45
-  - NodeHub VLESS-108
   - NodeHub VLESS-104_1
-  - NodeHub United
+  - NodeHub VLESS-104_2
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -132,12 +87,9 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🦖85
   - NodeHub VLESS-104
-  - NodeHub VLESS-45
-  - NodeHub VLESS-108
   - NodeHub VLESS-104_1
-  - NodeHub United
+  - NodeHub VLESS-104_2
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
