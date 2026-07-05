@@ -20,49 +20,10 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub 🇺🇸 >>::US
+- name: NodeHub VLESS-162
   type: vless
-  server: 162.159.5.231
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  network: ws
-  sni: t1s1.rittbo.kdns.fr
-  servername: t1s1.rittbo.kdns.fr
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: NodeHub VLESS-89
-  type: vless
-  server: 89.116.250.135
+  server: 162.159.4.221
   port: 8443
-  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
-  tls: true
-  network: ws
-  sni: vpn47.cc.cd
-  servername: vpn47.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: vpn47.cc.cd
-- name: NodeHub Tel
-  type: vless
-  server: 162.159.16.154
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  network: ws
-  sni: t1s1.rittbo.kdns.fr
-  servername: t1s1.rittbo.kdns.fr
-  ws-opts:
-    path: /fp
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: NodeHub 🇺🇸 >>::US_1
-  type: vless
-  server: 172.64.40.79
-  port: 2083
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
   network: ws
@@ -74,31 +35,448 @@ proxies:
       Host: t1s1.rittbo.kdns.fr
 - name: NodeHub VLESS-104
   type: vless
-  server: 104.16.75.143
+  server: 104.27.68.164
+  port: 2086
+  uuid: d028eaf5-c5ef-49a0-85c6-4f4816af8053
+  tls: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZUJZR2pXVFByVyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjEwOS4xMjAuMTU4LjE0OSJdfQ==?ed=2560
+    headers:
+      Host: misty-bread-fd96.salehinezhadali.workers.dev
+- name: NodeHub VLESS-45
+  type: vless
+  server: 45.80.111.244
   port: 443
-  uuid: 0ac0a6f0-d3f0-47f1-8de4-ce785e515a5c
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
   tls: true
   network: ws
-  sni: unnes.ac.id.yxls.eu.cc
-  servername: unnes.ac.id.yxls.eu.cc
+  sni: vpn47.cc.cd
+  servername: vpn47.cc.cd
   ws-opts:
-    path: /ca-cl
+    path: /
     headers:
-      Host: unnes.ac.id.yxls.eu.cc
+      Host: vpn47.cc.cd
+- name: NodeHub VLESS-162_1
+  type: vless
+  server: 162.159.17.145
+  port: 2087
+  uuid: 6e76eb41-46c0-438a-8e23-3c3abc7bfd77
+  tls: true
+  network: ws
+  sni: eZ-7e157E.AlEXIANOo.WorKeRs.dEv
+  servername: eZ-7e157E.AlEXIANOo.WorKeRs.dEv
+  ws-opts:
+    path: /eyJqdW5rIjoidFRZQUtRSm9iSXdDY1MiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
+    headers:
+      Host: ez-7e157e.alexianoo.workers.dev
 - name: NodeHub VLESS-104_1
   type: vless
-  server: 104.18.153.10
-  port: 2096
-  uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
+  server: 104.21.12.116
+  port: 8880
+  uuid: ad85a1ce-3519-4634-9ea1-66c60d3694ba
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: little-pond-8731.81-68e.workers.dev
+- name: NodeHub VLESS-104_2
+  type: vless
+  server: 104.16.148.8
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
   network: ws
-  sni: sp.linuxdododo.ccwu.cc
-  servername: sp.linuxdododo.ccwu.cc
+  sni: t1s1.rittbo.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
   ws-opts:
-    path: /proxyip
+    path: /
     headers:
-      Host: sp.linuxdododo.ccwu.cc
-- name: NodeHub VLESS-104_2
+      Host: t1s1.rittbo.kdns.fr
+- name: NodeHub VLESS-108
+  type: vless
+  server: 108.162.196.3
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  network: ws
+  sni: t1s1.rittbo.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: NodeHub VLESS-104_3
+  type: vless
+  server: 104.21.19.36
+  port: 443
+  uuid: 0e79a7b6-8c72-4573-8688-101af4667bc5
+  tls: true
+  network: ws
+  sni: ApI-HuB-F15f35-edG.rTre7431.wOrkERs.dev
+  servername: ApI-HuB-F15f35-edG.rTre7431.wOrkERs.dev
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: API-HuB-f15F35-EdG.RtRE7431.woRKERs.dEV
+- name: NodeHub VLESS-172
+  type: vless
+  server: 172.64.53.65
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  network: ws
+  sni: t1s1.rittbo.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: NodeHub 🪼18
+  type: vless
+  server: 162.159.8.123
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  network: ws
+  sni: t1s1.rittbo.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: NodeHub VLESS-172_1
+  type: vless
+  server: 172.64.152.241
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  network: ws
+  sni: t1s1.rittbo.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: NodeHub VLESS-104_4
+  type: vless
+  server: 104.16.107.139
+  port: 8880
+  uuid: 24c2a873-4584-4c53-8679-61029682d0bb
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: soft-thunder-bc22.111-f59.workers.dev
+- name: NodeHub 🇺🇸 >>::US
+  type: vless
+  server: 104.16.106.213
+  port: 8880
+  uuid: 82a3c394-55b7-4780-93a0-5f45c0e89625
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: square-brook-e650.353-3ac.workers.dev
+- name: NodeHub 🇺🇸 >>::US_1
+  type: vless
+  server: 104.18.37.237
+  port: 8443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  network: ws
+  sni: t1s1.rittbo.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: NodeHub 🇺🇸 >>::US_2
+  type: vless
+  server: 172.64.52.152
+  port: 8443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  network: ws
+  sni: t1s1.rittbo.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: NodeHub VLESS-172_2
+  type: vless
+  server: 172.64.94.251
+  port: 8880
+  uuid: f3a30870-eb2e-4ad7-85cb-c0e65d061d5b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: shrill-mouse-dacd.391.workers.dev
+- name: NodeHub 🇺🇸 >>::US_3
+  type: vless
+  server: 194.76.18.2
+  port: 8880
+  uuid: bb5f4b63-0b91-4f2c-8a02-66c3f99c1aaa
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram🇨🇳 @WangCai2
+    headers:
+      Host: yellow-mouse-fcce.400-318.workers.dev
+- name: NodeHub VLESS-66
+  type: vless
+  server: 66.81.247.91
+  port: 443
+  uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
+  tls: true
+  network: ws
+  sni: vpn47.cc.cd
+  servername: vpn47.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn47.cc.cd
+- name: NodeHub VLESS-104_5
+  type: vless
+  server: 104.16.72.70
+  port: 443
+  uuid: 0799a47d-d446-4a20-8e75-441fa899fbb1
+  tls: true
+  network: ws
+  sni: unnes.ac.id.r3xxe.eu.cc
+  servername: unnes.ac.id.r3xxe.eu.cc
+  ws-opts:
+    path: /id-pusat
+    headers:
+      Host: unnes.ac.id.r3xxe.eu.cc
+- name: NodeHub 🇺🇸 >>::US_4
+  type: vless
+  server: 162.159.38.25
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  network: ws
+  sni: t1s1.rittbo.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: NodeHub VLESS-172_3
+  type: vless
+  server: 172.67.176.240
+  port: 2087
+  uuid: 297b49be-773a-4709-a9a8-659c8e0b5252
+  tls: true
+  network: ws
+  sni: Ez-E39b84.PADArPaDaR.wOrkeRS.DEv
+  servername: Ez-E39b84.PADArPaDaR.wOrkeRS.DEv
+  ws-opts:
+    path: /eyJqdW5rIjoiSDFLUWh3RkQzZks5WjhNIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==?ed=2560
+    headers:
+      Host: ez-e39b84.padarpadar.workers.dev
+- name: NodeHub VLESS-108_1
+  type: vless
+  server: 108.162.193.95
+  port: 80
+  uuid: 01dfcada-2cef-4b85-86f2-7183df189918
+  tls: false
+  network: ws
+  sni: zeus-panel-ib4w5o.mrs-nazir-sherzad.workers.dev
+  servername: zeus-panel-ib4w5o.mrs-nazir-sherzad.workers.dev
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-ib4w5o.mrs-nazir-sherzad.workers.dev
+- name: NodeHub VLESS-172_4
+  type: vless
+  server: 172.67.165.8
+  port: 443
+  uuid: 0d5f6432-f6a4-49d3-9322-d651125000d0
+  tls: true
+  network: ws
+  sni: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  servername: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+- name: NodeHub VLESS-104_6
+  type: vless
+  server: 104.20.44.170
+  port: 80
+  uuid: 01dfcada-2cef-4b85-86f2-7183df189918
+  tls: false
+  network: ws
+  sni: zeus-panel-ib4w5o.mrs-nazir-sherzad.workers.dev
+  servername: zeus-panel-ib4w5o.mrs-nazir-sherzad.workers.dev
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-ib4w5o.mrs-nazir-sherzad.workers.dev
+- name: NodeHub VLESS-108_2
+  type: vless
+  server: 108.162.192.182
+  port: 443
+  uuid: 01dfcada-2cef-4b85-86f2-7183df189918
+  tls: true
+  network: ws
+  sni: zeus-panel-ib4w5o.mrs-nazir-sherzad.workers.dev
+  servername: zeus-panel-ib4w5o.mrs-nazir-sherzad.workers.dev
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-ib4w5o.mrs-nazir-sherzad.workers.dev
+- name: NodeHub VLESS-104_7
+  type: vless
+  server: 104.20.44.170
+  port: 443
+  uuid: 01dfcada-2cef-4b85-86f2-7183df189918
+  tls: true
+  network: ws
+  sni: zeus-panel-ib4w5o.mrs-nazir-sherzad.workers.dev
+  servername: zeus-panel-ib4w5o.mrs-nazir-sherzad.workers.dev
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-ib4w5o.mrs-nazir-sherzad.workers.dev
+- name: NodeHub VLESS-172_5
+  type: vless
+  server: 172.67.133.37
+  port: 2096
+  uuid: 0d5f6432-f6a4-49d3-9322-d651125000d0
+  tls: true
+  network: ws
+  sni: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  servername: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+- name: NodeHub VLESS-104_8
+  type: vless
+  server: 104.16.219.230
+  port: 2096
+  uuid: 0d5f6432-f6a4-49d3-9322-d651125000d0
+  tls: true
+  network: ws
+  sni: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  servername: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+- name: NodeHub VLESS-172_6
+  type: vless
+  server: 172.66.145.154
+  port: 443
+  uuid: 0d5f6432-f6a4-49d3-9322-d651125000d0
+  tls: true
+  network: ws
+  sni: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  servername: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+- name: NodeHub VLESS-172_7
+  type: vless
+  server: 172.67.203.95
+  port: 80
+  uuid: 01dfcada-2cef-4b85-86f2-7183df189918
+  tls: false
+  network: ws
+  sni: zeus-panel-ib4w5o.mrs-nazir-sherzad.workers.dev
+  servername: zeus-panel-ib4w5o.mrs-nazir-sherzad.workers.dev
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-ib4w5o.mrs-nazir-sherzad.workers.dev
+- name: NodeHub VLESS-104_9
+  type: vless
+  server: 104.19.255.51
+  port: 2053
+  uuid: 0d5f6432-f6a4-49d3-9322-d651125000d0
+  tls: true
+  network: ws
+  sni: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  servername: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+- name: NodeHub VLESS-172_8
+  type: vless
+  server: 172.67.133.37
+  port: 80
+  uuid: 0d5f6432-f6a4-49d3-9322-d651125000d0
+  tls: false
+  network: ws
+  sni: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  servername: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+- name: NodeHub VLESS-104_10
+  type: vless
+  server: 104.18.154.96
+  port: 2083
+  uuid: 0d5f6432-f6a4-49d3-9322-d651125000d0
+  tls: true
+  network: ws
+  sni: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  servername: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+- name: NodeHub VLESS-104_11
+  type: vless
+  server: 104.27.65.143
+  port: 443
+  uuid: 0d5f6432-f6a4-49d3-9322-d651125000d0
+  tls: true
+  network: ws
+  sni: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  servername: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+- name: NodeHub VLESS-104_12
+  type: vless
+  server: 104.19.184.2
+  port: 80
+  uuid: 1a0cefad-99be-486a-a062-2ceee14849fa
+  tls: false
+  network: ws
+  sni: zeus-panel-n4i8us.zeus-ri73nu.workers.dev
+  servername: zeus-panel-n4i8us.zeus-ri73nu.workers.dev
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-n4i8us.zeus-ri73nu.workers.dev
+- name: NodeHub VLESS-104_13
+  type: vless
+  server: 104.16.1.195
+  port: 2096
+  uuid: 0d5f6432-f6a4-49d3-9322-d651125000d0
+  tls: true
+  network: ws
+  sni: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  servername: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-hr6yzi.ezaccess11ab3ae.workers.dev
+- name: NodeHub VLESS-104_14
   type: vless
   server: 104.17.147.22
   port: 443
@@ -111,20 +489,72 @@ proxies:
     path: /odiyfws
     headers:
       Host: octopusss.net
-- name: NodeHub VLESS-5
+- name: NodeHub VLESS-45_1
   type: vless
-  server: 5.10.214.151
+  server: 45.131.209.212
   port: 443
-  uuid: c35050ce-01ab-45a9-91b8-54cec637d0a8
+  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
   tls: true
   network: ws
-  sni: octopusss5.info
-  servername: octopusss5.info
+  sni: vangoghhh.info
+  servername: vangoghhh.info
   ws-opts:
-    path: /udfyfws
+    path: /rdfgtws
     headers:
-      Host: octopusss5.info
-- name: NodeHub VLESS-45
+      Host: vangoghhh.info
+- name: NodeHub VLESS-45_2
+  type: vless
+  server: 45.131.211.22
+  port: 443
+  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+  tls: true
+  network: ws
+  sni: vangoghhh.info
+  servername: vangoghhh.info
+  ws-opts:
+    path: /rdfgtws
+    headers:
+      Host: vangoghhh.info
+- name: NodeHub VLESS-205
+  type: vless
+  server: 205.233.181.117
+  port: 443
+  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+  tls: true
+  network: ws
+  sni: vangoghhh.info
+  servername: vangoghhh.info
+  ws-opts:
+    path: /rdfgtws
+    headers:
+      Host: vangoghhh.info
+- name: NodeHub >>::XX
+  type: vless
+  server: 108.162.192.75
+  port: 443
+  uuid: 4f013568-a58b-4b04-b5dd-4d52bf1c33a4
+  tls: true
+  network: ws
+  sni: amoosamiii.net
+  servername: amoosamiii.net
+  ws-opts:
+    path: /poiuyws
+    headers:
+      Host: amoosamiii.net
+- name: NodeHub VLESS-104_15
+  type: vless
+  server: 104.18.153.10
+  port: 443
+  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+  tls: true
+  network: ws
+  sni: vangoghhh.info
+  servername: vangoghhh.info
+  ws-opts:
+    path: /rdfgtws
+    headers:
+      Host: vangoghhh.info
+- name: NodeHub VLESS-45_3
   type: vless
   server: 45.131.210.63
   port: 443
@@ -137,20 +567,20 @@ proxies:
     path: /rdfgtws
     headers:
       Host: vangoghhh.info
-- name: NodeHub [86746]
+- name: NodeHub VLESS-104_16
   type: vless
-  server: 104.16.72.101
+  server: 104.16.75.235
   port: 443
-  uuid: 7e544a9d-7667-413b-bbb0-b3bb1aac6d77
+  uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
   tls: true
   network: ws
-  sni: shegeftihaaa.net
-  servername: shegeftihaaa.net
+  sni: het1.ariyuz.org
+  servername: het1.ariyuz.org
   ws-opts:
-    path: /rsedgws
+    path: /
     headers:
-      Host: shegeftihaaa.net
-- name: NodeHub VLESS-104_3
+      Host: het1.ariyuz.org
+- name: NodeHub VLESS-104_17
   type: vless
   server: 104.16.149.244
   port: 2083
@@ -163,6 +593,45 @@ proxies:
     path: /
     headers:
       Host: gerdohtz.kavircycle.ir
+- name: NodeHub VLESS-199
+  type: vless
+  server: 199.181.197.195
+  port: 443
+  uuid: 1a0cefad-99be-486a-a062-2ceee14849fa
+  tls: true
+  network: ws
+  sni: zeus-panel-n4i8us.zeus-ri73nu.workers.dev
+  servername: zeus-panel-n4i8us.zeus-ri73nu.workers.dev
+  ws-opts:
+    path: /In_Panel_Rayeghan_Ast_Va_Gheyre_Ghabele_Foroosh
+    headers:
+      Host: zeus-panel-n4i8us.zeus-ri73nu.workers.dev
+- name: NodeHub VLESS-172_9
+  type: vless
+  server: 172.66.40.229
+  port: 8443
+  uuid: 0d43ad56-1f5c-412d-a490-6e266efe4cdf
+  tls: true
+  network: ws
+  sni: free-server.techsonic.me
+  servername: free-server.techsonic.me
+  ws-opts:
+    path: /free-server.techsonic.me
+    headers:
+      Host: free-server.techsonic.me
+- name: NodeHub VLESS-104_18
+  type: vless
+  server: 104.17.71.206
+  port: 8443
+  uuid: 0d43ad56-1f5c-412d-a490-6e266efe4cdf
+  tls: true
+  network: ws
+  sni: free-server.techsonic.me
+  servername: free-server.techsonic.me
+  ws-opts:
+    path: /free-server.techsonic.me
+    headers:
+      Host: free-server.techsonic.me
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -170,34 +639,108 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub VLESS-89
-  - NodeHub Tel
-  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub VLESS-162
   - NodeHub VLESS-104
+  - NodeHub VLESS-45
+  - NodeHub VLESS-162_1
   - NodeHub VLESS-104_1
   - NodeHub VLESS-104_2
-  - NodeHub VLESS-5
-  - NodeHub VLESS-45
-  - NodeHub [86746]
+  - NodeHub VLESS-108
   - NodeHub VLESS-104_3
+  - NodeHub VLESS-172
+  - NodeHub 🪼18
+  - NodeHub VLESS-172_1
+  - NodeHub VLESS-104_4
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub 🇺🇸 >>::US_2
+  - NodeHub VLESS-172_2
+  - NodeHub 🇺🇸 >>::US_3
+  - NodeHub VLESS-66
+  - NodeHub VLESS-104_5
+  - NodeHub 🇺🇸 >>::US_4
+  - NodeHub VLESS-172_3
+  - NodeHub VLESS-108_1
+  - NodeHub VLESS-172_4
+  - NodeHub VLESS-104_6
+  - NodeHub VLESS-108_2
+  - NodeHub VLESS-104_7
+  - NodeHub VLESS-172_5
+  - NodeHub VLESS-104_8
+  - NodeHub VLESS-172_6
+  - NodeHub VLESS-172_7
+  - NodeHub VLESS-104_9
+  - NodeHub VLESS-172_8
+  - NodeHub VLESS-104_10
+  - NodeHub VLESS-104_11
+  - NodeHub VLESS-104_12
+  - NodeHub VLESS-104_13
+  - NodeHub VLESS-104_14
+  - NodeHub VLESS-45_1
+  - NodeHub VLESS-45_2
+  - NodeHub VLESS-205
+  - NodeHub >>::XX
+  - NodeHub VLESS-104_15
+  - NodeHub VLESS-45_3
+  - NodeHub VLESS-104_16
+  - NodeHub VLESS-104_17
+  - NodeHub VLESS-199
+  - NodeHub VLESS-172_9
+  - NodeHub VLESS-104_18
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub VLESS-89
-  - NodeHub Tel
-  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub VLESS-162
   - NodeHub VLESS-104
+  - NodeHub VLESS-45
+  - NodeHub VLESS-162_1
   - NodeHub VLESS-104_1
   - NodeHub VLESS-104_2
-  - NodeHub VLESS-5
-  - NodeHub VLESS-45
-  - NodeHub [86746]
+  - NodeHub VLESS-108
   - NodeHub VLESS-104_3
+  - NodeHub VLESS-172
+  - NodeHub 🪼18
+  - NodeHub VLESS-172_1
+  - NodeHub VLESS-104_4
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub 🇺🇸 >>::US_2
+  - NodeHub VLESS-172_2
+  - NodeHub 🇺🇸 >>::US_3
+  - NodeHub VLESS-66
+  - NodeHub VLESS-104_5
+  - NodeHub 🇺🇸 >>::US_4
+  - NodeHub VLESS-172_3
+  - NodeHub VLESS-108_1
+  - NodeHub VLESS-172_4
+  - NodeHub VLESS-104_6
+  - NodeHub VLESS-108_2
+  - NodeHub VLESS-104_7
+  - NodeHub VLESS-172_5
+  - NodeHub VLESS-104_8
+  - NodeHub VLESS-172_6
+  - NodeHub VLESS-172_7
+  - NodeHub VLESS-104_9
+  - NodeHub VLESS-172_8
+  - NodeHub VLESS-104_10
+  - NodeHub VLESS-104_11
+  - NodeHub VLESS-104_12
+  - NodeHub VLESS-104_13
+  - NodeHub VLESS-104_14
+  - NodeHub VLESS-45_1
+  - NodeHub VLESS-45_2
+  - NodeHub VLESS-205
+  - NodeHub >>::XX
+  - NodeHub VLESS-104_15
+  - NodeHub VLESS-45_3
+  - NodeHub VLESS-104_16
+  - NodeHub VLESS-104_17
+  - NodeHub VLESS-199
+  - NodeHub VLESS-172_9
+  - NodeHub VLESS-104_18
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -207,17 +750,54 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub VLESS-89
-  - NodeHub Tel
-  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub VLESS-162
   - NodeHub VLESS-104
+  - NodeHub VLESS-45
+  - NodeHub VLESS-162_1
   - NodeHub VLESS-104_1
   - NodeHub VLESS-104_2
-  - NodeHub VLESS-5
-  - NodeHub VLESS-45
-  - NodeHub [86746]
+  - NodeHub VLESS-108
   - NodeHub VLESS-104_3
+  - NodeHub VLESS-172
+  - NodeHub 🪼18
+  - NodeHub VLESS-172_1
+  - NodeHub VLESS-104_4
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub 🇺🇸 >>::US_2
+  - NodeHub VLESS-172_2
+  - NodeHub 🇺🇸 >>::US_3
+  - NodeHub VLESS-66
+  - NodeHub VLESS-104_5
+  - NodeHub 🇺🇸 >>::US_4
+  - NodeHub VLESS-172_3
+  - NodeHub VLESS-108_1
+  - NodeHub VLESS-172_4
+  - NodeHub VLESS-104_6
+  - NodeHub VLESS-108_2
+  - NodeHub VLESS-104_7
+  - NodeHub VLESS-172_5
+  - NodeHub VLESS-104_8
+  - NodeHub VLESS-172_6
+  - NodeHub VLESS-172_7
+  - NodeHub VLESS-104_9
+  - NodeHub VLESS-172_8
+  - NodeHub VLESS-104_10
+  - NodeHub VLESS-104_11
+  - NodeHub VLESS-104_12
+  - NodeHub VLESS-104_13
+  - NodeHub VLESS-104_14
+  - NodeHub VLESS-45_1
+  - NodeHub VLESS-45_2
+  - NodeHub VLESS-205
+  - NodeHub >>::XX
+  - NodeHub VLESS-104_15
+  - NodeHub VLESS-45_3
+  - NodeHub VLESS-104_16
+  - NodeHub VLESS-104_17
+  - NodeHub VLESS-199
+  - NodeHub VLESS-172_9
+  - NodeHub VLESS-104_18
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
