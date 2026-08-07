@@ -20,9 +20,35 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub 🪁48
+- name: NodeHub VLESS-94
   type: vless
-  server: 108.162.198.5
+  server: 94.247.142.167
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
+  network: ws
+  sni: support.zoom.us.yxls.eu.cc
+  servername: support.zoom.us.yxls.eu.cc
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: NodeHub VLESS-162
+  type: vless
+  server: 162.159.152.129
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
+  network: ws
+  sni: support.zoom.us.yxls.eu.cc
+  servername: support.zoom.us.yxls.eu.cc
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: NodeHub channel
+  type: vless
+  server: 170.114.46.6
   port: 443
   uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
   tls: true
@@ -35,31 +61,7 @@ proxies:
       Host: support.zoom.us.yxls.eu.cc
 - name: NodeHub VLESS-104
   type: vless
-  server: 104.17.123.204
-  port: 8880
-  uuid: 06bfb14e-66cc-48ca-a429-b9301dba2f81
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: long-firefly-a226.216-ce0.workers.dev
-- name: NodeHub 🇺🇸 >>::US
-  type: vless
-  server: 172.67.215.201
-  port: 2096
-  uuid: f8fff57f-224a-4ae3-80c1-a9299796ad7c
-  tls: true
-  network: ws
-  sni: 11.ez-70ef02.workers.dev
-  servername: 11.ez-70ef02.workers.dev
-  ws-opts:
-    path: /eyJqdW5rIjoicmc2S3lEeXFMV3Y3UHkiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI1Ny4xMjkuNDcuNTIiXX0=
-    headers:
-      Host: 11.ez-70ef02.workers.dev
-- name: NodeHub 🇺🇸 >>::US_1
-  type: vless
-  server: 104.25.244.217
+  server: 104.17.147.118
   port: 443
   uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
   tls: true
@@ -70,20 +72,9 @@ proxies:
     path: /sg-melbi
     headers:
       Host: support.zoom.us.yxls.eu.cc
-- name: NodeHub 🇺🇸 >>::US_2
+- name: NodeHub VLESS-104_1
   type: vless
-  server: 104.25.118.238
-  port: 80
-  uuid: 6cd78ec7-b715-471c-92b4-0c3842caea4b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiOFRwTjlPWHgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
-    headers:
-      Host: billowing-cloud-d339.sospanel.workers.dev
-- name: NodeHub VLESS-172
-  type: vless
-  server: 172.64.146.86
+  server: 104.20.39.109
   port: 443
   uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
   tls: true
@@ -94,186 +85,19 @@ proxies:
     path: /sg-melbi
     headers:
       Host: support.zoom.us.yxls.eu.cc
-- name: NodeHub 🇺🇸 >>::US_3
+- name: NodeHub 🪁60
   type: vless
-  server: 172.64.88.251
-  port: 8880
-  uuid: 7e3cd2f1-0de5-4717-9002-64d8597bc577
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dry-credit-fc26.203-d8c.workers.dev
-- name: NodeHub 🇺🇸 >>::US_4
-  type: vless
-  server: 104.24.246.247
-  port: 443
-  uuid: 690b6997-198a-49d2-8cef-e4c70efc2288
+  server: 91.193.58.217
+  port: 2053
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
   tls: true
   network: ws
-  sni: mute-moon-cf52.stary1001.workers.dev
-  servername: mute-moon-cf52.stary1001.workers.dev
+  sni: vlso200.1d.mom
+  servername: vlso200.1d.mom
   ws-opts:
-    path: /
+    path: /socks5=888:888@hkip.1d.mom:1080
     headers:
-      Host: mute-moon-cf52.stary1001.workers.dev
-- name: NodeHub []t.me/ConfigV2RayNG
-  type: vless
-  server: 104.18.37.228
-  port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  tls: true
-  network: ws
-  sni: josni.hoyes.cloudns.ch
-  servername: josni.hoyes.cloudns.ch
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: josni.hoyes.cloudns.ch
-- name: NodeHub VLESS-172_1
-  type: vless
-  server: 172.67.195.229
-  port: 443
-  uuid: 00e94078-bb1e-49aa-8567-e1b3b2843150
-  tls: true
-  network: ws
-  sni: rapid-hat-441d.platovpn.workers.dev
-  servername: rapid-hat-441d.platovpn.workers.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: rapid-hat-441d.platovpn.workers.dev
-- name: NodeHub 🇺🇸 >>::US_5
-  type: vless
-  server: 172.67.219.176
-  port: 2087
-  uuid: f2f4e2dc-3e7b-402f-a461-b48acc6aa310
-  tls: true
-  network: ws
-  sni: sTeEp-BoNUs-8E6A.AmIrhon1376.woRKeRS.dEv
-  servername: sTeEp-BoNUs-8E6A.AmIrhon1376.woRKeRS.dEv
-  ws-opts:
-    path: /eyJqdW5rIjoid2JBOTRVclNMOVdBSVQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
-    headers:
-      Host: steep-bonus-8e6a.amirhon1376.workers.dev
-- name: NodeHub VLESS-162
-  type: vless
-  server: 162.159.137.54
-  port: 443
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-  tls: true
-  network: ws
-  sni: support.zoom.us.yxls.eu.cc
-  servername: support.zoom.us.yxls.eu.cc
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: NodeHub 🇺🇸 >>::US_6
-  type: vless
-  server: 108.162.192.4
-  port: 443
-  uuid: dd321f25-8f90-4e7c-a1fa-01883a8988a7
-  tls: true
-  network: ws
-  sni: soucuovls.pages.dev
-  servername: soucuovls.pages.dev
-  ws-opts:
-    path: pyip=proxyip.cmliussss.net
-    headers:
-      Host: soucuovls.pages.dev
-- name: NodeHub 🇸🇪 ‍25
-  type: vless
-  server: 162.159.0.3
-  port: 443
-  uuid: dd321f25-8f90-4e7c-a1fa-01883a8988a7
-  tls: true
-  network: ws
-  sni: soucuovls.pages.dev
-  servername: soucuovls.pages.dev
-  ws-opts:
-    path: /pyip=proxyip.cmliussss.netfp=chrome
-    headers:
-      Host: soucuovls.pages.dev
-- name: NodeHub 🇺🇸 >>::US_7
-  type: vless
-  server: 172.66.170.53
-  port: 8880
-  uuid: 3a38b35b-7b31-452c-954f-99c2f45dda19
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: sweet-truth-0f0c.71-fca.workers.dev
-- name: NodeHub 🇺🇸 >>::US_8
-  type: vless
-  server: 172.64.94.251
-  port: 8880
-  uuid: 645ea5d2-7d0a-4d66-940d-eefc2b84f4e9
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: fragrant-surf-4797.496-345.workers.dev
-- name: NodeHub 🇺🇸 >>::US_9
-  type: vless
-  server: 172.64.88.168
-  port: 8880
-  uuid: 6f876b28-1b3e-4088-85c0-d299e56bfccd
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: throbbing-haze-fbde.388-6c4.workers.dev
-- name: NodeHub 🇸🇪 ‍28
-  type: vless
-  server: 198.41.209.43
-  port: 443
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-  tls: true
-  network: ws
-  sni: support.zoom.us.yxls.eu.cc
-  servername: support.zoom.us.yxls.eu.cc
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: NodeHub 🇺🇸 >>::US_10
-  type: vless
-  server: 108.162.198.253
-  port: 8443
-  uuid: ef9d2063-0140-472b-8b17-ba02ba4b4435
-  tls: true
-  network: ws
-  sni: lively-resonance-4e12.electrocellco-cf-059.workers.dev
-  servername: lively-resonance-4e12.electrocellco-cf-059.workers.dev
-  ws-opts:
-    path: /proxyip=167.71.48.187
-    headers:
-      Host: lively-resonance-4e12.electrocellco-cf-059.workers.dev
-- name: NodeHub t.me/iProxyChannel
-  type: vless
-  server: 104.17.248.26
-  port: 443
-  uuid: c9d1b8e6-f28a-419f-2581-97ad3258c320
-  tls: true
-  network: ws
-  sni: withered-cake-d636.asfvgsrhtrzdbvcgfn.workers.dev
-  servername: withered-cake-d636.asfvgsrhtrzdbvcgfn.workers.dev
-  ws-opts:
-    path: /kbapqjwhbsjwoqjhskso
-    headers:
-      Host: withered-cake-d636.asfvgsrhtrzdbvcgfn.workers.dev
-- name: NodeHub SS-156
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
+      Host: vlso200.1d.mom
 - name: NodeHub VLESS-170
   type: vless
   server: 170.114.45.6
@@ -287,44 +111,9 @@ proxies:
     path: /sg-melbi
     headers:
       Host: support.zoom.us.yxls.eu.cc
-- name: NodeHub t.me/ConfigFori
+- name: NodeHub VLESS-104_2
   type: vless
-  server: 162.159.46.0
-  port: 8880
-  uuid: b19b768d-bc57-4d03-9bea-61129ed5fef9
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: new.106-79e.workers.dev
-- name: NodeHub 🇺🇸 >>::US_11
-  type: vless
-  server: 104.21.15.212
-  port: 8880
-  uuid: 902fd911-ca5d-49a6-99ad-47372a266804
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: young-wildflower-6b6c.100-52d.workers.dev
-- name: NodeHub t.me/iProxyChannel_1
-  type: vless
-  server: 162.159.12.161
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  tls: true
-  network: ws
-  sni: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
-  servername: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
-  ws-opts:
-    path: /
-    headers:
-      Host: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
-- name: NodeHub VLESS-108
-  type: vless
-  server: 108.162.198.201
+  server: 104.21.2.192
   port: 443
   uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
   tls: true
@@ -335,109 +124,163 @@ proxies:
     path: /sg-melbi
     headers:
       Host: support.zoom.us.yxls.eu.cc
-- name: NodeHub 🇺🇸 >>::US_12
+- name: NodeHub VLESS-104_3
   type: vless
-  server: 162.159.140.78
-  port: 8880
-  uuid: 7111212b-6bc3-459a-85b4-3b13038a19f8
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: shrill-fog-67af.235-e6a.workers.dev
-- name: NodeHub t.me/iProxyChannel_2
-  type: vless
-  server: 104.21.23.72
-  port: 8880
-  uuid: 25844c02-a1fe-43ec-a6b9-44e3bf375b83
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: dark-breeze-a59a.494.workers.dev
-- name: NodeHub SS-156_1
-  type: ss
-  server: 156.146.38.169
+  server: 104.26.2.173
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: NodeHub t.me/iProxyChannel_3
-  type: vless
-  server: 172.64.145.202
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
   network: ws
+  sni: support.zoom.us.yxls.eu.cc
+  servername: support.zoom.us.yxls.eu.cc
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: NodeHub channel_1
+  type: vless
+  server: 188.164.248.69
+  port: 443
+  uuid: a21b9103-1693-49c1-8dc9-e8e8098ee969
+  tls: true
+  network: ws
+  sni: free-7f1.pages.dev
+  servername: free-7f1.pages.dev
   ws-opts:
     path: /
     headers:
-      Host: fangbinxingnmsl.pusytroller.gq
-- name: NodeHub 🇺🇸 >>::US_13
+      Host: free-7f1.pages.dev
+- name: NodeHub channel_2
   type: vless
-  server: 104.17.58.113
-  port: 8880
-  uuid: 6d6b7a8d-a9fa-4889-a5f4-d112c6b6f494
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: small-cake-e99b.390-a20.workers.dev
-- name: NodeHub 🇺🇸 >>::US_14
-  type: vless
-  server: 104.21.44.253
-  port: 8080
-  uuid: c6ba83a7-c4b5-481f-8f71-0f17deff0bf2
-  tls: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiOUhPbnRlV0xaekI1cjciLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
-    headers:
-      Host: billowing-sunset-e340.qaraatayi.workers.dev
-- name: NodeHub 🇺🇸 >>::US_15
-  type: vless
-  server: 104.16.106.213
-  port: 8880
-  uuid: e43ca713-a646-4406-a4d5-1e7bad20e7da
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: autumn-snow-735a.175-9d9.workers.dev
-- name: NodeHub SS-156_2
-  type: ss
-  server: 156.146.38.167
+  server: 172.66.44.97
   port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.16.72.41
-  port: 80
-  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
-  tls: false
-  network: ws
-  ws-opts:
-    path: /http
-    headers:
-      Host: de.vpnbase.net
-- name: NodeHub VLESS-104_2
-  type: vless
-  server: 104.16.75.68
-  port: 443
-  uuid: 03707fb7-0990-440f-88f6-b0e0f7242a38
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
   tls: true
   network: ws
-  sni: germany-2.ariyuz.org
-  servername: germany-2.ariyuz.org
+  sni: support.zoom.us.yxls.eu.cc
+  servername: support.zoom.us.yxls.eu.cc
   ws-opts:
-    path: /?/?BIA_TELEGRAM@vless_socks_vless_socks_vless_socks_vless_sosks?ed=2560
+    path: /sg-melbi
     headers:
-      Host: germany-2.ariyuz.org
-- name: NodeHub VLESS-104_3
+      Host: support.zoom.us.yxls.eu.cc
+- name: NodeHub VLESS-216
+  type: vless
+  server: 216.205.52.151
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
+  network: ws
+  sni: support.zoom.us.yxls.eu.cc
+  servername: support.zoom.us.yxls.eu.cc
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: NodeHub 🪁56
+  type: vless
+  server: 188.114.98.66
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
+  network: ws
+  sni: support.zoom.us.yxls.eu.cc
+  servername: support.zoom.us.yxls.eu.cc
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: NodeHub VLESS-188
+  type: vless
+  server: 188.114.97.3
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
+  network: ws
+  sni: support.zoom.us.yxls.eu.cc
+  servername: support.zoom.us.yxls.eu.cc
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: NodeHub 🪁35
+  type: vless
+  server: 190.93.246.202
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
+  network: ws
+  sni: support.zoom.us.yxls.eu.cc
+  servername: support.zoom.us.yxls.eu.cc
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: NodeHub VLESS-104_4
+  type: vless
+  server: 104.17.3.81
+  port: 443
+  uuid: 926bc4cd-709e-4e90-8aa7-78db75fbe86b
+  tls: true
+  network: ws
+  sni: Jp-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
+  servername: Jp-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/JP---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: Jpn1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.KinGNetWork.iR
+- name: NodeHub []t.me/ConfigV2RayNG
+  type: vless
+  server: 104.18.37.228
+  port: 443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
+  network: ws
+  sni: josni.hoyes.cloudns.ch
+  servername: josni.hoyes.cloudns.ch
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: josni.hoyes.cloudns.ch
+- name: NodeHub VLESS-162_1
+  type: vless
+  server: 162.159.141.83
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
+  network: ws
+  sni: support.zoom.us.yxls.eu.cc
+  servername: support.zoom.us.yxls.eu.cc
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: NodeHub VLESS-104_5
+  type: vless
+  server: 104.25.245.126
+  port: 443
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  tls: true
+  network: ws
+  sni: support.zoom.us.yxls.eu.cc
+  servername: support.zoom.us.yxls.eu.cc
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: NodeHub []t.me/ConfigV2RayNG_1
+  type: vless
+  server: 172.66.44.97
+  port: 2053
+  uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
+  tls: true
+  network: ws
+  sni: po.fastbrokencompony.com
+  servername: po.fastbrokencompony.com
+  ws-opts:
+    path: /
+    headers:
+      Host: po.fastbrokencompony.com
+- name: NodeHub VLESS-104_6
   type: vless
   server: 104.18.1.1
   port: 2053
@@ -450,32 +293,6 @@ proxies:
     path: /
     headers:
       Host: music1000.melobitmusic1.ir
-- name: NodeHub VLESS-104_4
-  type: vless
-  server: 104.18.32.47
-  port: 2053
-  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
-  tls: true
-  network: ws
-  sni: ov.iran-servers.shop
-  servername: ov.iran-servers.shop
-  ws-opts:
-    path: /J5aLQOY1R9ONWYCM
-    headers:
-      Host: ov.iran-servers.shop
-- name: NodeHub >>::XX
-  type: vless
-  server: 91.193.58.140
-  port: 2096
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  tls: true
-  network: ws
-  sni: free-server.techsonic.dev
-  servername: free-server.techsonic.dev
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -483,90 +300,54 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub 🪁48
-  - NodeHub VLESS-104
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 🇺🇸 >>::US_2
-  - NodeHub VLESS-172
-  - NodeHub 🇺🇸 >>::US_3
-  - NodeHub 🇺🇸 >>::US_4
-  - NodeHub []t.me/ConfigV2RayNG
-  - NodeHub VLESS-172_1
-  - NodeHub 🇺🇸 >>::US_5
+  - NodeHub VLESS-94
   - NodeHub VLESS-162
-  - NodeHub 🇺🇸 >>::US_6
-  - NodeHub 🇸🇪 ‍25
-  - NodeHub 🇺🇸 >>::US_7
-  - NodeHub 🇺🇸 >>::US_8
-  - NodeHub 🇺🇸 >>::US_9
-  - NodeHub 🇸🇪 ‍28
-  - NodeHub 🇺🇸 >>::US_10
-  - NodeHub t.me/iProxyChannel
-  - NodeHub SS-156
-  - NodeHub VLESS-170
-  - NodeHub t.me/ConfigFori
-  - NodeHub 🇺🇸 >>::US_11
-  - NodeHub t.me/iProxyChannel_1
-  - NodeHub VLESS-108
-  - NodeHub 🇺🇸 >>::US_12
-  - NodeHub t.me/iProxyChannel_2
-  - NodeHub SS-156_1
-  - NodeHub t.me/iProxyChannel_3
-  - NodeHub 🇺🇸 >>::US_13
-  - NodeHub 🇺🇸 >>::US_14
-  - NodeHub 🇺🇸 >>::US_15
-  - NodeHub SS-156_2
+  - NodeHub channel
+  - NodeHub VLESS-104
   - NodeHub VLESS-104_1
+  - NodeHub 🪁60
+  - NodeHub VLESS-170
   - NodeHub VLESS-104_2
   - NodeHub VLESS-104_3
+  - NodeHub channel_1
+  - NodeHub channel_2
+  - NodeHub VLESS-216
+  - NodeHub 🪁56
+  - NodeHub VLESS-188
+  - NodeHub 🪁35
   - NodeHub VLESS-104_4
-  - NodeHub >>::XX
+  - NodeHub []t.me/ConfigV2RayNG
+  - NodeHub VLESS-162_1
+  - NodeHub VLESS-104_5
+  - NodeHub []t.me/ConfigV2RayNG_1
+  - NodeHub VLESS-104_6
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub 🪁48
-  - NodeHub VLESS-104
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 🇺🇸 >>::US_2
-  - NodeHub VLESS-172
-  - NodeHub 🇺🇸 >>::US_3
-  - NodeHub 🇺🇸 >>::US_4
-  - NodeHub []t.me/ConfigV2RayNG
-  - NodeHub VLESS-172_1
-  - NodeHub 🇺🇸 >>::US_5
+  - NodeHub VLESS-94
   - NodeHub VLESS-162
-  - NodeHub 🇺🇸 >>::US_6
-  - NodeHub 🇸🇪 ‍25
-  - NodeHub 🇺🇸 >>::US_7
-  - NodeHub 🇺🇸 >>::US_8
-  - NodeHub 🇺🇸 >>::US_9
-  - NodeHub 🇸🇪 ‍28
-  - NodeHub 🇺🇸 >>::US_10
-  - NodeHub t.me/iProxyChannel
-  - NodeHub SS-156
-  - NodeHub VLESS-170
-  - NodeHub t.me/ConfigFori
-  - NodeHub 🇺🇸 >>::US_11
-  - NodeHub t.me/iProxyChannel_1
-  - NodeHub VLESS-108
-  - NodeHub 🇺🇸 >>::US_12
-  - NodeHub t.me/iProxyChannel_2
-  - NodeHub SS-156_1
-  - NodeHub t.me/iProxyChannel_3
-  - NodeHub 🇺🇸 >>::US_13
-  - NodeHub 🇺🇸 >>::US_14
-  - NodeHub 🇺🇸 >>::US_15
-  - NodeHub SS-156_2
+  - NodeHub channel
+  - NodeHub VLESS-104
   - NodeHub VLESS-104_1
+  - NodeHub 🪁60
+  - NodeHub VLESS-170
   - NodeHub VLESS-104_2
   - NodeHub VLESS-104_3
+  - NodeHub channel_1
+  - NodeHub channel_2
+  - NodeHub VLESS-216
+  - NodeHub 🪁56
+  - NodeHub VLESS-188
+  - NodeHub 🪁35
   - NodeHub VLESS-104_4
-  - NodeHub >>::XX
+  - NodeHub []t.me/ConfigV2RayNG
+  - NodeHub VLESS-162_1
+  - NodeHub VLESS-104_5
+  - NodeHub []t.me/ConfigV2RayNG_1
+  - NodeHub VLESS-104_6
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -576,45 +357,27 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🪁48
-  - NodeHub VLESS-104
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 🇺🇸 >>::US_2
-  - NodeHub VLESS-172
-  - NodeHub 🇺🇸 >>::US_3
-  - NodeHub 🇺🇸 >>::US_4
-  - NodeHub []t.me/ConfigV2RayNG
-  - NodeHub VLESS-172_1
-  - NodeHub 🇺🇸 >>::US_5
+  - NodeHub VLESS-94
   - NodeHub VLESS-162
-  - NodeHub 🇺🇸 >>::US_6
-  - NodeHub 🇸🇪 ‍25
-  - NodeHub 🇺🇸 >>::US_7
-  - NodeHub 🇺🇸 >>::US_8
-  - NodeHub 🇺🇸 >>::US_9
-  - NodeHub 🇸🇪 ‍28
-  - NodeHub 🇺🇸 >>::US_10
-  - NodeHub t.me/iProxyChannel
-  - NodeHub SS-156
-  - NodeHub VLESS-170
-  - NodeHub t.me/ConfigFori
-  - NodeHub 🇺🇸 >>::US_11
-  - NodeHub t.me/iProxyChannel_1
-  - NodeHub VLESS-108
-  - NodeHub 🇺🇸 >>::US_12
-  - NodeHub t.me/iProxyChannel_2
-  - NodeHub SS-156_1
-  - NodeHub t.me/iProxyChannel_3
-  - NodeHub 🇺🇸 >>::US_13
-  - NodeHub 🇺🇸 >>::US_14
-  - NodeHub 🇺🇸 >>::US_15
-  - NodeHub SS-156_2
+  - NodeHub channel
+  - NodeHub VLESS-104
   - NodeHub VLESS-104_1
+  - NodeHub 🪁60
+  - NodeHub VLESS-170
   - NodeHub VLESS-104_2
   - NodeHub VLESS-104_3
+  - NodeHub channel_1
+  - NodeHub channel_2
+  - NodeHub VLESS-216
+  - NodeHub 🪁56
+  - NodeHub VLESS-188
+  - NodeHub 🪁35
   - NodeHub VLESS-104_4
-  - NodeHub >>::XX
+  - NodeHub []t.me/ConfigV2RayNG
+  - NodeHub VLESS-162_1
+  - NodeHub VLESS-104_5
+  - NodeHub []t.me/ConfigV2RayNG_1
+  - NodeHub VLESS-104_6
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
