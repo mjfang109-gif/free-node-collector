@@ -20,72 +20,100 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
+- name: NodeHub VLESS-162
+  type: vless
+  server: 162.159.44.195
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: true
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub VLESS-172
+  type: vless
+  server: 172.67.118.45
+  port: 443
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  network: ws
+  sni: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+- name: NodeHub VLESS-162_1
+  type: vless
+  server: 162.159.128.253
+  port: 443
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  network: ws
+  sni: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  ws-opts:
+    path: /
+    headers:
+      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
 - name: NodeHub VLESS-104
   type: vless
-  server: 104.17.147.22
+  server: 104.18.151.172
   port: 443
-  uuid: 06e01b88-3753-4d3f-adcc-d82000000000
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: true
   network: ws
-  sni: netlivpn0714.sav2772v7272hshshsbuwiqmq.workers.dev
-  servername: netlivpn0714.sav2772v7272hshshsbuwiqmq.workers.dev
+  sni: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+  servername: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
   ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    path: /
     headers:
-      Host: netlivpn0714.sav2772v7272hshshsbuwiqmq.workers.dev
+      Host: 0h3qt.oqwt.pl0.hh.vavava.kdns.fr
+- name: NodeHub VLESS-69
+  type: vless
+  server: 69.46.46.20
+  port: 443
+  uuid: 70dac37d-3f38-9b3b-6cbe-ec016e01f5b9
+  tls: true
+  network: ws
+  sni: rvg-production-9989.up.railway.app
+  servername: rvg-production-9989.up.railway.app
+  ws-opts:
+    path: /ws/70dac37d-3f38-9b3b-6cbe-ec016e01f5b9
+    headers:
+      Host: rvg-production-9989.up.railway.app
+- name: NodeHub All
+  type: vless
+  server: 69.46.46.12
+  port: 443
+  uuid: b07f0c03-a875-ec14-18b3-41298277bb25
+  tls: true
+  network: ws
+  sni: rvg-production-1ff1.up.railway.app
+  servername: rvg-production-1ff1.up.railway.app
+  ws-opts:
+    path: /ws/b07f0c03-a875-ec14-18b3-41298277bb25
+    headers:
+      Host: rvg-production-1ff1.up.railway.app
 - name: NodeHub VLESS-104_1
   type: vless
-  server: 104.21.12.116
-  port: 8880
-  uuid: 2a8cafda-479d-4e30-82d1-0bd4c6da6db9
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: delicate-meadow-15da.423-c77.workers.dev
-- name: NodeHub VLESS-188
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 20e295db-a6af-4006-bfd6-91453f169968
+  server: 104.18.155.141
+  port: 8443
+  uuid: dbdf1950-b40e-4533-88bb-05ebca375781
   tls: true
   network: ws
-  sni: 057.ElecTRocElLco-Cf-057.wOrKeRs.dEv
-  servername: 057.ElecTRocElLco-Cf-057.wOrKeRs.dEv
+  sni: dig.jhju.ir
+  servername: dig.jhju.ir
   ws-opts:
-    path: /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /
     headers:
-      Host: 057.electrocellco-cf-057.workers.dev
-- name: NodeHub VLESS-194
+      Host: dig.jhju.ir
+- name: NodeHub VLESS-172_1
   type: vless
-  server: 194.59.5.46
-  port: 2096
-  uuid: 8525fe74-67e6-4a55-8a26-95f227bd1384
-  tls: true
-  network: ws
-  sni: wild-sky-f384.alvlirm3737.workers.dev
-  servername: wild-sky-f384.alvlirm3737.workers.dev
-  ws-opts:
-    path: /proxyip=172.86.93.55,194.99.20.245,46.101.165.85,46.101.181.132,209.38.201.199,165.22.89.207,207.154.242.240,64.188.83.202
-    headers:
-      Host: wild-sky-f384.alvlirm3737.workers.dev
-- name: NodeHub t.me/iProxyChannel
-  type: vless
-  server: 104.17.121.110
-  port: 443
-  uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
-  tls: true
-  network: ws
-  sni: terazhediii.info
-  servername: terazhediii.info
-  ws-opts:
-    path: /hdgrbws
-    headers:
-      Host: terazhediii.info
-- name: NodeHub VLESS-104_2
-  type: vless
-  server: 104.18.32.47
+  server: 172.64.155.209
   port: 2053
   uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
   tls: true
@@ -103,24 +131,28 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
+  - NodeHub VLESS-162
+  - NodeHub VLESS-172
+  - NodeHub VLESS-162_1
   - NodeHub VLESS-104
+  - NodeHub VLESS-69
+  - NodeHub All
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-188
-  - NodeHub VLESS-194
-  - NodeHub t.me/iProxyChannel
-  - NodeHub VLESS-104_2
+  - NodeHub VLESS-172_1
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
+  - NodeHub VLESS-162
+  - NodeHub VLESS-172
+  - NodeHub VLESS-162_1
   - NodeHub VLESS-104
+  - NodeHub VLESS-69
+  - NodeHub All
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-188
-  - NodeHub VLESS-194
-  - NodeHub t.me/iProxyChannel
-  - NodeHub VLESS-104_2
+  - NodeHub VLESS-172_1
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -130,12 +162,14 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
+  - NodeHub VLESS-162
+  - NodeHub VLESS-172
+  - NodeHub VLESS-162_1
   - NodeHub VLESS-104
+  - NodeHub VLESS-69
+  - NodeHub All
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-188
-  - NodeHub VLESS-194
-  - NodeHub t.me/iProxyChannel
-  - NodeHub VLESS-104_2
+  - NodeHub VLESS-172_1
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
