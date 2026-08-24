@@ -20,72 +20,218 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub SS-156
+- name: NodeHub 🇺🇸 US
   type: ss
-  server: 156.146.38.168
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: NodeHub SS-156_1
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: NodeHub SS-156_2
-  type: ss
-  server: 156.146.38.169
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: NodeHub VLESS-104
-  type: vless
-  server: 104.18.42.163
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  network: ws
-  sni: fx3h2kf8xn.fx6hsv0.ccwu.cc
-  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  server: 152.67.250.45
+  port: 52345
+  cipher: chacha20-ietf-poly1305
+  password: 5d79906d-89ab-430b-acbc-3327568a5be3
 - name: NodeHub 🇺🇸 >>::US
   type: vless
-  server: 172.67.202.17
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
+  server: 141.193.213.21
+  port: 8443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
   network: ws
+  sni: josni.hoyes.cloudns.ch
+  servername: josni.hoyes.cloudns.ch
   ws-opts:
     path: /
     headers:
-      Host: fuckfangbinxing.pusytroller.gq
+      Host: josni.hoyes.cloudns.ch
+- name: NodeHub VLESS-104
+  type: vless
+  server: 104.16.79.73
+  port: 443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
+  network: ws
+  sni: josni.hoyes.cloudns.ch
+  servername: josni.hoyes.cloudns.ch
+  ws-opts:
+    path: /?TELEGRAM-MARAMBASHI?ed=512
+    headers:
+      Host: josni.hoyes.cloudns.ch
+- name: NodeHub MTMVPN
+  type: vless
+  server: 104.16.6.70
+  port: 443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
+  network: ws
+  sni: josni.hoyes.cloudns.ch
+  servername: josni.hoyes.cloudns.ch
+  ws-opts:
+    path: /
+    headers:
+      Host: josni.hoyes.cloudns.ch
+- name: NodeHub 🫟76
+  type: vless
+  server: 188.114.99.0
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: true
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub VLESS-188
+  type: vless
+  server: 188.114.97.110
+  port: 2087
+  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
+  tls: true
+  network: ws
+  sni: wzknb.pages.dev
+  servername: wzknb.pages.dev
+  ws-opts:
+    path: /proxyip=179.255.104.87,179.255.116.198,179.255.101.56,142.248.218.6,142.248.218.4,45.76.79.239,179.255.152.163,208.68.180.240
+    headers:
+      Host: wzknb.pages.dev
+- name: NodeHub VLESS-159
+  type: vless
+  server: 159.112.235.52
+  port: 443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
+  network: ws
+  sni: josni.hoyes.cloudns.ch
+  servername: josni.hoyes.cloudns.ch
+  ws-opts:
+    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI?ed
+    headers:
+      Host: josni.hoyes.cloudns.ch
+- name: NodeHub 🇬🇧 GB
+  type: vless
+  server: 185.193.30.94
+  port: 443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
+  network: ws
+  sni: josni.hoyes.cloudns.ch
+  servername: josni.hoyes.cloudns.ch
+  ws-opts:
+    path: /musiclovers85?ed
+    headers:
+      Host: josni.hoyes.cloudns.ch
+- name: NodeHub Generalconfiig
+  type: vless
+  server: 162.159.12.41
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: true
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub VLESS-172
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub VLESS-172_1
+  type: vless
+  server: 172.64.150.28
+  port: 443
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: true
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: NodeHub VLESS-104_1
   type: vless
-  server: 104.16.148.244
+  server: 104.18.43.174
   port: 2095
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   tls: false
   network: ws
-  sni: www.fbi.gov
-  servername: www.fbi.gov
   ws-opts:
     path: /
     headers:
       Host: fuckingfangbinxing.pusytroller.cf
-- name: NodeHub VLESS-172
+- name: NodeHub VLESS-104_2
   type: vless
-  server: 172.64.145.202
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
+  server: 104.17.121.110
+  port: 443
+  uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
+  tls: true
   network: ws
+  sni: terazhediii.info
+  servername: terazhediii.info
+  ws-opts:
+    path: /hdgrbws
+    headers:
+      Host: terazhediii.info
+- name: NodeHub 🇬🇧 >>::GB
+  type: vless
+  server: 45.8.211.57
+  port: 443
+  uuid: b2f6aa3a-2550-4a1c-b2c0-1c94b1207217
+  tls: true
+  network: ws
+  sni: terazhediii.info
+  servername: terazhediii.info
+  ws-opts:
+    path: /hdgrbws
+    headers:
+      Host: terazhediii.info
+- name: NodeHub 🇩🇪 >>::DE
+  type: vless
+  server: 172.66.44.97
+  port: 2053
+  uuid: e7961655-9674-4cbd-a36f-ec0d5d7d660c
+  tls: true
+  network: ws
+  sni: po.fastbrokencompony.com
+  servername: po.fastbrokencompony.com
   ws-opts:
     path: /
     headers:
-      Host: fangbinxingnmsl.pusytroller.gq
+      Host: po.fastbrokencompony.com
+- name: NodeHub VLESS-104_3
+  type: vless
+  server: 104.18.32.47
+  port: 2053
+  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
+  tls: true
+  network: ws
+  sni: ov.iran-servers.shop
+  servername: ov.iran-servers.shop
+  ws-opts:
+    path: /J5aLQOY1R9ONWYCM
+    headers:
+      Host: ov.iran-servers.shop
+- name: NodeHub VLESS-172_2
+  type: vless
+  server: 172.64.155.209
+  port: 2053
+  uuid: d361072e-9e0e-4e2d-8ec7-2a4189b5b23a
+  tls: true
+  network: ws
+  sni: ov.iran-servers.shop
+  servername: ov.iran-servers.shop
+  ws-opts:
+    path: /J5aLQOY1R9ONWYCM
+    headers:
+      Host: ov.iran-servers.shop
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -93,42 +239,68 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub SS-156
-  - NodeHub SS-156_1
-  - NodeHub SS-156_2
-  - NodeHub VLESS-104
+  - NodeHub 🇺🇸 US
   - NodeHub 🇺🇸 >>::US
-  - NodeHub VLESS-104_1
+  - NodeHub VLESS-104
+  - NodeHub MTMVPN
+  - NodeHub 🫟76
+  - NodeHub VLESS-188
+  - NodeHub VLESS-159
+  - NodeHub 🇬🇧 GB
+  - NodeHub Generalconfiig
   - NodeHub VLESS-172
+  - NodeHub VLESS-172_1
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-104_2
+  - NodeHub 🇬🇧 >>::GB
+  - NodeHub 🇩🇪 >>::DE
+  - NodeHub VLESS-104_3
+  - NodeHub VLESS-172_2
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub SS-156
-  - NodeHub SS-156_1
-  - NodeHub SS-156_2
-  - NodeHub VLESS-104
+  - NodeHub 🇺🇸 US
   - NodeHub 🇺🇸 >>::US
-  - NodeHub VLESS-104_1
+  - NodeHub VLESS-104
+  - NodeHub MTMVPN
+  - NodeHub 🫟76
+  - NodeHub VLESS-188
+  - NodeHub VLESS-159
+  - NodeHub 🇬🇧 GB
+  - NodeHub Generalconfiig
   - NodeHub VLESS-172
+  - NodeHub VLESS-172_1
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-104_2
+  - NodeHub 🇬🇧 >>::GB
+  - NodeHub 🇩🇪 >>::DE
+  - NodeHub VLESS-104_3
+  - NodeHub VLESS-172_2
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: NodeHub - 🐌 低速节点
+- name: NodeHub - 🌍 DE
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub SS-156
-  - NodeHub SS-156_1
-  - NodeHub SS-156_2
-  - NodeHub VLESS-104
+  - NodeHub 🇩🇪 >>::DE
+- name: NodeHub - 🌍 GB
+  type: select
+  proxies:
+  - NodeHub - 🚀 节点选择
+  - NodeHub 🇬🇧 GB
+  - NodeHub 🇬🇧 >>::GB
+- name: NodeHub - 🌍 US
+  type: select
+  proxies:
+  - NodeHub - 🚀 节点选择
+  - NodeHub 🇺🇸 US
   - NodeHub 🇺🇸 >>::US
-  - NodeHub VLESS-104_1
-  - NodeHub VLESS-172
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
