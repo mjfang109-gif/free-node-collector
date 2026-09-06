@@ -20,35 +20,62 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub VLESS-162
+- name: NodeHub By EbraSha
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: NodeHub 🇺🇸 US-173.244.56.6-0072
+  type: ss
+  server: 173.244.56.6
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: NodeHub 🇺🇸 US-173.244.56.9-0071
+  type: ss
+  server: 173.244.56.9
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: NodeHub Channel
+  type: ss
+  server: 108.181.0.177
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: G5p6ww4o67HB
+- name: NodeHub VLESS-188
   type: vless
-  server: 162.159.48.32
-  port: 80
+  server: 188.114.97.6
+  port: 2052
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
-  sni: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /?ed=2560
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: NodeHub 🇺🇸 >>::US
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: NodeHub کانال
   type: vless
-  server: 8.6.112.6
-  port: 2087
+  server: 172.64.52.60
+  port: 443
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   tls: true
   network: ws
-  sni: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
-  servername: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
+  sni: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   ws-opts:
     path: /
     headers:
-      Host: fx3l5i2wdfxln0.fx6hsv0.ccwu.cc
-- name: NodeHub VLESS-172
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: NodeHub VLESS-104
   type: vless
-  server: 172.64.147.104
+  server: 104.16.150.7
   port: 2087
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   tls: true
@@ -59,9 +86,9 @@ proxies:
     path: /
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: NodeHub 🇺🇸 >>::US_1
+- name: NodeHub VLESS-162
   type: vless
-  server: 162.159.43.187
+  server: 162.159.38.127
   port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -72,135 +99,49 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: NodeHub 🇺🇸 >>::US_2
+- name: NodeHub SS-45
+  type: ss
+  server: 45.207.207.25
+  port: 443
+  cipher: aes-256-gcm
+  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
+- name: NodeHub VLESS-162_1
   type: vless
-  server: 188.114.97.6
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: NodeHub 🇺🇸 >>::US_3
-  type: vless
-  server: 188.114.97.6
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: NodeHub VLESS-108
-  type: vless
-  server: 108.162.198.178
-  port: 2095
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: NodeHub [38692]
-  type: vless
-  server: 162.159.24.131
+  server: 162.159.48.32
   port: 8880
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
-  sni: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   ws-opts:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: NodeHub VLESS-108_1
+- name: NodeHub VLESS-69
   type: vless
-  server: 108.162.198.178
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: NodeHub 🇺🇸 >>::US_4
-  type: vless
-  server: 108.162.198.178
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: NodeHub VLESS-108_2
-  type: vless
-  server: 108.162.198.178
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: NodeHub ‍🩹
-  type: vless
-  server: 104.18.24.194
+  server: 69.46.46.35
   port: 443
-  uuid: 7893b302-3882-4c38-9ab6-6313f1575d1a
+  uuid: 9aae6e95-7fdf-4057-2d79-ed428cfa331e
   tls: true
   network: ws
-  sni: cf.udpid.org
-  servername: cf.udpid.org
+  sni: willow-voyager-3a86-production.up.railway.app
+  servername: willow-voyager-3a86-production.up.railway.app
   ws-opts:
-    path: /@zyzzzoao
+    path: /ws/9aae6e95-7fdf-4057-2d79-ed428cfa331e
     headers:
-      Host: cf.udpid.org
-- name: NodeHub VLESS-172_1
+      Host: willow-voyager-3a86-production.up.railway.app
+- name: NodeHub VLESS-69_1
   type: vless
-  server: 172.67.213.31
+  server: 69.46.46.36
   port: 443
-  uuid: 7893b302-3882-4c38-9ab6-6313f1575d1a
+  uuid: 94b6bc0f-cd62-a600-dcb9-5970ce562043
   tls: true
   network: ws
-  sni: cf.udpid.org
-  servername: cf.udpid.org
+  sni: amber-atlas-631c-production.up.railway.app
+  servername: amber-atlas-631c-production.up.railway.app
   ws-opts:
-    path: /@zyzzzoao
+    path: /ws/94b6bc0f-cd62-a600-dcb9-5970ce562043
     headers:
-      Host: cf.udpid.org
-- name: NodeHub VLESS-104
-  type: vless
-  server: 104.21.53.134
-  port: 443
-  uuid: 7893b302-3882-4c38-9ab6-6313f1575d1a
-  tls: true
-  network: ws
-  sni: cf.udpid.org
-  servername: cf.udpid.org
-  ws-opts:
-    path: /@zyzzzoao
-    headers:
-      Host: cf.udpid.org
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.21.5.128
-  port: 2052
-  uuid: 08125d23-5500-41ae-97ef-8398eaf70562
-  tls: false
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
+      Host: amber-atlas-631c-production.up.railway.app
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -208,42 +149,36 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-162
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub VLESS-172
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 🇺🇸 >>::US_2
-  - NodeHub 🇺🇸 >>::US_3
-  - NodeHub VLESS-108
-  - NodeHub [38692]
-  - NodeHub VLESS-108_1
-  - NodeHub 🇺🇸 >>::US_4
-  - NodeHub VLESS-108_2
-  - NodeHub ‍🩹
-  - NodeHub VLESS-172_1
+  - NodeHub By EbraSha
+  - NodeHub 🇺🇸 US-173.244.56.6-0072
+  - NodeHub 🇺🇸 US-173.244.56.9-0071
+  - NodeHub Channel
+  - NodeHub VLESS-188
+  - NodeHub کانال
   - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
+  - NodeHub VLESS-162
+  - NodeHub SS-45
+  - NodeHub VLESS-162_1
+  - NodeHub VLESS-69
+  - NodeHub VLESS-69_1
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-162
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub VLESS-172
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 🇺🇸 >>::US_2
-  - NodeHub 🇺🇸 >>::US_3
-  - NodeHub VLESS-108
-  - NodeHub [38692]
-  - NodeHub VLESS-108_1
-  - NodeHub 🇺🇸 >>::US_4
-  - NodeHub VLESS-108_2
-  - NodeHub ‍🩹
-  - NodeHub VLESS-172_1
+  - NodeHub By EbraSha
+  - NodeHub 🇺🇸 US-173.244.56.6-0072
+  - NodeHub 🇺🇸 US-173.244.56.9-0071
+  - NodeHub Channel
+  - NodeHub VLESS-188
+  - NodeHub کانال
   - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
+  - NodeHub VLESS-162
+  - NodeHub SS-45
+  - NodeHub VLESS-162_1
+  - NodeHub VLESS-69
+  - NodeHub VLESS-69_1
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -253,21 +188,18 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub VLESS-162
-  - NodeHub 🇺🇸 >>::US
-  - NodeHub VLESS-172
-  - NodeHub 🇺🇸 >>::US_1
-  - NodeHub 🇺🇸 >>::US_2
-  - NodeHub 🇺🇸 >>::US_3
-  - NodeHub VLESS-108
-  - NodeHub [38692]
-  - NodeHub VLESS-108_1
-  - NodeHub 🇺🇸 >>::US_4
-  - NodeHub VLESS-108_2
-  - NodeHub ‍🩹
-  - NodeHub VLESS-172_1
+  - NodeHub By EbraSha
+  - NodeHub 🇺🇸 US-173.244.56.6-0072
+  - NodeHub 🇺🇸 US-173.244.56.9-0071
+  - NodeHub Channel
+  - NodeHub VLESS-188
+  - NodeHub کانال
   - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
+  - NodeHub VLESS-162
+  - NodeHub SS-45
+  - NodeHub VLESS-162_1
+  - NodeHub VLESS-69
+  - NodeHub VLESS-69_1
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
