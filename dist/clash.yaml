@@ -20,6 +20,58 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
+- name: NodeHub VLESS-172
+  type: vless
+  server: 172.64.53.227
+  port: 8443
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  sni: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  ws-opts:
+    path: /
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: NodeHub VLESS-172_1
+  type: vless
+  server: 172.64.145.93
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  sni: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  servername: fx3h2kf8xn.fx6hsv0.ccwu.cc
+  ws-opts:
+    path: /
+    headers:
+      Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
+- name: NodeHub VLESS-172_2
+  type: vless
+  server: 172.64.52.182
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  sni: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  ws-opts:
+    path: ?ed=2560
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: NodeHub VLESS-172_3
+  type: vless
+  server: 172.64.53.60
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  network: ws
+  sni: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  ws-opts:
+    path: /
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: NodeHub VLESS-104
   type: vless
   server: 104.18.42.163
@@ -33,10 +85,10 @@ proxies:
     path: /
     headers:
       Host: fx3h2kf8xn.fx6hsv0.ccwu.cc
-- name: NodeHub 🇺🇸 >>::US
+- name: NodeHub VLESS-172_4
   type: vless
-  server: 172.64.52.230
-  port: 2087
+  server: 172.64.52.30
+  port: 443
   uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
   tls: true
   network: ws
@@ -46,82 +98,45 @@ proxies:
     path: /
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: NodeHub VLESS-172
+- name: NodeHub kurdconfig
   type: vless
-  server: 172.64.52.68
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: 172.66.0.236
+  port: 2083
+  uuid: 44eae030-290b-4083-8102-6f8bab05701b
   tls: true
   network: ws
-  sni: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  sni: cfvvv-ev1.pages.dev
+  servername: cfvvv-ev1.pages.dev
   ws-opts:
     path: /
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: NodeHub VLESS-172_1
+      Host: cfvvv-ev1.pages.dev
+- name: NodeHub VLESS-140
   type: vless
-  server: 172.64.52.175
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: 140.248.186.45
+  port: 443
+  uuid: XpnTeam-11
   tls: true
   network: ws
-  sni: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  sni: ssl.fastly.com
+  servername: ssl.fastly.com
   ws-opts:
     path: /
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: NodeHub VLESS-172_2
+      Host: Appxdn.global.ssl.fastly.net
+- name: NodeHub VLESS-172_5
   type: vless
-  server: 172.64.52.97
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
   network: ws
-  sni: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  sni: jp3.yohototo.top
+  servername: jp3.yohototo.top
   ws-opts:
-    path: /fp=chrome
+    path: /tyxyws
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: NodeHub VLESS-172_3
-  type: vless
-  server: 172.64.53.227
-  port: 8443
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  network: ws
-  sni: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  ws-opts:
-    path: /
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: NodeHub VLESS-8
-  type: vless
-  server: 8.39.125.70
-  port: 2053
-  uuid: 8666ab45-8e3d-4988-841b-2561d91e32d5
-  tls: true
-  network: ws
-  sni: mianfei-73q.pages.dev
-  servername: mianfei-73q.pages.dev
-  ws-opts:
-    path: /proxyip=154.3.33.43
-    headers:
-      Host: mianfei-73q.pages.dev
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.27.82.154
-  port: 8880
-  uuid: 50c91104-c1fc-471e-914f-3ad252a0a34c
-  tls: false
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: quiet-snowflake-e1dd.374-ac3.workers.dev
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -129,28 +144,30 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-104
-  - NodeHub 🇺🇸 >>::US
   - NodeHub VLESS-172
   - NodeHub VLESS-172_1
   - NodeHub VLESS-172_2
   - NodeHub VLESS-172_3
-  - NodeHub VLESS-8
-  - NodeHub VLESS-104_1
+  - NodeHub VLESS-104
+  - NodeHub VLESS-172_4
+  - NodeHub kurdconfig
+  - NodeHub VLESS-140
+  - NodeHub VLESS-172_5
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-104
-  - NodeHub 🇺🇸 >>::US
   - NodeHub VLESS-172
   - NodeHub VLESS-172_1
   - NodeHub VLESS-172_2
   - NodeHub VLESS-172_3
-  - NodeHub VLESS-8
-  - NodeHub VLESS-104_1
+  - NodeHub VLESS-104
+  - NodeHub VLESS-172_4
+  - NodeHub kurdconfig
+  - NodeHub VLESS-140
+  - NodeHub VLESS-172_5
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -160,14 +177,15 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub VLESS-104
-  - NodeHub 🇺🇸 >>::US
   - NodeHub VLESS-172
   - NodeHub VLESS-172_1
   - NodeHub VLESS-172_2
   - NodeHub VLESS-172_3
-  - NodeHub VLESS-8
-  - NodeHub VLESS-104_1
+  - NodeHub VLESS-104
+  - NodeHub VLESS-172_4
+  - NodeHub kurdconfig
+  - NodeHub VLESS-140
+  - NodeHub VLESS-172_5
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
