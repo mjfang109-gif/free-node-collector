@@ -1,407 +1,281 @@
 [
   {
     "protocol": "ss",
-    "location": "未知",
-    "ip": "156.146.38.169",
-    "port": 443,
-    "latency_ms": 69,
-    "speed_mbps": 0,
-    "name": "NodeHub SS-156"
-  },
-  {
-    "protocol": "ss",
-    "location": "US",
-    "ip": "156.146.38.168",
-    "port": 443,
-    "latency_ms": 82,
-    "speed_mbps": 20.97,
-    "name": "NodeHub 🇺🇸 US-156.146.38.168-0122"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "66.235.200.101",
-    "port": 443,
-    "latency_ms": 86,
-    "speed_mbps": 100.97,
-    "name": "NodeHub VLESS-66"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "172.64.158.146",
-    "port": 2052,
-    "latency_ms": 91,
-    "speed_mbps": 78.4,
-    "name": "NodeHub VLESS-172"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "104.21.63.28",
-    "port": 443,
-    "latency_ms": 92,
-    "speed_mbps": 90.66,
-    "name": "NodeHub VLESS-104"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "104.16.150.246",
-    "port": 2087,
-    "latency_ms": 93,
-    "speed_mbps": 106.23,
-    "name": "NodeHub VLESS-104"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "104.19.215.97",
-    "port": 2053,
-    "latency_ms": 95,
-    "speed_mbps": 0,
-    "name": "NodeHub VLESS-104"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "162.159.43.187",
-    "port": 80,
-    "latency_ms": 95,
-    "speed_mbps": 108.33,
-    "name": "NodeHub VLESS-162"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "31.43.179.200",
-    "port": 443,
-    "latency_ms": 96,
-    "speed_mbps": 0,
-    "name": "NodeHub VLESS-31"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "104.21.70.228",
-    "port": 443,
-    "latency_ms": 97,
-    "speed_mbps": 0,
-    "name": "NodeHub VLESS-104"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "162.159.43.187",
-    "port": 2052,
-    "latency_ms": 99,
-    "speed_mbps": 107.66,
-    "name": "NodeHub VLESS-162"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "104.16.10.100",
-    "port": 443,
-    "latency_ms": 99,
-    "speed_mbps": 82.52,
-    "name": "NodeHub VLESS-104"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "162.159.24.131",
-    "port": 2095,
-    "latency_ms": 100,
-    "speed_mbps": 0,
-    "name": "NodeHub VLESS-162"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "108.162.198.178",
-    "port": 2086,
-    "latency_ms": 102,
-    "speed_mbps": 114.21,
-    "name": "NodeHub VLESS-108"
-  },
-  {
-    "protocol": "vless",
-    "location": "US",
-    "ip": "108.162.198.178",
-    "port": 80,
-    "latency_ms": 103,
-    "speed_mbps": 0,
-    "name": "NodeHub 🇺🇸 >>::US"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "108.162.198.178",
-    "port": 8080,
-    "latency_ms": 104,
-    "speed_mbps": 112.24,
-    "name": "NodeHub VLESS-108"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "104.16.150.130",
-    "port": 2087,
-    "latency_ms": 106,
-    "speed_mbps": 5.44,
-    "name": "NodeHub VLESS-104"
-  },
-  {
-    "protocol": "vless",
-    "location": "US",
-    "ip": "104.19.214.98",
-    "port": 2087,
-    "latency_ms": 106,
-    "speed_mbps": 102.5,
-    "name": "NodeHub 🇺🇸 >>::US"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "195.26.229.156",
-    "port": 443,
-    "latency_ms": 106,
-    "speed_mbps": 84.99,
-    "name": "NodeHub New⁴"
-  },
-  {
-    "protocol": "ss",
     "location": "US",
     "ip": "156.146.38.170",
     "port": 443,
-    "latency_ms": 112,
-    "speed_mbps": 2.68,
+    "latency_ms": 81,
+    "speed_mbps": 20.55,
     "name": "NodeHub 🇺🇸 US-156.146.38.170-0121"
   },
   {
     "protocol": "vless",
     "location": "未知",
-    "ip": "195.85.23.29",
+    "ip": "66.235.200.186",
     "port": 443,
-    "latency_ms": 117,
-    "speed_mbps": 17.48,
-    "name": "NodeHub VLESS-195"
+    "latency_ms": 86,
+    "speed_mbps": 92.54,
+    "name": "NodeHub VLESS-66"
   },
   {
     "protocol": "vless",
     "location": "未知",
-    "ip": "172.66.0.236",
-    "port": 2083,
-    "latency_ms": 125,
-    "speed_mbps": 82.85,
-    "name": "NodeHub VLESS-172"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "91.209.253.42",
-    "port": 443,
-    "latency_ms": 125,
-    "speed_mbps": 87.07,
-    "name": "NodeHub VLESS-91"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "91.209.253.250",
-    "port": 443,
-    "latency_ms": 134,
-    "speed_mbps": 63.76,
-    "name": "NodeHub VLESS-91"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "104.18.26.90",
-    "port": 443,
-    "latency_ms": 140,
-    "speed_mbps": 55.87,
-    "name": "NodeHub VLESS-104"
-  },
-  {
-    "protocol": "vless",
-    "location": "US",
-    "ip": "108.162.198.178",
+    "ip": "162.159.0.53",
     "port": 2095,
-    "latency_ms": 147,
-    "speed_mbps": 118.99,
-    "name": "NodeHub 🇺🇸 >>::US"
+    "latency_ms": 87,
+    "speed_mbps": 118.27,
+    "name": "NodeHub VLESS-162"
   },
   {
     "protocol": "vless",
     "location": "未知",
-    "ip": "104.16.10.104",
+    "ip": "172.64.145.202",
     "port": 443,
-    "latency_ms": 148,
-    "speed_mbps": 89.98,
-    "name": "NodeHub VLESS-104"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "104.25.248.101",
-    "port": 2087,
-    "latency_ms": 151,
-    "speed_mbps": 97.62,
-    "name": "NodeHub VLESS-104"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "91.209.253.216",
-    "port": 443,
-    "latency_ms": 161,
-    "speed_mbps": 0,
-    "name": "NodeHub VLESS-91"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "139.64.235.225",
-    "port": 443,
-    "latency_ms": 161,
-    "speed_mbps": 73.29,
-    "name": "NodeHub VLESS-139"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "104.16.10.2",
-    "port": 443,
-    "latency_ms": 166,
-    "speed_mbps": 76.12,
-    "name": "NodeHub VLESS-104"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "195.26.229.32",
-    "port": 443,
-    "latency_ms": 167,
-    "speed_mbps": 0,
-    "name": "NodeHub VLESS-195"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "195.85.23.88",
-    "port": 443,
-    "latency_ms": 171,
-    "speed_mbps": 75.79,
-    "name": "NodeHub VLESS-195"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "91.209.253.244",
-    "port": 443,
-    "latency_ms": 191,
-    "speed_mbps": 13.25,
-    "name": "NodeHub VLESS-91"
-  },
-  {
-    "protocol": "ss",
-    "location": "未知",
-    "ip": "156.146.38.167",
-    "port": 443,
-    "latency_ms": 207,
-    "speed_mbps": 21.24,
-    "name": "NodeHub v2ray_dalghak"
-  },
-  {
-    "protocol": "vless",
-    "location": "US",
-    "ip": "188.114.97.6",
-    "port": 2052,
-    "latency_ms": 208,
-    "speed_mbps": 106.29,
-    "name": "NodeHub 🇺🇸 >>::US"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "195.85.23.217",
-    "port": 443,
-    "latency_ms": 224,
-    "speed_mbps": 73.42,
-    "name": "NodeHub VLESS-195"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "104.18.42.163",
-    "port": 443,
-    "latency_ms": 226,
-    "speed_mbps": 93.16,
-    "name": "NodeHub VLESS-104"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "91.209.253.109",
-    "port": 443,
-    "latency_ms": 231,
-    "speed_mbps": 0,
-    "name": "NodeHub VLESS-91"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "104.16.3.214",
-    "port": 443,
-    "latency_ms": 278,
-    "speed_mbps": 81.62,
-    "name": "NodeHub VLESS-104"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "172.64.153.88",
-    "port": 443,
-    "latency_ms": 285,
-    "speed_mbps": 0,
+    "latency_ms": 87,
+    "speed_mbps": 102.06,
     "name": "NodeHub VLESS-172"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "162.159.0.169",
+    "port": 2086,
+    "latency_ms": 89,
+    "speed_mbps": 90.07,
+    "name": "NodeHub VLESS-162"
   },
   {
     "protocol": "vless",
     "location": "未知",
     "ip": "104.18.34.14",
     "port": 2052,
-    "latency_ms": 688,
-    "speed_mbps": 92.55,
+    "latency_ms": 89,
+    "speed_mbps": 109.46,
     "name": "NodeHub VLESS-104"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "66.235.200.218",
+    "port": 443,
+    "latency_ms": 90,
+    "speed_mbps": 65.38,
+    "name": "NodeHub تو"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "162.159.0.169",
+    "port": 8880,
+    "latency_ms": 90,
+    "speed_mbps": 113.08,
+    "name": "NodeHub VLESS-162"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "104.18.39.218",
+    "port": 2095,
+    "latency_ms": 91,
+    "speed_mbps": 96.1,
+    "name": "NodeHub VLESS-104"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "162.159.0.53",
+    "port": 2086,
+    "latency_ms": 94,
+    "speed_mbps": 111.75,
+    "name": "NodeHub VLESS-162"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "104.21.34.106",
+    "port": 443,
+    "latency_ms": 95,
+    "speed_mbps": 100.59,
+    "name": "NodeHub VLESS-104"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "104.16.3.214",
+    "port": 443,
+    "latency_ms": 99,
+    "speed_mbps": 68.06,
+    "name": "NodeHub VLESS-104"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "104.16.10.10",
+    "port": 443,
+    "latency_ms": 100,
+    "speed_mbps": 97.33,
+    "name": "NodeHub VLESS-104"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "108.162.198.178",
+    "port": 8080,
+    "latency_ms": 100,
+    "speed_mbps": 106.02,
+    "name": "NodeHub VLESS-108"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "162.159.0.169",
+    "port": 80,
+    "latency_ms": 101,
+    "speed_mbps": 113.15,
+    "name": "NodeHub VLESS-162"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "104.18.34.14",
+    "port": 80,
+    "latency_ms": 101,
+    "speed_mbps": 114.18,
+    "name": "NodeHub VLESS-104"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "104.18.46.234",
+    "port": 8080,
+    "latency_ms": 107,
+    "speed_mbps": 117.74,
+    "name": "NodeHub VLESS-104"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "104.18.39.218",
+    "port": 8880,
+    "latency_ms": 108,
+    "speed_mbps": 112.01,
+    "name": "NodeHub VLESS-104"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "162.159.0.53",
+    "port": 2052,
+    "latency_ms": 112,
+    "speed_mbps": 110.41,
+    "name": "NodeHub VLESS-162"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "104.18.46.46",
+    "port": 2052,
+    "latency_ms": 123,
+    "speed_mbps": 117.8,
+    "name": "NodeHub VLESS-104"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "91.209.253.229",
+    "port": 443,
+    "latency_ms": 124,
+    "speed_mbps": 0,
+    "name": "NodeHub New²"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "104.18.46.234",
+    "port": 2052,
+    "latency_ms": 131,
+    "speed_mbps": 122.28,
+    "name": "NodeHub VLESS-104"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "91.209.253.243",
+    "port": 443,
+    "latency_ms": 134,
+    "speed_mbps": 91.69,
+    "name": "NodeHub VLESS-91"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "162.159.0.169",
+    "port": 2052,
+    "latency_ms": 142,
+    "speed_mbps": 115.61,
+    "name": "NodeHub VLESS-162"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "91.209.253.42",
+    "port": 443,
+    "latency_ms": 142,
+    "speed_mbps": 95.46,
+    "name": "NodeHub VLESS-91"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "104.18.47.113",
+    "port": 2086,
+    "latency_ms": 162,
+    "speed_mbps": 109.33,
+    "name": "NodeHub VLESS-104"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "108.162.198.178",
+    "port": 2082,
+    "latency_ms": 163,
+    "speed_mbps": 116.73,
+    "name": "NodeHub VLESS-108"
+  },
+  {
+    "protocol": "vless",
+    "location": "US",
+    "ip": "188.114.97.6",
+    "port": 2086,
+    "latency_ms": 168,
+    "speed_mbps": 99.75,
+    "name": "NodeHub 🇺🇸 >>::US"
   },
   {
     "protocol": "vless",
     "location": "未知",
     "ip": "162.159.254.3",
     "port": 443,
-    "latency_ms": 703,
-    "speed_mbps": 0,
+    "latency_ms": 635,
+    "speed_mbps": 1.37,
     "name": "NodeHub VLESS-162"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "172.67.156.147",
-    "port": 443,
-    "latency_ms": 888,
-    "speed_mbps": 1.42,
-    "name": "NodeHub VLESS-172"
   },
   {
     "protocol": "vmess",
     "location": "CA",
-    "ip": "104.17.77.77",
+    "ip": "172.67.167.78",
     "port": 8443,
-    "latency_ms": 1516,
-    "speed_mbps": 0,
-    "name": "NodeHub 🇨🇦 CA | | 51C037"
+    "latency_ms": 798,
+    "speed_mbps": 0.521015625,
+    "name": "NodeHub 🇨🇦 CA | | 5D7454"
+  },
+  {
+    "protocol": "vmess",
+    "location": "未知",
+    "ip": "104.21.57.84",
+    "port": 8443,
+    "latency_ms": 1199,
+    "speed_mbps": 0.340986328125,
+    "name": "NodeHub RELAY-104.21.57.84-0772"
   }
 ]
