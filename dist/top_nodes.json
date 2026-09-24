@@ -1,74 +1,38 @@
 [
   {
+    "protocol": "vmess",
+    "location": "US",
+    "ip": "129.146.143.80",
+    "port": 48111,
+    "latency_ms": 166,
+    "speed_mbps": 5.9,
+    "name": "NodeHub 🇺🇸 US | | 18811D"
+  },
+  {
     "protocol": "vless",
     "location": "未知",
-    "ip": "172.64.158.146",
-    "port": 8880,
-    "latency_ms": 86,
-    "speed_mbps": 165.67,
+    "ip": "172.64.229.2",
+    "port": 80,
+    "latency_ms": 168,
+    "speed_mbps": 111.96,
     "name": "NodeHub VLESS-172"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "172.67.213.26",
-    "port": 2053,
-    "latency_ms": 91,
-    "speed_mbps": 63.8,
-    "name": "NodeHub VLESS-172"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "162.159.39.218",
-    "port": 2052,
-    "latency_ms": 91,
-    "speed_mbps": 167.06,
-    "name": "NodeHub VLESS-162"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "104.24.152.211",
-    "port": 8880,
-    "latency_ms": 97,
-    "speed_mbps": 58.38,
-    "name": "NodeHub VLESS-104"
   },
   {
     "protocol": "vless",
     "location": "未知",
     "ip": "172.64.42.85",
     "port": 2095,
-    "latency_ms": 103,
-    "speed_mbps": 170.76,
+    "latency_ms": 169,
+    "speed_mbps": 117.9,
     "name": "NodeHub VLESS-172"
   },
   {
     "protocol": "vless",
-    "location": "未知",
-    "ip": "172.64.150.28",
-    "port": 2082,
-    "latency_ms": 114,
-    "speed_mbps": 77.57,
-    "name": "NodeHub https://t.me/VIPV2rayNGNP"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "172.67.130.159",
-    "port": 2096,
-    "latency_ms": 322,
-    "speed_mbps": 31.35,
-    "name": "NodeHub VLESS-172"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "104.21.8.201",
-    "port": 2096,
-    "latency_ms": 372,
-    "speed_mbps": 23.66,
-    "name": "NodeHub kurdconfig"
+    "location": "US",
+    "ip": "162.159.43.187",
+    "port": 2086,
+    "latency_ms": 176,
+    "speed_mbps": 96.65,
+    "name": "NodeHub 🇺🇸 >>::US"
   }
 ]
