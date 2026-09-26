@@ -31,22 +31,26 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: NodeHub VLESS-108
+- name: NodeHub 🇺🇸 US-156.146.38.168-0140
+  type: ss
+  server: 156.146.38.168
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: NodeHub VLESS-188
   type: vless
-  server: 108.162.198.178
+  server: 188.114.97.6
   port: 8080
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
-  sni: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /?ed=2560
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: NodeHub VLESS-108_1
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: NodeHub 🇺🇸 >>::US
   type: vless
-  server: 108.162.198.178
+  server: 188.114.97.6
   port: 2086
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
@@ -54,7 +58,19 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: NodeHub SS-156
+  type: ss
+  server: 156.146.38.169
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: NodeHub v2ray_dalghak
+  type: ss
+  server: 156.146.38.167
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: NodeHub VLESS-172_1
   type: vless
   server: 172.64.154.8
@@ -68,10 +84,16 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: NodeHub VLESS-108_2
+- name: NodeHub SS-23
+  type: ss
+  server: 23.150.248.20
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qB2Cv9VIlujj
+- name: NodeHub 🇺🇸 >>::US_1
   type: vless
   server: 108.162.198.178
-  port: 8880
+  port: 2095
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   tls: false
   network: ws
@@ -79,32 +101,19 @@ proxies:
     path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: NodeHub 🇨🇦 CA | | 5D7454
-  type: vmess
-  server: 172.67.167.78
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+- name: NodeHub VLESS-104
+  type: vless
+  server: 104.19.32.166
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   tls: true
   network: ws
+  sni: v2ray.simspeedup.com
+  servername: v2ray.simspeedup.com
   ws-opts:
-    path: /lMnsZUN4/
+    path: /ws
     headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub 🇨🇦 CA | | C65974
-  type: vmess
-  server: 172.64.80.1
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
+      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -113,12 +122,15 @@ proxy-groups:
   - NodeHub - 🔮 故障转移
   - DIRECT
   - NodeHub VLESS-172
-  - NodeHub VLESS-108
-  - NodeHub VLESS-108_1
+  - NodeHub 🇺🇸 US-156.146.38.168-0140
+  - NodeHub VLESS-188
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub SS-156
+  - NodeHub v2ray_dalghak
   - NodeHub VLESS-172_1
-  - NodeHub VLESS-108_2
-  - NodeHub 🇨🇦 CA | | 5D7454
-  - NodeHub 🇨🇦 CA | | C65974
+  - NodeHub SS-23
+  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub VLESS-104
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -126,12 +138,15 @@ proxy-groups:
   tolerance: 50
   proxies: &id001
   - NodeHub VLESS-172
-  - NodeHub VLESS-108
-  - NodeHub VLESS-108_1
+  - NodeHub 🇺🇸 US-156.146.38.168-0140
+  - NodeHub VLESS-188
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub SS-156
+  - NodeHub v2ray_dalghak
   - NodeHub VLESS-172_1
-  - NodeHub VLESS-108_2
-  - NodeHub 🇨🇦 CA | | 5D7454
-  - NodeHub 🇨🇦 CA | | C65974
+  - NodeHub SS-23
+  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub VLESS-104
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -142,12 +157,15 @@ proxy-groups:
   proxies:
   - NodeHub - 🚀 节点选择
   - NodeHub VLESS-172
-  - NodeHub VLESS-108
-  - NodeHub VLESS-108_1
+  - NodeHub 🇺🇸 US-156.146.38.168-0140
+  - NodeHub VLESS-188
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub SS-156
+  - NodeHub v2ray_dalghak
   - NodeHub VLESS-172_1
-  - NodeHub VLESS-108_2
-  - NodeHub 🇨🇦 CA | | 5D7454
-  - NodeHub 🇨🇦 CA | | C65974
+  - NodeHub SS-23
+  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub VLESS-104
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
