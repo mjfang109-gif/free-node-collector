@@ -20,46 +20,22 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub 🇸🇬 SGP
+- name: NodeHub VLESS-172
   type: vless
-  server: 104.18.35.86
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  network: ws
-  sni: hhlfy.twiladaphne.ndjp.net
-  servername: hhlfy.twiladaphne.ndjp.net
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: NodeHub VLESS-104
-  type: vless
-  server: 104.19.50.28
-  port: 443
-  uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
+  server: 172.67.181.232
+  port: 2053
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
   tls: true
   network: ws
-  sni: vpn-1fj.pages.dev
-  servername: vpn-1fj.pages.dev
+  sni: uwu.blueknightnet.qzz.io
+  servername: uwu.blueknightnet.qzz.io
   ws-opts:
-    path: /
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
     headers:
-      Host: vpn-1fj.pages.dev
-- name: NodeHub VLESS-104_1
+      Host: uwu.blueknightnet.qzz.io
+- name: NodeHub VLESS-104
   type: vless
-  server: 104.18.0.181
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: NodeHub VLESS-104_2
-  type: vless
-  server: 104.19.33.237
+  server: 104.16.10.56
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
@@ -70,17 +46,19 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: NodeHub VLESS-170
+- name: NodeHub VLESS-104_1
   type: vless
-  server: 170.114.46.6
-  port: 80
-  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
-  tls: false
+  server: 104.16.10.9
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
   network: ws
+  sni: jp3.yohototo.top
+  servername: jp3.yohototo.top
   ws-opts:
-    path: /free-server.techsonic.dev
+    path: /tyxyws
     headers:
-      Host: free-server.techsonic.dev
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -88,22 +66,18 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub 🇸🇬 SGP
+  - NodeHub VLESS-172
   - NodeHub VLESS-104
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-104_2
-  - NodeHub VLESS-170
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub 🇸🇬 SGP
+  - NodeHub VLESS-172
   - NodeHub VLESS-104
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-104_2
-  - NodeHub VLESS-170
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -113,11 +87,9 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇸🇬 SGP
+  - NodeHub VLESS-172
   - NodeHub VLESS-104
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-104_2
-  - NodeHub VLESS-170
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
