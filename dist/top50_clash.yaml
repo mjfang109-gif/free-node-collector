@@ -20,19 +20,30 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub [66152]
+- name: NodeHub https://t.me/VIPV2rayNGNP
   type: vless
-  server: 188.164.248.216
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
   network: ws
-  sni: ccc.010304.xyz
-  servername: ccc.010304.xyz
   ws-opts:
-    path: /
+    path: /fp
     headers:
-      Host: ccc.010304.xyz
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub VLESS-172
+  type: vless
+  server: 172.67.71.187
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -40,14 +51,16 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub [66152]
+  - NodeHub https://t.me/VIPV2rayNGNP
+  - NodeHub VLESS-172
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub [66152]
+  - NodeHub https://t.me/VIPV2rayNGNP
+  - NodeHub VLESS-172
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -57,7 +70,8 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub [66152]
+  - NodeHub https://t.me/VIPV2rayNGNP
+  - NodeHub VLESS-172
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择

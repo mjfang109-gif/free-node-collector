@@ -2,10 +2,19 @@
   {
     "protocol": "vless",
     "location": "未知",
-    "ip": "188.164.248.216",
-    "port": 443,
-    "latency_ms": 68,
-    "speed_mbps": 78.63,
-    "name": "NodeHub [66152]"
+    "ip": "172.64.150.28",
+    "port": 2082,
+    "latency_ms": 117,
+    "speed_mbps": 43.99,
+    "name": "NodeHub https://t.me/VIPV2rayNGNP"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "172.67.71.187",
+    "port": 8080,
+    "latency_ms": 156,
+    "speed_mbps": 66.62,
+    "name": "NodeHub VLESS-172"
   }
 ]
