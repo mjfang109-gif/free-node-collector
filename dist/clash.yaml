@@ -22,7 +22,7 @@ dns:
 proxies:
 - name: NodeHub VLESS-172
   type: vless
-  server: 172.64.158.170
+  server: 172.66.0.162
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   tls: true
@@ -35,20 +35,7 @@ proxies:
       Host: ccc.010304.xyz
 - name: NodeHub VLESS-104
   type: vless
-  server: 104.17.189.184
-  port: 2096
-  uuid: da30a28c-5c01-4c93-8da8-c8d39d58bfb9
-  tls: true
-  network: ws
-  sni: hk.yindu.cc.cd
-  servername: hk.yindu.cc.cd
-  ws-opts:
-    path: /
-    headers:
-      Host: hk.yindu.cc.cd
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.17.44.17
+  server: 104.18.35.86
   port: 8080
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   tls: false
@@ -61,30 +48,80 @@ proxies:
       Host: hhlfy.twiladaphne.ndjp.net
 - name: NodeHub VLESS-172_1
   type: vless
-  server: 172.67.156.147
+  server: 172.64.152.241
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: d342d11e-d224-4463-b982-532309285094
   tls: true
   network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
   ws-opts:
-    path: /tyxyws
+    path: /fp=chrome
     headers:
-      Host: jp3.yohototo.top
-- name: NodeHub VLESS-104_2
+      Host: ccc.010304.xyz
+- name: NodeHub VLESS-188
   type: vless
-  server: 104.16.111.202
+  server: 188.164.248.216
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: d342d11e-d224-4463-b982-532309285094
   tls: true
   network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
   ws-opts:
-    path: /tyxyws
+    path: /
     headers:
-      Host: jp3.yohototo.top
+      Host: ccc.010304.xyz
+- name: NodeHub VLESS-172_2
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub VLESS-172_3
+  type: vless
+  server: 172.64.158.170
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  network: ws
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: NodeHub VLESS-140
+  type: vless
+  server: 140.248.186.45
+  port: 443
+  uuid: XpnTeam-11
+  tls: true
+  network: ws
+  sni: ssl.fastly.com
+  servername: ssl.fastly.com
+  ws-opts:
+    path: /
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+- name: NodeHub VLESS-172_4
+  type: vless
+  server: 172.67.190.248
+  port: 8443
+  uuid: 7c99dc89-bf49-45c9-acc5-e43f36657518
+  tls: true
+  network: ws
+  sni: www.large-files.info
+  servername: www.large-files.info
+  ws-opts:
+    path: /var/www/html/video/preview/download/i8o0la
+    headers:
+      Host: www.large-files.info
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -94,9 +131,12 @@ proxy-groups:
   - DIRECT
   - NodeHub VLESS-172
   - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
   - NodeHub VLESS-172_1
-  - NodeHub VLESS-104_2
+  - NodeHub VLESS-188
+  - NodeHub VLESS-172_2
+  - NodeHub VLESS-172_3
+  - NodeHub VLESS-140
+  - NodeHub VLESS-172_4
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -105,9 +145,12 @@ proxy-groups:
   proxies: &id001
   - NodeHub VLESS-172
   - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
   - NodeHub VLESS-172_1
-  - NodeHub VLESS-104_2
+  - NodeHub VLESS-188
+  - NodeHub VLESS-172_2
+  - NodeHub VLESS-172_3
+  - NodeHub VLESS-140
+  - NodeHub VLESS-172_4
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -119,9 +162,12 @@ proxy-groups:
   - NodeHub - 🚀 节点选择
   - NodeHub VLESS-172
   - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
   - NodeHub VLESS-172_1
-  - NodeHub VLESS-104_2
+  - NodeHub VLESS-188
+  - NodeHub VLESS-172_2
+  - NodeHub VLESS-172_3
+  - NodeHub VLESS-140
+  - NodeHub VLESS-172_4
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
