@@ -20,43 +20,71 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub 🇺🇸 US-156.146.38.168-0106
-  type: ss
-  server: 156.146.38.168
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: NodeHub SS-156
-  type: ss
-  server: 156.146.38.169
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: NodeHub 🇺🇸 US-156.146.38.170-0178
-  type: ss
-  server: 156.146.38.170
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: NodeHub SS-156_1
-  type: ss
-  server: 156.146.38.167
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: NodeHub VLESS-170
+- name: NodeHub VLESS-172
   type: vless
-  server: 170.114.46.6
-  port: 8443
-  uuid: ba9ba1d3-19c8-4792-9d3f-ddd2cdcc2e65
+  server: 172.64.158.170
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   tls: true
   network: ws
-  sni: primelinelk.me
-  servername: primelinelk.me
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
   ws-opts:
-    path: /xprolk-primeline
+    path: /
     headers:
-      Host: primelinelk.me
+      Host: ccc.010304.xyz
+- name: NodeHub VLESS-104
+  type: vless
+  server: 104.17.189.184
+  port: 2096
+  uuid: da30a28c-5c01-4c93-8da8-c8d39d58bfb9
+  tls: true
+  network: ws
+  sni: hk.yindu.cc.cd
+  servername: hk.yindu.cc.cd
+  ws-opts:
+    path: /
+    headers:
+      Host: hk.yindu.cc.cd
+- name: NodeHub VLESS-104_1
+  type: vless
+  server: 104.17.44.17
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub VLESS-172_1
+  type: vless
+  server: 172.67.156.147
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  network: ws
+  sni: jp3.yohototo.top
+  servername: jp3.yohototo.top
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: NodeHub VLESS-104_2
+  type: vless
+  server: 104.16.111.202
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  network: ws
+  sni: jp3.yohototo.top
+  servername: jp3.yohototo.top
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -64,22 +92,22 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub 🇺🇸 US-156.146.38.168-0106
-  - NodeHub SS-156
-  - NodeHub 🇺🇸 US-156.146.38.170-0178
-  - NodeHub SS-156_1
-  - NodeHub VLESS-170
+  - NodeHub VLESS-172
+  - NodeHub VLESS-104
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-172_1
+  - NodeHub VLESS-104_2
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub 🇺🇸 US-156.146.38.168-0106
-  - NodeHub SS-156
-  - NodeHub 🇺🇸 US-156.146.38.170-0178
-  - NodeHub SS-156_1
-  - NodeHub VLESS-170
+  - NodeHub VLESS-172
+  - NodeHub VLESS-104
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-172_1
+  - NodeHub VLESS-104_2
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -89,11 +117,11 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇺🇸 US-156.146.38.168-0106
-  - NodeHub SS-156
-  - NodeHub 🇺🇸 US-156.146.38.170-0178
-  - NodeHub SS-156_1
-  - NodeHub VLESS-170
+  - NodeHub VLESS-172
+  - NodeHub VLESS-104
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-172_1
+  - NodeHub VLESS-104_2
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
