@@ -20,9 +20,56 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub VLESS-172
+- name: NodeHub SS-156
+  type: ss
+  server: 156.146.38.168
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: NodeHub SS-156_1
+  type: ss
+  server: 156.146.38.169
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: NodeHub VLESS-104
   type: vless
-  server: 172.67.71.187
+  server: 104.19.173.68
+  port: 8080
+  uuid: 2500e602-671c-4654-a602-c518b7282167
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 2639w-throbbing-band-3840.xphnn6jp.workers.dev
+- name: NodeHub YFZ 4
+  type: vless
+  server: 104.18.0.181
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub VLESS-104_1
+  type: vless
+  server: 104.21.227.134
+  port: 80
+  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY
+    headers:
+      Host: elenaaaaaaaaaa.cloudns.pro
+- name: NodeHub VLESS-104_2
+  type: vless
+  server: 104.18.35.86
   port: 8080
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   tls: false
@@ -33,71 +80,114 @@ proxies:
     path: /sg-melbi
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: NodeHub VLESS-104
+- name: NodeHub VLESS-188
   type: vless
-  server: 104.19.48.107
+  server: 188.114.97.6
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   tls: true
   network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
+  sni: lucasjow.us.ci
+  servername: lucasjow.us.ci
   ws-opts:
-    path: /tyxyws
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
-      Host: jp3.yohototo.top
-- name: NodeHub VLESS-104_1
+      Host: lucasjow.us.ci
+- name: NodeHub VLESS-172
   type: vless
-  server: 104.16.10.84
+  server: 172.67.131.125
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 8d0f652c-3caa-4570-a138-668364f3d25e
   tls: true
   network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
+  sni: SqqfQ0vy-l4v0qA0ZLxNJd79-ykvkw.mRmamaLi.WoRKerS.DEV
+  servername: SqqfQ0vy-l4v0qA0ZLxNJd79-ykvkw.mRmamaLi.WoRKerS.DEV
   ws-opts:
-    path: /tyxyws
+    path: /vl/zInkY7qcXuM6P1AZTQ?ed
     headers:
-      Host: jp3.yohototo.top
-- name: NodeHub VLESS-172_1
-  type: vless
-  server: 172.67.195.79
-  port: 2053
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  tls: true
-  network: ws
-  sni: uwu.blueknightnet.qzz.io
-  servername: uwu.blueknightnet.qzz.io
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: NodeHub VLESS-104_2
-  type: vless
-  server: 104.16.10.104
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
+      Host: sqqfq0vy-l4v0qa0zlxnjd79-ykvkw.mrmamali.workers.dev
 - name: NodeHub VLESS-104_3
   type: vless
-  server: 104.16.10.63
+  server: 104.21.89.181
+  port: 8880
+  uuid: fe467f51-b2cc-4b16-b50b-a78865ed3dd9
+  tls: false
+  network: ws
+  sni: crimson-wind-71bc.19-5fd.workers.dev
+  servername: crimson-wind-71bc.19-5fd.workers.dev
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: crimson-wind-71bc.19-5fd.workers.dev
+- name: NodeHub VLESS-172_1
+  type: vless
+  server: 172.67.173.75
+  port: 80
+  uuid: 923e051a-f598-4ea5-9c6c-f7e37c438a60
+  tls: false
+  network: ws
+  ws-opts:
+    path: /vl/D2pryqVs9LAgCYdTK76lsafWY?ed=2560
+    headers:
+      Host: vkvd8bpskvxgjwdvcidxgoccr.javanbaghe.workers.dev
+- name: NodeHub 🇺🇸 >>::US
+  type: vless
+  server: 104.26.13.40
+  port: 8880
+  uuid: b9ea760d-3200-4d6d-8000-30514ebbce5a
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: aged-pine-d8c4.379.workers.dev
+- name: NodeHub VLESS-162
+  type: vless
+  server: 162.120.94.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime07.workers.dev
+- name: NodeHub 🇺🇸 >>::US_1
+  type: vless
+  server: 172.64.88.251
+  port: 8880
+  uuid: 7e3cd2f1-0de5-4717-9002-64d8597bc577
+  tls: false
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: dry-credit-fc26.203-d8c.workers.dev
+- name: NodeHub SS-156_2
+  type: ss
+  server: 156.146.38.170
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: NodeHub SS-156_3
+  type: ss
+  server: 156.146.38.167
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: NodeHub VLESS-104_4
+  type: vless
+  server: 104.21.70.22
+  port: 443
+  uuid: efe19c5a-0ea1-4666-8a4c-4a33f4670775
   tls: true
   network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
+  sni: brightlux.forum
+  servername: brightlux.forum
   ws-opts:
-    path: /tyxyws
+    path: /raccoonwsvless
     headers:
-      Host: jp3.yohototo.top
+      Host: brightlux.forum
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -105,24 +195,44 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-172
+  - NodeHub SS-156
+  - NodeHub SS-156_1
   - NodeHub VLESS-104
+  - NodeHub YFZ 4
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-172_1
   - NodeHub VLESS-104_2
+  - NodeHub VLESS-188
+  - NodeHub VLESS-172
   - NodeHub VLESS-104_3
+  - NodeHub VLESS-172_1
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub VLESS-162
+  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub SS-156_2
+  - NodeHub SS-156_3
+  - NodeHub VLESS-104_4
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-172
+  - NodeHub SS-156
+  - NodeHub SS-156_1
   - NodeHub VLESS-104
+  - NodeHub YFZ 4
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-172_1
   - NodeHub VLESS-104_2
+  - NodeHub VLESS-188
+  - NodeHub VLESS-172
   - NodeHub VLESS-104_3
+  - NodeHub VLESS-172_1
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub VLESS-162
+  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub SS-156_2
+  - NodeHub SS-156_3
+  - NodeHub VLESS-104_4
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -132,12 +242,22 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub VLESS-172
+  - NodeHub SS-156
+  - NodeHub SS-156_1
   - NodeHub VLESS-104
+  - NodeHub YFZ 4
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-172_1
   - NodeHub VLESS-104_2
+  - NodeHub VLESS-188
+  - NodeHub VLESS-172
   - NodeHub VLESS-104_3
+  - NodeHub VLESS-172_1
+  - NodeHub 🇺🇸 >>::US
+  - NodeHub VLESS-162
+  - NodeHub 🇺🇸 >>::US_1
+  - NodeHub SS-156_2
+  - NodeHub SS-156_3
+  - NodeHub VLESS-104_4
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
