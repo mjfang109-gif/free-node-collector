@@ -20,19 +20,19 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub VLESS-104
+- name: NodeHub VLESS-172
   type: vless
-  server: 104.21.91.244
+  server: 172.64.152.241
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  uuid: d342d11e-d224-4463-b982-532309285094
   tls: true
   network: ws
-  sni: lucasjow.us.ci
-  servername: lucasjow.us.ci
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    path: /fp=chrome
     headers:
-      Host: lucasjow.us.ci
+      Host: ccc.010304.xyz
 - name: NodeHub Tel
   type: vless
   server: 172.64.158.170
@@ -46,19 +46,19 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: NodeHub VLESS-172
+- name: NodeHub VLESS-104
   type: vless
-  server: 172.67.155.65
-  port: 2053
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  tls: true
+  server: 104.18.35.86
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
   network: ws
-  sni: lucasjow.us.ci
-  servername: lucasjow.us.ci
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
   ws-opts:
-    path: /cart/docs/www/proxyip
+    path: /sg-melbi
     headers:
-      Host: lucasjow.us.ci
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: NodeHub VLESS-172_1
   type: vless
   server: 172.66.0.162
@@ -74,6 +74,32 @@ proxies:
       Host: ccc.010304.xyz
 - name: NodeHub VLESS-172_2
   type: vless
+  server: 172.67.155.65
+  port: 8443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  network: ws
+  sni: lucasjow.us.ci
+  servername: lucasjow.us.ci
+  ws-opts:
+    path: /cart/docs/www/proxyip
+    headers:
+      Host: lucasjow.us.ci
+- name: NodeHub TM()
+  type: vless
+  server: 172.67.155.65
+  port: 2053
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  network: ws
+  sni: lucasjow.us.ci
+  servername: lucasjow.us.ci
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
+- name: NodeHub All²
+  type: vless
   server: 172.64.150.28
   port: 2082
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
@@ -85,68 +111,46 @@ proxies:
       Host: hhlfy.twiladaphne.ndjp.net
 - name: NodeHub VLESS-104_1
   type: vless
-  server: 104.18.43.174
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  tls: true
-  network: ws
-  sni: lucasjow.us.ci
-  servername: lucasjow.us.ci
-  ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
-    headers:
-      Host: lucasjow.us.ci
-- name: NodeHub VLESS-172_3
-  type: vless
-  server: 172.64.152.241
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  network: ws
-  sni: ccc.010304.xyz
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: NodeHub Free x654
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: NodeHub RELAY-172.64.229.21-0955
-  type: vmess
-  server: 172.64.229.21
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub VMESS-104
-  type: vmess
-  server: 104.17.147.222
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
+  server: 104.18.0.181
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   tls: false
   network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
   ws-opts:
-    path: /ws?ed=2048
+    path: /fp
     headers:
-      Host: vmess.lbw666.dpdns.org
-- name: 'NodeHub Join+:'
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub By EbraSha 🦇
   type: vmess
-  server: 172.67.167.78
+  server: 162.159.130.234
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
+- name: NodeHub 🇨🇦 CA | | 1377C3
+  type: vmess
+  server: 162.159.135.234
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
+- name: NodeHub 🇨🇦 CA | | E5ABBA
+  type: vmess
+  server: 172.67.161.144
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -157,19 +161,19 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: NodeHub 🇺🇸 USA
+- name: NodeHub VLESS-104_2
   type: vless
-  server: 104.21.0.87
+  server: 104.16.10.21
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
   tls: true
   network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
+  sni: a.cwvps.eu.org
+  servername: a.cwvps.eu.org
   ws-opts:
-    path: /tyxyws
+    path: /ws
     headers:
-      Host: jp3.yohototo.top
+      Host: a.cwvps.eu.org
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -177,36 +181,36 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-104
-  - NodeHub Tel
   - NodeHub VLESS-172
+  - NodeHub Tel
+  - NodeHub VLESS-104
   - NodeHub VLESS-172_1
   - NodeHub VLESS-172_2
+  - NodeHub TM()
+  - NodeHub All²
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-172_3
-  - NodeHub Free x654
-  - NodeHub RELAY-172.64.229.21-0955
-  - NodeHub VMESS-104
-  - 'NodeHub Join+:'
-  - NodeHub 🇺🇸 USA
+  - NodeHub By EbraSha 🦇
+  - NodeHub 🇨🇦 CA | | 1377C3
+  - NodeHub 🇨🇦 CA | | E5ABBA
+  - NodeHub VLESS-104_2
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-104
-  - NodeHub Tel
   - NodeHub VLESS-172
+  - NodeHub Tel
+  - NodeHub VLESS-104
   - NodeHub VLESS-172_1
   - NodeHub VLESS-172_2
+  - NodeHub TM()
+  - NodeHub All²
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-172_3
-  - NodeHub Free x654
-  - NodeHub RELAY-172.64.229.21-0955
-  - NodeHub VMESS-104
-  - 'NodeHub Join+:'
-  - NodeHub 🇺🇸 USA
+  - NodeHub By EbraSha 🦇
+  - NodeHub 🇨🇦 CA | | 1377C3
+  - NodeHub 🇨🇦 CA | | E5ABBA
+  - NodeHub VLESS-104_2
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -216,18 +220,18 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub VLESS-104
-  - NodeHub Tel
   - NodeHub VLESS-172
+  - NodeHub Tel
+  - NodeHub VLESS-104
   - NodeHub VLESS-172_1
   - NodeHub VLESS-172_2
+  - NodeHub TM()
+  - NodeHub All²
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-172_3
-  - NodeHub Free x654
-  - NodeHub RELAY-172.64.229.21-0955
-  - NodeHub VMESS-104
-  - 'NodeHub Join+:'
-  - NodeHub 🇺🇸 USA
+  - NodeHub By EbraSha 🦇
+  - NodeHub 🇨🇦 CA | | 1377C3
+  - NodeHub 🇨🇦 CA | | E5ABBA
+  - NodeHub VLESS-104_2
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
