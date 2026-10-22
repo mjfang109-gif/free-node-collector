@@ -20,9 +20,9 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub VLESS-172
+- name: NodeHub VLESS-104
   type: vless
-  server: 172.66.47.10
+  server: 104.18.41.190
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   tls: true
@@ -33,33 +33,59 @@ proxies:
     path: /cart/docs/www/proxyip=108.160.132.132
     headers:
       Host: lucasjow.us.ci
-- name: NodeHub VLESS-172_1
+- name: NodeHub VLESS-172
   type: vless
-  server: 172.67.155.65
-  port: 2053
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  tls: true
+  server: 172.64.150.43
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
   network: ws
-  sni: lucasjow.us.ci
-  servername: lucasjow.us.ci
   ws-opts:
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
+    path: /sg-melbi
     headers:
-      Host: lucasjow.us.ci
-- name: NodeHub VLESS-104
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub United+States
   type: vless
-  server: 104.18.0.181
+  server: 172.64.150.28
   port: 2082
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   tls: false
   network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
   ws-opts:
     path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
 - name: NodeHub VLESS-104_1
   type: vless
-  server: 104.21.91.244
+  server: 104.18.35.86
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub 🇺🇸 USA
+  type: vless
+  server: 104.18.35.86
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub VLESS-104_2
+  type: vless
+  server: 104.18.43.174
   port: 443
   uuid: e6df2095-a73c-4043-8693-8d5a03686870
   tls: true
@@ -67,41 +93,35 @@ proxies:
   sni: lucasjow.us.ci
   servername: lucasjow.us.ci
   ws-opts:
-    path: ?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?edfp=chrome
+    path: /
     headers:
       Host: lucasjow.us.ci
-- name: NodeHub VLESS-188
-  type: vless
-  server: 188.114.97.6
-  port: 2053
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  tls: true
+- name: 'NodeHub Channel :'
+  type: vmess
+  server: 104.21.7.133
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: false
   network: ws
-  sni: lucasjow.us.ci
-  servername: lucasjow.us.ci
   ws-opts:
-    path: /?---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---
+    path: /ws?ed=2048
     headers:
-      Host: lucasjow.us.ci
-- name: NodeHub SS-95
-  type: ss
-  server: 95.215.201.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NodeHub Channel
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub 🇺🇸 USA_1
   type: vless
-  server: 172.67.155.65
+  server: 66.225.252.7
   port: 8443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
   tls: true
   network: ws
-  sni: lucasjow.us.ci
-  servername: lucasjow.us.ci
+  sni: speed.dulacloud.store
+  servername: speed.dulacloud.store
   ws-opts:
-    path: /Chanel0111Net
+    path: /dula?Telegram-WangCai2fp=chrome
     headers:
-      Host: lucasjow.us.ci
+      Host: speed.dulacloud.store
 - name: NodeHub RELAY-104.21.57.84-1329
   type: vmess
   server: 104.21.57.84
@@ -115,22 +135,9 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: NodeHub 🇨🇦 CA | | 212946
-  type: vmess
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub VLESS-104_2
+- name: NodeHub VLESS-104_3
   type: vless
-  server: 104.17.73.206
+  server: 104.17.72.206
   port: 8443
   uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
   tls: true
@@ -141,29 +148,33 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: NodeHub 🇺🇸 US | | 18811D
+- name: NodeHub 🇨🇦 CA | | 738F81
   type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: raw
-- name: NodeHub 🇨🇦 CA | | 795581
-  type: vmess
-  server: 162.159.135.234
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
+  server: 104.21.91.53
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /or3
+    path: /lMnsZUN4/
     headers:
-      Host: or3.sfacg.uk
-- name: NodeHub VLESS-104_3
+      Host: v2ray1.dozapp.xyz
+- name: NodeHub 🇨🇦 CA | | E5ABBA
+  type: vmess
+  server: 172.67.161.144
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: NodeHub VLESS-104_4
   type: vless
   server: 104.17.74.206
   port: 8443
@@ -183,38 +194,38 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-172
-  - NodeHub VLESS-172_1
   - NodeHub VLESS-104
+  - NodeHub VLESS-172
+  - NodeHub United+States
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-188
-  - NodeHub SS-95
-  - NodeHub Channel
-  - NodeHub RELAY-104.21.57.84-1329
-  - NodeHub 🇨🇦 CA | | 212946
+  - NodeHub 🇺🇸 USA
   - NodeHub VLESS-104_2
-  - NodeHub 🇺🇸 US | | 18811D
-  - NodeHub 🇨🇦 CA | | 795581
+  - 'NodeHub Channel :'
+  - NodeHub 🇺🇸 USA_1
+  - NodeHub RELAY-104.21.57.84-1329
   - NodeHub VLESS-104_3
+  - NodeHub 🇨🇦 CA | | 738F81
+  - NodeHub 🇨🇦 CA | | E5ABBA
+  - NodeHub VLESS-104_4
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-172
-  - NodeHub VLESS-172_1
   - NodeHub VLESS-104
+  - NodeHub VLESS-172
+  - NodeHub United+States
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-188
-  - NodeHub SS-95
-  - NodeHub Channel
-  - NodeHub RELAY-104.21.57.84-1329
-  - NodeHub 🇨🇦 CA | | 212946
+  - NodeHub 🇺🇸 USA
   - NodeHub VLESS-104_2
-  - NodeHub 🇺🇸 US | | 18811D
-  - NodeHub 🇨🇦 CA | | 795581
+  - 'NodeHub Channel :'
+  - NodeHub 🇺🇸 USA_1
+  - NodeHub RELAY-104.21.57.84-1329
   - NodeHub VLESS-104_3
+  - NodeHub 🇨🇦 CA | | 738F81
+  - NodeHub 🇨🇦 CA | | E5ABBA
+  - NodeHub VLESS-104_4
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -224,13 +235,14 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇨🇦 CA | | 212946
-  - NodeHub 🇨🇦 CA | | 795581
+  - NodeHub 🇨🇦 CA | | 738F81
+  - NodeHub 🇨🇦 CA | | E5ABBA
 - name: NodeHub - 🌍 US
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇺🇸 US | | 18811D
+  - NodeHub 🇺🇸 USA
+  - NodeHub 🇺🇸 USA_1
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
