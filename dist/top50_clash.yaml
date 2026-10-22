@@ -20,28 +20,17 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub VLESS-104
+- name: NodeHub 🇺🇸 USA
   type: vless
-  server: 104.18.41.190
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  tls: true
-  network: ws
-  sni: lucasjow.us.ci
-  servername: lucasjow.us.ci
-  ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132
-    headers:
-      Host: lucasjow.us.ci
-- name: NodeHub VLESS-172
-  type: vless
-  server: 172.64.150.43
-  port: 8080
+  server: 104.18.35.86
+  port: 2082
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   tls: false
   network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
   ws-opts:
-    path: /sg-melbi
+    path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
 - name: NodeHub United+States
@@ -57,58 +46,6 @@ proxies:
     path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.18.35.86
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  network: ws
-  sni: hhlfy.twiladaphne.ndjp.net
-  servername: hhlfy.twiladaphne.ndjp.net
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: NodeHub 🇺🇸 USA
-  type: vless
-  server: 104.18.35.86
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  network: ws
-  sni: hhlfy.twiladaphne.ndjp.net
-  servername: hhlfy.twiladaphne.ndjp.net
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: NodeHub VLESS-104_2
-  type: vless
-  server: 104.18.43.174
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
-  tls: true
-  network: ws
-  sni: lucasjow.us.ci
-  servername: lucasjow.us.ci
-  ws-opts:
-    path: /
-    headers:
-      Host: lucasjow.us.ci
-- name: 'NodeHub Channel :'
-  type: vmess
-  server: 104.21.7.133
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-    headers:
-      Host: vmess.lbw666.dpdns.org
 - name: NodeHub 🇺🇸 USA_1
   type: vless
   server: 66.225.252.7
@@ -122,7 +59,33 @@ proxies:
     path: /dula?Telegram-WangCai2fp=chrome
     headers:
       Host: speed.dulacloud.store
-- name: NodeHub RELAY-104.21.57.84-1329
+- name: NodeHub 🇨🇦 CA | | C40235
+  type: vmess
+  server: 172.67.187.145
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: 'NodeHub Channel :'
+  type: vmess
+  server: 104.21.7.133
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub RELAY-104.21.57.84-1453
   type: vmess
   server: 104.21.57.84
   port: 8443
@@ -135,22 +98,9 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: NodeHub VLESS-104_3
-  type: vless
-  server: 104.17.72.206
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  tls: true
-  network: ws
-  sni: free.sahanwickramasinghe.me
-  servername: free.sahanwickramasinghe.me
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: NodeHub 🇨🇦 CA | | 738F81
+- name: 'NodeHub Join+:'
   type: vmess
-  server: 104.21.91.53
+  server: 172.67.167.78
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -161,32 +111,6 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: NodeHub 🇨🇦 CA | | E5ABBA
-  type: vmess
-  server: 172.67.161.144
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub VLESS-104_4
-  type: vless
-  server: 104.17.74.206
-  port: 8443
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  tls: true
-  network: ws
-  sni: free.sahanwickramasinghe.me
-  servername: free.sahanwickramasinghe.me
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -194,38 +118,26 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-104
-  - NodeHub VLESS-172
-  - NodeHub United+States
-  - NodeHub VLESS-104_1
   - NodeHub 🇺🇸 USA
-  - NodeHub VLESS-104_2
-  - 'NodeHub Channel :'
+  - NodeHub United+States
   - NodeHub 🇺🇸 USA_1
-  - NodeHub RELAY-104.21.57.84-1329
-  - NodeHub VLESS-104_3
-  - NodeHub 🇨🇦 CA | | 738F81
-  - NodeHub 🇨🇦 CA | | E5ABBA
-  - NodeHub VLESS-104_4
+  - NodeHub 🇨🇦 CA | | C40235
+  - 'NodeHub Channel :'
+  - NodeHub RELAY-104.21.57.84-1453
+  - 'NodeHub Join+:'
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-104
-  - NodeHub VLESS-172
-  - NodeHub United+States
-  - NodeHub VLESS-104_1
   - NodeHub 🇺🇸 USA
-  - NodeHub VLESS-104_2
-  - 'NodeHub Channel :'
+  - NodeHub United+States
   - NodeHub 🇺🇸 USA_1
-  - NodeHub RELAY-104.21.57.84-1329
-  - NodeHub VLESS-104_3
-  - NodeHub 🇨🇦 CA | | 738F81
-  - NodeHub 🇨🇦 CA | | E5ABBA
-  - NodeHub VLESS-104_4
+  - NodeHub 🇨🇦 CA | | C40235
+  - 'NodeHub Channel :'
+  - NodeHub RELAY-104.21.57.84-1453
+  - 'NodeHub Join+:'
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -235,8 +147,7 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇨🇦 CA | | 738F81
-  - NodeHub 🇨🇦 CA | | E5ABBA
+  - NodeHub 🇨🇦 CA | | C40235
 - name: NodeHub - 🌍 US
   type: select
   proxies:
