@@ -20,58 +20,107 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub 🇺🇸 USA
+- name: NodeHub рҹҮәрҹҮё198540
+  type: ss
+  server: 156.146.38.170
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: NodeHub рҹҮәрҹҮё198539
+  type: ss
+  server: 156.146.38.168
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: NodeHub VLESS-104
   type: vless
-  server: 104.18.35.86
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  network: ws
-  sni: hhlfy.twiladaphne.ndjp.net
-  servername: hhlfy.twiladaphne.ndjp.net
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: NodeHub United+States
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  network: ws
-  sni: hhlfy.twiladaphne.ndjp.net
-  servername: hhlfy.twiladaphne.ndjp.net
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: NodeHub 🇺🇸 USA_1
-  type: vless
-  server: 66.225.252.7
-  port: 8443
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  server: 104.18.41.190
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   tls: true
   network: ws
-  sni: speed.dulacloud.store
-  servername: speed.dulacloud.store
+  sni: lucasjow.us.ci
+  servername: lucasjow.us.ci
   ws-opts:
-    path: /dula?Telegram-WangCai2fp=chrome
+    path: /cart/docs/www/proxyip=108.160.132.132
     headers:
-      Host: speed.dulacloud.store
-- name: NodeHub 🇨🇦 CA | | C40235
-  type: vmess
-  server: 172.67.187.145
+      Host: lucasjow.us.ci
+- name: NodeHub SS-156
+  type: ss
+  server: 156.146.38.167
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: NodeHub VLESS-38
+  type: vless
+  server: 38.107.232.36
   port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
+  uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
   tls: false
   network: ws
   ws-opts:
-    path: /ws
+    path: /vless/
+- name: NodeHub VLESS-104_1
+  type: vless
+  server: 104.18.43.174
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  network: ws
+  sni: lucasjow.us.ci
+  servername: lucasjow.us.ci
+  ws-opts:
+    path: /
     headers:
-      Host: vmess.lbw666.dpdns.org
+      Host: lucasjow.us.ci
+- name: NodeHub рҹҮәрҹҮё
+  type: vless
+  server: 162.120.94.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime07.workers.dev
+- name: NodeHub VLESS-154
+  type: vless
+  server: 154.197.64.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime36.workers.dev
+- name: NodeHub рҹӣё32
+  type: vless
+  server: 190.93.246.21
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  network: ws
+  sni: lucasjow.us.ci
+  servername: lucasjow.us.ci
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: lucasjow.us.ci
+- name: NodeHub VLESS-172
+  type: vless
+  server: 172.66.47.10
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  network: ws
+  sni: lucasjow.us.ci
+  servername: lucasjow.us.ci
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132
+    headers:
+      Host: lucasjow.us.ci
 - name: 'NodeHub Channel :'
   type: vmess
   server: 104.21.7.133
@@ -85,9 +134,74 @@ proxies:
     path: /ws?ed=2048
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub RELAY-104.21.57.84-1453
+- name: NodeHub 🇨🇦 CA | | 8B1289
   type: vmess
-  server: 104.21.57.84
+  server: 172.64.229.21
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub 🇨🇦 CA | | F25C32
+  type: vmess
+  server: 104.17.147.222
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub VLESS-172_1
+  type: vless
+  server: 172.67.155.65
+  port: 2053
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  network: ws
+  sni: lucasjow.us.ci
+  servername: lucasjow.us.ci
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI
+    headers:
+      Host: lucasjow.us.ci
+- name: NodeHub рҹҮ©рҹҮӘ
+  type: vless
+  server: 188.114.97.6
+  port: 2053
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  network: ws
+  sni: lucasjow.us.ci
+  servername: lucasjow.us.ci
+  ws-opts:
+    path: /?---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---
+    headers:
+      Host: lucasjow.us.ci
+- name: NodeHub рҹҮ©рҹҮӘ_1
+  type: vless
+  server: 104.18.0.181
+  port: 2052
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  tls: false
+  network: ws
+  sni: eu02.123450908.xyz
+  servername: eu02.123450908.xyz
+  ws-opts:
+    path: /rain1226
+    headers:
+      Host: eu02.123450908.xyz
+- name: NodeHub 🇨🇦 CA | | 738F81
+  type: vmess
+  server: 104.21.91.53
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -98,19 +212,43 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: 'NodeHub Join+:'
-  type: vmess
-  server: 172.67.167.78
+- name: NodeHub рҹҚ“
+  type: vless
+  server: 45.80.111.7
   port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
   tls: true
   network: ws
+  sni: speed.dulacloud.store
+  servername: speed.dulacloud.store
   ws-opts:
-    path: /lMnsZUN4/
+    path: /dula?Telegram-WangCai2
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: speed.dulacloud.store
+- name: NodeHub рҹҮ©рҹҮӘ198613
+  type: vless
+  server: 45.128.76.7
+  port: 8443
+  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
+  tls: true
+  network: ws
+  sni: speed.dulacloud.store
+  servername: speed.dulacloud.store
+  ws-opts:
+    path: /dula?Telegram-WangCai2
+    headers:
+      Host: speed.dulacloud.store
+- name: NodeHub рҹҮ©рҹҮӘ_2
+  type: vless
+  server: 172.64.229.129
+  port: 2052
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /rain1226
+    headers:
+      Host: eu02.123450908.xyz
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -118,42 +256,81 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub 🇺🇸 USA
-  - NodeHub United+States
-  - NodeHub 🇺🇸 USA_1
-  - NodeHub 🇨🇦 CA | | C40235
+  - NodeHub рҹҮәрҹҮё198540
+  - NodeHub рҹҮәрҹҮё198539
+  - NodeHub VLESS-104
+  - NodeHub SS-156
+  - NodeHub VLESS-38
+  - NodeHub VLESS-104_1
+  - NodeHub рҹҮәрҹҮё
+  - NodeHub VLESS-154
+  - NodeHub рҹӣё32
+  - NodeHub VLESS-172
   - 'NodeHub Channel :'
-  - NodeHub RELAY-104.21.57.84-1453
-  - 'NodeHub Join+:'
+  - NodeHub 🇨🇦 CA | | 8B1289
+  - NodeHub 🇨🇦 CA | | F25C32
+  - NodeHub VLESS-172_1
+  - NodeHub рҹҮ©рҹҮӘ
+  - NodeHub рҹҮ©рҹҮӘ_1
+  - NodeHub 🇨🇦 CA | | 738F81
+  - NodeHub рҹҚ“
+  - NodeHub рҹҮ©рҹҮӘ198613
+  - NodeHub рҹҮ©рҹҮӘ_2
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub 🇺🇸 USA
-  - NodeHub United+States
-  - NodeHub 🇺🇸 USA_1
-  - NodeHub 🇨🇦 CA | | C40235
+  - NodeHub рҹҮәрҹҮё198540
+  - NodeHub рҹҮәрҹҮё198539
+  - NodeHub VLESS-104
+  - NodeHub SS-156
+  - NodeHub VLESS-38
+  - NodeHub VLESS-104_1
+  - NodeHub рҹҮәрҹҮё
+  - NodeHub VLESS-154
+  - NodeHub рҹӣё32
+  - NodeHub VLESS-172
   - 'NodeHub Channel :'
-  - NodeHub RELAY-104.21.57.84-1453
-  - 'NodeHub Join+:'
+  - NodeHub 🇨🇦 CA | | 8B1289
+  - NodeHub 🇨🇦 CA | | F25C32
+  - NodeHub VLESS-172_1
+  - NodeHub рҹҮ©рҹҮӘ
+  - NodeHub рҹҮ©рҹҮӘ_1
+  - NodeHub 🇨🇦 CA | | 738F81
+  - NodeHub рҹҚ“
+  - NodeHub рҹҮ©рҹҮӘ198613
+  - NodeHub рҹҮ©рҹҮӘ_2
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: NodeHub - 🌍 CA
+- name: NodeHub - 🐌 低速节点
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇨🇦 CA | | C40235
-- name: NodeHub - 🌍 US
-  type: select
-  proxies:
-  - NodeHub - 🚀 节点选择
-  - NodeHub 🇺🇸 USA
-  - NodeHub 🇺🇸 USA_1
+  - NodeHub рҹҮәрҹҮё198540
+  - NodeHub рҹҮәрҹҮё198539
+  - NodeHub VLESS-104
+  - NodeHub SS-156
+  - NodeHub VLESS-38
+  - NodeHub VLESS-104_1
+  - NodeHub рҹҮәрҹҮё
+  - NodeHub VLESS-154
+  - NodeHub рҹӣё32
+  - NodeHub VLESS-172
+  - 'NodeHub Channel :'
+  - NodeHub 🇨🇦 CA | | 8B1289
+  - NodeHub 🇨🇦 CA | | F25C32
+  - NodeHub VLESS-172_1
+  - NodeHub рҹҮ©рҹҮӘ
+  - NodeHub рҹҮ©рҹҮӘ_1
+  - NodeHub 🇨🇦 CA | | 738F81
+  - NodeHub рҹҚ“
+  - NodeHub рҹҮ©рҹҮӘ198613
+  - NodeHub рҹҮ©рҹҮӘ_2
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
