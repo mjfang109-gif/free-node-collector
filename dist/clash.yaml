@@ -20,6 +20,30 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
+- name: NodeHub VLESS-172
+  type: vless
+  server: 172.64.158.170
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  network: ws
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: ccc.010304.xyz
+- name: NodeHub VLESS-104
+  type: vless
+  server: 104.18.0.181
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: NodeHub configprxy
   type: vless
   server: 172.64.150.28
@@ -57,6 +81,32 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
+- name: NodeHub 122 277.3KB/s
+  type: vmess
+  server: 104.21.91.53
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: NodeHub 🇨🇦 CA | | 1377C3
+  type: vmess
+  server: 162.159.135.234
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -64,18 +114,26 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
+  - NodeHub VLESS-172
+  - NodeHub VLESS-104
   - NodeHub configprxy
   - 'NodeHub Channel :'
   - NodeHub 🇨🇦 CA | | 5D7454
+  - NodeHub 122 277.3KB/s
+  - NodeHub 🇨🇦 CA | | 1377C3
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
+  - NodeHub VLESS-172
+  - NodeHub VLESS-104
   - NodeHub configprxy
   - 'NodeHub Channel :'
   - NodeHub 🇨🇦 CA | | 5D7454
+  - NodeHub 122 277.3KB/s
+  - NodeHub 🇨🇦 CA | | 1377C3
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -85,9 +143,13 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
+  - NodeHub VLESS-172
+  - NodeHub VLESS-104
   - NodeHub configprxy
   - 'NodeHub Channel :'
   - NodeHub 🇨🇦 CA | | 5D7454
+  - NodeHub 122 277.3KB/s
+  - NodeHub 🇨🇦 CA | | 1377C3
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
