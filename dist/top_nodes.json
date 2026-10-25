@@ -1,74 +1,137 @@
 [
   {
-    "protocol": "ss",
-    "location": "US",
-    "ip": "95.215.201.18",
-    "port": 19999,
-    "latency_ms": 67,
-    "speed_mbps": 223.33,
-    "name": "NodeHub 🇺🇸 [] ss-US-1602..."
-  },
-  {
     "protocol": "vless",
     "location": "未知",
-    "ip": "172.64.150.43",
-    "port": 8080,
-    "latency_ms": 96,
-    "speed_mbps": 39.2,
-    "name": "NodeHub VLESS-172"
-  },
-  {
-    "protocol": "vless",
-    "location": "未知",
-    "ip": "104.21.221.158",
-    "port": 443,
-    "latency_ms": 102,
-    "speed_mbps": 28.53,
+    "ip": "104.18.0.181",
+    "port": 2082,
+    "latency_ms": 28,
+    "speed_mbps": 89.45,
     "name": "NodeHub VLESS-104"
   },
   {
-    "protocol": "vmess",
-    "location": "CA",
-    "ip": "104.17.147.222",
-    "port": 80,
-    "latency_ms": 102,
-    "speed_mbps": 6.97,
-    "name": "NodeHub 🇨🇦 CA | | F25C32"
+    "protocol": "vless",
+    "location": "SG",
+    "ip": "104.18.35.86",
+    "port": 8080,
+    "latency_ms": 28,
+    "speed_mbps": 47.31,
+    "name": "NodeHub 🇸🇬 SGP"
   },
   {
-    "protocol": "vmess",
-    "location": "CA",
-    "ip": "104.21.7.133",
-    "port": 80,
-    "latency_ms": 120,
-    "speed_mbps": 8.35,
-    "name": "NodeHub 🇨🇦 CA | | 22A83C"
-  },
-  {
-    "protocol": "vmess",
-    "location": "CA",
-    "ip": "162.159.130.234",
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "154.218.15.250",
     "port": 2083,
-    "latency_ms": 438,
-    "speed_mbps": 0,
-    "name": "NodeHub 🇨🇦 CA | | 201F88"
+    "latency_ms": 29,
+    "speed_mbps": 79.96,
+    "name": "NodeHub VLESS-154"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "172.64.150.28",
+    "port": 2082,
+    "latency_ms": 35,
+    "speed_mbps": 92.86,
+    "name": "NodeHub 0116 | NetFreedom0"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "154.197.75.40",
+    "port": 8880,
+    "latency_ms": 37,
+    "speed_mbps": 102.79,
+    "name": "NodeHub VLESS-154"
+  },
+  {
+    "protocol": "ss",
+    "location": "US",
+    "ip": "185.230.230.18",
+    "port": 19999,
+    "latency_ms": 38,
+    "speed_mbps": 168.46,
+    "name": "NodeHub 🇺🇸 [] ss-US-1603..."
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "188.114.96.9",
+    "port": 443,
+    "latency_ms": 38,
+    "speed_mbps": 31.53,
+    "name": "NodeHub VLESS-188"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "162.120.94.30",
+    "port": 8880,
+    "latency_ms": 46,
+    "speed_mbps": 81.14,
+    "name": "NodeHub VLESS-162"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "8.34.70.30",
+    "port": 8880,
+    "latency_ms": 49,
+    "speed_mbps": 93.01,
+    "name": "NodeHub VLESS-8"
+  },
+  {
+    "protocol": "ss",
+    "location": "未知",
+    "ip": "45.86.51.18",
+    "port": 19999,
+    "latency_ms": 50,
+    "speed_mbps": 144.67,
+    "name": "NodeHub SS-45"
+  },
+  {
+    "protocol": "vmess",
+    "location": "未知",
+    "ip": "67.220.95.3",
+    "port": 18000,
+    "latency_ms": 50,
+    "speed_mbps": 49.13,
+    "name": "NodeHub VMESS-67"
+  },
+  {
+    "protocol": "vmess",
+    "location": "CA",
+    "ip": "172.66.203.67",
+    "port": 443,
+    "latency_ms": 80,
+    "speed_mbps": 21.01,
+    "name": "NodeHub 🇨🇦 CA | | E8D081"
   },
   {
     "protocol": "vmess",
     "location": "CA",
     "ip": "104.21.91.53",
     "port": 8443,
-    "latency_ms": 740,
-    "speed_mbps": 0.44998046875,
-    "name": "NodeHub 🇨🇦 CA | | 738F81"
+    "latency_ms": 271,
+    "speed_mbps": 3.6,
+    "name": "NodeHub 🇨🇦 CA | | 1DFB48"
   },
   {
     "protocol": "vmess",
-    "location": "US",
-    "ip": "23.254.194.215",
-    "port": 8080,
-    "latency_ms": 775,
-    "speed_mbps": 3.88,
-    "name": "NodeHub 🇺🇸 US"
+    "location": "未知",
+    "ip": "172.67.167.78",
+    "port": 8443,
+    "latency_ms": 349,
+    "speed_mbps": 1.96,
+    "name": "NodeHub 199562 | = t.me/SOSkeyNET"
+  },
+  {
+    "protocol": "vmess",
+    "location": "CA",
+    "ip": "162.159.135.234",
+    "port": 2083,
+    "latency_ms": 374,
+    "speed_mbps": 1.98,
+    "name": "NodeHub 🇨🇦 CA | | 1377C3"
   }
 ]
