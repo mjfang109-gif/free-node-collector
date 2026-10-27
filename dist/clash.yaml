@@ -20,134 +20,6 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub VLESS-104
-  type: vless
-  server: 104.18.0.181
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  network: ws
-  sni: hhlfy.twiladaphne.ndjp.net
-  servername: hhlfy.twiladaphne.ndjp.net
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.26.12.31
-  port: 8080
-  uuid: 3e06b1db-2efb-446e-ba2d-68850dfd2f9d
-  tls: false
-  network: ws
-  sni: ip.sb
-  servername: ip.sb
-  ws-opts:
-    path: /
-    headers:
-      Host: bdfba-cool-tree-b580.v8fz4kbv.workers.dev
-- name: NodeHub VLESS-172
-  type: vless
-  server: 172.64.146.66
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  network: ws
-  sni: ccc.010304.xyz
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: NodeHub VLESS-104_2
-  type: vless
-  server: 104.18.41.190
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  network: ws
-  sni: ccc.010304.xyz
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: NodeHub VLESS-192
-  type: vless
-  server: 192.65.217.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime37.workers.dev
-- name: NodeHub VLESS-8
-  type: vless
-  server: 8.6.112.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime08.workers.dev
-- name: NodeHub SS-185
-  type: ss
-  server: 185.230.230.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 'NodeHub Join+:'
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: NodeHub SS-45
-  type: ss
-  server: 45.86.51.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NodeHub VLESS-45
-  type: vless
-  server: 45.142.120.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime08.workers.dev
-- name: NodeHub VLESS-216
-  type: vless
-  server: 216.24.57.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime28.workers.dev
-- name: NodeHub VLESS-8_1
-  type: vless
-  server: 8.6.112.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime08.workers.dev
 - name: NodeHub 200843 | = t.me/SOSkeyNET
   type: vmess
   server: 172.66.203.67
@@ -161,6 +33,58 @@ proxies:
     path: /ws?ed=2048
     headers:
       Host: vmess.lbw666.dpdns.org
+- name: NodeHub VLESS-172
+  type: vless
+  server: 172.67.76.40
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  network: ws
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: NodeHub 🇺🇸 USA
+  type: vless
+  server: 104.18.35.86
+  port: 8080
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub VLESS-104
+  type: vless
+  server: 104.18.41.190
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  network: ws
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: NodeHub RELAY-172.66.0.1-1194
+  type: vmess
+  server: 172.66.0.1
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
 - name: NodeHub 🇨🇦 CA | | C40235
   type: vmess
   server: 172.67.187.145
@@ -172,6 +96,19 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub tootffarangi
+  type: vmess
+  server: 172.64.229.21
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
     headers:
       Host: vmess.lbw666.dpdns.org
 - name: NodeHub 🇨🇦 CA | | F25C32
@@ -189,20 +126,20 @@ proxies:
       Host: vmess.lbw666.dpdns.org
 - name: NodeHub VLESS-172_1
   type: vless
-  server: 172.67.131.125
-  port: 2083
-  uuid: f418674e-f518-4318-8ff9-e10000000046
+  server: 172.64.146.66
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
   tls: true
   network: ws
-  sni: smart-edge-424.arti98399-1905.workers.dev
-  servername: smart-edge-424.arti98399-1905.workers.dev
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
   ws-opts:
-    path: /sync
+    path: /fp=chrome
     headers:
-      Host: smart-edge-424.arti98399-1905.workers.dev
-- name: NodeHub RELAY-172.66.0.1-1100
+      Host: ccc.010304.xyz
+- name: NodeHub 🇨🇦 CA | | 253B12
   type: vmess
-  server: 172.66.0.1
+  server: 104.17.136.198
   port: 443
   uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
@@ -210,12 +147,73 @@ proxies:
   tls: true
   network: ws
   ws-opts:
-    path: /ws
+    path: /ws?ed=2048
     headers:
       Host: vmess.lbw666.dpdns.org
+- name: NodeHub VLESS-104_1
+  type: vless
+  server: 104.18.47.73
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  network: ws
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: NodeHub VLESS-104_2
+  type: vless
+  server: 104.21.221.158
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  network: ws
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: NodeHub 🇸🇬 [] vless-SG-9...
+  type: vless
+  server: 104.17.162.11
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub 🇸🇬 SGP
+  type: vless
+  server: 104.18.35.86
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: NodeHub VLESS-172_2
   type: vless
-  server: 172.67.133.118
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub VLESS-104_3
+  type: vless
+  server: 104.21.93.52
   port: 2053
   uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   tls: true
@@ -226,22 +224,9 @@ proxies:
     path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
-- name: NodeHub 🇨🇦 CA | | 51C037
+- name: 'NodeHub Join+:'
   type: vmess
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub 🇨🇦 CA | | 738F81
-  type: vmess
-  server: 104.21.91.53
+  server: 172.67.167.78
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -254,7 +239,7 @@ proxies:
       Host: v2ray1.dozapp.xyz
 - name: NodeHub VLESS-172_3
   type: vless
-  server: 172.67.195.79
+  server: 172.67.133.118
   port: 2053
   uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
   tls: true
@@ -265,6 +250,32 @@ proxies:
     path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
+- name: NodeHub Channel
+  type: vless
+  server: 8.35.211.242
+  port: 443
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  tls: true
+  network: ws
+  sni: vpn.cintaku.qzz.io
+  servername: vpn.cintaku.qzz.io
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
+- name: NodeHub 🇨🇦 CA | | 15EFED
+  type: vmess
+  server: 104.21.0.1
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -272,84 +283,76 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
-  - NodeHub VLESS-172
-  - NodeHub VLESS-104_2
-  - NodeHub VLESS-192
-  - NodeHub VLESS-8
-  - NodeHub SS-185
-  - 'NodeHub Join+:'
-  - NodeHub SS-45
-  - NodeHub VLESS-45
-  - NodeHub VLESS-216
-  - NodeHub VLESS-8_1
   - NodeHub 200843 | = t.me/SOSkeyNET
+  - NodeHub VLESS-172
+  - NodeHub 🇺🇸 USA
+  - NodeHub VLESS-104
+  - NodeHub RELAY-172.66.0.1-1194
   - NodeHub 🇨🇦 CA | | C40235
+  - NodeHub tootffarangi
   - NodeHub 🇨🇦 CA | | F25C32
   - NodeHub VLESS-172_1
-  - NodeHub RELAY-172.66.0.1-1100
+  - NodeHub 🇨🇦 CA | | 253B12
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-104_2
+  - NodeHub 🇸🇬 [] vless-SG-9...
+  - NodeHub 🇸🇬 SGP
   - NodeHub VLESS-172_2
-  - NodeHub 🇨🇦 CA | | 51C037
-  - NodeHub 🇨🇦 CA | | 738F81
+  - NodeHub VLESS-104_3
+  - 'NodeHub Join+:'
   - NodeHub VLESS-172_3
+  - NodeHub Channel
+  - NodeHub 🇨🇦 CA | | 15EFED
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
-  - NodeHub VLESS-172
-  - NodeHub VLESS-104_2
-  - NodeHub VLESS-192
-  - NodeHub VLESS-8
-  - NodeHub SS-185
-  - 'NodeHub Join+:'
-  - NodeHub SS-45
-  - NodeHub VLESS-45
-  - NodeHub VLESS-216
-  - NodeHub VLESS-8_1
   - NodeHub 200843 | = t.me/SOSkeyNET
+  - NodeHub VLESS-172
+  - NodeHub 🇺🇸 USA
+  - NodeHub VLESS-104
+  - NodeHub RELAY-172.66.0.1-1194
   - NodeHub 🇨🇦 CA | | C40235
+  - NodeHub tootffarangi
   - NodeHub 🇨🇦 CA | | F25C32
   - NodeHub VLESS-172_1
-  - NodeHub RELAY-172.66.0.1-1100
+  - NodeHub 🇨🇦 CA | | 253B12
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-104_2
+  - NodeHub 🇸🇬 [] vless-SG-9...
+  - NodeHub 🇸🇬 SGP
   - NodeHub VLESS-172_2
-  - NodeHub 🇨🇦 CA | | 51C037
-  - NodeHub 🇨🇦 CA | | 738F81
+  - NodeHub VLESS-104_3
+  - 'NodeHub Join+:'
   - NodeHub VLESS-172_3
+  - NodeHub Channel
+  - NodeHub 🇨🇦 CA | | 15EFED
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: NodeHub - 🐌 低速节点
+- name: NodeHub - 🌍 CA
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
-  - NodeHub VLESS-172
-  - NodeHub VLESS-104_2
-  - NodeHub VLESS-192
-  - NodeHub VLESS-8
-  - NodeHub SS-185
-  - 'NodeHub Join+:'
-  - NodeHub SS-45
-  - NodeHub VLESS-45
-  - NodeHub VLESS-216
-  - NodeHub VLESS-8_1
-  - NodeHub 200843 | = t.me/SOSkeyNET
   - NodeHub 🇨🇦 CA | | C40235
   - NodeHub 🇨🇦 CA | | F25C32
-  - NodeHub VLESS-172_1
-  - NodeHub RELAY-172.66.0.1-1100
-  - NodeHub VLESS-172_2
-  - NodeHub 🇨🇦 CA | | 51C037
-  - NodeHub 🇨🇦 CA | | 738F81
-  - NodeHub VLESS-172_3
+  - NodeHub 🇨🇦 CA | | 253B12
+  - NodeHub 🇨🇦 CA | | 15EFED
+- name: NodeHub - 🌍 SG
+  type: select
+  proxies:
+  - NodeHub - 🚀 节点选择
+  - NodeHub 🇸🇬 [] vless-SG-9...
+  - NodeHub 🇸🇬 SGP
+- name: NodeHub - 🌍 US
+  type: select
+  proxies:
+  - NodeHub - 🚀 节点选择
+  - NodeHub 🇺🇸 USA
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
