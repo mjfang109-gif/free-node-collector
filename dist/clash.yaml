@@ -20,6 +20,25 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
+- name: NodeHub 🇺🇸 USA
+  type: ss
+  server: 54.91.51.67
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: NodeHub VLESS-172
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
 - name: NodeHub VLESS-104
   type: vless
   server: 104.18.41.190
@@ -33,9 +52,9 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: NodeHub Channel
+- name: NodeHub VLESS-172_1
   type: vless
-  server: 172.66.154.57
+  server: 172.64.153.153
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   tls: true
@@ -43,9 +62,21 @@ proxies:
   sni: ccc.010304.xyz
   servername: ccc.010304.xyz
   ws-opts:
-    path: /
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: ccc.010304.xyz
+- name: NodeHub SS-185
+  type: ss
+  server: 185.230.230.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NodeHub 🇺🇸 USA_1
+  type: ss
+  server: 54.237.60.0
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: NodeHub 🇸🇬 SGP
   type: vless
   server: 172.64.155.111
@@ -59,32 +90,12 @@ proxies:
     path: /thread/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
     headers:
       Host: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.18.37.127
+- name: NodeHub 🇺🇸 USA_2
+  type: ss
+  server: 54.83.84.17
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  network: ws
-  sni: ccc.010304.xyz
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: NodeHub VLESS-104_2
-  type: vless
-  server: 104.18.47.73
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  network: ws
-  sni: ccc.010304.xyz
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: NodeHub 🇸🇬 SGP_1
   type: vless
   server: 104.18.37.0
@@ -98,30 +109,6 @@ proxies:
     path: /tag/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
     headers:
       Host: gy-cffc2-node-project-lb5p6r204ts3xuoz.pages.dev
-- name: NodeHub VLESS-172
-  type: vless
-  server: 172.64.158.170
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  network: ws
-  sni: ccc.010304.xyz
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: NodeHub Channel_1
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
 - name: NodeHub 🇸🇬 SGP_2
   type: vless
   server: 104.18.45.184
@@ -135,6 +122,45 @@ proxies:
     path: /ranking/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
     headers:
       Host: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
+- name: NodeHub 🇸🇬 SGP_3
+  type: vless
+  server: 172.64.159.157
+  port: 443
+  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
+  tls: true
+  network: ws
+  sni: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
+  servername: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
+  ws-opts:
+    path: /photos/list/feedback/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+    headers:
+      Host: gy-cffc3-node-project-lb5p6r204ts3xuoz.pages.dev
+- name: NodeHub 🇸🇬 SGP_4
+  type: vless
+  server: 172.64.158.47
+  port: 443
+  uuid: cf92529d-9c4a-4d71-ab87-ae784a2da6bb
+  tls: true
+  network: ws
+  sni: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
+  servername: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
+  ws-opts:
+    path: /site/proxyip=ProxyIP.KR.CMLiussss.net?ed=2560
+    headers:
+      Host: gy-cffc4-node-project-lb5p6r204ts3xuoz.pages.dev
+- name: NodeHub کانال تلگرام 🪐 MTMVPN
+  type: vmess
+  server: 104.21.7.133
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
 - name: NodeHub (51)
   type: vmess
   server: 172.67.187.145
@@ -148,32 +174,72 @@ proxies:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub VMESS-104
+- name: NodeHub RELAY-172.66.203.67-0939
   type: vmess
-  server: 104.21.7.133
-  port: 80
+  server: 172.66.203.67
+  port: 443
   uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
-  tls: false
+  tls: true
   network: ws
   ws-opts:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub VMESS-104_1
+- name: NodeHub 🇨🇦 CA | | A6A71F
   type: vmess
-  server: 104.17.147.222
-  port: 80
+  server: 172.64.229.21
+  port: 443
   uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
-  tls: false
+  tls: true
   network: ws
   ws-opts:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
+- name: NodeHub [] trojan
+  type: trojan
+  server: 66.163.122.7
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.searchnationwidecareerchangehelperandguidancetoday.com
+  skip-cert-verify: false
+- name: NodeHub 🇺🇸 [] trojan-US-...
+  type: trojan
+  server: 66.163.122.113
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.searchnationwidecareerchangehelperandguidancetoday.com
+  skip-cert-verify: false
+- name: NodeHub RELAY-104.21.57.84-0945
+  type: vmess
+  server: 104.21.57.84
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: 'NodeHub Join+:'
+  type: vmess
+  server: 172.67.167.78
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
 - name: NodeHub [OpenRay] XX-1413
   type: vmess
   server: 162.159.135.234
@@ -187,72 +253,7 @@ proxies:
     path: /or3
     headers:
       Host: or3.sfacg.uk
-- name: NodeHub RELAY-104.21.91.53-0931
-  type: vmess
-  server: 104.21.91.53
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub VLESS-216
-  type: vless
-  server: 216.24.57.225
-  port: 2083
-  uuid: 3bcbd7ef-e05b-4745-a1de-5ecf98dd2fb6
-  tls: true
-  network: ws
-  sni: pol.netvia.ir
-  servername: pol.netvia.ir
-  ws-opts:
-    path: /wss
-    headers:
-      Host: pol.netvia.ir
-- name: NodeHub VLESS-104_3
-  type: vless
-  server: 104.21.34.106
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: NodeHub 🇨🇦 CA | | C7986A
-  type: vmess
-  server: 104.21.57.84
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub VMESS-104_2
-  type: vmess
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub Channel_2
+- name: NodeHub Channel
   type: vless
   server: 8.35.211.242
   port: 443
@@ -265,9 +266,22 @@ proxies:
     path: /vlessws
     headers:
       Host: vpn.cintaku.qzz.io
-- name: NodeHub VLESS-104_4
+- name: NodeHub 🇨🇦 CA | | 201F88
+  type: vmess
+  server: 162.159.130.234
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
+- name: NodeHub VLESS-104_1
   type: vless
-  server: 104.21.0.87
+  server: 104.21.34.106
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
@@ -285,52 +299,60 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-104
-  - NodeHub Channel
-  - NodeHub 🇸🇬 SGP
-  - NodeHub VLESS-104_1
-  - NodeHub VLESS-104_2
-  - NodeHub 🇸🇬 SGP_1
+  - NodeHub 🇺🇸 USA
   - NodeHub VLESS-172
-  - NodeHub Channel_1
+  - NodeHub VLESS-104
+  - NodeHub VLESS-172_1
+  - NodeHub SS-185
+  - NodeHub 🇺🇸 USA_1
+  - NodeHub 🇸🇬 SGP
+  - NodeHub 🇺🇸 USA_2
+  - NodeHub 🇸🇬 SGP_1
   - NodeHub 🇸🇬 SGP_2
+  - NodeHub 🇸🇬 SGP_3
+  - NodeHub 🇸🇬 SGP_4
+  - NodeHub کانال تلگرام 🪐 MTMVPN
   - NodeHub (51)
-  - NodeHub VMESS-104
-  - NodeHub VMESS-104_1
+  - NodeHub RELAY-172.66.203.67-0939
+  - NodeHub 🇨🇦 CA | | A6A71F
+  - NodeHub [] trojan
+  - NodeHub 🇺🇸 [] trojan-US-...
+  - NodeHub RELAY-104.21.57.84-0945
+  - 'NodeHub Join+:'
   - NodeHub [OpenRay] XX-1413
-  - NodeHub RELAY-104.21.91.53-0931
-  - NodeHub VLESS-216
-  - NodeHub VLESS-104_3
-  - NodeHub 🇨🇦 CA | | C7986A
-  - NodeHub VMESS-104_2
-  - NodeHub Channel_2
-  - NodeHub VLESS-104_4
+  - NodeHub Channel
+  - NodeHub 🇨🇦 CA | | 201F88
+  - NodeHub VLESS-104_1
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-104
-  - NodeHub Channel
-  - NodeHub 🇸🇬 SGP
-  - NodeHub VLESS-104_1
-  - NodeHub VLESS-104_2
-  - NodeHub 🇸🇬 SGP_1
+  - NodeHub 🇺🇸 USA
   - NodeHub VLESS-172
-  - NodeHub Channel_1
+  - NodeHub VLESS-104
+  - NodeHub VLESS-172_1
+  - NodeHub SS-185
+  - NodeHub 🇺🇸 USA_1
+  - NodeHub 🇸🇬 SGP
+  - NodeHub 🇺🇸 USA_2
+  - NodeHub 🇸🇬 SGP_1
   - NodeHub 🇸🇬 SGP_2
+  - NodeHub 🇸🇬 SGP_3
+  - NodeHub 🇸🇬 SGP_4
+  - NodeHub کانال تلگرام 🪐 MTMVPN
   - NodeHub (51)
-  - NodeHub VMESS-104
-  - NodeHub VMESS-104_1
+  - NodeHub RELAY-172.66.203.67-0939
+  - NodeHub 🇨🇦 CA | | A6A71F
+  - NodeHub [] trojan
+  - NodeHub 🇺🇸 [] trojan-US-...
+  - NodeHub RELAY-104.21.57.84-0945
+  - 'NodeHub Join+:'
   - NodeHub [OpenRay] XX-1413
-  - NodeHub RELAY-104.21.91.53-0931
-  - NodeHub VLESS-216
-  - NodeHub VLESS-104_3
-  - NodeHub 🇨🇦 CA | | C7986A
-  - NodeHub VMESS-104_2
-  - NodeHub Channel_2
-  - NodeHub VLESS-104_4
+  - NodeHub Channel
+  - NodeHub 🇨🇦 CA | | 201F88
+  - NodeHub VLESS-104_1
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -340,7 +362,8 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇨🇦 CA | | C7986A
+  - NodeHub 🇨🇦 CA | | A6A71F
+  - NodeHub 🇨🇦 CA | | 201F88
 - name: NodeHub - 🌍 SG
   type: select
   proxies:
@@ -348,6 +371,16 @@ proxy-groups:
   - NodeHub 🇸🇬 SGP
   - NodeHub 🇸🇬 SGP_1
   - NodeHub 🇸🇬 SGP_2
+  - NodeHub 🇸🇬 SGP_3
+  - NodeHub 🇸🇬 SGP_4
+- name: NodeHub - 🌍 US
+  type: select
+  proxies:
+  - NodeHub - 🚀 节点选择
+  - NodeHub 🇺🇸 USA
+  - NodeHub 🇺🇸 USA_1
+  - NodeHub 🇺🇸 USA_2
+  - NodeHub 🇺🇸 [] trojan-US-...
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
