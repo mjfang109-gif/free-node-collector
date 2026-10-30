@@ -20,22 +20,9 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub VMESS-172
-  type: vmess
-  server: 172.67.187.145
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub 🇺🇸 USA
+- name: NodeHub 🇸🇬 SGP
   type: vless
-  server: 104.16.231.20
+  server: 104.18.35.86
   port: 2082
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   tls: false
@@ -43,36 +30,107 @@ proxies:
   sni: hhlfy.twiladaphne.ndjp.net
   servername: hhlfy.twiladaphne.ndjp.net
   ws-opts:
-    path: /
+    path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: NodeHub (51)⁴
-  type: vmess
-  server: 104.17.147.222
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
+- name: NodeHub 🇸🇬 [] vless-SG-9...
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   tls: false
   network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
   ws-opts:
-    path: /ws?ed=2048
+    path: /fpfp=chrome
     headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub VLESS-104
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub Tel
   type: vless
-  server: 104.18.35.86
+  server: 104.18.35.15
   port: 443
-  uuid: 1c7f675f-5923-463f-83fb-af4c898cecea
+  uuid: d342d11e-d224-4463-b982-532309285094
   tls: true
   network: ws
-  sni: 0Ee6wOQz4W8W0cDqiTgq6XZ-q0o9r6o9.merTEssWAgGEr08.WoRKErs.dEv
-  servername: 0Ee6wOQz4W8W0cDqiTgq6XZ-q0o9r6o9.merTEssWAgGEr08.WoRKErs.dEv
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
   ws-opts:
-    path: /eyJqdW5rIjoiZWhuWFFGNWRISXBjSmRGWSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=512
     headers:
-      Host: 0Ee6wOQz4W8W0cDqiTgq6XZ-q0o9r6o9.merTEssWAgGEr08.WoRKErs.dEv
-- name: NodeHub 🇸🇬 SGP
+      Host: ccc.010304.xyz
+- name: NodeHub Tel_1
+  type: vless
+  server: 172.64.152.241
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  network: ws
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: ccc.010304.xyz
+- name: NodeHub 🇺🇸 USA
+  type: vless
+  server: 104.18.41.86
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  network: ws
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: ccc.010304.xyz
+- name: NodeHub VLESS-104
+  type: vless
+  server: 104.18.47.73
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  network: ws
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /
+    headers:
+      Host: ccc.010304.xyz
+- name: NodeHub Channel
+  type: vless
+  server: 104.19.235.15
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  network: ws
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+- name: NodeHub SS-185
+  type: ss
+  server: 185.230.230.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NodeHub VLESS-104_1
+  type: vless
+  server: 104.18.45.38
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  network: ws
+  sni: ccc.010304.xyz
+  servername: ccc.010304.xyz
+  ws-opts:
+    path: /fp
+    headers:
+      Host: ccc.010304.xyz
+- name: NodeHub 🇸🇬 SGP_1
   type: vless
   server: 104.18.35.86
   port: 8080
@@ -83,6 +141,19 @@ proxies:
   servername: hhlfy.twiladaphne.ndjp.net
   ws-opts:
     path: /sg-melbi
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: NodeHub 🇺🇸 USA_1
+  type: vless
+  server: 104.16.231.20
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  tls: false
+  network: ws
+  sni: hhlfy.twiladaphne.ndjp.net
+  servername: hhlfy.twiladaphne.ndjp.net
+  ws-opts:
+    path: /
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
 - name: NodeHub کانال تلگرام 🪐 MTMVPN
@@ -98,289 +169,52 @@ proxies:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.18.37.247
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  network: ws
-  sni: ccc.010304.xyz
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: NodeHub 🇺🇸 USA_1
-  type: vless
-  server: 104.18.41.86
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  network: ws
-  sni: ccc.010304.xyz
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ccc.010304.xyz
-- name: NodeHub VLESS-104_2
-  type: vless
-  server: 104.17.154.123
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  network: ws
-  sni: ccc.010304.xyz
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
-    headers:
-      Host: ccc.010304.xyz
-- name: NodeHub VLESS-154
-  type: vless
-  server: 154.83.2.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime28.workers.dev
-- name: NodeHub VLESS-104_3
-  type: vless
-  server: 104.18.47.73
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  network: ws
-  sni: ccc.010304.xyz
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: NodeHub VLESS-104_4
-  type: vless
-  server: 104.20.28.233
+- name: NodeHub VMESS-172
+  type: vmess
+  server: 172.67.187.145
   port: 80
-  uuid: e081da45-9fae-4687-9376-f9a6a0dbbe83
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   tls: false
   network: ws
   ws-opts:
-    path: /id-amz
+    path: /ws?ed=2048
     headers:
-      Host: e33xr.qzz.io
-- name: NodeHub VLESS-104_5
-  type: vless
-  server: 104.19.173.68
-  port: 8080
-  uuid: 2500e602-671c-4654-a602-c518b7282167
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 2639w-throbbing-band-3840.xphnn6jp.workers.dev
-- name: NodeHub Channel
-  type: vless
-  server: 104.19.235.15
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub RELAY-172.64.229.21-1723
+  type: vmess
+  server: 172.64.229.21
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   tls: true
   network: ws
-  sni: ccc.010304.xyz
-  servername: ccc.010304.xyz
   ws-opts:
-    path: /fp
+    path: /ws?ed=2048
     headers:
-      Host: ccc.010304.xyz
-- name: NodeHub Channel_1
-  type: vless
-  server: 104.18.40.100
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub [] trojan
+  type: trojan
+  server: 66.163.122.7
   port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  network: ws
-  sni: ccc.010304.xyz
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: NodeHub VLESS-188
-  type: vless
-  server: 188.164.248.216
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  network: ws
-  sni: ccc.010304.xyz
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: NodeHub VLESS-104_6
-  type: vless
-  server: 104.18.40.171
-  port: 443
-  uuid: 8895be79-9817-4011-b81a-14a35a3d328e
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb-boi.pages.dev
-- name: NodeHub VLESS-104_7
-  type: vless
-  server: 104.18.26.94
-  port: 8080
-  uuid: 989d58b8-d2ea-4d28-b5ff-0f3cd078f2cf
-  tls: false
-  network: ws
-  sni: www.gov.se
-  servername: www.gov.se
-  ws-opts:
-    path: /
-    headers:
-      Host: sdf23g-billowing-moon-348e.mzm468gc.workers.dev
-- name: NodeHub VLESS-154_1
-  type: vless
-  server: 154.197.75.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.searchnationwidecareerchangehelperandguidancetoday.com
+  skip-cert-verify: false
+- name: NodeHub (51)⁴
+  type: vmess
+  server: 104.17.147.222
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   tls: false
   network: ws
   ws-opts:
-    path: /
+    path: /ws?ed=2048
     headers:
-      Host: vms.lifetime37.workers.dev
-- name: NodeHub AE
-  type: vless
-  server: 181.214.1.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: false
-  network: ws
-  ws-opts:
-    path: ?ed=2560
-    headers:
-      Host: vms.lifetime39.workers.dev
-- name: NodeHub VLESS-172
-  type: vless
-  server: 172.64.152.52
-  port: 443
-  uuid: 2d4b819d-6fa6-4db2-8434-61e7db0fe93c
-  tls: true
-  network: ws
-  sni: cf.zhahui.de5.net
-  servername: cf.zhahui.de5.net
-  ws-opts:
-    path: /
-    headers:
-      Host: cf.zhahui.de5.net
-- name: NodeHub VLESS-172_1
-  type: vless
-  server: 172.67.65.56
-  port: 2053
-  uuid: 099244b9-2168-4dbd-870e-cbbe9d6eb573
-  tls: true
-  network: ws
-  sni: whitecreeper.pages.dev
-  servername: whitecreeper.pages.dev
-  ws-opts:
-    path: /proxyip=ProxyIP.SG.CMLiussss.Net
-    headers:
-      Host: whitecreeper.pages.dev
-- name: NodeHub VLESS-104_8
-  type: vless
-  server: 104.129.164.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: vms.lifetime40.workers.dev
-- name: NodeHub VLESS-154_2
-  type: vless
-  server: 154.197.64.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime36.workers.dev
-- name: NodeHub 🇸🇬 [] vless-SG-9...
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  network: ws
-  sni: hhlfy.twiladaphne.ndjp.net
-  servername: hhlfy.twiladaphne.ndjp.net
-  ws-opts:
-    path: /fpfp=chrome
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: NodeHub Channel_2
-  type: vless
-  server: 172.66.154.57
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  network: ws
-  sni: ccc.010304.xyz
-  servername: ccc.010304.xyz
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: NodeHub 🇸🇬 SGP_1
-  type: vless
-  server: 104.18.35.86
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: false
-  network: ws
-  sni: hhlfy.twiladaphne.ndjp.net
-  servername: hhlfy.twiladaphne.ndjp.net
-  ws-opts:
-    path: /fp
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: NodeHub VLESS-104_9
-  type: vless
-  server: 104.18.40.60
-  port: 443
-  uuid: ee3b04d0-c000-4444-81bd-556ffb1d456f
-  tls: true
-  network: ws
-  sni: desal-fyhq.kdhfkdjrnckdjfjf698945.workers.dev
-  servername: desal-fyhq.kdhfkdjrnckdjfjf698945.workers.dev
-  ws-opts:
-    path: /stream/DEVCOP/556ffb1d456f
-    headers:
-      Host: desal-fyhq.kdhfkdjrnckdjfjf698945.workers.dev
-- name: NodeHub VLESS-190
-  type: vless
-  server: 190.93.245.206
-  port: 443
-  uuid: ee3b04d0-c000-4444-81bd-556ffb1d456f
-  tls: true
-  network: ws
-  sni: desal-fyhq.kdhfkdjrnckdjfjf698945.workers.dev
-  servername: desal-fyhq.kdhfkdjrnckdjfjf698945.workers.dev
-  ws-opts:
-    path: /stream/DEVCOP/556ffb1d456f
-    headers:
-      Host: desal-fyhq.kdhfkdjrnckdjfjf698945.workers.dev
+      Host: vmess.lbw666.dpdns.org
 - name: NodeHub 🇩🇪 DEU
   type: vless
   server: 155.212.240.10
@@ -394,17 +228,13 @@ proxies:
     path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed=2560
     headers:
       Host: n.bitpulse.me
-- name: NodeHub VLESS-103
-  type: vless
-  server: 103.133.1.160
-  port: 80
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: soft-shadow-1e33.xicav73335.workers.dev
+- name: NodeHub 🇺🇸 [] trojan-US-...
+  type: trojan
+  server: 66.163.122.113
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.searchnationwidecareerchangehelperandguidancetoday.com
+  skip-cert-verify: false
 - name: NodeHub 🇨🇦 CA | | 738F81
   type: vmess
   server: 104.21.91.53
@@ -418,22 +248,9 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: NodeHub 🇺🇸 USA_2
-  type: vless
-  server: 104.16.111.102
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: NodeHub 🇨🇦 CA | | E5ABBA
+- name: NodeHub RELAY-104.21.57.84-1084
   type: vmess
-  server: 172.67.161.144
+  server: 104.21.57.84
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -444,9 +261,22 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: NodeHub VLESS-104_10
+- name: NodeHub 🇨🇦 CA | | 15EFED
+  type: vmess
+  server: 104.21.0.1
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
+- name: NodeHub VLESS-172
   type: vless
-  server: 104.18.37.127
+  server: 172.67.156.147
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
@@ -457,6 +287,32 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: NodeHub [OpenRay] XX-1413
+  type: vmess
+  server: 162.159.135.234
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
+- name: NodeHub 🇨🇦 CA | | B754D5
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -464,82 +320,60 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VMESS-172
-  - NodeHub 🇺🇸 USA
-  - NodeHub (51)⁴
-  - NodeHub VLESS-104
   - NodeHub 🇸🇬 SGP
-  - NodeHub کانال تلگرام 🪐 MTMVPN
-  - NodeHub VLESS-104_1
-  - NodeHub 🇺🇸 USA_1
-  - NodeHub VLESS-104_2
-  - NodeHub VLESS-154
-  - NodeHub VLESS-104_3
-  - NodeHub VLESS-104_4
-  - NodeHub VLESS-104_5
-  - NodeHub Channel
-  - NodeHub Channel_1
-  - NodeHub VLESS-188
-  - NodeHub VLESS-104_6
-  - NodeHub VLESS-104_7
-  - NodeHub VLESS-154_1
-  - NodeHub AE
-  - NodeHub VLESS-172
-  - NodeHub VLESS-172_1
-  - NodeHub VLESS-104_8
-  - NodeHub VLESS-154_2
   - NodeHub 🇸🇬 [] vless-SG-9...
-  - NodeHub Channel_2
+  - NodeHub Tel
+  - NodeHub Tel_1
+  - NodeHub 🇺🇸 USA
+  - NodeHub VLESS-104
+  - NodeHub Channel
+  - NodeHub SS-185
+  - NodeHub VLESS-104_1
   - NodeHub 🇸🇬 SGP_1
-  - NodeHub VLESS-104_9
-  - NodeHub VLESS-190
+  - NodeHub 🇺🇸 USA_1
+  - NodeHub کانال تلگرام 🪐 MTMVPN
+  - NodeHub VMESS-172
+  - NodeHub RELAY-172.64.229.21-1723
+  - NodeHub [] trojan
+  - NodeHub (51)⁴
   - NodeHub 🇩🇪 DEU
-  - NodeHub VLESS-103
+  - NodeHub 🇺🇸 [] trojan-US-...
   - NodeHub 🇨🇦 CA | | 738F81
-  - NodeHub 🇺🇸 USA_2
-  - NodeHub 🇨🇦 CA | | E5ABBA
-  - NodeHub VLESS-104_10
+  - NodeHub RELAY-104.21.57.84-1084
+  - NodeHub 🇨🇦 CA | | 15EFED
+  - NodeHub VLESS-172
+  - NodeHub [OpenRay] XX-1413
+  - NodeHub 🇨🇦 CA | | B754D5
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VMESS-172
-  - NodeHub 🇺🇸 USA
-  - NodeHub (51)⁴
-  - NodeHub VLESS-104
   - NodeHub 🇸🇬 SGP
-  - NodeHub کانال تلگرام 🪐 MTMVPN
-  - NodeHub VLESS-104_1
-  - NodeHub 🇺🇸 USA_1
-  - NodeHub VLESS-104_2
-  - NodeHub VLESS-154
-  - NodeHub VLESS-104_3
-  - NodeHub VLESS-104_4
-  - NodeHub VLESS-104_5
-  - NodeHub Channel
-  - NodeHub Channel_1
-  - NodeHub VLESS-188
-  - NodeHub VLESS-104_6
-  - NodeHub VLESS-104_7
-  - NodeHub VLESS-154_1
-  - NodeHub AE
-  - NodeHub VLESS-172
-  - NodeHub VLESS-172_1
-  - NodeHub VLESS-104_8
-  - NodeHub VLESS-154_2
   - NodeHub 🇸🇬 [] vless-SG-9...
-  - NodeHub Channel_2
+  - NodeHub Tel
+  - NodeHub Tel_1
+  - NodeHub 🇺🇸 USA
+  - NodeHub VLESS-104
+  - NodeHub Channel
+  - NodeHub SS-185
+  - NodeHub VLESS-104_1
   - NodeHub 🇸🇬 SGP_1
-  - NodeHub VLESS-104_9
-  - NodeHub VLESS-190
+  - NodeHub 🇺🇸 USA_1
+  - NodeHub کانال تلگرام 🪐 MTMVPN
+  - NodeHub VMESS-172
+  - NodeHub RELAY-172.64.229.21-1723
+  - NodeHub [] trojan
+  - NodeHub (51)⁴
   - NodeHub 🇩🇪 DEU
-  - NodeHub VLESS-103
+  - NodeHub 🇺🇸 [] trojan-US-...
   - NodeHub 🇨🇦 CA | | 738F81
-  - NodeHub 🇺🇸 USA_2
-  - NodeHub 🇨🇦 CA | | E5ABBA
-  - NodeHub VLESS-104_10
+  - NodeHub RELAY-104.21.57.84-1084
+  - NodeHub 🇨🇦 CA | | 15EFED
+  - NodeHub VLESS-172
+  - NodeHub [OpenRay] XX-1413
+  - NodeHub 🇨🇦 CA | | B754D5
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -550,7 +384,8 @@ proxy-groups:
   proxies:
   - NodeHub - 🚀 节点选择
   - NodeHub 🇨🇦 CA | | 738F81
-  - NodeHub 🇨🇦 CA | | E5ABBA
+  - NodeHub 🇨🇦 CA | | 15EFED
+  - NodeHub 🇨🇦 CA | | B754D5
 - name: NodeHub - 🌍 DE
   type: select
   proxies:
@@ -569,7 +404,7 @@ proxy-groups:
   - NodeHub - 🚀 节点选择
   - NodeHub 🇺🇸 USA
   - NodeHub 🇺🇸 USA_1
-  - NodeHub 🇺🇸 USA_2
+  - NodeHub 🇺🇸 [] trojan-US-...
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
