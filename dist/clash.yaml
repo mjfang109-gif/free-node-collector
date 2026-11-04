@@ -20,26 +20,72 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub United
+- name: NodeHub 🇺🇸 US-167.88.61.52-0142
   type: trojan
-  server: 66.163.122.113
+  server: 167.88.61.52
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: api.searchnationwidecareerchangehelperandguidancetoday.com
+  sni: courses.browseseniorrolesandenhanceyourcareertoday.com
   skip-cert-verify: false
-- name: NodeHub RELAY-172.64.80.1-1961
+- name: NodeHub 🇨🇦 CA | | 22A83C
   type: vmess
-  server: 172.64.80.1
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  server: 104.21.7.133
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub ⏳41
+  type: trojan
+  server: 167.88.61.85
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: false
+- name: NodeHub 🇨🇦 CA | | F65B9D
+  type: vmess
+  server: 104.17.147.222
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub 🇨🇦 CA | | 15EFED
+  type: vmess
+  server: 104.21.0.1
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /or3
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: or3.sfacg.uk
+- name: NodeHub 🇨🇦 CA | | 3BB0FC
+  type: vmess
+  server: 104.21.50.177
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
 - name: NodeHub VLESS-104
   type: vless
   server: 104.17.70.206
@@ -53,6 +99,32 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.com
+- name: NodeHub 🇨🇦 CA | | A2407D
+  type: vmess
+  server: 172.64.80.1
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: NodeHub Channel
+  type: vless
+  server: 104.17.11.191
+  port: 443
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  tls: true
+  network: ws
+  sni: vpn.cintaku.qzz.io
+  servername: vpn.cintaku.qzz.io
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -60,30 +132,49 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub United
-  - NodeHub RELAY-172.64.80.1-1961
+  - NodeHub 🇺🇸 US-167.88.61.52-0142
+  - NodeHub 🇨🇦 CA | | 22A83C
+  - NodeHub ⏳41
+  - NodeHub 🇨🇦 CA | | F65B9D
+  - NodeHub 🇨🇦 CA | | 15EFED
+  - NodeHub 🇨🇦 CA | | 3BB0FC
   - NodeHub VLESS-104
+  - NodeHub 🇨🇦 CA | | A2407D
+  - NodeHub Channel
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub United
-  - NodeHub RELAY-172.64.80.1-1961
+  - NodeHub 🇺🇸 US-167.88.61.52-0142
+  - NodeHub 🇨🇦 CA | | 22A83C
+  - NodeHub ⏳41
+  - NodeHub 🇨🇦 CA | | F65B9D
+  - NodeHub 🇨🇦 CA | | 15EFED
+  - NodeHub 🇨🇦 CA | | 3BB0FC
   - NodeHub VLESS-104
+  - NodeHub 🇨🇦 CA | | A2407D
+  - NodeHub Channel
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: NodeHub - 🐌 低速节点
+- name: NodeHub - 🌍 CA
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub United
-  - NodeHub RELAY-172.64.80.1-1961
-  - NodeHub VLESS-104
+  - NodeHub 🇨🇦 CA | | 22A83C
+  - NodeHub 🇨🇦 CA | | F65B9D
+  - NodeHub 🇨🇦 CA | | 15EFED
+  - NodeHub 🇨🇦 CA | | 3BB0FC
+  - NodeHub 🇨🇦 CA | | A2407D
+- name: NodeHub - 🌍 US
+  type: select
+  proxies:
+  - NodeHub - 🚀 节点选择
+  - NodeHub 🇺🇸 US-167.88.61.52-0142
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择

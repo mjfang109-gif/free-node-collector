@@ -1,29 +1,83 @@
 [
   {
     "protocol": "trojan",
-    "location": "未知",
-    "ip": "66.163.122.113",
+    "location": "US",
+    "ip": "167.88.61.52",
     "port": 443,
-    "latency_ms": 251,
-    "speed_mbps": 0,
-    "name": "NodeHub United"
+    "latency_ms": 75,
+    "speed_mbps": 43.1,
+    "name": "NodeHub 🇺🇸 US-167.88.61.52-0142"
   },
   {
     "protocol": "vmess",
+    "location": "CA",
+    "ip": "104.21.7.133",
+    "port": 80,
+    "latency_ms": 108,
+    "speed_mbps": 6.84,
+    "name": "NodeHub 🇨🇦 CA | | 22A83C"
+  },
+  {
+    "protocol": "trojan",
     "location": "未知",
-    "ip": "172.64.80.1",
-    "port": 8443,
-    "latency_ms": 589,
-    "speed_mbps": 0.416396484375,
-    "name": "NodeHub RELAY-172.64.80.1-1961"
+    "ip": "167.88.61.85",
+    "port": 443,
+    "latency_ms": 114,
+    "speed_mbps": 40.22,
+    "name": "NodeHub ⏳41"
+  },
+  {
+    "protocol": "vmess",
+    "location": "CA",
+    "ip": "104.17.147.222",
+    "port": 80,
+    "latency_ms": 127,
+    "speed_mbps": 6.11,
+    "name": "NodeHub 🇨🇦 CA | | F65B9D"
+  },
+  {
+    "protocol": "vmess",
+    "location": "CA",
+    "ip": "104.21.0.1",
+    "port": 2083,
+    "latency_ms": 275,
+    "speed_mbps": 1.08,
+    "name": "NodeHub 🇨🇦 CA | | 15EFED"
+  },
+  {
+    "protocol": "vmess",
+    "location": "CA",
+    "ip": "104.21.50.177",
+    "port": 2083,
+    "latency_ms": 299,
+    "speed_mbps": 1.13,
+    "name": "NodeHub 🇨🇦 CA | | 3BB0FC"
   },
   {
     "protocol": "vless",
     "location": "未知",
     "ip": "104.17.70.206",
     "port": 8443,
-    "latency_ms": 628,
-    "speed_mbps": 0.353701171875,
+    "latency_ms": 363,
+    "speed_mbps": 10.27,
     "name": "NodeHub VLESS-104"
+  },
+  {
+    "protocol": "vmess",
+    "location": "CA",
+    "ip": "172.64.80.1",
+    "port": 8443,
+    "latency_ms": 369,
+    "speed_mbps": 0.8253125,
+    "name": "NodeHub 🇨🇦 CA | | A2407D"
+  },
+  {
+    "protocol": "vless",
+    "location": "未知",
+    "ip": "104.17.11.191",
+    "port": 443,
+    "latency_ms": 455,
+    "speed_mbps": 0.50611328125,
+    "name": "NodeHub Channel"
   }
 ]
