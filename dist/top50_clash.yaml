@@ -20,153 +20,57 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub > کانفیگ رایگان
+- name: NodeHub 🥌100
+  type: trojan
+  server: 216.152.155.54
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  skip-cert-verify: true
+- name: NodeHub TROJAN-216
+  type: trojan
+  server: 216.152.155.158
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.nextjobopportunityandclaimyouridealrole.com
+  skip-cert-verify: false
+- name: NodeHub SS-67
+  type: ss
+  server: 67.220.73.178
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NodeHub SS-216
+  type: ss
+  server: 216.106.178.169
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NodeHub TROJAN-216_1
+  type: trojan
+  server: 216.152.155.59
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.nextjobopportunityandclaimyouridealrole.com
+  skip-cert-verify: false
+- name: NodeHub SS-38
+  type: ss
+  server: 38.128.66.32
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NodeHub سرور 10
   type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
-- name: NodeHub TROJAN-167
-  type: trojan
-  server: 167.88.61.20
+  server: 172.66.0.1
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: api.browseseniorrolesandenhanceyourcareertoday.com
-  skip-cert-verify: false
-- name: NodeHub TROJAN-167_1
-  type: trojan
-  server: 167.88.61.52
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.browseseniorrolesandenhanceyourcareertoday.com
-  skip-cert-verify: false
-- name: NodeHub ⏳41
-  type: trojan
-  server: 167.88.61.85
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.browseseniorrolesandenhanceyourcareertoday.com
-  skip-cert-verify: false
-- name: NodeHub VLESS-172
-  type: vless
-  server: 172.67.199.126
-  port: 2053
-  uuid: e3149c82-00f6-4227-b2c0-b78f1dd81279
-  tls: true
-  network: ws
-  sni: fast.145779.xyz
-  servername: fast.145779.xyz
-  ws-opts:
-    path: /ws-tesla
-    headers:
-      Host: fast.145779.xyz
-- name: NodeHub سرور 7
-  type: vmess
-  server: 172.67.153.127
-  port: 443
-  uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /truth
+    path: /ws
     headers:
-      Host: www.windowsmsidownloads.com
-- name: NodeHub چنل تلگرام
-  type: vmess
-  server: 104.21.15.251
-  port: 443
-  uuid: ba1116e2-8c2f-4e3d-8e50-c954360cf970
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /truth
-    headers:
-      Host: www.windowssearchtools.com
-- name: NodeHub VLESS-104
-  type: vless
-  server: 104.18.153.10
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.16.10.191
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  tls: true
-  network: ws
-  sni: u.srilankangrill.online
-  servername: u.srilankangrill.online
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: NodeHub VLESS-104_2
-  type: vless
-  server: 104.21.70.228
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  tls: true
-  network: ws
-  sni: u.srilankangrill.online
-  servername: u.srilankangrill.online
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: NodeHub VLESS-104_3
-  type: vless
-  server: 104.17.117.137
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  tls: true
-  network: ws
-  sni: u.srilankangrill.online
-  servername: u.srilankangrill.online
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: NodeHub VLESS-104_4
-  type: vless
-  server: 104.16.10.2
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  tls: true
-  network: ws
-  sni: u.srilankangrill.online
-  servername: u.srilankangrill.online
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
-- name: NodeHub VLESS-104_5
-  type: vless
-  server: 104.16.10.117
-  port: 443
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  tls: true
-  network: ws
-  sni: u.srilankangrill.online
-  servername: u.srilankangrill.online
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
+      Host: vmess.lbw666.dpdns.org
 - name: NodeHub کانالمون
   type: vmess
   server: 172.64.229.21
@@ -180,87 +84,48 @@ proxies:
     path: /ws?ed=2048
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub VLESS-104_6
-  type: vless
-  server: 104.16.10.72
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: NodeHub VMESS-104
+- name: NodeHub سرور 7
   type: vmess
-  server: 104.17.136.198
+  server: 172.67.153.127
   port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /ws
+    path: /truth
     headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub VLESS-104_7
-  type: vless
-  server: 104.24.0.1
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+      Host: www.windowsmsidownloads.com
+- name: NodeHub 10 | = t.me/ex_proxies
+  type: vmess
+  server: 162.159.135.234
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
   tls: true
   network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
   ws-opts:
-    path: /tyxyws
+    path: /or3
     headers:
-      Host: jp3.yohototo.top
-- name: NodeHub VLESS-104_8
+      Host: or3.sfacg.uk
+- name: NodeHub VLESS-188
   type: vless
-  server: 104.16.10.9
+  server: 188.114.98.0
   port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
   tls: true
   network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
+  sni: vpn.cintaku.qzz.io
+  servername: vpn.cintaku.qzz.io
   ws-opts:
-    path: /tyxyws
+    path: /vlessws
     headers:
-      Host: jp3.yohototo.top
-- name: NodeHub VLESS-172_1
+      Host: vpn.cintaku.qzz.io
+- name: NodeHub VLESS-104
   type: vless
-  server: 172.64.152.19
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: NodeHub VLESS-104_9
-  type: vless
-  server: 104.16.10.22
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: NodeHub VLESS-104_10
-  type: vless
-  server: 104.16.3.98
+  server: 104.21.70.228
   port: 443
   uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   tls: true
@@ -271,9 +136,35 @@ proxies:
     path: /
     headers:
       Host: u.srilankangrill.online
-- name: NodeHub VLESS-104_11
+- name: NodeHub VLESS-104_1
   type: vless
-  server: 104.19.48.107
+  server: 104.16.10.198
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  tls: true
+  network: ws
+  sni: u.srilankangrill.online
+  servername: u.srilankangrill.online
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: NodeHub VLESS-104_2
+  type: vless
+  server: 104.16.10.2
+  port: 443
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  tls: true
+  network: ws
+  sni: u.srilankangrill.online
+  servername: u.srilankangrill.online
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
+- name: NodeHub VLESS-172
+  type: vless
+  server: 172.67.156.147
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
@@ -284,9 +175,9 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: NodeHub VLESS-104_12
+- name: NodeHub VLESS-104_3
   type: vless
-  server: 104.21.70.21
+  server: 104.27.46.35
   port: 443
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
@@ -304,58 +195,44 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub > کانفیگ رایگان
-  - NodeHub TROJAN-167
-  - NodeHub TROJAN-167_1
-  - NodeHub ⏳41
-  - NodeHub VLESS-172
+  - NodeHub 🥌100
+  - NodeHub TROJAN-216
+  - NodeHub SS-67
+  - NodeHub SS-216
+  - NodeHub TROJAN-216_1
+  - NodeHub SS-38
+  - NodeHub سرور 10
+  - NodeHub کانالمون
   - NodeHub سرور 7
-  - NodeHub چنل تلگرام
+  - NodeHub 10 | = t.me/ex_proxies
+  - NodeHub VLESS-188
   - NodeHub VLESS-104
   - NodeHub VLESS-104_1
   - NodeHub VLESS-104_2
+  - NodeHub VLESS-172
   - NodeHub VLESS-104_3
-  - NodeHub VLESS-104_4
-  - NodeHub VLESS-104_5
-  - NodeHub کانالمون
-  - NodeHub VLESS-104_6
-  - NodeHub VMESS-104
-  - NodeHub VLESS-104_7
-  - NodeHub VLESS-104_8
-  - NodeHub VLESS-172_1
-  - NodeHub VLESS-104_9
-  - NodeHub VLESS-104_10
-  - NodeHub VLESS-104_11
-  - NodeHub VLESS-104_12
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub > کانفیگ رایگان
-  - NodeHub TROJAN-167
-  - NodeHub TROJAN-167_1
-  - NodeHub ⏳41
-  - NodeHub VLESS-172
+  - NodeHub 🥌100
+  - NodeHub TROJAN-216
+  - NodeHub SS-67
+  - NodeHub SS-216
+  - NodeHub TROJAN-216_1
+  - NodeHub SS-38
+  - NodeHub سرور 10
+  - NodeHub کانالمون
   - NodeHub سرور 7
-  - NodeHub چنل تلگرام
+  - NodeHub 10 | = t.me/ex_proxies
+  - NodeHub VLESS-188
   - NodeHub VLESS-104
   - NodeHub VLESS-104_1
   - NodeHub VLESS-104_2
+  - NodeHub VLESS-172
   - NodeHub VLESS-104_3
-  - NodeHub VLESS-104_4
-  - NodeHub VLESS-104_5
-  - NodeHub کانالمون
-  - NodeHub VLESS-104_6
-  - NodeHub VMESS-104
-  - NodeHub VLESS-104_7
-  - NodeHub VLESS-104_8
-  - NodeHub VLESS-172_1
-  - NodeHub VLESS-104_9
-  - NodeHub VLESS-104_10
-  - NodeHub VLESS-104_11
-  - NodeHub VLESS-104_12
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -365,29 +242,22 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub > کانفیگ رایگان
-  - NodeHub TROJAN-167
-  - NodeHub TROJAN-167_1
-  - NodeHub ⏳41
-  - NodeHub VLESS-172
+  - NodeHub 🥌100
+  - NodeHub TROJAN-216
+  - NodeHub SS-67
+  - NodeHub SS-216
+  - NodeHub TROJAN-216_1
+  - NodeHub SS-38
+  - NodeHub سرور 10
+  - NodeHub کانالمون
   - NodeHub سرور 7
-  - NodeHub چنل تلگرام
+  - NodeHub 10 | = t.me/ex_proxies
+  - NodeHub VLESS-188
   - NodeHub VLESS-104
   - NodeHub VLESS-104_1
   - NodeHub VLESS-104_2
+  - NodeHub VLESS-172
   - NodeHub VLESS-104_3
-  - NodeHub VLESS-104_4
-  - NodeHub VLESS-104_5
-  - NodeHub کانالمون
-  - NodeHub VLESS-104_6
-  - NodeHub VMESS-104
-  - NodeHub VLESS-104_7
-  - NodeHub VLESS-104_8
-  - NodeHub VLESS-172_1
-  - NodeHub VLESS-104_9
-  - NodeHub VLESS-104_10
-  - NodeHub VLESS-104_11
-  - NodeHub VLESS-104_12
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
