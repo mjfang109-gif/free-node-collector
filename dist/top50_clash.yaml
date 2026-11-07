@@ -20,24 +20,28 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub SS-149
+- name: NodeHub SS-45
   type: ss
-  server: 149.40.57.134
+  server: 45.86.51.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NodeHub 🇺🇸 [] ss-US-1615...
-  type: ss
-  server: 149.40.57.133
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NodeHub 🇺🇸 [] ss-US-1615..._1
-  type: ss
-  server: 149.40.57.138
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 'NodeHub Join+:'
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: NodeHub United
+  type: trojan
+  server: 66.163.122.81
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.searchnationwidecareerchangehelperandguidancetoday.com
+  skip-cert-verify: false
 - name: NodeHub 🇨🇦 CA | | 22A83C
   type: vmess
   server: 104.21.7.133
@@ -51,9 +55,9 @@ proxies:
     path: /ws?ed=2048
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub VMESS-172
+- name: NodeHub کانالمون
   type: vmess
-  server: 172.66.203.67
+  server: 172.64.229.21
   port: 443
   uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
@@ -64,20 +68,7 @@ proxies:
     path: /ws?ed=2048
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub 🇨🇦 CA | | C65974
-  type: vmess
-  server: 172.64.80.1
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub 10 | = t.me/ex_proxies
+- name: NodeHub 12 | = t.me/ex_proxies
   type: vmess
   server: 162.159.135.234
   port: 2083
@@ -90,32 +81,19 @@ proxies:
     path: /or3
     headers:
       Host: or3.sfacg.uk
-- name: NodeHub 🇨🇦 CA | | F65B9D
-  type: vmess
-  server: 104.17.147.222
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub 🇨🇦 CA | | 3BB0FC
-  type: vmess
-  server: 104.21.50.177
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
+- name: NodeHub VLESS-104
+  type: vless
+  server: 104.27.46.35
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
   network: ws
+  sni: jp3.yohototo.top
+  servername: jp3.yohototo.top
   ws-opts:
-    path: /or3
+    path: /tyxyws
     headers:
-      Host: or3.sfacg.uk
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -123,49 +101,42 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub SS-149
-  - NodeHub 🇺🇸 [] ss-US-1615...
-  - NodeHub 🇺🇸 [] ss-US-1615..._1
+  - NodeHub SS-45
+  - 'NodeHub Join+:'
+  - NodeHub United
   - NodeHub 🇨🇦 CA | | 22A83C
-  - NodeHub VMESS-172
-  - NodeHub 🇨🇦 CA | | C65974
-  - NodeHub 10 | = t.me/ex_proxies
-  - NodeHub 🇨🇦 CA | | F65B9D
-  - NodeHub 🇨🇦 CA | | 3BB0FC
+  - NodeHub کانالمون
+  - NodeHub 12 | = t.me/ex_proxies
+  - NodeHub VLESS-104
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub SS-149
-  - NodeHub 🇺🇸 [] ss-US-1615...
-  - NodeHub 🇺🇸 [] ss-US-1615..._1
+  - NodeHub SS-45
+  - 'NodeHub Join+:'
+  - NodeHub United
   - NodeHub 🇨🇦 CA | | 22A83C
-  - NodeHub VMESS-172
-  - NodeHub 🇨🇦 CA | | C65974
-  - NodeHub 10 | = t.me/ex_proxies
-  - NodeHub 🇨🇦 CA | | F65B9D
-  - NodeHub 🇨🇦 CA | | 3BB0FC
+  - NodeHub کانالمون
+  - NodeHub 12 | = t.me/ex_proxies
+  - NodeHub VLESS-104
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: NodeHub - 🌍 CA
+- name: NodeHub - 🐌 低速节点
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
+  - NodeHub SS-45
+  - 'NodeHub Join+:'
+  - NodeHub United
   - NodeHub 🇨🇦 CA | | 22A83C
-  - NodeHub 🇨🇦 CA | | C65974
-  - NodeHub 🇨🇦 CA | | F65B9D
-  - NodeHub 🇨🇦 CA | | 3BB0FC
-- name: NodeHub - 🌍 US
-  type: select
-  proxies:
-  - NodeHub - 🚀 节点选择
-  - NodeHub 🇺🇸 [] ss-US-1615...
-  - NodeHub 🇺🇸 [] ss-US-1615..._1
+  - NodeHub کانالمون
+  - NodeHub 12 | = t.me/ex_proxies
+  - NodeHub VLESS-104
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
