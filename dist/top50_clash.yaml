@@ -20,32 +20,31 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub YFZ
+- name: NodeHub 🇺🇸 [] ss-US-1616...
   type: ss
-  server: 185.230.230.18
+  server: 167.88.62.203
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NodeHub SS-45
+- name: NodeHub SS-167
   type: ss
-  server: 45.86.51.18
+  server: 167.17.67.171
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NodeHub TROJAN-66
-  type: trojan
-  server: 66.163.122.46
+- name: NodeHub کانالمون
+  type: vmess
+  server: 172.64.229.21
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: searchnationwidecareerchangehelperandguidancetoday.com
-  skip-cert-verify: false
-- name: NodeHub United
-  type: trojan
-  server: 66.163.122.25
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.searchnationwidecareerchangehelperandguidancetoday.com
-  skip-cert-verify: false
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
 - name: NodeHub سرور 8
   type: vmess
   server: 104.27.0.1
@@ -59,7 +58,7 @@ proxies:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub RELAY-104.17.77.77-1770
+- name: NodeHub RELAY-104.17.77.77-1925
   type: vmess
   server: 104.17.77.77
   port: 8443
@@ -72,7 +71,33 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: NodeHub 15 | = t.me/ex_proxies
+- name: 'NodeHub Join+:'
+  type: vmess
+  server: 172.67.167.78
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: NodeHub RELAY-104.17.136.198-1913
+  type: vmess
+  server: 104.17.136.198
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub 13 | = t.me/ex_proxies
   type: vmess
   server: 162.159.135.234
   port: 2083
@@ -85,19 +110,6 @@ proxies:
     path: /or3
     headers:
       Host: or3.sfacg.uk
-- name: NodeHub 209111 | = t.me/SOSkeyNET
-  type: vmess
-  server: 104.17.147.222
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-    headers:
-      Host: vmess.lbw666.dpdns.org
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -105,28 +117,28 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub YFZ
-  - NodeHub SS-45
-  - NodeHub TROJAN-66
-  - NodeHub United
+  - NodeHub 🇺🇸 [] ss-US-1616...
+  - NodeHub SS-167
+  - NodeHub کانالمون
   - NodeHub سرور 8
-  - NodeHub RELAY-104.17.77.77-1770
-  - NodeHub 15 | = t.me/ex_proxies
-  - NodeHub 209111 | = t.me/SOSkeyNET
+  - NodeHub RELAY-104.17.77.77-1925
+  - 'NodeHub Join+:'
+  - NodeHub RELAY-104.17.136.198-1913
+  - NodeHub 13 | = t.me/ex_proxies
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub YFZ
-  - NodeHub SS-45
-  - NodeHub TROJAN-66
-  - NodeHub United
+  - NodeHub 🇺🇸 [] ss-US-1616...
+  - NodeHub SS-167
+  - NodeHub کانالمون
   - NodeHub سرور 8
-  - NodeHub RELAY-104.17.77.77-1770
-  - NodeHub 15 | = t.me/ex_proxies
-  - NodeHub 209111 | = t.me/SOSkeyNET
+  - NodeHub RELAY-104.17.77.77-1925
+  - 'NodeHub Join+:'
+  - NodeHub RELAY-104.17.136.198-1913
+  - NodeHub 13 | = t.me/ex_proxies
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -136,14 +148,14 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub YFZ
-  - NodeHub SS-45
-  - NodeHub TROJAN-66
-  - NodeHub United
+  - NodeHub 🇺🇸 [] ss-US-1616...
+  - NodeHub SS-167
+  - NodeHub کانالمون
   - NodeHub سرور 8
-  - NodeHub RELAY-104.17.77.77-1770
-  - NodeHub 15 | = t.me/ex_proxies
-  - NodeHub 209111 | = t.me/SOSkeyNET
+  - NodeHub RELAY-104.17.77.77-1925
+  - 'NodeHub Join+:'
+  - NodeHub RELAY-104.17.136.198-1913
+  - NodeHub 13 | = t.me/ex_proxies
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
