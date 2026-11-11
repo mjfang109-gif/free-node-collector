@@ -20,55 +20,179 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub 🇺🇸 US-137.184.89.151-0080
-  type: ss
-  server: 137.184.89.151
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NodeHub 🇺🇸 US-167.88.61.175-0082
+- name: NodeHub TROJAN-130
   type: trojan
-  server: 167.88.61.175
+  server: 130.94.19.95
+  port: 57277
+  password: 5t6i121em5lkmsmk
+  sni: us001.zestapp778.com
+  skip-cert-verify: false
+- name: NodeHub TROJAN-66
+  type: trojan
+  server: 66.163.122.46
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.browseseniorrolesandenhanceyourcareertoday.com
+  sni: searchnationwidecareerchangehelperandguidancetoday.com
   skip-cert-verify: false
-- name: NodeHub TROJAN-167
+- name: NodeHub TROJAN-66_1
   type: trojan
-  server: 167.88.61.20
+  server: 66.163.122.81
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: api.browseseniorrolesandenhanceyourcareertoday.com
-  skip-cert-verify: false
-- name: NodeHub VLESS-162
-  type: vless
-  server: 162.159.198.1
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  tls: true
-  network: ws
-  sni: fs.qicai99.com
-  servername: fs.qicai99.com
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
-- name: NodeHub 🇺🇸 US-167.88.61.52-0084
+  sni: courses.searchnationwidecareerchangehelperandguidancetoday.com
+  skip-cert-verify: true
+- name: NodeHub TROJAN-66_2
   type: trojan
-  server: 167.88.61.52
+  server: 66.163.122.26
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.browseseniorrolesandenhanceyourcareertoday.com
+  sni: blog.searchnationwidecareerchangehelperandguidancetoday.com
   skip-cert-verify: false
-- name: NodeHub tootffarangi
+- name: NodeHub 211698 | = t.me/SOSkeyNET
   type: vmess
-  server: 169.197.142.22
+  server: 67.220.95.3
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
   tls: false
   network: tcp
+- name: NodeHub SS-172
+  type: ss
+  server: 172.111.38.72
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NodeHub 212242 | = t.me/SOSkeyNET
+  type: vmess
+  server: 172.66.203.67
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub 212288 | = t.me/SOSkeyNET
+  type: vmess
+  server: 172.64.80.1
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: NodeHub 212255 | = t.me/SOSkeyNET
+  type: vmess
+  server: 172.64.229.21
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub 212270 | = t.me/SOSkeyNET
+  type: vmess
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: NodeHub 212252 | = t.me/SOSkeyNET
+  type: vmess
+  server: 104.17.136.198
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub 212239 | = t.me/SOSkeyNET
+  type: vmess
+  server: 104.27.0.1
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub 212283 | = t.me/SOSkeyNET
+  type: vmess
+  server: 172.64.155.209
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: NodeHub 212280 | = t.me/SOSkeyNET
+  type: vmess
+  server: 104.17.0.1
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
+- name: NodeHub 212342 | = t.me/LonUp_M
+  type: vmess
+  server: 104.21.91.53
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: NodeHub 29 285.6KB/s
+  type: vmess
+  server: 172.67.161.144
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
 - name: NodeHub VLESS-170
   type: vless
   server: 170.114.46.6
@@ -82,20 +206,7 @@ proxies:
     path: /
     headers:
       Host: pcloud.z-tas.com
-- name: NodeHub RELAY-104.17.77.77-1140
-  type: vmess
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub 🇨🇦 CA | | 98F5DC
+- name: NodeHub 212281 | = t.me/SOSkeyNET
   type: vmess
   server: 162.159.130.234
   port: 2083
@@ -108,33 +219,20 @@ proxies:
     path: /or3
     headers:
       Host: or3.sfacg.uk
+- name: NodeHub 212260 | = t.me/SOSkeyNET
+  type: vmess
+  server: 172.67.167.78
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
 - name: NodeHub VLESS-104
-  type: vless
-  server: 104.17.169.13
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.16.0.1
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: NodeHub VLESS-104_2
   type: vless
   server: 104.16.10.72
   port: 443
@@ -147,6 +245,19 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
+- name: NodeHub 212285 | = t.me/SOSkeyNET
+  type: vmess
+  server: 104.21.57.84
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -154,58 +265,84 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub 🇺🇸 US-137.184.89.151-0080
-  - NodeHub 🇺🇸 US-167.88.61.175-0082
-  - NodeHub TROJAN-167
-  - NodeHub VLESS-162
-  - NodeHub 🇺🇸 US-167.88.61.52-0084
-  - NodeHub tootffarangi
+  - NodeHub TROJAN-130
+  - NodeHub TROJAN-66
+  - NodeHub TROJAN-66_1
+  - NodeHub TROJAN-66_2
+  - NodeHub 211698 | = t.me/SOSkeyNET
+  - NodeHub SS-172
+  - NodeHub 212242 | = t.me/SOSkeyNET
+  - NodeHub 212288 | = t.me/SOSkeyNET
+  - NodeHub 212255 | = t.me/SOSkeyNET
+  - NodeHub 212270 | = t.me/SOSkeyNET
+  - NodeHub 212252 | = t.me/SOSkeyNET
+  - NodeHub 212239 | = t.me/SOSkeyNET
+  - NodeHub 212283 | = t.me/SOSkeyNET
+  - NodeHub 212280 | = t.me/SOSkeyNET
+  - NodeHub 212342 | = t.me/LonUp_M
+  - NodeHub 29 285.6KB/s
   - NodeHub VLESS-170
-  - NodeHub RELAY-104.17.77.77-1140
-  - NodeHub 🇨🇦 CA | | 98F5DC
+  - NodeHub 212281 | = t.me/SOSkeyNET
+  - NodeHub 212260 | = t.me/SOSkeyNET
   - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
-  - NodeHub VLESS-104_2
+  - NodeHub 212285 | = t.me/SOSkeyNET
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub 🇺🇸 US-137.184.89.151-0080
-  - NodeHub 🇺🇸 US-167.88.61.175-0082
-  - NodeHub TROJAN-167
-  - NodeHub VLESS-162
-  - NodeHub 🇺🇸 US-167.88.61.52-0084
-  - NodeHub tootffarangi
+  - NodeHub TROJAN-130
+  - NodeHub TROJAN-66
+  - NodeHub TROJAN-66_1
+  - NodeHub TROJAN-66_2
+  - NodeHub 211698 | = t.me/SOSkeyNET
+  - NodeHub SS-172
+  - NodeHub 212242 | = t.me/SOSkeyNET
+  - NodeHub 212288 | = t.me/SOSkeyNET
+  - NodeHub 212255 | = t.me/SOSkeyNET
+  - NodeHub 212270 | = t.me/SOSkeyNET
+  - NodeHub 212252 | = t.me/SOSkeyNET
+  - NodeHub 212239 | = t.me/SOSkeyNET
+  - NodeHub 212283 | = t.me/SOSkeyNET
+  - NodeHub 212280 | = t.me/SOSkeyNET
+  - NodeHub 212342 | = t.me/LonUp_M
+  - NodeHub 29 285.6KB/s
   - NodeHub VLESS-170
-  - NodeHub RELAY-104.17.77.77-1140
-  - NodeHub 🇨🇦 CA | | 98F5DC
+  - NodeHub 212281 | = t.me/SOSkeyNET
+  - NodeHub 212260 | = t.me/SOSkeyNET
   - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
-  - NodeHub VLESS-104_2
+  - NodeHub 212285 | = t.me/SOSkeyNET
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: NodeHub - 🌍 CA
+- name: NodeHub - 🐌 低速节点
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇨🇦 CA | | 98F5DC
-- name: NodeHub - 🌍 TR
-  type: select
-  proxies:
-  - NodeHub - 🚀 节点选择
-  - NodeHub TROJAN-167
-- name: NodeHub - 🌍 US
-  type: select
-  proxies:
-  - NodeHub - 🚀 节点选择
-  - NodeHub 🇺🇸 US-137.184.89.151-0080
-  - NodeHub 🇺🇸 US-167.88.61.175-0082
-  - NodeHub 🇺🇸 US-167.88.61.52-0084
+  - NodeHub TROJAN-130
+  - NodeHub TROJAN-66
+  - NodeHub TROJAN-66_1
+  - NodeHub TROJAN-66_2
+  - NodeHub 211698 | = t.me/SOSkeyNET
+  - NodeHub SS-172
+  - NodeHub 212242 | = t.me/SOSkeyNET
+  - NodeHub 212288 | = t.me/SOSkeyNET
+  - NodeHub 212255 | = t.me/SOSkeyNET
+  - NodeHub 212270 | = t.me/SOSkeyNET
+  - NodeHub 212252 | = t.me/SOSkeyNET
+  - NodeHub 212239 | = t.me/SOSkeyNET
+  - NodeHub 212283 | = t.me/SOSkeyNET
+  - NodeHub 212280 | = t.me/SOSkeyNET
+  - NodeHub 212342 | = t.me/LonUp_M
+  - NodeHub 29 285.6KB/s
+  - NodeHub VLESS-170
+  - NodeHub 212281 | = t.me/SOSkeyNET
+  - NodeHub 212260 | = t.me/SOSkeyNET
+  - NodeHub VLESS-104
+  - NodeHub 212285 | = t.me/SOSkeyNET
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
