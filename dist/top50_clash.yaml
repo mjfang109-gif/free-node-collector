@@ -20,127 +20,69 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub VLESS-108
-  type: vless
-  server: 108.61.119.63
-  port: 18580
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  network: tcp
-  sni: us007.zestapp778.com
-  servername: us007.zestapp778.com
-- name: NodeHub TROJAN-216
-  type: trojan
-  server: 216.152.155.59
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: api.nextjobopportunityandclaimyouridealrole.com
-  skip-cert-verify: false
-- name: NodeHub سرور 10
-  type: vmess
-  server: 172.66.0.1
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub 🇨🇦 CA | | DB92F1
-  type: vmess
-  server: 104.21.7.133
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub TROJAN-216_1
-  type: trojan
-  server: 216.152.155.23
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.nextjobopportunityandclaimyouridealrole.com
-  skip-cert-verify: false
-- name: NodeHub SS-167
+- name: NodeHub 🇺🇸 US-137.184.89.151-0080
   type: ss
-  server: 167.88.62.203
+  server: 137.184.89.151
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NodeHub کانالمون
-  type: vmess
-  server: 172.64.229.21
+- name: NodeHub 🇺🇸 US-167.88.61.175-0082
+  type: trojan
+  server: 167.88.61.175
   port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: false
+- name: NodeHub TROJAN-167
+  type: trojan
+  server: 167.88.61.20
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: false
+- name: NodeHub VLESS-162
+  type: vless
+  server: 162.159.198.1
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  tls: true
+  network: ws
+  sni: fs.qicai99.com
+  servername: fs.qicai99.com
+  ws-opts:
+    path: /
+    headers:
+      Host: fs.qicai99.com
+- name: NodeHub 🇺🇸 US-167.88.61.52-0084
+  type: trojan
+  server: 167.88.61.52
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: false
+- name: NodeHub tootffarangi
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub VLESS-104
+  tls: false
+  network: tcp
+- name: NodeHub VLESS-170
   type: vless
-  server: 104.19.248.199
-  port: 8443
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
+  server: 170.114.46.6
+  port: 2096
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
   tls: true
   network: ws
-  sni: moz.ar-marz.fun
-  servername: moz.ar-marz.fun
+  sni: pcloud.z-tas.com
+  servername: pcloud.z-tas.com
   ws-opts:
-    path: /man
+    path: /
     headers:
-      Host: moz.ar-marz.fun
-- name: NodeHub VLESS-190
-  type: vless
-  server: 190.93.244.47
-  port: 8443
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
-  tls: true
-  network: ws
-  sni: moz.ar-marz.fun
-  servername: moz.ar-marz.fun
-  ws-opts:
-    path: /man
-    headers:
-      Host: moz.ar-marz.fun
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.19.112.134
-  port: 8443
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
-  tls: true
-  network: ws
-  sni: moz.ar-marz.fun
-  servername: moz.ar-marz.fun
-  ws-opts:
-    path: /man
-    headers:
-      Host: moz.ar-marz.fun
-- name: NodeHub VLESS-190_1
-  type: vless
-  server: 190.93.247.95
-  port: 8443
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
-  tls: true
-  network: ws
-  sni: moz.ar-marz.fun
-  servername: moz.ar-marz.fun
-  ws-opts:
-    path: /man
-    headers:
-      Host: moz.ar-marz.fun
-- name: NodeHub RELAY-104.17.77.77-1184
+      Host: pcloud.z-tas.com
+- name: NodeHub RELAY-104.17.77.77-1140
   type: vmess
   server: 104.17.77.77
   port: 8443
@@ -153,48 +95,9 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: NodeHub 157 207.0KB/s
+- name: NodeHub 🇨🇦 CA | | 98F5DC
   type: vmess
-  server: 104.21.57.84
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub سرور 8
-  type: vmess
-  server: 104.27.0.1
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub 🇨🇦 CA | | 213182
-  type: vmess
-  server: 188.114.96.3
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub 🇨🇦 CA | | FB8FD0
-  type: vmess
-  server: 104.17.0.1
+  server: 162.159.130.234
   port: 2083
   uuid: ac251237-576f-40c8-a543-554960c958b1
   alterId: 0
@@ -205,19 +108,45 @@ proxies:
     path: /or3
     headers:
       Host: or3.sfacg.uk
-- name: NodeHub 🇩🇪 [] vless-DE-1...
+- name: NodeHub VLESS-104
   type: vless
-  server: 104.27.88.172
-  port: 80
-  uuid: 50414e45-4c5f-5a45-5553-52108a2d5224
-  tls: false
+  server: 104.17.169.13
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
   network: ws
-  sni: web-app-nr6wpa.app-tp57xz.workers.dev
-  servername: web-app-nr6wpa.app-tp57xz.workers.dev
+  sni: jp3.yohototo.top
+  servername: jp3.yohototo.top
   ws-opts:
-    path: /api/ws
+    path: /tyxyws
     headers:
-      Host: web-app-nr6wpa.app-tp57xz.workers.dev
+      Host: jp3.yohototo.top
+- name: NodeHub VLESS-104_1
+  type: vless
+  server: 104.16.0.1
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  network: ws
+  sni: jp3.yohototo.top
+  servername: jp3.yohototo.top
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: NodeHub VLESS-104_2
+  type: vless
+  server: 104.16.10.72
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  network: ws
+  sni: jp3.yohototo.top
+  servername: jp3.yohototo.top
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -225,46 +154,36 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-108
-  - NodeHub TROJAN-216
-  - NodeHub سرور 10
-  - NodeHub 🇨🇦 CA | | DB92F1
-  - NodeHub TROJAN-216_1
-  - NodeHub SS-167
-  - NodeHub کانالمون
+  - NodeHub 🇺🇸 US-137.184.89.151-0080
+  - NodeHub 🇺🇸 US-167.88.61.175-0082
+  - NodeHub TROJAN-167
+  - NodeHub VLESS-162
+  - NodeHub 🇺🇸 US-167.88.61.52-0084
+  - NodeHub tootffarangi
+  - NodeHub VLESS-170
+  - NodeHub RELAY-104.17.77.77-1140
+  - NodeHub 🇨🇦 CA | | 98F5DC
   - NodeHub VLESS-104
-  - NodeHub VLESS-190
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-190_1
-  - NodeHub RELAY-104.17.77.77-1184
-  - NodeHub 157 207.0KB/s
-  - NodeHub سرور 8
-  - NodeHub 🇨🇦 CA | | 213182
-  - NodeHub 🇨🇦 CA | | FB8FD0
-  - NodeHub 🇩🇪 [] vless-DE-1...
+  - NodeHub VLESS-104_2
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-108
-  - NodeHub TROJAN-216
-  - NodeHub سرور 10
-  - NodeHub 🇨🇦 CA | | DB92F1
-  - NodeHub TROJAN-216_1
-  - NodeHub SS-167
-  - NodeHub کانالمون
+  - NodeHub 🇺🇸 US-137.184.89.151-0080
+  - NodeHub 🇺🇸 US-167.88.61.175-0082
+  - NodeHub TROJAN-167
+  - NodeHub VLESS-162
+  - NodeHub 🇺🇸 US-167.88.61.52-0084
+  - NodeHub tootffarangi
+  - NodeHub VLESS-170
+  - NodeHub RELAY-104.17.77.77-1140
+  - NodeHub 🇨🇦 CA | | 98F5DC
   - NodeHub VLESS-104
-  - NodeHub VLESS-190
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-190_1
-  - NodeHub RELAY-104.17.77.77-1184
-  - NodeHub 157 207.0KB/s
-  - NodeHub سرور 8
-  - NodeHub 🇨🇦 CA | | 213182
-  - NodeHub 🇨🇦 CA | | FB8FD0
-  - NodeHub 🇩🇪 [] vless-DE-1...
+  - NodeHub VLESS-104_2
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -274,20 +193,19 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇨🇦 CA | | DB92F1
-  - NodeHub 🇨🇦 CA | | 213182
-  - NodeHub 🇨🇦 CA | | FB8FD0
-- name: NodeHub - 🌍 DE
-  type: select
-  proxies:
-  - NodeHub - 🚀 节点选择
-  - NodeHub 🇩🇪 [] vless-DE-1...
+  - NodeHub 🇨🇦 CA | | 98F5DC
 - name: NodeHub - 🌍 TR
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub TROJAN-216
-  - NodeHub TROJAN-216_1
+  - NodeHub TROJAN-167
+- name: NodeHub - 🌍 US
+  type: select
+  proxies:
+  - NodeHub - 🚀 节点选择
+  - NodeHub 🇺🇸 US-137.184.89.151-0080
+  - NodeHub 🇺🇸 US-167.88.61.175-0082
+  - NodeHub 🇺🇸 US-167.88.61.52-0084
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
