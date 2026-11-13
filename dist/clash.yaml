@@ -22,7 +22,7 @@ dns:
 proxies:
 - name: NodeHub VLESS-104
   type: vless
-  server: 104.18.40.33
+  server: 104.18.37.228
   port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   tls: true
@@ -33,9 +33,9 @@ proxies:
     path: /
     headers:
       Host: fs.qicai99.com
-- name: NodeHub VLESS-172
+- name: NodeHub VLESS-104_1
   type: vless
-  server: 172.64.150.28
+  server: 104.18.34.33
   port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   tls: true
@@ -43,12 +43,12 @@ proxies:
   sni: fs.qicai99.com
   servername: fs.qicai99.com
   ws-opts:
-    path: /fp=chrome
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
     headers:
       Host: fs.qicai99.com
-- name: NodeHub VLESS-172_1
+- name: NodeHub VLESS-172
   type: vless
-  server: 172.64.155.33
+  server: 172.64.159.33
   port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   tls: true
@@ -61,7 +61,7 @@ proxies:
       Host: fs.qicai99.com
 - name: NodeHub 🇺🇸 USA
   type: vless
-  server: 172.64.152.33
+  server: 104.18.21.69
   port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   tls: true
@@ -69,18 +69,12 @@ proxies:
   sni: fs.qicai99.com
   servername: fs.qicai99.com
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: fs.qicai99.com
-- name: NodeHub 🇺🇸 US-185.230.230.18-0090
-  type: ss
-  server: 185.230.230.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NodeHub VLESS-172_2
+- name: NodeHub 🇺🇸 USA_1
   type: vless
-  server: 172.67.74.177
+  server: 172.64.152.33
   port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   tls: true
@@ -93,14 +87,42 @@ proxies:
       Host: fs.qicai99.com
 - name: NodeHub TROJAN-66
   type: trojan
-  server: 66.163.122.26
+  server: 66.163.122.7
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.searchnationwidecareerchangehelperandguidancetoday.com
+  sni: www.searchnationwidecareerchangehelperandguidancetoday.com
   skip-cert-verify: false
-- name: NodeHub VLESS-104_1
+- name: NodeHub SS-45
+  type: ss
+  server: 45.86.51.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NodeHub VLESS-104_2
   type: vless
-  server: 104.18.34.33
+  server: 104.26.13.54
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  tls: true
+  network: ws
+  sni: fs.qicai99.com
+  servername: fs.qicai99.com
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: fs.qicai99.com
+- name: 'NodeHub Channel :'
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: tcp
+- name: NodeHub VLESS-172_1
+  type: vless
+  server: 172.64.158.33
   port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   tls: true
@@ -111,9 +133,29 @@ proxies:
     path: /
     headers:
       Host: fs.qicai99.com
-- name: NodeHub VLESS-104_2
+- name: NodeHub VLESS-172_2
   type: vless
-  server: 104.18.39.33
+  server: 172.64.155.33
+  port: 443
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  tls: true
+  network: ws
+  sni: fs.qicai99.com
+  servername: fs.qicai99.com
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: fs.qicai99.com
+- name: NodeHub Channel
+  type: trojan
+  server: 66.163.122.25
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.searchnationwidecareerchangehelperandguidancetoday.com
+  skip-cert-verify: false
+- name: NodeHub VLESS-172_3
+  type: vless
+  server: 172.64.153.33
   port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   tls: true
@@ -126,7 +168,7 @@ proxies:
       Host: fs.qicai99.com
 - name: NodeHub VLESS-104_3
   type: vless
-  server: 104.24.197.20
+  server: 104.18.38.33
   port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   tls: true
@@ -134,31 +176,12 @@ proxies:
   sni: fs.qicai99.com
   servername: fs.qicai99.com
   ws-opts:
-    path: /
+    path: /?---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---
     headers:
       Host: fs.qicai99.com
-- name: NodeHub VLESS-104_4
+- name: NodeHub VLESS-172_4
   type: vless
-  server: 104.26.13.54
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  tls: true
-  network: ws
-  sni: fs.qicai99.com
-  servername: fs.qicai99.com
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
-- name: NodeHub 🇺🇸 US-172.111.38.72-0175
-  type: ss
-  server: 172.111.38.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NodeHub 🇺🇸 USA_1
-  type: vless
-  server: 104.18.21.69
+  server: 172.64.150.28
   port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   tls: true
@@ -169,26 +192,6 @@ proxies:
     path: /fp=chrome
     headers:
       Host: fs.qicai99.com
-- name: NodeHub VLESS-104_5
-  type: vless
-  server: 104.18.38.33
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  tls: true
-  network: ws
-  sni: fs.qicai99.com
-  servername: fs.qicai99.com
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
-- name: NodeHub TROJAN-66_1
-  type: trojan
-  server: 66.163.122.30
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.searchnationwidecareerchangehelperandguidancetoday.com
-  skip-cert-verify: false
 - name: NodeHub سرور 8
   type: vmess
   server: 104.27.0.1
@@ -202,9 +205,9 @@ proxies:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub VLESS-172_3
+- name: NodeHub VLESS-104_4
   type: vless
-  server: 172.64.159.33
+  server: 104.24.196.20
   port: 443
   uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   tls: true
@@ -212,20 +215,68 @@ proxies:
   sni: fs.qicai99.com
   servername: fs.qicai99.com
   ws-opts:
-    path: /
+    path: /?---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---@Fear_Config---
     headers:
       Host: fs.qicai99.com
-- name: NodeHub VLESS-104_6
+- name: NodeHub TROJAN-66_1
+  type: trojan
+  server: 66.163.122.113
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.searchnationwidecareerchangehelperandguidancetoday.com
+  skip-cert-verify: false
+- name: NodeHub VLESS-173
   type: vless
-  server: 104.26.0.1
-  port: 2052
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  tls: false
+  server: 173.245.49.114
+  port: 8443
+  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
+  tls: true
+  network: ws
+  sni: moz.ar-marz.fun
+  servername: moz.ar-marz.fun
+  ws-opts:
+    path: /man
+    headers:
+      Host: moz.ar-marz.fun
+- name: NodeHub VLESS-190
+  type: vless
+  server: 190.93.247.95
+  port: 8443
+  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
+  tls: true
+  network: ws
+  sni: moz.ar-marz.fun
+  servername: moz.ar-marz.fun
+  ws-opts:
+    path: /man
+    headers:
+      Host: moz.ar-marz.fun
+- name: NodeHub VLESS-104_5
+  type: vless
+  server: 104.19.112.134
+  port: 8443
+  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
+  tls: true
+  network: ws
+  sni: moz.ar-marz.fun
+  servername: moz.ar-marz.fun
+  ws-opts:
+    path: /man
+    headers:
+      Host: moz.ar-marz.fun
+- name: NodeHub 🇨🇦 CA | | 19FFC9
+  type: vmess
+  server: 104.17.136.198
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
   network: ws
   ws-opts:
-    path: /rain1226
+    path: /ws
     headers:
-      Host: eu02.123450908.xyz
+      Host: vmess.lbw666.dpdns.org
 - name: NodeHub سرور 10
   type: vmess
   server: 172.66.0.1
@@ -239,9 +290,35 @@ proxies:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub 🇨🇦 CA | | DB92F1
+- name: NodeHub Tel-🤪
+  type: vless
+  server: 103.31.4.160
+  port: 8443
+  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
+  tls: true
+  network: ws
+  sni: moz.ar-marz.fun
+  servername: moz.ar-marz.fun
+  ws-opts:
+    path: /man
+    headers:
+      Host: moz.ar-marz.fun
+- name: NodeHub 🇨🇦 CA | | FB8FD0
   type: vmess
-  server: 104.21.7.133
+  server: 104.17.0.1
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
+- name: NodeHub کانالمون
+  type: vmess
+  server: 172.64.229.21
   port: 443
   uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
@@ -249,9 +326,22 @@ proxies:
   tls: true
   network: ws
   ws-opts:
-    path: /ws
+    path: /ws?ed=2048
     headers:
       Host: vmess.lbw666.dpdns.org
+- name: NodeHub 🇨🇦 CA | | F55EB4
+  type: vmess
+  server: 172.64.155.209
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -260,25 +350,32 @@ proxy-groups:
   - NodeHub - 🔮 故障转移
   - DIRECT
   - NodeHub VLESS-104
-  - NodeHub VLESS-172
-  - NodeHub VLESS-172_1
-  - NodeHub 🇺🇸 USA
-  - NodeHub 🇺🇸 US-185.230.230.18-0090
-  - NodeHub VLESS-172_2
-  - NodeHub TROJAN-66
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-104_2
-  - NodeHub VLESS-104_3
-  - NodeHub VLESS-104_4
-  - NodeHub 🇺🇸 US-172.111.38.72-0175
+  - NodeHub VLESS-172
+  - NodeHub 🇺🇸 USA
   - NodeHub 🇺🇸 USA_1
-  - NodeHub VLESS-104_5
-  - NodeHub TROJAN-66_1
-  - NodeHub سرور 8
+  - NodeHub TROJAN-66
+  - NodeHub SS-45
+  - NodeHub VLESS-104_2
+  - 'NodeHub Channel :'
+  - NodeHub VLESS-172_1
+  - NodeHub VLESS-172_2
+  - NodeHub Channel
   - NodeHub VLESS-172_3
-  - NodeHub VLESS-104_6
+  - NodeHub VLESS-104_3
+  - NodeHub VLESS-172_4
+  - NodeHub سرور 8
+  - NodeHub VLESS-104_4
+  - NodeHub TROJAN-66_1
+  - NodeHub VLESS-173
+  - NodeHub VLESS-190
+  - NodeHub VLESS-104_5
+  - NodeHub 🇨🇦 CA | | 19FFC9
   - NodeHub سرور 10
-  - NodeHub 🇨🇦 CA | | DB92F1
+  - NodeHub Tel-🤪
+  - NodeHub 🇨🇦 CA | | FB8FD0
+  - NodeHub کانالمون
+  - NodeHub 🇨🇦 CA | | F55EB4
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -286,25 +383,32 @@ proxy-groups:
   tolerance: 50
   proxies: &id001
   - NodeHub VLESS-104
-  - NodeHub VLESS-172
-  - NodeHub VLESS-172_1
-  - NodeHub 🇺🇸 USA
-  - NodeHub 🇺🇸 US-185.230.230.18-0090
-  - NodeHub VLESS-172_2
-  - NodeHub TROJAN-66
   - NodeHub VLESS-104_1
-  - NodeHub VLESS-104_2
-  - NodeHub VLESS-104_3
-  - NodeHub VLESS-104_4
-  - NodeHub 🇺🇸 US-172.111.38.72-0175
+  - NodeHub VLESS-172
+  - NodeHub 🇺🇸 USA
   - NodeHub 🇺🇸 USA_1
-  - NodeHub VLESS-104_5
-  - NodeHub TROJAN-66_1
-  - NodeHub سرور 8
+  - NodeHub TROJAN-66
+  - NodeHub SS-45
+  - NodeHub VLESS-104_2
+  - 'NodeHub Channel :'
+  - NodeHub VLESS-172_1
+  - NodeHub VLESS-172_2
+  - NodeHub Channel
   - NodeHub VLESS-172_3
-  - NodeHub VLESS-104_6
+  - NodeHub VLESS-104_3
+  - NodeHub VLESS-172_4
+  - NodeHub سرور 8
+  - NodeHub VLESS-104_4
+  - NodeHub TROJAN-66_1
+  - NodeHub VLESS-173
+  - NodeHub VLESS-190
+  - NodeHub VLESS-104_5
+  - NodeHub 🇨🇦 CA | | 19FFC9
   - NodeHub سرور 10
-  - NodeHub 🇨🇦 CA | | DB92F1
+  - NodeHub Tel-🤪
+  - NodeHub 🇨🇦 CA | | FB8FD0
+  - NodeHub کانالمون
+  - NodeHub 🇨🇦 CA | | F55EB4
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -314,7 +418,9 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇨🇦 CA | | DB92F1
+  - NodeHub 🇨🇦 CA | | 19FFC9
+  - NodeHub 🇨🇦 CA | | FB8FD0
+  - NodeHub 🇨🇦 CA | | F55EB4
 - name: NodeHub - 🌍 TR
   type: select
   proxies:
@@ -326,8 +432,6 @@ proxy-groups:
   proxies:
   - NodeHub - 🚀 节点选择
   - NodeHub 🇺🇸 USA
-  - NodeHub 🇺🇸 US-185.230.230.18-0090
-  - NodeHub 🇺🇸 US-172.111.38.72-0175
   - NodeHub 🇺🇸 USA_1
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
