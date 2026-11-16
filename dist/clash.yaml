@@ -20,151 +20,97 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub TROJAN-216
+- name: NodeHub Channel
+  type: ss
+  server: 38.145.220.193
+  port: 8443
+  cipher: 2022-blake3-aes-128-gcm
+  password: jUbDNsFamcyDfpm+rI3Zyw==
+- name: NodeHub SS-216
+  type: ss
+  server: 216.105.168.18
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: hCCWOcIsK5wrFz4OX70rWf
+- name: NodeHub TROJAN-66
   type: trojan
-  server: 216.106.186.155
+  server: 66.163.112.171
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: api.findlocaljobnetworkandbuildcommunityconnections.com
+  sni: learn.unlockyourfuturefindyourperfectcareer.com
   skip-cert-verify: false
-- name: NodeHub TROJAN-216_1
+- name: NodeHub TROJAN-66_1
   type: trojan
-  server: 216.106.186.33
-  port: 443
-  password: f0eb8c92ce8946aaba856569cff1a16b
-  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: false
-- name: NodeHub TROJAN-216_2
-  type: trojan
-  server: 216.106.186.66
+  server: 66.163.112.13
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: false
-- name: NodeHub TROJAN-216_3
+  skip-cert-verify: true
+- name: NodeHub TROJAN-66_2
   type: trojan
-  server: 216.106.186.82
+  server: 66.163.112.121
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.findlocaljobnetworkandbuildcommunityconnections.com
+  sni: www.unlockyourfuturefindyourperfectcareer.com
   skip-cert-verify: false
-- name: NodeHub TROJAN-216_4
+- name: NodeHub TROJAN-66_3
   type: trojan
-  server: 216.106.186.46
+  server: 66.163.112.31
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.findlocaljobnetworkandbuildcommunityconnections.com
+  sni: unlockyourfuturefindyourperfectcareer.com
   skip-cert-verify: false
-- name: NodeHub 🇺🇸 %F0%9F%87%BA%F0%9F%87%B8US_10
+- name: NodeHub Channel_1
+  type: trojan
+  server: 66.163.112.142
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.unlockyourfuturefindyourperfectcareer.com
+  skip-cert-verify: false
+- name: NodeHub TROJAN-66_4
+  type: trojan
+  server: 66.163.112.147
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.unlockyourfuturefindyourperfectcareer.com
+  skip-cert-verify: false
+- name: NodeHub 🪅96
+  type: trojan
+  server: 66.163.112.76
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.unlockyourfuturefindyourperfectcareer.com
+  skip-cert-verify: false
+- name: NodeHub SS-95
+  type: ss
+  server: 95.215.201.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NodeHub 🇺🇸 US | | 9B4F83
   type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: NodeHub ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ = ɴᴇᴛ
+  type: vmess
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
   alterId: 0
   cipher: auto
   tls: false
   network: tcp
-- name: NodeHub VLESS-104
-  type: vless
-  server: 104.27.109.16
-  port: 443
-  uuid: 67ab86b7-69fb-41bf-8967-290cbd08f0ac
-  tls: true
-  network: ws
-  sni: jLDmwA9CfRug7b03Cr1vs.paGes.DEV
-  servername: jLDmwA9CfRug7b03Cr1vs.paGes.DEV
-  ws-opts:
-    path: /vl/43gYvFJEPmUtPFSZ?ed=2560
-    headers:
-      Host: jldmwa9cfrug7b03cr1vs.pages.dev
-- name: NodeHub VLESS-104_1
-  type: vless
-  server: 104.24.225.89
-  port: 443
-  uuid: dbbed131-4ae8-4297-a102-438a2e19b0d9
-  tls: true
-  network: ws
-  sni: GhzO7q51sn2b5e2I1670V7dmx.paGES.DEv
-  servername: GhzO7q51sn2b5e2I1670V7dmx.paGES.DEv
-  ws-opts:
-    path: /vl/c5R0DRvdSoEZO90UjW3StIJxLpFWZod?ed=2560
-    headers:
-      Host: ghzo7q51sn2b5e2i1670v7dmx.pages.dev
-- name: NodeHub VLESS-172
-  type: vless
-  server: 172.64.88.98
-  port: 443
-  uuid: afa524de-2b93-4be9-b846-6bc88d8a2ce1
-  tls: true
-  network: ws
-  sni: 1v5Vp5jsQ611A5dsm.PAges.dEV
-  servername: 1v5Vp5jsQ611A5dsm.PAges.dEV
-  ws-opts:
-    path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560
-    headers:
-      Host: 1v5vp5jsq611a5dsm.pages.dev
-- name: NodeHub TROJAN-216_5
-  type: trojan
-  server: 216.106.186.32
-  port: 443
-  password: dba20dcb635e430fa4d3bfc303a149d2
-  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: false
-- name: NodeHub سرور 10
+- name: NodeHub 🇨🇦 CA | | 213182
   type: vmess
-  server: 172.66.0.1
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub [129944]
-  type: vless
-  server: 172.67.131.125
-  port: 2083
-  uuid: f418674e-f518-4318-8ff9-e10000000046
-  tls: true
-  network: ws
-  sni: smart-edge-424.arti98399-1905.workers.dev
-  servername: smart-edge-424.arti98399-1905.workers.dev
-  ws-opts:
-    path: /sync
-    headers:
-      Host: smart-edge-424.arti98399-1905.workers.dev
-- name: NodeHub 🇺🇸 US | | D446C3
-  type: vmess
-  server: 188.114.99.137
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub سرور 8
-  type: vmess
-  server: 104.27.0.1
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub RELAY-172.67.167.78-1230
-  type: vmess
-  server: 172.67.167.78
+  server: 188.114.96.3
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -175,71 +121,43 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: NodeHub VLESS-104_2
-  type: vless
-  server: 104.17.3.81
+- name: NodeHub ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ = ɴᴇᴛ_1
+  type: vmess
+  server: 104.21.7.133
   port: 80
-  uuid: fdd8f4d0-4500-11ef-8227-1577c1651679
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   tls: false
   network: ws
-  sni: sg-vless-ws.bypass.id
-  servername: sg-vless-ws.bypass.id
   ws-opts:
-    path: /worryfree
+    path: /ws
     headers:
-      Host: sg-vless-ws.bypass.id
-- name: NodeHub VLESS-170
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub VLESS-172
   type: vless
-  server: 170.114.46.6
-  port: 2096
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
-  tls: true
+  server: 172.64.229.129
+  port: 2052
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  tls: false
   network: ws
-  sni: pcloud.z-tas.com
-  servername: pcloud.z-tas.com
   ws-opts:
-    path: /
+    path: /rain1226
     headers:
-      Host: pcloud.z-tas.com
-- name: NodeHub VLESS-170_1
-  type: vless
-  server: 170.114.45.6
-  port: 2096
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
-  tls: true
-  network: ws
-  sni: pcloud.z-tas.com
-  servername: pcloud.z-tas.com
-  ws-opts:
-    path: /
-    headers:
-      Host: pcloud.z-tas.com
-- name: NodeHub Anycast-IP | | [BL]
+      Host: eu02.123450908.xyz
+- name: NodeHub کانالمون
   type: vmess
-  server: 172.64.80.1
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  server: 172.64.229.21
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /ws?ed=2048
     headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub VLESS-104_3
-  type: vless
-  server: 104.18.151.231
-  port: 2053
-  uuid: eaf76557-2219-4799-8171-d7020adfefd0
-  tls: true
-  network: ws
-  sni: twilight-frost-15b0.yigom67484.workers.dev
-  servername: twilight-frost-15b0.yigom67484.workers.dev
-  ws-opts:
-    path: /ws
-    headers:
-      Host: twilight-frost-15b0.yigom67484.workers.dev
+      Host: vmess.lbw666.dpdns.org
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -247,73 +165,68 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub TROJAN-216
-  - NodeHub TROJAN-216_1
-  - NodeHub TROJAN-216_2
-  - NodeHub TROJAN-216_3
-  - NodeHub TROJAN-216_4
-  - NodeHub 🇺🇸 %F0%9F%87%BA%F0%9F%87%B8US_10
-  - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
+  - NodeHub Channel
+  - NodeHub SS-216
+  - NodeHub TROJAN-66
+  - NodeHub TROJAN-66_1
+  - NodeHub TROJAN-66_2
+  - NodeHub TROJAN-66_3
+  - NodeHub Channel_1
+  - NodeHub TROJAN-66_4
+  - NodeHub 🪅96
+  - NodeHub SS-95
+  - NodeHub 🇺🇸 US | | 9B4F83
+  - NodeHub ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ = ɴᴇᴛ
+  - NodeHub 🇨🇦 CA | | 213182
+  - NodeHub ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ = ɴᴇᴛ_1
   - NodeHub VLESS-172
-  - NodeHub TROJAN-216_5
-  - NodeHub سرور 10
-  - NodeHub [129944]
-  - NodeHub 🇺🇸 US | | D446C3
-  - NodeHub سرور 8
-  - NodeHub RELAY-172.67.167.78-1230
-  - NodeHub VLESS-104_2
-  - NodeHub VLESS-170
-  - NodeHub VLESS-170_1
-  - NodeHub Anycast-IP | | [BL]
-  - NodeHub VLESS-104_3
+  - NodeHub کانالمون
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub TROJAN-216
-  - NodeHub TROJAN-216_1
-  - NodeHub TROJAN-216_2
-  - NodeHub TROJAN-216_3
-  - NodeHub TROJAN-216_4
-  - NodeHub 🇺🇸 %F0%9F%87%BA%F0%9F%87%B8US_10
-  - NodeHub VLESS-104
-  - NodeHub VLESS-104_1
+  - NodeHub Channel
+  - NodeHub SS-216
+  - NodeHub TROJAN-66
+  - NodeHub TROJAN-66_1
+  - NodeHub TROJAN-66_2
+  - NodeHub TROJAN-66_3
+  - NodeHub Channel_1
+  - NodeHub TROJAN-66_4
+  - NodeHub 🪅96
+  - NodeHub SS-95
+  - NodeHub 🇺🇸 US | | 9B4F83
+  - NodeHub ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ = ɴᴇᴛ
+  - NodeHub 🇨🇦 CA | | 213182
+  - NodeHub ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ = ɴᴇᴛ_1
   - NodeHub VLESS-172
-  - NodeHub TROJAN-216_5
-  - NodeHub سرور 10
-  - NodeHub [129944]
-  - NodeHub 🇺🇸 US | | D446C3
-  - NodeHub سرور 8
-  - NodeHub RELAY-172.67.167.78-1230
-  - NodeHub VLESS-104_2
-  - NodeHub VLESS-170
-  - NodeHub VLESS-170_1
-  - NodeHub Anycast-IP | | [BL]
-  - NodeHub VLESS-104_3
+  - NodeHub کانالمون
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
+- name: NodeHub - 🌍 CA
+  type: select
+  proxies:
+  - NodeHub - 🚀 节点选择
+  - NodeHub 🇨🇦 CA | | 213182
 - name: NodeHub - 🌍 TR
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub TROJAN-216
-  - NodeHub TROJAN-216_1
-  - NodeHub TROJAN-216_2
-  - NodeHub TROJAN-216_3
-  - NodeHub TROJAN-216_4
-  - NodeHub TROJAN-216_5
+  - NodeHub TROJAN-66
+  - NodeHub TROJAN-66_1
+  - NodeHub TROJAN-66_2
+  - NodeHub TROJAN-66_3
+  - NodeHub TROJAN-66_4
 - name: NodeHub - 🌍 US
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇺🇸 %F0%9F%87%BA%F0%9F%87%B8US_10
-  - NodeHub 🇺🇸 US | | D446C3
+  - NodeHub 🇺🇸 US | | 9B4F83
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
