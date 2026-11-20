@@ -20,33 +20,6 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub SS-172
-  type: ss
-  server: 172.111.38.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NodeHub SS-45
-  type: ss
-  server: 45.86.51.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NodeHub SS-185
-  type: ss
-  server: 185.230.230.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NodeHub VMESS-67
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: tcp
 - name: NodeHub VLESS-129
   type: vless
   server: 129.153.128.162
@@ -58,36 +31,9 @@ proxies:
     path: /ws
     headers:
       Host: firsty.app
-- name: NodeHub TROJAN-66
-  type: trojan
-  server: 66.163.122.30
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.searchnationwidecareerchangehelperandguidancetoday.com
-  skip-cert-verify: false
-- name: NodeHub 🇨🇦 CA | | 7C97A1
+- name: NodeHub سرور 8
   type: vmess
-  server: 104.21.7.133
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub TROJAN-66_1
-  type: trojan
-  server: 66.163.122.25
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.searchnationwidecareerchangehelperandguidancetoday.com
-  skip-cert-verify: false
-- name: NodeHub 🇨🇦 CA | | E8D081
-  type: vmess
-  server: 172.66.203.67
+  server: 104.27.0.1
   port: 443
   uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
@@ -98,48 +44,28 @@ proxies:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub 219061 | = t.me/SOSkeyNET
+- name: NodeHub SS-40
+  type: ss
+  server: 40.160.86.43
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: NodeHub سرور 10
   type: vmess
-  server: 104.24.0.1
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub 🇨🇦 CA | | D6B883
-  type: vmess
-  server: 104.18.0.1
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub VMESS-188
-  type: vmess
-  server: 188.114.97.6
-  port: 80
+  server: 172.66.0.1
+  port: 443
   uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
-  tls: false
+  tls: true
   network: ws
   ws-opts:
-    path: /ws?ed
+    path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub 🇨🇦 CA | | F55EB4
+- name: 'NodeHub Join+:'
   type: vmess
-  server: 172.64.155.209
+  server: 172.67.167.78
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -163,9 +89,9 @@ proxies:
     path: /ws?ed=2048
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub 🇨🇦 CA | | D39A6C
+- name: NodeHub RELAY-172.64.155.209-1134
   type: vmess
-  server: 172.66.0.1
+  server: 172.64.155.209
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -189,32 +115,6 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: 'NodeHub Join+:'
-  type: vmess
-  server: 172.67.167.78
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub 🇮🇳 IRAN_V2PING@_1
-  type: vmess
-  server: 104.21.91.53
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
 - name: NodeHub VLESS-198
   type: vless
   server: 198.202.24.142
@@ -228,19 +128,45 @@ proxies:
     path: /
     headers:
       Host: vipfree.dr-ping.ir
-- name: NodeHub 🇨🇦 CA | | D63061
-  type: vmess
-  server: 104.17.0.1
+- name: NodeHub VLESS-172
+  type: vless
+  server: 172.67.67.89
   port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
   tls: true
   network: ws
+  sni: vipfree.dr-ping.ir
+  servername: vipfree.dr-ping.ir
   ws-opts:
-    path: /or3
+    path: /
     headers:
-      Host: or3.sfacg.uk
+      Host: vipfree.dr-ping.ir
+- name: NodeHub VLESS-104
+  type: vless
+  server: 104.19.164.155
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  network: ws
+  sni: jp3.yohototo.top
+  servername: jp3.yohototo.top
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: NodeHub VLESS-92
+  type: vless
+  server: 92.223.84.254
+  port: 443
+  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
+  tls: true
+  network: ws
+  sni: subgift.gcorecdn.com
+  servername: subgift.gcorecdn.com
+  ws-opts:
+    path: /t.me-SubGift
+    headers:
+      Host: subgift.gcorecdn.com
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -248,79 +174,57 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub SS-172
-  - NodeHub SS-45
-  - NodeHub SS-185
-  - NodeHub VMESS-67
   - NodeHub VLESS-129
-  - NodeHub TROJAN-66
-  - NodeHub 🇨🇦 CA | | 7C97A1
-  - NodeHub TROJAN-66_1
-  - NodeHub 🇨🇦 CA | | E8D081
-  - NodeHub 219061 | = t.me/SOSkeyNET
-  - NodeHub 🇨🇦 CA | | D6B883
-  - NodeHub VMESS-188
-  - NodeHub 🇨🇦 CA | | F55EB4
-  - NodeHub کانالمون
-  - NodeHub 🇨🇦 CA | | D39A6C
-  - NodeHub 🇮🇳 IRAN_V2PING@
+  - NodeHub سرور 8
+  - NodeHub SS-40
+  - NodeHub سرور 10
   - 'NodeHub Join+:'
-  - NodeHub 🇮🇳 IRAN_V2PING@_1
+  - NodeHub کانالمون
+  - NodeHub RELAY-172.64.155.209-1134
+  - NodeHub 🇮🇳 IRAN_V2PING@
   - NodeHub VLESS-198
-  - NodeHub 🇨🇦 CA | | D63061
+  - NodeHub VLESS-172
+  - NodeHub VLESS-104
+  - NodeHub VLESS-92
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub SS-172
-  - NodeHub SS-45
-  - NodeHub SS-185
-  - NodeHub VMESS-67
   - NodeHub VLESS-129
-  - NodeHub TROJAN-66
-  - NodeHub 🇨🇦 CA | | 7C97A1
-  - NodeHub TROJAN-66_1
-  - NodeHub 🇨🇦 CA | | E8D081
-  - NodeHub 219061 | = t.me/SOSkeyNET
-  - NodeHub 🇨🇦 CA | | D6B883
-  - NodeHub VMESS-188
-  - NodeHub 🇨🇦 CA | | F55EB4
-  - NodeHub کانالمون
-  - NodeHub 🇨🇦 CA | | D39A6C
-  - NodeHub 🇮🇳 IRAN_V2PING@
+  - NodeHub سرور 8
+  - NodeHub SS-40
+  - NodeHub سرور 10
   - 'NodeHub Join+:'
-  - NodeHub 🇮🇳 IRAN_V2PING@_1
+  - NodeHub کانالمون
+  - NodeHub RELAY-172.64.155.209-1134
+  - NodeHub 🇮🇳 IRAN_V2PING@
   - NodeHub VLESS-198
-  - NodeHub 🇨🇦 CA | | D63061
+  - NodeHub VLESS-172
+  - NodeHub VLESS-104
+  - NodeHub VLESS-92
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: NodeHub - 🌍 CA
+- name: NodeHub - 🐌 低速节点
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇨🇦 CA | | 7C97A1
-  - NodeHub 🇨🇦 CA | | E8D081
-  - NodeHub 🇨🇦 CA | | D6B883
-  - NodeHub 🇨🇦 CA | | F55EB4
-  - NodeHub 🇨🇦 CA | | D39A6C
-  - NodeHub 🇨🇦 CA | | D63061
-- name: NodeHub - 🌍 IN
-  type: select
-  proxies:
-  - NodeHub - 🚀 节点选择
+  - NodeHub VLESS-129
+  - NodeHub سرور 8
+  - NodeHub SS-40
+  - NodeHub سرور 10
+  - 'NodeHub Join+:'
+  - NodeHub کانالمون
+  - NodeHub RELAY-172.64.155.209-1134
   - NodeHub 🇮🇳 IRAN_V2PING@
-  - NodeHub 🇮🇳 IRAN_V2PING@_1
-- name: NodeHub - 🌍 TR
-  type: select
-  proxies:
-  - NodeHub - 🚀 节点选择
-  - NodeHub TROJAN-66
-  - NodeHub TROJAN-66_1
+  - NodeHub VLESS-198
+  - NodeHub VLESS-172
+  - NodeHub VLESS-104
+  - NodeHub VLESS-92
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
