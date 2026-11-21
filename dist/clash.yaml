@@ -20,85 +20,7 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub []t.me/ConfigsHub
-  type: vless
-  server: 172.64.154.113
-  port: 8443
-  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
-  tls: true
-  network: ws
-  sni: freeceshi6.frii.site
-  servername: freeceshi6.frii.site
-  ws-opts:
-    path: /proxyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: freeceshi6.frii.site
-- name: NodeHub 🇨🇦 CA | | 129EB6
-  type: vmess
-  server: 104.21.7.133
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub 🇺🇸 US
-  type: vmess
-  server: 172.66.0.1
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub 221306 | = t.me/SOSkeyNET
-  type: vmess
-  server: 104.21.7.133
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub VMESS-104
-  type: vmess
-  server: 104.27.0.1
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub 🇺🇸 US | | 0FC585
-  type: vmess
-  server: 188.114.99.137
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub 🇨🇦 CA | | B4617E
+- name: NodeHub 🇨🇦 CA | | 19FFC9
   type: vmess
   server: 104.17.136.198
   port: 443
@@ -111,61 +33,9 @@ proxies:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub VMESS-104_1
+- name: NodeHub 🇨🇦 CA | | 0AD519
   type: vmess
-  server: 104.17.0.1
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
-- name: NodeHub 221324 | = t.me/SOSkeyNET
-  type: vmess
-  server: 104.21.91.53
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /lMnsZUN4/
-    headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub VMESS-188
-  type: vmess
-  server: 188.114.99.137
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
-- name: NodeHub 🇨🇦 CA | | 3B5FAF
-  type: vmess
-  server: 104.16.0.1
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
-- name: NodeHub 🇨🇦 CA | | F65B9D
-  type: vmess
-  server: 104.17.147.222
+  server: 172.67.187.145
   port: 80
   uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
@@ -173,7 +43,59 @@ proxies:
   tls: false
   network: ws
   ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub سرور 8
+  type: vmess
+  server: 104.27.0.1
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
     path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub 🇨🇦 CA | | 193A27
+  type: vmess
+  server: 172.67.152.183
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub سرور 10
+  type: vmess
+  server: 172.66.0.1
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub کانالمون
+  type: vmess
+  server: 172.64.229.21
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
     headers:
       Host: vmess.lbw666.dpdns.org
 - name: 'NodeHub Join+:'
@@ -189,9 +111,9 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: NodeHub 221381 | = t.me/LonUp_M
+- name: NodeHub 🇨🇦 CA | | 3B5FAF
   type: vmess
-  server: 162.159.130.234
+  server: 104.16.0.1
   port: 2083
   uuid: ac251237-576f-40c8-a543-554960c958b1
   alterId: 0
@@ -202,84 +124,6 @@ proxies:
     path: /or3
     headers:
       Host: or3.sfacg.uk
-- name: NodeHub 221404 | = t.me/SOSkeyNET
-  type: vmess
-  server: 104.21.0.1
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
-- name: NodeHub VLESS-172
-  type: vless
-  server: 172.64.190.13
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: NodeHub VMESS-188_1
-  type: vmess
-  server: 188.114.97.6
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: false
-  network: ws
-  ws-opts:
-    path: /ws?ed
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub VLESS-172_1
-  type: vless
-  server: 172.67.67.89
-  port: 2083
-  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
-  tls: true
-  network: ws
-  sni: vipfree.dr-ping.ir
-  servername: vipfree.dr-ping.ir
-  ws-opts:
-    path: /
-    headers:
-      Host: vipfree.dr-ping.ir
-- name: NodeHub ᴛᴇʟᴇɢʀᴀᴍ
-  type: vless
-  server: 104.16.10.104
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  network: ws
-  sni: jp3.yohototo.top
-  servername: jp3.yohototo.top
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: NodeHub kurdconfig
-  type: vless
-  server: 104.18.63.135
-  port: 2083
-  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
-  tls: true
-  network: ws
-  sni: vipfree.dr-ping.ir
-  servername: vipfree.dr-ping.ir
-  ws-opts:
-    path: /
-    headers:
-      Host: vipfree.dr-ping.ir
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -287,71 +131,45 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub []t.me/ConfigsHub
-  - NodeHub 🇨🇦 CA | | 129EB6
-  - NodeHub 🇺🇸 US
-  - NodeHub 221306 | = t.me/SOSkeyNET
-  - NodeHub VMESS-104
-  - NodeHub 🇺🇸 US | | 0FC585
-  - NodeHub 🇨🇦 CA | | B4617E
-  - NodeHub VMESS-104_1
-  - NodeHub 221324 | = t.me/SOSkeyNET
-  - NodeHub VMESS-188
-  - NodeHub 🇨🇦 CA | | 3B5FAF
-  - NodeHub 🇨🇦 CA | | F65B9D
+  - NodeHub 🇨🇦 CA | | 19FFC9
+  - NodeHub 🇨🇦 CA | | 0AD519
+  - NodeHub سرور 8
+  - NodeHub 🇨🇦 CA | | 193A27
+  - NodeHub سرور 10
+  - NodeHub کانالمون
   - 'NodeHub Join+:'
-  - NodeHub 221381 | = t.me/LonUp_M
-  - NodeHub 221404 | = t.me/SOSkeyNET
-  - NodeHub VLESS-172
-  - NodeHub VMESS-188_1
-  - NodeHub VLESS-172_1
-  - NodeHub ᴛᴇʟᴇɢʀᴀᴍ
-  - NodeHub kurdconfig
+  - NodeHub 🇨🇦 CA | | 3B5FAF
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub []t.me/ConfigsHub
-  - NodeHub 🇨🇦 CA | | 129EB6
-  - NodeHub 🇺🇸 US
-  - NodeHub 221306 | = t.me/SOSkeyNET
-  - NodeHub VMESS-104
-  - NodeHub 🇺🇸 US | | 0FC585
-  - NodeHub 🇨🇦 CA | | B4617E
-  - NodeHub VMESS-104_1
-  - NodeHub 221324 | = t.me/SOSkeyNET
-  - NodeHub VMESS-188
-  - NodeHub 🇨🇦 CA | | 3B5FAF
-  - NodeHub 🇨🇦 CA | | F65B9D
+  - NodeHub 🇨🇦 CA | | 19FFC9
+  - NodeHub 🇨🇦 CA | | 0AD519
+  - NodeHub سرور 8
+  - NodeHub 🇨🇦 CA | | 193A27
+  - NodeHub سرور 10
+  - NodeHub کانالمون
   - 'NodeHub Join+:'
-  - NodeHub 221381 | = t.me/LonUp_M
-  - NodeHub 221404 | = t.me/SOSkeyNET
-  - NodeHub VLESS-172
-  - NodeHub VMESS-188_1
-  - NodeHub VLESS-172_1
-  - NodeHub ᴛᴇʟᴇɢʀᴀᴍ
-  - NodeHub kurdconfig
+  - NodeHub 🇨🇦 CA | | 3B5FAF
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies: *id001
-- name: NodeHub - 🌍 CA
+- name: NodeHub - 🐌 低速节点
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇨🇦 CA | | 129EB6
-  - NodeHub 🇨🇦 CA | | B4617E
+  - NodeHub 🇨🇦 CA | | 19FFC9
+  - NodeHub 🇨🇦 CA | | 0AD519
+  - NodeHub سرور 8
+  - NodeHub 🇨🇦 CA | | 193A27
+  - NodeHub سرور 10
+  - NodeHub کانالمون
+  - 'NodeHub Join+:'
   - NodeHub 🇨🇦 CA | | 3B5FAF
-  - NodeHub 🇨🇦 CA | | F65B9D
-- name: NodeHub - 🌍 US
-  type: select
-  proxies:
-  - NodeHub - 🚀 节点选择
-  - NodeHub 🇺🇸 US
-  - NodeHub 🇺🇸 US | | 0FC585
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
