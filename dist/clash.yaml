@@ -20,87 +20,111 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub VLESS-8
-  type: vless
-  server: 8.6.112.0
+- name: NodeHub TROJAN-167
+  type: trojan
+  server: 167.88.61.198
   port: 443
-  uuid: 369686d3-3758-42e6-af32-36fcc2f425dc
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: false
+- name: NodeHub TROJAN-167_1
+  type: trojan
+  server: 167.88.61.175
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: false
+- name: NodeHub TROJAN-167_2
+  type: trojan
+  server: 167.88.61.20
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: false
+- name: NodeHub TROJAN-167_3
+  type: trojan
+  server: 167.88.61.193
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: false
+- name: NodeHub VLESS-162
+  type: vless
+  server: 162.159.130.234
+  port: 2083
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
   tls: true
   network: ws
-  sni: worker3.laneje8316.workers.dev
-  servername: worker3.laneje8316.workers.dev
+  sni: vp14.1145678.xyz
+  servername: vp14.1145678.xyz
+  ws-opts:
+    path: /community/redirect.html
+    headers:
+      Host: vp14.1145678.xyz
+- name: NodeHub VLESS-104
+  type: vless
+  server: 104.27.204.44
+  port: 443
+  uuid: 386d67dc-bf88-49fd-a570-301cbb013a33
+  tls: true
+  network: ws
+  sni: 9t94rOaC1ew8n93SdrQ.pAgeS.DEV
+  servername: 9t94rOaC1ew8n93SdrQ.pAgeS.DEV
+  ws-opts:
+    path: /vl/x1qQUZWxHs5IRVeRUjz7AteYS?ed=2560
+    headers:
+      Host: 9t94roac1ew8n93sdrq.pages.dev
+- name: NodeHub VLESS-104_1
+  type: vless
+  server: 104.21.227.134
+  port: 80
+  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
+  tls: false
+  network: ws
+  ws-opts:
+    path: /V2ray_confiig
+    headers:
+      Host: elenaaaaaaaaaa.cloudns.pro
+- name: NodeHub VLESS-104_2
+  type: vless
+  server: 104.21.93.170
+  port: 443
+  uuid: 5c9e3f77-5bde-4732-af3c-6a5d3ecee37a
+  tls: true
+  network: ws
+  sni: worker3.wewotes286.workers.dev
+  servername: worker3.wewotes286.workers.dev
   ws-opts:
     path: /
     headers:
-      Host: worker3.laneje8316.workers.dev
-- name: NodeHub TROJAN-66
-  type: trojan
-  server: 66.163.122.25
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.searchnationwidecareerchangehelperandguidancetoday.com
-  skip-cert-verify: false
-- name: NodeHub TROJAN-66_1
-  type: trojan
-  server: 66.163.122.26
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.searchnationwidecareerchangehelperandguidancetoday.com
-  skip-cert-verify: false
-- name: NodeHub SS-45
-  type: ss
-  server: 45.86.51.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NodeHub VLESS-154
+      Host: worker3.wewotes286.workers.dev
+- name: NodeHub VLESS-104_3
   type: vless
-  server: 154.197.64.252
+  server: 104.27.109.16
   port: 443
-  uuid: 20b436fc-2c54-4248-b70d-14b8d6916d41
+  uuid: 67ab86b7-69fb-41bf-8967-290cbd08f0ac
   tls: true
   network: ws
-  sni: worker3.harijo3330.workers.dev
-  servername: worker3.harijo3330.workers.dev
+  sni: jLDmwA9CfRug7b03Cr1vs.paGes.DEV
+  servername: jLDmwA9CfRug7b03Cr1vs.paGes.DEV
   ws-opts:
-    path: /HGCmKaXbRNqpZqMv
+    path: /vl/43gYvFJEPmUtPFSZ?ed=2560
     headers:
-      Host: worker3.harijo3330.workers.dev
-- name: NodeHub SS-172
-  type: ss
-  server: 172.111.38.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: NodeHub VLESS-185
+      Host: jldmwa9cfrug7b03cr1vs.pages.dev
+- name: NodeHub VLESS-104_4
   type: vless
-  server: 185.18.250.2
-  port: 443
-  uuid: 10997f19-2951-4a9b-a26f-611a6bd72d02
-  tls: true
+  server: 104.19.173.68
+  port: 8080
+  uuid: 2500e602-671c-4654-a602-c518b7282167
+  tls: false
   network: ws
-  sni: worker3.sicoro1729.workers.dev
-  servername: worker3.sicoro1729.workers.dev
   ws-opts:
     path: /
     headers:
-      Host: worker3.sicoro1729.workers.dev
-- name: NodeHub 🇨🇦 CA | | 193A27
+      Host: 2639w-throbbing-band-3840.xphnn6jp.workers.dev
+- name: NodeHub 🇺🇸 US | | D446C3
   type: vmess
-  server: 172.67.152.183
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub سرور 8
-  type: vmess
-  server: 104.27.0.1
+  server: 188.114.99.137
   port: 443
   uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
@@ -111,18 +135,35 @@ proxies:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: 'NodeHub Channel :'
+- name: NodeHub VLESS-104_5
+  type: vless
+  server: 104.24.225.89
+  port: 443
+  uuid: dbbed131-4ae8-4297-a102-438a2e19b0d9
+  tls: true
+  network: ws
+  sni: GhzO7q51sn2b5e2I1670V7dmx.paGES.DEv
+  servername: GhzO7q51sn2b5e2I1670V7dmx.paGES.DEv
+  ws-opts:
+    path: /vl/c5R0DRvdSoEZO90UjW3StIJxLpFWZod?ed=2560fp=chrome
+    headers:
+      Host: ghzo7q51sn2b5e2i1670v7dmx.pages.dev
+- name: NodeHub 🇨🇦 CA | | 7C97A1
   type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 104.21.7.133
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
   tls: false
-  network: tcp
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
 - name: NodeHub Channel
   type: vless
-  server: 172.67.139.189
+  server: 104.21.94.203
   port: 443
   uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
   tls: true
@@ -133,9 +174,9 @@ proxies:
     path: /700gvl
     headers:
       Host: fr-free.fastestrelay.com
-- name: NodeHub Channel_1
+- name: NodeHub VLESS-172
   type: vless
-  server: 104.21.94.203
+  server: 172.67.139.189
   port: 443
   uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
   tls: true
@@ -159,9 +200,9 @@ proxies:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub RELAY-104.24.0.1-1119
+- name: NodeHub 🇺🇸 US | | AC3ED6
   type: vmess
-  server: 104.24.0.1
+  server: 188.114.99.137
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -172,46 +213,9 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: NodeHub VLESS-104
-  type: vless
-  server: 104.17.70.206
-  port: 8443
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  tls: true
-  network: ws
-  sni: free.sahanwickramasinghe.com
-  servername: free.sahanwickramasinghe.com
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-- name: NodeHub VLESS-170
-  type: vless
-  server: 170.114.45.6
-  port: 80
-  uuid: 9ce32242-557a-4d18-864d-c9c385b3dfa4
-  tls: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: matrix.learnpodedu.com
-- name: NodeHub کانالمون
+- name: NodeHub 🇨🇦 CA | | C7986A
   type: vmess
-  server: 172.64.229.21
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub [OpenRay] XX-1940
-  type: vmess
-  server: 172.66.0.1
+  server: 104.21.57.84
   port: 8443
   uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
@@ -222,7 +226,33 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: NodeHub RELAY-188.114.99.137-1224
+- name: NodeHub 🇨🇦 CA | | 5D7454
+  type: vmess
+  server: 172.67.167.78
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: NodeHub 🇨🇦 CA | | 213182
+  type: vmess
+  server: 188.114.96.3
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: NodeHub RELAY-188.114.99.137-1184
   type: vmess
   server: 188.114.99.137
   port: 2083
@@ -235,19 +265,32 @@ proxies:
     path: /or3
     headers:
       Host: or3.sfacg.uk
-- name: NodeHub 🇨🇦 CA | | D6B883
+- name: NodeHub 🇨🇦 CA | | 1377C3
   type: vmess
-  server: 104.18.0.1
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  server: 162.159.135.234
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
   alterId: 0
   cipher: auto
   tls: true
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /or3
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: or3.sfacg.uk
+- name: NodeHub 🇨🇦 CA | | 4834D9
+  type: vmess
+  server: 104.21.0.1
+  port: 2083
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -255,52 +298,58 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub VLESS-8
-  - NodeHub TROJAN-66
-  - NodeHub TROJAN-66_1
-  - NodeHub SS-45
-  - NodeHub VLESS-154
-  - NodeHub SS-172
-  - NodeHub VLESS-185
-  - NodeHub 🇨🇦 CA | | 193A27
-  - NodeHub سرور 8
-  - 'NodeHub Channel :'
-  - NodeHub Channel
-  - NodeHub Channel_1
-  - NodeHub سرور 10
-  - NodeHub RELAY-104.24.0.1-1119
+  - NodeHub TROJAN-167
+  - NodeHub TROJAN-167_1
+  - NodeHub TROJAN-167_2
+  - NodeHub TROJAN-167_3
+  - NodeHub VLESS-162
   - NodeHub VLESS-104
-  - NodeHub VLESS-170
-  - NodeHub کانالمون
-  - NodeHub [OpenRay] XX-1940
-  - NodeHub RELAY-188.114.99.137-1224
-  - NodeHub 🇨🇦 CA | | D6B883
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-104_2
+  - NodeHub VLESS-104_3
+  - NodeHub VLESS-104_4
+  - NodeHub 🇺🇸 US | | D446C3
+  - NodeHub VLESS-104_5
+  - NodeHub 🇨🇦 CA | | 7C97A1
+  - NodeHub Channel
+  - NodeHub VLESS-172
+  - NodeHub سرور 10
+  - NodeHub 🇺🇸 US | | AC3ED6
+  - NodeHub 🇨🇦 CA | | C7986A
+  - NodeHub 🇨🇦 CA | | 5D7454
+  - NodeHub 🇨🇦 CA | | 213182
+  - NodeHub RELAY-188.114.99.137-1184
+  - NodeHub 🇨🇦 CA | | 1377C3
+  - NodeHub 🇨🇦 CA | | 4834D9
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub VLESS-8
-  - NodeHub TROJAN-66
-  - NodeHub TROJAN-66_1
-  - NodeHub SS-45
-  - NodeHub VLESS-154
-  - NodeHub SS-172
-  - NodeHub VLESS-185
-  - NodeHub 🇨🇦 CA | | 193A27
-  - NodeHub سرور 8
-  - 'NodeHub Channel :'
-  - NodeHub Channel
-  - NodeHub Channel_1
-  - NodeHub سرور 10
-  - NodeHub RELAY-104.24.0.1-1119
+  - NodeHub TROJAN-167
+  - NodeHub TROJAN-167_1
+  - NodeHub TROJAN-167_2
+  - NodeHub TROJAN-167_3
+  - NodeHub VLESS-162
   - NodeHub VLESS-104
-  - NodeHub VLESS-170
-  - NodeHub کانالمون
-  - NodeHub [OpenRay] XX-1940
-  - NodeHub RELAY-188.114.99.137-1224
-  - NodeHub 🇨🇦 CA | | D6B883
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-104_2
+  - NodeHub VLESS-104_3
+  - NodeHub VLESS-104_4
+  - NodeHub 🇺🇸 US | | D446C3
+  - NodeHub VLESS-104_5
+  - NodeHub 🇨🇦 CA | | 7C97A1
+  - NodeHub Channel
+  - NodeHub VLESS-172
+  - NodeHub سرور 10
+  - NodeHub 🇺🇸 US | | AC3ED6
+  - NodeHub 🇨🇦 CA | | C7986A
+  - NodeHub 🇨🇦 CA | | 5D7454
+  - NodeHub 🇨🇦 CA | | 213182
+  - NodeHub RELAY-188.114.99.137-1184
+  - NodeHub 🇨🇦 CA | | 1377C3
+  - NodeHub 🇨🇦 CA | | 4834D9
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -310,14 +359,26 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇨🇦 CA | | 193A27
-  - NodeHub 🇨🇦 CA | | D6B883
+  - NodeHub 🇨🇦 CA | | 7C97A1
+  - NodeHub 🇨🇦 CA | | C7986A
+  - NodeHub 🇨🇦 CA | | 5D7454
+  - NodeHub 🇨🇦 CA | | 213182
+  - NodeHub 🇨🇦 CA | | 1377C3
+  - NodeHub 🇨🇦 CA | | 4834D9
 - name: NodeHub - 🌍 TR
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub TROJAN-66
-  - NodeHub TROJAN-66_1
+  - NodeHub TROJAN-167
+  - NodeHub TROJAN-167_1
+  - NodeHub TROJAN-167_2
+  - NodeHub TROJAN-167_3
+- name: NodeHub - 🌍 US
+  type: select
+  proxies:
+  - NodeHub - 🚀 节点选择
+  - NodeHub 🇺🇸 US | | D446C3
+  - NodeHub 🇺🇸 US | | AC3ED6
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
