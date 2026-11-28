@@ -20,46 +20,141 @@ dns:
   - https://1.1.1.1/dns-query
   - https://8.8.8.8/dns-query
 proxies:
-- name: NodeHub 231578 | = t.me/SOSkeyNET
+- name: 'NodeHub Join+:'
   type: vmess
-  server: 172.67.152.183
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
   network: ws
   ws-opts:
-    path: /ws?ed=2048
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub 🇨🇦 CA | | 3353B7
-  type: vmess
-  server: 172.66.203.67
+    path: /cctv13.m3u8
+- name: NodeHub 🇺🇸 US_29
+  type: vless
+  server: 162.159.254.201
   port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  tls: true
+  network: ws
+  sni: freeceshi6.frii.site
+  servername: freeceshi6.frii.site
+  ws-opts:
+    path: /?TELEGRAM---MARAMBASHI---MARAMBASHI---MARAMBASHI---MARAMBASHI
+    headers:
+      Host: freeceshi6.frii.site
+- name: NodeHub VLESS-188
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  tls: true
+  network: ws
+  sni: freeceshi6.frii.site
+  servername: freeceshi6.frii.site
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: freeceshi6.frii.site
+- name: NodeHub VLESS-188_1
+  type: vless
+  server: 188.114.96.9
+  port: 443
+  uuid: 2e305ebe-f6e6-4689-b32f-cd04ab5ff541
+  tls: true
+  network: ws
+  sni: IdB8ONMVbntuYT5t7t6cEJfw8vLrb.paGEs.DeV
+  servername: IdB8ONMVbntuYT5t7t6cEJfw8vLrb.paGEs.DeV
+  ws-opts:
+    path: /vl/9yvcoLdzdOXLUYfH7r5gwJhu1CHrj
+    headers:
+      Host: idb8onmvbntuyt5t7t6cejfw8vlrb.pages.dev
+- name: NodeHub VLESS-104
+  type: vless
+  server: 104.19.173.68
+  port: 8080
+  uuid: 2500e602-671c-4654-a602-c518b7282167
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 2639w-throbbing-band-3840.xphnn6jp.workers.dev
+- name: NodeHub [132144]
+  type: vless
+  server: 104.26.4.57
+  port: 2087
+  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
+  tls: true
+  network: ws
+  sni: c7dabe95.proxy-978.pages.dev
+  servername: c7dabe95.proxy-978.pages.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: c7dabe95.proxy-978.pages.dev
+- name: NodeHub SS-95
+  type: ss
+  server: 95.215.201.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: NodeHub SS-216
+  type: ss
+  server: 216.105.168.18
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: bQZl7HDxSabr1FurTYQHFU
+- name: NodeHub 🇺🇸 US | | 8C331C
+  type: vmess
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
   alterId: 0
   cipher: auto
+  tls: false
+  network: tcp
+- name: NodeHub VLESS-185
+  type: vless
+  server: 185.18.250.2
+  port: 443
+  uuid: 167d7768-2f0a-4f9d-86e0-81514362c189
   tls: true
   network: ws
+  sni: worker3.biwir20896.workers.dev
+  servername: worker3.biwir20896.workers.dev
   ws-opts:
-    path: /ws?ed=2048
+    path: /LF5LdoZelHLG07nl
     headers:
-      Host: vmess.lbw666.dpdns.org
-- name: NodeHub 231547 | = t.me/SOSkeyNET
-  type: vmess
-  server: 104.18.0.1
+      Host: worker3.biwir20896.workers.dev
+- name: NodeHub VLESS-104_1
+  type: vless
+  server: 104.18.220.84
   port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+  uuid: 0d46fdf1-0dc5-4a71-8dfc-8f68ff6aab66
   tls: true
   network: ws
+  sni: worker3.reviso4655.workers.dev
+  servername: worker3.reviso4655.workers.dev
   ws-opts:
-    path: /lMnsZUN4/
+    path: /
     headers:
-      Host: v2ray1.dozapp.xyz
-- name: NodeHub VMESS-104
+      Host: worker3.reviso4655.workers.dev
+- name: NodeHub VLESS-154
+  type: vless
+  server: 154.197.64.252
+  port: 443
+  uuid: 2e87dd5b-ca5b-4d8b-9bf0-0ed9dfa43da2
+  tls: true
+  network: ws
+  sni: worker3.hiyere5918.workers.dev
+  servername: worker3.hiyere5918.workers.dev
+  ws-opts:
+    path: /
+    headers:
+      Host: worker3.hiyere5918.workers.dev
+- name: NodeHub RELAY-104.21.0.1-1772
   type: vmess
   server: 104.21.0.1
   port: 80
@@ -67,6 +162,19 @@ proxies:
   alterId: 0
   cipher: auto
   tls: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub سرور 10
+  type: vmess
+  server: 172.66.0.1
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
   network: ws
   ws-opts:
     path: /ws
@@ -85,9 +193,9 @@ proxies:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub 🇨🇦 CA | | 22A83C
+- name: NodeHub 🇨🇦 CA | | F25C32
   type: vmess
-  server: 104.21.7.133
+  server: 104.17.147.222
   port: 80
   uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
@@ -98,9 +206,74 @@ proxies:
     path: /ws?ed=2048
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: NodeHub 🇺🇸 US | | D446C3
+- name: NodeHub 231580 | = t.me/SOSkeyNET
   type: vmess
   server: 188.114.99.137
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub 🇨🇦 CA | | 0AD519
+  type: vmess
+  server: 172.67.187.145
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub 231579 | = t.me/SOSkeyNET
+  type: vmess
+  server: 188.114.97.6
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: false
+  network: ws
+  ws-opts:
+    path: /ws?ed
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub VLESS-104_2
+  type: vless
+  server: 104.26.13.54
+  port: 443
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
+  tls: true
+  network: ws
+  sni: krc.80782636.xyz
+  servername: krc.80782636.xyz
+  ws-opts:
+    path: /kw7x2mq9
+    headers:
+      Host: krc.80782636.xyz
+- name: NodeHub 231578 | = t.me/SOSkeyNET
+  type: vmess
+  server: 172.67.152.183
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub 🇨🇦 CA | | B4617E
+  type: vmess
+  server: 104.17.136.198
   port: 443
   uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
@@ -111,6 +284,17 @@ proxies:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
+- name: NodeHub VLESS-170
+  type: vless
+  server: 170.114.45.6
+  port: 8080
+  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
+  tls: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.nadun.store
 - name: NodeHub VLESS-141
   type: vless
   server: 141.193.213.20
@@ -120,28 +304,6 @@ proxies:
   network: ws
   sni: matrix.learnpodedu.com
   servername: matrix.learnpodedu.com
-  ws-opts:
-    path: /
-    headers:
-      Host: matrix.learnpodedu.com
-- name: NodeHub 🇩🇪 DE_54
-  type: vless
-  server: 104.17.70.206
-  port: 8443
-  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.com
-- name: NodeHub VLESS-170
-  type: vless
-  server: 170.114.45.6
-  port: 80
-  uuid: 9ce32242-557a-4d18-864d-c9c385b3dfa4
-  tls: false
-  network: ws
   ws-opts:
     path: /
     headers:
@@ -159,7 +321,33 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: NodeHub VLESS-104
+- name: NodeHub 🇨🇦 CA | | 5D7454
+  type: vmess
+  server: 172.67.167.78
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: NodeHub 🇨🇦 CA | | 8B1289
+  type: vmess
+  server: 172.64.229.21
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: NodeHub VLESS-104_3
   type: vless
   server: 104.21.219.160
   port: 443
@@ -172,19 +360,6 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: NodeHub سرور 10
-  type: vmess
-  server: 172.66.0.1
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
 proxy-groups:
 - name: NodeHub - 🚀 节点选择
   type: select
@@ -192,38 +367,68 @@ proxy-groups:
   - NodeHub - ♻️ 自动选择
   - NodeHub - 🔮 故障转移
   - DIRECT
-  - NodeHub 231578 | = t.me/SOSkeyNET
-  - NodeHub 🇨🇦 CA | | 3353B7
-  - NodeHub 231547 | = t.me/SOSkeyNET
-  - NodeHub VMESS-104
-  - NodeHub سرور 8
-  - NodeHub 🇨🇦 CA | | 22A83C
-  - NodeHub 🇺🇸 US | | D446C3
-  - NodeHub VLESS-141
-  - NodeHub 🇩🇪 DE_54
-  - NodeHub VLESS-170
-  - NodeHub 231577 | = t.me/SOSkeyNET
+  - 'NodeHub Join+:'
+  - NodeHub 🇺🇸 US_29
+  - NodeHub VLESS-188
+  - NodeHub VLESS-188_1
   - NodeHub VLESS-104
+  - NodeHub [132144]
+  - NodeHub SS-95
+  - NodeHub SS-216
+  - NodeHub 🇺🇸 US | | 8C331C
+  - NodeHub VLESS-185
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-154
+  - NodeHub RELAY-104.21.0.1-1772
   - NodeHub سرور 10
+  - NodeHub سرور 8
+  - NodeHub 🇨🇦 CA | | F25C32
+  - NodeHub 231580 | = t.me/SOSkeyNET
+  - NodeHub 🇨🇦 CA | | 0AD519
+  - NodeHub 231579 | = t.me/SOSkeyNET
+  - NodeHub VLESS-104_2
+  - NodeHub 231578 | = t.me/SOSkeyNET
+  - NodeHub 🇨🇦 CA | | B4617E
+  - NodeHub VLESS-170
+  - NodeHub VLESS-141
+  - NodeHub 231577 | = t.me/SOSkeyNET
+  - NodeHub 🇨🇦 CA | | 5D7454
+  - NodeHub 🇨🇦 CA | | 8B1289
+  - NodeHub VLESS-104_3
 - name: NodeHub - ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NodeHub 231578 | = t.me/SOSkeyNET
-  - NodeHub 🇨🇦 CA | | 3353B7
-  - NodeHub 231547 | = t.me/SOSkeyNET
-  - NodeHub VMESS-104
-  - NodeHub سرور 8
-  - NodeHub 🇨🇦 CA | | 22A83C
-  - NodeHub 🇺🇸 US | | D446C3
-  - NodeHub VLESS-141
-  - NodeHub 🇩🇪 DE_54
-  - NodeHub VLESS-170
-  - NodeHub 231577 | = t.me/SOSkeyNET
+  - 'NodeHub Join+:'
+  - NodeHub 🇺🇸 US_29
+  - NodeHub VLESS-188
+  - NodeHub VLESS-188_1
   - NodeHub VLESS-104
+  - NodeHub [132144]
+  - NodeHub SS-95
+  - NodeHub SS-216
+  - NodeHub 🇺🇸 US | | 8C331C
+  - NodeHub VLESS-185
+  - NodeHub VLESS-104_1
+  - NodeHub VLESS-154
+  - NodeHub RELAY-104.21.0.1-1772
   - NodeHub سرور 10
+  - NodeHub سرور 8
+  - NodeHub 🇨🇦 CA | | F25C32
+  - NodeHub 231580 | = t.me/SOSkeyNET
+  - NodeHub 🇨🇦 CA | | 0AD519
+  - NodeHub 231579 | = t.me/SOSkeyNET
+  - NodeHub VLESS-104_2
+  - NodeHub 231578 | = t.me/SOSkeyNET
+  - NodeHub 🇨🇦 CA | | B4617E
+  - NodeHub VLESS-170
+  - NodeHub VLESS-141
+  - NodeHub 231577 | = t.me/SOSkeyNET
+  - NodeHub 🇨🇦 CA | | 5D7454
+  - NodeHub 🇨🇦 CA | | 8B1289
+  - NodeHub VLESS-104_3
 - name: NodeHub - 🔮 故障转移
   type: fallback
   url: http://www.gstatic.com/generate_204
@@ -233,18 +438,17 @@ proxy-groups:
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇨🇦 CA | | 3353B7
-  - NodeHub 🇨🇦 CA | | 22A83C
-- name: NodeHub - 🌍 DE
-  type: select
-  proxies:
-  - NodeHub - 🚀 节点选择
-  - NodeHub 🇩🇪 DE_54
+  - NodeHub 🇨🇦 CA | | F25C32
+  - NodeHub 🇨🇦 CA | | 0AD519
+  - NodeHub 🇨🇦 CA | | B4617E
+  - NodeHub 🇨🇦 CA | | 5D7454
+  - NodeHub 🇨🇦 CA | | 8B1289
 - name: NodeHub - 🌍 US
   type: select
   proxies:
   - NodeHub - 🚀 节点选择
-  - NodeHub 🇺🇸 US | | D446C3
+  - NodeHub 🇺🇸 US_29
+  - NodeHub 🇺🇸 US | | 8C331C
 rules:
 - DOMAIN-SUFFIX,google.com,🚀 节点选择
 - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
